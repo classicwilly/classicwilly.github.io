@@ -6,10 +6,343 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title | default: site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --sprout-green: #2ecc71;
+        --circuit-teal: #1abc9c;
+        --electric-blue: #3498db;
+        --dark-slate: #2c3e50;
+        --chaos-gray: #95a5a6;
+        --light-bg: #ecf0f1;
+        --card-white: #ffffff;
+        --accent-orange: #e67e22;
+      }
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, var(--light-bg) 0%, #d5dfe0 100%);
+        color: var(--dark-slate);
+        line-height: 1.7;
+        min-height: 100vh;
+      }
+      
+      /* Header - The "Card Catalog" Tab */
+      .site-header {
+        background: linear-gradient(135deg, var(--sprout-green) 0%, var(--circuit-teal) 100%);
+        padding: 2rem 1rem;
+        border-bottom: 4px solid var(--dark-slate);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .site-header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px),
+          repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
+        pointer-events: none;
+      }
+      
+      .site-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--card-white);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .site-tagline {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
+        color: rgba(255,255,255,0.9);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .site-tagline::before {
+        content: '▸ ';
+        color: var(--accent-orange);
+      }
+      
+      /* Navigation - The "System Menu" */
+      .site-nav {
+        background: var(--dark-slate);
+        padding: 1rem;
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: 2px solid var(--circuit-teal);
+      }
+      
+      .site-nav a {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--light-bg);
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      .site-nav a:hover {
+        border-color: var(--sprout-green);
+        background: rgba(46, 204, 113, 0.1);
+        transform: translateY(-2px);
+      }
+      
+      /* Main Content - The "Card" */
+      .content-wrapper {
+        max-width: 900px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+      }
+      
+      .content-card {
+        background: var(--card-white);
+        border-radius: 8px;
+        padding: 3rem;
+        box-shadow: 
+          0 10px 40px rgba(0,0,0,0.1),
+          inset 0 0 0 2px var(--circuit-teal);
+        position: relative;
+      }
+      
+      /* Neurodivergent "Filing System" Accent */
+      .content-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 6px;
+        height: 100%;
+        background: linear-gradient(180deg, 
+          var(--sprout-green) 0%,
+          var(--circuit-teal) 50%,
+          var(--electric-blue) 100%);
+        border-radius: 8px 0 0 8px;
+      }
+      
+      /* Typography */
+      .content-card h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 2.5rem;
+        color: var(--dark-slate);
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        border-bottom: 3px solid var(--sprout-green);
+        padding-bottom: 0.5rem;
+      }
+      
+      .content-card h2 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.8rem;
+        color: var(--dark-slate);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        position: relative;
+        padding-left: 1rem;
+      }
+      
+      .content-card h2::before {
+        content: '◆';
+        position: absolute;
+        left: 0;
+        color: var(--circuit-teal);
+      }
+      
+      .content-card h3 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.3rem;
+        color: var(--electric-blue);
+        margin-top: 1.5rem;
+        margin-bottom: 0.75rem;
+        font-weight: 600;
+      }
+      
+      .content-card p {
+        margin-bottom: 1.25rem;
+        font-size: 1.05rem;
+        color: #34495e;
+      }
+      
+      .content-card strong {
+        color: var(--dark-slate);
+        font-weight: 700;
+      }
+      
+      .content-card em {
+        color: var(--electric-blue);
+        font-style: italic;
+      }
+      
+      .content-card ul, .content-card ol {
+        margin-left: 2rem;
+        margin-bottom: 1.25rem;
+      }
+      
+      .content-card li {
+        margin-bottom: 0.5rem;
+        color: #34495e;
+      }
+      
+      .content-card a {
+        color: var(--circuit-teal);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+        font-weight: 600;
+      }
+      
+      .content-card a:hover {
+        border-bottom-color: var(--circuit-teal);
+      }
+      
+      .content-card code {
+        font-family: 'IBM Plex Mono', monospace;
+        background: var(--light-bg);
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        font-size: 0.9em;
+        color: var(--electric-blue);
+      }
+      
+      .content-card pre {
+        background: var(--dark-slate);
+        color: var(--sprout-green);
+        padding: 1.5rem;
+        border-radius: 6px;
+        overflow-x: auto;
+        margin-bottom: 1.25rem;
+        border-left: 4px solid var(--circuit-teal);
+      }
+      
+      .content-card pre code {
+        background: none;
+        color: inherit;
+        padding: 0;
+      }
+      
+      .content-card blockquote {
+        border-left: 4px solid var(--accent-orange);
+        padding-left: 1.5rem;
+        margin: 1.5rem 0;
+        font-style: italic;
+        color: var(--chaos-gray);
+      }
+      
+      .content-card hr {
+        border: none;
+        height: 2px;
+        background: linear-gradient(90deg, 
+          transparent 0%,
+          var(--circuit-teal) 50%,
+          transparent 100%);
+        margin: 2rem 0;
+      }
+      
+      /* Footer - The "System Info" */
+      .site-footer {
+        background: var(--dark-slate);
+        color: var(--light-bg);
+        padding: 2rem 1rem;
+        text-align: center;
+        margin-top: 4rem;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        border-top: 3px solid var(--sprout-green);
+      }
+      
+      .site-footer a {
+        color: var(--circuit-teal);
+        text-decoration: none;
+      }
+      
+      .site-footer a:hover {
+        color: var(--sprout-green);
+      }
+      
+      /* "Wonky" Accent - Subtle chaos pattern */
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      
+      .wonky-accent {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(135deg, var(--sprout-green), var(--circuit-teal));
+        border-radius: 50% 40% 60% 50%;
+        opacity: 0.15;
+        animation: float 6s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 0;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .site-title {
+          font-size: 1.8rem;
+        }
+        
+        .content-card {
+          padding: 2rem 1.5rem;
+        }
+        
+        .content-card h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="container-lg px-3 my-5 markdown-body">
-      {{ content }}
+    <header class="site-header">
+      <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
+      <p class="site-tagline">{{ site.description | default: "A card catalog for a chaotic world." }}</p>
+    </header>
+    
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/catalog">Card Catalog</a>
+      <a href="/fix">Fix-It Blueprint</a>
+    </nav>
+    
+    <div class="content-wrapper">
+      <main class="content-card">
+        {{ content }}
+      </main>
     </div>
+    
+    <footer class="site-footer">
+      <p>Built by a neurodivergent systems diagnostician who fixes stuff.</p>
+      <p>© 2025 The Wonky Sprout. It's okay to be a little wonky.</p>
+    </footer>
+    
+    <div class="wonky-accent"></div>
   </body>
 </html>
