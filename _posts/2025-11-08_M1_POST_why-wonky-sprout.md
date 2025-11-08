@@ -1,3 +1,9 @@
+---
+layout: default
+title: "What the Hell is a 'Wonky Sprout'?"
+date: 2025-11-08
+---
+
 # What the Hell is a 'Wonky Sprout'?
 
 ## It's not a bug. It's a feature.

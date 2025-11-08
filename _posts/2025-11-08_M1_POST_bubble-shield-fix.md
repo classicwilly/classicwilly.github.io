@@ -1,3 +1,9 @@
+---
+layout: default
+title: "The $40 Fix for $40k Focus"
+date: 2025-11-08
+---
+
 # The $40 Fix for $40k Focus
 
 ## My brain is a card catalog. I need silence to file.
