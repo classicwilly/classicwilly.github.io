@@ -314,6 +314,35 @@
       }
       
       /* Interactive Checklists */
+      .content-card .task-list-item {
+        list-style: none;
+        margin-left: -2rem;
+        padding: 0.5rem 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      .content-card .task-list-item label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      .content-card .task-list-item input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.75rem;
+        cursor: pointer;
+        accent-color: var(--circuit-teal);
+        flex-shrink: 0;
+      }
+      
+      .content-card .task-list-item input[type="checkbox"]:checked + span {
+        opacity: 0.5;
+        text-decoration: line-through;
+        color: var(--sprout-green);
+      }
+      
       .content-card input[type="checkbox"] {
         width: 20px;
         height: 20px;
@@ -517,14 +546,51 @@
       (function() {
         const pageKey = window.location.pathname;
         
+        // Convert Markdown task lists to interactive checkboxes
+        function convertTaskLists() {
+          const listItems = document.querySelectorAll('.content-card li');
+          listItems.forEach(item => {
+            const text = item.textContent.trim();
+            // Check for [ ] or [x] at start of list item
+            if (text.startsWith('[ ]') || text.startsWith('[x]')) {
+              const isChecked = text.startsWith('[x]');
+              const labelText = text.substring(3).trim(); // Remove [ ] or [x]
+              
+              // Create checkbox
+              const checkbox = document.createElement('input');
+              checkbox.type = 'checkbox';
+              checkbox.checked = isChecked;
+              
+              // Create label wrapper
+              const label = document.createElement('label');
+              label.style.display = 'flex';
+              label.style.alignItems = 'center';
+              label.style.cursor = 'pointer';
+              
+              // Create text span
+              const span = document.createElement('span');
+              span.textContent = labelText;
+              
+              // Assemble
+              label.appendChild(checkbox);
+              label.appendChild(span);
+              
+              // Replace item content
+              item.innerHTML = '';
+              item.appendChild(label);
+              item.classList.add('task-list-item');
+            }
+          });
+        }
+        
         // Load saved checkbox states
         function loadCheckboxStates() {
           const saved = localStorage.getItem(`checklist_${pageKey}`);
           if (saved) {
             const states = JSON.parse(saved);
             document.querySelectorAll('input[type="checkbox"]').forEach((checkbox, index) => {
-              if (states[index]) {
-                checkbox.checked = true;
+              if (states[index] !== undefined) {
+                checkbox.checked = states[index];
               }
             });
           }
@@ -608,7 +674,13 @@
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
+          // Convert Markdown task lists first
+          convertTaskLists();
+          
+          // Add controls
           addChecklistControls();
+          
+          // Load saved states
           loadCheckboxStates();
           
           // Add change listeners to all checkboxes
