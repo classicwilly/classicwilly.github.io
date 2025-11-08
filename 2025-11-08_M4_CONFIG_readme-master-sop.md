@@ -24,8 +24,8 @@ This is the code for execution.
 - **Asset (Live Site)**: Your public-facing website: https://classicwilly.github.io
 - **'Fix' Page (Homepage)**: index.md (This is your 'About' story).
 - **'Card Catalog' (Blog)**: catalog.md (The list of your 'Sprouts').
-- **First 'Card'**: _posts/2025-11-08_M1_POST_why-wonky-sprout.md (Your first post, 'What the Hell is a 'Wonky Sprout'?').
-- **Second 'Card'**: _posts/2025-11-08_M1_POST_bubble-shield-fix.md (The 'Bubble Shield' fix).
+- **First 'Card'**: _posts/2025-11-08-why-wonky-sprout.md (Your first post, 'What the Hell is a 'Wonky Sprout'?').
+- **Second 'Card'**: _posts/2025-11-08-bubble-shield-fix.md (The 'Bubble Shield' fix).
 
 ### 3.2 MODULE 2: PHYSICAL PRODUCTS
 
