@@ -28,6 +28,12 @@ The execution SOP. When you need 11/10-perfection output, this is the protocol. 
 ### [Vibe Coding AI Workflow](2025-11-08_M4_SOP_vibe-coding-ai-workflow)
 The AI-assisted product design workflow. How to use AI tools to design physical products with CAD, 3D printing, and electronics integration.
 
+### [Weekly Review Protocol](2025-11-08_M4_SOP_weekly-review-protocol)
+The 60-minute end-of-week maintenance protocol. Process captured chaos, review task completion, assess system health, and plan next week. Runs Friday 3-4 PM (Solo Mode) or Sunday 8:30-9:30 PM (Family Mode).
+
+### [Morning Transition Protocol](2025-11-08_M4_SOP_morning-transition-protocol)
+The 60-minute bridge from sleep to execution (6:00-7:00 AM daily). Physical activation, environment setup, mental calibration, and execution launch. This is how every day starts.
+
 ---
 
 ## CONFIGURATION & SYSTEM FILES
@@ -50,6 +56,15 @@ Project documentation for automating Soundcore Space One headphone Bluetooth rec
 
 ### [VS Code Deployment Setup](2025-11-08_M4_IPI_vscode-deployment-setup)
 The setup instructions for deploying the Wonky Sprout website structure using Jekyll and GitHub Pages.
+
+### [Executive Dysfunction Emergency Protocol](2025-11-08_M4_IPI_executive-dysfunction-emergency)
+When everything feels impossible and you can't start any task. The emergency reboot protocol for completely frozen executive function. Body reset → Environment reset → Task reset.
+
+### [Context Switching Recovery Protocol](2025-11-08_M4_IPI_context-switching-recovery)
+When you're forced to switch contexts mid-task. How to capture current state, handle the interrupt, and reload previous context without losing progress or your mind.
+
+### [Sensory Overload Emergency Protocol](2025-11-08_M4_IPI_sensory-overload-emergency)
+When the environment becomes unbearable. Immediate actions to reduce sensory input, deploy Bubble Shield, retreat to safety, and regulate your nervous system before full meltdown.
 
 ---
 
