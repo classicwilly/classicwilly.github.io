@@ -23,6 +23,11 @@ The 60-minute bridge from sleep to execution (6:00-7:00 AM). Track all 4 phases:
 
 **When to use**: Every morning to start your day with structure.
 
+### [Daily Tracker](daily-tracker)
+Comprehensive single-page daily check-in combining foundational protocols, morning transition, mode-specific tasks, emergency protocol tracking, and completion metrics.
+
+**When to use**: Fill out during Daily Dump (10:25 PM), check boxes throughout the day, review patterns during Weekly Review.
+
 ---
 
 ## WEEKLY PROTOCOLS
