@@ -13,11 +13,17 @@ This is the complete card catalog of systems, protocols, and fixes. Everything i
 
 ## EXECUTION PROTOCOLS
 
+### [Foundational Daily Protocols](2025-11-08_M4_SOP_foundational-daily-protocols)
+The 5 non-negotiable protocols that run every single day. Water, Pills, Capture, Sleep Anchor, and Daily Dump. This is the foundation for everything.
+
+### [Solo Execution Mode](2025-11-08_M4_SOP_solo-execution-mode)
+Monday 6 PM → Friday 4 PM. Hour-by-hour breakdown for high-focus output, deep work, and systems building. 7 hours of core work daily with Pomodoro structure.
+
+### [Family Structure Mode](2025-11-08_M4_SOP_family-structure-mode)
+Friday 4 PM → Monday 6 PM. Complete weekend hourly schedule for shared structure, sensory regulation, and high-vigilance parenting with neurodivergent children.
+
 ### [The Classicwilly Protocol](2025-11-08_M4_SOP_classicwilly-protocol)
 The execution SOP. When you need 11/10-perfection output, this is the protocol. High-stakes work requires high-stakes structure.
-
-### [Neurodivergent Life Protocol](2025-11-08_M4_SOP_neurodivergent-life-protocol)
-The definitive dual-mode operating system for maintaining executive function, sensory regulation, and productivity across Solo and Family modes.
 
 ### [Vibe Coding AI Workflow](2025-11-08_M4_SOP_vibe-coding-ai-workflow)
 The AI-assisted product design workflow. How to use AI tools to design physical products with CAD, 3D printing, and electronics integration.
