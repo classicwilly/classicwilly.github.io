@@ -411,8 +411,12 @@
       .checklist-progress {
         flex: 1;
         min-width: 200px;
+      }
+      
+      .checklist-progress-text {
         font-family: 'IBM Plex Mono', monospace;
         color: var(--text-bright);
+        margin-bottom: 0.5rem;
       }
       
       .progress-bar {
@@ -421,7 +425,6 @@
         background: var(--darker-bg);
         border-radius: 4px;
         overflow: hidden;
-        margin-top: 0.5rem;
         border: 1px solid var(--border-gray);
       }
       
@@ -439,15 +442,25 @@
           color: black;
         }
         
-        .site-header, .site-nav, .site-footer, .wonky-accent, .checklist-controls {
-          display: none;
+        .site-header, .site-nav, .site-footer, .wonky-accent {
+          display: none !important;
+        }
+        
+        .checklist-controls {
+          display: none !important;
+        }
+        
+        .content-wrapper {
+          margin: 0;
+          padding: 0;
         }
         
         .content-card {
           box-shadow: none;
-          border: 2px solid black;
+          border: none;
           background: white;
           color: black;
+          padding: 1rem;
           page-break-inside: avoid;
         }
         
@@ -455,22 +468,66 @@
           display: none;
         }
         
-        .content-card input[type="checkbox"] {
-          border: 2px solid black;
-          appearance: none;
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          background: white;
-          width: 18px;
-          height: 18px;
-          margin-right: 0.5rem;
+        .content-card h1 {
+          font-size: 1.5rem;
+          color: black;
+          border-bottom: 2px solid black;
+          margin-bottom: 1rem;
         }
         
+        .content-card h2 {
+          font-size: 1.2rem;
+          color: black;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+          page-break-after: avoid;
+        }
+        
+        .content-card h3 {
+          font-size: 1rem;
+          color: black;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .content-card p, .content-card strong, .content-card em {
+          color: black;
+        }
+        
+        .content-card .task-list-item,
+        .content-card li {
+          page-break-inside: avoid;
+          color: black;
+        }
+        
+        .content-card .task-list-item input[type="checkbox"],
+        .content-card input[type="checkbox"] {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          width: 16px;
+          height: 16px;
+          border: 2px solid black;
+          background: white;
+          margin-right: 0.5rem;
+          position: relative;
+          flex-shrink: 0;
+        }
+        
+        .content-card .task-list-item input[type="checkbox"]:checked::after,
         .content-card input[type="checkbox"]:checked::after {
           content: '✓';
-          display: block;
-          text-align: center;
+          position: absolute;
+          top: -2px;
+          left: 1px;
+          font-size: 14px;
           font-weight: bold;
+          color: black;
+        }
+        
+        .content-card .task-list-item input[type="checkbox"]:checked + span {
+          text-decoration: none;
+          opacity: 1;
           color: black;
         }
         
@@ -479,14 +536,15 @@
           text-decoration: underline;
         }
         
-        .content-card h1, .content-card h2, .content-card h3 {
-          color: black;
-        }
-        
         .content-card code, .content-card pre {
           border: 1px solid black;
           background: #f5f5f5;
           color: black;
+        }
+        
+        .content-card hr {
+          border: none;
+          border-top: 1px solid black;
         }
       }
       
@@ -546,60 +604,91 @@
       (function() {
         const pageKey = window.location.pathname;
         
-        // Convert Markdown task lists to interactive checkboxes
+        // Convert task lists to interactive checkboxes
         function convertTaskLists() {
-          const listItems = document.querySelectorAll('.content-card li');
-          listItems.forEach(item => {
-            const text = item.textContent.trim();
-            // Check for [ ] or [x] at start of list item
-            if (text.startsWith('[ ]') || text.startsWith('[x]')) {
-              const isChecked = text.startsWith('[x]');
-              const labelText = text.substring(3).trim(); // Remove [ ] or [x]
+          // GitHub-flavored Markdown creates task-list items
+          const taskListItems = document.querySelectorAll('.task-list-item');
+          
+          if (taskListItems.length > 0) {
+            // Handle GitHub-flavored Markdown task lists
+            taskListItems.forEach(item => {
+              const checkbox = item.querySelector('input[type="checkbox"]');
+              if (checkbox) {
+                // Already has a checkbox from GitHub Markdown
+                checkbox.removeAttribute('disabled'); // GitHub makes them disabled by default
+                return;
+              }
+            });
+          } else {
+            // Handle manual [ ] format in regular list items
+            const allListItems = document.querySelectorAll('.content-card li');
+            allListItems.forEach(item => {
+              const text = item.innerHTML.trim();
               
-              // Create checkbox
-              const checkbox = document.createElement('input');
-              checkbox.type = 'checkbox';
-              checkbox.checked = isChecked;
+              // Check for [ ] or [x] at start (allow for <strong> tags)
+              const uncheckedMatch = text.match(/^(\s*<strong>.*?<\/strong>\s*)?\[(\s|&nbsp;)\]/);
+              const checkedMatch = text.match(/^(\s*<strong>.*?<\/strong>\s*)?\[x\]/i);
               
-              // Create label wrapper
-              const label = document.createElement('label');
-              label.style.display = 'flex';
-              label.style.alignItems = 'center';
-              label.style.cursor = 'pointer';
-              
-              // Create text span
-              const span = document.createElement('span');
-              span.textContent = labelText;
-              
-              // Assemble
-              label.appendChild(checkbox);
-              label.appendChild(span);
-              
-              // Replace item content
-              item.innerHTML = '';
-              item.appendChild(label);
-              item.classList.add('task-list-item');
-            }
-          });
+              if (uncheckedMatch || checkedMatch) {
+                const isChecked = !!checkedMatch;
+                
+                // Extract text after checkbox
+                let labelText = text.replace(/^\s*(<strong>.*?<\/strong>\s*)?\[(x|\s|&nbsp;)\]\s*/i, '');
+                
+                // Create checkbox
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = isChecked;
+                checkbox.id = 'cb-' + Math.random().toString(36).substr(2, 9);
+                
+                // Create label
+                const label = document.createElement('label');
+                label.setAttribute('for', checkbox.id);
+                label.style.display = 'flex';
+                label.style.alignItems = 'flex-start';
+                label.style.cursor = 'pointer';
+                label.style.width = '100%';
+                
+                // Create span for text
+                const span = document.createElement('span');
+                span.innerHTML = labelText;
+                
+                // Assemble
+                label.appendChild(checkbox);
+                label.appendChild(span);
+                
+                // Replace item content
+                item.innerHTML = '';
+                item.appendChild(label);
+                item.classList.add('task-list-item');
+                item.style.listStyle = 'none';
+              }
+            });
+          }
         }
         
         // Load saved checkbox states
         function loadCheckboxStates() {
           const saved = localStorage.getItem(`checklist_${pageKey}`);
           if (saved) {
-            const states = JSON.parse(saved);
-            document.querySelectorAll('input[type="checkbox"]').forEach((checkbox, index) => {
-              if (states[index] !== undefined) {
-                checkbox.checked = states[index];
-              }
-            });
+            try {
+              const states = JSON.parse(saved);
+              const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
+              checkboxes.forEach((checkbox, index) => {
+                if (states[index] !== undefined) {
+                  checkbox.checked = states[index];
+                }
+              });
+            } catch (e) {
+              console.error('Error loading checklist state:', e);
+            }
           }
           updateProgress();
         }
         
         // Save checkbox states
         function saveCheckboxStates() {
-          const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+          const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
           const states = Array.from(checkboxes).map(cb => cb.checked);
           localStorage.setItem(`checklist_${pageKey}`, JSON.stringify(states));
           updateProgress();
@@ -607,14 +696,14 @@
         
         // Update progress bar
         function updateProgress() {
-          const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+          const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
           if (checkboxes.length === 0) return;
           
           const checked = Array.from(checkboxes).filter(cb => cb.checked).length;
           const total = checkboxes.length;
           const percentage = Math.round((checked / total) * 100);
           
-          const progressText = document.querySelector('.checklist-progress');
+          const progressText = document.querySelector('.checklist-progress-text');
           const progressFill = document.querySelector('.progress-fill');
           
           if (progressText) {
@@ -628,7 +717,8 @@
         // Reset all checkboxes
         function resetChecklist() {
           if (confirm('Reset all checkboxes on this page?')) {
-            document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+            const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
+            checkboxes.forEach(cb => {
               cb.checked = false;
             });
             saveCheckboxStates();
@@ -637,14 +727,19 @@
         
         // Add checklist controls if checkboxes exist
         function addChecklistControls() {
-          const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+          const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
           if (checkboxes.length === 0) return;
           
           const contentCard = document.querySelector('.content-card');
+          if (!contentCard) return;
+          
           const controls = document.createElement('div');
           controls.className = 'checklist-controls';
           controls.innerHTML = `
-            <div class="checklist-progress">Progress: 0 / ${checkboxes.length} (0%)</div>
+            <div class="checklist-progress">
+              <div class="checklist-progress-text">Progress: 0 / ${checkboxes.length} (0%)</div>
+              <div class="progress-bar"><div class="progress-fill"></div></div>
+            </div>
             <button onclick="window.printChecklist()">🖨️ Print</button>
             <button class="secondary" onclick="window.resetChecklist()">↻ Reset</button>
           `;
@@ -656,12 +751,6 @@
           } else {
             contentCard.insertBefore(controls, contentCard.firstChild);
           }
-          
-          // Add progress bar
-          const progressBar = document.createElement('div');
-          progressBar.className = 'progress-bar';
-          progressBar.innerHTML = '<div class="progress-fill"></div>';
-          controls.querySelector('.checklist-progress').appendChild(progressBar);
         }
         
         // Print function
@@ -674,19 +763,27 @@
         
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', function() {
-          // Convert Markdown task lists first
+          console.log('Checklist system initializing...');
+          
+          // Convert task lists
           convertTaskLists();
           
-          // Add controls
-          addChecklistControls();
+          // Check if we have checkboxes
+          const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
+          console.log('Found', checkboxes.length, 'checkboxes');
           
-          // Load saved states
-          loadCheckboxStates();
-          
-          // Add change listeners to all checkboxes
-          document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-            checkbox.addEventListener('change', saveCheckboxStates);
-          });
+          if (checkboxes.length > 0) {
+            // Add controls
+            addChecklistControls();
+            
+            // Load saved states
+            loadCheckboxStates();
+            
+            // Add change listeners
+            checkboxes.forEach(checkbox => {
+              checkbox.addEventListener('change', saveCheckboxStates);
+            });
+          }
         });
       })();
     </script>
