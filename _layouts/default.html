@@ -435,6 +435,166 @@
         transition: width 0.5s ease;
       }
       
+      /* Daily Tracker Form Styles */
+      .tracker-header {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: var(--card-dark);
+        border-radius: 8px;
+        border: 1px solid var(--border-gray);
+      }
+      
+      .tracker-date, .tracker-mode {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .tracker-date label, .tracker-mode label:first-child {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        color: var(--text-bright);
+      }
+      
+      .tracker-date input[type="date"] {
+        font-family: 'IBM Plex Mono', monospace;
+        background: var(--darker-bg);
+        color: var(--text-light);
+        border: 1px solid var(--border-gray);
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+      }
+      
+      .tracker-date input[type="date"]:focus {
+        outline: none;
+        border-color: var(--circuit-teal);
+        box-shadow: 0 0 0 3px rgba(26,188,156,0.1);
+      }
+      
+      .tracker-mode {
+        display: flex;
+        gap: 1.5rem;
+      }
+      
+      .mode-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 400;
+        cursor: pointer;
+        color: var(--text-light);
+      }
+      
+      .mode-option input[type="radio"] {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+        accent-color: var(--circuit-teal);
+      }
+      
+      .mode-option:hover {
+        color: var(--text-bright);
+      }
+      
+      .priority-ratings, .wins-section, .priorities-section, .metrics-section {
+        margin: 1rem 0 2rem 0;
+      }
+      
+      .rating-row, .win-row, .priority-row, .metric-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .rating-row label, .win-row label, .priority-row label, .metric-row label {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        color: var(--text-bright);
+        min-width: 250px;
+      }
+      
+      .win-row label, .priority-row label {
+        min-width: 30px;
+        font-size: 1.1rem;
+      }
+      
+      .rating-row input[type="number"], .metric-row input[type="number"] {
+        font-family: 'IBM Plex Mono', monospace;
+        background: var(--darker-bg);
+        color: var(--text-light);
+        border: 1px solid var(--border-gray);
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+        width: 80px;
+        text-align: center;
+      }
+      
+      .win-row input[type="text"], .priority-row input[type="text"] {
+        font-family: 'Space Grotesk', sans-serif;
+        background: var(--darker-bg);
+        color: var(--text-light);
+        border: 1px solid var(--border-gray);
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+        flex: 1;
+      }
+      
+      .rating-row input:focus, .win-row input:focus, .priority-row input:focus, .metric-row input:focus {
+        outline: none;
+        border-color: var(--circuit-teal);
+        box-shadow: 0 0 0 3px rgba(26,188,156,0.1);
+      }
+      
+      .metric-row.overall-rating {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 2px solid var(--border-gray);
+      }
+      
+      .metric-row.overall-rating label {
+        color: var(--circuit-teal);
+        font-size: 1.1rem;
+      }
+      
+      .notes-section {
+        margin: 1rem 0 2rem 0;
+      }
+      
+      .notes-section label {
+        display: block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        color: var(--text-bright);
+        margin-bottom: 0.75rem;
+      }
+      
+      .notes-section textarea {
+        font-family: 'Space Grotesk', sans-serif;
+        background: var(--darker-bg);
+        color: var(--text-light);
+        border: 1px solid var(--border-gray);
+        border-radius: 4px;
+        padding: 0.75rem;
+        font-size: 0.95rem;
+        width: 100%;
+        resize: vertical;
+        line-height: 1.6;
+      }
+      
+      .notes-section textarea:focus {
+        outline: none;
+        border-color: var(--circuit-teal);
+        box-shadow: 0 0 0 3px rgba(26,188,156,0.1);
+      }
+      
       /* Print Styles */
       @media print {
         body {
@@ -785,7 +945,118 @@
               checkbox.addEventListener('change', saveCheckboxStates);
             });
           }
+          
+          // Initialize Daily Tracker form persistence
+          initializeDailyTracker();
         });
+        
+        // Daily Tracker form persistence
+        function initializeDailyTracker() {
+          const trackerKey = `daily_tracker_${pageKey}`;
+          
+          // Form field selectors
+          const formFields = {
+            date: '#tracker-date',
+            modeSolo: '#mode-solo',
+            modeFamily: '#mode-family',
+            ratingSleep: '#rating-sleep',
+            ratingFood: '#rating-food',
+            ratingWater: '#rating-water',
+            ratingMedicine: '#rating-medicine',
+            win1: '#win-1',
+            win2: '#win-2',
+            win3: '#win-3',
+            priority1: '#priority-1',
+            priority2: '#priority-2',
+            priority3: '#priority-3',
+            notes: '#notes',
+            metricFoundational: '#metric-foundational',
+            metricMorning: '#metric-morning',
+            metricMode: '#metric-mode',
+            metricHierarchy: '#metric-hierarchy',
+            overallRating: '#overall-rating'
+          };
+          
+          // Check if we're on the daily tracker page
+          const dateInput = document.querySelector(formFields.date);
+          if (!dateInput) return; // Not on daily tracker page
+          
+          // Set today's date as default
+          const today = new Date().toISOString().split('T')[0];
+          dateInput.value = today;
+          
+          // Load saved data
+          function loadTrackerData() {
+            const saved = localStorage.getItem(trackerKey);
+            if (saved) {
+              try {
+                const data = JSON.parse(saved);
+                
+                // Load text/number/date inputs
+                Object.keys(formFields).forEach(key => {
+                  if (key === 'modeSolo' || key === 'modeFamily') return; // Handle radios separately
+                  
+                  const input = document.querySelector(formFields[key]);
+                  if (input && data[key] !== undefined) {
+                    input.value = data[key];
+                  }
+                });
+                
+                // Load radio buttons
+                if (data.mode === 'solo') {
+                  document.querySelector(formFields.modeSolo).checked = true;
+                } else if (data.mode === 'family') {
+                  document.querySelector(formFields.modeFamily).checked = true;
+                }
+                
+                console.log('Daily tracker data loaded');
+              } catch (e) {
+                console.error('Error loading daily tracker data:', e);
+              }
+            }
+          }
+          
+          // Save tracker data
+          function saveTrackerData() {
+            const data = {};
+            
+            // Save text/number/date inputs
+            Object.keys(formFields).forEach(key => {
+              if (key === 'modeSolo' || key === 'modeFamily') return; // Handle radios separately
+              
+              const input = document.querySelector(formFields[key]);
+              if (input) {
+                data[key] = input.value;
+              }
+            });
+            
+            // Save mode selection
+            const modeSolo = document.querySelector(formFields.modeSolo);
+            const modeFamily = document.querySelector(formFields.modeFamily);
+            if (modeSolo && modeSolo.checked) {
+              data.mode = 'solo';
+            } else if (modeFamily && modeFamily.checked) {
+              data.mode = 'family';
+            }
+            
+            localStorage.setItem(trackerKey, JSON.stringify(data));
+            console.log('Daily tracker data saved');
+          }
+          
+          // Load existing data
+          loadTrackerData();
+          
+          // Add event listeners to all form fields
+          Object.values(formFields).forEach(selector => {
+            const input = document.querySelector(selector);
+            if (input) {
+              input.addEventListener('change', saveTrackerData);
+              input.addEventListener('input', saveTrackerData);
+            }
+          });
+          
+          console.log('Daily tracker initialized');
+        }
       })();
     </script>
   </body>
