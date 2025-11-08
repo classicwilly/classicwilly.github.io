@@ -6,14 +6,14 @@ This document is the Master Card Catalog for the Wonky Sprout Operating System (
 
 These files define the philosophy and core rules of the brand.
 
-- **MANIFESTO.md**: Your 'Why.' The 'card catalog' for your philosophy.
-- **BRAND_GUIDE.md**: Your 'How.' The 'anti-BS' rules for your brand.
+- **2025-11-08_M1_PAGE_manifesto.md**: Your 'Why.' The 'card catalog' for your philosophy.
+- **2025-11-08_M1_CONFIG_brand-guide.md**: Your 'How.' The 'anti-BS' rules for your brand.
 
 ## 2.0 CORE PROTOCOL (THE 'FIXER')
 
 This is the code for execution.
 
-- **CLASSICWILLY_SOP.md**: This is your execution protocol. Engage this SOP when you need to 'fix stuff' and require 11/10-perfection output.
+- **2025-11-08_M4_SOP_classicwilly-protocol.md**: This is your execution protocol. Engage this SOP when you need to 'fix stuff' and require 11/10-perfection output.
 
 ## 3.0 MODULES: THE 'CARD CATALOG' PROJECTS
 
@@ -24,15 +24,15 @@ This is the code for execution.
 - **Asset (Live Site)**: Your public-facing website: https://classicwilly.github.io
 - **'Fix' Page (Homepage)**: index.md (This is your 'About' story).
 - **'Card Catalog' (Blog)**: catalog.md (The list of your 'Sprouts').
-- **First 'Card'**: SPROUT_001.md (Your first post, 'What the Hell is a 'Wonky Sprout'?'?').
-- **Second 'Card'**: SPROUT_002.md (The 'Bubble Shield' fix).
+- **First 'Card'**: _posts/2025-11-08_M1_POST_why-wonky-sprout.md (Your first post, 'What the Hell is a 'Wonky Sprout'?').
+- **Second 'Card'**: _posts/2025-11-08_M1_POST_bubble-shield-fix.md (The 'Bubble Shield' fix).
 
 ### 3.2 MODULE 2: PHYSICAL PRODUCTS
 
 **Status: IN DEVELOPMENT.**
 
 - **Concept**: The 'Hive System' (an all-in-one modular, hexagonal organization system).
-- **SOP**: SOP_VIBE_CODING.md (The 'fix-it' list for designing your products using AI and CAD).
+- **SOP**: 2025-11-08_M4_SOP_vibe-coding-ai-workflow.md (The 'fix-it' list for designing your products using AI and CAD).
 
 ### 3.3 MODULE 3: SERVICE
 
