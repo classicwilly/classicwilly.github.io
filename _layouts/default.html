@@ -12,11 +12,14 @@
         --sprout-green: #2ecc71;
         --circuit-teal: #1abc9c;
         --electric-blue: #3498db;
-        --dark-slate: #2c3e50;
-        --chaos-gray: #95a5a6;
-        --light-bg: #ecf0f1;
-        --card-white: #ffffff;
-        --accent-orange: #e67e22;
+        --dark-bg: #0d1117;
+        --darker-bg: #010409;
+        --card-dark: #161b22;
+        --text-light: #c9d1d9;
+        --text-bright: #f0f6fc;
+        --border-gray: #30363d;
+        --accent-orange: #f97316;
+        --hover-blue: #58a6ff;
       }
       
       * {
@@ -27,18 +30,18 @@
       
       body {
         font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, var(--light-bg) 0%, #d5dfe0 100%);
-        color: var(--dark-slate);
+        background: var(--dark-bg);
+        color: var(--text-light);
         line-height: 1.7;
         min-height: 100vh;
       }
       
       /* Header - The "Card Catalog" Tab */
       .site-header {
-        background: linear-gradient(135deg, var(--sprout-green) 0%, var(--circuit-teal) 100%);
+        background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         padding: 2rem 1rem;
-        border-bottom: 4px solid var(--dark-slate);
-        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        border-bottom: 4px solid var(--circuit-teal);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         position: relative;
         overflow: hidden;
       }
@@ -51,8 +54,8 @@
         right: 0;
         bottom: 0;
         background: 
-          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px),
-          repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px);
+          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(26,188,156,0.05) 2px, rgba(26,188,156,0.05) 4px),
+          repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(26,188,156,0.05) 2px, rgba(26,188,156,0.05) 4px);
         pointer-events: none;
       }
       
@@ -60,8 +63,8 @@
         font-family: 'IBM Plex Mono', monospace;
         font-size: 2.5rem;
         font-weight: 700;
-        color: var(--card-white);
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        color: var(--text-bright);
+        text-shadow: 2px 2px 8px rgba(26,188,156,0.5);
         margin-bottom: 0.5rem;
         position: relative;
         z-index: 1;
@@ -70,7 +73,7 @@
       .site-tagline {
         font-family: 'IBM Plex Mono', monospace;
         font-size: 1rem;
-        color: rgba(255,255,255,0.9);
+        color: var(--text-light);
         font-weight: 400;
         letter-spacing: 0.5px;
         position: relative;
@@ -84,18 +87,18 @@
       
       /* Navigation - The "System Menu" */
       .site-nav {
-        background: var(--dark-slate);
+        background: var(--darker-bg);
         padding: 1rem;
         display: flex;
         gap: 1.5rem;
         justify-content: center;
         flex-wrap: wrap;
-        border-bottom: 2px solid var(--circuit-teal);
+        border-bottom: 2px solid var(--border-gray);
       }
       
       .site-nav a {
         font-family: 'IBM Plex Mono', monospace;
-        color: var(--light-bg);
+        color: var(--text-light);
         text-decoration: none;
         padding: 0.5rem 1rem;
         border: 2px solid transparent;
@@ -108,8 +111,9 @@
       }
       
       .site-nav a:hover {
-        border-color: var(--sprout-green);
-        background: rgba(46, 204, 113, 0.1);
+        border-color: var(--circuit-teal);
+        background: rgba(26, 188, 156, 0.1);
+        color: var(--text-bright);
         transform: translateY(-2px);
       }
       
@@ -121,12 +125,12 @@
       }
       
       .content-card {
-        background: var(--card-white);
+        background: var(--card-dark);
         border-radius: 8px;
         padding: 3rem;
         box-shadow: 
-          0 10px 40px rgba(0,0,0,0.1),
-          inset 0 0 0 2px var(--circuit-teal);
+          0 10px 40px rgba(0,0,0,0.5),
+          inset 0 0 0 1px var(--border-gray);
         position: relative;
       }
       
@@ -149,17 +153,17 @@
       .content-card h1 {
         font-family: 'Space Grotesk', sans-serif;
         font-size: 2.5rem;
-        color: var(--dark-slate);
+        color: var(--text-bright);
         margin-bottom: 1rem;
         line-height: 1.2;
-        border-bottom: 3px solid var(--sprout-green);
+        border-bottom: 3px solid var(--circuit-teal);
         padding-bottom: 0.5rem;
       }
       
       .content-card h2 {
         font-family: 'Space Grotesk', sans-serif;
         font-size: 1.8rem;
-        color: var(--dark-slate);
+        color: var(--text-bright);
         margin-top: 2rem;
         margin-bottom: 1rem;
         position: relative;
@@ -176,7 +180,7 @@
       .content-card h3 {
         font-family: 'IBM Plex Mono', monospace;
         font-size: 1.3rem;
-        color: var(--electric-blue);
+        color: var(--hover-blue);
         margin-top: 1.5rem;
         margin-bottom: 0.75rem;
         font-weight: 600;
@@ -185,16 +189,16 @@
       .content-card p {
         margin-bottom: 1.25rem;
         font-size: 1.05rem;
-        color: #34495e;
+        color: var(--text-light);
       }
       
       .content-card strong {
-        color: var(--dark-slate);
+        color: var(--text-bright);
         font-weight: 700;
       }
       
       .content-card em {
-        color: var(--electric-blue);
+        color: var(--hover-blue);
         font-style: italic;
       }
       
@@ -205,7 +209,7 @@
       
       .content-card li {
         margin-bottom: 0.5rem;
-        color: #34495e;
+        color: var(--text-light);
       }
       
       .content-card a {
@@ -218,31 +222,35 @@
       
       .content-card a:hover {
         border-bottom-color: var(--circuit-teal);
+        color: var(--hover-blue);
       }
       
       .content-card code {
         font-family: 'IBM Plex Mono', monospace;
-        background: var(--light-bg);
+        background: var(--darker-bg);
         padding: 0.2rem 0.4rem;
         border-radius: 3px;
         font-size: 0.9em;
-        color: var(--electric-blue);
+        color: var(--hover-blue);
+        border: 1px solid var(--border-gray);
       }
       
       .content-card pre {
-        background: var(--dark-slate);
+        background: var(--darker-bg);
         color: var(--sprout-green);
         padding: 1.5rem;
         border-radius: 6px;
         overflow-x: auto;
         margin-bottom: 1.25rem;
         border-left: 4px solid var(--circuit-teal);
+        border: 1px solid var(--border-gray);
       }
       
       .content-card pre code {
         background: none;
         color: inherit;
         padding: 0;
+        border: none;
       }
       
       .content-card blockquote {
@@ -250,7 +258,8 @@
         padding-left: 1.5rem;
         margin: 1.5rem 0;
         font-style: italic;
-        color: var(--chaos-gray);
+        color: var(--text-light);
+        opacity: 0.8;
       }
       
       .content-card hr {
@@ -265,14 +274,14 @@
       
       /* Footer - The "System Info" */
       .site-footer {
-        background: var(--dark-slate);
-        color: var(--light-bg);
+        background: var(--darker-bg);
+        color: var(--text-light);
         padding: 2rem 1rem;
         text-align: center;
         margin-top: 4rem;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 0.9rem;
-        border-top: 3px solid var(--sprout-green);
+        border-top: 3px solid var(--circuit-teal);
       }
       
       .site-footer a {
@@ -281,7 +290,7 @@
       }
       
       .site-footer a:hover {
-        color: var(--sprout-green);
+        color: var(--hover-blue);
       }
       
       /* "Wonky" Accent - Subtle chaos pattern */
