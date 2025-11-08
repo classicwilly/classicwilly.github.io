@@ -1,3 +1,8 @@
+---
+layout: default
+title: Neurodivergent Life SOP
+---
+
 # NEURODIVERGENT LIFE SOP (NDL-SOP)
 
 **Purpose**: The definitive operating system for maintaining executive function, sensory regulation, and high-output productivity across dual-mode life structure.
