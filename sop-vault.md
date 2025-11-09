@@ -34,6 +34,9 @@ The 60-minute end-of-week maintenance protocol. Process captured chaos, review t
 ### [Morning Transition Protocol](2025-11-08_M4_SOP_morning-transition-protocol)
 The 60-minute bridge from sleep to execution (6:00-7:00 AM daily). Physical activation, environment setup, mental calibration, and execution launch. This is how every day starts.
 
+### [Command Center Setup](2025-11-09_M4_SOP_command-center-setup)
+**TOP PRIORITY**. Complete equipment lists (must-haves, essentials, optimization tiers), hardware/software justifications, Google Workspace integration, space requirements, budget breakdowns, and deployment checklist. The physical and digital foundation for all Solo Execution Mode work.
+
 ---
 
 ## CONFIGURATION & SYSTEM FILES
