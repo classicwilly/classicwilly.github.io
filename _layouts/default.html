@@ -1353,8 +1353,8 @@
         font-size: 1rem;
         font-weight: 600;
         color: var(--text-bright);
-        background: transparent;
-        border: 2px solid var(--circuit-teal);
+        background: linear-gradient(135deg, var(--purple), var(--pink));
+        border: 2px solid var(--yellow);
         border-radius: 6px;
         padding: 1rem 2rem;
         text-decoration: none;
@@ -1363,11 +1363,11 @@
       }
       
       .secondary-button:hover {
-        border-color: var(--circuit-teal);
-        background: rgba(26,188,156,0.1);
+        background: linear-gradient(135deg, var(--orange), var(--red));
+        border-color: var(--teal);
         color: var(--text-bright);
         transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(26,188,156,0.3);
+        box-shadow: 0 4px 15px var(--pink);
       }
       
       /* Emergency Banner */
@@ -2460,11 +2460,14 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // Random twinkle speed (2-6 seconds)
-          star.style.animationDuration = `${Math.random() * 4 + 2}s, ${Math.random() * 20 + 10}s`;
+          // Random animation durations (twinkle, drift, float)
+          const twinkleDuration = Math.random() * 4 + 2; // 2-6s
+          const driftDuration = Math.random() * 20 + 10; // 10-30s
+          const floatDuration = Math.random() * 40 + 40; // 40-80s
+          star.style.animationDuration = `${twinkleDuration}s, ${driftDuration}s, ${floatDuration}s`;
           
-          // Random delay
-          star.style.animationDelay = `${Math.random() * 3}s, 0s`;
+          // Random delays
+          star.style.animationDelay = `${Math.random() * 3}s, ${Math.random() * 5}s, ${Math.random() * 10}s`;
           
           header.insertBefore(star, header.firstChild);
         }
