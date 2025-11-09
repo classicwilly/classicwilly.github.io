@@ -10,6 +10,42 @@ High-vigilance parenting protocols for custody weekends with two kids.
 
 ---
 
+## 🎯 QUICK ACCESS - INTERACTIVE TOOLS
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1.5rem; background: var(--darker-bg); border-radius: 12px; border: 3px solid var(--circuit-teal);">
+  
+  <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--orange); transition: all 0.2s;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📋</div>
+    <div style="color: var(--orange); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Weekend With Dad Checklist</div>
+    <div style="color: var(--text-light); font-size: 0.85rem;">Interactive daily checklist for kids at Dad's house (Fri-Mon)</div>
+  </a>
+  
+  <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--blue); transition: all 0.2s;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
+    <div style="color: var(--blue); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Weekdays at Mom's Protocol</div>
+    <div style="color: var(--text-light); font-size: 0.85rem;">Self-help guide for kids during the school week (Mon-Fri)</div>
+  </a>
+  
+  <a href="/daily-tracker" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--yellow); transition: all 0.2s;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
+    <div style="color: var(--yellow); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Daily Tracker (Dad's Tool)</div>
+    <div style="color: var(--text-light); font-size: 0.85rem;">Track protocols, energy, and mode status during Family Structure Mode</div>
+  </a>
+  
+  <a href="/workspace#calendar" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--green); transition: all 0.2s;">
+    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📅</div>
+    <div style="color: var(--green); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Shared Family Calendar</div>
+    <div style="color: var(--text-light); font-size: 0.85rem;">Co-parenting schedule, custody tracking, and coordination</div>
+  </a>
+
+</div>
+
+<div style="background: var(--card-dark); border-left: 4px solid var(--circuit-teal); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
+  <p style="margin: 0; color: var(--text-light);"><strong style="color: var(--circuit-teal);">💡 Pro Tip:</strong> The kids checklists are <strong>interactive</strong> - checkboxes work on screen and can be printed for pencil marking. Both protocols include sensory-friendly layouts, predictable routines, and emotional regulation tools.</p>
+</div>
+
+---
+
 ## 📋 WHERE AM I?
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
