@@ -78,42 +78,145 @@ title: Weekend With Dad - Kids Protocol
 ### 🌅 Morning Checklist (Every Day!)
 This is the same checklist that's on the fridge at home:
 
-- [ ] **Brush hair** - Get the tangles out!
-- [ ] **Brush teeth** - 2 minutes with the timer
-- [ ] **Change clothes** - Pick something comfy
-- [ ] **Breakfast** - Tell Dad what you want to eat
-- [ ] **Water** - Drink a full cup of water
-- [ ] **Medicine** - (If Dad says you need it)
-- [ ] **Pets** - Feed and give water to pets
-- [ ] Ready for the day! ⭐
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Brush hair</strong> - Get the tangles out!</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Brush teeth</strong> - 2 minutes with the timer</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Change clothes</strong> - Pick something comfy</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Breakfast</strong> - Tell Dad what you want to eat</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Water</strong> - Drink a full cup of water</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Medicine</strong> - (If Dad says you need it)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pets</strong> - Feed and give water to pets</span>
+  </label>
+  
+  <div class="checklist-complete">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Ready for the day! ⭐</span>
+    </label>
+  </div>
+</div>
 
 ### 💧 WATER TRACKER (Mandatory!)
 **Goal: 4 cups of water per day**
 
 Track your water by marking each cup you drink:
-- [ ] Cup 1 (Morning - with breakfast)
-- [ ] Cup 2 (Lunch time)
-- [ ] Cup 3 (Afternoon - with snack)
-- [ ] Cup 4 (Dinner time)
 
-**Bonus Cup**: [ ] Before bed (if you're thirsty)
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Cup 1 (Morning - with breakfast)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Cup 2 (Lunch time)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Cup 3 (Afternoon - with snack)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Cup 4 (Dinner time)</span>
+  </label>
+</div>
+
+**Bonus Cup**: 
+<label class="checkbox-item inline">
+  <input type="checkbox" class="task-checkbox">
+  <span class="checkbox-label">Before bed (if you're thirsty)</span>
+</label>
 
 ### 🍎 FOOD TRACKER (Mandatory!)
 **Make sure you eat throughout the day**
 
-- [ ] **Breakfast** - What I ate: _____________
-- [ ] **Lunch** - What I ate: _____________
-- [ ] **Snack** - What I ate: _____________
-- [ ] **Dinner** - What I ate: _____________
+<div class="interactive-checklist food-tracker">
+  <div class="food-tracker-item">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label"><strong>Breakfast</strong> - What I ate:</span>
+    </label>
+    <input type="text" class="food-input" placeholder="Type what you ate...">
+  </div>
+  
+  <div class="food-tracker-item">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label"><strong>Lunch</strong> - What I ate:</span>
+    </label>
+    <input type="text" class="food-input" placeholder="Type what you ate...">
+  </div>
+  
+  <div class="food-tracker-item">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label"><strong>Snack</strong> - What I ate:</span>
+    </label>
+    <input type="text" class="food-input" placeholder="Type what you ate...">
+  </div>
+  
+  <div class="food-tracker-item">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label"><strong>Dinner</strong> - What I ate:</span>
+    </label>
+    <input type="text" class="food-input" placeholder="Type what you ate...">
+  </div>
+</div>
 
-**Check this box if you ate at least 3 meals today**: [ ] ⭐
+**Check this box if you ate at least 3 meals today**: 
+<label class="checkbox-item inline star-checkbox">
+  <input type="checkbox" class="task-checkbox">
+  <span class="checkbox-label">⭐</span>
+</label>
 
 ### 🧹 WILLOW'S CHORES (Age 6)
 **Do these once per day (Dad will help if you ask!)**
 
-- [ ] **Straighten up your bedroom** - Put toys away, make bed
-- [ ] **Straighten up the dining room** - Push in chairs, clear any dishes
-- [ ] **Pick up your living room mess** - Put your toys in your toy bin
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Straighten up your bedroom</strong> - Put toys away, make bed</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Straighten up the dining room</strong> - Push in chairs, clear any dishes</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick up your living room mess</strong> - Put your toys in your toy bin</span>
+  </label>
+</div>
 
 **When you finish all 3**: Ask Dad for a sticker! ⭐
 
