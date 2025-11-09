@@ -13,29 +13,29 @@ title: Home
     <p class="hero-subtitle">A neurodivergent systems diagnostician building structure from chaos.</p>
     
     <!-- Status Update Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; width: 100%; max-width: 900px; margin: 1rem 0;">
-      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: 8px; padding: 1rem; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 1.5rem; margin-bottom: 0.25rem;" id="status-mode">--</div>
-        <div style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Current Mode</div>
+    <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; max-width: 800px; margin: 1rem 0;">
+      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🧠</div>
+        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-mode">--</div>
+        <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Mode</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 1.5rem; margin-bottom: 0.25rem;" id="status-streak">--</div>
-        <div style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Day Streak</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">📊</div>
+        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-streak">--</div>
+        <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Streak</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: 8px; padding: 1rem; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 1.5rem; margin-bottom: 0.25rem;" id="status-tasks">--</div>
-        <div style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Tasks Today</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">✅</div>
+        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-tasks">--</div>
+        <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Tasks</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: 8px; padding: 1rem; text-align: center;">
-        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 1.5rem; margin-bottom: 0.25rem;" id="status-energy">--</div>
-        <div style="color: var(--text-light); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Energy Level</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+        <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">⚡</div>
+        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-energy">--</div>
+        <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Energy</div>
       </div>
     </div>
     
