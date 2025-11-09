@@ -37,11 +37,17 @@ title: Weekend With Dad - Kids Protocol
 - ✅ Story time
 - ✅ Bedtime
 
-### Sunday (Same as Saturday!)
-- ✅ Same fun schedule as Saturday
-- ✅ After dinner: Pack backpacks for Monday
-- ✅ Pick out clothes for school
-- ✅ Extra long story time
+### Sunday (SPECIAL - Grandma's House Day!)
+- ✅ Wake up when you're ready
+- ✅ Breakfast together
+- ✅ **MORNING PREP TIME** (See Sunday Prep Checklist below - super important!)
+- ✅ Lunch at home (early - 11:30 AM)
+- ✅ **Leave for Grandma's house at 2:00 PM** (Jacksonville)
+- ✅ Family dinner at Grandma's house
+- ✅ Drive home (arrive around 8:00 PM)
+- ✅ **Quick bedtime routine** (already in PJs from car)
+- ✅ Short story time
+- ✅ Lights out at 9:00 PM (school tomorrow!)
 
 ### Monday Morning (6:00 AM - 8:00 AM)
 - ✅ Dad wakes you up
@@ -156,6 +162,94 @@ Track your water by marking each cup you drink:
 - **Educational Games**: 30 minutes max
 - **Family Movie**: Friday or Saturday night only
 - **Video Chat**: Call Mom if you miss her (any time!)
+
+---
+
+## 📅 SUNDAY PREP CHECKLIST (SUPER IMPORTANT!)
+
+**Why Sunday Prep Matters**: Sunday is busy! We go to Grandma's house, and Monday is a school day. Getting everything ready Sunday morning makes the day less stressful for EVERYONE. Dad needs your help!
+
+### 🌅 Sunday Morning (9:00 AM - 12:00 PM)
+
+**This happens BEFORE we leave for Grandma's. Dad will help you through each step.**
+
+#### WILLOW'S SUNDAY PREP (Age 6)
+- [ ] **Make your bed** (pull up covers, fluff pillow)
+- [ ] **Pick Monday school outfit** (lay it on your chair)
+- [ ] **Pack school backpack** (Dad helps check):
+  - [ ] Homework folder (if you have homework)
+  - [ ] Water bottle (filled)
+  - [ ] Lunch box (Dad will pack Monday morning)
+  - [ ] Any library books due
+  - [ ] Jacket or sweatshirt
+- [ ] **Do your 3 chores** (bedroom, dining room, living room)
+- [ ] **Change into comfy clothes for car ride** (leggings/sweats + cozy shirt)
+- [ ] **Bring PJs in backpack** (for car ride home - you can change at Grandma's)
+- [ ] **Pick one toy/book for car** (not iPad - that's for emergencies only)
+
+#### SEBASTIAN'S SUNDAY PREP (Age 9)
+- [ ] **Make your bed** (full bed making - sheets, blankets, pillows)
+- [ ] **Pick Monday school outfit** (lay it out ready to wear)
+- [ ] **Pack school backpack** (check yourself, Dad double-checks):
+  - [ ] All homework completed and packed
+  - [ ] Charged iPad/tablet (if you take to school)
+  - [ ] Water bottle (filled)
+  - [ ] Lunch box (empty - Dad packs Monday)
+  - [ ] Any permission slips or school papers signed
+  - [ ] PE clothes (if it's PE day)
+  - [ ] Jacket or sweatshirt
+- [ ] **Do your 3 chores** (bedroom, bathroom, living room)
+- [ ] **Help Dad with house prep** (take out trash, check pet food/water)
+- [ ] **Change into comfy clothes for car** (sweats + hoodie)
+- [ ] **Bring PJs in backpack** (change at Grandma's before we leave)
+- [ ] **Pick entertainment for car** (book, sketchpad, or handheld game - screen is OK)
+
+#### DAD'S SUNDAY PREP (You'll See Dad Doing This)
+- [ ] Pack kids' backpacks in car
+- [ ] Lay out Monday work clothes
+- [ ] Prep Monday lunch stuff (so it's fast in morning)
+- [ ] Check gas in car
+- [ ] Bring gift/food for Grandma (if we're bringing something)
+- [ ] Make sure house is locked up before we leave
+
+### 🚗 CAR PREP (Before We Leave at 2:00 PM)
+
+**Dad will check these with you:**
+- [ ] Both kids in comfy clothes (for 6-hour trip total)
+- [ ] Backpacks in car trunk
+- [ ] Water bottles for car ride
+- [ ] Snacks in car (Dad packs these)
+- [ ] Entertainment for car (books, games, music)
+- [ ] PJs in backpacks (to change at Grandma's)
+- [ ] Everyone went to bathroom
+- [ ] Pets have food and water (they stay home)
+
+### 🏠 AT GRANDMA'S HOUSE (2:00 PM - 7:30 PM)
+
+**What to Expect:**
+- Say hi to Grandma and family
+- Play with cousins (if they're there)
+- Be polite and use good manners
+- Family dinner together
+- Help clean up your plate
+- Around 7:00 PM: Change into PJs (before car ride home)
+
+**Important Rules at Grandma's:**
+1. Use inside voice
+2. Ask before taking food or drinks
+3. Stay where Dad can see you
+4. Tell Dad if you need bathroom or feel sick
+5. Say "please" and "thank you"
+
+### 🚗 CAR RIDE HOME (7:30 PM - 8:00 PM)
+
+**You're already in PJs, so when we get home:**
+- [ ] Brush teeth (quick - 2 minutes)
+- [ ] Straight to bed
+- [ ] Short story or talking time
+- [ ] Lights out at 9:00 PM (school tomorrow!)
+
+**Dad will already have everything ready because we did PREP! That's why Sunday morning prep is so important.**
 
 ---
 

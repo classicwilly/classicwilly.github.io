@@ -215,23 +215,226 @@ title: Family Structure Mode
 
 ---
 
-## SUNDAY SCHEDULE (SIMILAR STRUCTURE)
+## SUNDAY SCHEDULE (GRANDMA'S HOUSE DAY)
+
+**CRITICAL NOTE**: Sunday has the highest decision-making load and task management complexity of the entire weekend. Jacksonville family dinner requires extensive prep to prevent overwhelm for both you and the kids. This is the most structured day.
 
 ```
 6:00 AM  │ Personal Morning (FDP + Self-Regulation)
 7:00 AM  │ Morning Buffer (Children Wake Gradually)
-9:00 AM  │ Breakfast & Morning Routine (1 hr)
-10:00 AM │ Structured Activity Block (Park/Outdoor - 2 hrs)
-12:00 PM │ Lunch & Transition (1 hr)
-1:00 PM  │ Quiet Time Protocol (2 hrs) ← CRITICAL REGULATION
-3:00 PM  │ Structured Interest Block (Woodworking/Project - 2 hrs)
-5:00 PM  │ Dinner Prep & Transition (1 hr)
-6:00 PM  │ Dinner (Fixed: Roast) & Cleanup (1 hr)
-7:00 PM  │ Evening Free Time (1.5 hrs)
-8:30 PM  │ Bedtime Routine (1 hr)
-9:30 PM  │ Personal Recovery (30 min)
+9:00 AM  │ **SUNDAY PREP PROTOCOL** ← MANDATORY (See below - 3 hours)
+12:00 PM │ Early Lunch & Final Departure Prep (30 min)
+12:30 PM │ Buffer Time (30 min - use for any missed prep)
+1:00 PM  │ Final Vehicle Check & Load (1 hr)
+2:00 PM  │ **DEPART FOR JACKSONVILLE** (Grandma's house)
+2:00 PM  │ Drive to Jacksonville (~1.5 hrs with kids)
+3:30 PM  │ Arrive at Grandma's, Family Dinner
+7:30 PM  │ Depart Jacksonville
+8:00 PM  │ **ARRIVE HOME** (kids already in PJs from Grandma's)
+8:00 PM  │ Rapid Bedtime Routine (30 min - teeth, bed, short story)
+8:30 PM  │ Lights Out (school night - earlier than normal)
+9:00 PM  │ Personal Recovery & Monday Prep Check (1 hr)
 10:00 PM │ Evening Protocols (FDP - Sleep Prep/Dump/Anchor)
 ```
+
+### 🚨 SUNDAY PREP PROTOCOL (9:00 AM - 12:00 PM) - MANDATORY
+
+**Why This Matters**: Sunday involves 6 hours away from home (2 PM - 8 PM), a 3-hour round trip drive, family social obligations, and immediate Monday school/work transition. Without explicit prep, decision fatigue and task overwhelm cascade into Sunday night chaos and Monday morning disaster.
+
+**Philosophy**: Reduce ALL decision-making and task execution to pre-defined checklists. No improvisation. No "we'll figure it out later." Everything gets done Sunday morning or it doesn't happen.
+
+#### PHASE 1: Kids Prep (9:00 AM - 10:30 AM | 1.5 hours)
+**Location**: Kids' rooms + common areas
+
+**Willow's Prep** (Age 6 - Dad assists heavily):
+- [ ] Make bed (pull covers, fluff pillow)
+- [ ] Pick Monday school outfit (lay on chair)
+- [ ] Pack school backpack with Dad's help:
+  - [ ] Homework folder (if any)
+  - [ ] Water bottle (filled)
+  - [ ] Lunch box (empty - Dad packs Monday AM)
+  - [ ] Library books (if due)
+  - [ ] Jacket/sweatshirt
+- [ ] Complete 3 daily chores (bedroom, dining room, living room)
+- [ ] Change into car clothes (comfy: leggings + cozy shirt)
+- [ ] Pack PJs in backpack (for changing at Grandma's before drive home)
+- [ ] Pick one entertainment item for car (book or small toy - NO screens unless emergency)
+
+**Sebastian's Prep** (Age 9 - Mostly independent, Dad double-checks):
+- [ ] Make bed (full bed making: sheets, blankets, pillows)
+- [ ] Pick Monday school outfit (lay out complete)
+- [ ] Pack school backpack (self-check, Dad verifies):
+  - [ ] All homework completed and packed
+  - [ ] iPad/tablet charged (if school device)
+  - [ ] Water bottle (filled)
+  - [ ] Lunch box (empty - Dad packs Monday AM)
+  - [ ] Permission slips/school papers signed
+  - [ ] PE clothes (if PE day)
+  - [ ] Jacket/sweatshirt
+- [ ] Complete 3 daily chores (bedroom, bathroom, living room)
+- [ ] Help Dad with house prep (trash out, pet check)
+- [ ] Change into car clothes (sweats + hoodie)
+- [ ] Pack PJs in backpack (for Grandma's)
+- [ ] Pick car entertainment (book, sketchpad, handheld game - screens OK for Sebastian)
+
+**Dad's Role During Phase 1**:
+- Supervise Willow closely (she needs more help)
+- Spot-check Sebastian (he's more independent)
+- Answer questions without making new decisions ("stick to the list")
+- Keep kids on task without creating stress
+
+#### PHASE 2: House Prep (10:30 AM - 11:15 AM | 45 minutes)
+**Location**: Whole house
+
+- [ ] **Kids' backpacks loaded in car trunk** (done and forgotten)
+- [ ] **Pets sorted**:
+  - [ ] Food bowls filled (enough for 6 hours)
+  - [ ] Water bowls filled
+  - [ ] Litter box clean (if applicable)
+  - [ ] Pets have safe space while house empty
+- [ ] **House security**:
+  - [ ] All windows closed
+  - [ ] Doors locked (check front, back, garage)
+  - [ ] Valuables secured
+  - [ ] Lights on timers (if applicable)
+- [ ] **Monday Prep** (reduces Monday AM chaos):
+  - [ ] Lay out Monday work clothes (full outfit: underwear to shoes)
+  - [ ] Prep Monday lunch components (washed fruit, prepped veggies, ready to assemble)
+  - [ ] Coffee maker prepped (ready to brew - just hit button)
+  - [ ] Work bag packed (laptop, charger, keys, wallet, phone)
+
+#### PHASE 3: Personal & Vehicle Prep (11:15 AM - 12:00 PM | 45 minutes)
+**Location**: Bathroom, bedroom, garage
+
+**Personal Prep**:
+- [ ] Shower (if needed - you'll be with family for 5+ hours)
+- [ ] Change into "Grandma-appropriate" clothes (clean, casual, comfortable for driving)
+- [ ] Medication check (did you take Sunday AM pills?)
+- [ ] Hydration (drink full water bottle - you're about to drive)
+- [ ] Mental prep: "Social mode active. High vigilance. Short duration. You can do this."
+
+**Vehicle Prep**:
+- [ ] **Gas check** (at least 1/2 tank - no stopping with kids in car)
+- [ ] **Kids' car entertainment loaded**:
+  - [ ] Willow's book/toy accessible
+  - [ ] Sebastian's entertainment accessible
+  - [ ] Backup snacks in car (goldfish, granola bars - non-messy)
+  - [ ] Water bottles in cup holders
+  - [ ] Charging cables for devices (if needed)
+- [ ] **Adult vehicle needs**:
+  - [ ] Bubble Shield charged and in car (Soundcore Space One - for sensory regulation if needed)
+  - [ ] Sunglasses accessible
+  - [ ] Phone charged + car charger ready
+  - [ ] GPS/directions to Grandma's loaded (even if you know the way - reduces cognitive load)
+- [ ] **Gift/contribution for Grandma** (if bringing food, gifts, etc.):
+  - [ ] Loaded in car
+  - [ ] Not forgotten in fridge/counter
+
+**Final Check** (11:55 AM):
+- [ ] Kids in car clothes? ✓
+- [ ] Kids' backpacks in trunk? ✓
+- [ ] PJs packed for kids? ✓
+- [ ] House locked? ✓
+- [ ] Pets sorted? ✓
+- [ ] Gas sufficient? ✓
+- [ ] Car entertainment ready? ✓
+- [ ] Monday prep complete? ✓
+
+#### PHASE 4: Early Lunch & Buffer (12:00 PM - 1:00 PM | 1 hour)
+- **12:00 PM - 12:30 PM**: Quick lunch at home
+  - Simple, no-cook meal (sandwiches, leftovers, cereal)
+  - Hydration check for everyone
+  - Bathroom break for kids (mandatory - no stops on road)
+- **12:30 PM - 1:00 PM**: Buffer time
+  - Use for any missed prep tasks
+  - Calm down period (no new activities)
+  - Final mental prep: "Everything is ready. We just drive now."
+
+#### PHASE 5: Final Load & Departure (1:00 PM - 2:00 PM | 1 hour)
+- **1:00 PM - 1:45 PM**: Final vehicle check
+  - Kids use bathroom (last chance)
+  - Load any last-minute items
+  - Kids get in car seats/belts
+  - Final house walkthrough (did we forget anything?)
+- **1:45 PM - 2:00 PM**: Departure buffer
+  - If ready early, leave early (less stress)
+  - If on time, leave at 2:00 PM sharp
+  - **NO LATE DEPARTURES** (creates rushed driving, stressed arrival)
+
+### 🏠 AT GRANDMA'S HOUSE (3:30 PM - 7:30 PM | 4 hours)
+
+**Your Role**: High vigilance, low stimulation (for yourself)
+
+**Kids' Expectations** (covered in their SOP, but you enforce):
+- Use inside voices
+- Ask before taking food/drinks
+- Stay in visible areas
+- Use manners (please/thank you)
+- Tell you if bathroom needed or feeling sick
+
+**Your Strategy**:
+- **Bubble Shield available** (Profile 2.0 in pocket if social overwhelm hits)
+- **Low conversation energy** (you don't have to be "on" - presence is enough)
+- **Monitor kids without micromanaging** (they know the rules)
+- **Eat, hydrate, use bathroom** (take care of your needs)
+- **Around 7:00 PM**: Initiate kids' PJ change (before drive home)
+  - "Sebastian, Willow - go change into PJs now. We're leaving in 30 minutes."
+  - Reduces home arrival chaos (they'll be ready for bed)
+
+### 🚗 DRIVE HOME (7:30 PM - 8:00 PM | 30 minutes)
+
+**Kids**: Already in PJs, may fall asleep in car (ideal)
+
+**You**: Focus on driving, minimize conversation
+
+**Arrive Home 8:00 PM**:
+- Kids already in PJs ✓
+- Backpacks already in trunk for Monday ✓
+- Monday clothes already laid out ✓
+- Monday lunch prep already done ✓
+
+**This is why Sunday Prep matters.**
+
+### 🌙 RAPID BEDTIME ROUTINE (8:00 PM - 8:30 PM | 30 minutes)
+
+**Simplified Sunday Night** (school tomorrow, everyone's tired):
+- 8:00 PM: Arrive home, unload kids
+- 8:05 PM: Teeth brushing (quick - 2 minutes)
+- 8:10 PM: Straight to beds
+- 8:15 PM: Short story time or calm talking (no long books)
+- 8:30 PM: **Lights out** (earlier than usual - school tomorrow)
+
+**No bath needed** (they showered Saturday night, going straight to school Monday AM)
+
+### 😤 PERSONAL RECOVERY (8:30 PM - 10:00 PM | 1.5 hours)
+
+**You just completed**:
+- 3 hours of intensive Sunday prep coordination
+- 6 hours away from home with kids
+- 3 hours total driving
+- 4 hours of social/family obligations
+
+**Recovery Protocol**:
+- **8:30 PM - 9:00 PM**: House reset (30 min)
+  - Unload car (backpacks stay in trunk for Monday - DON'T bring inside)
+  - Quick kitchen tidy (no deep clean)
+  - Pets check-in
+  - Decompress (sit down, breathe)
+- **9:00 PM - 9:30 PM**: Monday AM final check (30 min)
+  - Verify Monday outfit laid out ✓
+  - Verify lunch prep done ✓
+  - Verify coffee ready ✓
+  - Verify kids' backpacks in car ✓
+  - Set alarm for Monday 6 AM
+- **9:30 PM - 10:00 PM**: Personal wind down (30 min)
+  - Shower (if needed)
+  - Hydration
+  - Sensory regulation (Bubble Shield cooldown, calm environment)
+
+### 10:00 PM - 10:30 PM | Evening Protocols
+- **FDP Active**: Sleep Anchor Prep → Daily Dump → Sleep Anchor (30 minutes)
+- **Status**: Foundation running
+- **Note**: You did Sunday. Monday will be easier because of today's prep.
 
 ---
 
