@@ -1302,34 +1302,61 @@
         text-align: center;
         position: relative;
         z-index: 2;
+        filter: grayscale(0%);
+        transition: all 0.3s ease;
+      }
+      
+      .timeline-item:hover .timeline-icon {
+        filter: drop-shadow(0 0 10px var(--teal));
+        transform: scale(1.1);
       }
       
       .timeline-content {
         flex: 1;
         background: var(--card-dark);
-        border: 1px solid var(--border-gray);
-        border-radius: 8px;
-        padding: 1.5rem;
+        border: 2px solid var(--border-gray);
+        border-radius: 12px;
+        padding: 2rem;
         transition: all 0.3s ease;
         cursor: default;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .timeline-content::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink), var(--orange));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
       }
       
       .timeline-item:hover .timeline-content {
-        border-color: var(--teal);
+        border-color: var(--yellow);
         background: rgba(22, 27, 34, 0.9);
-        transform: translateX(5px);
-        box-shadow: 0 4px 20px var(--pink), 0 0 40px rgba(233, 30, 99, 0.3);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px var(--purple);
+      }
+      
+      .timeline-item:hover .timeline-content::before {
+        transform: scaleX(1);
       }
       
       .timeline-content h3 {
         font-family: 'IBM Plex Mono', monospace;
-        color: var(--circuit-teal);
-        margin-bottom: 0.5rem;
+        font-size: 1.5rem;
+        color: var(--orange);
+        margin-bottom: 0.75rem;
         transition: color 0.3s ease;
       }
       
       .timeline-item:hover .timeline-content h3 {
-        color: var(--orange);
+        color: var(--pink);
       }
       
       .timeline-content p {
