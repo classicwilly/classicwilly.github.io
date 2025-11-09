@@ -489,23 +489,37 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
 
 **Before Dad picks you up, think about this week:**
 
-The hardest part of this week was:
-_______________________________________
-
-Something good that happened:
-_______________________________________
-
-Something I did that I'm proud of:
-_______________________________________
-
-Something I want to tell Dad:
-_______________________________________
-
-Something I need help with:
-_______________________________________
-
-One thing that would make next week easier:
-_______________________________________
+<div class="interactive-checklist">
+  <div class="notes-section">
+    <label class="notes-label"><strong>The hardest part of this week was:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>Something good that happened:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>Something I did that I'm proud of:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>Something I want to tell Dad:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>Something I need help with:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>One thing that would make next week easier:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+</div>
 
 ---
 
@@ -518,7 +532,13 @@ _______________________________________
 - **Someone touches you wrong**: Tell Mom, tell Dad, tell a teacher immediately
 
 ### Dad's Phone Number
-Write it here: _______________________
+
+<div class="interactive-checklist">
+  <div class="notes-section">
+    <label class="notes-label"><strong>Write Dad's phone number here:</strong></label>
+    <input type="tel" class="text-input-field" placeholder="(555) 123-4567" style="width: 100%; padding: 0.75rem; font-size: 1.1rem;">
+  </div>
+</div>
 
 **You can ALWAYS call Dad. Anytime. Day or night. Even if Mom says no.**
 

@@ -1043,20 +1043,32 @@ You don't have to be perfect. You don't have to be happy all the time. You just 
 
 **Your Private Section** - Write or draw here:
 
-What I want to do next weekend:
-_______________________________________
-
-What made me happy this weekend:
-_______________________________________
-
-What made me sad this weekend:
-_______________________________________
-
-What I want to tell Dad but haven't yet:
-_______________________________________
-
-What would make weekends better:
-_______________________________________
+<div class="interactive-checklist">
+  <div class="notes-section">
+    <label class="notes-label"><strong>What I want to do next weekend:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>What made me happy this weekend:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>What made me sad this weekend:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>What I want to tell Dad but haven't yet:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+  
+  <div class="notes-section">
+    <label class="notes-label"><strong>What would make weekends better:</strong></label>
+    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+  </div>
+</div>
 
 ---
 
