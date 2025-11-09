@@ -18,7 +18,7 @@ title: Home
     
     <h1 class="hero-title glitch" data-text="I FIX STUFF">I FIX STUFF</h1>
     
-    <div class="page-navigation" style="margin: 2rem 0;">
+    <div class="page-navigation" style="margin: 1rem 0;">
       <div class="nav-section">
         <h4>📍 WHERE AM I?</h4>
         <p><strong>Homepage of the Wonky Sprout Operating System</strong> - my personal neurodivergent life management system. This is where chaos gets systematized. I'm classicwilly: 40, Autism/ADHD, systems diagnostician. I fix stuff.</p>
