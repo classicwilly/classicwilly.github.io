@@ -476,7 +476,7 @@
         position: relative;
         background: var(--card-dark);
         color: var(--text-light);
-        border: 2px solid var(--border-gray);
+        border: none;
         padding: 0.5rem 1rem;
         border-radius: 12px;
         cursor: pointer;
@@ -487,42 +487,22 @@
         overflow: hidden;
       }
       
-      .checklist-controls button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .checklist-controls button:hover {
-        border-color: var(--yellow);
+        color: var(--text-bright);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .checklist-controls button:hover::before {
-        opacity: 1;
       }
       
       .checklist-controls button.secondary {
         background: var(--card-dark);
         color: var(--text-light);
-        border: 2px solid var(--border-gray);
+        border: none;
       }
       
       .checklist-controls button.secondary:hover {
-        border-color: var(--yellow);
+        color: var(--text-bright);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .checklist-controls button.secondary:hover::before {
-        opacity: 1;
       }
       
       .checklist-progress {
@@ -1243,7 +1223,7 @@
       
       .module-card {
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         padding: 2rem;
         transition: all 0.3s ease;
@@ -1251,26 +1231,9 @@
         overflow: hidden;
       }
       
-      .module-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .module-card:hover {
-        border-color: var(--yellow);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .module-card:hover::before {
-        opacity: 1;
       }
       
       .module-icon {
@@ -1402,7 +1365,7 @@
       .timeline-content {
         flex: 1;
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         padding: 2rem;
         transition: all 0.3s ease;
@@ -1411,27 +1374,10 @@
         overflow: hidden;
       }
       
-      .timeline-content::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .timeline-item:hover .timeline-content {
-        border-color: var(--yellow);
         background: rgba(22, 27, 34, 0.9);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .timeline-item:hover .timeline-content::before {
-        opacity: 1;
       }
       
       .timeline-content h3 {
@@ -1568,7 +1514,7 @@
       
       .testimonial-card {
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         padding: 2rem;
         max-width: 900px;
@@ -1578,26 +1524,9 @@
         overflow: hidden;
       }
       
-      .testimonial-card::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .testimonial-card:hover {
-        border-color: var(--yellow);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .testimonial-card:hover::before {
-        opacity: 1;
       }
       
       .testimonial-meta {
