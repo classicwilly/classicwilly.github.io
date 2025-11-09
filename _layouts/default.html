@@ -225,6 +225,17 @@
         color: var(--hover-blue);
       }
       
+      /* Override for styled buttons inside content-card */
+      .content-card .cta-button,
+      .content-card .secondary-button {
+        border-bottom: none;
+      }
+      
+      .content-card .cta-button:hover,
+      .content-card .secondary-button:hover {
+        border-bottom: none;
+      }
+      
       .content-card code {
         font-family: 'IBM Plex Mono', monospace;
         background: var(--darker-bg);
@@ -1264,12 +1275,25 @@
         border: 1px solid var(--border-gray);
         border-radius: 8px;
         padding: 1.5rem;
+        transition: all 0.3s ease;
+        cursor: default;
+      }
+      
+      .timeline-item:hover .timeline-content {
+        border-color: var(--circuit-teal);
+        background: rgba(22, 27, 34, 0.9);
+        transform: translateX(5px);
       }
       
       .timeline-content h3 {
         font-family: 'IBM Plex Mono', monospace;
         color: var(--circuit-teal);
         margin-bottom: 0.5rem;
+        transition: color 0.3s ease;
+      }
+      
+      .timeline-item:hover .timeline-content h3 {
+        color: var(--hover-blue);
       }
       
       .timeline-content p {
@@ -1290,22 +1314,40 @@
       }
       
       .secondary-button {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 1rem;
-        color: var(--text-light);
+        font-weight: 600;
+        color: var(--text-bright);
         background: transparent;
-        border: 2px solid var(--border-gray);
+        border: 2px solid var(--circuit-teal);
         border-radius: 6px;
         padding: 1rem 2rem;
         text-decoration: none;
         transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .secondary-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(26,188,156,0.2), transparent);
+        animation: buttonGlow 4s infinite;
       }
       
       .secondary-button:hover {
         border-color: var(--circuit-teal);
+        background: rgba(26,188,156,0.1);
         color: var(--text-bright);
         transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(26,188,156,0.3);
       }
       
       /* Footer Navigation */
