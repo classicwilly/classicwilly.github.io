@@ -939,6 +939,52 @@
         }
       }
       
+      /* Back to Top Button */
+      .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 50px;
+        height: 50px;
+        background: var(--card-dark);
+        border: 2px solid var(--circuit-teal);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 9999;
+        font-size: 1.5rem;
+        color: var(--circuit-teal);
+        text-decoration: none;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+      
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      
+      .back-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 6px 20px rgba(0, 0, 0, 0.6);
+        border-color: var(--purple);
+        color: var(--purple);
+      }
+      
+      @media (max-width: 768px) {
+        .back-to-top {
+          bottom: 1rem;
+          right: 1rem;
+          width: 45px;
+          height: 45px;
+          font-size: 1.3rem;
+        }
+      }
+      
       .tracker-date, .tracker-mode {
         display: flex;
         align-items: center;
@@ -3368,6 +3414,42 @@
         }
         
         console.log('Created 80 stars');
+      })();
+    </script>
+    
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      ↑
+    </a>
+    
+    <script>
+      // Back to Top Button Functionality
+      (function() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        // Show/hide button based on scroll position
+        function toggleBackToTop() {
+          if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+          } else {
+            backToTopButton.classList.remove('visible');
+          }
+        }
+        
+        // Smooth scroll to top
+        backToTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        
+        // Listen for scroll events
+        window.addEventListener('scroll', toggleBackToTop);
+        
+        // Check on page load
+        toggleBackToTop();
       })();
     </script>
   </body>
