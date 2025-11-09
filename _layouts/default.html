@@ -1293,9 +1293,25 @@
         font-family: 'IBM Plex Mono', monospace;
         font-size: 2.5rem;
         text-align: center;
-        color: var(--text-bright);
+        color: var(--orange);
         margin-bottom: 4rem;
         letter-spacing: 2px;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+      
+      .origin-title::before {
+        content: '◆';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-7rem);
+        top: 50%;
+        transform: translateX(-7rem) translateY(-50%);
+        color: var(--pink);
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1.2rem;
       }
       
       .timeline {
@@ -1422,26 +1438,44 @@
       .secondary-button {
         display: inline-flex;
         align-items: center;
+        justify-content: center;
         gap: 0.5rem;
         font-family: 'IBM Plex Mono', monospace;
         font-size: 1rem;
         font-weight: 600;
         color: var(--text-bright);
-        background: linear-gradient(135deg, var(--purple), var(--pink));
-        border: 2px solid var(--yellow);
-        border-radius: 6px;
-        padding: 1rem 2rem;
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: 12px;
+        padding: 2rem;
         text-decoration: none;
         transition: all 0.3s ease;
         position: relative;
+        overflow: hidden;
+      }
+      
+      .secondary-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink), var(--orange));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
       }
       
       .secondary-button:hover {
-        background: linear-gradient(135deg, var(--orange), var(--red));
-        border-color: var(--teal);
+        border-color: var(--yellow);
         color: var(--text-bright);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 15px var(--pink);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px var(--purple);
+      }
+      
+      .secondary-button:hover::before {
+        transform: scaleX(1);
       }
       
       /* Emergency Banner */
@@ -1497,10 +1531,25 @@
       .section-title {
         text-align: center;
         font-size: 2rem;
-        color: var(--text-bright);
+        color: var(--orange);
         margin-bottom: 2rem;
         font-weight: 700;
         letter-spacing: 1px;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+      }
+      
+      .section-title::before {
+        content: '◆';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-6rem) translateY(-50%);
+        top: 50%;
+        color: var(--pink);
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
       }
       
       .testimonial-card {
