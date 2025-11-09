@@ -187,4 +187,4 @@ title: Daily Tracker
 - Review patterns weekly during Weekly Review Protocol
 - If completion rates drop below 70% for 3+ days: Emergency system review required
 
-**[View All Protocols →](sop-vault) | [Full Checklists →](checklists)**
+**[View Your Stats →](tracker-stats) | [All Protocols →](sop-vault) | [Checklists →](checklists)**

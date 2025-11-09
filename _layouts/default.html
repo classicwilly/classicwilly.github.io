@@ -595,6 +595,294 @@
         box-shadow: 0 0 0 3px rgba(26,188,156,0.1);
       }
       
+      /* Tracker Stats Styles */
+      .streak-display {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+      }
+      
+      .streak-card {
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: 12px;
+        padding: 2rem;
+        min-width: 150px;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      
+      .streak-card:hover {
+        border-color: var(--circuit-teal);
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(26,188,156,0.2);
+      }
+      
+      .streak-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      .streak-number {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--circuit-teal);
+        line-height: 1;
+        margin-bottom: 0.5rem;
+      }
+      
+      .streak-label {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      .completion-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+        gap: 6px;
+        margin: 2rem 0;
+      }
+      
+      .grid-day {
+        aspect-ratio: 1;
+        border-radius: 4px;
+        border: 1px solid var(--border-gray);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+      }
+      
+      .grid-day:hover {
+        transform: scale(1.1);
+        z-index: 10;
+      }
+      
+      .grid-day.empty {
+        background: var(--darker-bg);
+      }
+      
+      .grid-day.low {
+        background: #7c2d12;
+      }
+      
+      .grid-day.medium {
+        background: #d97706;
+      }
+      
+      .grid-day.high {
+        background: var(--sprout-green);
+      }
+      
+      .grid-day.full {
+        background: var(--circuit-teal);
+      }
+      
+      .grid-day::after {
+        content: attr(data-date);
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.7rem;
+        color: var(--text-light);
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s;
+      }
+      
+      .grid-day:hover::after {
+        opacity: 1;
+      }
+      
+      .grid-legend {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        font-size: 0.85rem;
+      }
+      
+      .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .legend-box {
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        border: 1px solid var(--border-gray);
+      }
+      
+      .legend-box.empty { background: var(--darker-bg); }
+      .legend-box.low { background: #7c2d12; }
+      .legend-box.medium { background: #d97706; }
+      .legend-box.high { background: var(--sprout-green); }
+      .legend-box.full { background: var(--circuit-teal); }
+      
+      .protocol-stats {
+        margin: 2rem 0;
+      }
+      
+      .stat-row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      .stat-label {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        min-width: 200px;
+        color: var(--text-bright);
+      }
+      
+      .stat-bar {
+        flex: 1;
+        height: 30px;
+        background: var(--darker-bg);
+        border-radius: 6px;
+        border: 1px solid var(--border-gray);
+        overflow: hidden;
+        position: relative;
+      }
+      
+      .stat-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--sprout-green), var(--circuit-teal));
+        transition: width 1s ease;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 0.5rem;
+      }
+      
+      .stat-percent {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        min-width: 60px;
+        text-align: right;
+        color: var(--circuit-teal);
+      }
+      
+      .rating-stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .rating-item {
+        background: var(--card-dark);
+        border: 1px solid var(--border-gray);
+        border-radius: 8px;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .rating-icon {
+        font-size: 2.5rem;
+      }
+      
+      .rating-info {
+        flex: 1;
+      }
+      
+      .rating-name {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.85rem;
+        color: var(--text-light);
+        margin-bottom: 0.25rem;
+      }
+      
+      .rating-value {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--circuit-teal);
+      }
+      
+      .insights-section {
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin: 2rem 0;
+      }
+      
+      .insight-item {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--border-gray);
+      }
+      
+      .insight-item:last-child {
+        border-bottom: none;
+      }
+      
+      .insight-icon {
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+      
+      .insight-text {
+        color: var(--text-light);
+      }
+      
+      .history-section {
+        margin: 2rem 0;
+      }
+      
+      .history-entry {
+        background: var(--card-dark);
+        border: 1px solid var(--border-gray);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .history-entry:hover {
+        border-color: var(--circuit-teal);
+        transform: translateX(4px);
+      }
+      
+      .history-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+      
+      .history-date {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 600;
+        color: var(--text-bright);
+      }
+      
+      .history-rating {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.2rem;
+        color: var(--circuit-teal);
+      }
+      
+      .history-summary {
+        font-size: 0.9rem;
+        color: var(--text-light);
+      }
+      
       /* Print Styles */
       @media print {
         body {
@@ -744,6 +1032,7 @@
       <a href="/sop-vault">SOP Vault</a>
       <a href="/checklists">Checklists</a>
       <a href="/daily-tracker">Daily Tracker</a>
+      <a href="/tracker-stats">Stats</a>
       <a href="/fix">Fix-It Blueprint</a>
     </nav>
     
@@ -1057,6 +1346,319 @@
           
           console.log('Daily tracker initialized');
         }
+        
+        // Tracker Stats System
+        function initializeTrackerStats() {
+          // Check if we're on the stats page
+          if (!document.querySelector('.streak-display')) return;
+          
+          console.log('Initializing tracker stats...');
+          
+          // Get all tracker data from localStorage
+          function getAllTrackerData() {
+            const allData = [];
+            const trackerPrefix = 'daily_tracker_';
+            
+            for (let i = 0; i < localStorage.length; i++) {
+              const key = localStorage.key(i);
+              if (key && key.startsWith(trackerPrefix)) {
+                try {
+                  const data = JSON.parse(localStorage.getItem(key));
+                  if (data && data.date) {
+                    allData.push({
+                      date: data.date,
+                      ...data
+                    });
+                  }
+                } catch (e) {
+                  console.error('Error parsing tracker data:', e);
+                }
+              }
+            }
+            
+            // Sort by date descending
+            return allData.sort((a, b) => new Date(b.date) - new Date(a.date));
+          }
+          
+          const allData = getAllTrackerData();
+          console.log('Found', allData.length, 'tracker entries');
+          
+          // Calculate streaks
+          function calculateStreaks() {
+            if (allData.length === 0) return { current: 0, longest: 0, total: 0 };
+            
+            const dates = allData.map(d => d.date).sort();
+            let currentStreak = 0;
+            let longestStreak = 0;
+            let tempStreak = 1;
+            
+            const today = new Date().toISOString().split('T')[0];
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            
+            // Check if streak is current (today or yesterday has entry)
+            if (dates.includes(today) || dates.includes(yesterday)) {
+              currentStreak = 1;
+              
+              // Count backwards from most recent
+              for (let i = dates.length - 1; i > 0; i--) {
+                const current = new Date(dates[i]);
+                const previous = new Date(dates[i - 1]);
+                const dayDiff = Math.floor((current - previous) / 86400000);
+                
+                if (dayDiff === 1) {
+                  currentStreak++;
+                } else {
+                  break;
+                }
+              }
+            }
+            
+            // Calculate longest streak
+            for (let i = 1; i < dates.length; i++) {
+              const current = new Date(dates[i]);
+              const previous = new Date(dates[i - 1]);
+              const dayDiff = Math.floor((current - previous) / 86400000);
+              
+              if (dayDiff === 1) {
+                tempStreak++;
+              } else {
+                longestStreak = Math.max(longestStreak, tempStreak);
+                tempStreak = 1;
+              }
+            }
+            longestStreak = Math.max(longestStreak, tempStreak);
+            
+            return {
+              current: currentStreak,
+              longest: longestStreak,
+              total: dates.length
+            };
+          }
+          
+          const streaks = calculateStreaks();
+          
+          // Update streak display
+          document.getElementById('current-streak').textContent = streaks.current;
+          document.getElementById('longest-streak').textContent = streaks.longest;
+          document.getElementById('total-days').textContent = streaks.total;
+          
+          // Generate completion grid (last 30 days)
+          function generateCompletionGrid() {
+            const grid = document.getElementById('completion-grid');
+            if (!grid) return;
+            
+            const today = new Date();
+            const days = [];
+            
+            // Generate last 30 days
+            for (let i = 29; i >= 0; i--) {
+              const date = new Date(today);
+              date.setDate(date.getDate() - i);
+              const dateStr = date.toISOString().split('T')[0];
+              
+              // Find data for this date
+              const dayData = allData.find(d => d.date === dateStr);
+              
+              let completionClass = 'empty';
+              let completionPercent = 0;
+              
+              if (dayData && dayData.overallRating) {
+                const rating = parseInt(dayData.overallRating);
+                completionPercent = rating * 10;
+                
+                if (rating >= 9) completionClass = 'full';
+                else if (rating >= 7) completionClass = 'high';
+                else if (rating >= 4) completionClass = 'medium';
+                else if (rating >= 1) completionClass = 'low';
+              }
+              
+              const dayDiv = document.createElement('div');
+              dayDiv.className = `grid-day ${completionClass}`;
+              dayDiv.setAttribute('data-date', dateStr);
+              dayDiv.title = `${dateStr}: ${completionPercent}%`;
+              
+              grid.appendChild(dayDiv);
+            }
+          }
+          
+          generateCompletionGrid();
+          
+          // Calculate protocol completion rates (last 30 days)
+          function calculateCompletionRates() {
+            const last30Days = allData.filter(d => {
+              const date = new Date(d.date);
+              const cutoff = new Date();
+              cutoff.setDate(cutoff.getDate() - 30);
+              return date >= cutoff;
+            });
+            
+            if (last30Days.length === 0) return;
+            
+            // Foundational: out of 11
+            const foundationalTotal = last30Days.reduce((sum, d) => {
+              return sum + (parseInt(d.metricFoundational) || 0);
+            }, 0);
+            const foundationalRate = Math.round((foundationalTotal / (last30Days.length * 11)) * 100);
+            
+            // Morning: out of 4
+            const morningTotal = last30Days.reduce((sum, d) => {
+              return sum + (parseInt(d.metricMorning) || 0);
+            }, 0);
+            const morningRate = Math.round((morningTotal / (last30Days.length * 4)) * 100);
+            
+            // Mode: out of 4
+            const modeTotal = last30Days.reduce((sum, d) => {
+              return sum + (parseInt(d.metricMode) || 0);
+            }, 0);
+            const modeRate = Math.round((modeTotal / (last30Days.length * 4)) * 100);
+            
+            // Hierarchy: out of 4
+            const hierarchyTotal = last30Days.reduce((sum, d) => {
+              return sum + (parseInt(d.metricHierarchy) || 0);
+            }, 0);
+            const hierarchyRate = Math.round((hierarchyTotal / (last30Days.length * 4)) * 100);
+            
+            // Update UI
+            document.getElementById('foundational-rate').style.width = `${foundationalRate}%`;
+            document.getElementById('foundational-percent').textContent = `${foundationalRate}%`;
+            
+            document.getElementById('morning-rate').style.width = `${morningRate}%`;
+            document.getElementById('morning-percent').textContent = `${morningRate}%`;
+            
+            document.getElementById('mode-rate').style.width = `${modeRate}%`;
+            document.getElementById('mode-percent').textContent = `${modeRate}%`;
+            
+            document.getElementById('hierarchy-rate').style.width = `${hierarchyRate}%`;
+            document.getElementById('hierarchy-percent').textContent = `${hierarchyRate}%`;
+          }
+          
+          calculateCompletionRates();
+          
+          // Calculate average ratings
+          function calculateAverageRatings() {
+            const last30Days = allData.filter(d => {
+              const date = new Date(d.date);
+              const cutoff = new Date();
+              cutoff.setDate(cutoff.getDate() - 30);
+              return date >= cutoff;
+            });
+            
+            if (last30Days.length === 0) return;
+            
+            const averages = {
+              sleep: 0,
+              food: 0,
+              water: 0,
+              medicine: 0
+            };
+            
+            let counts = { sleep: 0, food: 0, water: 0, medicine: 0 };
+            
+            last30Days.forEach(d => {
+              if (d.ratingSleep) { averages.sleep += parseInt(d.ratingSleep); counts.sleep++; }
+              if (d.ratingFood) { averages.food += parseInt(d.ratingFood); counts.food++; }
+              if (d.ratingWater) { averages.water += parseInt(d.ratingWater); counts.water++; }
+              if (d.ratingMedicine) { averages.medicine += parseInt(d.ratingMedicine); counts.medicine++; }
+            });
+            
+            document.getElementById('avg-sleep').textContent = 
+              counts.sleep > 0 ? `${(averages.sleep / counts.sleep).toFixed(1)}/10` : '-/10';
+            document.getElementById('avg-food').textContent = 
+              counts.food > 0 ? `${(averages.food / counts.food).toFixed(1)}/10` : '-/10';
+            document.getElementById('avg-water').textContent = 
+              counts.water > 0 ? `${(averages.water / counts.water).toFixed(1)}/10` : '-/10';
+            document.getElementById('avg-medicine').textContent = 
+              counts.medicine > 0 ? `${(averages.medicine / counts.medicine).toFixed(1)}/10` : '-/10';
+          }
+          
+          calculateAverageRatings();
+          
+          // Generate insights
+          function generateInsights() {
+            const insights = document.getElementById('insights');
+            if (!insights) return;
+            
+            const insightsList = [];
+            
+            if (streaks.current >= 7) {
+              insightsList.push('🔥 <strong>Hot streak!</strong> You\'ve tracked for 7+ days straight.');
+            } else if (streaks.current >= 3) {
+              insightsList.push('✅ <strong>Building momentum.</strong> Keep the streak going!');
+            }
+            
+            if (allData.length >= 30) {
+              insightsList.push('📊 <strong>Full dataset.</strong> You have 30+ days of tracking data.');
+            }
+            
+            // Check for low priority hierarchy scores
+            const recentLowScores = allData.slice(0, 7).filter(d => {
+              const sleep = parseInt(d.ratingSleep) || 10;
+              const food = parseInt(d.ratingFood) || 10;
+              const water = parseInt(d.ratingWater) || 10;
+              const medicine = parseInt(d.ratingMedicine) || 10;
+              return sleep < 7 || food < 7 || water < 7 || medicine < 7;
+            });
+            
+            if (recentLowScores.length >= 3) {
+              insightsList.push('⚠️ <strong>Priority alert:</strong> Multiple low scores in foundational protocols. Review sleep/food/water/medicine.');
+            }
+            
+            if (insightsList.length === 0) {
+              insightsList.push('📝 Keep tracking to generate insights and patterns.');
+            }
+            
+            insights.innerHTML = insightsList.map(insight => 
+              `<div class="insight-item"><span class="insight-text">${insight}</span></div>`
+            ).join('');
+          }
+          
+          generateInsights();
+          
+          // Generate history list
+          function generateHistoryList() {
+            const historyList = document.getElementById('history-list');
+            if (!historyList) return;
+            
+            if (allData.length === 0) {
+              historyList.innerHTML = '<p style="text-align:center;color:var(--text-light);">No tracker entries yet. Start tracking on the <a href="/daily-tracker">Daily Tracker</a> page.</p>';
+              return;
+            }
+            
+            const html = allData.slice(0, 10).map(entry => {
+              const overallRating = entry.overallRating || '?';
+              const mode = entry.mode === 'solo' ? 'Solo Execution' : entry.mode === 'family' ? 'Family Structure' : 'Unknown';
+              
+              return `
+                <div class="history-entry">
+                  <div class="history-header">
+                    <div class="history-date">${entry.date}</div>
+                    <div class="history-rating">${overallRating}/10</div>
+                  </div>
+                  <div class="history-summary">
+                    Mode: ${mode} | 
+                    Foundational: ${entry.metricFoundational || 0}/11 | 
+                    Morning: ${entry.metricMorning || 0}/4
+                  </div>
+                </div>
+              `;
+            }).join('');
+            
+            historyList.innerHTML = html;
+            
+            if (allData.length > 10) {
+              historyList.innerHTML += '<p style="text-align:center;color:var(--text-light);margin-top:1rem;">Showing 10 most recent entries.</p>';
+            }
+          }
+          
+          generateHistoryList();
+          
+          console.log('Tracker stats initialized');
+        }
+        
+        // Initialize stats when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+          initializeTrackerStats();
+        });
       })();
     </script>
   </body>
