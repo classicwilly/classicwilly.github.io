@@ -2427,117 +2427,125 @@
         let charIndex = 0;
         let currentMessage = "";
         
-        // Chaos Tamer Animation - Smooth morphing jitterbug
-        let geometricNodes = [];
-        let structureProgress = 0; // 0 = chaos, 1 = structure
-        let rotationAngle = 0;
+        // Wave Interference → Standing Wave Animation
+        let waves = [];
+        let structureProgress = 0; // 0 = chaotic waves, 1 = harmonic standing wave
+        let time = 0;
         
-        // Initialize geometric nodes
-        function initChaos() {
-          geometricNodes = [];
-          const centerX = width / 2;
-          const centerY = height / 2;
-          const radius = 40;
-          
-          // Create 12 nodes in geometric pattern
-          const nodeCount = 12;
-          for (let i = 0; i < nodeCount; i++) {
-            const angle = (i / nodeCount) * Math.PI * 2;
-            const layer = i % 3;
-            const layerRadius = radius + (layer * 15);
-            
-            geometricNodes.push({
-              baseX: centerX + Math.cos(angle) * layerRadius,
-              baseY: centerY + Math.sin(angle) * layerRadius,
-              x: 0,
-              y: 0,
-              angle: angle,
-              layer: layer,
-              radius: layerRadius,
-              jitterPhase: Math.random() * Math.PI * 2,
-              jitterSpeed: 0.5 + Math.random() * 0.5
-            });
-          }
+        // Initialize multiple waves with different frequencies
+        function initWaves() {
+          waves = [
+            { frequency: 0.8, amplitude: 15, phase: 0, speed: 0.02 },
+            { frequency: 1.2, amplitude: 12, phase: Math.PI / 3, speed: 0.025 },
+            { frequency: 1.5, amplitude: 10, phase: Math.PI / 2, speed: 0.018 },
+            { frequency: 0.6, amplitude: 18, phase: Math.PI, speed: 0.022 },
+            { frequency: 2.0, amplitude: 8, phase: Math.PI / 4, speed: 0.028 }
+          ];
         }
         
-        initChaos();
+        initWaves();
         
-        // Draw morphing geometric pattern
-        function drawMorphingPattern() {
-          const time = Date.now() * 0.001;
-          rotationAngle += 0.003;
+        // Draw wave interference pattern
+        function drawWaves() {
+          time += 0.02;
           
-          const centerX = width / 2;
           const centerY = height / 2;
+          const points = 150;
           
-          // Calculate node positions with smooth chaos-to-structure morph
-          geometricNodes.forEach((node, i) => {
-            // Chaos: jittery rotation
-            const jitterAmount = 15 * (1 - structureProgress);
-            const jitterX = Math.sin(time * node.jitterSpeed + node.jitterPhase) * jitterAmount;
-            const jitterY = Math.cos(time * node.jitterSpeed + node.jitterPhase + 0.5) * jitterAmount;
+          // Color interpolation: orange (chaos) → teal (structure)
+          const chaosR = 249, chaosG = 115, chaosB = 22;
+          const structureR = 26, structureG = 188, structureB = 156;
+          
+          const r = Math.floor(chaosR + (structureR - chaosR) * structureProgress);
+          const g = Math.floor(chaosG + (structureG - chaosG) * structureProgress);
+          const b = Math.floor(chaosB + (structureB - chaosB) * structureProgress);
+          
+          // Draw each wave contribution
+          waves.forEach((wave, waveIndex) => {
+            ctx.beginPath();
             
-            const angleOffset = rotationAngle * (1 - structureProgress * 0.8);
-            const currentAngle = node.angle + angleOffset;
-            const dynamicRadius = node.radius + Math.sin(time * 0.7 + node.jitterPhase) * 10 * (1 - structureProgress);
+            // Wave synchronization: chaotic frequencies → single harmonic
+            const targetFrequency = 1.0;
+            const currentFrequency = wave.frequency + (targetFrequency - wave.frequency) * structureProgress;
             
-            node.x = centerX + Math.cos(currentAngle) * dynamicRadius + jitterX;
-            node.y = centerY + Math.sin(currentAngle) * dynamicRadius + jitterY;
-          });
-          
-          // Draw connections with morphing color
-          const chaosR = 249, chaosG = 115, chaosB = 22; // Orange
-          const structureR = 26, structureG = 188, structureB = 156; // Teal
-          
-          const r = chaosR + (structureR - chaosR) * structureProgress;
-          const g = chaosG + (structureG - chaosG) * structureProgress;
-          const b = chaosB + (structureB - chaosB) * structureProgress;
-          
-          ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${0.4 + structureProgress * 0.3})`;
-          ctx.lineWidth = 1 + structureProgress * 0.5;
-          
-          geometricNodes.forEach((node1, i) => {
-            geometricNodes.forEach((node2, j) => {
-              if (i >= j) return;
+            // Amplitude calms down as structure emerges
+            const currentAmplitude = wave.amplitude * (1 - structureProgress * 0.4);
+            
+            // Phase synchronization
+            const phaseSync = wave.phase * (1 - structureProgress);
+            
+            for (let i = 0; i <= points; i++) {
+              const x = (i / points) * width;
+              const normalizedX = (x / width) * Math.PI * 4;
               
-              const dist = Math.sqrt(Math.pow(node1.x - node2.x, 2) + Math.pow(node1.y - node2.y, 2));
+              // Calculate wave displacement
+              const waveY = Math.sin(normalizedX * currentFrequency + time * wave.speed + phaseSync) * currentAmplitude;
               
-              // Distance threshold morphs: chaos = variable, structure = consistent
-              const maxDist = 80 + Math.sin(time * 0.5) * 20 * (1 - structureProgress);
+              const y = centerY + waveY;
               
-              if (dist < maxDist) {
-                ctx.beginPath();
-                ctx.moveTo(node1.x, node1.y);
-                ctx.lineTo(node2.x, node2.y);
-                ctx.stroke();
+              if (i === 0) {
+                ctx.moveTo(x, y);
+              } else {
+                ctx.lineTo(x, y);
               }
-            });
+            }
+            
+            // Wave opacity and color
+            const opacity = 0.3 + (structureProgress * 0.3);
+            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
+            ctx.lineWidth = 1.5 + structureProgress * 0.5;
+            ctx.stroke();
           });
           
-          // Draw nodes with morphing appearance
-          geometricNodes.forEach(node => {
-            const pulseSize = 3 + Math.sin(time * 1.5 + node.jitterPhase) * 1.5 * (1 - structureProgress * 0.7);
+          // Draw interference pattern (sum of all waves)
+          ctx.beginPath();
+          for (let i = 0; i <= points; i++) {
+            const x = (i / points) * width;
+            const normalizedX = (x / width) * Math.PI * 4;
             
-            // Outer glow
-            ctx.fillStyle = `rgba(${r}, ${g}, ${b}, 0.3)`;
-            ctx.beginPath();
-            ctx.arc(node.x, node.y, pulseSize + 2, 0, Math.PI * 2);
-            ctx.fill();
+            // Sum all wave contributions
+            let totalY = 0;
+            waves.forEach(wave => {
+              const targetFrequency = 1.0;
+              const currentFrequency = wave.frequency + (targetFrequency - wave.frequency) * structureProgress;
+              const currentAmplitude = wave.amplitude * (1 - structureProgress * 0.4);
+              const phaseSync = wave.phase * (1 - structureProgress);
+              
+              totalY += Math.sin(normalizedX * currentFrequency + time * wave.speed + phaseSync) * currentAmplitude;
+            });
             
-            // Core node
-            ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${0.6 + structureProgress * 0.3})`;
+            // Normalize the interference pattern
+            const y = centerY + (totalY / waves.length);
+            
+            if (i === 0) {
+              ctx.moveTo(x, y);
+            } else {
+              ctx.lineTo(x, y);
+            }
+          }
+          
+          // Main interference line (brighter, thicker)
+          ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${0.8 + structureProgress * 0.2})`;
+          ctx.lineWidth = 2 + structureProgress * 1;
+          ctx.stroke();
+          
+          // Add center line reference (fades in with structure)
+          if (structureProgress > 0.3) {
+            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${(structureProgress - 0.3) * 0.3})`;
+            ctx.lineWidth = 1;
             ctx.beginPath();
-            ctx.arc(node.x, node.y, pulseSize, 0, Math.PI * 2);
-            ctx.fill();
-          });
+            ctx.moveTo(0, centerY);
+            ctx.lineTo(width, centerY);
+            ctx.stroke();
+          }
         }
         
         // Main animation loop
         function animate() {
-          ctx.fillStyle = 'rgba(1, 4, 9, 0.9)';
+          ctx.fillStyle = 'rgba(1, 4, 9, 0.15)';
           ctx.fillRect(0, 0, width, height);
           
-          drawMorphingPattern();
+          drawWaves();
           
           requestAnimationFrame(animate);
         }
