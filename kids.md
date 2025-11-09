@@ -10,6 +10,22 @@ High-vigilance parenting protocols for custody weekends with two kids.
 
 ---
 
+## 📋 WHERE AM I?
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--orange);">
+    <h3 style="margin-top: 0; color: var(--orange);">👀 Current Mode</h3>
+    <p><strong>Family Structure Mode</strong> runs every weekend from Friday 4pm until Monday 6pm when kids are at dad's house.</p>
+  </div>
+  
+  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--circuit-teal);">
+    <h3 style="margin-top: 0; color: var(--circuit-teal);">🎯 Purpose</h3>
+    <p>Structured protocols for consistent parenting, custody coordination, and managing the cognitive load of weekend parenting with ADHD/Autism.</p>
+  </div>
+</div>
+
+---
+
 ## 🎯 QUICK ACCESS - INTERACTIVE TOOLS
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1.5rem; background: var(--darker-bg); border-radius: 12px; border: 3px solid var(--circuit-teal);">
@@ -42,22 +58,6 @@ High-vigilance parenting protocols for custody weekends with two kids.
 
 <div style="background: var(--card-dark); border-left: 4px solid var(--circuit-teal); padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
   <p style="margin: 0; color: var(--text-light);"><strong style="color: var(--circuit-teal);">💡 Pro Tip:</strong> The kids checklists are <strong>interactive</strong> - checkboxes work on screen and can be printed for pencil marking. Both protocols include sensory-friendly layouts, predictable routines, and emotional regulation tools.</p>
-</div>
-
----
-
-## 📋 WHERE AM I?
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--orange);">
-    <h3 style="margin-top: 0; color: var(--orange);">👀 Current Mode</h3>
-    <p><strong>Family Structure Mode</strong> runs every weekend from Friday 4pm until Monday 6pm when kids are at dad's house.</p>
-  </div>
-  
-  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--circuit-teal);">
-    <h3 style="margin-top: 0; color: var(--circuit-teal);">🎯 Purpose</h3>
-    <p>Structured protocols for consistent parenting, custody coordination, and managing the cognitive load of weekend parenting with ADHD/Autism.</p>
-  </div>
 </div>
 
 ---
