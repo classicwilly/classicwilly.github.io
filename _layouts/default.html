@@ -245,10 +245,14 @@
       .content-card h2::before {
         content: '◆';
         position: absolute;
-        left: 0.25rem;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
         color: var(--pink);
         font-family: Arial, sans-serif;
         font-weight: bold;
+        font-size: 1rem;
+        line-height: 1;
       }
       
       .content-card h3 {
