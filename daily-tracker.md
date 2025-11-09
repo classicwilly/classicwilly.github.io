@@ -7,6 +7,29 @@ title: Daily Tracker
 
 **Quick daily check-in for all foundational and mode-specific protocols.**
 
+<div class="page-navigation">
+  <div class="nav-section">
+    <h4>📍 WHERE AM I?</h4>
+    <p>Comprehensive daily tracking page for <strong>all protocols</strong> in one place. This is your single source of truth for daily execution. Fill this out during your <strong>10:25 PM Daily Dump</strong>.</p>
+  </div>
+  
+  <div class="nav-section">
+    <h4>✅ WHAT CAN I DO HERE?</h4>
+    <ul>
+      <li><strong>Set today's date</strong> to track specific day</li>
+      <li><strong>Select your mode</strong> (Solo Execution or Family Structure)</li>
+      <li><strong>Check boxes</strong> throughout the day as you complete protocols</li>
+      <li><strong>Review during Daily Dump</strong> (10:25 PM) to see completion rate</li>
+      <li><strong>Export data for Weekly Review</strong> (pattern analysis)</li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h4>💡 HOW THIS HELPS</h4>
+    <p>Visual tracking creates <strong>accountability</strong> and <strong>pattern recognition</strong>. When you see "Water Protocol: 3/7 days this week," you know where the breakdown is. Saves to localStorage—your data persists across page loads. Use this for honest self-assessment, not perfection theater.</p>
+  </div>
+</div>
+
 <div class="tracker-header">
   <div class="tracker-date">
     <label for="tracker-date">Date:</label>
@@ -30,53 +53,165 @@ title: Daily Tracker
 ## FOUNDATIONAL PROTOCOLS (Required Daily)
 
 ### Morning Sequence
-- [ ] **6:00 AM** - Water Protocol (16 oz immediately upon waking)
-- [ ] **6:02 AM** - Pill Protocol (all pills from organizer)
-- [ ] **6:03-6:10 AM** - Movement (walk/stretch/exercise/shower - 7 min)
-- [ ] **6:10-6:15 AM** - Caffeine Protocol (coffee/tea, no multitask)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>6:00 AM</strong> - Water Protocol (16 oz immediately upon waking)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>6:02 AM</strong> - Pill Protocol (all pills from organizer)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>6:03-6:10 AM</strong> - Movement (walk/stretch/exercise/shower - 7 min)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>6:10-6:15 AM</strong> - Caffeine Protocol (coffee/tea, no multitask)</span>
+  </label>
+</div>
 
 ### All Day
-- [ ] **Capture Protocol Active** - Used Soundcore Recorder or Google Keep for thoughts
-- [ ] **Hydration Maintained** - 32+ oz water throughout day
-- [ ] **Bubble Shield Deployed** - Wore headphones during focus time
 
-### Evening Sequence  
-- [ ] **10:00 PM** - Sleep Anchor Prep (wind down, screens off, lights dim)
-- [ ] **10:25 PM** - Daily Dump (review tomorrow, write 3 critical tasks)
-- [ ] **10:30 PM** - Sleep Anchor (in bed, no screens, DND mode)
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Capture Protocol Active</strong> - Used Soundcore Recorder or Google Keep for thoughts</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Hydration Maintained</strong> - 32+ oz water throughout day</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Bubble Shield Deployed</strong> - Wore headphones during focus time</span>
+  </label>
+</div>
+
+### Evening Sequence
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>10:00 PM</strong> - Sleep Anchor Prep (wind down, screens off, lights dim)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>10:25 PM</strong> - Daily Dump (review tomorrow, write 3 critical tasks)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>10:30 PM</strong> - Sleep Anchor (in bed, no screens, DND mode)</span>
+  </label>
+</div>
 
 ---
 
 ## MORNING TRANSITION (6:00-7:00 AM)
 
-- [ ] **Phase 1 Complete** - Physical Activation (water, pills, movement, caffeine)
-- [ ] **Phase 2 Complete** - Environment Setup (clear space, deploy Bubble Shield)
-- [ ] **Phase 3 Complete** - Mental Calibration (calendar, 3 priority tasks selected)
-- [ ] **Phase 4 Complete** - Execution Launch (first micro-action by 7:00 AM)
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Phase 1 Complete</strong> - Physical Activation (water, pills, movement, caffeine)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Phase 2 Complete</strong> - Environment Setup (clear space, deploy Bubble Shield)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Phase 3 Complete</strong> - Mental Calibration (calendar, 3 priority tasks selected)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Phase 4 Complete</strong> - Execution Launch (first micro-action by 7:00 AM)</span>
+  </label>
+</div>
 
 ---
 
 ## MODE-SPECIFIC PROTOCOLS
 
 ### If Solo Execution Mode (Mon 6 PM → Fri 4 PM)
-- [ ] **Core Work Block 1** (9:00 AM - 1:00 PM) - Protected focus time, Profile 1.0
-- [ ] **Meal Prep** - Cooked/prepped meals for efficiency
-- [ ] **Core Work Block 2** (2:00 PM - 5:00 PM) - Protected focus time
-- [ ] **Exercise Protocol** - 30 min movement/gym time
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Core Work Block 1</strong> (9:00 AM - 1:00 PM) - Protected focus time, Profile 1.0</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Meal Prep</strong> - Cooked/prepped meals for efficiency</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Core Work Block 2</strong> (2:00 PM - 5:00 PM) - Protected focus time</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Exercise Protocol</strong> - 30 min movement/gym time</span>
+  </label>
+</div>
 
 ### If Family Structure Mode (Fri 4 PM → Mon 6 PM)
-- [ ] **Quiet Time Protocol** (1:00-3:00 PM) - 2 hours mandatory recovery
-- [ ] **Bubble Shield Profile 2.0** - Used during high-chaos times (meals, transitions)
-- [ ] **Structured Family Schedule** - Maintained fixed meal/activity times
-- [ ] **Tag-Team Coordination** - Communicated needs with spouse
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Quiet Time Protocol</strong> (1:00-3:00 PM) - 2 hours mandatory recovery</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Bubble Shield Profile 2.0</strong> - Used during high-chaos times (meals, transitions)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Structured Family Schedule</strong> - Maintained fixed meal/activity times</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Tag-Team Coordination</strong> - Communicated needs with spouse</span>
+  </label>
+</div>
 
 ---
 
 ## EMERGENCY PROTOCOLS USED TODAY
 
-- [ ] **Executive Dysfunction Emergency** - Needed reboot for frozen state
-- [ ] **Context Switching Recovery** - Handled interruption with capture protocol
-- [ ] **Sensory Overload Emergency** - Retreated for nervous system regulation
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Executive Dysfunction Emergency</strong> - Needed reboot for frozen state</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Context Switching Recovery</strong> - Handled interruption with capture protocol</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Sensory Overload Emergency</strong> - Retreated for nervous system regulation</span>
+  </label>
+</div>
 
 **If 2+ emergency protocols used**: System issue detected. Review root cause.
 

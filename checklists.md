@@ -7,6 +7,29 @@ title: Interactive Checklists
 
 **Printable, trackable checklists for every protocol in the Wonky Sprout OS.**
 
+<div class="page-navigation">
+  <div class="nav-section">
+    <h4>📍 WHERE AM I?</h4>
+    <p>Master checklist hub for <strong>all interactive protocols</strong>. Every checklist here uses HTML form elements with localStorage persistence—check boxes save automatically, progress persists across page loads. Each checklist is a simplified, actionable version of its full SOP.</p>
+  </div>
+  
+  <div class="nav-section">
+    <h4>✅ WHAT CAN I DO HERE?</h4>
+    <ul>
+      <li><strong>Access daily checklists</strong> (Foundational, Morning Transition, Daily Tracker)</li>
+      <li><strong>Use weekly checklists</strong> (Weekly Review Protocol)</li>
+      <li><strong>Print for physical use</strong> (all checklists print-friendly)</li>
+      <li><strong>Track progress digitally</strong> (checkboxes save state automatically)</li>
+      <li><strong>Reset anytime</strong> (clear localStorage for fresh start)</li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h4>💡 HOW THIS HELPS</h4>
+    <p>Checklists create <strong>external accountability</strong> when internal motivation fails. For ADHD/Autism brains, seeing unchecked boxes triggers completion drive. Progress bars provide dopamine hits. Physical printouts work when screens overstimulate. This is <strong>choice architecture</strong>: making the right action the easiest action.</p>
+  </div>
+</div>
+
 Check boxes directly in your browser—progress saves automatically. Print for physical use. Reset anytime.
 
 ---

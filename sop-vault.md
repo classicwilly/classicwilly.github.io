@@ -7,7 +7,50 @@ title: The SOP Vault
 
 **Standard Operating Procedures for a neurodivergent life.**
 
-This is the complete card catalog of systems, protocols, and fixes. Everything is public because I have nothing to hide. This is how I build structure from chaos.
+<div class="page-navigation">
+  <div class="nav-section">
+    <h4>📍 WHERE AM I?</h4>
+    <p>The <strong>complete library of all protocols, SOPs, and systems</strong> in the Wonky Sprout OS. This is the master index of how I run my life. Everything is categorized: Execution Protocols, Kids Protocols, Life Maintenance, Emergency Fixes, Command Center, Config.</p>
+  </div>
+  
+  <div class="nav-section">
+    <h4>✅ WHAT CAN I DO HERE?</h4>
+    <ul>
+      <li><strong>Find any SOP</strong> by category (execution, maintenance, emergency, kids)</li>
+      <li><strong>Access interactive checklists</strong> (all checkboxes save progress)</li>
+      <li><strong>Read complete protocols</strong> with full context and reasoning</li>
+      <li><strong>Jump to quick-access pages</strong> (Daily Tracker, Checklists)</li>
+      <li><strong>Review audit logs</strong> for system transparency</li>
+    </ul>
+  </div>
+  
+  <div class="nav-section">
+    <h4>💡 HOW THIS HELPS</h4>
+    <p>Neurodivergent brains need <strong>external memory</strong>. This vault IS my external brain. When executive function fails, I don't have to "remember"—I just follow the SOP. Each protocol is battle-tested, refined through audits, and designed for <strong>real-world Autism/ADHD chaos</strong>. No theory, only what works.</p>
+  </div>
+</div>
+
+<div class="quick-links" style="margin: 2rem 0; padding: 1.5rem; background: var(--card-dark); border-radius: 12px; border: 2px solid var(--border-gray);">
+  <h3 style="margin-top: 0;">⚡ Quick Access</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+    <a href="/daily-tracker" style="display: block; padding: 1rem; background: var(--darker-bg); border-radius: 8px; text-decoration: none; color: var(--text-bright); border: 1px solid var(--border-gray); transition: all 0.3s;">
+      <strong>📊 Daily Tracker</strong><br>
+      <small style="color: var(--text-dim);">Track all protocols today</small>
+    </a>
+    <a href="/checklists" style="display: block; padding: 1rem; background: var(--darker-bg); border-radius: 8px; text-decoration: none; color: var(--text-bright); border: 1px solid var(--border-gray); transition: all 0.3s;">
+      <strong>✅ Checklists</strong><br>
+      <small style="color: var(--text-dim);">Printable protocol checklists</small>
+    </a>
+    <a href="/2025-11-08_M4_SOP_foundational-daily-protocols" style="display: block; padding: 1rem; background: var(--darker-bg); border-radius: 8px; text-decoration: none; color: var(--text-bright); border: 1px solid var(--border-gray); transition: all 0.3s;">
+      <strong>🔑 5 Core Protocols</strong><br>
+      <small style="color: var(--text-dim);">Water, Pills, Capture, Sleep, Dump</small>
+    </a>
+    <a href="/2025-11-09_M4_CONFIG_audit-log" style="display: block; padding: 1rem; background: var(--darker-bg); border-radius: 8px; text-decoration: none; color: var(--text-bright); border: 1px solid var(--border-gray); transition: all 0.3s;">
+      <strong>📋 Audit Log</strong><br>
+      <small style="color: var(--text-dim);">System transparency & changes</small>
+    </a>
+  </div>
+</div>
 
 ---
 

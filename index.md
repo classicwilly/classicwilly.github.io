@@ -18,6 +18,28 @@ title: Home
     
     <h1 class="hero-title glitch" data-text="I FIX STUFF">I FIX STUFF</h1>
     
+    <div class="page-navigation" style="margin: 2rem 0;">
+      <div class="nav-section">
+        <h4>📍 WHERE AM I?</h4>
+        <p><strong>Homepage of the Wonky Sprout Operating System</strong> - my personal neurodivergent life management system. This is where chaos gets systematized. I'm classicwilly: 40, Autism/ADHD, systems diagnostician. I fix stuff.</p>
+      </div>
+      
+      <div class="nav-section">
+        <h4>✅ WHAT CAN I DO HERE?</h4>
+        <ul>
+          <li><strong>Enter the Vault</strong> → Access all SOPs, protocols, and life systems (M4)</li>
+          <li><strong>Read the Blog</strong> → Unfiltered neurodivergent life posts (M1)</li>
+          <li><strong>View Products</strong> → The Hive System modular organization (M2 - Coming)</li>
+          <li><strong>See the Fix-It Process</strong> → How I root-cause problems (M3)</li>
+        </ul>
+      </div>
+      
+      <div class="nav-section">
+        <h4>💡 HOW THIS HELPS</h4>
+        <p>If you're neurodivergent, struggling with executive function, or drowning in chaos—<strong>you're in the right place</strong>. This site is my public operating system. Everything here is designed for ADHD/Autism brains: structured, systematic, anti-BS. Take what works, ignore what doesn't.</p>
+      </div>
+    </div>
+    
     <a href="/sop-vault" class="cta-button">
       <span class="cta-text">ENTER THE VAULT</span>
       <span class="cta-arrow">→</span>

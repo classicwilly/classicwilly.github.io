@@ -810,6 +810,70 @@
         border: 1px solid var(--border-gray);
       }
       
+      /* Page Navigation Component */
+      .page-navigation {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+        padding: 2rem;
+        background: var(--card-dark);
+        border: 2px solid var(--circuit-teal);
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(26, 188, 156, 0.1);
+      }
+      
+      .nav-section h4 {
+        margin: 0 0 0.75rem 0;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--circuit-teal);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .nav-section p {
+        margin: 0;
+        color: var(--text-light);
+        line-height: 1.6;
+        font-size: 0.95rem;
+      }
+      
+      .nav-section ul {
+        margin: 0;
+        padding-left: 1.25rem;
+        color: var(--text-light);
+      }
+      
+      .nav-section li {
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+        font-size: 0.95rem;
+      }
+      
+      .nav-section li strong {
+        color: var(--text-bright);
+        font-weight: 600;
+      }
+      
+      @media (max-width: 768px) {
+        .page-navigation {
+          grid-template-columns: 1fr;
+          padding: 1.5rem;
+          gap: 1.5rem;
+        }
+        
+        .nav-section h4 {
+          font-size: 0.9rem;
+        }
+        
+        .nav-section p,
+        .nav-section li {
+          font-size: 0.9rem;
+        }
+      }
+      
       .tracker-date, .tracker-mode {
         display: flex;
         align-items: center;
