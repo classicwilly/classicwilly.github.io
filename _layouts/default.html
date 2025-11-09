@@ -883,6 +883,479 @@
         color: var(--text-light);
       }
       
+      /* Homepage Hero Section */
+      .hero-section {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin: -2rem -2rem 4rem -2rem;
+        padding: 2rem;
+      }
+      
+      .hero-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+      }
+      
+      .circuit-lines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(26,188,156,0.1) 50px, rgba(26,188,156,0.1) 51px),
+          repeating-linear-gradient(90deg, transparent, transparent 50px, rgba(26,188,156,0.1) 50px, rgba(26,188,156,0.1) 51px);
+        animation: circuitPulse 4s ease-in-out infinite;
+      }
+      
+      @keyframes circuitPulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.6; }
+      }
+      
+      .floating-shapes {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .floating-shapes::before,
+      .floating-shapes::after {
+        content: '';
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border: 2px solid var(--circuit-teal);
+        opacity: 0.1;
+        animation: float 20s ease-in-out infinite;
+      }
+      
+      .floating-shapes::before {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        top: 10%;
+        left: 10%;
+      }
+      
+      .floating-shapes::after {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        bottom: 10%;
+        right: 10%;
+        animation-delay: -10s;
+      }
+      
+      @keyframes float {
+        0%, 100% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(30px, -30px) rotate(120deg); }
+        66% { transform: translate(-20px, 20px) rotate(240deg); }
+      }
+      
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 900px;
+      }
+      
+      .hero-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: clamp(3rem, 10vw, 8rem);
+        font-weight: 700;
+        color: var(--text-bright);
+        margin-bottom: 1rem;
+        line-height: 1;
+        text-shadow: 
+          0 0 10px rgba(26,188,156,0.5),
+          0 0 20px rgba(26,188,156,0.3),
+          0 0 30px rgba(26,188,156,0.2);
+        animation: titleGlow 3s ease-in-out infinite;
+      }
+      
+      @keyframes titleGlow {
+        0%, 100% { text-shadow: 0 0 10px rgba(26,188,156,0.5), 0 0 20px rgba(26,188,156,0.3), 0 0 30px rgba(26,188,156,0.2); }
+        50% { text-shadow: 0 0 20px rgba(26,188,156,0.8), 0 0 30px rgba(26,188,156,0.5), 0 0 40px rgba(26,188,156,0.3); }
+      }
+      
+      .glitch {
+        position: relative;
+      }
+      
+      .glitch::before,
+      .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .glitch::before {
+        left: 2px;
+        text-shadow: -2px 0 #ff00de;
+        clip: rect(24px, 550px, 90px, 0);
+        animation: glitch-anim 3s infinite linear alternate-reverse;
+      }
+      
+      .glitch::after {
+        left: -2px;
+        text-shadow: -2px 0 #00fff9;
+        clip: rect(85px, 550px, 140px, 0);
+        animation: glitch-anim 2.5s infinite linear alternate-reverse;
+      }
+      
+      @keyframes glitch-anim {
+        0% { clip: rect(39px, 9999px, 73px, 0); }
+        10% { clip: rect(94px, 9999px, 12px, 0); }
+        20% { clip: rect(51px, 9999px, 79px, 0); }
+        30% { clip: rect(25px, 9999px, 46px, 0); }
+        40% { clip: rect(83px, 9999px, 28px, 0); }
+        50% { clip: rect(17px, 9999px, 95px, 0); }
+        60% { clip: rect(67px, 9999px, 33px, 0); }
+        70% { clip: rect(42px, 9999px, 88px, 0); }
+        80% { clip: rect(9px, 9999px, 61px, 0); }
+        90% { clip: rect(76px, 9999px, 19px, 0); }
+        100% { clip: rect(54px, 9999px, 44px, 0); }
+      }
+      
+      .hero-subtitle {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+        color: var(--text-light);
+        margin-bottom: 2rem;
+        letter-spacing: 0.5px;
+      }
+      
+      .hero-stats {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 2rem 0;
+      }
+      
+      .hero-stat {
+        background: rgba(22, 27, 34, 0.8);
+        border: 1px solid var(--border-gray);
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        min-width: 120px;
+        backdrop-filter: blur(10px);
+      }
+      
+      .hero-stat-value {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--circuit-teal);
+        line-height: 1;
+      }
+      
+      .hero-stat-label {
+        font-size: 0.85rem;
+        color: var(--text-light);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 0.5rem;
+      }
+      
+      .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-bright);
+        background: transparent;
+        border: 3px solid var(--circuit-teal);
+        border-radius: 8px;
+        padding: 1.5rem 3rem;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        margin-top: 2rem;
+      }
+      
+      .cta-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(26,188,156,0.3), transparent);
+        animation: buttonGlow 3s infinite;
+      }
+      
+      @keyframes buttonGlow {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
+      
+      .cta-button:hover {
+        background: var(--circuit-teal);
+        color: var(--darker-bg);
+        transform: scale(1.05);
+        box-shadow: 0 0 30px rgba(26,188,156,0.6);
+      }
+      
+      .cta-arrow {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .cta-button:hover .cta-arrow {
+        transform: translateX(10px);
+      }
+      
+      /* Module Cards */
+      .modules-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        margin: 4rem 0;
+      }
+      
+      .module-card {
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: 12px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .module-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--circuit-teal);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+      }
+      
+      .module-card:hover {
+        border-color: var(--circuit-teal);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(26,188,156,0.2);
+      }
+      
+      .module-card:hover::before {
+        transform: scaleX(1);
+      }
+      
+      .module-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        filter: grayscale(30%);
+        transition: all 0.3s ease;
+      }
+      
+      .module-card:hover .module-icon {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+      }
+      
+      .module-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.5rem;
+        color: var(--text-bright);
+        margin-bottom: 0.75rem;
+      }
+      
+      .module-desc {
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+      
+      .module-link {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--circuit-teal);
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+      
+      .module-link:hover {
+        color: var(--hover-blue);
+        padding-left: 10px;
+      }
+      
+      /* Origin Timeline */
+      .origin-section {
+        margin: 6rem 0;
+        padding: 4rem 0;
+        border-top: 2px solid var(--border-gray);
+      }
+      
+      .origin-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 2.5rem;
+        text-align: center;
+        color: var(--text-bright);
+        margin-bottom: 4rem;
+        letter-spacing: 2px;
+      }
+      
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .timeline::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, var(--circuit-teal), transparent);
+      }
+      
+      .timeline-item {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        opacity: 0;
+        animation: fadeInUp 0.6s ease forwards;
+      }
+      
+      .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+      .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+      .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+      .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+      .timeline-item:nth-child(5) { animation-delay: 0.5s; }
+      
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      
+      .timeline-icon {
+        font-size: 3rem;
+        min-width: 80px;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+      }
+      
+      .timeline-content {
+        flex: 1;
+        background: var(--card-dark);
+        border: 1px solid var(--border-gray);
+        border-radius: 8px;
+        padding: 1.5rem;
+      }
+      
+      .timeline-content h3 {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--circuit-teal);
+        margin-bottom: 0.5rem;
+      }
+      
+      .timeline-content p {
+        color: var(--text-light);
+        line-height: 1.6;
+      }
+      
+      .origin-cta {
+        text-align: center;
+        margin-top: 4rem;
+      }
+      
+      .origin-tagline {
+        font-size: 1.5rem;
+        color: var(--text-bright);
+        margin-bottom: 2rem;
+        font-style: italic;
+      }
+      
+      .secondary-button {
+        display: inline-block;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1rem;
+        color: var(--text-light);
+        background: transparent;
+        border: 2px solid var(--border-gray);
+        border-radius: 6px;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .secondary-button:hover {
+        border-color: var(--circuit-teal);
+        color: var(--text-bright);
+        transform: translateY(-2px);
+      }
+      
+      /* Footer Navigation */
+      .footer-nav {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 4rem 0 2rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid var(--border-gray);
+      }
+      
+      .footer-nav a {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--text-light);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+      
+      .footer-nav a:hover {
+        color: var(--circuit-teal);
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 80vh;
+          margin: -1rem -1rem 2rem -1rem;
+        }
+        
+        .modules-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .timeline::before {
+          left: 40px;
+        }
+        
+        .timeline-item {
+          flex-direction: column;
+          padding-left: 80px;
+        }
+        
+        .timeline-icon {
+          position: absolute;
+          left: 0;
+        }
+      }
+      
       /* Print Styles */
       @media print {
         body {
@@ -1658,7 +2131,105 @@
         // Initialize stats when DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
           initializeTrackerStats();
+          initializeHeroStats();
         });
+        
+        // Hero stats for homepage
+        function initializeHeroStats() {
+          const heroStats = document.getElementById('hero-stats');
+          if (!heroStats) return; // Not on homepage
+          
+          console.log('Initializing hero stats...');
+          
+          // Get all tracker data
+          function getAllTrackerData() {
+            const allData = [];
+            const trackerPrefix = 'daily_tracker_';
+            
+            for (let i = 0; i < localStorage.length; i++) {
+              const key = localStorage.key(i);
+              if (key && key.startsWith(trackerPrefix)) {
+                try {
+                  const data = JSON.parse(localStorage.getItem(key));
+                  if (data && data.date) {
+                    allData.push({ date: data.date, ...data });
+                  }
+                } catch (e) {
+                  console.error('Error parsing tracker data:', e);
+                }
+              }
+            }
+            
+            return allData.sort((a, b) => new Date(b.date) - new Date(a.date));
+          }
+          
+          const allData = getAllTrackerData();
+          
+          if (allData.length === 0) {
+            heroStats.innerHTML = '<p style="color: var(--text-light); font-size: 0.9rem;">Start tracking to see your stats here.</p>';
+            return;
+          }
+          
+          // Calculate current streak
+          function calculateCurrentStreak() {
+            const dates = allData.map(d => d.date).sort();
+            let currentStreak = 0;
+            const today = new Date().toISOString().split('T')[0];
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            
+            if (dates.includes(today) || dates.includes(yesterday)) {
+              currentStreak = 1;
+              for (let i = dates.length - 1; i > 0; i--) {
+                const current = new Date(dates[i]);
+                const previous = new Date(dates[i - 1]);
+                const dayDiff = Math.floor((current - previous) / 86400000);
+                if (dayDiff === 1) {
+                  currentStreak++;
+                } else {
+                  break;
+                }
+              }
+            }
+            return currentStreak;
+          }
+          
+          const streak = calculateCurrentStreak();
+          const latestEntry = allData[0];
+          const mode = latestEntry.mode === 'solo' ? 'SOLO' : latestEntry.mode === 'family' ? 'FAMILY' : 'UNKNOWN';
+          
+          // Priority health (check latest entry for any score below 7)
+          const priorityHealth = () => {
+            const sleep = parseInt(latestEntry.ratingSleep) || 10;
+            const food = parseInt(latestEntry.ratingFood) || 10;
+            const water = parseInt(latestEntry.ratingWater) || 10;
+            const medicine = parseInt(latestEntry.ratingMedicine) || 10;
+            const lowest = Math.min(sleep, food, water, medicine);
+            
+            if (lowest >= 8) return { level: 'OPTIMAL', color: 'var(--sprout-green)' };
+            if (lowest >= 7) return { level: 'GOOD', color: 'var(--circuit-teal)' };
+            if (lowest >= 5) return { level: 'WARNING', color: '#d97706' };
+            return { level: 'CRITICAL', color: '#dc2626' };
+          };
+          
+          const health = priorityHealth();
+          
+          heroStats.innerHTML = `
+            <div class="hero-stat">
+              <div class="hero-stat-value">${streak}🔥</div>
+              <div class="hero-stat-label">Day Streak</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value">${mode}</div>
+              <div class="hero-stat-label">Current Mode</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-value" style="color: ${health.color}">${health.level}</div>
+              <div class="hero-stat-label">Priority Status</div>
+            </div>
+          `;
+          
+          console.log('Hero stats initialized');
+        }
       })();
     </script>
   </body>
