@@ -223,29 +223,102 @@ Track your water by marking each cup you drink:
 ### 🧹 SEBASTIAN'S CHORES (Age 9)
 **Do these once per day (you got this!)**
 
-- [ ] **Straighten up your bedroom** - Make bed, put away clothes and toys
-- [ ] **Straighten up your bathroom** - Hang up towel, put away toothbrush, wipe sink
-- [ ] **Pick up your living room mess** - Put your stuff in your room or toy area
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Straighten up your bedroom</strong> - Make bed, put away clothes and toys</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Straighten up your bathroom</strong> - Hang up towel, put away toothbrush, wipe sink</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick up your living room mess</strong> - Put your stuff in your room or toy area</span>
+  </label>
+</div>
 
 **When you finish all 3**: Ask Dad for bonus activity time! ⭐
 
 ### Afternoon Checklist
-- [ ] Lunch (help Dad set the table)
-- [ ] Clean up your plate
-- [ ] Wash hands
-- [ ] Quiet time in your room (30 minutes)
-- [ ] Pick afternoon activity
-- [ ] Have fun! ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Lunch (help Dad set the table)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Clean up your plate</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Wash hands</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Quiet time in your room (30 minutes)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pick afternoon activity</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Have fun! ⭐</span>
+  </label>
+</div>
 
 ### Evening Checklist
-- [ ] Dinner together (help Dad)
-- [ ] Clean up your spot
-- [ ] Bath time (Dad will help)
-- [ ] Put on pajamas
-- [ ] Brush teeth (2 minutes!)
-- [ ] Pick story for bedtime
-- [ ] Get tucked in
-- [ ] Sleep well! ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Dinner together (help Dad)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Clean up your spot</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bath time (Dad will help)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Put on pajamas</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (2 minutes!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pick story for bedtime</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get tucked in</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Sleep well! ⭐</span>
+  </label>
+</div>
 
 ---
 
@@ -291,55 +364,231 @@ Track your water by marking each cup you drink:
 **This happens BEFORE we leave for Grandma's. Dad will help you through each step.**
 
 #### WILLOW'S SUNDAY PREP (Age 6)
-- [ ] **Make your bed** (pull up covers, fluff pillow)
-- [ ] **Pick Monday school outfit** (lay it on your chair)
-- [ ] **Pack school backpack** (Dad helps check):
-  - [ ] Homework folder (if you have homework)
-  - [ ] Water bottle (filled)
-  - [ ] Lunch box (Dad will pack Monday morning)
-  - [ ] Any library books due
-  - [ ] Jacket or sweatshirt
-- [ ] **Do your 3 chores** (bedroom, dining room, living room)
-- [ ] **Change into comfy clothes for car ride** (leggings/sweats + cozy shirt)
-- [ ] **Bring PJs in backpack** (for car ride home - you can change at Grandma's)
-- [ ] **Pick one toy/book for car** (not iPad - that's for emergencies only)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Make your bed</strong> (pull up covers, fluff pillow)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick Monday school outfit</strong> (lay it on your chair)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pack school backpack</strong> (Dad helps check):</span>
+  </label>
+  
+  <div style="margin-left: 2rem;">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Homework folder (if you have homework)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Water bottle (filled)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Lunch box (Dad will pack Monday morning)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Any library books due</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Jacket or sweatshirt</span>
+    </label>
+  </div>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Do your 3 chores</strong> (bedroom, dining room, living room)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Change into comfy clothes for car ride</strong> (leggings/sweats + cozy shirt)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Bring PJs in backpack</strong> (for car ride home - you can change at Grandma's)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick one toy/book for car</strong> (not iPad - that's for emergencies only)</span>
+  </label>
+</div>
 
 #### SEBASTIAN'S SUNDAY PREP (Age 9)
-- [ ] **Make your bed** (full bed making - sheets, blankets, pillows)
-- [ ] **Pick Monday school outfit** (lay it out ready to wear)
-- [ ] **Pack school backpack** (check yourself, Dad double-checks):
-  - [ ] All homework completed and packed
-  - [ ] Charged iPad/tablet (if you take to school)
-  - [ ] Water bottle (filled)
-  - [ ] Lunch box (empty - Dad packs Monday)
-  - [ ] Any permission slips or school papers signed
-  - [ ] PE clothes (if it's PE day)
-  - [ ] Jacket or sweatshirt
-- [ ] **Do your 3 chores** (bedroom, bathroom, living room)
-- [ ] **Help Dad with house prep** (take out trash, check pet food/water)
-- [ ] **Change into comfy clothes for car** (sweats + hoodie)
-- [ ] **Bring PJs in backpack** (change at Grandma's before we leave)
-- [ ] **Pick entertainment for car** (book, sketchpad, or handheld game - screen is OK)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Make your bed</strong> (full bed making - sheets, blankets, pillows)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick Monday school outfit</strong> (lay it out ready to wear)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pack school backpack</strong> (check yourself, Dad double-checks):</span>
+  </label>
+  
+  <div style="margin-left: 2rem;">
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">All homework completed and packed</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Charged iPad/tablet (if you take to school)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Water bottle (filled)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Lunch box (empty - Dad packs Monday)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Any permission slips or school papers signed</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">PE clothes (if it's PE day)</span>
+    </label>
+    
+    <label class="checkbox-item">
+      <input type="checkbox" class="task-checkbox">
+      <span class="checkbox-label">Jacket or sweatshirt</span>
+    </label>
+  </div>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Do your 3 chores</strong> (bedroom, bathroom, living room)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Help Dad with house prep</strong> (take out trash, check pet food/water)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Change into comfy clothes for car</strong> (sweats + hoodie)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Bring PJs in backpack</strong> (change at Grandma's before we leave)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label"><strong>Pick entertainment for car</strong> (book, sketchpad, or handheld game - screen is OK)</span>
+  </label>
+</div>
 
 #### DAD'S SUNDAY PREP (You'll See Dad Doing This)
-- [ ] Pack kids' backpacks in car
-- [ ] Lay out Monday work clothes
-- [ ] Prep Monday lunch stuff (so it's fast in morning)
-- [ ] Check gas in car
-- [ ] Bring gift/food for Grandma (if we're bringing something)
-- [ ] Make sure house is locked up before we leave
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pack kids' backpacks in car</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Lay out Monday work clothes</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Prep Monday lunch stuff (so it's fast in morning)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Check gas in car</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bring gift/food for Grandma (if we're bringing something)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Make sure house is locked up before we leave</span>
+  </label>
+</div>
 
 ### 🚗 CAR PREP (Before We Leave at 2:00 PM)
 
 **Dad will check these with you:**
-- [ ] Both kids in comfy clothes (for 6-hour trip total)
-- [ ] Backpacks in car trunk
-- [ ] Water bottles for car ride
-- [ ] Snacks in car (Dad packs these)
-- [ ] Entertainment for car (books, games, music)
-- [ ] PJs in backpacks (to change at Grandma's)
-- [ ] Everyone went to bathroom
-- [ ] Pets have food and water (they stay home)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Both kids in comfy clothes (for 6-hour trip total)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Backpacks in car trunk</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Water bottles for car ride</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Snacks in car (Dad packs these)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Entertainment for car (books, games, music)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">PJs in backpacks (to change at Grandma's)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Everyone went to bathroom</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pets have food and water (they stay home)</span>
+  </label>
+</div>
 
 ### 🏠 AT GRANDMA'S HOUSE (2:00 PM - 7:30 PM)
 
@@ -361,10 +610,28 @@ Track your water by marking each cup you drink:
 ### 🚗 CAR RIDE HOME (7:30 PM - 8:00 PM)
 
 **You're already in PJs, so when we get home:**
-- [ ] Brush teeth (quick - 2 minutes)
-- [ ] Straight to bed
-- [ ] Short story or talking time
-- [ ] Lights out at 9:00 PM (school tomorrow!)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (quick - 2 minutes)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Straight to bed</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Short story or talking time</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Lights out at 9:00 PM (school tomorrow!)</span>
+  </label>
+</div>
 
 **Dad will already have everything ready because we did PREP! That's why Sunday morning prep is so important.**
 
@@ -453,24 +720,86 @@ When you're upset, try saying:
 ### School Night Bedtime (Sunday-Thursday)
 
 **8:00 PM - Start Getting Ready**
-- [ ] Clean up toys (5-minute pickup)
-- [ ] Bath time (Dad will help)
-- [ ] Put on pajamas
-- [ ] Brush teeth (2 minutes with timer)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Clean up toys (5-minute pickup)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bath time (Dad will help)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Put on pajamas</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (2 minutes with timer)</span>
+  </label>
+</div>
 
 **8:30 PM - Wind Down Time**
-- [ ] Pick out 2 books for story time
-- [ ] Get your stuffed animals ready
-- [ ] Climb into bed
-- [ ] Dad reads stories
-- [ ] Talk about your day (what was fun? what was hard?)
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pick out 2 books for story time</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get your stuffed animals ready</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Climb into bed</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Dad reads stories</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Talk about your day (what was fun? what was hard?)</span>
+  </label>
+</div>
 
 **9:00 PM - Lights Out**
-- [ ] Final hugs and kisses
-- [ ] Nightlight on (if you want it)
-- [ ] Door open or closed (your choice)
-- [ ] White noise machine on (if you like it)
-- [ ] Dad says "I love you" and "You're safe"
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Final hugs and kisses</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Nightlight on (if you want it)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Door open or closed (your choice)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">White noise machine on (if you like it)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Dad says "I love you" and "You're safe"</span>
+  </label>
+</div>
 
 ### Weekend Bedtime (Friday & Saturday)
 
@@ -521,13 +850,43 @@ When you're upset, try saying:
 ## 🎒 SUNDAY NIGHT PACKING LIST
 
 ### Things to Pack in Your Backpack
-- [ ] School clothes for Monday (already picked out)
-- [ ] Homework (if you have any)
-- [ ] Water bottle
-- [ ] Lunch box (Dad will pack snacks)
-- [ ] Any school papers
-- [ ] Favorite toy or book (if you want to take it)
-- [ ] Jacket or sweatshirt
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">School clothes for Monday (already picked out)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Homework (if you have any)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Water bottle</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Lunch box (Dad will pack snacks)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Any school papers</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Favorite toy or book (if you want to take it)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Jacket or sweatshirt</span>
+  </label>
+</div>
 
 ### Things That Stay at Dad's House
 - Your bed and bedding
@@ -636,13 +995,43 @@ When you're upset, try saying:
 At the end of each weekend, we'll check off:
 
 ### Did You:
-- [ ] Have fun? (Some of the time - not every second!)
-- [ ] Feel safe? (Dad made sure you were okay)
-- [ ] Eat good food? (Even if you only ate chicken nuggets!)
-- [ ] Sleep okay? (Got rest most nights)
-- [ ] Talk to Dad if you felt bad? (Or kept it inside and that's okay too)
-- [ ] Do at least one activity you enjoyed?
-- [ ] Call Mom when you wanted to?
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Have fun? (Some of the time - not every second!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Feel safe? (Dad made sure you were okay)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Eat good food? (Even if you only ate chicken nuggets!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Sleep okay? (Got rest most nights)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Talk to Dad if you felt bad? (Or kept it inside and that's okay too)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Do at least one activity you enjoyed?</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Call Mom when you wanted to?</span>
+  </label>
+</div>
 
 **If you checked ANY of these boxes, the weekend was a success!** ⭐
 

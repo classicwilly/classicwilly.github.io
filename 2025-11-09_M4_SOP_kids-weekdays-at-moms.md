@@ -46,34 +46,128 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 ## 📋 YOUR WEEKDAY CHECKLIST (Do These Every Day)
 
 ### Morning Checklist (Before School)
-- [ ] Wake up when Mom says to
-- [ ] Use the bathroom
-- [ ] Get dressed for school
-- [ ] Eat breakfast (whatever Mom makes)
-- [ ] Brush teeth (2 minutes!)
-- [ ] Brush hair
-- [ ] Pack backpack
-- [ ] Get to school on time ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Wake up when Mom says to</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Use the bathroom</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get dressed for school</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Eat breakfast (whatever Mom makes)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (2 minutes!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush hair</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Pack backpack</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get to school on time ⭐</span>
+  </label>
+</div>
 
 **If mornings are hard**: Do one thing at a time. Don't think about the whole list.
 
 ### After School Checklist
-- [ ] Get home safely
-- [ ] Put backpack by the door
-- [ ] Change into comfy clothes (if you want)
-- [ ] Have a snack
-- [ ] Do homework (see homework section below)
-- [ ] Free time! ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get home safely</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Put backpack by the door</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Change into comfy clothes (if you want)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Have a snack</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Do homework (see homework section below)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Free time! ⭐</span>
+  </label>
+</div>
 
 ### Evening Checklist
-- [ ] Eat dinner with Mom
-- [ ] Clean up your spot
-- [ ] Bath or shower
-- [ ] Put on pajamas
-- [ ] Brush teeth (2 minutes!)
-- [ ] Get your backpack ready for tomorrow
-- [ ] Get in bed on time
-- [ ] Sleep well ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Eat dinner with Mom</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Clean up your spot</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bath or shower</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Put on pajamas</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (2 minutes!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get your backpack ready for tomorrow</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get in bed on time</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Sleep well ⭐</span>
+  </label>
+</div>
 
 ---
 
@@ -237,12 +331,38 @@ Even though Dad can't be there, you can still connect:
 ## 🛏️ BEDTIME WHEN DAD ISN'T THERE
 
 ### Your Bedtime Routine at Mom's
-- [ ] Bath or shower
-- [ ] Put on pajamas
-- [ ] Brush teeth (2 minutes!)
-- [ ] Get in bed
-- [ ] Bedtime routine (whatever Mom does)
-- [ ] Lights out
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bath or shower</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Put on pajamas</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Brush teeth (2 minutes!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Get in bed</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Bedtime routine (whatever Mom does)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Lights out</span>
+  </label>
+</div>
 
 ### If You Have Trouble Sleeping
 **Things That Might Help:**
@@ -445,13 +565,43 @@ Dad** 💙
 ## ✅ FRIDAY CHECKLIST (The Best Day!)
 
 ### When Dad Picks You Up
-- [ ] You see Dad's car!
-- [ ] You run to Dad (if you want to!)
-- [ ] Dad gives you the biggest hug
-- [ ] You're SAFE now
-- [ ] You're HOME (Dad's house is home too)
-- [ ] You made it through another week
-- [ ] You're AMAZING ⭐
+
+<div class="interactive-checklist">
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You see Dad's car!</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You run to Dad (if you want to!)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">Dad gives you the biggest hug</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You're SAFE now</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You're HOME (Dad's house is home too)</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You made it through another week</span>
+  </label>
+  
+  <label class="checkbox-item">
+    <input type="checkbox" class="task-checkbox">
+    <span class="checkbox-label">You're AMAZING ⭐</span>
+  </label>
+</div>
 
 **You did it. Dad is so proud of you. Let's have a great weekend.** 🎉
 
