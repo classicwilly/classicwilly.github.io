@@ -128,6 +128,7 @@ title: Home
 </div>
 
 <div class="footer-nav">
-  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency">� Emergency Protocol</a>
-  <a href="/2025-11-08_M1_PAGE_manifesto">� Manifesto</a>
+  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency">🚨 Emergency Protocol</a>
+  <a href="/2025-11-08_M1_PAGE_manifesto">📜 Manifesto</a>
+  <a href="/games" style="opacity: 0.5;" title="Secret stim games">🎮</a>
 </div>
