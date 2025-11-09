@@ -7,9 +7,51 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system. Standard Operating Procedures for building structure from chaos.' }}">
+    <meta name="keywords" content="neurodivergent, ADHD, autism, life management, SOPs, standard operating procedures, systems, productivity">
+    <meta name="author" content="William Johnson (classicwilly)">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system.' }}">
+    <meta property="og:site_name" content="The Wonky Sprout">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ page.url | absolute_url }}">
+    <meta name="twitter:title" content="{{ page.title | default: site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system.' }}">
+    
     <title>{{ page.title | default: site.title }}</title>
+    
+    <!-- DNS Prefetch & Preconnect for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Wonky Sprout",
+      "description": "A neurodivergent life management system with Standard Operating Procedures",
+      "url": "{{ site.url }}",
+      "author": {
+        "@type": "Person",
+        "name": "William Johnson",
+        "alternateName": "classicwilly"
+      }
+    }
+    </script>
+    
     <style>
       :root {
         /* Starfield color palette - chaos in the structure */
@@ -73,11 +115,12 @@
         pointer-events: none;
       }
       
-      /* Colorful Starfield */
+      /* Starfield Animation with Performance Hints */
       .star {
         position: absolute;
         border-radius: 50%;
         z-index: 1;
+        will-change: transform, opacity;
       }
       
       @-webkit-keyframes starMovement {
@@ -167,7 +210,7 @@
         background: var(--card-dark);
         border: none;
         border-radius: 12px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, background-color 0.3s ease, text-shadow 0.3s ease;
         font-weight: 600;
         font-size: 0.9rem;
         text-transform: uppercase;
@@ -176,11 +219,14 @@
         overflow: hidden;
       }
       
-      .site-nav a:hover {
+      .site-nav a:hover,
+      .site-nav a:focus {
         background: var(--card-dark);
         color: #FFFFFF;
         transform: translateY(-8px);
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* Main Content - The "Card" */
@@ -291,7 +337,7 @@
       .content-card a {
         color: #FFFFFF;
         text-decoration: none;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         font-weight: 600;
         padding: 0.25rem 0.5rem;
         background: var(--card-dark);
@@ -299,10 +345,13 @@
         display: inline-block;
       }
       
-      .content-card a:hover {
+      .content-card a:hover,
+      .content-card a:focus {
         color: #FFFFFF;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-2px);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* Bottom navigation menu */
@@ -327,14 +376,17 @@
         background: var(--card-dark);
         border: none;
         border-radius: 8px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         white-space: nowrap;
       }
       
-      .content-card > p:last-child a:hover {
+      .content-card > p:last-child a:hover,
+      .content-card > p:last-child a:focus {
         color: #FFFFFF;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-4px);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .content-card code {
@@ -405,15 +457,18 @@
         background: var(--card-dark);
         border: none;
         border-radius: 8px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         display: inline-block;
         margin: 0 0.25rem;
       }
       
-      .site-footer a:hover {
+      .site-footer a:hover,
+      .site-footer a:focus {
         color: #FFFFFF;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-4px);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* "Wonky" Accent - Subtle chaos pattern */
@@ -453,8 +508,18 @@
         transition: all 0.3s ease;
       }
       
+      .content-card .task-list-item label {
+        cursor: pointer;
+        transition: text-shadow 0.3s ease;
+      }
+      
       .content-card .task-list-item label:hover {
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+      }
+      
+      .content-card .task-list-item label:focus-within {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .content-card .task-list-item input[type="checkbox"] {
@@ -518,14 +583,17 @@
         font-weight: 600;
         font-size: 0.9rem;
         text-transform: uppercase;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         overflow: hidden;
       }
       
-      .checklist-controls button:hover {
+      .checklist-controls button:hover,
+      .checklist-controls button:focus {
         color: #FFFFFF;
         transform: translateY(-8px);
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .checklist-controls button.secondary {
@@ -624,7 +692,7 @@
         background: var(--card-dark);
         border: none;
         border-radius: 6px;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
       }
       
       .mode-option input[type="radio"] {
@@ -638,6 +706,11 @@
         color: #FFFFFF;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-2px);
+      }
+      
+      .mode-option:focus-within {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .priority-ratings, .wins-section, .priorities-section, .metrics-section {
@@ -793,7 +866,7 @@
         border-radius: 4px;
         border: 1px solid var(--border-gray);
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: transform 0.2s ease, text-shadow 0.2s ease;
         position: relative;
         color: #FFFFFF;
       }
@@ -802,6 +875,12 @@
         transform: scale(1.1);
         z-index: 10;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+      }
+      
+      .grid-day:focus {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
+        z-index: 11;
       }
       
       .grid-day.empty {
@@ -992,7 +1071,7 @@
         padding: 1.5rem;
         margin-bottom: 1rem;
         cursor: pointer;
-        transition: all 0.2s ease;
+        transition: transform 0.2s ease, text-shadow 0.2s ease, border-color 0.2s ease;
         color: #FFFFFF;
       }
       
@@ -1000,6 +1079,11 @@
         border-color: var(--circuit-teal);
         transform: translateX(4px);
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+      }
+      
+      .history-entry:focus {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .history-header {
@@ -1236,18 +1320,21 @@
         padding: 0.5rem 0.75rem;
         text-decoration: none;
         position: relative;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         margin: 0;
         overflow: hidden;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
       
-      .cta-button:hover {
+      .cta-button:hover,
+      .cta-button:focus {
         background: var(--card-dark);
         color: #FFFFFF;
         transform: translateY(-8px);
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .cta-text,
@@ -1282,14 +1369,17 @@
         border: 2px solid var(--border-gray);
         border-radius: 12px;
         padding: 1rem;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         position: relative;
         overflow: hidden;
       }
       
-      .module-card:hover {
+      .module-card:hover,
+      .module-card:focus-within {
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       .module-icon {
@@ -1330,7 +1420,7 @@
         color: #FFFFFF;
         text-decoration: none;
         font-weight: 600;
-        transition: all 0.2s ease;
+        transition: transform 0.2s ease, text-shadow 0.2s ease;
         padding: 0.25rem 0.5rem;
         background: var(--card-dark);
         border: none;
@@ -1342,6 +1432,11 @@
         color: #FFFFFF;
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-2px);
+      }
+      
+      .module-link:focus {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* Origin Timeline */
@@ -1481,18 +1576,21 @@
         border-radius: 12px;
         padding: 0.5rem 0.75rem;
         text-decoration: none;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
         position: relative;
         overflow: hidden;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
       
-      .secondary-button:hover {
+      .secondary-button:hover,
+      .secondary-button:focus {
         background: var(--card-dark);
         color: #FFFFFF !important;
         transform: translateY(-8px);
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* Emergency Banner */
@@ -1528,7 +1626,7 @@
         text-decoration: none;
         font-weight: 700;
         font-size: 1.1rem;
-        transition: all 0.3s ease;
+        transition: transform 0.3s ease, text-shadow 0.3s ease, border-color 0.3s ease;
         border: 2px solid var(--yellow);
       }
       
@@ -1537,6 +1635,11 @@
         text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
         transform: translateY(-4px);
         border-color: var(--purple);
+      }
+      
+      .emergency-link:focus {
+        outline: 2px solid var(--purple);
+        outline-offset: 2px;
       }
       
       /* Testimonial Section */
@@ -1952,7 +2055,7 @@
     </style>
   </head>
   <body>
-    <header class="site-header">
+    <header class="site-header" role="banner">
       <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
         <!-- Title & Tagline (Center) -->
         <div style="flex: 1 1 300px; text-align: center;">
@@ -1962,44 +2065,44 @@
       </div>
     </header>
     
-    <nav class="site-nav">
-      <a href="/">Home</a>
-      <a href="/catalog">Card Catalog</a>
-      <a href="/sop-vault">SOP Vault</a>
-      <a href="/checklists">Checklists</a>
-      <a href="/daily-tracker">Daily Tracker</a>
-      <a href="/tracker-stats">Stats</a>
-      <a href="/fix">Fix-It Blueprint</a>
+    <nav class="site-nav" role="navigation" aria-label="Main navigation">
+      <a href="/" aria-label="Go to home page">Home</a>
+      <a href="/catalog" aria-label="View card catalog">Card Catalog</a>
+      <a href="/sop-vault" aria-label="Browse SOP vault">SOP Vault</a>
+      <a href="/checklists" aria-label="View checklists">Checklists</a>
+      <a href="/daily-tracker" aria-label="Open daily tracker">Daily Tracker</a>
+      <a href="/tracker-stats" aria-label="View tracker statistics">Stats</a>
+      <a href="/fix" aria-label="View fix-it blueprint">Fix-It Blueprint</a>
     </nav>
     
     <div class="content-wrapper">
-      <main class="content-card">
+      <main class="content-card" role="main">
         {{ content }}
       </main>
       
       <!-- Emergency Banner (site-wide) -->
-      <div class="emergency-banner">
+      <aside class="emergency-banner" role="complementary" aria-label="Emergency resources">
         <h3>🚨 IN CRISIS? FROZEN? CAN'T START ANYTHING?</h3>
-        <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="emergency-link">
+        <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="emergency-link" aria-label="Access emergency executive dysfunction protocol">
           → EXECUTIVE DYSFUNCTION EMERGENCY PROTOCOL (USE NOW)
         </a>
-      </div>
+      </aside>
       
       <!-- Quick Links Footer (site-wide) -->
-      <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem; margin: 3rem 0 2rem 0; padding-top: 2rem; border-top: 1px solid var(--border-gray);">
-        <a href="/" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;">← Home</a>
-        <a href="/sop-vault" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;">📚 SOP Vault</a>
-        <a href="/daily-tracker" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;">📊 Daily Tracker</a>
-        <a href="/games" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace; opacity: 0.7;">🎮 Stim Station</a>
-      </div>
+      <nav style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem; margin: 3rem 0 2rem 0; padding-top: 2rem; border-top: 1px solid var(--border-gray);" role="navigation" aria-label="Quick links">
+        <a href="/" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;" aria-label="Go to home page">← Home</a>
+        <a href="/sop-vault" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;" aria-label="Browse SOP vault">📚 SOP Vault</a>
+        <a href="/daily-tracker" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace;" aria-label="Open daily tracker">📊 Daily Tracker</a>
+        <a href="/games" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600; font-family: 'IBM Plex Mono', monospace; opacity: 0.7;" aria-label="Visit stim station">🎮 Stim Station</a>
+      </nav>
     </div>
     
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <p>Built by a neurodivergent systems diagnostician who fixes stuff.</p>
       <p>© 2025 The Wonky Sprout. It's okay to be a little wonky.</p>
     </footer>
     
-    <div class="wonky-accent"></div>
+    <div class="wonky-accent" aria-hidden="true"></div>
     
     <script>
       // Interactive Checklist System with localStorage persistence
@@ -2089,11 +2192,16 @@
         }
         
         // Save checkbox states
+        let saveTimeout;
         function saveCheckboxStates() {
-          const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
-          const states = Array.from(checkboxes).map(cb => cb.checked);
-          localStorage.setItem(`checklist_${pageKey}`, JSON.stringify(states));
-          updateProgress();
+          // Debounce to reduce localStorage writes
+          clearTimeout(saveTimeout);
+          saveTimeout = setTimeout(() => {
+            const checkboxes = document.querySelectorAll('.content-card input[type="checkbox"]');
+            const states = Array.from(checkboxes).map(cb => cb.checked);
+            localStorage.setItem(`checklist_${pageKey}`, JSON.stringify(states));
+            updateProgress();
+          }, 500);
         }
         
         // Update progress bar
