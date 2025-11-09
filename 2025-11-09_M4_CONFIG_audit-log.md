@@ -635,4 +635,8 @@ Found something broken? Want to suggest an improvement?
 
 ---
 
-**[← Back to SOP Vault](sop-vault) | [View All Configs →](2025-11-08_M4_CONFIG_readme-master-sop)**
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="/sop-vault" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">← Back to SOP Vault</a>
+  <a href="/2025-11-08_M4_CONFIG_readme-master-sop" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">⚙️ View All Configs</a>
+</div>
+
