@@ -10,11 +10,6 @@ title: Home
   </div>
   
   <div class="hero-content">
-    <a href="/sop-vault" class="cta-button">
-      <span class="cta-text">ENTER THE VAULT</span>
-      <span class="cta-arrow">→</span>
-    </a>
-    
     <p class="hero-subtitle">A neurodivergent systems diagnostician building structure from chaos.</p>
     
     <div class="hero-stats" id="hero-stats">
@@ -22,6 +17,11 @@ title: Home
     </div>
     
     <h1 class="hero-title glitch" data-text="I FIX STUFF">I FIX STUFF</h1>
+    
+    <a href="/sop-vault" class="cta-button">
+      <span class="cta-text">ENTER THE VAULT</span>
+      <span class="cta-arrow">→</span>
+    </a>
   </div>
 </div>
 
