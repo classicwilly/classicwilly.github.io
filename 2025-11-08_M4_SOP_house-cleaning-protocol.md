@@ -9,7 +9,23 @@ title: House Cleaning Protocol - SOP-HC
 
 ---
 
-## THE CORE PROBLEM
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#problem">❓ The Problem</a>
+  <a href="#solution">💡 The Solution</a>
+  <a href="#daily">📅 Daily Maintenance</a>
+  <a href="#weekly">📆 Weekly Deep Clean</a>
+  <a href="#emergency">🚨 Emergency Reset</a>
+  <a href="#troubleshoot">🔧 Troubleshooting</a>
+  <a href="#integration">🔗 Integration</a>
+  <a href="#tools">🛠️ Tools Required</a>
+  <a href="#reminder">💡 Final Reminder</a>
+</div>
+
+---
+
+<h2 id="problem">THE CORE PROBLEM</h2>
 
 Executive dysfunction + visual processing issues = you literally cannot see the mess until it's overwhelming. Then you freeze because "clean the house" is too big and abstract.
 
@@ -17,7 +33,7 @@ Executive dysfunction + visual processing issues = you literally cannot see the 
 
 ---
 
-## THE SOLUTION: ZONE-BASED ROTATION
+<h2 id="solution">THE SOLUTION: ZONE-BASED ROTATION</h2>
 
 **Don't clean the house. Maintain zones on a schedule.**
 
@@ -25,7 +41,7 @@ Breaking the house into zones with specific time limits removes decision paralys
 
 ---
 
-## DAILY MAINTENANCE (15 Minutes Total)
+<h2 id="daily">DAILY MAINTENANCE (15 Minutes Total)</h2>
 
 **Schedule:** Every day at 9:00 PM (or consistent time that works)  
 **Rule:** Do these BEFORE they become emergencies  
@@ -96,7 +112,7 @@ Every flat surface should be clear:
 
 ---
 
-## WEEKLY DEEP CLEAN (60 Minutes)
+<h2 id="weekly">WEEKLY DEEP CLEAN (60 Minutes)</h2>
 
 **Schedule:** Sunday 9:00-10:00 AM (or pick consistent day/time)  
 **Rotation:** 4-week cycle focusing on different areas  
@@ -302,7 +318,7 @@ Every flat surface should be clear:
 
 ---
 
-## EMERGENCY RESET: HOUSE IS A DISASTER
+<h2 id="emergency">EMERGENCY RESET: HOUSE IS A DISASTER</h2>
 
 **When to Deploy:** House is actively stressing you out and you can't see the floor.  
 **Time Required:** 2-3 hours  
@@ -425,7 +441,7 @@ Every flat surface should be clear:
 
 ---
 
-## TROUBLESHOOTING
+<h2 id="troubleshoot">TROUBLESHOOTING</h2>
 
 ### "I can't even start the 15-minute daily clean"
 
@@ -464,7 +480,7 @@ Every flat surface should be clear:
 
 ---
 
-## INTEGRATION WITH OTHER PROTOCOLS
+<h2 id="integration">INTEGRATION WITH OTHER PROTOCOLS</h2>
 
 ### Morning Routine
 - **6:30-6:45 AM:** Quick kitchen wipe while making coffee/breakfast
@@ -479,7 +495,7 @@ Every flat surface should be clear:
 
 ---
 
-## TOOLS REQUIRED
+<h2 id="tools">TOOLS REQUIRED</h2>
 
 **Minimum Supplies:**
 - All-purpose cleaner or disinfectant wipes
@@ -499,7 +515,7 @@ Every flat surface should be clear:
 
 ---
 
-## FINAL REMINDER
+<h2 id="reminder">FINAL REMINDER</h2>
 
 **Your house is not your worth.**
 

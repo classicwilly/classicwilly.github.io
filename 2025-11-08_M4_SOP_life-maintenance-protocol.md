@@ -23,7 +23,34 @@ This SOP covers: House cleaning, groceries, personal hygiene. The stuff nobody t
 
 ---
 
-## SECTION 1: HOUSE CLEANING
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#philosophy">💭 Philosophy</a>
+  <a href="#house-cleaning">🏠 House Cleaning</a>
+  <a href="#groceries">🛒 Groceries</a>
+  <a href="#hygiene">🚿 Personal Hygiene</a>
+  <a href="#integration">🔗 Integration</a>
+  <a href="#emergency">🚨 Emergency</a>
+  <a href="#tools">🛠️ Tools & Supplies</a>
+  <a href="#reminder">💡 Final Reminder</a>
+</div>
+
+---
+
+<h2 id="philosophy">PHILOSOPHY</h2>
+
+**These tasks are not moral issues. They are mechanical systems.**
+
+- Dirty house ≠ lazy. It means your maintenance system failed.
+- Empty fridge ≠ irresponsible. It means your grocery protocol broke.
+- Skipped shower ≠ gross. It means your hygiene routine hit friction.
+
+**This protocol removes decision fatigue and provides step-by-step reset procedures.**
+
+---
+
+<h2 id="house-cleaning">SECTION 1: HOUSE CLEANING</h2>
 
 ### The Core Problem
 
@@ -159,7 +186,7 @@ Executive dysfunction + visual processing issues = you literally cannot see the 
 
 ---
 
-## SECTION 2: GROCERIES
+<h2 id="groceries">SECTION 2: GROCERIES</h2>
 
 ### The Core Problem
 
@@ -300,7 +327,7 @@ Grocery shopping requires: planning meals, making lists, driving to store, navig
 
 ---
 
-## SECTION 3: PERSONAL HYGIENE
+<h2 id="hygiene">SECTION 3: PERSONAL HYGIENE</h2>
 
 ### The Core Problem
 
@@ -450,7 +477,7 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
 
 ---
 
-## SECTION 4: INTEGRATION WITH DAILY PROTOCOLS
+<h2 id="integration">SECTION 4: INTEGRATION WITH DAILY PROTOCOLS</h2>
 
 ### Morning Routine
 - **6:00-6:30 AM:** Tier 1 hygiene minimum (face, teeth, deodorant)
@@ -467,7 +494,7 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
 
 ---
 
-## EMERGENCY PROTOCOLS
+<h2 id="emergency">EMERGENCY PROTOCOLS</h2>
 
 ### When You've Skipped Everything for Days/Weeks
 
@@ -483,7 +510,7 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
 
 ---
 
-## TOOLS & SUPPLIES CHECKLIST
+<h2 id="tools">TOOLS & SUPPLIES CHECKLIST</h2>
 
 ### Cleaning Supplies
 - All-purpose cleaner or disinfectant wipes
@@ -513,7 +540,7 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
 
 ---
 
-## FINAL REMINDER
+<h2 id="reminder">FINAL REMINDER</h2>
 
 **These tasks do not define your worth.**
 

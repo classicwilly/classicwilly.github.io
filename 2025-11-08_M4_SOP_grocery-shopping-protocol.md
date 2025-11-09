@@ -9,7 +9,23 @@ title: Grocery Shopping Protocol - SOP-GS
 
 ---
 
-## THE CORE PROBLEM
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#problem">❓ The Problem</a>
+  <a href="#solution">💡 The Solution</a>
+  <a href="#template">📋 Grocery Template</a>
+  <a href="#execution">🛒 Shopping Execution</a>
+  <a href="#meal-prep">🍽️ Meal Prep Options</a>
+  <a href="#frequency">📅 Frequency & Restocking</a>
+  <a href="#troubleshoot">🔧 Troubleshooting</a>
+  <a href="#integration">🔗 Integration</a>
+  <a href="#reminder">💡 Final Reminder</a>
+</div>
+
+---
+
+<h2 id="problem">THE CORE PROBLEM</h2>
 
 Grocery shopping requires:
 1. Planning meals
@@ -26,7 +42,7 @@ Grocery shopping requires:
 
 ---
 
-## THE SOLUTION: TEMPLATE-BASED SHOPPING
+<h2 id="solution">THE SOLUTION: TEMPLATE-BASED SHOPPING</h2>
 
 **Stop planning meals. Use a template list.**
 
@@ -34,7 +50,7 @@ Instead of "what should I make this week?" (infinite possibilities = freeze), yo
 
 ---
 
-## MASTER GROCERY TEMPLATE
+<h2 id="template">MASTER GROCERY TEMPLATE</h2>
 
 **Print this. Laminate it. Keep it on fridge.**
 
@@ -211,7 +227,7 @@ Instead of "what should I make this week?" (infinite possibilities = freeze), yo
 
 ---
 
-## SHOPPING EXECUTION PROTOCOL
+<h2 id="execution">SHOPPING EXECUTION PROTOCOL</h2>
 
 **Goal:** Get in, get out, minimize sensory overwhelm and decision fatigue.
 
@@ -314,7 +330,7 @@ Instead of "what should I make this week?" (infinite possibilities = freeze), yo
 
 ---
 
-## MEAL PREP: NO-COOK & LOW-EFFORT OPTIONS
+<h2 id="meal-prep">MEAL PREP: NO-COOK & LOW-EFFORT OPTIONS</h2>
 
 **You have groceries. Now what?**
 
@@ -437,7 +453,7 @@ These are NOT recipes. These are assembly instructions for eating.
 
 ---
 
-## FREQUENCY & RESTOCKING
+<h2 id="frequency">FREQUENCY & RESTOCKING</h2>
 
 **How often to shop:** Every 7-10 days (weekly-ish)
 
@@ -454,7 +470,7 @@ These are NOT recipes. These are assembly instructions for eating.
 
 ---
 
-## TROUBLESHOOTING
+<h2 id="troubleshoot">TROUBLESHOOTING</h2>
 
 ### "I can't make myself go to the store"
 
@@ -486,7 +502,7 @@ These are NOT recipes. These are assembly instructions for eating.
 
 ---
 
-## INTEGRATION WITH OTHER PROTOCOLS
+<h2 id="integration">INTEGRATION WITH OTHER PROTOCOLS</h2>
 
 ### Weekly Review (Friday 3PM or Sunday 8:30PM)
 - Check template: 50% boxes checked? Schedule grocery shop this week.
@@ -497,7 +513,7 @@ These are NOT recipes. These are assembly instructions for eating.
 
 ---
 
-## FINAL REMINDER
+<h2 id="reminder">FINAL REMINDER</h2>
 
 **Feeding yourself is not a moral issue.**
 

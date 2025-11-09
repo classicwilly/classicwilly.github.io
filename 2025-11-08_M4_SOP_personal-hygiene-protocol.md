@@ -9,7 +9,25 @@ title: Personal Hygiene Protocol - SOP-PH
 
 ---
 
-## THE CORE PROBLEM
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#problem">❓ The Problem</a>
+  <a href="#solution">💡 The Solution</a>
+  <a href="#tier1">🟢 Tier 1: Minimal (5 min)</a>
+  <a href="#tier2">🟡 Tier 2: Sink Wash (10 min)</a>
+  <a href="#tier3">🟠 Tier 3: Quick Shower (15 min)</a>
+  <a href="#tier4">🔴 Tier 4: Full Routine (30-45 min)</a>
+  <a href="#frequency">📅 Frequency Guide</a>
+  <a href="#sensory">👂 Sensory Accommodations</a>
+  <a href="#troubleshoot">🔧 Troubleshooting</a>
+  <a href="#integration">🔗 Integration</a>
+  <a href="#reminder">💡 Final Reminder</a>
+</div>
+
+---
+
+<h2 id="problem">THE CORE PROBLEM</h2>
 
 Sensory issues + executive dysfunction + depression = hygiene tasks feel impossible.
 
@@ -24,7 +42,7 @@ It's not the hygiene itself. It's:
 
 ---
 
-## THE SOLUTION: TIERED HYGIENE SYSTEM
+<h2 id="solution">THE SOLUTION: TIERED HYGIENE SYSTEM</h2>
 
 **Not every day requires a full shower. Match hygiene to your capacity.**
 
@@ -37,7 +55,7 @@ It's not the hygiene itself. It's:
 
 ---
 
-## TIER 1: MINIMAL FUNCTION DAY (5 Minutes)
+<h2 id="tier1">TIER 1: MINIMAL FUNCTION DAY (5 Minutes)</h2>
 
 **When to Use:** Can't shower. Depression, exhaustion, executive dysfunction freeze. Need to survive today.
 
@@ -87,7 +105,7 @@ This tier is for survival, not performance. You:
 
 ---
 
-## TIER 2: SINK WASH (10 Minutes)
+<h2 id="tier2">TIER 2: SINK WASH (10 Minutes)</h2>
 
 **When to Use:** Shower feels impossible but you want to feel cleaner than Tier 1.
 
@@ -153,7 +171,7 @@ You washed:
 
 ---
 
-## TIER 3: QUICK SHOWER (15 Minutes)
+<h2 id="tier3">TIER 3: QUICK SHOWER (15 Minutes)</h2>
 
 **When to Use:** Can manage a shower but need it to be fast. Low energy, limited time, or shower avoidance but forcing yourself.
 
@@ -247,7 +265,7 @@ You washed:
 
 ---
 
-## TIER 4: FULL HYGIENE ROUTINE (30-45 Minutes)
+<h2 id="tier4">TIER 4: FULL HYGIENE ROUTINE (30-45 Minutes)</h2>
 
 **When to Use:** Have capacity for complete maintenance. Feeling good, have time, want to do "the full thing."
 
@@ -385,7 +403,7 @@ You washed:
 
 ---
 
-## HYGIENE FREQUENCY GUIDE
+<h2 id="frequency">HYGIENE FREQUENCY GUIDE</h2>
 
 **How often should you do each tier?**
 
@@ -418,7 +436,7 @@ You washed:
 
 ---
 
-## SENSORY ACCOMMODATIONS
+<h2 id="sensory">SENSORY ACCOMMODATIONS</h2>
 
 **If showers are hard due to sensory issues, adapt the environment:**
 
@@ -454,7 +472,7 @@ You washed:
 
 ---
 
-## TROUBLESHOOTING
+<h2 id="troubleshoot">TROUBLESHOOTING</h2>
 
 ### "I haven't showered in a week and I feel disgusting"
 
@@ -513,7 +531,7 @@ You washed:
 
 ---
 
-## INTEGRATION WITH OTHER PROTOCOLS
+<h2 id="integration">INTEGRATION WITH OTHER PROTOCOLS</h2>
 
 ### Morning Routine (6:00-7:00 AM)
 - **Tier 1 minimum:** Face wipe, deodorant, teeth, clean underwear
@@ -530,7 +548,7 @@ You washed:
 
 ---
 
-## FINAL REMINDER
+<h2 id="reminder">FINAL REMINDER</h2>
 
 **Your hygiene is not your worth.**
 
