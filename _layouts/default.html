@@ -56,10 +56,31 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: 
-          repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(26,188,156,0.05) 2px, rgba(26,188,156,0.05) 4px),
-          repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(26,188,156,0.05) 2px, rgba(26,188,156,0.05) 4px);
         pointer-events: none;
+      }
+      
+      /* Starfield animation */
+      .starfield {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      
+      .star {
+        position: absolute;
+        width: 2px;
+        height: 2px;
+        background: white;
+        border-radius: 50%;
+        animation: twinkle linear infinite;
+      }
+      
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
       }
       
       .site-title {
@@ -963,7 +984,8 @@
         z-index: 2;
         text-align: center;
         max-width: 900px;
-        padding-bottom: 5rem;
+        padding-bottom: 8rem;
+        padding-top: 3rem;
       }
       
       .hero-title {
@@ -1610,10 +1632,10 @@
           flex: 1 1 100%;
         }
       }
-    </style>
   </head>
   <body>
     <header class="site-header">
+      <div class="starfield" id="starfield"></div>
       <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
         <!-- Title & Tagline (Center) -->
         <div style="flex: 1 1 300px; text-align: center;">
@@ -2372,9 +2394,35 @@
         }
       })();
 
-      // ===== CHAOS TAMER + SYSTEM STATUS TERMINAL =====
+      // ===== STARFIELD ANIMATION =====
       (function() {
-        // Removed animations - clean header with just title
+        const starfield = document.getElementById('starfield');
+        if (!starfield) return;
+        
+        const numStars = 100;
+        
+        // Create stars
+        for (let i = 0; i < numStars; i++) {
+          const star = document.createElement('div');
+          star.className = 'star';
+          
+          // Random position
+          star.style.left = Math.random() * 100 + '%';
+          star.style.top = Math.random() * 100 + '%';
+          
+          // Random size (1-3px)
+          const size = Math.random() * 2 + 1;
+          star.style.width = size + 'px';
+          star.style.height = size + 'px';
+          
+          // Random animation duration (2-5 seconds)
+          star.style.animationDuration = (Math.random() * 3 + 2) + 's';
+          
+          // Random animation delay for staggered twinkle
+          star.style.animationDelay = Math.random() * 2 + 's';
+          
+          starfield.appendChild(star);
+        }
       })();
     </script>
   </body>
