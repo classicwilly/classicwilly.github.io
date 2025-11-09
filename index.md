@@ -119,16 +119,3 @@ title: Home
     </div>
   </div>
 </div>
-
-<div class="emergency-banner">
-  <h3>🚨 IN CRISIS? FROZEN? CAN'T START ANYTHING?</h3>
-  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="emergency-link">
-    → EXECUTIVE DYSFUNCTION EMERGENCY PROTOCOL (USE NOW)
-  </a>
-</div>
-
-<div class="footer-nav">
-  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency">🚨 Emergency Protocol</a>
-  <a href="/2025-11-08_M1_PAGE_manifesto">📜 Manifesto</a>
-  <a href="/games" style="opacity: 0.5;" title="Secret stim games">🎮</a>
-</div>

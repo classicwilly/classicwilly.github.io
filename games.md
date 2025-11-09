@@ -453,11 +453,3 @@ No scores. No timers. No pressure. Just... click things.
 ---
 
 **No rules. No winning. No losing. Just stim.**
-
----
-
-<div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
-  <a href="/" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600;">← Back to Home</a>
-  <a href="/daily-tracker" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600;">Need to Focus?</a>
-  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="text-decoration: none; color: var(--circuit-teal); font-weight: 600;">In Crisis? →</a>
-</div>
