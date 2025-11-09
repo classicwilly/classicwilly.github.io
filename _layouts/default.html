@@ -79,28 +79,21 @@
         border-radius: 50%;
         animation: starMovement ease-in-out infinite;
         will-change: transform, opacity;
+        z-index: 1;
       }
       
       @keyframes starMovement {
         0% { 
-          opacity: 0.2; 
-          transform: translate(0, 0) scale(0.8); 
-        }
-        25% { 
           opacity: 1; 
-          transform: translate(15px, -25px) scale(1.8); 
+          transform: translate(0, 0) scale(1); 
         }
         50% { 
           opacity: 0.3; 
-          transform: translate(30px, -50px) scale(1); 
-        }
-        75% { 
-          opacity: 1; 
-          transform: translate(45px, -75px) scale(1.6); 
+          transform: translate(30px, -50px) scale(2); 
         }
         100% { 
-          opacity: 0.2; 
-          transform: translate(60px, -100px) scale(0.8); 
+          opacity: 1; 
+          transform: translate(60px, -100px) scale(1); 
         }
       }
       
@@ -2497,12 +2490,9 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // Random animation duration (20-40s for faster visible movement)
-          const duration = Math.random() * 20 + 20;
-          star.style.animationDuration = `${duration}s`;
-          
-          // Random delay
-          star.style.animationDelay = `${Math.random() * 5}s`;
+          // VERY FAST animation for testing (10s)
+          star.style.animationDuration = '10s';
+          star.style.animationDelay = '0s';
           
           header.insertBefore(star, header.firstChild);
         }
