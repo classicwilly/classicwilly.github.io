@@ -105,9 +105,29 @@ title: Home
   </div>
 </div>
 
+<div class="testimonial-section">
+  <h2 class="section-title">PROOF OF CONCEPT</h2>
+  <div class="testimonial-card">
+    <div class="testimonial-meta">
+      <strong>William Johnson</strong> • System Designer • 40-year-old with Autism/ADHD
+    </div>
+    <blockquote class="testimonial-text">
+      "I built Wonky Sprout OS for me. 40+ protocols. Daily tracker with streak system. Executive dysfunction emergency protocols. Solo Execution Mode and Family Structure Mode. It works because it had to—I'm the beta tester and the end user. No corporate BS. No fake motivation. Just structure from chaos, deployed and battle-tested in real neurodivergent life."
+    </blockquote>
+    <div class="testimonial-footer">
+      Built for me. Works for me. Now available for you.
+    </div>
+  </div>
+</div>
+
+<div class="emergency-banner">
+  <h3>🚨 IN CRISIS? FROZEN? CAN'T START ANYTHING?</h3>
+  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="emergency-link">
+    → EXECUTIVE DYSFUNCTION EMERGENCY PROTOCOL (USE NOW)
+  </a>
+</div>
+
 <div class="footer-nav">
-  <a href="/checklists">📋 Interactive Checklists</a>
-  <a href="/daily-tracker">📊 Daily Tracker</a>
-  <a href="/tracker-stats">📈 Stats Dashboard</a>
-  <a href="/catalog">🗂️ Card Catalog</a>
+  <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency">� Emergency Protocol</a>
+  <a href="/2025-11-08_M1_PAGE_manifesto">� Manifesto</a>
 </div>
