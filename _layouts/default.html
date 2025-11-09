@@ -1599,13 +1599,42 @@
         .checklist-controls button {
           width: 100%;
         }
+        
+        /* Hide Chaos Tamer and Terminal on mobile, keep title centered */
+        .site-header > div > div:first-child,
+        .site-header > div > div:last-child {
+          display: none;
+        }
+        
+        .site-header > div > div:nth-child(2) {
+          flex: 1 1 100%;
+        }
       }
     </style>
   </head>
   <body>
     <header class="site-header">
-      <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
-      <p class="site-tagline">{{ site.description | default: "A card catalog for a chaotic world." }}</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
+        <!-- Chaos Tamer Visualizer (Left) -->
+        <div style="flex: 0 0 250px; height: 120px; position: relative;">
+          <canvas id="chaosCanvas" width="250" height="120" style="border: 2px solid var(--circuit-teal); border-radius: 8px; background: rgba(1,4,9,0.8);"></canvas>
+        </div>
+        
+        <!-- Title & Tagline (Center) -->
+        <div style="flex: 1 1 300px; text-align: center;">
+          <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
+          <p class="site-tagline">{{ site.description | default: "A card catalog for a chaotic world." }}</p>
+        </div>
+        
+        <!-- System Status Terminal (Right) -->
+        <div style="flex: 0 0 250px; height: 120px; position: relative;">
+          <div id="statusTerminal" style="border: 2px solid var(--circuit-teal); border-radius: 8px; background: rgba(1,4,9,0.95); padding: 0.75rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; height: 100%; overflow: hidden; position: relative;">
+            <div style="color: var(--circuit-teal); margin-bottom: 0.5rem; font-weight: 600;">SYSTEM STATUS</div>
+            <div id="terminalOutput" style="color: var(--text-light); line-height: 1.4;"></div>
+            <div id="affirmation" style="position: absolute; bottom: 0.5rem; left: 0.75rem; right: 0.75rem; color: var(--sprout-green); font-weight: 600; font-size: 0.85rem; text-align: center; opacity: 0; transition: opacity 0.5s;"></div>
+          </div>
+        </div>
+      </div>
     </header>
     
     <nav class="site-nav">
@@ -2355,6 +2384,206 @@
           
           console.log('Hero stats initialized');
         }
+      })();
+
+      // ===== CHAOS TAMER + SYSTEM STATUS TERMINAL =====
+      (function() {
+        const canvas = document.getElementById('chaosCanvas');
+        const terminal = document.getElementById('terminalOutput');
+        const affirmationEl = document.getElementById('affirmation');
+        
+        if (!canvas || !terminal || !affirmationEl) return;
+        
+        const ctx = canvas.getContext('2d');
+        const width = 250;
+        const height = 120;
+        
+        // Affirmations that appear when chaos is fixed
+        const affirmations = [
+          "You're doing great.",
+          "Progress > Perfection.",
+          "Small steps count.",
+          "You survived today.",
+          "Structure from chaos.",
+          "You fixed something.",
+          "Forward momentum.",
+          "Good enough is good.",
+          "You showed up.",
+          "Rest is productive."
+        ];
+        
+        let affirmationIndex = 0;
+        
+        // Terminal status messages
+        const statusMessages = [
+          "▸ Loading protocols...",
+          "▸ Chaos detected... taming...",
+          "▸ Structure applied ✓",
+          "▸ System stabilized ✓",
+          "▸ Ready for execution."
+        ];
+        
+        let messageIndex = 0;
+        let charIndex = 0;
+        let currentMessage = "";
+        
+        // Chaos Tamer Animation
+        let chaosPhase = 0; // 0 = chaos, 1 = transforming, 2 = grid
+        let chaosLines = [];
+        let gridOpacity = 0;
+        
+        // Initialize chaos lines (random scribbles)
+        function initChaos() {
+          chaosLines = [];
+          for (let i = 0; i < 15; i++) {
+            chaosLines.push({
+              x1: Math.random() * width,
+              y1: Math.random() * height,
+              x2: Math.random() * width,
+              y2: Math.random() * height,
+              opacity: 0.3 + Math.random() * 0.5,
+              speed: 0.5 + Math.random() * 1
+            });
+          }
+        }
+        
+        initChaos();
+        
+        // Draw chaos (random lines)
+        function drawChaos() {
+          chaosLines.forEach(line => {
+            ctx.strokeStyle = `rgba(249, 115, 22, ${line.opacity * (1 - gridOpacity)})`;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(line.x1, line.y1);
+            ctx.lineTo(line.x2, line.y2);
+            ctx.stroke();
+            
+            // Animate lines
+            line.x1 += Math.sin(Date.now() * 0.001 * line.speed) * 0.5;
+            line.y1 += Math.cos(Date.now() * 0.001 * line.speed) * 0.5;
+            line.x2 += Math.sin(Date.now() * 0.001 * line.speed + 1) * 0.5;
+            line.y2 += Math.cos(Date.now() * 0.001 * line.speed + 1) * 0.5;
+            
+            // Wrap around edges
+            if (line.x1 < 0) line.x1 = width;
+            if (line.x1 > width) line.x1 = 0;
+            if (line.y1 < 0) line.y1 = height;
+            if (line.y1 > height) line.y1 = 0;
+            if (line.x2 < 0) line.x2 = width;
+            if (line.x2 > width) line.x2 = 0;
+            if (line.y2 < 0) line.y2 = height;
+            if (line.y2 > height) line.y2 = 0;
+          });
+        }
+        
+        // Draw grid (clean structure)
+        function drawGrid() {
+          ctx.strokeStyle = `rgba(26, 188, 156, ${gridOpacity})`;
+          ctx.lineWidth = 1;
+          
+          // Vertical lines
+          for (let x = 0; x < width; x += 20) {
+            ctx.beginPath();
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, height);
+            ctx.stroke();
+          }
+          
+          // Horizontal lines
+          for (let y = 0; y < height; y += 20) {
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            ctx.lineTo(width, y);
+            ctx.stroke();
+          }
+        }
+        
+        // Main animation loop
+        function animate() {
+          ctx.fillStyle = 'rgba(1, 4, 9, 0.8)';
+          ctx.fillRect(0, 0, width, height);
+          
+          drawChaos();
+          drawGrid();
+          
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+        
+        // Terminal typing effect
+        function typeMessage() {
+          if (messageIndex >= statusMessages.length) {
+            messageIndex = 0;
+            terminal.innerHTML = "";
+            return;
+          }
+          
+          currentMessage = statusMessages[messageIndex];
+          
+          if (charIndex < currentMessage.length) {
+            terminal.innerHTML += currentMessage[charIndex];
+            charIndex++;
+            setTimeout(typeMessage, 50);
+          } else {
+            terminal.innerHTML += "<br>";
+            charIndex = 0;
+            messageIndex++;
+            
+            // Show affirmation when "Structure applied" appears
+            if (messageIndex === 3) {
+              showAffirmation();
+              transformToGrid();
+            }
+            
+            setTimeout(typeMessage, messageIndex === 3 ? 2000 : 800);
+          }
+        }
+        
+        // Transform chaos to grid
+        function transformToGrid() {
+          let startTime = Date.now();
+          function transition() {
+            let elapsed = Date.now() - startTime;
+            let progress = Math.min(elapsed / 2000, 1); // 2 second transition
+            gridOpacity = progress;
+            
+            if (progress < 1) {
+              requestAnimationFrame(transition);
+            } else {
+              // Reset after a pause
+              setTimeout(() => {
+                gridOpacity = 0;
+                initChaos();
+              }, 3000);
+            }
+          }
+          transition();
+        }
+        
+        // Show affirmation
+        function showAffirmation() {
+          affirmationEl.textContent = affirmations[affirmationIndex];
+          affirmationEl.style.opacity = '1';
+          
+          setTimeout(() => {
+            affirmationEl.style.opacity = '0';
+          }, 2500);
+          
+          affirmationIndex = (affirmationIndex + 1) % affirmations.length;
+        }
+        
+        // Start terminal typing
+        setTimeout(typeMessage, 500);
+        
+        // Loop the entire sequence
+        setInterval(() => {
+          messageIndex = 0;
+          charIndex = 0;
+          terminal.innerHTML = "";
+          setTimeout(typeMessage, 500);
+        }, 15000); // Restart every 15 seconds
       })();
     </script>
   </body>
