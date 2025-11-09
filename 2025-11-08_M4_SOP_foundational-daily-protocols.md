@@ -11,13 +11,27 @@ title: Foundational Daily Protocols
 
 ---
 
-## PROTOCOL OVERVIEW
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#overview">📋 Overview</a>
+  <a href="#morning">🌅 Morning Sequence</a>
+  <a href="#all-day">☀️ All-Day Protocol</a>
+  <a href="#evening">🌙 Evening Sequence</a>
+  <a href="#schedule">📅 Daily Schedule</a>
+  <a href="#checklist">✅ Execution Checklist</a>
+  <a href="#failure">🚨 Failure Protocol</a>
+</div>
+
+---
+
+<h2 id="overview">PROTOCOL OVERVIEW</h2>
 
 These 5 protocols are **mandatory** and must execute in sequence or at designated times. They are the scaffolding that keeps executive function online.
 
 ---
 
-## MORNING SEQUENCE (Fixed Order)
+<h2 id="morning">MORNING SEQUENCE (Fixed Order)</h2>
 
 ### 6:00 AM - Wake & Water Protocol
 - **Purpose**: Physical Fix - Prevents dehydration chaos (crucial for focus)
@@ -41,7 +55,7 @@ These 5 protocols are **mandatory** and must execute in sequence or at designate
 
 ---
 
-## ALL-DAY PROTOCOL (Active 6:00 AM - 10:30 PM)
+<h2 id="all-day">ALL-DAY PROTOCOL (Active 6:00 AM - 10:30 PM)</h2>
 
 ### Capture Protocol (Always Running)
 - **Purpose**: Thought Fix - Stops "fleeting thoughts" chaos and prevents loss of valuable data
@@ -60,7 +74,7 @@ These 5 protocols are **mandatory** and must execute in sequence or at designate
 
 ---
 
-## EVENING SEQUENCE (Fixed Order)
+<h2 id="evening">EVENING SEQUENCE (Fixed Order)</h2>
 
 ### 10:00 PM - Sleep Anchor Prep
 - **Purpose**: Regulator Fix - Ensures neuroplasticity and stable function
@@ -97,7 +111,7 @@ These 5 protocols are **mandatory** and must execute in sequence or at designate
 
 ---
 
-## DAILY SCHEDULE TEMPLATE
+<h2 id="schedule">DAILY SCHEDULE TEMPLATE</h2>
 
 ```
 6:00 AM  │ Wake & Water Protocol (2 min)
@@ -113,7 +127,7 @@ These 5 protocols are **mandatory** and must execute in sequence or at designate
 
 ---
 
-## EXECUTION CHECKLIST
+<h2 id="checklist">EXECUTION CHECKLIST</h2>
 
 ### Morning (6:00-6:03 AM)
 - [ ] Wake at 6:00 AM
@@ -132,7 +146,7 @@ These 5 protocols are **mandatory** and must execute in sequence or at designate
 
 ---
 
-## FAILURE PROTOCOL
+<h2 id="failure">FAILURE PROTOCOL</h2>
 
 **If you miss a protocol:**
 

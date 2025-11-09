@@ -13,7 +13,19 @@ title: Solo Execution Mode
 
 ---
 
-## DAILY SCHEDULE (HOURLY BREAKDOWN)
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#daily">📅 Daily Schedule</a>
+  <a href="#monday">🍽️ Monday Meal Prep</a>
+  <a href="#weekly">📆 Weekly Template</a>
+  <a href="#checklist">✅ Daily Checklist</a>
+  <a href="#tools">🛠️ Tools Required</a>
+</div>
+
+---
+
+<h2 id="daily">DAILY SCHEDULE (HOURLY BREAKDOWN)</h2>
 
 ### 6:00 AM - Morning Protocols
 - **FDP Active**: Water Protocol → Pill Protocol (3 minutes)
@@ -117,7 +129,7 @@ title: Solo Execution Mode
 
 ---
 
-## MONDAY SPECIAL: MEAL PREP DAY
+<h2 id="monday">MONDAY SPECIAL: MEAL PREP DAY</h2>
 
 ### 7:00 AM - 8:00 AM | Meal Prep (Replaces Planning & Filing)
 - **Protocol**: Low-Friction Fuel Prep
@@ -133,7 +145,7 @@ title: Solo Execution Mode
 
 ---
 
-## WEEKLY SCHEDULE TEMPLATE
+<h2 id="weekly">WEEKLY SCHEDULE TEMPLATE</h2>
 
 ```
 MONDAY
@@ -173,7 +185,7 @@ FRIDAY (Transition Day)
 
 ---
 
-## EXECUTION CHECKLIST (DAILY)
+<h2 id="checklist">EXECUTION CHECKLIST (DAILY)</h2>
 
 ### Morning
 - [ ] 6:00-6:03 AM: FDP (Water, Pills)
@@ -196,7 +208,7 @@ FRIDAY (Transition Day)
 
 ---
 
-## TOOLS REQUIRED
+<h2 id="tools">TOOLS REQUIRED</h2>
 
 - Soundcore Space One Headphones (Bubble Shield Profile 1.0)
 - VS Code (Command Center)

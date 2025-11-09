@@ -17,7 +17,29 @@ title: Weekly Review Protocol
 
 ---
 
-## PROTOCOL OVERVIEW
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#overview">📋 Overview</a>
+  <a href="#setup">🎯 Setup</a>
+  <a href="#phase1">📥 Phase 1: Chaos Processing</a>
+  <a href="#phase2">✅ Phase 2: Task Review</a>
+  <a href="#phase3">🔍 Phase 3: System Health</a>
+  <a href="#phase4">📅 Phase 4: Planning</a>
+  <a href="#phase5">⚙️ Phase 5: Optimization</a>
+  <a href="#post">🏁 Post-Protocol</a>
+  <a href="#mode">🔄 Mode Adjustments</a>
+  <a href="#troubleshoot">🚨 Troubleshooting</a>
+  <a href="#integration">🔗 Integration</a>
+  <a href="#tools">🛠️ Tools</a>
+  <a href="#metrics">📊 Success Metrics</a>
+  <a href="#checklist">✅ Checklist</a>
+  <a href="#final">💡 Final Note</a>
+</div>
+
+---
+
+<h2 id="overview">PROTOCOL OVERVIEW</h2>
 
 This is a 5-phase review that processes the week's data, maintains system health, and sets up the next week for success. Each phase has a specific purpose and time allocation.
 
@@ -25,7 +47,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PRE-PROTOCOL SETUP (5 Minutes)
+<h2 id="setup">PRE-PROTOCOL SETUP (5 Minutes)</h2>
 
 ### Environment Preparation
 - **Action**:
@@ -45,7 +67,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PHASE 1: CHAOS PROCESSING (15 Minutes)
+<h2 id="phase1">PHASE 1: CHAOS PROCESSING (15 Minutes)</h2>
 
 **Purpose**: Process all captured thoughts, notes, and random data from the week. Turn chaos into structured information.
 
@@ -83,7 +105,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PHASE 2: TASK COMPLETION REVIEW (10 Minutes)
+<h2 id="phase2">PHASE 2: TASK COMPLETION REVIEW (10 Minutes)</h2>
 
 **Purpose**: Review what you accomplished this week, identify patterns, and celebrate wins.
 
@@ -119,7 +141,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)
+<h2 id="phase3">PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)</h2>
 
 **Purpose**: Review your SOPs and protocols to ensure they're still working. Identify what's breaking down.
 
@@ -167,7 +189,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PHASE 4: WEEK AHEAD PLANNING (15 Minutes)
+<h2 id="phase4">PHASE 4: WEEK AHEAD PLANNING (15 Minutes)</h2>
 
 **Purpose**: Set up next week for success by reviewing schedule, identifying risks, and pre-allocating time.
 
@@ -223,7 +245,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)
+<h2 id="phase5">PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)</h2>
 
 **Purpose**: Improve the Wonky Sprout OS based on this week's data. Make it better.
 
@@ -256,7 +278,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## POST-PROTOCOL ACTIONS (5 Minutes)
+<h2 id="post">POST-PROTOCOL ACTIONS (5 Minutes)</h2>
 
 ### Step 15: Clean Slate Ritual (3 minutes)
 - **Action**: 
@@ -276,7 +298,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## MODE-SPECIFIC ADJUSTMENTS
+<h2 id="mode">MODE-SPECIFIC ADJUSTMENTS</h2>
 
 ### Solo Execution Mode (Friday 3:00-4:00 PM)
 - **Why this timing**: Completes before Family Mode transition at 4:00 PM
@@ -290,7 +312,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## TROUBLESHOOTING
+<h2 id="troubleshoot">TROUBLESHOOTING</h2>
 
 ### "I don't have 60 minutes"
 - **Minimum viable Weekly Review (30 minutes)**:
@@ -322,7 +344,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## INTEGRATION WITH OTHER PROTOCOLS
+<h2 id="integration">INTEGRATION WITH OTHER PROTOCOLS</h2>
 
 ### Weekly Review → Daily Dump
 - Weekly Review handles strategic planning (week-level)
@@ -340,7 +362,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## TOOLS REQUIRED
+<h2 id="tools">TOOLS REQUIRED</h2>
 
 - Google Keep (chaos capture review)
 - Google Tasks (task management)
@@ -352,7 +374,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## SUCCESS METRICS
+<h2 id="metrics">SUCCESS METRICS</h2>
 
 **You have successfully executed this protocol when:**
 - Google Keep is empty (or only has "Review Next Week" items)
@@ -370,7 +392,7 @@ This is a 5-phase review that processes the week's data, maintains system health
 
 ---
 
-## WEEKLY REVIEW CHECKLIST
+<h2 id="checklist">WEEKLY REVIEW CHECKLIST</h2>
 
 Use this checklist during execution:
 
@@ -414,7 +436,7 @@ Use this checklist during execution:
 
 ---
 
-## FINAL NOTE
+<h2 id="final">FINAL NOTE</h2>
 
 **Weekly Review is the maintenance protocol that keeps the Wonky Sprout OS running cleanly.** Without it, chaos accumulates, protocols drift, and systems break down.
 

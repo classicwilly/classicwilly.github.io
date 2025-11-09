@@ -13,7 +13,21 @@ title: Family Structure Mode
 
 ---
 
-## FRIDAY TRANSITION (4:00 PM - 6:00 PM)
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#friday">📅 Friday Transition</a>
+  <a href="#saturday">☀️ Saturday Schedule</a>
+  <a href="#sunday">🏡 Sunday at Grandma's</a>
+  <a href="#monday">🌅 Monday Departure</a>
+  <a href="#meals">🍽️ Meal Schedule</a>
+  <a href="#checklist">✅ Daily Checklist</a>
+  <a href="#tools">🛠️ Tools Required</a>
+</div>
+
+---
+
+<h2 id="friday">FRIDAY TRANSITION (4:00 PM - 6:00 PM)</h2>
 
 ### 3:30 PM - 4:00 PM | Final Solo Prep (30 minutes)
 - **Action**:
@@ -71,7 +85,7 @@ title: Family Structure Mode
 
 ---
 
-## SATURDAY SCHEDULE (FULL DAY)
+<h2 id="saturday">SATURDAY SCHEDULE (FULL DAY)</h2>
 
 ### 6:00 AM - 7:00 AM | Personal Morning
 - **FDP Active**: Water Protocol → Pill Protocol (3 minutes)
@@ -215,7 +229,7 @@ title: Family Structure Mode
 
 ---
 
-## SUNDAY SCHEDULE (GRANDMA'S HOUSE DAY)
+<h2 id="sunday">SUNDAY SCHEDULE (GRANDMA'S HOUSE DAY)</h2>
 
 **CRITICAL NOTE**: Sunday has the highest decision-making load and task management complexity of the entire weekend. Jacksonville family dinner requires extensive prep to prevent overwhelm for both you and the kids. This is the most structured day.
 
@@ -438,7 +452,7 @@ title: Family Structure Mode
 
 ---
 
-## MONDAY MORNING DEPARTURE
+<h2 id="monday">MONDAY MORNING DEPARTURE</h2>
 
 ### 6:00 AM - 7:00 AM | Personal Morning
 - **FDP Active**: Water Protocol → Pill Protocol
@@ -490,7 +504,7 @@ title: Family Structure Mode
 
 ---
 
-## FIXED MEAL SCHEDULE (NON-NEGOTIABLE)
+<h2 id="meals">FIXED MEAL SCHEDULE (NON-NEGOTIABLE)</h2>
 
 ```
 FRIDAY
@@ -514,7 +528,7 @@ Breakfast: Cereal/Quick Options
 
 ---
 
-## EXECUTION CHECKLIST (DAILY)
+<h2 id="checklist">EXECUTION CHECKLIST (DAILY)</h2>
 
 ### Morning
 - [ ] 6:00 AM: FDP (Water, Pills)
@@ -537,7 +551,7 @@ Breakfast: Cereal/Quick Options
 
 ---
 
-## TOOLS REQUIRED
+<h2 id="tools">TOOLS REQUIRED</h2>
 
 - Soundcore Space One Headphones (Bubble Shield Profile 2.0: Transparency 5, Vol 10%)
 - Large Whiteboard (Visual schedule for children)

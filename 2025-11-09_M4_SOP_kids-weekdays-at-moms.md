@@ -25,7 +25,44 @@ title: Weekdays at Mom's - Kids Protocol
 
 ---
 
-## 🏠 WHAT THIS WEEK LOOKS LIKE
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#how-to-use">📄 How to Use</a>
+  <a href="#what-week-looks-like">🏠 What to Expect</a>
+  <a href="#daily-checklist">📋 Daily Checklist</a>
+  <a href="#homework">📚 Homework Help</a>
+  <a href="#bored">🎨 When Bored</a>
+  <a href="#sad-mad-scared">😰 Feeling Upset</a>
+  <a href="#call-dad">📞 Call Dad</a>
+  <a href="#bedtime">🛏️ Bedtime</a>
+  <a href="#school">🎒 School Survival</a>
+  <a href="#eating">🍽️ Eating</a>
+  <a href="#track-days">🗓️ Track Days</a>
+  <a href="#stronger">💪 You're Strong</a>
+  <a href="#weekly-reflection">📝 Reflection</a>
+  <a href="#emergency">🚨 Emergency</a>
+  <a href="#dads-message">💙 Dad's Message</a>
+  <a href="#friday">✅ Friday!</a>
+</div>
+
+---
+
+<h2 id="how-to-use">📄 HOW TO USE THIS CHECKLIST</h2>
+
+**Best Way**: **Print this page!** Then you can:
+- ✅ Check off boxes with a pencil each day
+- ✅ Keep it in your backpack or room
+- ✅ Look at it when you need help or feel stuck
+- ✅ Bring it to Dad's on Friday to show what you did
+
+**Mom Can Help Too**: Ask Mom to help you with this checklist if you need it!
+
+**On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
+
+---
+
+<h2 id="what-week-looks-like">🏠 WHAT THIS WEEK LOOKS LIKE</h2>
 
 ### Monday-Friday at Mom's
 - You go to school
@@ -43,7 +80,7 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 
 ---
 
-## 📋 YOUR WEEKDAY CHECKLIST (Do These Every Day)
+<h2 id="daily-checklist">📋 YOUR WEEKDAY CHECKLIST (Do These Every Day)</h2>
 
 ### Morning Checklist (Before School)
 
@@ -171,7 +208,7 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 
 ---
 
-## 📚 HOMEWORK HELPER (When Homework Feels Hard)
+<h2 id="homework">📚 HOMEWORK HELPER (When Homework Feels Hard)</h2>
 
 ### Step-by-Step Homework Plan
 1. **Find a quiet spot** - Ask Mom for a place with no TV
@@ -196,7 +233,7 @@ It's okay. It happens. Tell your teacher in the morning. Don't lie about it.
 
 ---
 
-## 🎨 THINGS TO DO WHEN YOU'RE BORED (Without a Tablet)
+<h2 id="bored">🎨 THINGS TO DO WHEN YOU'RE BORED (Without a Tablet)</h2>
 
 ### If You Only Have Paper and Pencil
 1. **Draw** - Anything! Animals, houses, patterns, scribbles
@@ -233,7 +270,7 @@ It's okay. It happens. Tell your teacher in the morning. Don't lie about it.
 
 ---
 
-## 😰 WHEN YOU FEEL SAD, MAD, OR SCARED
+<h2 id="sad-mad-scared">😰 WHEN YOU FEEL SAD, MAD, OR SCARED</h2>
 
 ### Big Feelings Are Normal
 At Mom's house, you might feel:
@@ -291,7 +328,7 @@ If you need to talk to Mom about feelings:
 
 ---
 
-## 📞 CONNECTING WITH DAD DURING THE WEEK
+<h2 id="call-dad">📞 CONNECTING WITH DAD DURING THE WEEK</h2>
 
 ### You Can Talk to Dad
 Even though Dad can't be there, you can still connect:
@@ -328,7 +365,7 @@ Even though Dad can't be there, you can still connect:
 
 ---
 
-## 🛏️ BEDTIME WHEN DAD ISN'T THERE
+<h2 id="bedtime">🛏️ BEDTIME WHEN DAD ISN'T THERE</h2>
 
 ### Your Bedtime Routine at Mom's
 
@@ -391,7 +428,7 @@ Close your eyes and imagine Dad is there saying:
 
 ---
 
-## 🎒 SCHOOL SURVIVAL GUIDE
+<h2 id="school">🎒 SCHOOL SURVIVAL GUIDE</h2>
 
 ### If School Is Hard
 1. **Ask your teacher for help** - That's their job
@@ -418,7 +455,7 @@ Close your eyes and imagine Dad is there saying:
 
 ---
 
-## 🍽️ EATING AT MOM'S HOUSE
+<h2 id="eating">🍽️ EATING AT MOM'S HOUSE</h2>
 
 ### If Mom Makes Something You Don't Like
 - Try one bite (just one!)
@@ -443,7 +480,7 @@ Close your eyes and imagine Dad is there saying:
 
 ---
 
-## 🗓️ KEEPING TRACK OF DAYS
+<h2 id="track-days">🗓️ KEEPING TRACK OF DAYS</h2>
 
 ### How Many Days Until Dad?
 
@@ -465,7 +502,7 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
 
 ---
 
-## 💪 YOU ARE STRONGER THAN YOU THINK
+<h2 id="stronger">💪 YOU ARE STRONGER THAN YOU THINK</h2>
 
 ### Things You Can Do Without Dad
 - Get through a whole school day
@@ -485,7 +522,7 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
 
 ---
 
-## 📝 WEEKLY REFLECTION (Answer on Friday Afternoon)
+<h2 id="weekly-reflection">📝 WEEKLY REFLECTION (Answer on Friday Afternoon)</h2>
 
 **Before Dad picks you up, think about this week:**
 
@@ -523,7 +560,7 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
 
 ---
 
-## 🚨 EMERGENCY SITUATIONS
+<h2 id="emergency">🚨 EMERGENCY SITUATIONS</h2>
 
 ### If Something Really Bad Happens
 - **Someone is hurt**: Tell Mom or call 911
@@ -549,7 +586,7 @@ If Mom won't let you use the phone and you need Dad:
 
 ---
 
-## 💙 DAD'S SPECIAL MESSAGE TO YOU
+<h2 id="dads-message">💙 DAD'S SPECIAL MESSAGE TO YOU</h2>
 
 Dear [Daughter] and [Son],
 
@@ -582,7 +619,7 @@ Dad** 💙
 
 ---
 
-## ✅ FRIDAY CHECKLIST (The Best Day!)
+<h2 id="friday">✅ FRIDAY CHECKLIST (The Best Day!)</h2>
 
 ### When Dad Picks You Up
 
