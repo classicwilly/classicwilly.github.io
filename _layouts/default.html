@@ -77,25 +77,46 @@
       .star {
         position: absolute;
         border-radius: 50%;
-        animation: twinkle linear infinite, drift linear infinite, float 60s linear infinite;
+        animation: starMovement linear infinite;
       }
       
-      @keyframes twinkle {
-        0%, 100% { opacity: 0.3; transform: scale(1); }
-        50% { opacity: 1; transform: scale(1.5); }
-      }
-      
-      @keyframes drift {
-        from { transform: translateX(0); }
-        to { transform: translateX(20px); }
-      }
-      
-      @keyframes float {
-        0% { transform: translate(0, 0); }
-        25% { transform: translate(30px, -30px); }
-        50% { transform: translate(-20px, -50px); }
-        75% { transform: translate(40px, -70px); }
-        100% { transform: translate(0, -100px); }
+      @keyframes starMovement {
+        0% { 
+          opacity: 0.3; 
+          transform: translate(0, 0) scale(1); 
+        }
+        12.5% { 
+          opacity: 1; 
+          transform: translate(5px, -10px) scale(1.5); 
+        }
+        25% { 
+          opacity: 0.5; 
+          transform: translate(10px, -20px) scale(1); 
+        }
+        37.5% { 
+          opacity: 1; 
+          transform: translate(15px, -30px) scale(1.3); 
+        }
+        50% { 
+          opacity: 0.3; 
+          transform: translate(20px, -40px) scale(1); 
+        }
+        62.5% { 
+          opacity: 0.8; 
+          transform: translate(25px, -50px) scale(1.4); 
+        }
+        75% { 
+          opacity: 0.4; 
+          transform: translate(30px, -60px) scale(1); 
+        }
+        87.5% { 
+          opacity: 1; 
+          transform: translate(35px, -80px) scale(1.5); 
+        }
+        100% { 
+          opacity: 0.3; 
+          transform: translate(40px, -100px) scale(1); 
+        }
       }
       
       /* Reduced motion support for accessibility */
@@ -2491,14 +2512,12 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // Random animation durations (twinkle, drift, float)
-          const twinkleDuration = Math.random() * 4 + 2; // 2-6s
-          const driftDuration = Math.random() * 20 + 10; // 10-30s
-          const floatDuration = Math.random() * 40 + 40; // 40-80s
-          star.style.animationDuration = `${twinkleDuration}s, ${driftDuration}s, ${floatDuration}s`;
+          // Random animation duration (40-80s for slow movement)
+          const duration = Math.random() * 40 + 40;
+          star.style.animationDuration = `${duration}s`;
           
-          // Random delays
-          star.style.animationDelay = `${Math.random() * 3}s, ${Math.random() * 5}s, ${Math.random() * 10}s`;
+          // Random delay
+          star.style.animationDelay = `${Math.random() * 10}s`;
           
           header.insertBefore(star, header.firstChild);
         }
