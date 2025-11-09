@@ -5,9 +5,23 @@ title: Weekdays at Mom's - Kids Protocol
 
 # WEEKDAYS AT MOM'S - KIDS PROTOCOL
 
-**For**: [Daughter, Age 6] and [Son, Age 9]  
+**For**: Willow (Age 6) and Sebastian (Age 9)  
 **When**: Monday 6:00 PM → Friday 4:00 PM (When Dad is in Solo Mode)  
 **Purpose**: Help you have a good week even when Dad can't be there. You've got tools to help yourself.
+
+---
+
+## 📄 HOW TO USE THIS CHECKLIST
+
+**Best Way**: **Print this page!** Then you can:
+- ✅ Check off boxes with a pencil each day
+- ✅ Keep it in your backpack or room
+- ✅ Look at it when you need help or feel stuck
+- ✅ Bring it to Dad's on Friday to show what you did
+
+**Mom Can Help Too**: Ask Mom to help you with this checklist if you need it!
+
+**On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
 
 ---
 

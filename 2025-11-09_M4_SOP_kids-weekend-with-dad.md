@@ -5,9 +5,23 @@ title: Weekend With Dad - Kids Protocol
 
 # WEEKEND WITH DAD - KIDS PROTOCOL
 
-**For**: [Daughter, Age 6] and [Son, Age 9]  
+**For**: Willow (Age 6) and Sebastian (Age 9)  
 **When**: Friday 4:00 PM → Monday 6:00 PM (Family Structure Mode)  
 **Purpose**: Make weekends with Dad predictable, fun, and safe. You know what happens next.
+
+---
+
+## 📄 HOW TO USE THIS CHECKLIST
+
+**Best Way**: **Print this page!** Then you can:
+- ✅ Check off boxes with a pencil
+- ✅ Write in the fill-in blanks
+- ✅ Put it on the fridge or on a clipboard
+- ✅ Show Dad your progress
+
+**Dad's Pro Tip**: Print this and laminate it. Then you can use dry-erase markers and reuse it every weekend!
+
+**On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
 
 ---
 
