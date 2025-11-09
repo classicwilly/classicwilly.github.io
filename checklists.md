@@ -28,6 +28,16 @@ title: Interactive Checklists
     <h4>💡 HOW THIS HELPS</h4>
     <p>Checklists create <strong>external accountability</strong> when internal motivation fails. For ADHD/Autism brains, seeing unchecked boxes triggers completion drive. Progress bars provide dopamine hits. Physical printouts work when screens overstimulate. This is <strong>choice architecture</strong>: making the right action the easiest action.</p>
   </div>
+  
+  <div class="nav-section">
+    <h4>⚡ QUICK ACCESS</h4>
+    <ul>
+      <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Today's check-in</li>
+      <li><strong><a href="/sop-vault" style="color: var(--circuit-teal);">SOP Vault</a></strong> → Full protocols</li>
+      <li><strong><a href="/sop-vault#kids-protocols" style="color: var(--circuit-teal);">Kids Protocols</a></strong> → Parenting SOPs</li>
+      <li><strong><a href="/2025-11-08_M4_SOP_foundational-daily-protocols" style="color: var(--circuit-teal);">5 Core</a></strong> → Foundation</li>
+    </ul>
+  </div>
 </div>
 
 Check boxes directly in your browser—progress saves automatically. Print for physical use. Reset anytime.

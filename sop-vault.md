@@ -28,6 +28,16 @@ title: The SOP Vault
     <h4>💡 HOW THIS HELPS</h4>
     <p>Neurodivergent brains need <strong>external memory</strong>. This vault IS my external brain. When executive function fails, I don't have to "remember"—I just follow the SOP. Each protocol is battle-tested, refined through audits, and designed for <strong>real-world Autism/ADHD chaos</strong>. No theory, only what works.</p>
   </div>
+  
+  <div class="nav-section">
+    <h4>⚡ QUICK ACCESS</h4>
+    <ul>
+      <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Today's protocols</li>
+      <li><strong><a href="/checklists" style="color: var(--circuit-teal);">Checklists</a></strong> → Interactive lists</li>
+      <li><strong><a href="#kids-protocols" style="color: var(--circuit-teal);">Kids</a></strong> → Parenting SOPs</li>
+      <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency</a></strong> → When frozen</li>
+    </ul>
+  </div>
 </div>
 
 <div class="quick-links" style="margin: 2rem 0; padding: 1.5rem; background: var(--card-dark); border-radius: 12px; border: 2px solid var(--border-gray);">

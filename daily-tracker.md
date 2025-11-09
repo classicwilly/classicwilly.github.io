@@ -28,6 +28,16 @@ title: Daily Tracker
     <h4>💡 HOW THIS HELPS</h4>
     <p>Visual tracking creates <strong>accountability</strong> and <strong>pattern recognition</strong>. When you see "Water Protocol: 3/7 days this week," you know where the breakdown is. Saves to localStorage—your data persists across page loads. Use this for honest self-assessment, not perfection theater.</p>
   </div>
+  
+  <div class="nav-section">
+    <h4>⚡ QUICK ACCESS</h4>
+    <ul>
+      <li><strong><a href="/checklists" style="color: var(--circuit-teal);">Checklists</a></strong> → All protocols</li>
+      <li><strong><a href="/tracker-stats" style="color: var(--circuit-teal);">Stats</a></strong> → View trends</li>
+      <li><strong><a href="/sop-vault" style="color: var(--circuit-teal);">SOP Vault</a></strong> → Full protocols</li>
+      <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency</a></strong> → When frozen</li>
+    </ul>
+  </div>
 </div>
 
 <div class="tracker-header">

@@ -27,6 +27,16 @@ title: Foundational Daily Protocols Checklist
     <h4>💡 HOW THIS HELPS</h4>
     <p>Neurodivergent brains need <strong>external structure</strong> when executive function fails. This checklist removes decision-making: just follow the sequence. Checking boxes provides dopamine hits and visual progress tracking. If you skip these protocols, everything else falls apart.</p>
   </div>
+  
+  <div class="nav-section">
+    <h4>⚡ QUICK ACCESS</h4>
+    <ul>
+      <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Full tracking</li>
+      <li><strong><a href="/checklists" style="color: var(--circuit-teal);">All Checklists</a></strong> → Other protocols</li>
+      <li><strong><a href="/2025-11-08_M4_SOP_foundational-daily-protocols" style="color: var(--circuit-teal);">Full SOP</a></strong> → Details</li>
+      <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency</a></strong> → When stuck</li>
+    </ul>
+  </div>
 </div>
 
 ---
