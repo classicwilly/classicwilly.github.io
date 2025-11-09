@@ -352,10 +352,10 @@ title: Google Workspace Integration
   
   <div style="background: var(--card-dark); border: 2px solid var(--border-gray); border-radius: 8px; padding: 1.5rem;">
     <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem;">
-      <div style="width: 12px; height: 12px; border-radius: 50%; background: var(--orange);"></div>
-      <strong>🤖 Gemini AI</strong>
+      <div style="width: 12px; height: 12px; border-radius: 50%; background: var(--green);"></div>
+      <strong>🤖 Wonky AI</strong>
     </div>
-    <p style="margin: 0; font-size: 0.85rem; color: var(--text-light);">API key needed</p>
+    <p style="margin: 0; font-size: 0.85rem; color: var(--text-light);">✅ Live <span style="color: var(--muted-text);">(powered by Gemini)</span></p>
   </div>
 </div>
 
@@ -366,11 +366,10 @@ title: Google Workspace Integration
     <li><strong>Set up Google Forms</strong> for feedback and data collection</li>
     <li><strong>Configure Google Sheets</strong> backend for tracker data persistence</li>
     <li><strong>Choose contact form service</strong> (Formspree/EmailJS) for Gmail integration</li>
-    <li><strong>Get Gemini API key</strong> for AI assistant functionality</li>
     <li><strong>Embed Drive docs</strong> as needed for shared resources</li>
   </ol>
   
-  <p style="margin-top: 1.5rem;"><strong>All integrations are optional.</strong> Start with Calendar for immediate co-parenting benefit, then add others as needed.</p>
+  <p style="margin-top: 1.5rem;"><strong>All integrations are optional.</strong> Start with Calendar for immediate co-parenting benefit. Wonky AI is already live and ready to help.</p>
 </div>
 
 <script>
@@ -490,7 +489,7 @@ title: Google Workspace Integration
     const loadingMessage = document.createElement('div');
     loadingMessage.id = 'loading-message';
     loadingMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
-    loadingMessage.innerHTML = `<strong style="color: var(--yellow);">Gemini:</strong><br>Thinking...`;
+    loadingMessage.innerHTML = `<strong style="color: var(--yellow);">Wonky AI:</strong><br>Thinking...`;
     chatDiv.appendChild(loadingMessage);
     chatDiv.scrollTop = chatDiv.scrollHeight;
     
@@ -523,7 +522,7 @@ title: Google Workspace Integration
       // Add AI response
       const aiMessage = document.createElement('div');
       aiMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
-      aiMessage.innerHTML = `<strong style="color: var(--yellow);">Gemini:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
+      aiMessage.innerHTML = `<strong style="color: var(--yellow);">Wonky AI:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
       chatDiv.appendChild(aiMessage);
       
     } catch (error) {
@@ -533,7 +532,7 @@ title: Google Workspace Integration
       // Show error
       const errorMessage = document.createElement('div');
       errorMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--red);';
-      errorMessage.innerHTML = `<strong style="color: var(--red);">Error:</strong><br>Failed to connect to Gemini AI. ${error.message}`;
+      errorMessage.innerHTML = `<strong style="color: var(--red);">Error:</strong><br>Failed to connect to Wonky AI. ${error.message}`;
       chatDiv.appendChild(errorMessage);
     }
     

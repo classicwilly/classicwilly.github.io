@@ -2837,6 +2837,30 @@
       <a href="/tracker-stats" aria-label="View tracker statistics">Stats</a>
     </nav>
     
+    <!-- Wonky AI Chat Integration (site-wide) -->
+    <div id="wonky-ai-widget" style="background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 12px; padding: 1.5rem; margin: 2rem auto; max-width: 1200px; position: relative;">
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+        <h3 style="margin: 0; color: var(--yellow); font-size: 1.2rem;">
+          🤖 Wonky AI 
+          <span style="font-size: 0.7em; color: var(--muted-text); font-weight: 400; margin-left: 0.5rem;">powered by Gemini</span>
+        </h3>
+        <button onclick="toggleWonkyAI()" id="wonky-ai-toggle" style="padding: 0.5rem 1rem; background: var(--darker-bg); border: 1px solid var(--yellow); border-radius: 6px; color: var(--yellow); cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;">
+          Hide
+        </button>
+      </div>
+      
+      <div id="wonky-ai-content">
+        <div id="wonky-ai-chat" style="background: var(--darker-bg); padding: 1rem; border-radius: 8px; min-height: 200px; max-height: 400px; overflow-y: auto; margin-bottom: 1rem;">
+          <p style="color: var(--muted-text); text-align: center; margin: 0;">Ask Wonky AI about protocols, patterns, or decisions...</p>
+        </div>
+        
+        <div style="display: flex; gap: 0.5rem;">
+          <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI anything..." style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); font-size: 1rem;">
+          <button onclick="sendToWonkyAI()" style="padding: 0.75rem 1.5rem; background: var(--yellow); color: var(--darker-bg); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem;">Send</button>
+        </div>
+      </div>
+    </div>
+    
     <div class="content-wrapper">
       <main class="content-card" role="main">
         {{ content }}
@@ -3855,6 +3879,117 @@
         // Check on page load
         toggleBackToTop();
       })();
+    </script>
+    
+    <!-- Wonky AI Integration -->
+    <script>
+      // Wonky AI Configuration
+      const WONKY_AI_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNIeLir0qr4qANou9U';
+      const WONKY_AI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+      
+      // Toggle Wonky AI widget
+      function toggleWonkyAI() {
+        const content = document.getElementById('wonky-ai-content');
+        const toggle = document.getElementById('wonky-ai-toggle');
+        const widget = document.getElementById('wonky-ai-widget');
+        
+        if (content.style.display === 'none') {
+          content.style.display = 'block';
+          toggle.textContent = 'Hide';
+          widget.style.padding = '1.5rem';
+        } else {
+          content.style.display = 'none';
+          toggle.textContent = 'Show';
+          widget.style.padding = '0.75rem 1.5rem';
+        }
+      }
+      
+      // Send message to Wonky AI
+      async function sendToWonkyAI() {
+        const input = document.getElementById('wonky-ai-input');
+        const chatDiv = document.getElementById('wonky-ai-chat');
+        
+        if (!input.value.trim()) return;
+        
+        const userQuery = input.value;
+        input.value = '';
+        
+        // Clear placeholder if first message
+        if (chatDiv.querySelector('[style*="text-align: center"]')) {
+          chatDiv.innerHTML = '';
+        }
+        
+        // Add user message
+        const userMessage = document.createElement('div');
+        userMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--card-dark); border-radius: 8px; border-left: 3px solid var(--circuit-teal);';
+        userMessage.innerHTML = `<strong style="color: var(--circuit-teal);">You:</strong><br>${userQuery}`;
+        chatDiv.appendChild(userMessage);
+        
+        // Add loading indicator
+        const loadingMessage = document.createElement('div');
+        loadingMessage.id = 'wonky-loading';
+        loadingMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
+        loadingMessage.innerHTML = `<strong style="color: var(--yellow);">Wonky AI:</strong><br>Thinking...`;
+        chatDiv.appendChild(loadingMessage);
+        chatDiv.scrollTop = chatDiv.scrollHeight;
+        
+        try {
+          // Call Gemini API
+          const response = await fetch(`${WONKY_AI_URL}?key=${WONKY_AI_KEY}`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              contents: [{
+                parts: [{
+                  text: `You are Wonky AI, an assistant helping with the Wonky Sprout OS - a neurodivergent life management system for someone with Autism/ADHD. The system includes protocols for daily routines, Solo Execution Mode (work-focused Mon 6pm-Fri 4pm), Family Structure Mode (parenting weekends Fri 4pm-Mon 6pm), and various SOPs. Answer the following question helpfully and concisely:\n\n${userQuery}`
+                }]
+              }]
+            })
+          });
+          
+          if (!response.ok) {
+            throw new Error(`API error: ${response.status}`);
+          }
+          
+          const data = await response.json();
+          const aiResponse = data.candidates[0].content.parts[0].text;
+          
+          // Remove loading message
+          loadingMessage.remove();
+          
+          // Add AI response
+          const aiMessage = document.createElement('div');
+          aiMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
+          aiMessage.innerHTML = `<strong style="color: var(--yellow);">Wonky AI:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
+          chatDiv.appendChild(aiMessage);
+          
+        } catch (error) {
+          // Remove loading message
+          loadingMessage.remove();
+          
+          // Show error
+          const errorMessage = document.createElement('div');
+          errorMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--red);';
+          errorMessage.innerHTML = `<strong style="color: var(--red);">Error:</strong><br>Failed to connect to Wonky AI. ${error.message}`;
+          chatDiv.appendChild(errorMessage);
+        }
+        
+        chatDiv.scrollTop = chatDiv.scrollHeight;
+      }
+      
+      // Enter key support
+      document.addEventListener('DOMContentLoaded', function() {
+        const input = document.getElementById('wonky-ai-input');
+        if (input) {
+          input.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+              sendToWonkyAI();
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>
