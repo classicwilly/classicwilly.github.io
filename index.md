@@ -119,4 +119,13 @@ title: Home
       Built for me. Works for me. Now available for you.
     </div>
   </div>
+  
+  <div class="transparency-badge">
+    <div class="badge-icon">📋</div>
+    <div class="badge-content">
+      <h3>Open Source Transparency</h3>
+      <p>Every audit, every finding, every fix documented in real-time.</p>
+      <a href="/2025-11-09_M4_CONFIG_audit-log" class="badge-link">View Audit Log →</a>
+    </div>
+  </div>
 </div>

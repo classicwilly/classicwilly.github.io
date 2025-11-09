@@ -62,6 +62,12 @@ The Master Card Catalog. The central hub for the Wonky Sprout Operating System. 
 ### [Brand Guide](2025-11-08_M1_CONFIG_brand-guide)
 The visual identity, messaging, and core principles of The Wonky Sprout brand. "Structure and organization with a bit of chaos."
 
+### [Audit Log](2025-11-09_M4_CONFIG_audit-log)
+**TRANSPARENCY**: Complete record of all system audits, health checks, and quality assurance reviews. Every finding, every fix, every commit. Open source means open process. Updated continuously.
+
+### [Interactive Elements Audit](2025-11-09_M4_CONFIG_interactive-elements-audit)
+Technical audit of checkboxes, links, and fill-in fields. Documents what works, what doesn't, and why. Includes recommendations for print-based vs. digital workflows.
+
 ---
 
 ## IMMEDIATE PROBLEM INSTRUCTIONS (IPIs)
