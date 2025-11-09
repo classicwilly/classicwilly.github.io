@@ -454,4 +454,6 @@ No scores. No timers. No pressure. Just... click things.
 
 **No rules. No winning. No losing. Just stim.**
 
-**[Back to Home](/) | [Need to Focus?](/daily-tracker) | [In Crisis?](/2025-11-08_M4_IPI_executive-dysfunction-emergency)**
+---
+
+**[Back to Home](/)** | **[Need to Focus?](/daily-tracker)** | **[In Crisis?](/2025-11-08_M4_IPI_executive-dysfunction-emergency)**
