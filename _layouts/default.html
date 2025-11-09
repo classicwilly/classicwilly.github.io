@@ -80,17 +80,38 @@
         z-index: 1;
       }
       
-      @keyframes starMovement {
+      @-webkit-keyframes starMovement {
         0% { 
           opacity: 1; 
+          -webkit-transform: translate(0, 0) scale(1);
           transform: translate(0, 0) scale(1); 
         }
         50% { 
           opacity: 0.3; 
+          -webkit-transform: translate(30px, -50px) scale(2);
           transform: translate(30px, -50px) scale(2); 
         }
         100% { 
           opacity: 1; 
+          -webkit-transform: translate(60px, -100px) scale(1);
+          transform: translate(60px, -100px) scale(1); 
+        }
+      }
+      
+      @keyframes starMovement {
+        0% { 
+          opacity: 1; 
+          -webkit-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1); 
+        }
+        50% { 
+          opacity: 0.3; 
+          -webkit-transform: translate(30px, -50px) scale(2);
+          transform: translate(30px, -50px) scale(2); 
+        }
+        100% { 
+          opacity: 1; 
+          -webkit-transform: translate(60px, -100px) scale(1);
           transform: translate(60px, -100px) scale(1); 
         }
       }
@@ -2493,7 +2514,8 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // Set animation inline with all properties
+          // Set animation inline with all properties (with webkit prefix)
+          star.style.webkitAnimation = 'starMovement 10s ease-in-out infinite';
           star.style.animation = 'starMovement 10s ease-in-out infinite';
           
           // Debug: log first star's computed style
@@ -2503,6 +2525,7 @@
               console.log('First star animation:', computed.animation);
               console.log('First star animation-name:', computed.animationName);
               console.log('First star animation-duration:', computed.animationDuration);
+              console.log('First star transform:', computed.transform);
             }, 100);
           }
           
