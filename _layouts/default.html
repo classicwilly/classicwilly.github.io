@@ -167,21 +167,42 @@
         font-family: 'IBM Plex Mono', monospace;
         color: var(--text-light);
         text-decoration: none;
-        padding: 0.5rem 1rem;
-        border: 2px solid transparent;
-        border-radius: 4px;
+        padding: 1rem 1.5rem;
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: 12px;
         transition: all 0.3s ease;
         font-weight: 600;
         font-size: 0.9rem;
         text-transform: uppercase;
         letter-spacing: 1px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .site-nav a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink), var(--orange));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
       }
       
       .site-nav a:hover {
-        border-color: var(--purple);
-        background: rgba(155, 89, 182, 0.2);
-        color: var(--yellow);
-        transform: translateY(-2px);
+        border-color: var(--yellow);
+        background: var(--card-dark);
+        color: var(--text-bright);
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px var(--purple);
+      }
+      
+      .site-nav a:hover::before {
+        transform: scaleX(1);
       }
       
       /* Main Content - The "Card" */
