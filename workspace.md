@@ -463,7 +463,7 @@ title: Google Workspace Integration
   });
   
   // Gemini AI integration
-  const GEMINI_API_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNleLir0qr4qANou9U';
+  const GEMINI_API_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNIeLir0qr4qANou9U';
   const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
   
   async function sendToGemini() {
