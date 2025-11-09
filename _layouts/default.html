@@ -77,8 +77,6 @@
       .star {
         position: absolute;
         border-radius: 50%;
-        animation: starMovement ease-in-out infinite;
-        will-change: transform, opacity;
         z-index: 1;
       }
       
@@ -2490,9 +2488,8 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // VERY FAST animation for testing (10s)
-          star.style.animationDuration = '10s';
-          star.style.animationDelay = '0s';
+          // Set animation inline with all properties
+          star.style.animation = 'starMovement 10s ease-in-out infinite';
           
           header.insertBefore(star, header.firstChild);
         }
