@@ -38,6 +38,16 @@ title: Home
         <h4>💡 HOW THIS HELPS</h4>
         <p>If you're neurodivergent, struggling with executive function, or drowning in chaos—<strong>you're in the right place</strong>. This site is my public operating system. Everything here is designed for ADHD/Autism brains: structured, systematic, anti-BS. Take what works, ignore what doesn't.</p>
       </div>
+      
+      <div class="nav-section">
+        <h4>⚡ QUICK ACCESS</h4>
+        <ul>
+          <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Today's check-in</li>
+          <li><strong><a href="/checklists" style="color: var(--circuit-teal);">Checklists</a></strong> → Interactive protocols</li>
+          <li><strong><a href="/sop-vault#kids-protocols" style="color: var(--circuit-teal);">Kids Protocols</a></strong> → Parenting SOPs</li>
+          <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency Protocol</a></strong> → When frozen</li>
+        </ul>
+      </div>
     </div>
     
     <a href="/sop-vault" class="cta-button">
