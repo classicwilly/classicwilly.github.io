@@ -464,7 +464,7 @@ title: Google Workspace Integration
   
   // Gemini AI integration
   const GEMINI_API_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNIeLir0qr4qANou9U';
-  const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+  const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
   
   async function sendToGemini() {
     const input = document.getElementById('gemini-input');
