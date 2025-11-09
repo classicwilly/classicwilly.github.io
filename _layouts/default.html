@@ -147,11 +147,6 @@
         z-index: 1;
       }
       
-      .site-tagline::before {
-        content: '▸ ';
-        color: var(--accent-orange);
-      }
-      
       /* Navigation - The "System Menu" */
       .site-nav {
         background: var(--darker-bg);
@@ -224,7 +219,7 @@
       /* Typography */
       .content-card h1 {
         font-family: 'Space Grotesk', sans-serif;
-        font-size: 2.5rem;
+        font-size: 1.25rem;
         background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -237,30 +232,17 @@
       
       .content-card h2 {
         font-family: 'Space Grotesk', sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.125rem;
         color: var(--orange);
         margin-top: 2rem;
         margin-bottom: 1rem;
         position: relative;
-        padding-left: 2rem;
-      }
-      
-      .content-card h2::before {
-        content: '◆';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--pink);
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1rem;
-        line-height: 1;
+        padding-left: 0;
       }
       
       .content-card h3 {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: var(--purple);
         margin-top: 1.5rem;
         margin-bottom: 0.75rem;
@@ -296,15 +278,7 @@
         margin-bottom: 0.5rem;
         color: var(--text-light);
         position: relative;
-        padding-left: 1.5rem;
-      }
-      
-      .content-card ul li::before {
-        content: '▸';
-        position: absolute;
-        left: 0;
-        color: var(--pink);
-        font-weight: bold;
+        padding-left: 0;
       }
       
       .content-card a {
@@ -1250,7 +1224,7 @@
       
       .module-title {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         color: var(--orange);
         margin-bottom: 0.75rem;
       }
@@ -1291,19 +1265,7 @@
         position: relative;
         display: inline-block;
         width: 100%;
-      }
-      
-      .origin-title::before {
-        content: '◆';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-9rem) translateY(-50%);
-        top: 50%;
-        color: var(--pink);
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        line-height: 1;
+        font-size: 1.25rem;
       }
       
       .timeline {
@@ -1382,7 +1344,7 @@
       
       .timeline-content h3 {
         font-family: 'IBM Plex Mono', monospace;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         color: var(--orange);
         margin-bottom: 0.75rem;
         transition: color 0.3s ease;
@@ -1455,7 +1417,7 @@
       
       .emergency-banner h3 {
         color: var(--text-bright);
-        font-size: 1.5rem;
+        font-size: 1.125rem;
         margin-bottom: 1rem;
         font-weight: 700;
         letter-spacing: 0.5px;
@@ -1489,7 +1451,7 @@
       
       .section-title {
         text-align: center;
-        font-size: 2rem;
+        font-size: 1.25rem;
         color: var(--orange);
         margin-bottom: 2rem;
         font-weight: 700;
@@ -1497,19 +1459,6 @@
         position: relative;
         display: inline-block;
         width: 100%;
-      }
-      
-      .section-title::before {
-        content: '◆';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-8rem) translateY(-50%);
-        top: 50%;
-        color: var(--pink);
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 1.2rem;
-        line-height: 1;
       }
       
       .testimonial-card {
