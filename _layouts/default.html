@@ -98,6 +98,131 @@
       .site-header {
         background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         padding: 0.5rem;
+        position: relative;
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(90deg, var(--teal), var(--purple), var(--pink)) 1;
+        overflow: visible;
+      }
+      
+      /* View Density Switcher */
+      .density-switcher {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 100;
+        display: flex;
+        gap: 0.5rem;
+        background: var(--card-dark);
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid var(--border-gray);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      }
+      
+      .density-switcher button {
+        font-family: 'IBM Plex Mono', monospace;
+        background: transparent;
+        border: 1px solid var(--border-gray);
+        color: var(--text-light);
+        padding: 0.4rem 0.75rem;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.2s ease;
+        min-height: 36px;
+      }
+      
+      .density-switcher button:hover {
+        border-color: var(--circuit-teal);
+        color: var(--circuit-teal);
+        background: rgba(26, 188, 156, 0.1);
+      }
+      
+      .density-switcher button.active {
+        background: var(--circuit-teal);
+        color: var(--darker-bg);
+        border-color: var(--circuit-teal);
+        font-weight: 700;
+      }
+      
+      .density-switcher button:focus {
+        outline: 2px solid var(--circuit-teal);
+        outline-offset: 2px;
+      }
+      
+      /* Density Mode Adjustments */
+      body.compact-mode .content-card {
+        padding: 1.5rem;
+      }
+      
+      body.compact-mode .content-card h1,
+      body.compact-mode .content-card h2,
+      body.compact-mode .content-card h3 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+      
+      body.compact-mode .content-card p,
+      body.compact-mode .content-card li {
+        margin-bottom: 0.75rem;
+        line-height: 1.5;
+      }
+      
+      body.compact-mode .quick-jump-grid {
+        gap: 0.75rem;
+      }
+      
+      body.compact-mode .quick-jump-tile {
+        padding: 0.75rem;
+        min-height: 80px;
+      }
+      
+      body.spacious-mode .content-card {
+        padding: 4rem;
+      }
+      
+      body.spacious-mode .content-card h1,
+      body.spacious-mode .content-card h2,
+      body.spacious-mode .content-card h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      
+      body.spacious-mode .content-card p,
+      body.spacious-mode .content-card li {
+        margin-bottom: 2rem;
+        line-height: 2;
+      }
+      
+      body.spacious-mode .quick-jump-grid {
+        gap: 2rem;
+      }
+      
+      body.spacious-mode .quick-jump-tile {
+        padding: 1.5rem;
+        min-height: 140px;
+      }
+      
+      /* Mobile: Hide density switcher on small screens */
+      @media (max-width: 768px) {
+        .density-switcher {
+          top: 0.5rem;
+          right: 0.5rem;
+          padding: 0.3rem;
+          gap: 0.3rem;
+        }
+        
+        .density-switcher button {
+          padding: 0.3rem 0.5rem;
+          font-size: 0.7rem;
+          min-height: 32px;
+        }
+      }
+      
+      .site-header {
         border-bottom: 4px solid transparent;
         border-image: linear-gradient(90deg, var(--teal), var(--purple), var(--pink), var(--orange), var(--yellow)) 1;
         box-shadow: 0 4px 20px rgba(0,0,0,0.5);
@@ -2406,15 +2531,237 @@
         }
       }
       
-      /* Responsive */
+      /* ========================================
+         RESPONSIVE BREAKPOINTS (Mobile-First)
+         ======================================== */
+      
+      /* TABLET PORTRAIT: iPad, Surface Go (769px - 1024px) */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .content-wrapper {
+          max-width: 90%;
+          margin: 2.5rem auto;
+        }
+        
+        .content-card {
+          padding: 2.5rem;
+        }
+        
+        .content-card h1 {
+          font-size: 1.5rem;
+        }
+        
+        .content-card h2 {
+          font-size: 1.25rem;
+        }
+        
+        .content-card h3 {
+          font-size: 1.1rem;
+        }
+        
+        /* Quick-jump grid: 3 columns for tablets */
+        .quick-jump-grid {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 1rem;
+        }
+        
+        .quick-jump-tile {
+          min-height: 100px;
+          padding: 1rem;
+        }
+        
+        /* Page navigation: 2 columns */
+        .page-navigation {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.25rem;
+          padding: 1.75rem;
+        }
+        
+        /* Modules grid: 2 columns */
+        .modules-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        
+        /* Site nav: comfortable touch targets */
+        .site-nav a {
+          padding: 0.625rem 1rem;
+          font-size: 0.9rem;
+          min-height: 44px;
+          display: inline-flex;
+          align-items: center;
+        }
+        
+        /* Hero section */
+        .hero-title {
+          font-size: 2.5rem;
+        }
+        
+        .hero-subtitle {
+          font-size: 1.5rem;
+        }
+        
+        /* Tracker components */
+        .tracker-header {
+          gap: 1.5rem;
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+          padding: 1.5rem;
+        }
+      }
+      
+      /* LARGE DISPLAYS: Desktop, Laptop (1367px+) */
+      @media (min-width: 1367px) {
+        .content-wrapper {
+          max-width: 1300px;
+        }
+        
+        .content-card {
+          padding: 3.5rem;
+        }
+        
+        .content-card h1 {
+          font-size: 1.5rem;
+        }
+        
+        .content-card h2 {
+          font-size: 1.35rem;
+        }
+        
+        .content-card h3 {
+          font-size: 1.15rem;
+        }
+        
+        /* Quick-jump grid: 5-6 columns for large screens */
+        .quick-jump-grid {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 1.5rem;
+        }
+        
+        .quick-jump-tile {
+          min-height: 120px;
+          padding: 1.25rem;
+        }
+        
+        /* Page navigation: 3 columns */
+        .page-navigation {
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          padding: 2.5rem;
+        }
+        
+        /* Modules grid: 3 columns */
+        .modules-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+        
+        /* Hero section */
+        .hero-title {
+          font-size: 3.5rem;
+        }
+        
+        .hero-subtitle {
+          font-size: 2rem;
+        }
+      }
+      
+      /* LANDSCAPE PHONE: Better horizontal use (min-height ensures it's phone) */
+      @media (orientation: landscape) and (max-height: 500px) {
+        .site-header {
+          padding: 1rem 1.5rem;
+        }
+        
+        .content-wrapper {
+          margin: 1.5rem auto;
+        }
+        
+        .content-card {
+          padding: 1.5rem 2rem;
+        }
+        
+        /* Compact navigation for landscape */
+        .site-nav {
+          gap: 0.5rem;
+        }
+        
+        .site-nav a {
+          padding: 0.4rem 0.75rem;
+          font-size: 0.85rem;
+        }
+        
+        /* Reduce vertical spacing */
+        .hero-title {
+          font-size: 1.75rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .hero-subtitle {
+          font-size: 1.1rem;
+        }
+        
+        /* Emergency banner more compact */
+        .emergency-banner {
+          padding: 1rem;
+          margin: 1.5rem 0;
+        }
+      }
+      
+      /* TOUCH TARGET OPTIMIZATION: Ensure 44x44px minimum */
+      @media (max-width: 768px) {
+        /* Navigation links */
+        .site-nav a {
+          min-height: 44px;
+          min-width: 44px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.5rem 0.75rem;
+        }
+        
+        /* Buttons and interactive elements */
+        .cta-button,
+        .secondary-button,
+        .emergency-link {
+          min-height: 44px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.625rem 1rem;
+        }
+        
+        /* Checkboxes with larger touch area */
+        .task-checkbox,
+        input[type="checkbox"] {
+          min-width: 44px;
+          min-height: 44px;
+          cursor: pointer;
+        }
+        
+        /* Quick-jump tiles */
+        .quick-jump-tile {
+          min-height: 80px;
+          padding: 0.75rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        
+        /* Checklist control buttons */
+        .checklist-controls button {
+          min-height: 44px;
+          padding: 0.625rem 1rem;
+        }
+      }
+      
+      /* SMALL PHONE: Compact for narrow screens (320px - 480px) */
       @media (max-width: 480px) {
         .site-nav {
           gap: 0.25rem;
         }
         
         .site-nav a {
-          padding: 0.3rem 0.5rem;
-          font-size: 0.75rem;
+          padding: 0.5rem 0.625rem;
+          font-size: 0.8rem;
           letter-spacing: 0.5px;
         }
         
@@ -2427,7 +2774,7 @@
         }
         
         .content-card {
-          padding: 0.5rem;
+          padding: 1rem;
         }
         
         .content-card h1 {
@@ -2443,20 +2790,34 @@
         }
         
         .content-card > p:last-child a {
-          padding: 0.3rem 0.5rem;
-          font-size: 0.75rem;
+          padding: 0.625rem 0.75rem;
+          font-size: 0.8rem;
+          min-height: 44px;
         }
         
         .site-footer a {
-          padding: 0.2rem 0.3rem;
-          font-size: 0.75rem;
-          margin: 0.1rem;
+          padding: 0.5rem 0.625rem;
+          font-size: 0.8rem;
+          margin: 0.25rem;
+          min-height: 44px;
+        }
+        
+        /* Quick-jump grid: 2 columns on very small screens */
+        .quick-jump-grid {
+          grid-template-columns: repeat(2, 1fr);
         }
       }
     </style>
   </head>
   <body>
     <header class="site-header" role="banner">
+      <!-- View Density Switcher -->
+      <div class="density-switcher" role="toolbar" aria-label="View density controls">
+        <button type="button" onclick="setDensityMode('compact')" data-mode="compact" aria-label="Compact view">Compact</button>
+        <button type="button" class="active" onclick="setDensityMode('comfortable')" data-mode="comfortable" aria-label="Comfortable view">Comfortable</button>
+        <button type="button" onclick="setDensityMode('spacious')" data-mode="spacious" aria-label="Spacious view">Spacious</button>
+      </div>
+      
       <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
         <!-- Title & Tagline (Center) -->
         <div style="flex: 1 1 300px; text-align: center;">
@@ -3423,6 +3784,49 @@
     </a>
     
     <script>
+      // View Density Switcher Functionality
+      (function() {
+        // Load saved density preference or default to 'comfortable'
+        const savedMode = localStorage.getItem('viewDensityMode') || 'comfortable';
+        setDensityMode(savedMode, true);
+        
+        // Update active button on page load
+        updateActiveButton(savedMode);
+      })();
+      
+      function setDensityMode(mode, skipSave) {
+        // Remove all density classes
+        document.body.classList.remove('compact-mode', 'comfortable-mode', 'spacious-mode');
+        
+        // Add the selected mode class (comfortable is default, no class needed)
+        if (mode === 'compact') {
+          document.body.classList.add('compact-mode');
+        } else if (mode === 'spacious') {
+          document.body.classList.add('spacious-mode');
+        }
+        
+        // Save preference to localStorage (unless this is initial load)
+        if (!skipSave) {
+          localStorage.setItem('viewDensityMode', mode);
+        }
+        
+        // Update button states
+        updateActiveButton(mode);
+      }
+      
+      function updateActiveButton(mode) {
+        // Remove active class from all buttons
+        document.querySelectorAll('.density-switcher button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        
+        // Add active class to selected button
+        const activeButton = document.querySelector(`.density-switcher button[data-mode="${mode}"]`);
+        if (activeButton) {
+          activeButton.classList.add('active');
+        }
+      }
+      
       // Back to Top Button Functionality
       (function() {
         const backToTopButton = document.querySelector('.back-to-top');
