@@ -298,6 +298,37 @@
         color: var(--pink);
       }
       
+      /* Bottom navigation menu */
+      .content-card > p:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 2px solid var(--border-gray);
+      }
+      
+      .content-card > p:last-child strong {
+        display: contents;
+      }
+      
+      .content-card > p:last-child a {
+        color: #FFFFFF;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        background: var(--card-dark);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+      
+      .content-card > p:last-child a:hover {
+        color: #FFFFFF;
+        text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
+        transform: translateY(-4px);
+      }
+      
       .content-card code {
         font-family: 'IBM Plex Mono', monospace;
         background: var(--darker-bg);
