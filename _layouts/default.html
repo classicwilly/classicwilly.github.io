@@ -2838,18 +2838,18 @@
     </nav>
     
     <!-- Wonky AI Chat Integration (site-wide) -->
-    <div id="wonky-ai-widget" style="background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 12px; padding: 1.5rem; margin: 2rem auto 0 auto; max-width: 900px; position: relative;">
-      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+    <div id="wonky-ai-widget" style="background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 12px; padding: 0.75rem 1.5rem; margin: 2rem auto 0 auto; max-width: 900px; position: relative;">
+      <div style="display: flex; align-items: center; justify-content: space-between;">
         <h3 style="margin: 0; color: var(--yellow); font-size: 1.2rem;">
           🤖 Wonky AI 
           <span style="font-size: 0.7em; color: var(--muted-text); font-weight: 400; margin-left: 0.5rem;">powered by Gemini</span>
         </h3>
         <button onclick="toggleWonkyAI()" id="wonky-ai-toggle" style="padding: 0.5rem 1rem; background: var(--darker-bg); border: 1px solid var(--yellow); border-radius: 6px; color: var(--yellow); cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;">
-          Hide
+          Show
         </button>
       </div>
       
-      <div id="wonky-ai-content">
+      <div id="wonky-ai-content" style="display: none;">
         <div id="wonky-ai-chat" style="background: var(--darker-bg); padding: 1rem; border-radius: 8px; min-height: 200px; max-height: 400px; overflow-y: auto; margin-bottom: 1rem;">
           <p style="color: var(--muted-text); text-align: center; margin: 0;">Ask Wonky AI about protocols, patterns, or decisions...</p>
         </div>
@@ -3892,15 +3892,18 @@
         const content = document.getElementById('wonky-ai-content');
         const toggle = document.getElementById('wonky-ai-toggle');
         const widget = document.getElementById('wonky-ai-widget');
+        const heading = widget.querySelector('h3').parentElement;
         
         if (content.style.display === 'none') {
           content.style.display = 'block';
           toggle.textContent = 'Hide';
           widget.style.padding = '1.5rem';
+          heading.style.marginBottom = '1rem';
         } else {
           content.style.display = 'none';
           toggle.textContent = 'Show';
           widget.style.padding = '0.75rem 1.5rem';
+          heading.style.marginBottom = '0';
         }
       }
       
