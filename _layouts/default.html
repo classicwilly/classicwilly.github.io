@@ -2514,18 +2514,35 @@
           star.style.background = color;
           star.style.boxShadow = `0 0 ${size * 2}px ${color}`;
           
-          // Set animation inline with all properties (with webkit prefix)
-          star.style.webkitAnimation = 'starMovement 10s ease-in-out infinite';
-          star.style.animation = 'starMovement 10s ease-in-out infinite';
+          // Use Web Animations API instead of CSS animation
+          star.animate([
+            { 
+              opacity: 1, 
+              transform: 'translate(0, 0) scale(1)' 
+            },
+            { 
+              opacity: 0.3, 
+              transform: 'translate(30px, -50px) scale(2)' 
+            },
+            { 
+              opacity: 1, 
+              transform: 'translate(60px, -100px) scale(1)' 
+            }
+          ], {
+            duration: 10000, // 10 seconds
+            iterations: Infinity,
+            easing: 'ease-in-out'
+          });
           
-          // Debug: log first star's computed style
+          // Debug: log first star's animation
           if (i === 0) {
             setTimeout(() => {
-              const computed = window.getComputedStyle(star);
-              console.log('First star animation:', computed.animation);
-              console.log('First star animation-name:', computed.animationName);
-              console.log('First star animation-duration:', computed.animationDuration);
-              console.log('First star transform:', computed.transform);
+              const animations = star.getAnimations();
+              console.log('First star has', animations.length, 'animations');
+              if (animations.length > 0) {
+                console.log('Animation playState:', animations[0].playState);
+                console.log('Animation currentTime:', animations[0].currentTime);
+              }
             }, 100);
           }
           
