@@ -463,39 +463,81 @@ title: Google Workspace Integration
   });
   
   // Gemini AI integration
-  function sendToGemini() {
+  const GEMINI_API_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNleLir0qr4qANou9U';
+  const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
+  
+  async function sendToGemini() {
     const input = document.getElementById('gemini-input');
     const chatDiv = document.getElementById('gemini-chat');
     
     if (!input.value.trim()) return;
     
+    const userQuery = input.value;
+    input.value = '';
+    
+    // Clear placeholder if first message
+    if (chatDiv.querySelector('[style*="text-align: center"]')) {
+      chatDiv.innerHTML = '';
+    }
+    
     // Add user message to chat
     const userMessage = document.createElement('div');
     userMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--card-dark); border-radius: 8px; border-left: 3px solid var(--circuit-teal);';
-    userMessage.innerHTML = `<strong style="color: var(--circuit-teal);">You:</strong><br>${input.value}`;
+    userMessage.innerHTML = `<strong style="color: var(--circuit-teal);">You:</strong><br>${userQuery}`;
     chatDiv.appendChild(userMessage);
     
-    // TODO: Replace with actual Gemini API call
-    // Example:
-    // const response = await fetch('https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //     'Authorization': 'Bearer YOUR_API_KEY'
-    //   },
-    //   body: JSON.stringify({ prompt: input.value })
-    // });
+    // Add loading indicator
+    const loadingMessage = document.createElement('div');
+    loadingMessage.id = 'loading-message';
+    loadingMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
+    loadingMessage.innerHTML = `<strong style="color: var(--yellow);">Gemini:</strong><br>Thinking...`;
+    chatDiv.appendChild(loadingMessage);
+    chatDiv.scrollTop = chatDiv.scrollHeight;
     
-    // Simulated response
-    setTimeout(() => {
+    try {
+      // Call Gemini API
+      const response = await fetch(`${GEMINI_API_URL}?key=${GEMINI_API_KEY}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          contents: [{
+            parts: [{
+              text: `You are an AI assistant helping with the Wonky Sprout OS - a neurodivergent life management system for someone with Autism/ADHD. The system includes protocols for daily routines, Solo Execution Mode (work-focused), Family Structure Mode (parenting weekends), and various SOPs. Answer the following question helpfully and concisely:\n\n${userQuery}`
+            }]
+          }]
+        })
+      });
+      
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      const aiResponse = data.candidates[0].content.parts[0].text;
+      
+      // Remove loading message
+      loadingMessage.remove();
+      
+      // Add AI response
       const aiMessage = document.createElement('div');
       aiMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--yellow);';
-      aiMessage.innerHTML = `<strong style="color: var(--yellow);">Gemini:</strong><br>⚠️ Gemini AI not configured yet. Add your Google AI API key to enable this feature.`;
+      aiMessage.innerHTML = `<strong style="color: var(--yellow);">Gemini:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
       chatDiv.appendChild(aiMessage);
-      chatDiv.scrollTop = chatDiv.scrollHeight;
-    }, 500);
+      
+    } catch (error) {
+      // Remove loading message
+      loadingMessage.remove();
+      
+      // Show error
+      const errorMessage = document.createElement('div');
+      errorMessage.style.cssText = 'margin-bottom: 1rem; padding: 1rem; background: var(--darker-bg); border-radius: 8px; border-left: 3px solid var(--red);';
+      errorMessage.innerHTML = `<strong style="color: var(--red);">Error:</strong><br>Failed to connect to Gemini AI. ${error.message}`;
+      chatDiv.appendChild(errorMessage);
+    }
     
-    input.value = '';
+    chatDiv.scrollTop = chatDiv.scrollHeight;
   }
   
   // Allow Enter key to send message
