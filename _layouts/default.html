@@ -169,7 +169,7 @@
         text-decoration: none;
         padding: 0.75rem 1.25rem;
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         transition: all 0.3s ease;
         font-weight: 600;
@@ -180,28 +180,11 @@
         overflow: hidden;
       }
       
-      .site-nav a::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .site-nav a:hover {
-        border-color: var(--yellow);
         background: var(--card-dark);
         color: var(--text-bright);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .site-nav a:hover::before {
-        opacity: 1;
       }
       
       /* Main Content - The "Card" */
@@ -1222,7 +1205,7 @@
         font-weight: 600;
         color: var(--text-light);
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         padding: 0.75rem 1.25rem;
         text-decoration: none;
@@ -1234,28 +1217,11 @@
         letter-spacing: 1px;
       }
       
-      .cta-button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .cta-button:hover {
-        border-color: var(--yellow);
         background: var(--card-dark);
         color: var(--text-bright);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .cta-button:hover::before {
-        opacity: 1;
       }
       
       .cta-arrow {
@@ -1507,7 +1473,7 @@
         font-weight: 600;
         color: var(--text-light);
         background: var(--card-dark);
-        border: 2px solid var(--border-gray);
+        border: none;
         border-radius: 12px;
         padding: 0.75rem 1.25rem;
         text-decoration: none;
@@ -1518,28 +1484,11 @@
         letter-spacing: 1px;
       }
       
-      .secondary-button::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 4px;
-        background: var(--orange);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-      
       .secondary-button:hover {
-        border-color: var(--yellow);
         background: var(--card-dark);
         color: var(--text-bright);
         transform: translateY(-8px);
         box-shadow: 0 12px 30px var(--purple);
-      }
-      
-      .secondary-button:hover::before {
-        opacity: 1;
       }
       
       /* Emergency Banner */
