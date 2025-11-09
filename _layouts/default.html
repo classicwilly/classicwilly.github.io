@@ -1628,11 +1628,11 @@
         
         <!-- System Status Terminal (Right) -->
         <div style="flex: 0 0 250px; height: 120px; position: relative;">
-          <div id="statusTerminal" style="border: 2px solid var(--circuit-teal); border-radius: 8px; background: rgba(1,4,9,0.95); padding: 0.75rem 0.75rem 2.5rem 0.75rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; height: 100%; overflow: hidden; position: relative;">
+          <div id="statusTerminal" style="border: 2px solid var(--circuit-teal); border-radius: 8px; background: rgba(1,4,9,0.95); padding: 0.75rem; font-family: 'IBM Plex Mono', monospace; font-size: 0.7rem; height: 100%; overflow: hidden; position: relative;">
             <div style="color: var(--circuit-teal); margin-bottom: 0.5rem; font-weight: 600; font-size: 0.75rem;">SYSTEM STATUS</div>
             <div id="terminalOutput" style="color: var(--text-light); line-height: 1.4;"></div>
           </div>
-          <div id="affirmation" style="position: absolute; bottom: 0.75rem; left: 0.75rem; right: 0.75rem; color: var(--sprout-green); font-weight: 600; font-size: 0.85rem; text-align: center; opacity: 0; transition: opacity 0.5s; background: rgba(1,4,9,0.95); padding: 0.5rem; border-radius: 4px;"></div>
+          <div id="affirmation" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; color: var(--sprout-green); font-weight: 700; font-size: 1.1rem; text-align: center; opacity: 0; transition: opacity 0.8s; background: rgba(1,4,9,0.98); border: 2px solid var(--circuit-teal); border-radius: 8px; pointer-events: none; padding: 1rem;"></div>
         </div>
       </div>
     </header>
@@ -2435,11 +2435,11 @@
         // Initialize multiple waves with different frequencies
         function initWaves() {
           waves = [
-            { frequency: 0.8, amplitude: 15, phase: 0, speed: 0.02 },
-            { frequency: 1.2, amplitude: 12, phase: Math.PI / 3, speed: 0.025 },
-            { frequency: 1.5, amplitude: 10, phase: Math.PI / 2, speed: 0.018 },
-            { frequency: 0.6, amplitude: 18, phase: Math.PI, speed: 0.022 },
-            { frequency: 2.0, amplitude: 8, phase: Math.PI / 4, speed: 0.028 }
+            { frequency: 0.7, amplitude: 35, phase: 0, speed: 0.03 },
+            { frequency: 1.3, amplitude: 30, phase: Math.PI / 3, speed: 0.035 },
+            { frequency: 1.8, amplitude: 28, phase: Math.PI / 2, speed: 0.025 },
+            { frequency: 0.5, amplitude: 40, phase: Math.PI, speed: 0.032 },
+            { frequency: 2.2, amplitude: 25, phase: Math.PI / 4, speed: 0.038 }
           ];
         }
         
@@ -2447,10 +2447,10 @@
         
         // Draw wave interference pattern
         function drawWaves() {
-          time += 0.02;
+          time += 0.025;
           
           const centerY = height / 2;
-          const points = 150;
+          const points = 200;
           
           // Color interpolation: orange (chaos) → teal (structure)
           const chaosR = 249, chaosG = 115, chaosB = 22;
@@ -2460,7 +2460,7 @@
           const g = Math.floor(chaosG + (structureG - chaosG) * structureProgress);
           const b = Math.floor(chaosB + (structureB - chaosB) * structureProgress);
           
-          // Draw each wave contribution
+          // Draw individual wave layers (subtle, background)
           waves.forEach((wave, waveIndex) => {
             ctx.beginPath();
             
@@ -2468,15 +2468,15 @@
             const targetFrequency = 1.0;
             const currentFrequency = wave.frequency + (targetFrequency - wave.frequency) * structureProgress;
             
-            // Amplitude calms down as structure emerges
-            const currentAmplitude = wave.amplitude * (1 - structureProgress * 0.4);
+            // Amplitude stays strong, just synchronizes
+            const currentAmplitude = wave.amplitude * (0.8 + structureProgress * 0.2);
             
             // Phase synchronization
             const phaseSync = wave.phase * (1 - structureProgress);
             
             for (let i = 0; i <= points; i++) {
               const x = (i / points) * width;
-              const normalizedX = (x / width) * Math.PI * 4;
+              const normalizedX = (x / width) * Math.PI * 3;
               
               // Calculate wave displacement
               const waveY = Math.sin(normalizedX * currentFrequency + time * wave.speed + phaseSync) * currentAmplitude;
@@ -2490,32 +2490,32 @@
               }
             }
             
-            // Wave opacity and color
-            const opacity = 0.3 + (structureProgress * 0.3);
+            // Individual wave styling (subtle background layers)
+            const opacity = 0.15 + (structureProgress * 0.1);
             ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
-            ctx.lineWidth = 1.5 + structureProgress * 0.5;
+            ctx.lineWidth = 1;
             ctx.stroke();
           });
           
-          // Draw interference pattern (sum of all waves)
+          // Draw main interference pattern (sum of all waves) - PROMINENT
           ctx.beginPath();
           for (let i = 0; i <= points; i++) {
             const x = (i / points) * width;
-            const normalizedX = (x / width) * Math.PI * 4;
+            const normalizedX = (x / width) * Math.PI * 3;
             
             // Sum all wave contributions
             let totalY = 0;
             waves.forEach(wave => {
               const targetFrequency = 1.0;
               const currentFrequency = wave.frequency + (targetFrequency - wave.frequency) * structureProgress;
-              const currentAmplitude = wave.amplitude * (1 - structureProgress * 0.4);
+              const currentAmplitude = wave.amplitude * (0.8 + structureProgress * 0.2);
               const phaseSync = wave.phase * (1 - structureProgress);
               
               totalY += Math.sin(normalizedX * currentFrequency + time * wave.speed + phaseSync) * currentAmplitude;
             });
             
-            // Normalize the interference pattern
-            const y = centerY + (totalY / waves.length);
+            // Average the interference (strong visual presence)
+            const y = centerY + (totalY / waves.length) * 0.9;
             
             if (i === 0) {
               ctx.moveTo(x, y);
@@ -2524,25 +2524,30 @@
             }
           }
           
-          // Main interference line (brighter, thicker)
-          ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${0.8 + structureProgress * 0.2})`;
-          ctx.lineWidth = 2 + structureProgress * 1;
+          // Main interference line - BOLD AND CLEAR
+          ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${0.9})`;
+          ctx.lineWidth = 2.5 + structureProgress * 1;
+          ctx.shadowColor = `rgba(${r}, ${g}, ${b}, 0.5)`;
+          ctx.shadowBlur = 4 + structureProgress * 6;
           ctx.stroke();
+          ctx.shadowBlur = 0;
           
-          // Add center line reference (fades in with structure)
-          if (structureProgress > 0.3) {
-            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${(structureProgress - 0.3) * 0.3})`;
+          // Add center equilibrium line (structure reference)
+          if (structureProgress > 0.5) {
+            ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${(structureProgress - 0.5) * 0.4})`;
             ctx.lineWidth = 1;
+            ctx.setLineDash([4, 4]);
             ctx.beginPath();
             ctx.moveTo(0, centerY);
             ctx.lineTo(width, centerY);
             ctx.stroke();
+            ctx.setLineDash([]);
           }
         }
         
         // Main animation loop
         function animate() {
-          ctx.fillStyle = 'rgba(1, 4, 9, 0.15)';
+          ctx.fillStyle = 'rgba(1, 4, 9, 0.2)';
           ctx.fillRect(0, 0, width, height);
           
           drawWaves();
@@ -2574,7 +2579,6 @@
             
             // Morph to structure when "Structure applied" appears
             if (messageIndex === 3) {
-              showAffirmation();
               morphToStructure();
             }
             
@@ -2587,30 +2591,35 @@
           let startTime = Date.now();
           function transition() {
             let elapsed = Date.now() - startTime;
-            let progress = Math.min(elapsed / 2500, 1); // 2.5 second smooth transition
+            let progress = Math.min(elapsed / 2800, 1); // 2.8 second smooth transition
             structureProgress = progress;
+            
+            // Show affirmation ONLY at the very end when chaos is fully tamed
+            if (progress >= 0.95 && affirmationEl.style.opacity === '0') {
+              showAffirmation();
+            }
             
             if (progress < 1) {
               requestAnimationFrame(transition);
             } else {
-              // Reset after pause
+              // Hold structure state with affirmation visible
               setTimeout(() => {
-                structureProgress = 0;
-                initChaos();
-              }, 3000);
+                affirmationEl.style.opacity = '0';
+                // Reset after affirmation fades
+                setTimeout(() => {
+                  structureProgress = 0;
+                  initWaves();
+                }, 800);
+              }, 2500);
             }
           }
           transition();
         }
         
-        // Show affirmation
+        // Show affirmation - FULL SCREEN TAKEOVER
         function showAffirmation() {
           affirmationEl.textContent = affirmations[affirmationIndex];
           affirmationEl.style.opacity = '1';
-          
-          setTimeout(() => {
-            affirmationEl.style.opacity = '0';
-          }, 2500);
           
           affirmationIndex = (affirmationIndex + 1) % affirmations.length;
         }
