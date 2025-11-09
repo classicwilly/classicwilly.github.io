@@ -55,14 +55,56 @@ title: Weekend With Dad - Kids Protocol
 
 ## 📋 YOUR DAILY CHECKLIST (Check Off Each One!)
 
-### Morning Checklist
-- [ ] Wake up (take your time!)
-- [ ] Use the bathroom
-- [ ] Get dressed (pick comfy clothes)
-- [ ] Eat breakfast (tell Dad what you want)
-- [ ] Brush teeth (2 minutes - use the timer!)
-- [ ] Brush hair
+### 🌅 Morning Checklist (Every Day!)
+This is the same checklist that's on the fridge at home:
+
+- [ ] **Brush hair** - Get the tangles out!
+- [ ] **Brush teeth** - 2 minutes with the timer
+- [ ] **Change clothes** - Pick something comfy
+- [ ] **Breakfast** - Tell Dad what you want to eat
+- [ ] **Water** - Drink a full cup of water
+- [ ] **Medicine** - (If Dad says you need it)
+- [ ] **Pets** - Feed and give water to pets
 - [ ] Ready for the day! ⭐
+
+### 💧 WATER TRACKER (Mandatory!)
+**Goal: 4 cups of water per day**
+
+Track your water by marking each cup you drink:
+- [ ] Cup 1 (Morning - with breakfast)
+- [ ] Cup 2 (Lunch time)
+- [ ] Cup 3 (Afternoon - with snack)
+- [ ] Cup 4 (Dinner time)
+
+**Bonus Cup**: [ ] Before bed (if you're thirsty)
+
+### 🍎 FOOD TRACKER (Mandatory!)
+**Make sure you eat throughout the day**
+
+- [ ] **Breakfast** - What I ate: _____________
+- [ ] **Lunch** - What I ate: _____________
+- [ ] **Snack** - What I ate: _____________
+- [ ] **Dinner** - What I ate: _____________
+
+**Check this box if you ate at least 3 meals today**: [ ] ⭐
+
+### 🧹 WILLOW'S CHORES (Age 6)
+**Do these once per day (Dad will help if you ask!)**
+
+- [ ] **Straighten up your bedroom** - Put toys away, make bed
+- [ ] **Straighten up the dining room** - Push in chairs, clear any dishes
+- [ ] **Pick up your living room mess** - Put your toys in your toy bin
+
+**When you finish all 3**: Ask Dad for a sticker! ⭐
+
+### 🧹 SEBASTIAN'S CHORES (Age 9)
+**Do these once per day (you got this!)**
+
+- [ ] **Straighten up your bedroom** - Make bed, put away clothes and toys
+- [ ] **Straighten up your bathroom** - Hang up towel, put away toothbrush, wipe sink
+- [ ] **Pick up your living room mess** - Put your stuff in your room or toy area
+
+**When you finish all 3**: Ask Dad for bonus activity time! ⭐
 
 ### Afternoon Checklist
 - [ ] Lunch (help Dad set the table)
