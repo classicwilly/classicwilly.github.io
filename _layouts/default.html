@@ -1874,8 +1874,9 @@
   <body>
     <header class="site-header">
       <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
-        <!-- Tagline (Center) -->
+        <!-- Title & Tagline (Center) -->
         <div style="flex: 1 1 300px; text-align: center;">
+          <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
           <p class="site-tagline">{{ site.description | default: "A card catalog for a chaotic world." }}</p>
         </div>
       </div>
