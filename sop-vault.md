@@ -42,6 +42,18 @@ Mobile extension of WS-OS. Complete device configuration for chaos capture, Goog
 
 ---
 
+## KIDS PROTOCOLS
+
+**Structure for my 6-year-old daughter and 9-year-old son. You can read these by yourselves and check off what you complete. Dad made these so you have routines at his house and at mom's house.**
+
+### [Weekend with Dad Checklist](2025-11-09_M4_SOP_kids-weekend-with-dad)
+Your checklist for Friday 4 PM → Monday 6 PM when you're with dad. Morning routines, fun activities (LEGOs, woodworking, reading, outdoor time), afternoon structure, and bedtime checklists. You can mark these off yourself!
+
+### [Weekdays at Mom's House](2025-11-09_M4_SOP_kids-weekdays-at-moms)
+Your guide for Monday 6 PM → Friday 4 PM when you're with mom. Tablet time balance, homework routines, video call checklist with dad, bedtime structure, what to do when you miss dad or feel bored. You're doing great.
+
+---
+
 ## CONFIGURATION & SYSTEM FILES
 
 ### [Master README](2025-11-08_M4_CONFIG_readme-master-sop)
