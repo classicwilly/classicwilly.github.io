@@ -2456,7 +2456,12 @@
       // ===== COLORFUL STARFIELD =====
       (function() {
         const header = document.querySelector('.site-header');
-        if (!header) return;
+        if (!header) {
+          console.error('Header not found for starfield');
+          return;
+        }
+        
+        console.log('Creating starfield...');
         
         const colors = [
           '#1abc9c', // teal
@@ -2491,8 +2496,20 @@
           // Set animation inline with all properties
           star.style.animation = 'starMovement 10s ease-in-out infinite';
           
-          header.insertBefore(star, header.firstChild);
+          // Debug: log first star's computed style
+          if (i === 0) {
+            setTimeout(() => {
+              const computed = window.getComputedStyle(star);
+              console.log('First star animation:', computed.animation);
+              console.log('First star animation-name:', computed.animationName);
+              console.log('First star animation-duration:', computed.animationDuration);
+            }, 100);
+          }
+          
+          header.appendChild(star);
         }
+        
+        console.log('Created 80 stars');
       })();
     </script>
   </body>
