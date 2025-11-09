@@ -239,25 +239,39 @@ When you're upset, try saying:
 
 ## 🛏️ BEDTIME ROUTINE (Every Night)
 
-### 7:30 PM - Start Getting Ready
+### School Night Bedtime (Sunday-Thursday)
+
+**8:00 PM - Start Getting Ready**
 - [ ] Clean up toys (5-minute pickup)
 - [ ] Bath time (Dad will help)
 - [ ] Put on pajamas
 - [ ] Brush teeth (2 minutes with timer)
 
-### 8:00 PM - Wind Down Time
+**8:30 PM - Wind Down Time**
 - [ ] Pick out 2 books for story time
 - [ ] Get your stuffed animals ready
 - [ ] Climb into bed
 - [ ] Dad reads stories
 - [ ] Talk about your day (what was fun? what was hard?)
 
-### 8:30 PM - Lights Out
+**9:00 PM - Lights Out**
 - [ ] Final hugs and kisses
 - [ ] Nightlight on (if you want it)
 - [ ] Door open or closed (your choice)
 - [ ] White noise machine on (if you like it)
 - [ ] Dad says "I love you" and "You're safe"
+
+### Weekend Bedtime (Friday & Saturday)
+
+**WILLOW** - 2 hours later (Lights out at 11:00 PM):
+- **10:00 PM** - Start getting ready (bath, PJs, teeth)
+- **10:30 PM** - Wind down time (stories, stuffed animals, bed)
+- **11:00 PM** - Lights out
+
+**SEBASTIAN** - 3 hours later (Lights out at 12:00 AM):
+- **11:00 PM** - Start getting ready (bath, PJs, teeth)
+- **11:30 PM** - Wind down time (stories, stuffed animals, bed)
+- **12:00 AM** - Lights out
 
 ### If You Can't Sleep
 1. Stay in bed and rest
@@ -324,18 +338,20 @@ When you're upset, try saying:
 
 ### Friday Night Special
 - **You Pick Dinner** - Take turns each Friday
-- **Late Bedtime** - 30 minutes extra (8:30 PM instead of 8:00 PM)
+- **Late Bedtime** - Willow: 11:00 PM / Sebastian: 12:00 AM (midnight!)
 - **Special Dessert** - Ice cream, cookies, or your choice!
 
 ### Saturday Morning Special
 - **Pancake Breakfast** - Make funny shapes!
 - **No Rush Morning** - Wake up when you're ready
 - **Big Adventure Day** - Go somewhere fun
+- **Late Bedtime Again** - Same as Friday (Willow 11 PM, Sebastian midnight)
 
 ### Sunday Night Special
 - **Family Game Night** - Board games or card games
 - **Build Project Night** - Work on something together
 - **Extra Long Story Time** - 3 books instead of 2!
+- **Back to School Bedtime** - 9:00 PM lights out (school tomorrow!)
 
 ### Dad's Promises
 1. **I will always listen** - Even if I'm busy, I'll stop and listen
