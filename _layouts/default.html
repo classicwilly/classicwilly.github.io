@@ -281,9 +281,23 @@
         margin-bottom: 1.25rem;
       }
       
+      .content-card ul {
+        list-style: none;
+      }
+      
       .content-card li {
         margin-bottom: 0.5rem;
         color: var(--text-light);
+        position: relative;
+        padding-left: 1.5rem;
+      }
+      
+      .content-card ul li::before {
+        content: '▸';
+        position: absolute;
+        left: 0;
+        color: var(--pink);
+        font-weight: bold;
       }
       
       .content-card a {
