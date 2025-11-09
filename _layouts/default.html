@@ -899,6 +899,46 @@
         }
       }
       
+      /* Quick Jump Navigation Tiles */
+      .quick-jump-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+      
+      .quick-jump-grid a {
+        display: block;
+        padding: 1rem;
+        background: var(--card-dark);
+        border-radius: 8px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--text-bright);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: transform 0.3s ease, text-shadow 0.3s ease;
+        border: none;
+      }
+      
+      .quick-jump-grid a:hover {
+        transform: translateY(-4px);
+        text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple);
+        outline: none;
+      }
+      
+      @media (max-width: 768px) {
+        .quick-jump-grid {
+          grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+          gap: 0.75rem;
+        }
+        
+        .quick-jump-grid a {
+          padding: 0.75rem 0.5rem;
+          font-size: 0.85rem;
+        }
+      }
+      
       .tracker-date, .tracker-mode {
         display: flex;
         align-items: center;

@@ -11,7 +11,29 @@ title: Weekend With Dad - Kids Protocol
 
 ---
 
-## 📄 HOW TO USE THIS CHECKLIST
+## � QUICK JUMP TO SECTION
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  <a href="#how-to-use">�📄 How to Use</a>
+  <a href="#what-to-expect">🏠 What to Expect</a>
+  <a href="#daily-checklist">📋 Daily Checklist</a>
+  <a href="#activity-menu">🎨 Activity Menu</a>
+  <a href="#sunday-prep">📅 Sunday Prep</a>
+  <a href="#meal-times">🍽️ Meal Times</a>
+  <a href="#feeling-sad">😰 Feeling Sad</a>
+  <a href="#bedtime">🛏️ Bedtime</a>
+  <a href="#talking-to-mom">📞 Call Mom</a>
+  <a href="#packing-list">🎒 Packing</a>
+  <a href="#traditions">🌟 Traditions</a>
+  <a href="#emergency">🚨 Emergency</a>
+  <a href="#remember">💙 Remember</a>
+  <a href="#success-checklist">✅ Success</a>
+  <a href="#notes">📝 My Notes</a>
+</div>
+
+---
+
+<h2 id="how-to-use">📄 HOW TO USE THIS CHECKLIST</h2>
 
 **Best Way**: **Print this page!** Then you can:
 - ✅ Check off boxes with a pencil
@@ -25,7 +47,7 @@ title: Weekend With Dad - Kids Protocol
 
 ---
 
-## 🏠 WHAT TO EXPECT THIS WEEKEND
+<h2 id="what-to-expect">🏠 WHAT TO EXPECT THIS WEEKEND</h2>
 
 ### Friday Night (4:00 PM - 8:00 PM)
 - ✅ You arrive at Dad's house
@@ -73,7 +95,7 @@ title: Weekend With Dad - Kids Protocol
 
 ---
 
-## 📋 YOUR DAILY CHECKLIST (Check Off Each One!)
+<h2 id="daily-checklist">📋 YOUR DAILY CHECKLIST (Check Off Each One!)</h2>
 
 ### 🌅 Morning Checklist (Every Day!)
 This is the same checklist that's on the fridge at home:
@@ -322,7 +344,7 @@ Track your water by marking each cup you drink:
 
 ---
 
-## 🎨 ACTIVITY MENU (YOU PICK!)
+<h2 id="activity-menu">🎨 ACTIVITY MENU (YOU PICK!)</h2>
 
 ### Indoor Activities (Any Time)
 1. **LEGO Building** - Build whatever you imagine!
@@ -355,7 +377,7 @@ Track your water by marking each cup you drink:
 
 ---
 
-## 📅 SUNDAY PREP CHECKLIST (SUPER IMPORTANT!)
+<h2 id="sunday-prep">📅 SUNDAY PREP CHECKLIST (SUPER IMPORTANT!)</h2>
 
 **Why Sunday Prep Matters**: Sunday is busy! We go to Grandma's house, and Monday is a school day. Getting everything ready Sunday morning makes the day less stressful for EVERYONE. Dad needs your help!
 
@@ -637,7 +659,7 @@ Track your water by marking each cup you drink:
 
 ---
 
-## 🍽️ MEAL TIMES (What and When)
+<h2 id="meal-times">🍽️ MEAL TIMES (What and When)</h2>
 
 ### Breakfast (8:00-9:00 AM)
 **You Can Choose**:
@@ -679,7 +701,7 @@ Track your water by marking each cup you drink:
 
 ---
 
-## 😰 WHEN YOU FEEL SAD OR WORRIED
+<h2 id="feeling-sad">😰 WHEN YOU FEEL SAD OR WORRIED</h2>
 
 ### It's Okay to Feel Big Feelings
 Sometimes you might feel:
@@ -715,7 +737,7 @@ When you're upset, try saying:
 
 ---
 
-## 🛏️ BEDTIME ROUTINE (Every Night)
+<h2 id="bedtime">🛏️ BEDTIME ROUTINE (Every Night)</h2>
 
 ### School Night Bedtime (Sunday-Thursday)
 
@@ -823,7 +845,7 @@ When you're upset, try saying:
 
 ---
 
-## 📞 TALKING TO MOM
+<h2 id="talking-to-mom">📞 TALKING TO MOM</h2>
 
 ### You Can Call Mom Any Time
 - **Morning**: After breakfast if you want to say hi
@@ -847,7 +869,7 @@ When you're upset, try saying:
 
 ---
 
-## 🎒 SUNDAY NIGHT PACKING LIST
+<h2 id="packing-list">🎒 SUNDAY NIGHT PACKING LIST</h2>
 
 ### Things to Pack in Your Backpack
 
@@ -904,7 +926,7 @@ When you're upset, try saying:
 
 ---
 
-## 🌟 SPECIAL WEEKEND TRADITIONS
+<h2 id="traditions">🌟 SPECIAL WEEKEND TRADITIONS</h2>
 
 ### Friday Night Special
 - **You Pick Dinner** - Take turns each Friday
@@ -932,7 +954,7 @@ When you're upset, try saying:
 
 ---
 
-## 🚨 EMERGENCY INFO (Just in Case)
+<h2 id="emergency">🚨 EMERGENCY INFO (Just in Case)</h2>
 
 ### If You Feel Sick
 1. Tell Dad immediately
@@ -962,7 +984,7 @@ When you're upset, try saying:
 
 ---
 
-## 💙 REMEMBER THESE IMPORTANT THINGS
+<h2 id="remember">💙 REMEMBER THESE IMPORTANT THINGS</h2>
 
 ### About Mom and Dad
 - Mom and Dad both love you SO MUCH
@@ -990,7 +1012,7 @@ When you're upset, try saying:
 
 ---
 
-## ✅ WEEKEND SUCCESS CHECKLIST
+<h2 id="success-checklist">✅ WEEKEND SUCCESS CHECKLIST</h2>
 
 At the end of each weekend, we'll check off:
 
@@ -1039,7 +1061,7 @@ You don't have to be perfect. You don't have to be happy all the time. You just 
 
 ---
 
-## 📝 NOTES FOR KIDS
+<h2 id="notes">📝 NOTES FOR KIDS</h2>
 
 **Your Private Section** - Write or draw here:
 

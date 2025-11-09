@@ -50,7 +50,23 @@ title: Daily Tracker
 
 ---
 
-## FOUNDATIONAL PROTOCOLS (Required Daily)
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#foundational">⚡ Foundational</a>
+  <a href="#morning">🌅 Morning</a>
+  <a href="#mode-specific">🎯 Mode-Specific</a>
+  <a href="#emergency">🚨 Emergency</a>
+  <a href="#priority-check">🎖️ Priority Check</a>
+  <a href="#wins">🌟 Today's Wins</a>
+  <a href="#tomorrow">📅 Tomorrow</a>
+  <a href="#notes">📝 Notes</a>
+  <a href="#metrics">📊 Metrics</a>
+</div>
+
+---
+
+<h2 id="foundational">FOUNDATIONAL PROTOCOLS (Required Daily)</h2>
 
 ### Morning Sequence
 
@@ -116,7 +132,7 @@ title: Daily Tracker
 
 ---
 
-## MORNING TRANSITION (6:00-7:00 AM)
+<h2 id="morning">MORNING TRANSITION (6:00-7:00 AM)</h2>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -142,7 +158,7 @@ title: Daily Tracker
 
 ---
 
-## MODE-SPECIFIC PROTOCOLS
+<h2 id="mode-specific">MODE-SPECIFIC PROTOCOLS</h2>
 
 ### If Solo Execution Mode (Mon 6 PM → Fri 4 PM)
 
@@ -194,7 +210,7 @@ title: Daily Tracker
 
 ---
 
-## EMERGENCY PROTOCOLS USED TODAY
+<h2 id="emergency">EMERGENCY PROTOCOLS USED TODAY</h2>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -217,7 +233,7 @@ title: Daily Tracker
 
 ---
 
-## PRIORITY HIERARCHY CHECK
+<h2 id="priority-check">PRIORITY HIERARCHY CHECK</h2>
 
 <div class="priority-ratings">
   <div class="rating-row">
@@ -242,7 +258,7 @@ title: Daily Tracker
 
 ---
 
-## TODAY'S WINS (3 minimum)
+<h2 id="wins">TODAY'S WINS (3 minimum)</h2>
 
 <div class="wins-section">
   <div class="win-row">
@@ -261,7 +277,7 @@ title: Daily Tracker
 
 ---
 
-## TOMORROW'S TOP 3 PRIORITIES
+<h2 id="tomorrow">TOMORROW'S TOP 3 PRIORITIES</h2>
 
 <div class="priorities-section">
   <div class="priority-row">
@@ -280,7 +296,7 @@ title: Daily Tracker
 
 ---
 
-## NOTES / OBSERVATIONS
+<h2 id="notes">NOTES / OBSERVATIONS</h2>
 
 <div class="notes-section">
   <label for="notes">Use this space to note anything unusual, patterns, or insights:</label>
@@ -289,7 +305,7 @@ title: Daily Tracker
 
 ---
 
-## COMPLETION METRICS
+<h2 id="metrics">COMPLETION METRICS</h2>
 
 <div class="metrics-section">
   <div class="metric-row">
