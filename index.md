@@ -261,7 +261,7 @@ title: Home - The Wonky Sprout
       <div>SOP Vault</div>
     </a>
     
-    <a href="/kids" class="cta-button" style="border-color: var(--orange);">
+    <a href="/little-sprouts" class="cta-button" style="border-color: var(--orange);">
       <div style="font-size: 2rem; margin-bottom: 0.5rem;">👨‍👧‍👦</div>
       <div>Kids Protocols</div>
     </a>

@@ -1,52 +1,102 @@
 ---
 layout: default
-title: Kids Protocols & Resources
+title: Little Sprouts - Bash & Willow
 ---
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">👨‍👧‍👦 <span style="color: var(--purple);">Kids Protocols & Resources</span></h1>
+  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">🌱 <span style="color: var(--green);">Little Sprouts</span></h1>
   <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">High-vigilance parenting protocols for custody weekends with two kids.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Protocols and resources for Bash and Willow - our two wonky sprouts.</p>
   <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
-## 📋 WHERE AM I?
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
-  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--orange);">
-    <h3 style="margin-top: 0; color: var(--orange);">👀 Current Mode</h3>
-    <p><strong>Family Structure Mode</strong> runs every weekend from Friday 4pm until Monday 6pm when kids are at dad's house.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
+  
+  <!-- Bash Section -->
+  <div style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(22, 27, 34, 0.95)); border: 3px solid var(--blue); border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <div style="font-size: 4rem; margin-bottom: 1rem;">👦</div>
+      <h2 style="color: var(--blue); font-size: 2rem; margin: 0 0 0.5rem 0; font-family: 'Space Grotesk', sans-serif;">Bash</h2>
+      <p style="color: var(--text-light); font-size: 1rem; margin: 0;">9 years old</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="color: var(--blue); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(88, 166, 255, 0.3); padding-bottom: 0.5rem;">About Bash</h3>
+      <p style="color: var(--text-light); line-height: 1.6;">High energy, needs structure, loves gaming and creative play. Managing transitions and emotional regulation.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="color: var(--blue); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(88, 166, 255, 0.3); padding-bottom: 0.5rem;">Protocols & Tools</h3>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" style="display: block; background: var(--card-dark); padding: 1rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--blue); transition: all 0.2s;">
+          <div style="color: var(--blue); font-weight: 600;">📋 Weekend With Dad Checklist</div>
+          <div style="color: var(--text-light); font-size: 0.85rem;">Daily routine for Fri-Mon</div>
+        </a>
+        <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" style="display: block; background: var(--card-dark); padding: 1rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--blue); transition: all 0.2s;">
+          <div style="color: var(--blue); font-weight: 600;">📚 Weekdays at Mom's</div>
+          <div style="color: var(--text-light); font-size: 0.85rem;">School week protocols</div>
+        </a>
+      </div>
+    </div>
+    
+    <div>
+      <h3 style="color: var(--blue); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(88, 166, 255, 0.3); padding-bottom: 0.5rem;">Current Focus</h3>
+      <ul style="color: var(--text-light); line-height: 1.6; margin: 0; padding-left: 1.5rem;">
+        <li>Transition management</li>
+        <li>Emotional regulation</li>
+        <li>Screen time balance</li>
+        <li>Social skills development</li>
+      </ul>
+    </div>
   </div>
   
-  <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--circuit-teal);">
-    <h3 style="margin-top: 0; color: var(--circuit-teal);">🎯 Purpose</h3>
-    <p>Structured protocols for consistent parenting, custody coordination, and managing the cognitive load of weekend parenting with ADHD/Autism.</p>
+  <!-- Willow Section -->
+  <div style="background: linear-gradient(135deg, rgba(244, 143, 177, 0.1), rgba(22, 27, 34, 0.95)); border: 3px solid var(--pink); border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);">
+    <div style="text-align: center; margin-bottom: 2rem;">
+      <div style="font-size: 4rem; margin-bottom: 1rem;">👧</div>
+      <h2 style="color: var(--pink); font-size: 2rem; margin: 0 0 0.5rem 0; font-family: 'Space Grotesk', sans-serif;">Willow</h2>
+      <p style="color: var(--text-light); font-size: 1rem; margin: 0;">6 years old</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="color: var(--pink); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(244, 143, 177, 0.3); padding-bottom: 0.5rem;">About Willow</h3>
+      <p style="color: var(--text-light); line-height: 1.6;">Creative, sensitive, loves art and stories. Learning emotional expression and building confidence.</p>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="color: var(--pink); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(244, 143, 177, 0.3); padding-bottom: 0.5rem;">Protocols & Tools</h3>
+      <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+        <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" style="display: block; background: var(--card-dark); padding: 1rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--pink); transition: all 0.2s;">
+          <div style="color: var(--pink); font-weight: 600;">� Weekend With Dad Checklist</div>
+          <div style="color: var(--text-light); font-size: 0.85rem;">Daily routine for Fri-Mon</div>
+        </a>
+        <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" style="display: block; background: var(--card-dark); padding: 1rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--pink); transition: all 0.2s;">
+          <div style="color: var(--pink); font-weight: 600;">📚 Weekdays at Mom's</div>
+          <div style="color: var(--text-light); font-size: 0.85rem;">School week protocols</div>
+        </a>
+      </div>
+    </div>
+    
+    <div>
+      <h3 style="color: var(--pink); font-size: 1.2rem; margin-bottom: 0.75rem; border-bottom: 2px solid rgba(244, 143, 177, 0.3); padding-bottom: 0.5rem;">Current Focus</h3>
+      <ul style="color: var(--text-light); line-height: 1.6; margin: 0; padding-left: 1.5rem;">
+        <li>Emotional vocabulary</li>
+        <li>Confidence building</li>
+        <li>Creative expression</li>
+        <li>Independence skills</li>
+      </ul>
+    </div>
   </div>
+  
 </div>
 
----
-
-## 🎯 QUICK ACCESS - INTERACTIVE TOOLS
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 2rem 0; padding: 1.5rem; background: var(--darker-bg); border-radius: 12px; border: 3px solid var(--circuit-teal);">
-  
-  <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--orange); transition: all 0.2s;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📋</div>
-    <div style="color: var(--orange); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Weekend With Dad Checklist</div>
-    <div style="color: var(--text-light); font-size: 0.85rem;">Interactive daily checklist for kids at Dad's house (Fri-Mon)</div>
-  </a>
-  
-  <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--blue); transition: all 0.2s;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📚</div>
-    <div style="color: var(--blue); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Weekdays at Mom's Protocol</div>
-    <div style="color: var(--text-light); font-size: 0.85rem;">Self-help guide for kids during the school week (Mon-Fri)</div>
-  </a>
-  
-  <a href="/daily-tracker" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--yellow); transition: all 0.2s;">
-    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📊</div>
-    <div style="color: var(--yellow); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem;">Daily Tracker (Dad's Tool)</div>
-    <div style="color: var(--text-light); font-size: 0.85rem;">Track protocols, energy, and mode status during Family Structure Mode</div>
-  </a>
+<style>
+  @media (max-width: 968px) {
+    div[style*="grid-template-columns: 1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
   
   <a href="/workspace#calendar" style="display: block; background: var(--card-dark); padding: 1.5rem; border-radius: 8px; text-decoration: none; border: 2px solid var(--green); transition: all 0.2s;">
     <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">📅</div>
