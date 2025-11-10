@@ -4,7 +4,8 @@ title: Command Center - The Wonky Sprout
 ---
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="font-size: 2.5rem; margin-bottom: 2.16rem;">⚙️ <span style="color: var(--circuit-teal);">Command Center</span></h1>
+  <h1 style="font-size: 2.5rem; margin-bottom: 0; color: var(--circuit-teal);">⚙️ Command Center</h1>
+  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin: 2.16rem 0;"></div>
   <p style="color: var(--text-light); font-size: 1.1rem; margin: 2.16rem 0;">Two workbenches. One system. Zero chaos.</p>
   <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
