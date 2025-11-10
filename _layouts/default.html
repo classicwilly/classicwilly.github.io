@@ -1895,8 +1895,18 @@
         background-clip: text;
         margin: 0;
         line-height: 1.2;
-        border-bottom: 3px solid var(--teal);
         padding-bottom: 0.5rem;
+        position: relative;
+      }
+      
+      .hero-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow));
       }
       
       @keyframes titleGlow {
