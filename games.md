@@ -4,13 +4,10 @@ title: Stim Station
 ---
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="color: var(--yellow); font-size: 2.5rem; margin-bottom: 1rem;">🎮 Stim Station</h1>
-  <hr style="border: none; height: 2px; background: var(--circuit-teal); margin: 0 0 1rem 0;">
+  <h1 style="color: var(--yellow); font-size: 2.5rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--circuit-teal);">🎮 Stim Station</h1>
   <p style="color: var(--text-light); font-size: 1.1rem;">Neurodivergent-friendly games for when you need to zone out.</p>
-  <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem;">No scores. No timers. No pressure.</p>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(139, 148, 158, 0.2);">No scores. No timers. No pressure.</p>
 </div>
-
----
 
 <div class="game-container">
   <div class="game-card">

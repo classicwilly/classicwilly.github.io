@@ -4,12 +4,9 @@ title: Daily Tracker
 ---
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="color: var(--blue); font-size: 2.5rem; margin-bottom: 1rem;">📊 Daily Protocol Tracker</h1>
-  <hr style="border: none; height: 2px; background: var(--circuit-teal); margin: 0 0 1rem 0;">
-  <p style="color: var(--text-light); font-size: 1.1rem;">Quick daily check-in for all foundational and mode-specific protocols.</p>
+  <h1 style="color: var(--blue); font-size: 2.5rem; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 2px solid var(--circuit-teal);">📊 Daily Protocol Tracker</h1>
+  <p style="color: var(--text-light); font-size: 1.1rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(139, 148, 158, 0.2); margin: 0;">Quick daily check-in for all foundational and mode-specific protocols.</p>
 </div>
-
----
 
 <div class="page-navigation">
   <div class="nav-section">
