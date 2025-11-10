@@ -110,35 +110,6 @@ title: Home - The Wonky Sprout
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
   }
   
-  /* Desktop masonry: left/right becomes border accent only */
-  .story-card.left {
-    border-left: 6px solid var(--accent);
-  }
-  
-  .story-card.right {
-    border-right: 6px solid var(--accent);
-  }
-  
-  .story-card.center {
-    border: 3px solid var(--accent);
-  }
-  
-  /* Mobile: restore left/right layout for storytelling flow */
-  @media (max-width: 1023px) {
-    .story-card.left {
-      margin-right: 15%;
-    }
-    
-    .story-card.right {
-      margin-left: 15%;
-    }
-    
-    .story-card.center {
-      margin: 0 auto 4rem;
-      max-width: 700px;
-    }
-  }
-  
   .story-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -183,67 +154,188 @@ title: Home - The Wonky Sprout
       left: 1rem;
     }
   }
+  
+  /* ========================================
+     FLOWCHART/WIRING DIAGRAM LAYOUT
+     Mimics troubleshooting tree structure
+     Left-to-right, top-to-bottom flow
+     ======================================== */
+  
+  .flowchart-section {
+    margin-bottom: 4rem;
+    position: relative;
+  }
+  
+  .flowchart-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  /* Connector lines between rows */
+  .flowchart-section::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, 
+      transparent 0%, 
+      var(--border-gray) 10%, 
+      var(--border-gray) 90%, 
+      transparent 100%
+    );
+    transform: translateX(-50%);
+    z-index: 0;
+  }
+  
+  .flowchart-row .story-card {
+    margin: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Arrow indicators for flow direction */
+  .flow-arrow {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--border-gray);
+    margin: 1rem 0;
+    animation: pulse-arrow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-arrow {
+    0%, 100% { opacity: 0.5; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(5px); }
+  }
+  
+  /* Desktop: Multi-column flowchart */
+  @media (min-width: 1024px) {
+    .flowchart-row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .flowchart-row.single {
+      grid-template-columns: 1fr;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .flowchart-row.triple {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Mobile: Stack vertically */
+  @media (max-width: 1023px) {
+    .flowchart-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .flowchart-section::after {
+      left: 1rem;
+      transform: none;
+    }
+  }
 </style>
 
 <div class="journey-path">
-  <div class="path-line"></div>
-  
   <!-- Chapter 1: The Diagnosis -->
-  <div class="story-card left" style="--accent: var(--circuit-teal);">
-    <div class="story-icon">🧩</div>
-    <h2 class="story-title">The Diagnosis</h2>
-    <p class="story-highlight">At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</p>
-  </div>
-  
-  <div class="story-card right" style="--accent: var(--circuit-teal);">
-    <p class="story-text">For decades, I was simply the "fixer." The 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but couldn't find the blueprint for the unstructured chaos in my own head.</p>
-  </div>
-  
-  <div class="story-card left" style="--accent: var(--circuit-teal);">
-    <p class="story-text">I was the one called a <span class="story-emphasis">"hothead"</span> in the office. The socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout.</p>
-  </div>
-  
-  <div class="story-card center" style="--accent: var(--purple);">
-    <p class="story-highlight">That diagnosis wasn't a failure. It was the key.</p>
-    <p class="story-text">I wasn't broken; I was just running on a different architecture. It was the <span class="story-emphasis">feature</span>, not the bug, that explains why I see the patterns in the noise.</p>
+  <div class="flowchart-section">
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--circuit-teal); border: 3px solid var(--circuit-teal);">
+        <div class="story-icon">🧩</div>
+        <h2 class="story-title">Chapter 1: The Diagnosis</h2>
+        <p class="story-highlight">At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row">
+      <div class="story-card" style="--accent: var(--circuit-teal); border-left: 6px solid var(--circuit-teal);">
+        <p class="story-text">For decades, I was simply the "fixer." The 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but couldn't find the blueprint for the unstructured chaos in my own head.</p>
+      </div>
+      
+      <div class="story-card" style="--accent: var(--circuit-teal); border-right: 6px solid var(--circuit-teal);">
+        <p class="story-text">I was the one called a <span class="story-emphasis">"hothead"</span> in the office. The socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--purple); border: 3px solid var(--purple);">
+        <p class="story-highlight">That diagnosis wasn't a failure. It was the key.</p>
+        <p class="story-text">I wasn't broken; I was just running on a different architecture. It was the <span class="story-emphasis">feature</span>, not the bug, that explains why I see the patterns in the noise.</p>
+      </div>
+    </div>
   </div>
   
   <!-- Chapter 2: The Shift -->
-  <div class="story-card right" style="--accent: var(--orange);">
-    <div class="story-icon">👨‍👧‍👦</div>
-    <h2 class="story-title">The Shift</h2>
-    <p class="story-highlight">But this isn't just my story anymore. I am not just a fixer—I am a father.</p>
-  </div>
-  
-  <div class="story-card left" style="--accent: var(--orange);">
-    <p class="story-text">I have two <span class="story-emphasis">"wonky sprouts"</span> of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, my own need for structure reflected in them.</p>
-  </div>
-  
-  <div class="story-card right" style="--accent: var(--orange);">
-    <p class="story-text">I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.</p>
-    <p class="story-highlight">It's about being the father they deserve.</p>
-  </div>
-  
-  <div class="story-card center" style="--accent: var(--pink);">
-    <p class="story-text">I can't give them a map I was never given.</p>
-    <p class="story-highlight">So, we are learning to draw one together.</p>
+  <div class="flowchart-section">
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--orange); border: 3px solid var(--orange);">
+        <div class="story-icon">👨‍👧‍👦</div>
+        <h2 class="story-title">Chapter 2: The Shift</h2>
+        <p class="story-highlight">But this isn't just my story anymore. I am not just a fixer—I am a father.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row">
+      <div class="story-card" style="--accent: var(--orange); border-left: 6px solid var(--orange);">
+        <p class="story-text">I have two <span class="story-emphasis">"wonky sprouts"</span> of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, my own need for structure reflected in them.</p>
+      </div>
+      
+      <div class="story-card" style="--accent: var(--orange); border-right: 6px solid var(--orange);">
+        <p class="story-text">I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.</p>
+        <p class="story-highlight">It's about being the father they deserve.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--pink); border: 3px solid var(--pink);">
+        <p class="story-text">I can't give them a map I was never given.</p>
+        <p class="story-highlight">So, we are learning to draw one together.</p>
+      </div>
+    </div>
   </div>
   
   <!-- Chapter 3: The Blueprint -->
-  <div class="story-card left" style="--accent: var(--yellow);">
-    <div class="story-icon">🛡️</div>
-    <h2 class="story-title">The Blueprint</h2>
-    <p class="story-text">We are building our own <span class="story-emphasis">"bubble shield"</span> as a team. Finding the structure that makes our chaos feel safe.</p>
-  </div>
-  
-  <div class="story-card right" style="--accent: var(--yellow);">
-    <p class="story-highlight">This is The Wonky Sprout.</p>
-    <p class="story-text">Our shared journey. The "Internal Blueprint" we are co-authoring for a world that wasn't built for us.</p>
-  </div>
-  
-  <div class="story-card center" style="--accent: var(--green); border-width: 4px; background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(13, 17, 23, 0.95)); box-shadow: 0 12px 48px rgba(46, 204, 113, 0.3);">
-    <p class="story-highlight" style="font-size: 1.3rem; text-align: center;">The structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father.</p>
-    <p class="story-text" style="text-align: center; margin-bottom: 0; font-style: italic; color: var(--green);">A system that is strong, authentic, and has feeling.</p>
+  <div class="flowchart-section">
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--yellow); border: 3px solid var(--yellow);">
+        <div class="story-icon">🛡️</div>
+        <h2 class="story-title">Chapter 3: The Blueprint</h2>
+        <p class="story-text">We are building our own <span class="story-emphasis">"bubble shield"</span> as a team. Finding the structure that makes our chaos feel safe.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--yellow); border: 3px solid var(--yellow);">
+        <p class="story-highlight">This is The Wonky Sprout.</p>
+        <p class="story-text">Our shared journey. The "Internal Blueprint" we are co-authoring for a world that wasn't built for us.</p>
+      </div>
+    </div>
+    
+    <div class="flow-arrow">↓</div>
+    
+    <div class="flowchart-row single">
+      <div class="story-card" style="--accent: var(--green); border: 4px solid var(--green); background: linear-gradient(135deg, rgba(22, 27, 34, 0.95), rgba(13, 17, 23, 0.95)); box-shadow: 0 12px 48px rgba(46, 204, 113, 0.3);">
+        <p class="story-highlight" style="font-size: 1.3rem; text-align: center;">The structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father.</p>
+        <p class="story-text" style="text-align: center; margin-bottom: 0; font-style: italic; color: var(--green);">A system that is strong, authentic, and has feeling.</p>
+      </div>
+    </div>
   </div>
 </div>
 
