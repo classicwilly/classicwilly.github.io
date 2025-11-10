@@ -3176,13 +3176,13 @@
             <button class="secondary" onclick="window.resetChecklist()">↻ Reset</button>
           `;
           
-          // Look for gradient line and insert before it, otherwise insert after first h1
+          // Look for gradient line and insert after it, otherwise insert after first h1
           const gradientLine = Array.from(contentCard.children).find(el => 
             el.style && el.style.background && el.style.background.includes('linear-gradient')
           );
           
           if (gradientLine) {
-            gradientLine.insertAdjacentElement('beforebegin', controls);
+            gradientLine.insertAdjacentElement('afterend', controls);
           } else {
             const firstH1 = contentCard.querySelector('h1');
             if (firstH1) {
