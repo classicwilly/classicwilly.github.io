@@ -92,7 +92,7 @@ title: Home - The Wonky Sprout
     background: var(--card-dark);
     border-radius: 16px;
     padding: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 1.5rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
     transition: all 0.4s ease;
     z-index: 1;
@@ -110,20 +110,33 @@ title: Home - The Wonky Sprout
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
   }
   
+  /* Desktop masonry: left/right becomes border accent only */
   .story-card.left {
-    margin-right: 55%;
     border-left: 6px solid var(--accent);
   }
   
   .story-card.right {
-    margin-left: 55%;
     border-right: 6px solid var(--accent);
   }
   
   .story-card.center {
-    margin: 0 auto 4rem;
-    max-width: 700px;
     border: 3px solid var(--accent);
+  }
+  
+  /* Mobile: restore left/right layout for storytelling flow */
+  @media (max-width: 1023px) {
+    .story-card.left {
+      margin-right: 15%;
+    }
+    
+    .story-card.right {
+      margin-left: 15%;
+    }
+    
+    .story-card.center {
+      margin: 0 auto 4rem;
+      max-width: 700px;
+    }
   }
   
   .story-icon {
@@ -189,14 +202,6 @@ title: Home - The Wonky Sprout
   }
   
   @media (max-width: 768px) {
-    .story-card.left,
-    .story-card.right {
-      margin-left: 0;
-      margin-right: 0;
-      border-left: 6px solid var(--accent);
-      border-right: none;
-    }
-    
     .path-line {
       left: 1rem;
     }
