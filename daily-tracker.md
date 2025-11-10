@@ -4,47 +4,14 @@ title: Daily Tracker
 ---
 
 <div style="text-align: center; margin-bottom: 1.16rem;">
-  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 0 0; border-bottom: none !important;">📊 <span style="color: var(--blue);">Daily Protocol Tracker</span></h1>
+  <h1>📊 <span style="color: var(--blue);">Daily Protocol Tracker</span></h1>
 </div>
 
-<div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+<div style="height: 2px; background: linear-gradient(90deg, var(--blue), var(--purple), var(--teal), var(--yellow)); margin-bottom: 1rem;"></div>
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Quick daily check-in for all foundational and mode-specific protocols.</p>
-  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
-</div>
-
-<div class="page-navigation">
-  <div class="nav-section">
-    <h4>📍 WHERE AM I?</h4>
-    <p>Comprehensive daily tracking page for <strong>all protocols</strong> in one place. This is your single source of truth for daily execution. Fill this out during your <strong>10:25 PM Daily Dump</strong>.</p>
-  </div>
-  
-  <div class="nav-section">
-    <h4>✅ WHAT CAN I DO HERE?</h4>
-    <ul>
-      <li><strong>Set today's date</strong> to track specific day</li>
-      <li><strong>Select your mode</strong> (Solo Execution or Family Structure)</li>
-      <li><strong>Check boxes</strong> throughout the day as you complete protocols</li>
-      <li><strong>Review during Daily Dump</strong> (10:25 PM) to see completion rate</li>
-      <li><strong>Export data for Weekly Review</strong> (pattern analysis)</li>
-    </ul>
-  </div>
-  
-  <div class="nav-section">
-    <h4>💡 HOW THIS HELPS</h4>
-    <p>Visual tracking creates <strong>accountability</strong> and <strong>pattern recognition</strong>. When you see "Water Protocol: 3/7 days this week," you know where the breakdown is. Saves to localStorage—your data persists across page loads. Use this for honest self-assessment, not perfection theater.</p>
-  </div>
-  
-  <div class="nav-section">
-    <h4>⚡ QUICK ACCESS</h4>
-    <ul>
-      <li><strong><a href="/checklists" style="color: var(--circuit-teal);">Checklists</a></strong> → All protocols</li>
-      <li><strong><a href="/tracker-stats" style="color: var(--circuit-teal);">Stats</a></strong> → View trends</li>
-      <li><strong><a href="/sop-vault" style="color: var(--circuit-teal);">SOP Vault</a></strong> → Full protocols</li>
-      <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency</a></strong> → When frozen</li>
-    </ul>
-  </div>
+  <p style="font-size: 1.1rem; color: var(--text-bright); margin-bottom: 0.5rem;">Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
+  <p style="font-size: 0.95rem; color: var(--text-light);">Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
 </div>
 
 <div class="tracker-header">
@@ -83,9 +50,12 @@ title: Daily Tracker
 
 ---
 
-<h2 id="foundational">FOUNDATIONAL PROTOCOLS (Required Daily)</h2>
+## 🌊 Foundational Protocols
 
-### Morning Sequence
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Core protocols that must happen every day. If these fail, everything fails. <strong>Goal: 10+ of 11 completed.</strong></p>
+  
+  <h3 style="color: var(--green); font-size: 1rem; margin-top: 0; margin-bottom: 0.75rem;">Morning Sequence</h3>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -109,7 +79,7 @@ title: Daily Tracker
   </label>
 </div>
 
-### All Day
+<h3 style="color: var(--green); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">All Day</h3>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -128,7 +98,7 @@ title: Daily Tracker
   </label>
 </div>
 
-### Evening Sequence
+<h3 style="color: var(--green); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Evening Sequence</h3>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -146,10 +116,14 @@ title: Daily Tracker
     <span class="checkbox-label"><strong>10:30 PM</strong> - Sleep Anchor (in bed, no screens, DND mode)</span>
   </label>
 </div>
+</div>
 
 ---
 
-<h2 id="morning">MORNING TRANSITION (6:00-7:00 AM)</h2>
+## 🚀 Morning Transition (6:00-7:00 AM)
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--blue); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">4-phase protocol to go from bed → execution. <strong>Goal: All 4 phases complete by 7:00 AM.</strong></p>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -172,12 +146,16 @@ title: Daily Tracker
     <span class="checkbox-label"><strong>Phase 4 Complete</strong> - Execution Launch (first micro-action by 7:00 AM)</span>
   </label>
 </div>
+</div>
 
 ---
 
-<h2 id="mode-specific">MODE-SPECIFIC PROTOCOLS</h2>
+## ⚡ Mode-Specific Protocols
 
-### If Solo Execution Mode (Mon 6 PM → Fri 4 PM)
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--purple); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Different protocols for Solo Execution Mode vs Family Structure Mode. Check the section that matches today's mode.</p>
+
+<h3 style="color: var(--purple); font-size: 1rem; margin-top: 0; margin-bottom: 0.75rem;">If Solo Execution Mode (Mon 6 PM → Fri 4 PM)</h3>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -201,7 +179,7 @@ title: Daily Tracker
   </label>
 </div>
 
-### If Family Structure Mode (Fri 4 PM → Mon 6 PM)
+<h3 style="color: var(--pink); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">If Family Structure Mode (Fri 4 PM → Mon 6 PM)</h3>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -224,10 +202,14 @@ title: Daily Tracker
     <span class="checkbox-label"><strong>Tag-Team Coordination</strong> - Communicated needs with spouse</span>
   </label>
 </div>
+</div>
 
 ---
 
-<h2 id="emergency">EMERGENCY PROTOCOLS USED TODAY</h2>
+## 🚨 Emergency Protocols Used Today
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Check any emergency protocols you needed today. <strong>If 2+ checked:</strong> System issue detected. Review root cause.</p>
 
 <div class="interactive-checklist">
   <label class="checkbox-item">
@@ -245,12 +227,14 @@ title: Daily Tracker
     <span class="checkbox-label"><strong>Sensory Overload Emergency</strong> - Retreated for nervous system regulation</span>
   </label>
 </div>
-
-**If 2+ emergency protocols used**: System issue detected. Review root cause.
+</div>
 
 ---
 
-<h2 id="priority-check">PRIORITY HIERARCHY CHECK</h2>
+## 📊 Priority Hierarchy Check
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Rate each foundational need 1-10. <strong>If any score below 7:</strong> This is the root problem. Fix this tomorrow.</p>
 
 <div class="priority-ratings">
   <div class="rating-row">
@@ -270,12 +254,14 @@ title: Daily Tracker
     <input type="number" id="rating-medicine" min="1" max="10" placeholder="1-10" /> / 10
   </div>
 </div>
-
-**If any score below 7**: This is the root problem. Fix this tomorrow.
+</div>
 
 ---
 
-<h2 id="wins">TODAY'S WINS (3 minimum)</h2>
+## 🏆 Today's Wins (3 minimum)
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--yellow); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">List at least 3 things you accomplished today. Any size counts. This isn't motivational BS—it's pattern recognition.</p>
 
 <div class="wins-section">
   <div class="win-row">
@@ -291,10 +277,14 @@ title: Daily Tracker
     <input type="text" id="win-3" placeholder="Enter your win..." />
   </div>
 </div>
+</div>
 
 ---
 
-<h2 id="tomorrow">TOMORROW'S TOP 3 PRIORITIES</h2>
+## 📝 Tomorrow's Top 3 Priorities
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">What are the 3 most critical tasks for tomorrow? Write these during Daily Dump (10:25 PM).</p>
 
 <div class="priorities-section">
   <div class="priority-row">
@@ -310,19 +300,27 @@ title: Daily Tracker
     <input type="text" id="priority-3" placeholder="Enter priority..." />
   </div>
 </div>
+</div>
 
 ---
 
-<h2 id="notes">NOTES / OBSERVATIONS</h2>
+## 💭 Notes / Observations
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--purple); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Note anything unusual, patterns you're seeing, or insights about what worked/didn't work today.</p>
 
 <div class="notes-section">
   <label for="notes">Use this space to note anything unusual, patterns, or insights:</label>
   <textarea id="notes" rows="5" placeholder="Enter your observations..."></textarea>
 </div>
+</div>
 
 ---
 
-<h2 id="metrics">COMPLETION METRICS</h2>
+## 📈 Completion Metrics
+
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--blue); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Track completion rates for each protocol section. Use these metrics during Weekly Review to spot trends.</p>
 
 <div class="metrics-section">
   <div class="metric-row">
@@ -347,16 +345,33 @@ title: Daily Tracker
   </div>
 </div>
 
+<p style="color: var(--text-light); font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0;"><strong>Daily Tracker Usage:</strong> Fill this out at Daily Dump (10:25 PM) before sleep. Check boxes throughout day as you complete protocols. Review patterns weekly during Weekly Review Protocol. <strong>If completion rates drop below 70% for 3+ days:</strong> Emergency system review required.</p>
+</div>
+
 ---
 
-**Daily Tracker Usage:**
-- Fill this out at Daily Dump (10:25 PM) before sleep
-- Check boxes throughout day as you complete protocols
-- Review patterns weekly during Weekly Review Protocol
-- If completion rates drop below 70% for 3+ days: Emergency system review required
+---
 
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="/tracker-stats" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📊 View Your Stats</a>
-  <a href="/sop-vault" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📋 All Protocols</a>
-  <a href="/checklists" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">✅ Checklists</a>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+  <a href="/tracker-stats" style="display: block; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1rem; text-align: center; color: var(--text-bright); text-decoration: none; transition: all 0.3s ease;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📊</div>
+    <div style="font-weight: 600;">View Your Stats</div>
+  </a>
+  <a href="/sop-vault" style="display: block; background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem; text-align: center; color: var(--text-bright); text-decoration: none; transition: all 0.3s ease;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📋</div>
+    <div style="font-weight: 600;">All Protocols</div>
+  </a>
+  <a href="/checklists" style="display: block; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1rem; text-align: center; color: var(--text-bright); text-decoration: none; transition: all 0.3s ease;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">✅</div>
+    <div style="font-weight: 600;">Checklists</div>
+  </a>
 </div>
+
+<style>
+.tracker-header a[href*="tracker-stats"]:hover,
+.tracker-header a[href*="sop-vault"]:hover,
+.tracker-header a[href*="checklists"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+</style>
