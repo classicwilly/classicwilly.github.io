@@ -244,11 +244,11 @@
       
       /* ===== DENSITY SWITCHER ===== */
       .density-switcher {
-        position: absolute;
-        top: 1rem;
-        right: 1.5rem;
-        z-index: 100;
-        display: flex;
+        position: relative;
+        top: auto;
+        right: auto;
+        z-index: 1;
+        display: none; /* Hidden by default - shown in dropdown */
         gap: 0.5rem;
         background: var(--card-dark);
         padding: 0.5rem;
@@ -348,17 +348,36 @@
       
       /* Mobile: Hide density switcher on small screens */
       @media (max-width: 768px) {
-        .density-switcher {
-          top: 0.5rem;
-          right: 0.5rem;
-          padding: 0.3rem;
-          gap: 0.3rem;
+        .site-title {
+          font-size: 1.8rem;
         }
         
-        .density-switcher button {
-          padding: 0.3rem 0.5rem;
-          font-size: 0.7rem;
-          min-height: 32px;
+        .site-tagline {
+          font-size: 0.85rem;
+        }
+        
+        .site-header {
+          padding: 1rem 0.5rem;
+        }
+        
+        .site-nav {
+          gap: 0.5rem;
+        }
+        
+        .site-nav a:not(.dropdown-toggle) {
+          font-size: 0.75rem;
+          padding: 0.4rem 0.6rem;
+        }
+        
+        .dropdown-toggle {
+          font-size: 0.75rem;
+          padding: 0.4rem 0.6rem;
+        }
+        
+        .dropdown-content {
+          right: auto;
+          left: 0;
+          min-width: 200px;
         }
       }
       
@@ -432,14 +451,10 @@
       }
       
       .site-title {
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: 'Space Grotesk', sans-serif;
         font-size: 2.5rem;
         font-weight: 700;
-        background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink), var(--orange));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-shadow: none;
+        color: var(--circuit-teal);
         margin-bottom: 0.5rem;
         position: relative;
         z-index: 1;
@@ -465,9 +480,10 @@
         align-items: center;
         flex-wrap: wrap;
         border-bottom: 2px solid var(--border-gray);
+        position: relative;
       }
       
-      .site-nav a {
+      .site-nav a:not(.dropdown-toggle) {
         font-family: 'IBM Plex Mono', monospace;
         color: var(--text-bright);
         text-decoration: none;
@@ -484,14 +500,89 @@
         overflow: hidden;
       }
       
-      .site-nav a:hover,
-      .site-nav a:focus {
+      .site-nav a:not(.dropdown-toggle):hover,
+      .site-nav a:not(.dropdown-toggle):focus {
         background: var(--hover-bg);
         border-color: var(--circuit-teal);
         color: var(--circuit-teal);
         transform: translateY(-2px);
         box-shadow: var(--glow-teal);
         outline: none;
+      }
+      
+      /* Dropdown Menu System */
+      .nav-dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-toggle {
+        font-family: 'IBM Plex Mono', monospace;
+        color: var(--text-bright);
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        background: var(--card-dark);
+        border: 1px solid var(--purple);
+        border-radius: var(--radius-md);
+        transition: var(--transition);
+        font-weight: 600;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .dropdown-toggle:hover {
+        background: var(--hover-bg);
+        border-color: var(--purple);
+        color: var(--purple);
+        transform: translateY(-2px);
+        box-shadow: var(--glow-purple);
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.5rem);
+        right: 0;
+        background: var(--card-dark);
+        border: 2px solid var(--purple);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg), var(--glow-purple);
+        padding: 1rem;
+        min-width: 250px;
+        z-index: 1000;
+      }
+      
+      .dropdown-content.show {
+        display: block;
+      }
+      
+      .dropdown-content h4 {
+        color: var(--purple);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 0.75rem;
+        font-family: 'IBM Plex Mono', monospace;
+      }
+      
+      .dropdown-content .density-switcher {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+      }
+      
+      .dropdown-content .density-switcher button {
+        width: 100%;
+        justify-content: center;
       }
       
       /* Main Content - The "Card" */
@@ -2847,16 +2938,8 @@
   </head>
   <body>
     <header class="site-header" role="banner">
-      <!-- View Density Switcher -->
-      <div class="density-switcher" role="toolbar" aria-label="View density controls">
-        <button type="button" onclick="setDensityMode('compact')" data-mode="compact" aria-label="Compact view">Compact</button>
-        <button type="button" class="active" onclick="setDensityMode('comfortable')" data-mode="comfortable" aria-label="Comfortable view">Comfortable</button>
-        <button type="button" onclick="setDensityMode('spacious')" data-mode="spacious" aria-label="Spacious view">Spacious</button>
-      </div>
-      
-      <div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2;">
-        <!-- Title & Tagline (Center) -->
-        <div style="flex: 1 1 300px; text-align: center;">
+      <div style="display: flex; justify-content: center; align-items: center; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; padding: 2rem 1rem;">
+        <div style="text-align: center;">
           <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
           <p class="site-tagline">{{ site.description | default: "Structure Engineered for Chaos" }}</p>
         </div>
@@ -2871,6 +2954,21 @@
       <a href="/checklists" aria-label="View checklists">Checklists</a>
       <a href="/daily-tracker" aria-label="Open daily tracker">Daily Tracker</a>
       <a href="/tracker-stats" aria-label="View tracker statistics">Stats</a>
+      
+      <!-- Dropdown Menu -->
+      <div class="nav-dropdown">
+        <button class="dropdown-toggle" onclick="toggleDropdown()" aria-label="Toggle settings menu" aria-expanded="false">
+          ⚙️ Settings
+        </button>
+        <div class="dropdown-content" id="nav-dropdown-content">
+          <h4>View Density</h4>
+          <div class="density-switcher" role="toolbar" aria-label="View density controls">
+            <button type="button" onclick="setDensityMode('compact'); toggleDropdown();" data-mode="compact" aria-label="Compact view">Compact</button>
+            <button type="button" class="active" onclick="setDensityMode('comfortable'); toggleDropdown();" data-mode="comfortable" aria-label="Comfortable view">Comfortable</button>
+            <button type="button" onclick="setDensityMode('spacious'); toggleDropdown();" data-mode="spacious" aria-label="Spacious view">Spacious</button>
+          </div>
+        </div>
+      </div>
     </nav>
     
     <!-- Wonky AI Chat Integration (site-wide) -->
@@ -3886,6 +3984,31 @@
           activeButton.classList.add('active');
         }
       }
+      
+      // Dropdown Menu Toggle
+      function toggleDropdown() {
+        const dropdown = document.getElementById('nav-dropdown-content');
+        const toggle = document.querySelector('.dropdown-toggle');
+        dropdown.classList.toggle('show');
+        
+        // Update aria-expanded
+        const isExpanded = dropdown.classList.contains('show');
+        toggle.setAttribute('aria-expanded', isExpanded);
+      }
+      
+      // Close dropdown when clicking outside
+      window.addEventListener('click', function(event) {
+        const dropdown = document.querySelector('.nav-dropdown');
+        const dropdownContent = document.getElementById('nav-dropdown-content');
+        
+        if (dropdown && !dropdown.contains(event.target)) {
+          dropdownContent.classList.remove('show');
+          const toggle = document.querySelector('.dropdown-toggle');
+          if (toggle) {
+            toggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
       
       // Back to Top Button Functionality
       (function() {

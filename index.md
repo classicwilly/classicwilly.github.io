@@ -10,30 +10,29 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--circuit-teal); text-align: center;">The Wonky Sprout</h1>
-    <p class="hero-subtitle" style="font-size: 1.3rem; text-align: center; max-width: 800px; margin: 0 auto 2rem;">A neurodivergent father's blueprint for building structure from chaos</p>
+    <p class="hero-subtitle" style="font-size: 1.4rem; text-align: center; max-width: 900px; margin: 0 auto 2rem;">A neurodivergent father's blueprint for building structure from chaos</p>
     
     <!-- Status Update Cards -->
-    <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; max-width: 800px; margin: 1rem 0;">
-      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; justify-content: center; width: 100%; max-width: 700px; margin: 2rem auto;">
+      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.75rem 1rem; text-align: center;">
         <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">🧠</div>
         <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-mode">--</div>
         <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Mode</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: var(--radius-md); padding: 0.75rem 1rem; text-align: center;">
         <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">📊</div>
         <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-streak">--</div>
         <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Streak</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: var(--radius-md); padding: 0.75rem 1rem; text-align: center;">
         <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">✅</div>
         <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-tasks">--</div>
         <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Tasks</div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: 8px; padding: 0.75rem 1rem; text-align: center; min-width: 140px;">
+      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: var(--radius-md); padding: 0.75rem 1rem; text-align: center;">
         <div style="font-size: 1.5rem; margin-bottom: 0.25rem;">⚡</div>
         <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 1.1rem; margin-bottom: 0.15rem;" id="status-energy">--</div>
         <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Energy</div>
@@ -44,59 +43,49 @@ title: Home - The Wonky Sprout
 
 ---
 
-<div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin: 3rem auto; max-width: 900px;">
+<div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
+  <div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin-bottom: 2rem;">
+    <h2 style="color: var(--circuit-teal); font-size: 2rem; margin-bottom: 1rem;">The Diagnosis</h2>
+    
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</strong></p>
 
-## The Diagnosis
+    <p style="line-height: 1.8; margin-bottom: 1rem;">For decades, I was simply the "fixer." I was the 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but I couldn't find the blueprint for the unstructured chaos in my own head.</p>
 
-**At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.**
+    <p style="line-height: 1.8; margin-bottom: 1rem;">I was the one called a "hothead" in the office, the socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout. My entire life felt like a cascade of misinterpretations.</p>
 
-For decades, I was simply the "fixer." I was the 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but I couldn't find the blueprint for the unstructured chaos in my own head.
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>That diagnosis wasn't a failure. It was the key.</strong></p>
 
-I was the one called a "hothead" in the office, the socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout. My entire life felt like a cascade of misinterpretations.
+    <p style="line-height: 1.8;">It was the moment I realized I wasn't broken; I was just running on a different architecture. It was the <em>feature</em>, not the bug, that explains why I see the patterns in the noise. It's why I don't just patch holes—I find the root cause and re-engineer the foundation.</p>
+  </div>
 
-**That diagnosis wasn't a failure. It was the key.**
+  <div class="content-card" style="border-left: 4px solid var(--orange); margin-bottom: 2rem;">
+    <h2 style="color: var(--orange); font-size: 2rem; margin-bottom: 1rem;">The Shift</h2>
+    
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>But this isn't just my story anymore. This is a new world.</strong></p>
 
-It was the moment I realized I wasn't broken; I was just running on a different architecture. It was the *feature*, not the bug, that explains why I see the patterns in the noise. It's why I don't just patch holes—I find the root cause and re-engineer the foundation.
+    <p style="line-height: 1.8; margin-bottom: 1rem;">I am not just a fixer; <strong>I am a father.</strong></p>
 
+    <p style="line-height: 1.8; margin-bottom: 1rem;">I have two "wonky sprouts" of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, and my own need for structure reflected in them. I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.</p>
+
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>It's about being the father they deserve.</strong></p>
+
+    <p style="line-height: 1.8; margin-bottom: 0.5rem;">I can't give them a map I was never given.</p>
+
+    <p style="line-height: 1.8;">So, we are learning to draw one together.</p>
+  </div>
+
+  <div class="content-card" style="border-left: 4px solid var(--yellow); margin-bottom: 3rem;">
+    <h2 style="color: var(--yellow); font-size: 2rem; margin-bottom: 1rem;">The Blueprint</h2>
+    
+    <p style="line-height: 1.8; margin-bottom: 1rem;">This is a new world, and we are building our own "bubble shield" as a team. We are finding the structure that makes our chaos feel safe, and in teaching them, I am finally learning to build my own.</p>
+
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>This is The Wonky Sprout.</strong></p>
+
+    <p style="line-height: 1.8; margin-bottom: 1rem;">This is our shared journey. It's the "Internal Blueprint" we are co-authoring for a world that wasn't built for us.</p>
+
+    <p style="line-height: 1.8;">It's the structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father. It's a system that is strong, authentic, and has feeling.</p>
+  </div>
 </div>
-
----
-
-<div class="content-card" style="border-left: 4px solid var(--orange); margin: 3rem auto; max-width: 900px;">
-
-## The Shift
-
-**But this isn't just my story anymore. This is a new world.**
-
-I am not just a fixer; **I am a father.**
-
-I have two "wonky sprouts" of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, and my own need for structure reflected in them. I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.
-
-**It's about being the father they deserve.**
-
-I can't give them a map I was never given.
-
-So, we are learning to draw one together.
-
-</div>
-
----
-
-<div class="content-card" style="border-left: 4px solid var(--yellow); margin: 3rem auto; max-width: 900px;">
-
-## The Blueprint
-
-This is a new world, and we are building our own "bubble shield" as a team. We are finding the structure that makes our chaos feel safe, and in teaching them, I am finally learning to build my own.
-
-**This is The Wonky Sprout.**
-
-This is our shared journey. It's the "Internal Blueprint" we are co-authoring for a world that wasn't built for us.
-
-It's the structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father. It's a system that is strong, authentic, and has feeling.
-
-</div>
-
----
 
 <div class="modules-grid">
   <div class="module-card" data-module="m1">
