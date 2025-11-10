@@ -4,8 +4,7 @@ title: Kids Protocols & Resources
 ---
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="color: var(--purple); font-size: 2.5rem; margin-bottom: 0.5rem;">👨‍👧‍👦 Kids Protocols & Resources</h1>
-  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, transparent, var(--purple), var(--pink), var(--purple), transparent); margin: 1rem 0;"></div>
+  <h1 style="color: var(--purple); font-size: 2.5rem; margin-bottom: 1rem;">👨‍👧‍👦 Kids Protocols & Resources</h1>
   <p style="color: var(--text-light); font-size: 1.1rem;">High-vigilance parenting protocols for custody weekends with two kids.</p>
 </div>
 

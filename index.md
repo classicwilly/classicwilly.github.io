@@ -10,7 +10,7 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <p class="hero-subtitle" style="font-size: 1.2rem; text-align: center; max-width: 900px; margin: 0 auto 0.75rem;">A neurodivergent father's blueprint for building structure from chaos</p>
+    <p class="hero-subtitle" style="font-size: 1.2rem; text-align: center; max-width: 900px; margin: 0 auto 0.75rem;">A neurodivergent father engineering structure from chaos.</p>
     
     <!-- Status Update Cards -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto;">
