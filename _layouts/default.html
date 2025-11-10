@@ -758,6 +758,14 @@
           column-gap: 2rem;
         }
         
+        /* EXCEPTION: Flowchart sections must not use masonry */
+        .content-card .journey-path,
+        .content-card .flowchart-section,
+        .content-card .flowchart-row {
+          column-span: all;
+          column-count: 1;
+        }
+        
         /* All cards stay together in masonry */
         .content-card [class*="-card"]:not(.content-card),
         .content-card [class$="-card"]:not(.content-card),
