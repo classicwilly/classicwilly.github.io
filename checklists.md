@@ -9,6 +9,8 @@ title: Interactive Checklists
   <p style="color: var(--text-light); font-size: 1.1rem;">Printable, trackable checklists for every protocol in the Wonky Sprout OS.</p>
 </div>
 
+---
+
 <div class="page-navigation">
   <div class="nav-section">
     <h4>📍 WHERE AM I?</h4>

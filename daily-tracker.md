@@ -9,6 +9,8 @@ title: Daily Tracker
   <p style="color: var(--text-light); font-size: 1.1rem;">Quick daily check-in for all foundational and mode-specific protocols.</p>
 </div>
 
+---
+
 <div class="page-navigation">
   <div class="nav-section">
     <h4>📍 WHERE AM I?</h4>

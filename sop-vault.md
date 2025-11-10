@@ -9,6 +9,8 @@ title: The SOP Vault
   <p style="color: var(--text-light); font-size: 1.1rem;">Standard Operating Procedures for a neurodivergent life.</p>
 </div>
 
+---
+
 <div class="page-navigation">
   <div class="nav-section">
     <h4>📍 WHERE AM I?</h4>

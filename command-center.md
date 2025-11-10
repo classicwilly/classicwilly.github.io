@@ -9,7 +9,9 @@ title: Command Center - The Wonky Sprout
   <p style="color: var(--text-light); font-size: 1.1rem;">Two workbenches. One system. Zero chaos.</p>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
+---
+
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
   
   <!-- Column 1: The "Fix-It" Kit -->
   <div class="content-card" style="border-left: 4px solid var(--circuit-teal); padding: 0;">
