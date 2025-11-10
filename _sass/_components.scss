@@ -1,0 +1,28 @@
+/* _sass/_components.scss */
+/* Card and UI component styles */
+
+/* Apply card styles to content that isn't a keep-grid (keep-grid handled by google-keep-style.css) */
+.main-content > *:not(.keep-grid) {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.keep-card { margin-bottom: 0; }
+
+/* FAB (Floating Action Button) */
+.fab-container { position: fixed; bottom: 20px; right: 20px; z-index: 1010; }
+.fab { background-color: var(--circuit-teal); color: var(--card-dark); border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 24px; line-height: 56px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.2s ease-in-out; }
+.fab:hover { transform: scale(1.05); }
+.fab span { transition: transform 0.2s ease-in-out; display: inline-block; }
+.fab[aria-expanded="true"] span { transform: rotate(45deg); }
+.fab-menu { position: absolute; bottom: 65px; right: 5px; display: flex; flex-direction: column; gap: 10px; transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; }
+.fab-menu[aria-hidden="true"] { opacity: 0; transform: translateY(10px); pointer-events: none; }
+.fab-menu[aria-hidden="false"] { opacity: 1; transform: translateY(0); }
+.fab-menu a { background-color: var(--card-dark); color: var(--text-bright); width: 48px; height: 48px; border-radius: 50%; text-align: center; line-height: 48px; font-size: 20px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2); transition: var(--transition); }
+.fab-menu a:hover { background-color: var(--circuit-teal); color: var(--card-dark); transform: scale(1.1); }
+
+/* Accessibility helpers or small UI bits can go here */

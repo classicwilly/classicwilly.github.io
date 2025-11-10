@@ -1,0 +1,14 @@
+# filepath: c:\wonky_sprout_os\_data\navigation.yml
+main:
+  - title: Home
+    url: /
+  - title: Catalog
+    url: /catalog
+  - title: SOP Vault
+    url: /sop-vault
+  - title: Command Center
+    url: /pages/command-center
+  - title: Workspace
+    url: /pages/workspace
+  - title: Fix It Blueprint
+    url: /pages/fix-it-blueprint
