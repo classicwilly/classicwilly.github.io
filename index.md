@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Home - The Wonky Sprout
 ---
 
 <div class="hero-section">
@@ -10,7 +10,8 @@ title: Home
   </div>
   
   <div class="hero-content">
-    <p class="hero-subtitle">A neurodivergent systems diagnostician building structure from chaos.</p>
+    <h1 style="font-size: 3rem; margin-bottom: 1rem; color: var(--circuit-teal); text-align: center;">The Wonky Sprout</h1>
+    <p class="hero-subtitle" style="font-size: 1.3rem; text-align: center; max-width: 800px; margin: 0 auto 2rem;">A neurodivergent father's blueprint for building structure from chaos</p>
     
     <!-- Status Update Cards -->
     <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; width: 100%; max-width: 800px; margin: 1rem 0;">
@@ -38,45 +39,64 @@ title: Home
         <div style="color: var(--text-light); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.5px;">Energy</div>
       </div>
     </div>
-    
-    <div class="page-navigation" style="margin: 1rem 0;">
-      <div class="nav-section">
-        <h4>📍 WHERE AM I?</h4>
-        <p><strong>Homepage of the Wonky Sprout Operating System</strong> - my personal neurodivergent life management system. This is where chaos gets systematized. I'm classicwilly: 40, Autism/ADHD, systems diagnostician. I fix stuff.</p>
-      </div>
-      
-      <div class="nav-section">
-        <h4>✅ WHAT CAN I DO HERE?</h4>
-        <ul>
-          <li><strong>Enter the Vault</strong> → Access all SOPs, protocols, and life systems (M4)</li>
-          <li><strong>Read the Blog</strong> → Unfiltered neurodivergent life posts (M1)</li>
-          <li><strong>View Products</strong> → The Hive System modular organization (M2 - Coming)</li>
-          <li><strong>See the Fix-It Process</strong> → How I root-cause problems (M3)</li>
-        </ul>
-      </div>
-      
-      <div class="nav-section">
-        <h4>💡 HOW THIS HELPS</h4>
-        <p>If you're neurodivergent, struggling with executive function, or drowning in chaos—<strong>you're in the right place</strong>. This site is my public operating system. Everything here is designed for ADHD/Autism brains: structured, systematic, anti-BS. Take what works, ignore what doesn't.</p>
-      </div>
-      
-      <div class="nav-section">
-        <h4>⚡ QUICK ACCESS</h4>
-        <ul>
-          <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Today's check-in</li>
-          <li><strong><a href="/checklists" style="color: var(--circuit-teal);">Checklists</a></strong> → Interactive protocols</li>
-          <li><strong><a href="/sop-vault#kids-protocols" style="color: var(--circuit-teal);">Kids Protocols</a></strong> → Parenting SOPs</li>
-          <li><strong><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="color: var(--circuit-teal);">Emergency Protocol</a></strong> → When frozen</li>
-        </ul>
-      </div>
-    </div>
-    
-    <a href="/sop-vault" class="cta-button">
-      <span class="cta-text">ENTER THE VAULT</span>
-      <span class="cta-arrow">→</span>
-    </a>
   </div>
 </div>
+
+---
+
+<div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin: 3rem auto; max-width: 900px;">
+
+## The Diagnosis
+
+**At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.**
+
+For decades, I was simply the "fixer." I was the 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but I couldn't find the blueprint for the unstructured chaos in my own head.
+
+I was the one called a "hothead" in the office, the socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout. My entire life felt like a cascade of misinterpretations.
+
+**That diagnosis wasn't a failure. It was the key.**
+
+It was the moment I realized I wasn't broken; I was just running on a different architecture. It was the *feature*, not the bug, that explains why I see the patterns in the noise. It's why I don't just patch holes—I find the root cause and re-engineer the foundation.
+
+</div>
+
+---
+
+<div class="content-card" style="border-left: 4px solid var(--orange); margin: 3rem auto; max-width: 900px;">
+
+## The Shift
+
+**But this isn't just my story anymore. This is a new world.**
+
+I am not just a fixer; **I am a father.**
+
+I have two "wonky sprouts" of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, and my own need for structure reflected in them. I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.
+
+**It's about being the father they deserve.**
+
+I can't give them a map I was never given.
+
+So, we are learning to draw one together.
+
+</div>
+
+---
+
+<div class="content-card" style="border-left: 4px solid var(--yellow); margin: 3rem auto; max-width: 900px;">
+
+## The Blueprint
+
+This is a new world, and we are building our own "bubble shield" as a team. We are finding the structure that makes our chaos feel safe, and in teaching them, I am finally learning to build my own.
+
+**This is The Wonky Sprout.**
+
+This is our shared journey. It's the "Internal Blueprint" we are co-authoring for a world that wasn't built for us.
+
+It's the structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father. It's a system that is strong, authentic, and has feeling.
+
+</div>
+
+---
 
 <div class="modules-grid">
   <div class="module-card" data-module="m1">
@@ -97,7 +117,7 @@ title: Home
     <div class="module-icon">🔧</div>
     <h3 class="module-title">M3: Service</h3>
     <p class="module-desc">The Fix-It Blueprint: Root cause → permanent solution</p>
-    <a href="/fix" class="module-link">Read Blueprint →</a>
+    <a href="/2025-11-09_M1_PAGE_manifesto-v2" class="module-link">Read Manifesto →</a>
   </div>
   
   <div class="module-card" data-module="m4">
@@ -108,78 +128,32 @@ title: Home
   </div>
 </div>
 
-<div class="origin-section">
-  <h2 class="origin-title">THE ORIGIN STORY</h2>
-  
-  <div class="timeline">
-    <div class="timeline-item" data-parallax="0.5">
-      <div class="timeline-icon">🧩</div>
-      <div class="timeline-content">
-        <h3>Diagnosis at 40</h3>
-        <p>Autism + ADHD. Not a label—the key to the script. Everything snapped into focus.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item" data-parallax="0.3">
-      <div class="timeline-icon">🌪️</div>
-      <div class="timeline-content">
-        <h3>The Chaos</h3>
-        <p>Brain bombarded with every thought. Extreme emotional dysregulation. Burnout from masking.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item" data-parallax="0.4">
-      <div class="timeline-icon">🗂️</div>
-      <div class="timeline-content">
-        <h3>The Card Catalog Vision</h3>
-        <p>During meditation: watched my brain file itself in real-time. Structure from chaos.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item" data-parallax="0.6">
-      <div class="timeline-icon">⚙️</div>
-      <div class="timeline-content">
-        <h3>The System Builder</h3>
-        <p>15 years as Engineering Technician. Systems diagnostician. Find root cause. Fix permanently.</p>
-      </div>
-    </div>
-    
-    <div class="timeline-item" data-parallax="0.5">
-      <div class="timeline-icon">🌱</div>
-      <div class="timeline-content">
-        <h3>Wonky Sprout OS</h3>
-        <p>The new operating system. Anti-BS philosophy. Authenticity over corporate nonsense.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="origin-cta">
-    <p class="origin-tagline">It's okay to be a little wonky. It's not a bug—it's a feature.</p>
-    <a href="/2025-11-08_M1_PAGE_manifesto" class="secondary-button">Read the Full Manifesto →</a>
-  </div>
-</div>
+---
 
-<div class="testimonial-section">
-  <h2 class="section-title">PROOF OF CONCEPT</h2>
-  <div class="testimonial-card">
-    <div class="testimonial-meta">
-      <strong>William Johnson</strong> • System Designer • 40-year-old with Autism/ADHD
-    </div>
-    <blockquote class="testimonial-text">
-      "I built Wonky Sprout OS for me. 40+ protocols. Daily tracker with streak system. Executive dysfunction emergency protocols. Solo Execution Mode and Family Structure Mode. It works because it had to—I'm the beta tester and the end user. No corporate BS. No fake motivation. Just structure from chaos, deployed and battle-tested in real neurodivergent life."
-    </blockquote>
-    <div class="testimonial-footer">
-      Built for me. Works for me. Now available for you.
-    </div>
-  </div>
+<div style="text-align: center; margin: 4rem auto; padding: 3rem; background: var(--darker-bg); border-radius: 12px; border: 2px solid var(--circuit-teal); max-width: 900px;">
+  <h2 style="font-size: 2.5rem; color: var(--circuit-teal); margin-bottom: 1rem;">It's okay to be a little wonky.</h2>
+  <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">Welcome to our blueprint.</p>
   
-  <div class="transparency-badge">
-    <div class="badge-icon">📋</div>
-    <div class="badge-content">
-      <h3>Open Source Transparency</h3>
-      <p>Every audit, every finding, every fix documented in real-time.</p>
-      <a href="/2025-11-09_M4_CONFIG_audit-log" class="badge-link">View Audit Log →</a>
-    </div>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto;">
+    <a href="/sop-vault" class="cta-button" style="border-color: var(--circuit-teal);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+      <div>SOP Vault</div>
+    </a>
+    
+    <a href="/kids" class="cta-button" style="border-color: var(--orange);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">👨‍👧‍👦</div>
+      <div>Kids Protocols</div>
+    </a>
+    
+    <a href="/daily-tracker" class="cta-button" style="border-color: var(--yellow);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+      <div>Daily Tracker</div>
+    </a>
+    
+    <a href="/workspace" class="cta-button" style="border-color: var(--green);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
+      <div>Workspace</div>
+    </a>
   </div>
 </div>
 
