@@ -6,7 +6,8 @@ title: Kids Protocols & Resources
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="color: var(--purple); font-size: 2.5rem; margin-bottom: 0.5rem;">👨‍👧‍👦 Kids Protocols & Resources</h1>
   <div style="height: 2px; width: 100%; background: var(--circuit-teal); margin-bottom: 1rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">High-vigilance parenting protocols for custody weekends with two kids.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem 0;">High-vigilance parenting protocols for custody weekends with two kids.</p>
+  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
 ## 📋 WHERE AM I?

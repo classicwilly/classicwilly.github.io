@@ -6,7 +6,8 @@ title: Daily Tracker
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="color: var(--blue); font-size: 2.5rem; margin-bottom: 0.5rem;">📊 Daily Protocol Tracker</h1>
   <div style="height: 2px; width: 100%; background: var(--circuit-teal); margin-bottom: 1rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">Quick daily check-in for all foundational and mode-specific protocols.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Quick daily check-in for all foundational and mode-specific protocols.</p>
+  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
 <div class="page-navigation">
