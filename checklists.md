@@ -6,8 +6,7 @@ title: Interactive Checklists
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="color: var(--green); font-size: 2.5rem; margin-bottom: 0.5rem;">✅ Interactive Checklists</h1>
   <div style="height: 2px; width: 100%; background: var(--circuit-teal); margin-bottom: 1rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; padding-bottom: 1rem; margin: 0;">Printable, trackable checklists for every protocol in the Wonky Sprout OS.</p>
-  <div style="height: 1px; width: 100%; background: linear-gradient(90deg, var(--circuit-teal), var(--purple), var(--pink), transparent);"></div>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">Printable, trackable checklists for every protocol in the Wonky Sprout OS.</p>
 </div>
 
 <div class="page-navigation">

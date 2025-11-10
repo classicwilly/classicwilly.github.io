@@ -7,8 +7,7 @@ title: Stim Station
   <h1 style="color: var(--yellow); font-size: 2.5rem; margin-bottom: 0.5rem;">🎮 Stim Station</h1>
   <div style="height: 2px; width: 100%; background: var(--circuit-teal); margin-bottom: 1rem;"></div>
   <p style="color: var(--text-light); font-size: 1.1rem;">Neurodivergent-friendly games for when you need to zone out.</p>
-  <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem; padding-bottom: 1rem;">No scores. No timers. No pressure.</p>
-  <div style="height: 1px; width: 100%; background: linear-gradient(90deg, var(--circuit-teal), var(--purple), var(--pink), transparent);"></div>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin-top: 0.5rem;">No scores. No timers. No pressure.</p>
 </div>
 
 <div class="game-container">
