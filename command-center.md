@@ -2,6 +2,7 @@
 layout: default
 title: Command Center - The Wonky Sprout
 ---
+<!-- Updated 2025-11-10 v2 -->
 
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="font-size: 2.5rem; margin-bottom: 2.16rem;">⚙️ <span style="color: var(--circuit-teal);">Command Center</span></h1>
