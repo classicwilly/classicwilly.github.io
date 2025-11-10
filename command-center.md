@@ -5,17 +5,21 @@ title: Command Center - The Wonky Sprout
 
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="color: var(--circuit-teal); font-size: 2.5rem; margin-bottom: 0.5rem;">⚙️ Command Center</h1>
+  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, transparent, var(--circuit-teal), var(--purple), var(--circuit-teal), transparent); margin: 1rem 0;"></div>
   <p style="color: var(--text-light); font-size: 1.1rem;">Two workbenches. One system. Zero chaos.</p>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto;">
   
   <!-- Column 1: The "Fix-It" Kit -->
-  <div class="content-card" style="border-left: 4px solid var(--circuit-teal); padding: 1.5rem;">
-    <h2 style="color: var(--circuit-teal); font-size: 1.8rem; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">🔧 The "Fix-It" Kit</h2>
-    <p style="color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.6;">The WS-OS toolbench. Where structure gets engineered.</p>
+  <div class="content-card" style="border-left: 4px solid var(--circuit-teal); padding: 0;">
+    <div style="padding: 1.5rem 1.5rem 1rem;">
+      <h2 style="color: var(--circuit-teal); font-size: 1.8rem; margin-bottom: 0.5rem; font-family: 'Space Grotesk', sans-serif;">🔧 The "Fix-It" Kit</h2>
+      <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--circuit-teal), transparent); margin-bottom: 1rem;"></div>
+      <p style="color: var(--text-light); margin-bottom: 0; line-height: 1.6;">The WS-OS toolbench. Where structure gets engineered.</p>
+    </div>
     
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
+    <div style="display: flex; flex-direction: column; gap: 1rem; padding: 1.5rem;">
       <a href="https://github.com/classicwilly/classicwilly.github.io" target="_blank" rel="noopener noreferrer" class="content-card" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; text-decoration: none; border-left: 3px solid var(--circuit-teal); transition: var(--transition);">
         <div style="font-size: 2rem;">📁</div>
         <div>
@@ -51,11 +55,14 @@ title: Command Center - The Wonky Sprout
   </div>
   
   <!-- Column 2: The "External" Card Catalog -->
-  <div class="content-card" style="border-left: 4px solid var(--orange); padding: 1.5rem;">
-    <h2 style="color: var(--orange); font-size: 1.8rem; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">📂 The "External" Card Catalog</h2>
-    <p style="color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.6;">Google Workspace tools. Structured access.</p>
+  <div class="content-card" style="border-left: 4px solid var(--orange); padding: 0;">
+    <div style="padding: 1.5rem 1.5rem 1rem;">
+      <h2 style="color: var(--orange); font-size: 1.8rem; margin-bottom: 0.5rem; font-family: 'Space Grotesk', sans-serif;">📂 The "External" Card Catalog</h2>
+      <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--orange), transparent); margin-bottom: 1rem;"></div>
+      <p style="color: var(--text-light); margin-bottom: 0; line-height: 1.6;">Google Workspace tools. Structured access.</p>
+    </div>
     
-    <div style="display: flex; flex-direction: column; gap: 1rem;">
+    <div style="display: flex; flex-direction: column; gap: 1rem; padding: 1.5rem;">
       <a href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener noreferrer" class="content-card" style="display: flex; align-items: center; gap: 1rem; padding: 1rem; text-decoration: none; border-left: 3px solid var(--yellow); transition: var(--transition);">
         <div style="font-size: 2rem;">💾</div>
         <div>
