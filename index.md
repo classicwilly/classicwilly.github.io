@@ -10,8 +10,8 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <div style="text-align: center; margin-bottom: 0.75rem;">
-      <h1 style="color: var(--circuit-teal); font-size: 1.8rem; margin-bottom: 0.5rem;">🧠 A neurodivergent father engineering structure from chaos</h1>
+    <div style="text-align: center; margin-bottom: 0.5rem;">
+      <h1 style="color: var(--circuit-teal); font-size: 1.8rem; margin-bottom: 0;">🧠 A neurodivergent father engineering structure from chaos</h1>
     </div>
     
     <!-- Status Update Cards -->
