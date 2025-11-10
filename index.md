@@ -52,8 +52,6 @@ title: Home - The Wonky Sprout
       </div>
     </div>
     
-    <!-- Green Faded Line -->
-    <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
   </div>
 </div>
 
