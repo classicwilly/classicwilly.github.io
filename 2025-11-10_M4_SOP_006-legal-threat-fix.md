@@ -136,7 +136,7 @@ a[href^="#"]:hover {
 
 ## 📍 Rigid Anchors {#anchors}
 
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 2rem;">
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin-bottom: 2rem;">
   <div style="background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1rem;">
     <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">📅</div>
     <h3 style="color: var(--blue); font-size: 1rem; margin: 0 0 0.35rem 0;">Anchor A: Meeting</h3>
@@ -151,7 +151,7 @@ a[href^="#"]:hover {
     <p style="color: var(--text-light); font-size: 0.85rem; margin: 0;">9:00 AM court appearance</p>
   </div>
 
-  <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem;">
+  <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem; grid-column: 1 / -1;">
     <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">👤</div>
     <h3 style="color: var(--purple); font-size: 1rem; margin: 0 0 0.35rem 0;">Support Anchor</h3>
     <p style="color: var(--text-bright); font-size: 0.95rem; margin: 0 0 0.2rem 0;"><strong>Mom (Pending)</strong></p>
