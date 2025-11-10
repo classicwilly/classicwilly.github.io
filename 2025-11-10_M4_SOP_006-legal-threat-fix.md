@@ -1,8 +1,6 @@
 ---
-File: M4_SOP_006-legal-threat-fix.md
-Module: M4 (Personal OS)
-Priority: 5 (Children)
-Status: PROTOCOL
+layout: default
+title: Legal Threat Fix Protocol
 ---
 
 # MLP-006: "Priority #5" Legal "Fix-It" Protocol
