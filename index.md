@@ -10,32 +10,40 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <p class="hero-subtitle" style="font-size: 1.2rem; text-align: center; max-width: 900px; margin: 0 auto 1rem;">A neurodivergent father's blueprint for building structure from chaos</p>
+    <p class="hero-subtitle" style="font-size: 1.2rem; text-align: center; max-width: 900px; margin: 0 auto 0.75rem;">A neurodivergent father's blueprint for building structure from chaos</p>
     
     <!-- Status Update Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.75rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto;">
-      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.6rem 0.8rem; text-align: center;">
-        <div style="font-size: 1.3rem; margin-bottom: 0.2rem;">🧠</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem;" id="status-mode">--</div>
-        <div style="color: var(--text-light); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Mode</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto;">
+      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <div style="font-size: 1.2rem;">🧠</div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-mode">--</div>
+          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Mode</div>
+        </div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: var(--radius-md); padding: 0.6rem 0.8rem; text-align: center;">
-        <div style="font-size: 1.3rem; margin-bottom: 0.2rem;">📊</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem;" id="status-streak">--</div>
-        <div style="color: var(--text-light); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Streak</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <div style="font-size: 1.2rem;">📊</div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-streak">--</div>
+          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Streak</div>
+        </div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: var(--radius-md); padding: 0.6rem 0.8rem; text-align: center;">
-        <div style="font-size: 1.3rem; margin-bottom: 0.2rem;">✅</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem;" id="status-tasks">--</div>
-        <div style="color: var(--text-light); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Tasks</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <div style="font-size: 1.2rem;">✅</div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-tasks">--</div>
+          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Tasks</div>
+        </div>
       </div>
       
-      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: var(--radius-md); padding: 0.6rem 0.8rem; text-align: center;">
-        <div style="font-size: 1.3rem; margin-bottom: 0.2rem;">⚡</div>
-        <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 1rem; margin-bottom: 0.1rem;" id="status-energy">--</div>
-        <div style="color: var(--text-light); font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">Energy</div>
+      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+        <div style="font-size: 1.2rem;">⚡</div>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-energy">--</div>
+          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Energy</div>
+        </div>
       </div>
     </div>
   </div>
