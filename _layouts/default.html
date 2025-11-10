@@ -110,6 +110,90 @@
         --transition: all 0.2s ease;
       }
       
+      /* ========================================
+         UNIVERSAL CARD SYSTEM
+         All cards share these base properties
+         Same but different via modifiers
+         ======================================== */
+      
+      [class*="-card"],
+      [class$="-card"] {
+        background: var(--card-dark);
+        border: 2px solid var(--border-gray);
+        border-radius: var(--radius-md);
+        padding: 1.5rem;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      [class*="-card"]:hover,
+      [class$="-card"]:hover {
+        transform: translateY(-4px);
+        border-color: var(--hover-border);
+        box-shadow: var(--shadow-lg), var(--glow-teal);
+      }
+      
+      /* ========================================
+         UNIVERSAL BUTTON SYSTEM
+         All buttons share these base properties
+         Same but different via modifiers
+         ======================================== */
+      
+      [class*="-button"],
+      [class$="-button"],
+      button:not(.density-switcher button):not(.checklist-controls button) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--text-bright);
+        background: var(--card-dark);
+        border: 2px solid var(--circuit-teal);
+        border-radius: var(--radius-md);
+        padding: 0.75rem 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: var(--transition);
+        position: relative;
+        overflow: hidden;
+      }
+      
+      [class*="-button"]:hover,
+      [class$="-button"]:hover,
+      button:not(.density-switcher button):not(.checklist-controls button):hover {
+        background: var(--hover-bg);
+        border-color: var(--circuit-teal);
+        color: var(--circuit-teal);
+        transform: translateY(-2px);
+        box-shadow: var(--glow-teal);
+      }
+      
+      [class*="-button"]:focus,
+      [class$="-button"]:focus,
+      button:not(.density-switcher button):not(.checklist-controls button):focus {
+        outline: none;
+        box-shadow: var(--focus-ring);
+      }
+      
+      /* Secondary button variant */
+      [class*="secondary"],
+      [class$="secondary"] {
+        border-color: var(--purple) !important;
+      }
+      
+      [class*="secondary"]:hover,
+      [class$="secondary"]:hover {
+        border-color: var(--purple) !important;
+        color: var(--purple) !important;
+        box-shadow: var(--glow-purple) !important;
+      }
+      
       /* ===== BASE RESET ===== */
       * {
         margin: 0;
@@ -418,17 +502,13 @@
       }
       
       .content-card {
-        background: var(--card-dark);
-        border-radius: var(--radius-md);
-        padding: 3rem;
-        box-shadow: var(--shadow-lg), inset 0 0 0 1px var(--border-gray);
-        position: relative;
-        transition: var(--transition);
+        /* Inherits base card styles */
+        padding: 3rem; /* Override for more spacing */
       }
       
       .content-card:hover {
+        /* Inherits base hover, additional effect */
         box-shadow: var(--shadow-lg), var(--glow-teal), inset 0 0 0 1px var(--border-gray);
-        transform: translateY(-2px);
       }
       
       /* Neurodivergent "Filing System" Accent */
@@ -826,10 +906,7 @@
       
       /* HTML Form Checklists - For Kids SOPs */
       .interactive-checklist {
-        background: var(--card-dark);
-        border: 2px solid var(--border-gray);
-        border-radius: 12px;
-        padding: 1.5rem;
+        /* Inherits base card styles */
         margin: 1.5rem 0;
       }
       
@@ -1020,28 +1097,22 @@
       
       /* Daily Tracker Form Styles */
       .tracker-header {
+        /* Inherits base card styles */
         display: flex;
         gap: 2rem;
         align-items: center;
         flex-wrap: wrap;
         margin-bottom: 2rem;
-        padding: 1rem;
-        background: var(--card-dark);
-        border-radius: 8px;
-        border: 1px solid var(--border-gray);
       }
       
       /* Page Navigation Component */
       .page-navigation {
+        /* Inherits base card styles */
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1.5rem;
         margin: 2rem 0;
         padding: 2rem;
-        background: var(--card-dark);
-        border: none;
-        border-radius: 12px;
-        box-shadow: 0 4px 20px rgba(26, 188, 156, 0.1);
       }
       
       .nav-section h4 {
@@ -1353,20 +1424,12 @@
       }
       
       .streak-card {
-        background: var(--card-dark);
-        border: 2px solid var(--border-gray);
-        border-radius: var(--radius-md);
-        padding: 1.5rem;
+        /* Inherits base card styles */
         min-width: 150px;
         text-align: center;
-        transition: var(--transition);
       }
       
-      .streak-card:hover {
-        border-color: var(--circuit-teal);
-        transform: translateY(-2px);
-        box-shadow: var(--glow-teal);
-      }
+      /* Base hover already applied */
       
       .streak-icon {
         font-size: 3rem;
@@ -1839,47 +1902,7 @@
         opacity: 0.7;
       }
       
-      .cta-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--text-bright);
-        background: var(--card-dark);
-        border: 2px solid var(--circuit-teal);
-        border-radius: var(--radius-md);
-        padding: 0.75rem 1rem;
-        text-decoration: none;
-        position: relative;
-        transition: var(--transition);
-        margin: 0;
-        overflow: hidden;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      
-      .cta-button:hover,
-      .cta-button:focus {
-        background: var(--hover-bg);
-        border-color: var(--circuit-teal);
-        color: var(--circuit-teal);
-        transform: translateY(-2px);
-        box-shadow: var(--glow-teal);
-        outline: none;
-      }
-      
-      .cta-text,
-      .cta-arrow {
-        color: inherit;
-        transition: var(--transition);
-      }
-      
-      .cta-arrow {
-        font-size: 1.5rem;
-      }
+      /* .cta-button inherits all base button styles */
       
       .cta-button:hover .cta-arrow {
         transform: translateX(5px);
@@ -1893,21 +1916,12 @@
         margin: 2rem 0;
       }
       
-      .module-card {
-        background: var(--card-dark);
-        border: 2px solid var(--border-gray);
-        border-radius: var(--radius-md);
-        padding: 1.5rem;
-        transition: var(--transition);
-        position: relative;
-        overflow: hidden;
-      }
+      /* .module-card inherits all base card styles */
       
       .module-card:hover,
       .module-card:focus-within {
-        transform: translateY(-4px);
+        /* Base hover already applied, extend with purple glow variant */
         box-shadow: var(--shadow-lg), var(--glow-purple);
-        border-color: var(--hover-border);
         outline: none;
       }
       
@@ -2050,21 +2064,14 @@
       }
       
       .timeline-content {
+        /* Inherits base card styles */
         flex: 1;
-        background: var(--card-dark);
-        border: 2px solid var(--border-gray);
-        border-radius: 12px;
-        padding: 1rem;
-        transition: all 0.3s ease;
         cursor: default;
-        position: relative;
-        overflow: hidden;
       }
       
       .timeline-item:hover .timeline-content {
-        background: rgba(22, 27, 34, 0.9);
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px var(--purple);
+        /* Inherits base hover, add purple glow variant */
+        box-shadow: var(--shadow-lg), var(--glow-purple);
       }
       
       .timeline-content h3 {
@@ -2096,36 +2103,7 @@
         font-style: italic;
       }
       
-      .secondary-button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--text-bright) !important;
-        background: var(--card-dark);
-        border: 1px solid var(--border-gray);
-        border-radius: var(--radius-md);
-        padding: 0.5rem 0.75rem;
-        text-decoration: none;
-        transition: var(--transition);
-        position: relative;
-        overflow: hidden;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      
-      .secondary-button:hover,
-      .secondary-button:focus {
-        background: var(--hover-bg);
-        border-color: var(--purple);
-        color: var(--purple) !important;
-        transform: translateY(-2px);
-        box-shadow: var(--glow-purple);
-        outline: none;
-      }
+      /* .secondary-button inherits base button + secondary variant styles */
       
       /* Emergency Banner */
       .emergency-banner {
@@ -2152,23 +2130,17 @@
       }
       
       .emergency-link {
+        /* Inherits base button styles */
         display: inline-block;
-        background: var(--card-dark);
-        color: #FFFFFF;
-        padding: 0.5rem 1rem;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 700;
         font-size: 1.1rem;
-        transition: transform 0.3s ease, text-shadow 0.3s ease, border-color 0.3s ease;
-        border: 2px solid var(--yellow);
+        border-color: var(--yellow);
       }
       
       .emergency-link:hover {
-        color: #FFFFFF;
-        text-shadow: 0 0 20px var(--purple), 0 0 30px var(--purple), 0 0 40px var(--purple);
-        transform: translateY(-4px);
-        border-color: var(--purple);
+        /* Inherits base hover, override border color */
+        border-color: var(--yellow);
+        color: var(--text-bright);
+        box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
       }
       
       .emergency-link:focus {
@@ -2194,21 +2166,12 @@
       }
       
       .testimonial-card {
-        background: var(--card-dark);
-        border: 2px solid var(--border-gray);
-        border-radius: 12px;
-        padding: 1rem;
+        /* Inherits base card styles */
         max-width: 900px;
         margin: 0 auto;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
       }
       
-      .testimonial-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 30px var(--purple);
-      }
+      /* Base hover already applied, no override needed */
       
       .testimonial-meta {
         color: var(--text-light);
@@ -2237,23 +2200,17 @@
       
       /* Transparency Badge */
       .transparency-badge {
+        /* Inherits base card styles, adds gradient */
         margin: 3rem auto 0;
         max-width: 700px;
         background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(88, 166, 255, 0.1));
-        border: 2px solid var(--circuit-teal);
-        border-radius: 12px;
         padding: 2rem;
         display: flex;
         align-items: center;
         gap: 1.5rem;
-        transition: all 0.3s ease;
       }
       
-      .transparency-badge:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(26, 188, 156, 0.2);
-        border-color: var(--circuit-blue);
-      }
+      /* Base hover already applied */
       
       .badge-icon {
         font-size: 3rem;
