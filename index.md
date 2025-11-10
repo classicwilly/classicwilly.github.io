@@ -10,12 +10,15 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <div style="text-align: center; margin-bottom: 0.5rem;">
+    <div style="text-align: center; margin-bottom: 1.16rem;">
       <h1 style="font-size: 1.4rem; margin-bottom: 0; white-space: nowrap;">💬 <span style="color: var(--circuit-teal);">A neurodivergent father engineering structure from chaos</span></h1>
     </div>
     
+    <!-- Gradient Line -->
+    <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+    
     <!-- Status Update Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto 2.16rem auto;">
       <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
         <div style="font-size: 1.2rem;">🧠</div>
         <div style="display: flex; flex-direction: column; align-items: flex-start;">
@@ -48,10 +51,13 @@ title: Home - The Wonky Sprout
         </div>
       </div>
     </div>
+    
+    <!-- Green Faded Line -->
+    <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
   </div>
 </div>
 
-<div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin: 2rem 0;"></div>
+---
 
 <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
   <div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin-bottom: 2rem; padding: 1.5rem;">
