@@ -5,14 +5,14 @@ title: Command Center - The Wonky Sprout
 <!-- Updated 2025-11-10 v4 -->
 
 <div style="text-align: center; margin-bottom: 1.16rem;">
-  <h1>⚙️ <span style="color: var(--teal);">Command Center</span></h1>
+  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 0 0; border-bottom: none !important;">⚙️ <span style="color: var(--circuit-teal);">Command Center</span></h1>
 </div>
 
-<div style="height: 2px; background: linear-gradient(90deg, var(--teal), var(--blue), var(--purple)); margin-bottom: 1rem;"></div>
+<div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <p style="font-size: 1.1rem; color: var(--text-bright); margin-bottom: 0.5rem;">Two workbenches. One system. Zero chaos.</p>
-  <p style="font-size: 0.95rem; color: var(--text-light);">Structure engineered for ADHD/Autism brains.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 1rem 0;">Two workbenches. One system. Zero chaos.</p>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">Structure engineered for ADHD/Autism brains.</p>
 </div>
 
 ---

@@ -4,14 +4,14 @@ title: Daily Tracker
 ---
 
 <div style="text-align: center; margin-bottom: 1.16rem;">
-  <h1>📊 <span style="color: var(--blue);">Daily Protocol Tracker</span></h1>
+  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 0 0; border-bottom: none !important;">📊 <span style="color: var(--blue);">Daily Protocol Tracker</span></h1>
 </div>
 
-<div style="height: 2px; background: linear-gradient(90deg, var(--blue), var(--purple), var(--teal), var(--yellow)); margin-bottom: 1rem;"></div>
+<div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <p style="font-size: 1.1rem; color: var(--text-bright); margin-bottom: 0.5rem;">Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
-  <p style="font-size: 0.95rem; color: var(--text-light);">Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 1rem 0;">Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
 </div>
 
 <div class="tracker-header">
