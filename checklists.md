@@ -10,139 +10,155 @@ title: Interactive Checklists
 <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
 
 <div style="text-align: center; margin-bottom: 3rem;">
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Printable, trackable checklists for every protocol in the Wonky Sprout OS.</p>
-  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 1rem 0;">Printable, trackable checklists for every protocol in the Wonky Sprout OS.</p>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">Check boxes save automatically. Print for physical use. Reset anytime.</p>
 </div>
 
-<div class="page-navigation">
-  <div class="nav-section">
-    <h4>📍 WHERE AM I?</h4>
-    <p>Master checklist hub for <strong>all interactive protocols</strong>. Every checklist here uses HTML form elements with localStorage persistence—check boxes save automatically, progress persists across page loads. Each checklist is a simplified, actionable version of its full SOP.</p>
-  </div>
+<!-- Daily Protocols Section -->
+<div style="margin-bottom: 3rem;">
+  <h2 style="color: var(--circuit-teal); font-size: 1.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(26, 188, 156, 0.3);">📅 Daily Protocols</h2>
   
-  <div class="nav-section">
-    <h4>✅ WHAT CAN I DO HERE?</h4>
-    <ul>
-      <li><strong>Access daily checklists</strong> (Foundational, Morning Transition, Daily Tracker)</li>
-      <li><strong>Use weekly checklists</strong> (Weekly Review Protocol)</li>
-      <li><strong>Print for physical use</strong> (all checklists print-friendly)</li>
-      <li><strong>Track progress digitally</strong> (checkboxes save state automatically)</li>
-      <li><strong>Reset anytime</strong> (clear localStorage for fresh start)</li>
-    </ul>
-  </div>
-  
-  <div class="nav-section">
-    <h4>💡 HOW THIS HELPS</h4>
-    <p>Checklists create <strong>external accountability</strong> when internal motivation fails. For ADHD/Autism brains, seeing unchecked boxes triggers completion drive. Progress bars provide dopamine hits. Physical printouts work when screens overstimulate. This is <strong>choice architecture</strong>: making the right action the easiest action.</p>
-  </div>
-  
-  <div class="nav-section">
-    <h4>⚡ QUICK ACCESS</h4>
-    <ul>
-      <li><strong><a href="/daily-tracker" style="color: var(--circuit-teal);">Daily Tracker</a></strong> → Today's check-in</li>
-      <li><strong><a href="/sop-vault" style="color: var(--circuit-teal);">SOP Vault</a></strong> → Full protocols</li>
-      <li><strong><a href="/sop-vault#kids-protocols" style="color: var(--circuit-teal);">Kids Protocols</a></strong> → Parenting SOPs</li>
-      <li><strong><a href="/2025-11-08_M4_SOP_foundational-daily-protocols" style="color: var(--circuit-teal);">5 Core</a></strong> → Foundation</li>
-    </ul>
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+    
+    <!-- Foundational Daily -->
+    <a href="/checklist-foundational-daily" style="display: block; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌱</div>
+      <h3 style="color: var(--green); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Foundational Daily</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Every single day</div>
+    </a>
+    
+    <!-- Morning Transition -->
+    <a href="/checklist-morning-transition" style="display: block; background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">☀️</div>
+      <h3 style="color: var(--yellow); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Morning Transition</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">60-min bridge from sleep to execution (6:00-7:00 AM)</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Every morning</div>
+    </a>
+    
+    <!-- Daily Tracker -->
+    <a href="/daily-tracker" style="display: block; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+      <h3 style="color: var(--blue); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Daily Tracker</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">Comprehensive single-page daily check-in with metrics</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Fill during Daily Dump (10:25 PM)</div>
+    </a>
+    
   </div>
 </div>
 
-Check boxes directly in your browser—progress saves automatically. Print for physical use. Reset anytime.
-
----
-
-## DAILY PROTOCOLS
-
-### [Foundational Daily Protocols Checklist](checklist-foundational-daily)
-The 5 non-negotiable baseline protocols. Use this daily to track: Water, Pills, Capture, Sleep Anchor, Daily Dump.
-
-**When to use**: Every single day, regardless of mode.
-
-### [Morning Transition Checklist](checklist-morning-transition)
-The 60-minute bridge from sleep to execution (6:00-7:00 AM). Track all 4 phases: Physical Activation, Environment Setup, Mental Calibration, Execution Launch.
-
-**When to use**: Every morning to start your day with structure.
-
-### [Daily Tracker](daily-tracker)
-Comprehensive single-page daily check-in combining foundational protocols, morning transition, mode-specific tasks, emergency protocol tracking, and completion metrics.
-
-**When to use**: Fill out during Daily Dump (10:25 PM), check boxes throughout the day, review patterns during Weekly Review.
-
----
-
-## WEEKLY PROTOCOLS
-
-### [Weekly Review Checklist](checklist-weekly-review)
-The complete 60-minute end-of-week maintenance protocol. Process chaos, review tasks, check system health, plan next week.
-
-**When to use**: 
-- **Solo Mode**: Friday 3:00-4:00 PM
-- **Family Mode**: Sunday 8:30-9:30 PM
-
----
-
-## EMERGENCY PROTOCOLS (Coming Soon)
-
-### Executive Dysfunction Emergency Checklist
-Quick-reference version of the emergency reboot protocol for frozen executive function.
-
-### Context Switching Recovery Checklist
-Fast capture-interrupt-reload checklist for handling disruptions mid-task.
-
-### Sensory Overload Emergency Checklist
-Rapid sensory reduction and retreat protocol when environment becomes unbearable.
-
----
-
-## HOW TO USE THESE CHECKLISTS
-
-### **In Browser** (Interactive)
-1. Click any checklist above
-2. Check boxes as you complete tasks
-3. Progress saves automatically to your browser
-4. View progress bar at top of page
-5. Click "Reset" to start fresh
-
-### **Printed** (Physical)
-1. Click any checklist above
-2. Click "🖨️ Print" button at top
-3. Check boxes with pen/pencil as you work
-4. Store in physical SOP binder or folder
-
-### **Reset Options**
-- **Per-checklist**: Click "↻ Reset" button on individual checklist page
-- **All checklists**: Clear browser localStorage (Settings → Privacy → Clear browsing data)
-
----
-
-## CHECKLIST PHILOSOPHY
-
-**Why checklists matter for neurodivergent brains:**
-
-- **Reduce working memory load** - Don't hold steps in your head
-- **Prevent skipped steps** - Visual confirmation of completion
-- **Track compliance patterns** - See which protocols you consistently skip
-- **Remove decision fatigue** - Just follow the list, don't think
-- **Build momentum** - Checking boxes feels good (dopamine hit)
-
-**Checklists are not micromanagement. They're cognitive prosthetics.**
-
----
-
-## FUTURE ENHANCEMENTS
-
-Coming features for these checklists:
-
-- [ ] **Streak tracking** - Days in a row completing protocols
-- [ ] **Time estimates** - Show expected duration for each phase
-- [ ] **Daily tracker dashboard** - Single page for all daily protocols
-- [ ] **Mobile optimization** - Better UI for phone use
-- [ ] **Export progress** - Download completion data as CSV
-- [ ] **Habit graphs** - Visual charts of protocol compliance over time
-
----
-
-<div style="text-align: center; margin: 2rem 0;">
-  <a href="/sop-vault" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">← Back to SOP Vault</a>
-  <a href="/sop-vault" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📋 View All Protocols</a>
+<!-- Weekly Protocols Section -->
+<div style="margin-bottom: 3rem;">
+  <h2 style="color: var(--circuit-teal); font-size: 1.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(26, 188, 156, 0.3);">📆 Weekly Protocols</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+    
+    <!-- Weekly Review -->
+    <a href="/checklist-weekly-review" style="display: block; background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔄</div>
+      <h3 style="color: var(--purple); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Weekly Review</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">60-min maintenance: process chaos, review tasks, plan ahead</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM</div>
+    </a>
+    
+  </div>
 </div>
+
+<!-- Emergency Protocols Section -->
+<div style="margin-bottom: 3rem;">
+  <h2 style="color: var(--circuit-teal); font-size: 1.5rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid rgba(26, 188, 156, 0.3);">🚨 Emergency Protocols</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;">
+    
+    <!-- Executive Dysfunction -->
+    <div style="background: var(--card-dark); border: 2px solid var(--border-gray); border-radius: 8px; padding: 1.25rem; opacity: 0.6; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
+      <h3 style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Executive Dysfunction</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">Quick-reference for frozen executive function</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Coming Soon</div>
+    </div>
+    
+    <!-- Context Switching -->
+    <div style="background: var(--card-dark); border: 2px solid var(--border-gray); border-radius: 8px; padding: 1.25rem; opacity: 0.6; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔀</div>
+      <h3 style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Context Switching Recovery</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">Fast capture-interrupt-reload for disruptions</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Coming Soon</div>
+    </div>
+    
+    <!-- Sensory Overload -->
+    <div style="background: var(--card-dark); border: 2px solid var(--border-gray); border-radius: 8px; padding: 1.25rem; opacity: 0.6; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔇</div>
+      <h3 style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Sensory Overload</h3>
+      <p style="color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4;">Rapid sensory reduction and retreat protocol</p>
+      <div style="color: var(--text-light); font-size: 0.85rem; opacity: 0.7;">Coming Soon</div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- How To Use Section -->
+<div style="background: var(--card-dark); border-left: 4px solid var(--circuit-teal); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+  <h3 style="color: var(--circuit-teal); margin-top: 0;">💡 How To Use These Checklists</h3>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+    
+    <div>
+      <h4 style="color: var(--text-bright); font-size: 1rem; margin: 0 0 0.5rem 0;">📱 In Browser (Interactive)</h4>
+      <ol style="color: var(--text-light); font-size: 0.9rem; line-height: 1.6; margin: 0; padding-left: 1.25rem;">
+        <li>Click any checklist above</li>
+        <li>Check boxes as you complete</li>
+        <li>Progress saves automatically</li>
+        <li>View progress bar at top</li>
+        <li>Click "Reset" to start fresh</li>
+      </ol>
+    </div>
+    
+    <div>
+      <h4 style="color: var(--text-bright); font-size: 1rem; margin: 0 0 0.5rem 0;">🖨️ Printed (Physical)</h4>
+      <ol style="color: var(--text-light); font-size: 0.9rem; line-height: 1.6; margin: 0; padding-left: 1.25rem;">
+        <li>Click any checklist above</li>
+        <li>Click "🖨️ Print" button</li>
+        <li>Check with pen/pencil</li>
+        <li>Store in SOP binder</li>
+      </ol>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Philosophy Section -->
+<div style="background: var(--card-dark); border-left: 4px solid var(--green); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+  <h3 style="color: var(--green); margin-top: 0;">🧠 Checklist Philosophy</h3>
+  <p style="color: var(--text-light); margin: 0 0 1rem 0;">Why checklists matter for neurodivergent brains:</p>
+  <ul style="color: var(--text-light); line-height: 1.6; margin: 0;">
+    <li><strong>Reduce working memory load</strong> - Don't hold steps in your head</li>
+    <li><strong>Prevent skipped steps</strong> - Visual confirmation of completion</li>
+    <li><strong>Track compliance patterns</strong> - See which protocols you skip</li>
+    <li><strong>Remove decision fatigue</strong> - Just follow the list</li>
+    <li><strong>Build momentum</strong> - Checking boxes feels good (dopamine)</li>
+  </ul>
+  <p style="color: var(--text-bright); margin: 1rem 0 0 0; font-style: italic;">Checklists are not micromanagement. They're cognitive prosthetics.</p>
+</div>
+
+<style>
+  /* Hover effects for checklist cards */
+  a[href*="checklist"] {
+    position: relative;
+  }
+  
+  a[href*="checklist"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5) !important;
+  }
+  
+  a[href*="checklist"]:active {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 768px) {
+    div[style*="grid-template-columns"] {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
