@@ -1,3 +1,14 @@
 title: The Wonky Sprout
 description: Structure Engineered for Chaos
 theme: jekyll-theme-cayman
+
+# Navigation items for the sidebar and mobile menu
+navigation:
+  - name: Home
+    url: /
+  - name: Workspace
+    url: /workspace
+  - name: Card Catalog
+    url: /catalog
+  - name: Fix-It Blueprint
+    url: /fix
