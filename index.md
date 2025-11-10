@@ -3,58 +3,11 @@ layout: default
 title: Home - The Wonky Sprout
 ---
 
-<div class="hero-section">
-  <div class="hero-background">
-    <div class="circuit-lines"></div>
-    <div class="floating-shapes"></div>
-  </div>
-  
-  <div class="hero-content">
-    <div style="text-align: center; margin: 0.16rem 0 1.16rem 0; border: none;">
-      <h1 style="font-size: 1.4rem; margin-bottom: 0; white-space: nowrap; border: none !important; border-bottom: none !important;">💬 <span style="color: var(--circuit-teal);">A neurodivergent father engineering structure from chaos</span></h1>
-    </div>
-  </div>
-  
-  <!-- Gradient Line (full width, outside hero-content) -->
-  <div style="height: 2px; width: 100vw; margin-left: calc(-50vw + 50%); background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 1.16rem;"></div>
-  
-  <div class="hero-content">
-    <!-- Status Update Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto 1.16rem auto;">
-      <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-        <div style="font-size: 1.2rem;">🧠</div>
-        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--circuit-teal); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-mode">--</div>
-          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Mode</div>
-        </div>
-      </div>
-      
-      <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-        <div style="font-size: 1.2rem;">📊</div>
-        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--purple); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-streak">--</div>
-          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Streak</div>
-        </div>
-      </div>
-      
-      <div style="background: var(--card-dark); border: 2px solid var(--pink); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-        <div style="font-size: 1.2rem;">✅</div>
-        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--pink); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-tasks">--</div>
-          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Tasks</div>
-        </div>
-      </div>
-      
-      <div style="background: var(--card-dark); border: 2px solid var(--orange); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-        <div style="font-size: 1.2rem;">⚡</div>
-        <div style="display: flex; flex-direction: column; align-items: flex-start;">
-          <div style="font-family: 'IBM Plex Mono', monospace; color: var(--orange); font-weight: 700; font-size: 0.95rem; line-height: 1.2;" id="status-energy">--</div>
-          <div style="color: var(--text-light); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1;">Energy</div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
+<div style="text-align: center; margin-bottom: 3rem;">
+  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">🧩 <span style="color: var(--circuit-teal);">ClassicWilly</span></h1>
+  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">A neurodivergent father engineering structure from chaos</p>
+  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
 ---
