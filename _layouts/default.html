@@ -201,6 +201,27 @@
         box-sizing: border-box;
       }
       
+      /* ===== ACCESSIBILITY: SKIP LINK ===== */
+      .skip-link {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        background: var(--teal);
+        color: var(--darker-bg);
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        font-weight: 700;
+        font-family: 'IBM Plex Mono', monospace;
+        z-index: 9999;
+        border-radius: 0 0 8px 0;
+      }
+      
+      .skip-link:focus {
+        top: 0;
+        outline: 3px solid var(--yellow);
+        outline-offset: 3px;
+      }
+      
       /* ===== BODY & TYPOGRAPHY ===== */
       body {
         font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif, 'Noto Color Emoji';
@@ -227,6 +248,26 @@
       a:hover {
         color: var(--text-bright);
         text-shadow: var(--glow-teal);
+      }
+      
+      a:focus {
+        outline: 3px solid var(--teal);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+      
+      /* Focus visible for better keyboard navigation */
+      *:focus-visible {
+        outline: 3px solid var(--teal);
+        outline-offset: 3px;
+      }
+      
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      textarea:focus-visible {
+        outline: 3px solid var(--teal);
+        outline-offset: 2px;
       }
       
       /* ===== SITE HEADER ===== */
@@ -2236,6 +2277,150 @@
         outline-offset: 2px;
       }
       
+      /* ========================================
+         FLOATING ACTION BUTTON (FAB)
+         Priority protocols quick access
+         ======================================== */
+      
+      .fab-container {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 999;
+      }
+      
+      .fab-button {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--teal), var(--blue));
+        border: 3px solid var(--darker-bg);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 0 20px rgba(26, 188, 156, 0.5);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+      }
+      
+      .fab-button:hover {
+        transform: scale(1.1) rotate(90deg);
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.5), 0 0 30px rgba(26, 188, 156, 0.7);
+      }
+      
+      .fab-button:active {
+        transform: scale(0.95);
+      }
+      
+      .fab-button[aria-expanded="true"] {
+        transform: rotate(135deg);
+        background: linear-gradient(135deg, var(--red), var(--orange));
+      }
+      
+      .fab-icon {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+      
+      .fab-menu {
+        position: absolute;
+        bottom: 75px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+      
+      .fab-menu[aria-hidden="false"] {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+      }
+      
+      .fab-menu-item {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background: var(--card-dark);
+        border: 2px solid var(--fab-color, var(--teal));
+        border-radius: 50px;
+        padding: 0.75rem 1.25rem;
+        color: var(--text-bright);
+        text-decoration: none;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.85rem;
+        font-weight: 600;
+        white-space: nowrap;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        transform: translateX(10px);
+        opacity: 0;
+      }
+      
+      .fab-menu[aria-hidden="false"] .fab-menu-item {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      
+      .fab-menu[aria-hidden="false"] .fab-menu-item:nth-child(1) {
+        transition-delay: 0.05s;
+      }
+      
+      .fab-menu[aria-hidden="false"] .fab-menu-item:nth-child(2) {
+        transition-delay: 0.1s;
+      }
+      
+      .fab-menu[aria-hidden="false"] .fab-menu-item:nth-child(3) {
+        transition-delay: 0.15s;
+      }
+      
+      .fab-menu[aria-hidden="false"] .fab-menu-item:nth-child(4) {
+        transition-delay: 0.2s;
+      }
+      
+      .fab-menu-item:hover {
+        transform: translateX(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        border-color: var(--fab-color, var(--teal));
+        background: var(--hover-bg);
+      }
+      
+      /* Mobile FAB adjustments */
+      @media (max-width: 768px) {
+        .fab-container {
+          bottom: 1rem;
+          right: 1rem;
+        }
+        
+        .fab-button {
+          width: 56px;
+          height: 56px;
+        }
+        
+        .fab-menu {
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%) translateY(20px);
+          width: max-content;
+        }
+        
+        .fab-menu[aria-hidden="false"] {
+          transform: translateX(-50%) translateY(0);
+        }
+        
+        .fab-menu-item {
+          font-size: 0.8rem;
+          padding: 0.65rem 1rem;
+        }
+      }
+      
       /* Testimonial Section */
       .testimonial-section {
         margin: 2rem 0;
@@ -2937,6 +3122,9 @@
     </style>
   </head>
   <body>
+    <!-- Skip Navigation Link (Accessibility) -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header class="site-header" role="banner">
       <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; padding: 1.5rem 1rem 1rem;">
         <!-- Wonky AI Chat Integration -->
@@ -3022,7 +3210,7 @@
     </nav>
     
     <div class="content-wrapper">
-      <main class="content-card" role="main">
+      <main class="content-card" role="main" id="main-content">
         {{ content }}
       </main>
       
@@ -3032,6 +3220,31 @@
           🚨 Emergency Protocol
         </a>
       </aside>
+      
+      <!-- Floating Action Button for Priority #5 Protocols -->
+      <div class="fab-container" role="navigation" aria-label="Priority protocols">
+        <button class="fab-button" id="fab-button" aria-label="Open priority protocols menu" aria-expanded="false">
+          <span class="fab-icon">⚡</span>
+        </button>
+        <div class="fab-menu" id="fab-menu" role="menu" aria-hidden="true">
+          <a href="/daily-tracker" class="fab-menu-item" role="menuitem" style="--fab-color: var(--green);">
+            <span style="font-size: 1.5rem;">📊</span>
+            <span>Daily Tracker</span>
+          </a>
+          <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="fab-menu-item" role="menuitem" style="--fab-color: var(--red);">
+            <span style="font-size: 1.5rem;">🚨</span>
+            <span>Emergency</span>
+          </a>
+          <a href="/2025-11-10_M4_SOP_006-legal-threat-fix" class="fab-menu-item" role="menuitem" style="--fab-color: var(--orange);">
+            <span style="font-size: 1.5rem;">⚖️</span>
+            <span>Legal Protocol</span>
+          </a>
+          <a href="/sop-vault" class="fab-menu-item" role="menuitem" style="--fab-color: var(--blue);">
+            <span style="font-size: 1.5rem;">📚</span>
+            <span>The Vault</span>
+          </a>
+        </div>
+      </div>
       
       <!-- Quick Links Footer (site-wide) -->
       <nav style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 2rem; margin: 3rem 0 2rem 0; padding-top: 2rem; border-top: 1px solid var(--border-gray);" role="navigation" aria-label="Quick links">
@@ -4042,6 +4255,39 @@
           }
         }
       });
+      
+      // Floating Action Button (FAB) functionality
+      (function() {
+        const fabButton = document.getElementById('fab-button');
+        const fabMenu = document.getElementById('fab-menu');
+        
+        if (fabButton && fabMenu) {
+          fabButton.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isExpanded = fabButton.getAttribute('aria-expanded') === 'true';
+            
+            fabButton.setAttribute('aria-expanded', !isExpanded);
+            fabMenu.setAttribute('aria-hidden', isExpanded);
+          });
+          
+          // Close FAB menu when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!event.target.closest('.fab-container')) {
+              fabButton.setAttribute('aria-expanded', 'false');
+              fabMenu.setAttribute('aria-hidden', 'true');
+            }
+          });
+          
+          // Close FAB menu on escape key
+          document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && fabButton.getAttribute('aria-expanded') === 'true') {
+              fabButton.setAttribute('aria-expanded', 'false');
+              fabMenu.setAttribute('aria-hidden', 'true');
+              fabButton.focus();
+            }
+          });
+        }
+      })();
       
       // Back to Top Button Functionality
       (function() {

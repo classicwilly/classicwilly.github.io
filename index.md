@@ -3,11 +3,61 @@ layout: default
 title: Home - The Wonky Sprout
 ---
 
-<div style="text-align: center; margin-bottom: 3rem;">
+<div style="text-align: center; margin-bottom: 2rem;">
   <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">🧩 <span style="color: var(--circuit-teal);">ClassicWilly</span></h1>
-  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--teal), var(--purple), var(--pink)); margin-bottom: 2rem;"></div>
   <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">A neurodivergent father engineering structure from chaos</p>
 </div>
+
+<!-- Quick Tools: Immediate Access -->
+<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 12px; border: 2px solid var(--teal); margin-bottom: 3rem;">
+  <h2 style="color: var(--teal); font-size: 1.3rem; margin: 0 0 1rem 0; text-align: center;">⚡ Quick Tools</h2>
+  <p style="color: var(--text-light); font-size: 0.9rem; text-align: center; margin: 0 0 1.5rem 0;">Jump straight to the tools that keep life structured</p>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;">
+    <a href="/daily-tracker" style="display: flex; flex-direction: column; align-items: center; padding: 1rem; background: var(--darker-bg); border: 2px solid var(--green); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+      <strong style="color: var(--green); font-size: 0.9rem;">Daily Tracker</strong>
+      <span style="color: var(--text-muted); font-size: 0.75rem;">Today's protocols</span>
+    </a>
+    
+    <a href="/sop-vault" style="display: flex; flex-direction: column; align-items: center; padding: 1rem; background: var(--darker-bg); border: 2px solid var(--blue); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+      <strong style="color: var(--blue); font-size: 0.9rem;">The Vault</strong>
+      <span style="color: var(--text-muted); font-size: 0.75rem;">SOPs & guides</span>
+    </a>
+    
+    <a href="/command-center" style="display: flex; flex-direction: column; align-items: center; padding: 1rem; background: var(--darker-bg); border: 2px solid var(--purple); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚙️</div>
+      <strong style="color: var(--purple); font-size: 0.9rem;">Command Center</strong>
+      <span style="color: var(--text-muted); font-size: 0.75rem;">External tools</span>
+    </a>
+    
+    <a href="/checklists" style="display: flex; flex-direction: column; align-items: center; padding: 1rem; background: var(--darker-bg); border: 2px solid var(--yellow); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
+      <strong style="color: var(--yellow); font-size: 0.9rem;">Checklists</strong>
+      <span style="color: var(--text-muted); font-size: 0.75rem;">Quick protocols</span>
+    </a>
+    
+    <a href="/little-sprouts" style="display: flex; flex-direction: column; align-items: center; padding: 1rem; background: var(--darker-bg); border: 2px solid var(--orange); border-radius: 8px; text-decoration: none; transition: all 0.3s ease;">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">👨‍👧‍👦</div>
+      <strong style="color: var(--orange); font-size: 0.9rem;">Little Sprouts</strong>
+      <span style="color: var(--text-muted); font-size: 0.75rem;">Kids protocols</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  /* Quick Tools hover effects */
+  a[href^="/daily-tracker"]:hover,
+  a[href^="/sop-vault"]:hover,
+  a[href^="/command-center"]:hover,
+  a[href^="/checklists"]:hover,
+  a[href^="/little-sprouts"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  }
+</style>
 
 ---
 
@@ -271,9 +321,9 @@ title: Home - The Wonky Sprout
       <div>Daily Tracker</div>
     </a>
     
-    <a href="/workspace" class="cta-button" style="border-color: var(--green);">
-      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
-      <div>Workspace</div>
+    <a href="/settings" class="cta-button" style="border-color: var(--green);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚙️</div>
+      <div>Settings</div>
     </a>
     
     <a href="/catalog" class="cta-button" style="border-color: var(--blue);">
