@@ -14,6 +14,52 @@ title: Legal Threat Fix Protocol
   <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">4-day execution plan. No BS. Just structure.</p>
 </div>
 
+<!-- Quick Navigation -->
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 0.75rem; margin-bottom: 3rem;">
+  <a href="#anchors" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">📍</div>
+    <div style="color: var(--blue); font-weight: 600; font-size: 0.9rem; text-align: center;">Anchors</div>
+  </a>
+  
+  <a href="#phase1" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">📌</div>
+    <div style="color: var(--green); font-weight: 600; font-size: 0.9rem; text-align: center;">Phase 1<br><span style="font-size: 0.75rem; opacity: 0.7;">Monday</span></div>
+  </a>
+  
+  <a href="#phase2" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">🔨</div>
+    <div style="color: var(--blue); font-weight: 600; font-size: 0.9rem; text-align: center;">Phase 2<br><span style="font-size: 0.75rem; opacity: 0.7;">Tuesday</span></div>
+  </a>
+  
+  <a href="#phase3" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">🎯</div>
+    <div style="color: var(--purple); font-weight: 600; font-size: 0.9rem; text-align: center;">Phase 3<br><span style="font-size: 0.75rem; opacity: 0.7;">Wednesday</span></div>
+  </a>
+  
+  <a href="#phase4" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--red); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">⚖️</div>
+    <div style="color: var(--red); font-weight: 600; font-size: 0.9rem; text-align: center;">Phase 4<br><span style="font-size: 0.75rem; opacity: 0.7;">Thursday</span></div>
+  </a>
+  
+  <a href="#phase5" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">🌅</div>
+    <div style="color: var(--green); font-weight: 600; font-size: 0.9rem; text-align: center;">Phase 5<br><span style="font-size: 0.75rem; opacity: 0.7;">Friday</span></div>
+  </a>
+  
+  <a href="#gemini" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 8px; padding: 1rem; text-decoration: none; transition: all 0.3s ease; min-height: 100px;">
+    <div style="font-size: 2rem; margin-bottom: 0.25rem;">🤖</div>
+    <div style="color: var(--yellow); font-weight: 600; font-size: 0.9rem; text-align: center;">Gemini<br><span style="font-size: 0.75rem; opacity: 0.7;">Counter</span></div>
+  </a>
+</div>
+
+<style>
+/* Quick nav hover effects */
+a[href^="#"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+</style>
+
 ---
 
 ## 🎯 Purpose: The "Fix"
@@ -28,7 +74,7 @@ title: Legal Threat Fix Protocol
 
 ---
 
-## 📍 Rigid Anchors
+## 📍 Rigid Anchors {#anchors}
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
   <div style="background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1.25rem;">
@@ -100,7 +146,7 @@ title: Legal Threat Fix Protocol
 
 ## ⚡ Execution Workflow
 
-### 📌 Phase 1: Monday (Fix the Anchors)
+### 📌 Phase 1: Monday (Fix the Anchors) {#phase1}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Lock down the variables. Establish the structure.</p>
@@ -128,7 +174,7 @@ title: Legal Threat Fix Protocol
   </div>
 </div>
 
-### 🔨 Phase 2: Tuesday (Structure Preparation)
+### 🔨 Phase 2: Tuesday (Structure Preparation) {#phase2}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--blue); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">Critical:</strong> Print first, review second, skip anchor restoration. The hearing can't wait; anchors can.</p>
@@ -228,7 +274,7 @@ title: Legal Threat Fix Protocol
   <p style="color: var(--orange); font-size: 0.9rem; margin-top: 1rem; margin-bottom: 0; padding: 0.75rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px;"><strong>Skip anchor restoration</strong> - Defer to Friday. The hearing can't wait; anchors can.</p>
 </div>
 
-### 🎯 Phase 3: Wednesday (Alignment Fix)
+### 🎯 Phase 3: Wednesday (Alignment Fix) {#phase3}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--purple); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">Goal:</strong> Leave with 3 locked-in outcomes: Gemini strategy, Thursday talking points, Mom's role confirmed.</p>
@@ -303,7 +349,7 @@ title: Legal Threat Fix Protocol
   </div>
 </div>
 
-### ⚖️ Phase 4: Thursday (Execution)
+### ⚖️ Phase 4: Thursday (Execution) {#phase4}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--red);">This is it.</strong> Use the structure. Trust the prep. Protect your kids.</p>
@@ -341,7 +387,7 @@ title: Legal Threat Fix Protocol
   </div>
 </div>
 
-### 🌅 Phase 5: Friday (Recovery & Return)
+### 🌅 Phase 5: Friday (Recovery & Return) {#phase5}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">It's over. Process, recover, return to your kids.</p>
@@ -385,7 +431,7 @@ title: Legal Threat Fix Protocol
 
 ---
 
-## 🤖 Gemini "Tool Threat" Counter-Narrative
+## 🤖 Gemini "Tool Threat" Counter-Narrative {#gemini}
 
 <div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--yellow); margin-bottom: 2rem;">
   <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">For Wednesday meeting with Mr. Welch</strong> - Read this verbatim if needed:</p>
