@@ -71,7 +71,7 @@ a[href^="#"]:hover {
 
 ## 🚨 Purpose
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
   <p style="color: var(--text-light); margin-bottom: 1rem;">This protocol fixes the "unstructured chaos" of the November 2025 legal threat.</p>
   
   <p style="color: var(--text-light); margin-bottom: 1rem;"><strong style="color: var(--red);">Priority #5 Override:</strong> This suspends all Mode 1 (Solo Execution) work until the Thursday hearing is complete.</p>
@@ -83,8 +83,8 @@ a[href^="#"]:hover {
 
 ## 🧠 The Communication Barrier (What They Need to Understand) {#understanding}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">For Mr. Welch and the court: This is not defiance. This is disability. Here's what late-diagnosed autism and ADHD actually looks like in a legal crisis.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;">For Mr. Welch and the court: This is not defiance. This is disability. Here's what late-diagnosed autism and ADHD actually looks like in a legal crisis.</p>
   
   <div style="background: rgba(26, 188, 156, 0.1); padding: 1.25rem; border-radius: 6px; border-left: 3px solid var(--teal); margin-bottom: 1.5rem;">
     <h4 style="color: var(--teal); font-size: 1rem; margin: 0 0 1rem 0;">What You See vs. What's Actually Happening</h4>
@@ -136,26 +136,26 @@ a[href^="#"]:hover {
 
 ## 📍 Rigid Anchors {#anchors}
 
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
-  <div style="background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1.25rem;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">📅</div>
-    <h3 style="color: var(--blue); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Anchor A: Meeting</h3>
-    <p style="color: var(--text-bright); font-size: 1rem; margin: 0 0 0.25rem 0;"><strong>Wednesday, Nov 12</strong></p>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">1:00 PM with Mr. Welch</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 0.75rem; margin-bottom: 2rem;">
+  <div style="background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1rem;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">📅</div>
+    <h3 style="color: var(--blue); font-size: 1rem; margin: 0 0 0.35rem 0;">Anchor A: Meeting</h3>
+    <p style="color: var(--text-bright); font-size: 0.95rem; margin: 0 0 0.2rem 0;"><strong>Wednesday, Nov 12</strong></p>
+    <p style="color: var(--text-light); font-size: 0.85rem; margin: 0;">1:00 PM with Mr. Welch</p>
   </div>
 
-  <div style="background: var(--card-dark); border: 2px solid var(--red); border-radius: 8px; padding: 1.25rem;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">⚖️</div>
-    <h3 style="color: var(--red); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Anchor B: Hearing</h3>
-    <p style="color: var(--text-bright); font-size: 1rem; margin: 0 0 0.25rem 0;"><strong>Thursday, Nov 13</strong></p>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">9:00 AM court appearance</p>
+  <div style="background: var(--card-dark); border: 2px solid var(--red); border-radius: 8px; padding: 1rem;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">⚖️</div>
+    <h3 style="color: var(--red); font-size: 1rem; margin: 0 0 0.35rem 0;">Anchor B: Hearing</h3>
+    <p style="color: var(--text-bright); font-size: 0.95rem; margin: 0 0 0.2rem 0;"><strong>Thursday, Nov 13</strong></p>
+    <p style="color: var(--text-light); font-size: 0.85rem; margin: 0;">9:00 AM court appearance</p>
   </div>
 
-  <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1.25rem;">
-    <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">👤</div>
-    <h3 style="color: var(--purple); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Support Anchor</h3>
-    <p style="color: var(--text-bright); font-size: 1rem; margin: 0 0 0.25rem 0;"><strong>Mom (Pending)</strong></p>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Must confirm by 6 PM today</p>
+  <div style="background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1rem;">
+    <div style="font-size: 1.5rem; margin-bottom: 0.35rem;">👤</div>
+    <h3 style="color: var(--purple); font-size: 1rem; margin: 0 0 0.35rem 0;">Support Anchor</h3>
+    <p style="color: var(--text-bright); font-size: 0.95rem; margin: 0 0 0.2rem 0;"><strong>Mom (Pending)</strong></p>
+    <p style="color: var(--text-light); font-size: 0.85rem; margin: 0;">Must confirm by 6 PM today</p>
   </div>
 </div>
 
@@ -163,26 +163,26 @@ a[href^="#"]:hover {
 
 ## 🛡️ Failure Contingencies
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--orange); margin-bottom: 2rem;">
-  <div style="display: grid; gap: 1rem;">
-    <div style="padding: 0.75rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
-      <strong style="color: var(--orange);">If Mom unavailable:</strong>
-      <p style="color: var(--text-light); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Identify backup support person by 6 PM Monday. Options: [Add names here]</p>
+<div style="background: var(--card-dark); padding: 1rem; border-radius: 8px; border: 2px solid var(--orange); margin-bottom: 2rem;">
+  <div style="display: grid; gap: 0.65rem;">
+    <div style="padding: 0.6rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
+      <strong style="color: var(--orange); font-size: 0.9rem;">If Mom unavailable:</strong>
+      <p style="color: var(--text-light); margin: 0.35rem 0 0 0; font-size: 0.85rem;">Identify backup support person by 6 PM Monday. Options: [Add names here]</p>
     </div>
     
-    <div style="padding: 0.75rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
-      <strong style="color: var(--orange);">If lawyer rejects structure:</strong>
-      <p style="color: var(--text-light); margin: 0.5rem 0 0 0; font-size: 0.9rem;">"I need this to communicate effectively due to neurodivergence. This is my ADA accommodation."</p>
+    <div style="padding: 0.6rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
+      <strong style="color: var(--orange); font-size: 0.9rem;">If lawyer rejects structure:</strong>
+      <p style="color: var(--text-light); margin: 0.35rem 0 0 0; font-size: 0.85rem;">"I need this to communicate effectively due to neurodivergence. This is my ADA accommodation."</p>
     </div>
     
-    <div style="padding: 0.75rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
-      <strong style="color: var(--orange);">If printing fails:</strong>
-      <p style="color: var(--text-light); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Email copies to phone, have digital backup ready</p>
+    <div style="padding: 0.6rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
+      <strong style="color: var(--orange); font-size: 0.9rem;">If printing fails:</strong>
+      <p style="color: var(--text-light); margin: 0.35rem 0 0 0; font-size: 0.85rem;">Email copies to phone, have digital backup ready</p>
     </div>
     
-    <div style="padding: 0.75rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
-      <strong style="color: var(--orange);">If frozen at hearing:</strong>
-      <p style="color: var(--text-light); margin: 0.5rem 0 0 0; font-size: 0.9rem;">Hand Mom your copy, point to specific section, let her read it</p>
+    <div style="padding: 0.6rem; background: rgba(255, 138, 0, 0.1); border-radius: 6px; border-left: 3px solid var(--orange);">
+      <strong style="color: var(--orange); font-size: 0.9rem;">If frozen at hearing:</strong>
+      <p style="color: var(--text-light); margin: 0.35rem 0 0 0; font-size: 0.85rem;">Hand Mom your copy, point to specific section, let her read it</p>
     </div>
   </div>
 </div>
@@ -191,16 +191,12 @@ a[href^="#"]:hover {
 
 ## 📂 Key Asset
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem; text-align: center;">
-  <div style="font-size: 2rem; margin-bottom: 0.5rem;">📄</div>
-  <h3 style="color: var(--teal); font-size: 1.2rem; margin: 0 0 0.5rem 0;">Internal Blueprint</h3>
-  <p style="color: var(--text-bright); font-family: 'IBM Plex Mono', monospace; font-size: 0.9rem; margin: 0 0 1rem 0;">2025-11-10_M4_KNOWLEDGE_legal-brief-synthesis-v2.md</p>
-  <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">This file <strong>is</strong> the structure. It is the anti-BS agenda. It is non-negotiable.</p>
+<div style="background: var(--card-dark); padding: 1rem; border-radius: 8px; border: 2px solid var(--teal); margin-bottom: 2rem; text-align: center;">
+  <div style="font-size: 1.75rem; margin-bottom: 0.35rem;">📄</div>
+  <h3 style="color: var(--teal); font-size: 1.1rem; margin: 0 0 0.4rem 0;">Internal Blueprint</h3>
+  <p style="color: var(--text-bright); font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem; margin: 0 0 0.65rem 0;">2025-11-10_M4_KNOWLEDGE_legal-brief-synthesis-v2.md</p>
+  <p style="color: var(--text-light); font-size: 0.85rem; margin: 0;">This file <strong>is</strong> the structure. It is the anti-BS agenda. It is non-negotiable.</p>
 </div>
-
----
-
-## ⚡ Execution Workflow
 
 ---
 
@@ -208,8 +204,8 @@ a[href^="#"]:hover {
 
 ### 📌 Phase 1: Monday (Fix the Anchors) {#phase1}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">Lock down the variables. Establish the structure.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;">Lock down the variables. Establish the structure.</p>
   
   <div class="interactive-checklist">
     <label class="checkbox-item">
@@ -236,8 +232,8 @@ a[href^="#"]:hover {
 
 ### 🔨 Phase 2: Tuesday (Structure Preparation) {#phase2}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--blue); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">Critical:</strong> Print first, review second, skip anchor restoration. The hearing can't wait; anchors can.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--blue); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;"><strong style="color: var(--yellow);">Critical:</strong> Print first, review second, skip anchor restoration. The hearing can't wait; anchors can.</p>
   
   <h4 style="color: var(--blue); font-size: 1rem; margin-top: 0; margin-bottom: 0.75rem;">Morning Launch</h4>
   <div class="interactive-checklist">
@@ -257,7 +253,7 @@ a[href^="#"]:hover {
     </label>
   </div>
   
-  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Work Block 1: PRINT FIRST (9:00 AM - CRITICAL)</h4>
+  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Work Block 1: PRINT FIRST (9:00 AM - CRITICAL)</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -285,7 +281,7 @@ a[href^="#"]:hover {
     </label>
   </div>
   
-  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Work Block 2: Review (TIMEBOX 3 HOURS MAX)</h4>
+  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Work Block 2: Review (TIMEBOX 3 HOURS MAX)</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -318,7 +314,7 @@ a[href^="#"]:hover {
     </label>
   </div>
   
-  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Evening Shutdown</h4>
+  <h4 style="color: var(--blue); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Evening Shutdown</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -336,8 +332,8 @@ a[href^="#"]:hover {
 
 ### 🎯 Phase 3: Wednesday (Alignment Fix) {#phase3}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--purple); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">Goal:</strong> Leave with 3 locked-in outcomes: Gemini strategy, Thursday talking points, Mom's role confirmed.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--purple); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;"><strong style="color: var(--yellow);">Goal:</strong> Leave with 3 locked-in outcomes: Gemini strategy, Thursday talking points, Mom's role confirmed.</p>
   
   <h4 style="color: var(--purple); font-size: 1rem; margin-top: 0; margin-bottom: 0.75rem;">Morning Prep</h4>
   <div class="interactive-checklist">
@@ -357,7 +353,7 @@ a[href^="#"]:hover {
     </label>
   </div>
   
-  <h4 style="color: var(--purple); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Anchor A: Meeting (1:00 PM)</h4>
+  <h4 style="color: var(--purple); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Anchor A: Meeting (1:00 PM)</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -395,7 +391,7 @@ a[href^="#"]:hover {
     </div>
   </div>
   
-  <h4 style="color: var(--purple); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Evening Shutdown</h4>
+  <h4 style="color: var(--purple); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Evening Shutdown</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -411,8 +407,8 @@ a[href^="#"]:hover {
 
 ### ⚖️ Phase 4: Thursday (Execution) {#phase4}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--red);">This is it.</strong> Use the structure. Trust the prep. Protect your kids.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--red); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;"><strong style="color: var(--red);">This is it.</strong> Use the structure. Trust the prep. Protect your kids.</p>
   
   <div class="interactive-checklist">
     <label class="checkbox-item">
@@ -449,8 +445,8 @@ a[href^="#"]:hover {
 
 ### 🌅 Phase 5: Friday (Recovery & Return) {#phase5}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;">It's over. Process, recover, return to your kids.</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--green); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;">It's over. Process, recover, return to your kids.</p>
   
   <h4 style="color: var(--green); font-size: 1rem; margin-top: 0; margin-bottom: 0.75rem;">Morning: Debrief</h4>
   <div class="interactive-checklist">
@@ -465,7 +461,7 @@ a[href^="#"]:hover {
     </label>
   </div>
   
-  <h4 style="color: var(--green); font-size: 1rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">Afternoon: Transition</h4>
+  <h4 style="color: var(--green); font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.65rem;">Afternoon: Transition</h4>
   <div class="interactive-checklist">
     <label class="checkbox-item">
       <input type="checkbox" class="task-checkbox">
@@ -493,8 +489,8 @@ a[href^="#"]:hover {
 
 ## 🤖 Gemini "Tool Threat" Counter-Narrative {#gemini}
 
-<div style="background: var(--card-dark); padding: 1.5rem; border-radius: 8px; border: 2px solid var(--yellow); margin-bottom: 2rem;">
-  <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1.5rem;"><strong style="color: var(--yellow);">For Wednesday meeting with Mr. Welch</strong> - Read this verbatim if needed:</p>
+<div style="background: var(--card-dark); padding: 1.25rem; border-radius: 8px; border: 2px solid var(--yellow); margin-bottom: 2rem;">
+  <p style="color: var(--text-light); font-size: 0.85rem; margin-bottom: 1rem;"><strong style="color: var(--yellow);">For Wednesday meeting with Mr. Welch</strong> - Read this verbatim if needed:</p>
   
   <div style="background: rgba(241, 196, 15, 0.1); padding: 1.25rem; border-radius: 6px; border-left: 3px solid var(--yellow);">
     <p style="color: var(--text-light); margin-bottom: 1rem;">"The opposing counsel's request for my Gemini history is a distraction tactic. Here's the reality:</p>
