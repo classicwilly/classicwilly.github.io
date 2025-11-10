@@ -14,7 +14,6 @@ title: Command Center - The Wonky Sprout
   <div class="content-card" style="border-left: 4px solid var(--circuit-teal); padding: 0;">
     <div style="padding: 1.5rem 1.5rem 1rem;">
       <h2 style="color: var(--circuit-teal); font-size: 1.8rem; margin-bottom: 0.5rem; font-family: 'Space Grotesk', sans-serif;">🔧 The "Fix-It" Kit</h2>
-      <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--circuit-teal), transparent); margin-bottom: 1rem;"></div>
       <p style="color: var(--text-light); margin-bottom: 0; line-height: 1.6;">The WS-OS toolbench. Where structure gets engineered.</p>
     </div>
     
@@ -57,7 +56,6 @@ title: Command Center - The Wonky Sprout
   <div class="content-card" style="border-left: 4px solid var(--orange); padding: 0;">
     <div style="padding: 1.5rem 1.5rem 1rem;">
       <h2 style="color: var(--orange); font-size: 1.8rem; margin-bottom: 0.5rem; font-family: 'Space Grotesk', sans-serif;">📂 The "External" Card Catalog</h2>
-      <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--orange), transparent); margin-bottom: 1rem;"></div>
       <p style="color: var(--text-light); margin-bottom: 0; line-height: 1.6;">Google Workspace tools. Structured access.</p>
     </div>
     
