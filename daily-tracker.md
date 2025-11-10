@@ -3,9 +3,11 @@ layout: default
 title: Daily Tracker
 ---
 
-# DAILY PROTOCOL TRACKER
-
-**Quick daily check-in for all foundational and mode-specific protocols.**
+<div style="text-align: center; margin-bottom: 3rem;">
+  <h1 style="color: var(--blue); font-size: 2.5rem; margin-bottom: 0.5rem;">📊 Daily Protocol Tracker</h1>
+  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, transparent, var(--blue), var(--purple), var(--blue), transparent); margin: 1rem 0;"></div>
+  <p style="color: var(--text-light); font-size: 1.1rem;">Quick daily check-in for all foundational and mode-specific protocols.</p>
+</div>
 
 <div class="page-navigation">
   <div class="nav-section">
