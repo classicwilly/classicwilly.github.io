@@ -10,15 +10,15 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <div style="text-align: center; margin-bottom: 1.16rem; border: none;">
+    <div style="text-align: center; margin: 0.16rem 0 1.16rem 0; border: none;">
       <h1 style="font-size: 1.4rem; margin-bottom: 0; white-space: nowrap; border: none !important; border-bottom: none !important;">💬 <span style="color: var(--circuit-teal);">A neurodivergent father engineering structure from chaos</span></h1>
     </div>
     
     <!-- Gradient Line -->
-    <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+    <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 1.16rem;"></div>
     
     <!-- Status Update Cards -->
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto 2.16rem auto;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.6rem; justify-content: center; width: 100%; max-width: 700px; margin: 0 auto 1.16rem auto;">
       <div style="background: var(--card-dark); border: 2px solid var(--circuit-teal); border-radius: var(--radius-md); padding: 0.5rem 0.75rem; text-align: center; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
         <div style="font-size: 1.2rem;">🧠</div>
         <div style="display: flex; flex-direction: column; align-items: flex-start;">
