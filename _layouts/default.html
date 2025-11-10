@@ -1801,13 +1801,13 @@
       /* Homepage Hero Section */
       .hero-section {
         position: relative;
-        min-height: 50vh;
+        min-height: 30vh;
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
         margin: 0 -2rem 1rem -2rem;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         max-width: 100vw;
       }
       
@@ -2437,7 +2437,7 @@
         }
         
         .hero-section {
-          min-height: 45vh;
+          min-height: 25vh;
           margin: 0 -0.5rem 1rem -0.5rem;
           padding: 1rem 0.5rem;
         }
@@ -2451,7 +2451,7 @@
         }
         
         .hero-subtitle {
-          font-size: 1.25rem;
+          font-size: 1rem;
         }
         
         .hero-stats {
@@ -2938,7 +2938,32 @@
   </head>
   <body>
     <header class="site-header" role="banner">
-      <div style="display: flex; justify-content: center; align-items: center; max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; padding: 2rem 1rem;">
+      <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; padding: 1.5rem 1rem 1rem;">
+        <!-- Wonky AI Chat Integration -->
+        <div id="wonky-ai-widget" style="background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 12px; padding: 0.6rem 1rem; margin-bottom: 1.5rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h3 style="margin: 0; color: var(--yellow); font-size: 1rem;">
+              🤖 Wonky AI 
+              <span style="font-size: 0.7em; color: var(--muted-text); font-weight: 400; margin-left: 0.5rem;">powered by Gemini</span>
+            </h3>
+            <button onclick="toggleWonkyAI()" id="wonky-ai-toggle" style="padding: 0.4rem 0.8rem; background: var(--darker-bg); border: 1px solid var(--yellow); border-radius: 6px; color: var(--yellow); cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem;">
+              Show
+            </button>
+          </div>
+          
+          <div id="wonky-ai-content" style="display: none;">
+            <div id="wonky-ai-chat" style="background: var(--darker-bg); padding: 1rem; border-radius: 8px; min-height: 150px; max-height: 300px; overflow-y: auto; margin: 0.75rem 0;">
+              <p style="color: var(--muted-text); text-align: center; margin: 0;">Ask Wonky AI about protocols, patterns, or decisions...</p>
+            </div>
+            
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI anything..." style="flex: 1; padding: 0.6rem; background: var(--darker-bg); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); font-size: 0.95rem;">
+              <button onclick="sendToWonkyAI()" style="padding: 0.6rem 1.2rem; background: var(--yellow); color: var(--darker-bg); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.95rem;">Send</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Site Title & Tagline -->
         <div style="text-align: center;">
           <h1 class="site-title">{{ site.title | default: "The Wonky Sprout" }}</h1>
           <p class="site-tagline">{{ site.description | default: "Structure Engineered for Chaos" }}</p>
@@ -2970,30 +2995,6 @@
         </div>
       </div>
     </nav>
-    
-    <!-- Wonky AI Chat Integration (site-wide) -->
-    <div id="wonky-ai-widget" style="background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 12px; padding: 0.75rem 1.5rem; margin: 2rem auto 0 auto; max-width: 900px; position: relative;">
-      <div style="display: flex; align-items: center; justify-content: space-between;">
-        <h3 style="margin: 0; color: var(--yellow); font-size: 1.2rem;">
-          🤖 Wonky AI 
-          <span style="font-size: 0.7em; color: var(--muted-text); font-weight: 400; margin-left: 0.5rem;">powered by Gemini</span>
-        </h3>
-        <button onclick="toggleWonkyAI()" id="wonky-ai-toggle" style="padding: 0.5rem 1rem; background: var(--darker-bg); border: 1px solid var(--yellow); border-radius: 6px; color: var(--yellow); cursor: pointer; font-family: 'IBM Plex Mono', monospace; font-size: 0.85rem;">
-          Show
-        </button>
-      </div>
-      
-      <div id="wonky-ai-content" style="display: none;">
-        <div id="wonky-ai-chat" style="background: var(--darker-bg); padding: 1rem; border-radius: 8px; min-height: 200px; max-height: 400px; overflow-y: auto; margin-bottom: 1rem;">
-          <p style="color: var(--muted-text); text-align: center; margin: 0;">Ask Wonky AI about protocols, patterns, or decisions...</p>
-        </div>
-        
-        <div style="display: flex; gap: 0.5rem;">
-          <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI anything..." style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-color); border-radius: 8px; color: var(--text-color); font-size: 1rem;">
-          <button onclick="sendToWonkyAI()" style="padding: 0.75rem 1.5rem; background: var(--yellow); color: var(--darker-bg); border: none; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem;">Send</button>
-        </div>
-      </div>
-    </div>
     
     <div class="content-wrapper">
       <main class="content-card" role="main">
