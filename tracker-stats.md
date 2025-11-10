@@ -3,12 +3,16 @@ layout: default
 title: Tracker Stats
 ---
 
-<!-- Updated 2025-11-10 -->
+<!-- Updated 2025-11-10 v2 -->
+<div style="text-align: center; margin-bottom: 1.16rem;">
+  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 0 0; border-bottom: none !important;">📈 <span style="color: var(--pink);">Tracker Stats</span></h1>
+</div>
+
+<div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
+
 <div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">📈 <span style="color: var(--pink);">Daily Tracker Statistics</span></h1>
-  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Track your patterns, streaks, and system health over time.</p>
-  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 1rem 0;">Track your patterns, streaks, and system health over time.</p>
+  <p style="color: var(--text-light); font-size: 0.95rem; margin: 0;">Visual feedback for protocol compliance and habit building.</p>
 </div>
 
 ## CURRENT STREAKS
