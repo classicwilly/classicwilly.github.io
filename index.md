@@ -178,35 +178,8 @@ title: Home - The Wonky Sprout
     font-weight: 600;
   }
   
-  .chapter-marker {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 60px;
-    background: var(--accent);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px var(--accent-glow);
-    z-index: 2;
-    animation: pulse 2s ease-in-out infinite;
-    margin: 3rem auto 2rem;
-  }
-  
-  @keyframes pulse {
-    0%, 100% { transform: translateX(-50%) scale(1); }
-    50% { transform: translateX(-50%) scale(1.1); }
-  }
-  
   @media (max-width: 768px) {
     .path-line {
-      left: 1rem;
-    }
-    
-    .chapter-marker {
       left: 1rem;
     }
   }
@@ -216,10 +189,6 @@ title: Home - The Wonky Sprout
   <div class="path-line"></div>
   
   <!-- Chapter 1: The Diagnosis -->
-  <div class="chapter-marker" style="--accent: var(--circuit-teal); --accent-glow: rgba(26, 188, 156, 0.5);">
-    🔍
-  </div>
-  
   <div class="story-card left" style="--accent: var(--circuit-teal);">
     <div class="story-icon">🧩</div>
     <h2 class="story-title">The Diagnosis</h2>
@@ -240,10 +209,6 @@ title: Home - The Wonky Sprout
   </div>
   
   <!-- Chapter 2: The Shift -->
-  <div class="chapter-marker" style="--accent: var(--orange); --accent-glow: rgba(255, 152, 0, 0.5);">
-    ⚡
-  </div>
-  
   <div class="story-card right" style="--accent: var(--orange);">
     <div class="story-icon">👨‍👧‍👦</div>
     <h2 class="story-title">The Shift</h2>
@@ -265,10 +230,6 @@ title: Home - The Wonky Sprout
   </div>
   
   <!-- Chapter 3: The Blueprint -->
-  <div class="chapter-marker" style="--accent: var(--yellow); --accent-glow: rgba(255, 193, 7, 0.5);">
-    🌱
-  </div>
-  
   <div class="story-card left" style="--accent: var(--yellow);">
     <div class="story-icon">🛡️</div>
     <h2 class="story-title">The Blueprint</h2>
