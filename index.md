@@ -251,43 +251,11 @@ title: Home - The Wonky Sprout
   });
 </script>
 
-<div class="modules-grid">
-  <div class="module-card" data-module="m1">
-    <div class="module-icon">📡</div>
-    <h3 class="module-title">M1: Media</h3>
-    <p class="module-desc">Brand voice, blog posts, neurodivergent life unfiltered</p>
-    <a href="/catalog" class="module-link">View Posts →</a>
-  </div>
-  
-  <div class="module-card" data-module="m2">
-    <div class="module-icon">⬡</div>
-    <h3 class="module-title">M2: Products</h3>
-    <p class="module-desc">The Hive System: 3D-printed modular organization</p>
-    <a href="/catalog" class="module-link">Coming Soon →</a>
-  </div>
-  
-  <div class="module-card" data-module="m3">
-    <div class="module-icon">🔧</div>
-    <h3 class="module-title">M3: Service</h3>
-    <p class="module-desc">The Fix-It Blueprint: Root cause → permanent solution</p>
-    <a href="/2025-11-09_M1_PAGE_manifesto-v2" class="module-link">Read Manifesto →</a>
-  </div>
-  
-  <div class="module-card" data-module="m4">
-    <div class="module-icon">🧠</div>
-    <h3 class="module-title">M4: Personal OS</h3>
-    <p class="module-desc">Life protocols, SOPs, and neurodivergent survival systems</p>
-    <a href="/sop-vault" class="module-link">Access SOPs →</a>
-  </div>
-</div>
-
----
-
-<div style="text-align: center; margin: 4rem auto; padding: 3rem; background: var(--darker-bg); border-radius: 12px; border: 2px solid var(--circuit-teal); max-width: 900px;">
+<div style="text-align: center; margin: 4rem auto; padding: 3rem; background: var(--darker-bg); border-radius: 12px; border: 2px solid var(--circuit-teal); max-width: 1200px;">
   <h2 style="font-size: 2.5rem; color: var(--circuit-teal); margin-bottom: 1rem;">It's okay to be a little wonky.</h2>
   <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 2rem;">Welcome to our blueprint.</p>
   
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 800px; margin: 0 auto;">
+  <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin: 0 auto;">
     <a href="/sop-vault" class="cta-button" style="border-color: var(--circuit-teal);">
       <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
       <div>SOP Vault</div>
@@ -307,8 +275,42 @@ title: Home - The Wonky Sprout
       <div style="font-size: 2rem; margin-bottom: 0.5rem;">🤖</div>
       <div>Workspace</div>
     </a>
+    
+    <a href="/catalog" class="cta-button" style="border-color: var(--blue);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">📡</div>
+      <div>M1: Media</div>
+    </a>
+    
+    <a href="/catalog" class="cta-button" style="border-color: var(--purple);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">⬡</div>
+      <div>M2: Products</div>
+    </a>
+    
+    <a href="/2025-11-09_M1_PAGE_manifesto-v2" class="cta-button" style="border-color: var(--pink);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔧</div>
+      <div>M3: Service</div>
+    </a>
+    
+    <a href="/sop-vault" class="cta-button" style="border-color: var(--orange);">
+      <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
+      <div>M4: Personal OS</div>
+    </a>
   </div>
 </div>
+
+<style>
+  @media (max-width: 1024px) {
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+      grid-template-columns: repeat(3, 1fr) !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+</style>
 
 <script>
   // Populate status cards from localStorage
