@@ -53,55 +53,109 @@
     </script>
     
     <style>
+      /* ===========================================
+         WONKY SPROUT OS - VISUAL ENGINE V2.0
+         Complete color standardization & polish
+         =========================================== */
+      
       :root {
-        /* Starfield color palette - chaos in the structure */
-        --teal: #1abc9c;
-        --blue: #3498db;
-        --purple: #9b59b6;
-        --red: #e74c3c;
-        --orange: #f39c12;
-        --green: #2ecc71;
-        --yellow: #f1c40f;
-        --pink: #e91e63;
+        /* ===== PRIMARY COLOR PALETTE ===== */
+        --teal: #1abc9c;        /* Primary brand - buttons, links, accents */
+        --purple: #9b59b6;      /* Secondary - hover glows, borders */
+        --orange: #f39c12;      /* Tertiary - warnings, highlights */
+        --blue: #3498db;        /* Info states, supplementary */
+        --green: #2ecc71;       /* Success states */
+        --yellow: #f1c40f;      /* Attention, warnings */
+        --red: #e74c3c;         /* Errors, critical */
+        --pink: #e91e63;        /* Accent, special highlights */
         
-        /* Background - still dark for contrast */
-        --dark-bg: #0d1117;
-        --darker-bg: #010409;
-        --card-dark: #161b22;
-        --text-light: #c9d1d9;
-        --text-bright: #f0f6fc;
+        /* ===== BACKGROUND HIERARCHY ===== */
+        --dark-bg: #0d1117;     /* Page background */
+        --darker-bg: #010409;   /* Deeper sections */
+        --card-dark: #161b22;   /* Cards, containers */
+        --card-hover: #21262d;  /* Hover state for cards */
+        
+        /* ===== TEXT HIERARCHY ===== */
+        --text-bright: #f0f6fc; /* Headings, strong emphasis */
+        --text-light: #c9d1d9;  /* Body text, primary */
+        --text-muted: #8b949e;  /* Subtle text, labels */
+        
+        /* ===== BORDERS & DIVIDERS ===== */
         --border-gray: #30363d;
+        --border-subtle: #21262d;
         
-        /* Legacy mappings */
+        /* ===== SEMANTIC ALIASES (for consistency) ===== */
         --sprout-green: var(--green);
         --circuit-teal: var(--teal);
         --electric-blue: var(--blue);
         --accent-orange: var(--orange);
         --hover-blue: var(--blue);
+        
+        /* ===== INTERACTIVE STATES ===== */
+        --hover-bg: rgba(26, 188, 156, 0.08);
+        --hover-border: rgba(26, 188, 156, 0.3);
+        --focus-ring: 0 0 0 3px rgba(26, 188, 156, 0.3);
+        
+        /* ===== SHADOWS & GLOWS ===== */
+        --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.4);
+        --glow-teal: 0 0 20px rgba(26, 188, 156, 0.4);
+        --glow-purple: 0 0 15px rgba(155, 89, 182, 0.35);
+        
+        /* ===== SPACING & SIZING ===== */
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        --radius-lg: 16px;
+        --transition: all 0.2s ease;
       }
       
+      /* ===== BASE RESET ===== */
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
       
+      /* ===== BODY & TYPOGRAPHY ===== */
       body {
-        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
         background: var(--dark-bg);
         color: var(--text-light);
         line-height: 1.7;
         min-height: 100vh;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
       
-      /* Header - The "Card Catalog" Tab */
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--text-bright);
+        font-weight: 600;
+        line-height: 1.3;
+      }
+      
+      a {
+        color: var(--circuit-teal);
+        text-decoration: none;
+        transition: var(--transition);
+      }
+      
+      a:hover {
+        color: var(--text-bright);
+        text-shadow: var(--glow-teal);
+      }
+      
+      /* ===== SITE HEADER ===== */
+      /* ===== SITE HEADER ===== */
       .site-header {
         background: linear-gradient(135deg, var(--darker-bg) 0%, var(--dark-bg) 100%);
         padding: 0.5rem;
-        position: relative;
-        border-bottom: 4px solid transparent;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        border-bottom: 3px solid transparent;
         border-image: linear-gradient(90deg, var(--teal), var(--purple), var(--pink)) 1;
-        overflow: visible;
+        box-shadow: var(--shadow-md);
       }
       
       /* View Density Switcher */
