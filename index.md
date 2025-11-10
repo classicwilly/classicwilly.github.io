@@ -116,7 +116,7 @@ title: Home - The Wonky Sprout
   }
   
   .chapter-marker {
-    position: absolute;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
     width: 60px;
@@ -130,6 +130,7 @@ title: Home - The Wonky Sprout
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8), 0 0 40px var(--accent-glow);
     z-index: 2;
     animation: pulse 2s ease-in-out infinite;
+    margin: 3rem auto 2rem;
   }
   
   @keyframes pulse {
@@ -160,11 +161,11 @@ title: Home - The Wonky Sprout
   <div class="path-line"></div>
   
   <!-- Chapter 1: The Diagnosis -->
-  <div class="chapter-marker" style="--accent: var(--circuit-teal); --accent-glow: rgba(26, 188, 156, 0.5); top: 2rem;">
+  <div class="chapter-marker" style="--accent: var(--circuit-teal); --accent-glow: rgba(26, 188, 156, 0.5);">
     🔍
   </div>
   
-  <div class="story-card left" style="--accent: var(--circuit-teal); margin-top: 6rem;">
+  <div class="story-card left" style="--accent: var(--circuit-teal);">
     <div class="story-icon">🧩</div>
     <h2 class="story-title">The Diagnosis</h2>
     <p class="story-highlight">At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</p>
@@ -184,11 +185,11 @@ title: Home - The Wonky Sprout
   </div>
   
   <!-- Chapter 2: The Shift -->
-  <div class="chapter-marker" style="--accent: var(--orange); --accent-glow: rgba(255, 152, 0, 0.5); top: 55%;">
+  <div class="chapter-marker" style="--accent: var(--orange); --accent-glow: rgba(255, 152, 0, 0.5);">
     ⚡
   </div>
   
-  <div class="story-card right" style="--accent: var(--orange); margin-top: 6rem;">
+  <div class="story-card right" style="--accent: var(--orange);">
     <div class="story-icon">👨‍👧‍👦</div>
     <h2 class="story-title">The Shift</h2>
     <p class="story-highlight">But this isn't just my story anymore. I am not just a fixer—I am a father.</p>
@@ -209,11 +210,11 @@ title: Home - The Wonky Sprout
   </div>
   
   <!-- Chapter 3: The Blueprint -->
-  <div class="chapter-marker" style="--accent: var(--yellow); --accent-glow: rgba(255, 193, 7, 0.5); bottom: 12rem;">
+  <div class="chapter-marker" style="--accent: var(--yellow); --accent-glow: rgba(255, 193, 7, 0.5);">
     🌱
   </div>
   
-  <div class="story-card left" style="--accent: var(--yellow); margin-top: 6rem;">
+  <div class="story-card left" style="--accent: var(--yellow);">
     <div class="story-icon">🛡️</div>
     <h2 class="story-title">The Blueprint</h2>
     <p class="story-text">We are building our own <span class="story-emphasis">"bubble shield"</span> as a team. Finding the structure that makes our chaos feel safe.</p>
