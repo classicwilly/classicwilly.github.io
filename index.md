@@ -52,46 +52,46 @@ title: Home - The Wonky Sprout
 ---
 
 <div style="max-width: 900px; margin: 0 auto; padding: 0 1rem;">
-  <div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin-bottom: 2rem;">
-    <h2 style="color: var(--circuit-teal); font-size: 2rem; margin-bottom: 1rem;">The Diagnosis</h2>
+  <div class="content-card" style="border-left: 4px solid var(--circuit-teal); margin-bottom: 2rem; padding: 1.5rem;">
+    <h2 style="color: var(--circuit-teal); font-size: 2rem; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">The Diagnosis</h2>
     
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: var(--text-bright);"><strong>At forty years old, the unwritten script of my entire life was finally given a title: Autism and ADHD.</strong></p>
 
-    <p style="line-height: 1.8; margin-bottom: 1rem;">For decades, I was simply the "fixer." I was the 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but I couldn't find the blueprint for the unstructured chaos in my own head.</p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">For decades, I was simply the "fixer." I was the 15-year Navy Systems Diagnostician who could build a blueprint for any complex machine, but I couldn't find the blueprint for the unstructured chaos in my own head.</p>
 
-    <p style="line-height: 1.8; margin-bottom: 1rem;">I was the one called a "hothead" in the office, the socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout. My entire life felt like a cascade of misinterpretations.</p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">I was the one called a "hothead" in the office, the socially awkward engineer who avoided group projects, running my life on an operating system that was constantly overheating into autistic burnout. My entire life felt like a cascade of misinterpretations.</p>
 
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>That diagnosis wasn't a failure. It was the key.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: var(--text-bright);"><strong>That diagnosis wasn't a failure. It was the key.</strong></p>
 
-    <p style="line-height: 1.8;">It was the moment I realized I wasn't broken; I was just running on a different architecture. It was the <em>feature</em>, not the bug, that explains why I see the patterns in the noise. It's why I don't just patch holes—I find the root cause and re-engineer the foundation.</p>
+    <p style="line-height: 1.8; color: var(--text-light);">It was the moment I realized I wasn't broken; I was just running on a different architecture. It was the <em style="color: var(--circuit-teal); font-style: normal;">feature</em>, not the bug, that explains why I see the patterns in the noise. It's why I don't just patch holes—I find the root cause and re-engineer the foundation.</p>
   </div>
 
-  <div class="content-card" style="border-left: 4px solid var(--orange); margin-bottom: 2rem;">
-    <h2 style="color: var(--orange); font-size: 2rem; margin-bottom: 1rem;">The Shift</h2>
+  <div class="content-card" style="border-left: 4px solid var(--orange); margin-bottom: 2rem; padding: 1.5rem;">
+    <h2 style="color: var(--orange); font-size: 2rem; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">The Shift</h2>
     
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>But this isn't just my story anymore. This is a new world.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: var(--text-bright);"><strong>But this isn't just my story anymore. This is a new world.</strong></p>
 
-    <p style="line-height: 1.8; margin-bottom: 1rem;">I am not just a fixer; <strong>I am a father.</strong></p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">I am not just a fixer; <strong>I am a father.</strong></p>
 
-    <p style="line-height: 1.8; margin-bottom: 1rem;">I have two "wonky sprouts" of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, and my own need for structure reflected in them. I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.</p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">I have two "wonky sprouts" of my own—a nine-year-old son and a six-year-old daughter. I see my own energy, my own chaos, and my own need for structure reflected in them. I see them navigating the same unwritten script that I did, and my pursuit is no longer just about fixing machines.</p>
 
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>It's about being the father they deserve.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: var(--text-bright);"><strong>It's about being the father they deserve.</strong></p>
 
-    <p style="line-height: 1.8; margin-bottom: 0.5rem;">I can't give them a map I was never given.</p>
+    <p style="line-height: 1.8; margin-bottom: 0.5rem; color: var(--text-light);">I can't give them a map I was never given.</p>
 
-    <p style="line-height: 1.8;">So, we are learning to draw one together.</p>
+    <p style="line-height: 1.8; color: var(--text-light);">So, we are learning to draw one together.</p>
   </div>
 
-  <div class="content-card" style="border-left: 4px solid var(--yellow); margin-bottom: 3rem;">
-    <h2 style="color: var(--yellow); font-size: 2rem; margin-bottom: 1rem;">The Blueprint</h2>
+  <div class="content-card" style="border-left: 4px solid var(--yellow); margin-bottom: 3rem; padding: 1.5rem;">
+    <h2 style="color: var(--yellow); font-size: 2rem; margin-bottom: 1rem; font-family: 'Space Grotesk', sans-serif;">The Blueprint</h2>
     
-    <p style="line-height: 1.8; margin-bottom: 1rem;">This is a new world, and we are building our own "bubble shield" as a team. We are finding the structure that makes our chaos feel safe, and in teaching them, I am finally learning to build my own.</p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">This is a new world, and we are building our own "bubble shield" as a team. We are finding the structure that makes our chaos feel safe, and in teaching them, I am finally learning to build my own.</p>
 
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem;"><strong>This is The Wonky Sprout.</strong></p>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1rem; color: var(--text-bright);"><strong>This is The Wonky Sprout.</strong></p>
 
-    <p style="line-height: 1.8; margin-bottom: 1rem;">This is our shared journey. It's the "Internal Blueprint" we are co-authoring for a world that wasn't built for us.</p>
+    <p style="line-height: 1.8; margin-bottom: 1rem; color: var(--text-light);">This is our shared journey. It's the "Internal Blueprint" we are co-authoring for a world that wasn't built for us.</p>
 
-    <p style="line-height: 1.8;">It's the structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father. It's a system that is strong, authentic, and has feeling.</p>
+    <p style="line-height: 1.8; color: var(--text-light);">It's the structure of a Systems Diagnostician, softened by the chaos of a neurodivergent father. It's a system that is strong, authentic, and has feeling.</p>
   </div>
 </div>
 
