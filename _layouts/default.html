@@ -2198,44 +2198,41 @@
       
       /* Emergency Banner */
       .emergency-banner {
-        background: linear-gradient(135deg, var(--purple), var(--red));
-        border: 2px solid var(--yellow);
-        border-radius: 12px;
-        padding: 1rem;
-        margin: 3rem 0;
+        background: var(--card-dark);
+        border: 2px solid var(--red);
+        border-radius: 8px;
+        padding: 0.75rem;
+        margin: 2rem 0;
         text-align: center;
-        animation: pulse-border 2s ease-in-out infinite;
-      }
-      
-      @keyframes pulse-border {
-        0%, 100% { border-color: var(--yellow); box-shadow: 0 0 20px var(--orange); }
-        50% { border-color: var(--pink); box-shadow: 0 0 30px var(--red); }
       }
       
       .emergency-banner h3 {
         color: var(--text-bright);
-        font-size: 1.125rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-        letter-spacing: 0.5px;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
       }
       
       .emergency-link {
-        /* Inherits base button styles */
         display: inline-block;
-        font-size: 1.1rem;
-        border-color: var(--yellow);
+        color: var(--red);
+        font-size: 0.95rem;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        border: 2px solid var(--red);
+        border-radius: 6px;
+        transition: all 0.2s;
       }
       
       .emergency-link:hover {
-        /* Inherits base hover, override border color */
-        border-color: var(--yellow);
+        background: rgba(231, 76, 60, 0.1);
         color: var(--text-bright);
-        box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
       }
       
       .emergency-link:focus {
-        outline: none;
+        outline: 2px solid var(--red);
+        outline-offset: 2px;
       }
       
       /* Testimonial Section */
@@ -3028,9 +3025,8 @@
       
       <!-- Emergency Banner (site-wide) -->
       <aside class="emergency-banner" role="complementary" aria-label="Emergency resources">
-        <h3>🚨 IN CRISIS? FROZEN? CAN'T START ANYTHING?</h3>
         <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="emergency-link" aria-label="Access emergency executive dysfunction protocol">
-          → EXECUTIVE DYSFUNCTION EMERGENCY PROTOCOL (USE NOW)
+          🚨 Emergency Protocol
         </a>
       </aside>
       
