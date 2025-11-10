@@ -7,7 +7,8 @@ title: Tracker Stats
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">📈 <span style="color: var(--pink);">Daily Tracker Statistics</span></h1>
   <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">Track your patterns, streaks, and system health over time.</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Track your patterns, streaks, and system health over time.</p>
+  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
 ## CURRENT STREAKS

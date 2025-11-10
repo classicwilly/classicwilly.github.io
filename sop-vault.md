@@ -6,7 +6,8 @@ title: The SOP Vault
 <div style="text-align: center; margin-bottom: 3rem;">
   <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">📋 <span style="color: var(--circuit-teal);">SOP Vault</span></h1>
   <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0;">Standard Operating Procedures for a neurodivergent life</p>
+  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 2.16rem 0;">Standard Operating Procedures for a neurodivergent life</p>
+  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
 </div>
 
 <div class="page-navigation">
