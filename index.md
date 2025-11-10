@@ -10,8 +10,8 @@ title: Home - The Wonky Sprout
   </div>
   
   <div class="hero-content">
-    <div style="text-align: center; margin-bottom: 1.16rem;">
-      <h1 style="font-size: 1.4rem; margin-bottom: 0; white-space: nowrap;">💬 <span style="color: var(--circuit-teal);">A neurodivergent father engineering structure from chaos</span></h1>
+    <div style="text-align: center; margin-bottom: 1.16rem; border: none;">
+      <h1 style="font-size: 1.4rem; margin-bottom: 0; white-space: nowrap; border: none !important; border-bottom: none !important;">💬 <span style="color: var(--circuit-teal);">A neurodivergent father engineering structure from chaos</span></h1>
     </div>
     
     <!-- Gradient Line -->
