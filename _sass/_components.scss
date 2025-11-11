@@ -118,3 +118,47 @@
     column-count: 1; /* Single column on smaller screens */
   }
 }
+
+/* ==========================================================================
+   Page-level card grouping: make top-level content blocks appear as cards
+   ========================================================================== */
+
+/* Apply card-like visuals to immediate children of main content (except the page title and small helpers) */
+.main-content > *:not(h1):not(.page-navigation):not(.info-box):not(.skip-link) {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  margin: 0 0 1rem 0;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Make section headings inside cards stand out without large top margin */
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  margin-top: 0;
+}
+
+/* Ensure lists inside main content don't overflow card padding */
+.main-content ul,
+.main-content ol {
+  margin: 0 0 0.5rem 1rem;
+  padding: 0;
+}
+
+/* Make any anchor that wraps a whole block (used in templates) display like a card */
+a.block-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hover/focus state for block cards */
+.main-content > *:not(h1):not(.page-navigation):hover,
+.main-content > *:not(h1):not(.page-navigation):focus-within {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
