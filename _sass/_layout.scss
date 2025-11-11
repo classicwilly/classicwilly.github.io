@@ -46,11 +46,11 @@ body {
   height: 100vh;
   background-color: var(--card-dark);
   border-right: 1px solid var(--border-gray);
-  padding: 1rem; /* reduced padding to remove excess gaps */
+  padding: 0.75rem; /* tightened to pack more nav items */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.4rem;
   z-index: 200;
 }
 
@@ -110,13 +110,13 @@ body {
 .main-content-wrapper {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  padding: 1.25rem; /* reduce outer padding */
+  padding: 0.75rem; /* tighter outer padding so content sits closer to nav */
   box-sizing: border-box;
 }
 
 .main-content {
-  max-width: 920px; /* slightly narrower for denser content */
-  margin: 0 auto;
+  max-width: none; /* allow content to fill the wrapper (denser layout) */
+  margin: 0; /* remove centering so grid starts nearer the sidebar */
 }
 
 /* Mobile styles */

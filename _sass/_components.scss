@@ -7,15 +7,15 @@
   background-color: var(--card-dark);
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-md);
-  padding: 0.75rem; /* further reduce padding to minimize dead space inside cards */
-  margin-bottom: 0.75rem; /* tighter vertical rhythm for denser layout */
+  padding: 0.6rem; /* further reduced padding to minimize dead space inside cards */
+  margin-bottom: 0.5rem; /* tighter vertical rhythm for denser layout */
   box-shadow: var(--shadow-sm);
 }
 
 /* Very compact mode for lists/tables inside content */
 .main-content.compact > *:not(.keep-grid) {
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .keep-card { margin-bottom: 0; }
