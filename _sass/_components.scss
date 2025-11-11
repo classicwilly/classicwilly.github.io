@@ -3,9 +3,23 @@
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-md);
   /* slightly tighter padding to reduce dead space in hero/intro cards */
-  padding: 0.5rem;
-  margin-bottom: 0.45rem; /* tighter vertical rhythm for denser layout */
+  padding: 0.45rem;
+  margin-bottom: 0.4rem; /* tighter vertical rhythm for denser layout */
   box-shadow: var(--shadow-sm);
+}
+
+/* Page hero / large title card tuning */
+.page-hero,
+.hero-card,
+.main-content > .hero {
+  padding: 0.5rem 0.6rem; /* reduce large hero padding */
+  border-radius: calc(var(--radius-md) * 1);
+}
+.page-hero .card-title,
+.hero-card .card-title,
+.main-content > .hero .card-title {
+  font-size: 1.12rem; /* slightly smaller hero title */
+  margin-bottom: 0.22rem;
 }
 
 /* Very compact mode for lists/tables inside content */
