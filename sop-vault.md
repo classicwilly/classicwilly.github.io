@@ -2,6 +2,7 @@
 layout: default
 title: The SOP Vault
 ---
+<!-- rebuild-note: force pages rebuild - marker: 2025-11-11T00:00:00Z -->
 <div class="settings-header">
   <h1>📋 <span style="color: var(--circuit-teal);">The Vault</span></h1>
   <div class="header-divider"></div>
