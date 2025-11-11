@@ -21,7 +21,9 @@ git clone --mirror https://github.com/OWNER/REPO.git
 cd REPO.git
 
 # 2) Create replacements file (replace the long key below with your actual secret)
-$repl = @"AIzaSyBJT8wLAI8EJjW_5fb1RvFA-aFh4jCCkIk==>REDACTED_IN_HISTORY"@
+# NOTE: Do NOT commit the real secret into the repository. Replace <YOUR_SECRET_HERE>
+# in the local `replacements.txt` you create just before running `git-filter-repo`.
+$repl = @"<YOUR_SECRET_HERE>=>REDACTED_IN_HISTORY"@
 Set-Content -Path .\replacements.txt -Value $repl -Encoding UTF8
 
 # 3) Run git-filter-repo to replace the secret across history
