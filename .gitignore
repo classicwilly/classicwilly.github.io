@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Compiled CSS output (built from SCSS)
+assets/css/main.css
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
