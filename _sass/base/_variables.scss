@@ -7,7 +7,7 @@
   --background-primary: #121212; /* A very dark grey, not pure black */
   --background-secondary: #1e1e1e; /* Slightly lighter for cards/modules */
   --background-tertiary: #2a2a2a; /* For interactive elements on hover */
-  --sidebar-width: 340px; /* slightly wider so left nav can hold more items / controls */
+  --sidebar-width: 300px; /* slightly narrower to reduce white gap */
   
   --text-primary: #e0e0e0; /* Off-white for main text, easy on the eyes */
   --text-secondary: #a0a0a0; /* Grey for metadata, descriptions */
@@ -33,7 +33,7 @@
 
   /* Spacing & Sizing */
   --spacing-unit: 1rem;
-  --sidebar-width: 340px; /* This line must be present and set to 340px */
+  --sidebar-width: 300px; /* keep consistent */
   --content-max-width: 900px;
 
   /* Borders & Shadows */

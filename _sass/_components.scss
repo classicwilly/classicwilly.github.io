@@ -162,3 +162,18 @@ a.block-card {
   border-color: var(--accent-primary);
 }
 
+/* Darken scrollbar tracks and thumbs for sidebar and body to avoid white tracks */
+.sidebar::-webkit-scrollbar, body::-webkit-scrollbar {
+  width: 12px;
+}
+.sidebar::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+  background: var(--background-primary);
+}
+.sidebar::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+  background: var(--background-tertiary);
+  border-radius: 6px;
+  border: 3px solid var(--background-primary);
+}
+/* Firefox */
+* { scrollbar-width: thin; scrollbar-color: var(--background-tertiary) var(--background-primary); }
+
