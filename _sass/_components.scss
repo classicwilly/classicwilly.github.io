@@ -138,4 +138,10 @@
 .modal-suggestion { padding:0.5rem 0; border-bottom:1px dashed rgba(255,255,255,0.03); }
 .modal-action { display:inline-block; margin-bottom:0.25rem; padding:0.4rem 0.6rem; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--text-bright); cursor:pointer; }
 .modal-desc { margin:0; color:var(--text-light); font-size:0.9rem; }
+.wonky-remote-badge { margin-left:0.5rem; background:var(--circuit-teal); color:var(--card-dark); padding:0.15rem 0.4rem; border-radius:4px; font-size:0.8rem; }
+
+/* Consent modal styling (reuses wonky-modal classes) */
+#wonky-consent-modal .wonky-modal-content { max-width:560px; }
+#wonky-consent-modal .wonky-modal-body p { margin:0 0 0.5rem 0; color:var(--text-light); }
+#wonky-consent-modal .modal-action { background:var(--circuit-teal); color:var(--card-dark); border:none; }
 

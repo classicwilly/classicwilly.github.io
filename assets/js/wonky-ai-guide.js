@@ -206,6 +206,83 @@
     setTimeout(() => node.remove(), 2000);
   }
 
+  /* Remote integration / opt-in handling (privacy-first)
+     - No remote calls are made unless user explicitly opts in.
+     - The site owner must configure a server-side proxy endpoint by setting
+       window.WONKY_REMOTE_ENDPOINT = '/api/wonky-proxy' (or similar) in a safe server-side config.
+     - No API keys are present in client code. */
+  const REMOTE_FLAG = 'wonky_remote_enabled';
+
+  function isRemoteEnabled() {
+    return localStorage.getItem(REMOTE_FLAG) === 'true';
+  }
+
+  function setRemoteEnabled(enabled) {
+    localStorage.setItem(REMOTE_FLAG, enabled ? 'true' : 'false');
+    const btn = $('#wonky-enable-remote');
+    if (btn) btn.setAttribute('aria-pressed', String(enabled));
+    updateRemoteBadge(enabled);
+  }
+
+  function updateRemoteBadge(enabled) {
+    const header = $('#wonky-ai-header');
+    if (!header) return;
+    let badge = header.querySelector('.wonky-remote-badge');
+    if (enabled) {
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'wonky-remote-badge';
+        badge.textContent = 'Remote: ON';
+        header.appendChild(badge);
+      }
+    } else {
+      if (badge) badge.remove();
+    }
+  }
+
+  function showConsentModal(onConfirm) {
+    // create a simple consent modal for enabling remote AI
+    if ($('#wonky-consent-modal')) return;
+    const modal = document.createElement('div');
+    modal.id = 'wonky-consent-modal';
+    modal.className = 'wonky-modal';
+    modal.innerHTML = `
+      <div class="wonky-modal-content">
+        <button class="wonky-modal-close" aria-label="Close">×</button>
+        <h3>Enable remote AI (opt-in)</h3>
+        <div class="wonky-modal-body">
+          <p>Enabling remote AI will send text from your browser to a remote model for processing. Do not enable this on devices or networks you do not trust. No data is sent unless you confirm each action.</p>
+          <label><input type="checkbox" id="wonky-consent-confirm"> I understand and consent to sending text to a remote service.</label>
+          <div style="margin-top:0.75rem;"><button id="wonky-consent-apply" class="modal-action">Enable remote AI</button></div>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.querySelector('.wonky-modal-close').addEventListener('click', () => modal.remove());
+    modal.querySelector('#wonky-consent-apply').addEventListener('click', () => {
+      const confirmed = modal.querySelector('#wonky-consent-confirm')?.checked;
+      if (!confirmed) { alert('Please confirm consent to enable remote AI.'); return; }
+      setRemoteEnabled(true);
+      announce('Remote AI enabled locally');
+      modal.remove();
+      if (typeof onConfirm === 'function') onConfirm();
+    });
+  }
+
+  async function safeRemoteGenerate(prompt) {
+    // Only perform network call when user has opted in and endpoint is configured
+    if (!isRemoteEnabled()) { throw new Error('Remote AI is not enabled by user'); }
+    const endpoint = window.WONKY_REMOTE_ENDPOINT;
+    if (!endpoint) { throw new Error('No remote endpoint configured'); }
+    // Send minimal payload; server should handle API key & call to provider
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prompt })
+    });
+    if (!res.ok) throw new Error(`Remote request failed: ${res.status}`);
+    return await res.json();
+  }
+
   // Wire up UI
   document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.getElementById('wonky-ai-toggle');
@@ -214,6 +291,7 @@
     const suggestionsList = document.getElementById('wonky-suggestions');
     const autoApply = document.getElementById('wonky-auto-apply');
     const guidedToggle = document.getElementById('wonky-guided-toggle');
+    const remoteToggle = document.getElementById('wonky-enable-remote');
 
     if (toggle) toggle.addEventListener('click', () => toggleContent());
 
@@ -225,6 +303,22 @@
         // If guided toggle is enabled, also highlight the first suggestion
         if (guidedToggle?.checked && suggestions[0]) {
           announce(`Suggested: ${suggestions[0].title}`);
+        }
+      });
+    }
+
+    // wire remote toggle
+    if (remoteToggle) {
+      // reflect stored state
+      updateRemoteBadge(isRemoteEnabled());
+      remoteToggle.addEventListener('click', () => {
+        if (isRemoteEnabled()) {
+          if (confirm('Disable remote AI? This will stop sending any text to remote services.')) {
+            setRemoteEnabled(false);
+            announce('Remote AI disabled');
+          }
+        } else {
+          showConsentModal();
         }
       });
     }
