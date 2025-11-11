@@ -43,4 +43,4 @@ title: Home - The Wonky Sprout
     <h2>💼 Workspace</h2>
     <p>Tools and links for work.</p>
   </a>
-</div>
+</div>\n<!-- rebuild: fix include render -->\n
