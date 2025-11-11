@@ -18,7 +18,6 @@ $cwd = Split-Path -Parent $MyInvocation.MyCommand.Definition
 Push-Location $cwd\.. | Out-Null
 
 $built = $false
-
 if (Get-Command bundle -ErrorAction SilentlyContinue) {
     Write-Host "Running: bundle exec jekyll build"
     try {
@@ -36,7 +35,7 @@ if (Get-Command bundle -ErrorAction SilentlyContinue) {
         Write-Host "jekyll build failed."
     }
 } else {
-    Write-Host "Jekyll not found. Skipping build step and checking assets/css/main.css directly."
+    Write-Host "Jekyll not found. Will attempt local CSS compilation if possible, else check assets/css/main.css directly."
 }
 
 # Determine which CSS to check: prefer _site copy (if built), else repo asset
@@ -45,9 +44,43 @@ if ($built -and (Test-Path "_site/assets/css/main.css")) {
 } elseif (Test-Path "assets/css/main.css") {
     $cssPath = "assets/css/main.css"
 } else {
-    Write-Error "No compiled CSS found. Expected _site/assets/css/main.css or assets/css/main.css"
-    Pop-Location | Out-Null
-    exit 2
+    # Try local compilation paths: prefer global 'sass', else use npm-based build if package.json present
+    $compiled = $false
+
+    if (Get-Command sass -ErrorAction SilentlyContinue) {
+        Write-Host "Found 'sass' CLI. Compiling assets/css/main.scss -> assets/css/main.css"
+        try {
+            sass assets/css/main.scss:assets/css/main.css --no-source-map
+            $compiled = $true
+        } catch {
+            Write-Host "sass compilation failed: $_"
+        }
+    } elseif ((Test-Path "package.json") -and (Get-Command npm -ErrorAction SilentlyContinue)) {
+        Write-Host "No global 'sass' found, but package.json exists. Running 'npm ci' then 'npm run build:css'"
+        try {
+            if (Test-Path "package-lock.json") {
+                npm ci --no-audit --no-fund | Write-Host
+            } else {
+                npm install --no-audit --no-fund | Write-Host
+            }
+            npm run build:css | Write-Host
+            if (Test-Path "assets/css/main.css") { $compiled = $true }
+        } catch {
+            Write-Host "npm-based build failed: $_"
+        }
+    } else {
+        Write-Error "No compiled CSS found and no local build method available. Expected _site/assets/css/main.css or assets/css/main.css, or a local 'sass' / npm toolchain."
+        Pop-Location | Out-Null
+        exit 2
+    }
+
+    if ($compiled -and (Test-Path "assets/css/main.css")) {
+        $cssPath = "assets/css/main.css"
+    } else {
+        Write-Error "Attempted local compilation but could not produce assets/css/main.css"
+        Pop-Location | Out-Null
+        exit 2
+    }
 }
 
 Write-Host "Checking compiled CSS at: $cssPath"

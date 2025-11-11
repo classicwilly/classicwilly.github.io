@@ -1,0 +1,11 @@
+{
+  "name": "wonky-sprout-os",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.73.1"
+  },
+  "scripts": {
+  "build:css": "sass --load-path=_sass assets/css/main.local.scss:assets/css/main.css --no-source-map"
+  }
+}
