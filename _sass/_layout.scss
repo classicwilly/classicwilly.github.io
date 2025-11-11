@@ -21,6 +21,19 @@ body {
   border: 0;
 }
 
+/* Make screen-reader-only elements visible when focused (useful for skip links) */
+.sr-only:focus,
+.sr-only:active,
+.sr-only:focus-visible {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 .page-container {
   display: flex;
 }
@@ -33,15 +46,16 @@ body {
   height: 100vh;
   background-color: var(--card-dark);
   border-right: 1px solid var(--border-gray);
-  padding: 1.5rem;
+  padding: 1rem; /* reduced padding to remove excess gaps */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   z-index: 200;
 }
 
 .sidebar-header {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem; /* tighten header spacing */
 }
 
 .sidebar-title {
@@ -68,30 +82,40 @@ body {
 
 .sidebar-nav li a {
   display: block;
-  padding: 0.75rem 0;
+  padding: 0.5rem 0; /* reduce vertical padding */
   color: var(--text-light);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: var(--transition);
-  border-left: 3px solid transparent;
-  padding-left: 10px;
+  border-left: 4px solid transparent; /* slightly stronger visual indicator */
+  padding-left: 8px;
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav li a:hover,
+.sidebar-nav li a:focus {
   color: var(--text-bright);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.04);
   border-left-color: var(--circuit-teal);
+}
+
+/* Active state for the current page */
+.sidebar-nav li a.is-active,
+.sidebar-nav li a[aria-current="page"] {
+  color: var(--text-bright);
+  background-color: rgba(45, 204, 204, 0.06);
+  border-left-color: var(--circuit-teal);
+  font-weight: 700;
 }
 
 .main-content-wrapper {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  padding: 2rem;
+  padding: 1.25rem; /* reduce outer padding */
   box-sizing: border-box;
 }
 
 .main-content {
-  max-width: 960px;
+  max-width: 920px; /* slightly narrower for denser content */
   margin: 0 auto;
 }
 

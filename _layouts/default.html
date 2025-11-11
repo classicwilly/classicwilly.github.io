@@ -69,7 +69,12 @@
             </div>
             <ul class="sidebar-nav">
                 {% for item in site.navigation %}
-                <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+                <li>
+                  <a href="{{ item.url | relative_url }}" 
+                     {% if page.url == item.url %}aria-current="page" class="is-active"{% endif %}>
+                     {{ item.name }}
+                  </a>
+                </li>
                 {% endfor %}
             </ul>
         </nav>
