@@ -61,8 +61,8 @@
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 
     <div class="page-container">
-        <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
-        <nav class="sidebar" id="desktop-nav">
+  <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
+  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
             <div class="sidebar-header">
                 <a href="/" class="sidebar-title">Wonky Sprout OS</a>
                 <p class="sidebar-tagline">Internal Blueprint</p>
@@ -81,7 +81,7 @@
                 <span class="hamburger-inner"></span>
             </span>
         </button>
-        <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Mobile">
             <a href="/" class="sidebar-title">Wonky Sprout OS</a>
             <ul class="sidebar-nav">
                 {% for item in site.navigation %}
