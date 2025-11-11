@@ -1,19 +1,118 @@
-// _sass/components/_cards.scss
+/* ==========================================================================
+   6. Checklist & Card Components - Harmonized with New Design System
+   ========================================================================== */
 
-// This file contains styles for all card-like components.
+// Default card styles for all card-like elements
+.card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; // Default margin for cards not in a grid
+  border: 1px solid var(--border-color); // Default subtle border
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  color: var(--text-primary); // Ensure text color is consistent
+  text-decoration: none; // Remove underline from card links
+}
 
+.card:hover {
+  transform: translateY(-2px); // Subtle lift on hover
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary); // Highlight border on hover
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary); // Ensure title color is consistent
+}
+
+.card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1; // Allows description to take up available space in flex column
+  margin: 0;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: var(--text-disabled);
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.75rem;
+}
+
+// Specific styles for checklist cards within a grid
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: start; // Align items to the start of their grid area
+}
+
+.checklist-card {
+  @extend .card; // Inherit default card styles
+  display: flex;
+  flex-direction: column;
+  height: 100%; // Ensure cards in grid take full height of their cell
+  border-top: 4px solid transparent; // Default for cards without specific color
+}
+
+.checklist-card:hover {
+  transform: translateY(-4px); // More pronounced lift for checklist cards
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.checklist-card.is-disabled {
+  background-color: transparent;
+  border: 1px dashed var(--border-color);
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  border-top: 4px dashed var(--border-color); // Dashed top border for disabled
+}
+.checklist-card.is-disabled:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--border-color);
+}
+
+/* Card Color Variants - More prominent borders */
+.checklist-card.is-green { border-top-color: var(--color-green); }
+.checklist-card.is-yellow { border-top-color: var(--color-yellow); }
+.checklist-card.is-blue { border-top-color: var(--color-blue); }
+.checklist-card.is-purple { border-top-color: var(--color-purple); }
+.checklist-card.is-red { border-top-color: var(--color-red); } // Added red variant
+.checklist-card.is-teal { border-top-color: var(--color-teal); } // Added teal variant
+
+// Info Box (for checklists.md) - Harmonized
+.info-box {
+  background: var(--background-secondary);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
+  border-left: 4px solid transparent; // Default for info boxes
+}
+
+.info-box.is-teal { border-left-color: var(--color-teal); }
+.info-box.is-green { border-left-color: var(--color-green); }
+
+// Other specific card types (game, keep, about) - Harmonized
 .game-card,
 .keep-card,
 .about-card {
-  background-color: var(--card-dark);
-  border: 1px solid var(--border-gray);
-  border-radius: var(--radius-md, 8px);
-  padding: 1.5rem; // Standardized padding
-  box-shadow: var(--shadow-sm);
-  transition: var(--transition);
+  @extend .card; // Inherit default card styles
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  border-top: 4px solid transparent; // Default for these cards
 }
 
 .keep-card {
@@ -22,31 +121,17 @@
 }
 
 .about-card {
-  &.is-red { border-color: var(--red); h2, .card-title { color: var(--red); } }
-  &.is-green { border-color: var(--green); h2, .card-title { color: var(--green); } }
-  &.is-blue { border-color: var(--blue); h2, .card-title { color: var(--blue); } }
-  &.is-yellow { border-color: var(--yellow); h2, .card-title { color: var(--yellow); } }
-  &.is-purple { border-color: var(--purple); h2, .card-title { color: var(--purple); } }
-  &.is-teal { border-color: var(--teal); h2, .card-title { color: var(--teal); } }
-  &.is-orange { border-color: var(--orange); h2, .card-title { color: var(--orange); } }
+  &.is-red { border-top-color: var(--color-red); }
+  &.is-green { border-top-color: var(--color-green); }
+  &.is-blue { border-top-color: var(--color-blue); }
+  &.is-yellow { border-top-color: var(--color-yellow); }
+  &.is-purple { border-top-color: var(--color-purple); }
+  &.is-teal { border-top-color: var(--color-teal); }
+  // Assuming an orange color variable exists in your design system
+  &.is-orange { border-top-color: var(--color-orange, orange); }
 }
 
 .game-card {
-  // Specific overrides for game cards
   padding: 2rem;
-  border-width: 2px; // Make them slightly heavier
-}
-
-// Generic card content styles
-.card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--circuit-teal);
-  margin: 0 0 0.5rem 0;
-}
-
-.card-body {
-  color: var(--text-light);
-  font-size: 1rem;
-  line-height: 1.5;
+  border-top-width: 6px; // Make them slightly heavier
 }

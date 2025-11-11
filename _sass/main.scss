@@ -1,0 +1,22 @@
+// Base styles
+@import "base/variables";
+@import "base/reset";
+@import "base/layout";
+
+// Components
+@import "components";
+
+// Page-specific styles
+@import "pages/keep-page";
+@import "pages/wonky-ai-page";
+
+/* --- Wonky AI Widget (Directly in main.scss for priority) --- */
+#wonky-ai-widget {
+  position: fixed;
+  right: 16px;
+  bottom: 90px;
+  width: 340px !important; /* Aggressive override */
+  background: var(--card-dark);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+}
