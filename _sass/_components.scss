@@ -162,6 +162,15 @@ a.block-card {
   border-color: var(--accent-primary);
 }
 
+/* Cursor + focus for block-card interactive behavior */
+.block-card {
+  cursor: pointer;
+}
+.block-card:focus {
+  outline: 3px solid rgba(138,180,248,0.18);
+  outline-offset: 3px;
+}
+
 /* Darken scrollbar tracks and thumbs for sidebar and body to avoid white tracks */
 .sidebar::-webkit-scrollbar, body::-webkit-scrollbar {
   width: 12px;
