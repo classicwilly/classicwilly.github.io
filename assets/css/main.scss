@@ -1,3 +1,8 @@
-/* main.scss disabled: SCSS pipeline was causing compile errors on GitHub Pages.
-	The compiled fallback is available at assets/css/main.css. Partial sources
-	live in _sass/ for future modular builds. */
+---
+---
+
+@import "variables";
+@import "layout";
+@import "components";
+@import "keep";
+

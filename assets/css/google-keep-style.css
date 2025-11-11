@@ -1,23 +1,8 @@
-/* assets/css/google-keep-style.css */
+/* assets/css/google-keep-style.css
+   DEPRECATED: moved into _sass/_keep.scss and compiled into assets/css/main.css
+   This file is kept only for historical reference and is not linked from layouts.
+*/
 
-:root {
-  --hover-border: #989ca0;
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --glow-teal: 0 0 15px -3px rgba(45, 200, 200, 0.2);
-  --input-bg: #303134;
-  --input-border: #5f6368;
-}
-
-.keep-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.keep-card {
-  background-color: var(--card-dark);
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-md);
   padding: 1rem;
