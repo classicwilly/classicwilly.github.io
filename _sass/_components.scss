@@ -1,79 +1,81 @@
-.main-content {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-  align-items: start;
+/* ==========================================================================
+   6. Components - Simplified for a Calm Experience
+   ========================================================================== */
+
+/* --- Default Card / Content Block --- */
+.card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
 }
 
-/* Default card surface for any block inside main-content. Use .full-width to span both columns */
-.main-content > *:not(.keep-grid),
-.main-content .card,
-.main-content section,
-.main-content .page-section {
-  background-color: var(--card-dark);
-  border: 1px solid var(--border-gray);
-  border-radius: var(--radius-md);
-  padding: 0.6rem; /* comfortable padding inside cards */
-  box-shadow: var(--shadow-sm);
-  margin: 0; /* grid gap handles spacing */
-  overflow: hidden;
-  aspect-ratio: 4 / 3; /* conservative aspect ratio so no dimension doubles the other */
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* --- Checklist Grid (for checklist index page) --- */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.checklist-card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Make elements that should be full width span both columns */
-.main-content > .full-width,
-.main-content .full-width {
-  grid-column: 1 / -1;
-  aspect-ratio: auto; /* let wide content control height */
+.checklist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+  text-decoration: none;
 }
 
-/* Page hero / large title card tuning */
-.page-hero,
-.hero-card,
-.main-content > .hero {
-  padding: 0.5rem 0.6rem; /* reduce large hero padding */
-  border-radius: calc(var(--radius-md) * 1);
-}
-.page-hero .card-title,
-.hero-card .card-title,
-.main-content > .hero .card-title {
-  font-size: 1.12rem; /* slightly smaller hero title */
-  margin-bottom: 0.22rem;
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Very compact mode for lists/tables inside content */
-.main-content.compact > *:not(.keep-grid) {
-  padding: 0.4rem;
-  margin-bottom: 0.4rem;
+/* Card Color Variants */
+.checklist-card.is-green { border-top: 4px solid var(--color-green); }
+.checklist-card.is-yellow { border-top: 4px solid var(--color-yellow); }
+.checklist-card.is-blue { border-top: 4px solid var(--color-blue); }
+.checklist-card.is-purple { border-top: 4px solid var(--color-purple); }
+
+
+/* --- Info Box (for checklists.md) --- */
+.info-box {
+  background: var(--background-secondary);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin: 2rem 0;
+  border: 1px solid var(--border-color);
 }
 
-.keep-card { margin-bottom: 0; }
+.info-box.is-teal { border-left: 4px solid var(--color-teal); }
+.info-box.is-green { border-left: 4px solid var(--color-green); }
 
-/* FAB (Floating Action Button) */
-.fab-container { position: fixed; bottom: 20px; right: 20px; z-index: 1010; }
-.fab { background-color: var(--circuit-teal); color: var(--card-dark); border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 24px; line-height: 56px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); cursor: pointer; transition: transform 0.2s ease-in-out; }
-.fab:hover { transform: scale(1.05); }
-.fab span { transition: transform 0.2s ease-in-out; display: inline-block; }
-.fab[aria-expanded="true"] span { transform: rotate(45deg); }
-.fab-menu { position: absolute; bottom: 65px; right: 5px; display: flex; flex-direction: column; gap: 10px; transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out; }
-.fab-menu[aria-hidden="true"] { opacity: 0; transform: translateY(10px); pointer-events: none; }
-.fab-menu[aria-hidden="false"] { opacity: 1; transform: translateY(0); }
-.fab-menu a { background-color: var(--card-dark); color: var(--text-bright); width: 48px; height: 48px; border-radius: 50%; text-align: center; line-height: 48px; font-size: 20px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.2); transition: var(--transition); }
-.fab-menu a:hover { background-color: var(--circuit-teal); color: var(--card-dark); transform: scale(1.1); }
 
-/* Accessibility helpers or small UI bits can go here */
-
-/* Skip-link visible on focus for keyboard users */
-.skip-link {
-  position: absolute; /* kept for layout fallback */
-  left: -9999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+/* --- Accessibility & UI Helpers --- */
 .skip-link:focus,
 .skip-link:active {
   left: 1rem;
@@ -81,67 +83,23 @@
   width: auto;
   height: auto;
   padding: 0.5rem 0.75rem;
-  background: var(--circuit-teal);
-  color: var(--card-dark);
+  background: var(--accent-primary);
+  color: var(--background-primary);
   border-radius: 4px;
   z-index: 9999;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
   text-decoration: none;
 }
 
-/* Sidebar scrolling & chrome (narrow scrollbar like screenshot) */
-.sidebar {
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.sidebar::-webkit-scrollbar { width: 10px; }
-.sidebar::-webkit-scrollbar-track { background: transparent; }
-.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
-.sidebar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.09); }
-
-/* Icon sizing inside sidebar nav; emojis will align with text */
-.sidebar-nav li a .nav-icon { font-size: 1.1rem; width: 24px; text-align: left; display:inline-block; }
-.sidebar-nav li a .nav-label { flex: 1; }
-
-/* Ensure Wonky AI area is presented as a card surface when present */
-.ask-wonky,
-.ask-wonky-card,
-#wonky-ai-widget,
-.wonky-ai-widget {
-  background-color: var(--card-dark);
-  border: 1px solid var(--border-gray);
-  border-radius: var(--radius-md);
-  padding: 0.6rem;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4 / 3;
+:focus-visible {
+  outline: 3px solid var(--accent-primary);
+  outline-offset: 2px;
 }
 
-/* Divider lines between sections */
-.sidebar .section-divider { height: 1px; background: var(--sidebar-divider); margin: 0.5rem 0; }
-
-/* Make nav feel like material list */
-.sidebar-nav li a { border-radius: 6px; }
-.sidebar-nav li a.is-active, .sidebar-nav li a[aria-current="page"] { background-color: rgba(30,136,229,0.06); border-left-color: var(--material-primary); }
-
-/* Respect user preference for reduced motion (important for vestibular/sensory sensitivities) */
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
   }
-  .fab,
-  .fab-menu {
-    transition: none !important;
-    transform: none !important;
-  }
-}
-
-/* Stronger focus-visible styles for keyboard users (helps navigation for executive dysfunction) */
-:focus-visible {
-  outline: 3px solid var(--circuit-teal);
-  outline-offset: 2px;
 }

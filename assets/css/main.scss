@@ -1,19 +1,20 @@
 ---
+# Only the blank front matter tells Jekyll to process this file
 ---
 
-@import "variables"; // 1. Variables and abstracts
-@import "base";      // 2. Base styles, reset, and typography
+// Import all the partials
+@import "variables";
+@import "base";
+@import "layout";
+@import "components";
 
-@import "utilities/helpers"; // 2. Utility classes
-
-@import "layout"; // 3. Main page layout (sidebar, grid)
-
-@import "components/buttons"; // 4. Component styles
-@import "components/cards";
-@import "components/games";
-@import "components/settings-page";
-@import "components/forms";
-@import "components/wonky-ai";
-@import "components/page-nav-links";
-@import "components/checklist-hub";
-@import "components/info-box";
+/* --- Wonky AI Widget (Directly in main.scss for priority) --- */
+#wonky-ai-widget {
+  position: fixed;
+  right: 16px;
+  bottom: 90px;
+  width: 340px !important; /* Aggressive override */
+  background: var(--card-dark);
+  border: 1px solid var(--border-gray);
+  border-radius: 8px;
+}
