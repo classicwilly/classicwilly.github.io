@@ -1,0 +1,34 @@
+name: CI — Jekyll build & SCSS smoke test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x'
+
+      - name: Install Jekyll
+        run: |
+          gem install bundler --no-document
+          gem install jekyll --no-document
+
+      - name: Build site with Jekyll
+        run: |
+          jekyll build
+
+      - name: Run SCSS smoke test (PowerShell)
+        uses: actions/setup-node@v4
+        # Use pwsh to run the test script so it behaves the same cross-platform
+      - name: Run test-scss.ps1
+        run: pwsh -File ./scripts/test-scss.ps1
