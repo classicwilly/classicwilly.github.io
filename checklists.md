@@ -17,28 +17,13 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Foundational Daily -->
-    <a href="/checklist-foundational-daily" class="checklist-card is-green">
-      <div class="card-icon">🌱</div>
-      <h3 class="card-title">Foundational Daily</h3>
-      <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
-      <div class="card-meta">Every single day</div>
-    </a>
+    {% include card.html href="/checklist-foundational-daily" icon="🌱" title="Foundational Daily" desc="The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump" meta="Every single day" classes="checklist-card is-green" %}
     
     <!-- Morning Transition -->
-    <a href="/checklist-morning-transition" class="checklist-card is-yellow">
-      <div class="card-icon">☀️</div>
-      <h3 class="card-title">Morning Transition</h3>
-      <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM)</p>
-      <div class="card-meta">Every morning</div>
-    </a>
+    {% include card.html href="/checklist-morning-transition" icon="☀️" title="Morning Transition" desc="60-min bridge from sleep to execution (6:00-7:00 AM)" meta="Every morning" classes="checklist-card is-yellow" %}
     
     <!-- Daily Tracker -->
-    <a href="/daily-tracker" class="checklist-card is-blue">
-      <div class="card-icon">📊</div>
-      <h3 class="card-title">Daily Tracker</h3>
-      <p class="card-desc">Comprehensive single-page daily check-in with metrics</p>
-      <div class="card-meta">Fill during Daily Dump (10:25 PM)</div>
-    </a>
+    {% include card.html href="/daily-tracker" icon="📊" title="Daily Tracker" desc="Comprehensive single-page daily check-in with metrics" meta="Fill during Daily Dump (10:25 PM)" classes="checklist-card is-blue" %}
     
   </div>
 </div>
@@ -50,12 +35,7 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Weekly Review -->
-    <a href="/checklist-weekly-review" class="checklist-card is-purple">
-      <div class="card-icon">🔄</div>
-      <h3 class="card-title">Weekly Review</h3>
-      <p class="card-desc">60-min maintenance: process chaos, review tasks, plan ahead</p>
-      <div class="card-meta">Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM</div>
-    </a>
+    {% include card.html href="/checklist-weekly-review" icon="🔄" title="Weekly Review" desc="60-min maintenance: process chaos, review tasks, plan ahead" meta="Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM" classes="checklist-card is-purple" %}
     
   </div>
 </div>
@@ -67,28 +47,13 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Executive Dysfunction -->
-    <div class="checklist-card is-disabled">
-      <div class="card-icon">🧠</div>
-      <h3 class="card-title">Executive Dysfunction</h3>
-      <p class="card-desc">Quick-reference for frozen executive function</p>
-      <div class="card-meta">Coming Soon</div>
-    </div>
+    {% include card.html disabled=true icon="🧠" title="Executive Dysfunction" desc="Quick-reference for frozen executive function" meta="Coming Soon" %}
     
     <!-- Context Switching -->
-    <div class="checklist-card is-disabled">
-      <div class="card-icon">🔀</div>
-      <h3 class="card-title">Context Switching Recovery</h3>
-      <p class="card-desc">Fast capture-interrupt-reload for disruptions</p>
-      <div class="card-meta">Coming Soon</div>
-    </div>
+    {% include card.html disabled=true icon="🔀" title="Context Switching Recovery" desc="Fast capture-interrupt-reload for disruptions" meta="Coming Soon" %}
     
     <!-- Sensory Overload -->
-    <div class="checklist-card is-disabled">
-      <div class="card-icon">🔇</div>
-      <h3 class="card-title">Sensory Overload</h3>
-      <p class="card-desc">Rapid sensory reduction and retreat protocol</p>
-      <div class="card-meta">Coming Soon</div>
-    </div>
+    {% include card.html disabled=true icon="🔇" title="Sensory Overload" desc="Rapid sensory reduction and retreat protocol" meta="Coming Soon" %}
     
   </div>
 </div>

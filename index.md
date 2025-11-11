@@ -3,44 +3,44 @@ layout: default
 title: Home - The Wonky Sprout
 ---
 <div class="checklist-grid">
-  <div class="checklist-card">
-    <h2><a href="/daily-tracker">📊 Daily Tracker</a></h2>
+  <a href="/daily-tracker" class="checklist-card block-card">
+    <h2>📊 Daily Tracker</h2>
     <p>Today's protocols and metrics.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/sop-vault">📚 The Vault</a></h2>
+  </a>
+  <a href="/sop-vault" class="checklist-card block-card">
+    <h2>📚 The Vault</h2>
     <p>SOPs & guides.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/command-center">⚙️ Command Center</a></h2>
+  </a>
+  <a href="/command-center" class="checklist-card block-card">
+    <h2>⚙️ Command Center</h2>
     <p>External tools and resources.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/checklists">✅ Checklists</a></h2>
+  </a>
+  <a href="/checklists" class="checklist-card block-card">
+    <h2>✅ Checklists</h2>
     <p>Quick protocols for daily tasks.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/little-sprouts">👨‍👧‍👦 Little Sprouts</a></h2>
+  </a>
+  <a href="/little-sprouts" class="checklist-card block-card">
+    <h2>👨‍👧‍👦 Little Sprouts</h2>
     <p>Protocols for the kids.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/2025-11-09_M1_PAGE_manifesto-v2">📜 Manifesto</a></h2>
+  </a>
+  <a href="/2025-11-09_M1_PAGE_manifesto-v2" class="checklist-card block-card">
+    <h2>📜 Manifesto</h2>
     <p>The philosophy behind the Wonky Sprout.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/2025-11-08_M1_PAGE_about-homepage">ℹ️ About</a></h2>
+  </a>
+  <a href="/2025-11-08_M1_PAGE_about-homepage" class="checklist-card block-card">
+    <h2>ℹ️ About</h2>
     <p>More about this project.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/settings">🔧 Settings</a></h2>
+  </a>
+  <a href="/settings" class="checklist-card block-card">
+    <h2>🔧 Settings</h2>
     <p>Site and user settings.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/games">🎮 Games</a></h2>
+  </a>
+  <a href="/games" class="checklist-card block-card">
+    <h2>🎮 Games</h2>
     <p>Games and activities.</p>
-  </div>
-  <div class="checklist-card">
-    <h2><a href="/workspace">💼 Workspace</a></h2>
+  </a>
+  <a href="/workspace" class="checklist-card block-card">
+    <h2>💼 Workspace</h2>
     <p>Tools and links for work.</p>
-  </div>
+  </a>
 </div>

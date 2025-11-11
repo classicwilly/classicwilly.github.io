@@ -182,16 +182,7 @@ title: Daily Tracker
 </div>
 
 <div class="checklist-grid">
-  <a href="/tracker-stats" class="checklist-card is-blue">
-    <div class="card-icon" style="font-size: 1.5rem;">📊</div>
-    <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">View Your Stats</div>
-  </a>
-  <a href="/sop-vault" class="checklist-card is-purple">
-    <div class="card-icon" style="font-size: 1.5rem;">📋</div>
-    <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">All Protocols</div>
-  </a>
-  <a href="/checklists" class="checklist-card is-green">
-    <div class="card-icon" style="font-size: 1.5rem;">✅</div>
-    <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">Checklists</div>
-  </a>
+  {% include card.html href="/tracker-stats" icon="📊" title="View Your Stats" classes="checklist-card is-blue" %}
+  {% include card.html href="/sop-vault" icon="📋" title="All Protocols" classes="checklist-card is-purple" %}
+  {% include card.html href="/checklists" icon="✅" title="Checklists" classes="checklist-card is-green" %}
 </div>
