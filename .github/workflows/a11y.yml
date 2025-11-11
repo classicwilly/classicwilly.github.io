@@ -24,13 +24,19 @@ jobs:
           gem install bundler --no-document
           gem install jekyll --no-document
 
-      - name: Build site with Jekyll
-        run: jekyll build
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build CSS (sass)
+        run: npm run build:css
+
+      - name: Build site with Jekyll
+        run: jekyll build
 
       - name: Install pa11y and http-server
         run: npm install -g pa11y http-server

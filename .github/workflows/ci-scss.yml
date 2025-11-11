@@ -24,12 +24,20 @@ jobs:
           gem install bundler --no-document
           gem install jekyll --no-document
 
+      - name: Set up Node.js and install JS deps
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build CSS (sass)
+        run: npm run build:css
+
       - name: Build site with Jekyll
         run: |
           jekyll build
 
       - name: Run SCSS smoke test (PowerShell)
-        uses: actions/setup-node@v4
-        # Use pwsh to run the test script so it behaves the same cross-platform
-      - name: Run test-scss.ps1
         run: pwsh -File ./scripts/test-scss.ps1

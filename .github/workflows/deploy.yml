@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.9'
+
+      - name: Install Jekyll (fallback)
+        run: |
+          gem install bundler --no-document || true
+          gem install jekyll --no-document || true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install npm dependencies
+        run: npm ci
+
+      - name: Build CSS
+        run: npm run build:css
+
+      - name: Build site
+        run: |
+          # If there's a Gemfile, use bundler, otherwise fall back to jekyll directly
+          if [ -f Gemfile ]; then
+            gem install bundler --no-document
+            bundle install
+            bundle exec jekyll build
+          else
+            jekyll build
+          fi
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
