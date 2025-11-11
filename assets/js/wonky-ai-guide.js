@@ -111,6 +111,90 @@
     });
   }
 
+  /* Inject an 'Ask Wonky AI' button into each card and wire actions */
+  function injectAskButtons() {
+    const cards = $$('.main-content > *:not(.keep-grid)');
+    cards.forEach(card => {
+      if (card.querySelector('.ask-wonky')) return; // already injected
+      const btn = document.createElement('button');
+      btn.className = 'ask-wonky';
+      btn.type = 'button';
+      btn.textContent = 'Ask Wonky AI';
+      btn.setAttribute('aria-label', 'Ask Wonky AI about this content');
+      btn.addEventListener('click', () => openModalForCard(card));
+      // place button in top-right of card
+      btn.style.cssText = 'position:absolute;top:8px;right:8px;z-index:10;';
+      // ensure card is positioned relatively
+      if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
+      card.appendChild(btn);
+    });
+  }
+
+  /* Modal for card-specific suggestions */
+  function createModal() {
+    if ($('#wonky-modal')) return $('#wonky-modal');
+    const modal = document.createElement('div');
+    modal.id = 'wonky-modal';
+    modal.className = 'wonky-modal';
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.hidden = true;
+    modal.innerHTML = `
+      <div class="wonky-modal-content">
+        <button class="wonky-modal-close" aria-label="Close">×</button>
+        <h3 class="wonky-modal-title">Wonky AI suggestions</h3>
+        <div class="wonky-modal-body">
+          <ul class="wonky-modal-list"></ul>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.querySelector('.wonky-modal-close').addEventListener('click', () => closeModal(modal));
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(modal); });
+    return modal;
+  }
+
+  function openModalForCard(card) {
+    const modal = createModal();
+    const list = modal.querySelector('.wonky-modal-list');
+    list.innerHTML = '';
+    const ctx = {
+      title: card.querySelector('h1,h2,h3')?.textContent || document.title,
+      excerpt: card.textContent.trim().slice(0, 400)
+    };
+    // make a few quick suggestions related to the card
+    const suggestions = [
+      { id: 'highlight', title: 'Highlight this card', desc: 'Add a subtle highlight to make this card stand out.', action: () => { card.style.boxShadow = '0 0 0 3px rgba(45,204,204,0.08)'; announce('Card highlighted'); } },
+      { id: 'copy', title: 'Copy text', desc: 'Copy the main text of this card to your clipboard.', action: async () => { try { await navigator.clipboard.writeText(card.textContent.trim()); announce('Copied to clipboard'); } catch (e) { announce('Copy failed'); }}},
+      { id: 'open-related', title: 'Show related SOPs', desc: 'Open the SOP vault in a new tab to find related procedures.', action: () => { window.open('/sop-vault', '_blank'); } }
+    ];
+    suggestions.forEach(s => {
+      const li = document.createElement('li');
+      li.className = 'modal-suggestion';
+      const b = document.createElement('button'); b.type='button'; b.className='modal-action'; b.textContent = s.title;
+      b.addEventListener('click', () => { if (confirm(`${s.title}\n\n${s.desc}\n\nApply?`)) { s.action(); } });
+      const p = document.createElement('p'); p.className='modal-desc'; p.textContent = s.desc;
+      li.appendChild(b); li.appendChild(p); list.appendChild(li);
+    });
+    modal.hidden = false;
+    modal.querySelector('.wonky-modal-close').focus();
+  }
+
+  function closeModal(modal) { modal.hidden = true; }
+
+  // Keyboard shortcut: Ctrl+K or / to open Wonky AI quick suggest
+  function keyboardShortcuts() {
+    document.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault(); toggleContent(true); $('#wonky-suggest')?.focus();
+      }
+      if (e.key === '/') {
+        const active = document.activeElement;
+        if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA')) return;
+        e.preventDefault(); toggleContent(true); $('#wonky-suggest')?.focus();
+      }
+    });
+  }
+
   function announce(message) {
     const live = document.getElementById('wonky-ai-widget');
     if (!live) return;
@@ -144,6 +228,11 @@
         }
       });
     }
+
+    // Integrate Wonky AI across the site: inject ask buttons, modal, and keyboard shortcuts
+    injectAskButtons();
+    createModal();
+    keyboardShortcuts();
 
     // expose a small API (for testing or future integration)
     window.WonkyAI = {

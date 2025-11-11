@@ -104,3 +104,38 @@
   #wonky-ai-widget { width: calc(100% - 32px); left:16px; right:16px; bottom:60px; }
 }
 
+/* Styles for injected Ask Wonky AI button and modal */
+.ask-wonky {
+  background: rgba(255,255,255,0.03);
+  color: var(--text-bright);
+  border: 1px solid rgba(255,255,255,0.04);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.wonky-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  z-index: 1200;
+}
+.wonky-modal[hidden] { display: none; }
+.wonky-modal-content {
+  background: var(--card-dark);
+  color: var(--text-bright);
+  border-radius: 8px;
+  width: 520px;
+  max-width: calc(100% - 40px);
+  padding: 1rem;
+  box-shadow: var(--shadow-lg);
+}
+.wonky-modal-close { background:transparent; border:none; font-size:1.25rem; float:right; cursor:pointer; }
+.wonky-modal-list { list-style:none; margin:0; padding:0; }
+.modal-suggestion { padding:0.5rem 0; border-bottom:1px dashed rgba(255,255,255,0.03); }
+.modal-action { display:inline-block; margin-bottom:0.25rem; padding:0.4rem 0.6rem; border-radius:6px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:var(--text-bright); cursor:pointer; }
+.modal-desc { margin:0; color:var(--text-light); font-size:0.9rem; }
+
