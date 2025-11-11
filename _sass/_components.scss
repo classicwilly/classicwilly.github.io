@@ -51,3 +51,23 @@
   text-decoration: none;
 }
 
+/* Respect user preference for reduced motion (important for vestibular/sensory sensitivities) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+  .fab,
+  .fab-menu {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Stronger focus-visible styles for keyboard users (helps navigation for executive dysfunction) */
+:focus-visible {
+  outline: 3px solid var(--circuit-teal);
+  outline-offset: 2px;
+}
+
