@@ -1,0 +1,20 @@
+// _sass/components/_page-nav-links.scss
+
+// Styles for the navigation links at the bottom of content pages (posts, SOPs).
+
+.page-nav-links {
+  text-align: center;
+  margin: 2rem 0;
+
+  .page-nav-link {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--card-dark);
+    border-radius: 8px;
+    color: var(--text-bright);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+  }
+}

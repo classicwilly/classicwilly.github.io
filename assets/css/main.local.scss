@@ -1,4 +1,19 @@
 @import "variables";
+
+/* local helpers in assets/css */
+@import "helpers";
+
 @import "layout";
-@import "components";
+
+/* import project component partials that live at repo root */
+@import "../_buttons";
+@import "../_cards";
+@import "../_games";
+@import "../_settings-page";
+@import "../_forms";
+@import "../_wonky-ai";
+@import "../_page-nav-links";
+@import "../_checklist-hub";
+
+@import "components"; // keep any grouped components in _sass/components
 @import "keep";

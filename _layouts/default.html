@@ -67,16 +67,24 @@
                 <a href="/" class="sidebar-title">Wonky Sprout OS</a>
                 <p class="sidebar-tagline">Internal Blueprint</p>
             </div>
-            <ul class="sidebar-nav">
-                {% for item in site.navigation %}
-                <li>
-                  <a href="{{ item.url | relative_url }}" 
-                     {% if page.url == item.url %}aria-current="page" class="is-active"{% endif %}>
-                     {{ item.name }}
-                  </a>
-                </li>
-                {% endfor %}
-            </ul>
+      <div class="sidebar-section-title">Quick Links</div>
+      <ul class="sidebar-nav">
+        <li><a href="/" {% if page.url == '/' %}aria-current="page" class="is-active"{% endif %}>🏠 Home</a></li>
+        <li><a href="/workspace" {% if page.url contains 'workspace' %}aria-current="page" class="is-active"{% endif %}>💼 Workspace</a></li>
+        <li><a href="/catalog" {% if page.url contains 'catalog' %}aria-current="page" class="is-active"{% endif %}>📇 Card Catalog</a></li>
+        <li><a href="/fix" {% if page.url contains 'fix' %}aria-current="page" class="is-active"{% endif %}>🔧 Fix-It Blueprint</a></li>
+        <li><a href="/daily-tracker" {% if page.url contains 'daily-tracker' %}aria-current="page" class="is-active"{% endif %}>📊 Daily Tracker</a></li>
+        <li><a href="/sop-vault" {% if page.url contains 'sop-vault' %}aria-current="page" class="is-active"{% endif %}>📚 SOP Vault</a></li>
+        <li><a href="/command-center" {% if page.url contains 'command-center' %}aria-current="page" class="is-active"{% endif %}>⚙️ Command Center</a></li>
+        <li><a href="/settings" {% if page.url contains 'settings' %}aria-current="page" class="is-active"{% endif %}>⚙ Settings</a></li>
+      </ul>
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="sidebar-section-title">Protocols</div>
+      <ul class="sidebar-nav">
+        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode.md">🧭 Solo Execution</a></li>
+        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.md">⏰ Morning Transition</a></li>
+        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
+      </ul>
         </nav>
 
         <!-- Mobile Navigation (Hamburger Menu) -->
@@ -103,53 +111,25 @@
         </div>
     </div>
 
-    <!-- PRESERVED ACCESSIBILITY & UI ELEMENTS -->
-
-    <!-- Wonky AI Guide Integration -->
-    <div id="wonky-ai-widget" class="wonky-ai-widget" aria-live="polite">
+  <!-- Wonky AI Floating Action Button & Widget -->
+  <div class="fab-container">
+    <button id="wonky-ai-toggle" class="fab" aria-label="Toggle Wonky AI Assistant" aria-expanded="false">
+      <span>🤖</span>
+    </button>
+    <div id="wonky-ai-widget" hidden>
       <div id="wonky-ai-header">
-        <h3>🤖 Wonky AI</h3>
+        <h3 class="card-title" style="margin: 0; font-size: 1rem;">Wonky AI</h3>
         <div class="wonky-controls">
-          <label for="wonky-guided-toggle" class="sr-only">Toggle Guided Mode</label>
-          <input id="wonky-guided-toggle" type="checkbox" aria-checked="false"> Guided
-          <button id="wonky-ai-toggle" aria-expanded="false">Open</button>
-          <button id="wonky-enable-remote" class="remote-toggle" aria-pressed="false">Enable remote AI</button>
-          <button id="wonky-privacy-toggle" class="privacy-toggle" aria-pressed="false">Privacy Mode</button>
+          <button id="wonky-suggest" class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">Suggest</button>
         </div>
-      </div>
+        </div>
       <div id="wonky-ai-content" hidden>
-        <div id="wonky-ai-guide">
-          <p class="guide-intro">Need help deciding? Wonky AI suggests safe, reversible actions for this page. Choose a suggestion to apply it, or enable Auto-apply to let Wonky AI act for you (confirmation required).</p>
-          <div class="guide-actions">
-            <button id="wonky-suggest" class="btn">Suggest actions</button>
-            <label><input type="checkbox" id="wonky-auto-apply"> Auto-apply</label>
-          </div>
-          <ul id="wonky-suggestions" class="suggestions" role="list"></ul>
-        </div>
-        <!-- Legacy chat input (hidden by default) -->
-        <div id="wonky-ai-chat" style="display:none;">
-          <p>Ask about protocols, patterns, or decisions...</p>
-        </div>
-        <div id="wonky-ai-input-wrapper" style="display:none;">
-          <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI...">
-          <button onclick="sendToWonkyAI()">Send</button>
+        <p class="guide-intro">Context-aware suggestions for this page.</p>
+        <ul id="wonky-suggestions" class="suggestions">
+          <!-- Suggestions will be populated by JS -->
+        </ul>
         </div>
       </div>
-    </div>
-
-    <!-- Wonky AI Guide script -->
-    <script src="{{ '/assets/js/wonky-ai-guide.js' | relative_url }}" defer></script>
-
-    <!-- Floating Action Button (FAB) -->
-    <div class="fab-container">
-        <button id="fab-button" class="fab" aria-haspopup="true" aria-expanded="false" aria-label="Open actions menu">
-            <span>+</span>
-        </button>
-        <div id="fab-menu" class="fab-menu" role="menu" aria-hidden="true">
-            <a href="/daily-tracker" role="menuitem" aria-label="Daily Tracker">📊</a>
-            <a href="/sop-vault" role="menuitem" aria-label="SOP Vault">📚</a>
-            <a href="/command-center" role="menuitem" aria-label="Command Center">💻</a>
-        </div>
     </div>
 
     <!-- Back to Top Button -->
@@ -159,7 +139,9 @@
 
     <!-- PRESERVED SCRIPTS -->
     <script>
-      // Mobile Nav Toggle
+    // This script block remains for essential UI functionality.
+
+    // Mobile Nav Toggle
       document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.getElementById('mobile-nav-toggle');
         const mobileNav = document.getElementById('mobile-nav');
@@ -170,7 +152,7 @@
           document.body.classList.toggle('mobile-nav-open');
         });
       });
-
+    
       // Back to Top Button Functionality
       (function() {
         const backToTopButton = document.querySelector('.back-to-top');
@@ -191,55 +173,8 @@
         toggleBackToTop();
       })();
 
-      // Floating Action Button (FAB) functionality
-      (function() {
-        const fabButton = document.getElementById('fab-button');
-        const fabMenu = document.getElementById('fab-menu');
-        if (fabButton && fabMenu) {
-          fabButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isExpanded = fabButton.getAttribute('aria-expanded') === 'true';
-            fabButton.setAttribute('aria-expanded', !isExpanded);
-            fabMenu.setAttribute('aria-hidden', isExpanded);
-          });
-          document.addEventListener('click', function(event) {
-            if (!event.target.closest('.fab-container')) {
-              fabButton.setAttribute('aria-expanded', 'false');
-              fabMenu.setAttribute('aria-hidden', 'true');
-            }
-          });
-          document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && fabButton.getAttribute('aria-expanded') === 'true') {
-              fabButton.setAttribute('aria-expanded', 'false');
-              fabMenu.setAttribute('aria-hidden', 'true');
-              fabButton.focus();
-            }
-          });
-        }
-      })();
-
-      // Wonky AI Integration
-      /* Privacy: Legacy remote chat disabled.
-         This site intentionally avoids sending user content to external services.
-         Wonky AI guide operates locally (client-side) only. */
-      function wonkyAiExternalDisabled() {
-        // Provide a gentle in-page notice rather than sending data out.
-        const content = document.getElementById('wonky-ai-content');
-        if (content) {
-          const note = document.createElement('div');
-          note.className = 'wonky-external-disabled';
-          note.textContent = 'External chat is disabled for privacy. Wonky AI runs locally only.';
-          note.style.padding = '0.5rem';
-          note.style.marginTop = '0.5rem';
-          note.style.background = 'rgba(45,204,204,0.06)';
-          note.style.color = 'var(--text-light)';
-          const existing = content.querySelector('.wonky-external-disabled');
-          if (!existing) content.prepend(note);
-        }
-      }
-      document.getElementById('wonky-ai-input')?.addEventListener('keypress', e => {
-        if (e.key === 'Enter') { e.preventDefault(); wonkyAiExternalDisabled(); }
-      });
     </script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/wonky-ai-guide.js"></script>
 </body>
 </html>

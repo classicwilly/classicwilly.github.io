@@ -128,7 +128,8 @@ body {
 .main-content-wrapper {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  padding: 0.75rem 1rem; /* tighter outer padding so content sits closer to nav */
+  /* reduce outer padding so content sits closer to the sidebar for denser layout */
+  padding: 0.5rem 0.75rem;
   box-sizing: border-box;
 }
 

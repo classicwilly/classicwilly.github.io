@@ -87,14 +87,21 @@ Write-Host "Checking compiled CSS at: $cssPath"
 
 $css = Get-Content $cssPath -Raw
 
-$checks = @('.sidebar', '.main-content', '.keep-grid')
+$checks = @(
+    '.sidebar', '.main-content', '.keep-grid', # Core Layout
+    '.btn-primary', '.spawn-button', # Buttons Component
+    '.form-checkbox-group', '.form-input', # Forms Component
+    '.about-card', '.game-card', # Cards Component
+    '.checklist-card', # Checklist Hub Component
+    '.page-nav-link' # Page Nav Component
+)
 $failed = @()
 foreach ($s in $checks) {
     if ($css -notmatch [regex]::Escape($s)) { $failed += $s }
 }
 
 if ($failed.Count -eq 0) {
-    Write-Host "SMOKE TEST PASS: compiled CSS contains expected selectors." -ForegroundColor Green
+    Write-Host "FULL TEST SUITE PASS: Compiled CSS contains all critical component classes." -ForegroundColor Green
     Pop-Location | Out-Null
     exit 0
 } else {

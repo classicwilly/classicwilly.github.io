@@ -4,9 +4,10 @@
 
 .keep-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* allow more narrow columns for denser grid */
-  gap: 0.6rem; /* tighter grid gap */
-  padding: 0.5rem; /* reduce internal padding so grid sits closer to nav */
+  /* allow slightly narrower columns so more items fit on wide screens */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem; /* tighten grid gap marginally */
+  padding: 0.4rem; /* reduce internal padding so grid sits closer to nav */
 }
 
 .keep-card {

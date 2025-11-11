@@ -11,12 +11,12 @@
 
   function toggleContent(open) {
     const content = $('#wonky-ai-content');
-    const toggle = $('#wonky-ai-toggle');
-    if (!content) return;
+    const widget = $('#wonky-ai-widget');
+    if (!widget || !content) return;
     if (open === undefined) open = content.hidden;
     content.hidden = !open;
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.textContent = open ? 'Close' : 'Open';
+    widget.hidden = false; // Always show widget container when toggling content
+    $('#wonky-ai-toggle')?.setAttribute('aria-expanded', String(open));
   }
 
   function collectContext() {
@@ -300,46 +300,21 @@
     const content = document.getElementById('wonky-ai-content');
     const suggestBtn = document.getElementById('wonky-suggest');
     const suggestionsList = document.getElementById('wonky-suggestions');
-    const autoApply = document.getElementById('wonky-auto-apply');
-    const guidedToggle = document.getElementById('wonky-guided-toggle');
-    const remoteToggle = document.getElementById('wonky-enable-remote');
+    const widget = document.getElementById('wonky-ai-widget');
 
-    if (toggle) toggle.addEventListener('click', () => toggleContent());
+    if (toggle && widget) {
+      toggle.addEventListener('click', () => {
+        widget.hidden = !widget.hidden;
+        toggle.setAttribute('aria-expanded', String(!widget.hidden));
+      });
+    }
 
-    if (suggestBtn && suggestionsList) {
+    if (suggestBtn && suggestionsList && widget) {
       suggestBtn.addEventListener('click', () => {
         const ctx = collectContext();
         const suggestions = makeSuggestions(ctx);
-        renderSuggestions(suggestionsList, suggestions, autoApply?.checked);
-        // If guided toggle is enabled, also highlight the first suggestion
-        if (guidedToggle?.checked && suggestions[0]) {
-          announce(`Suggested: ${suggestions[0].title}`);
-        }
-      });
-    }
-
-    // wire remote toggle
-    if (remoteToggle) {
-      // reflect stored state
-      updateRemoteBadge(isRemoteEnabled());
-      remoteToggle.addEventListener('click', () => {
-        if (isRemoteEnabled()) {
-          if (confirm('Disable remote AI? This will stop sending any text to remote services.')) {
-            setRemoteEnabled(false);
-            announce('Remote AI disabled');
-          }
-        } else {
-          showConsentModal();
-        }
-      });
-    }
-    // wire privacy toggle
-    const privacyToggle = document.getElementById('wonky-privacy-toggle');
-    if (privacyToggle) {
-      privacyToggle.setAttribute('aria-pressed', String(isPrivacyMode()));
-      privacyToggle.addEventListener('click', () => {
-        const cur = isPrivacyMode();
-        setPrivacyMode(!cur);
+        renderSuggestions(suggestionsList, suggestions, false); // Auto-apply is disabled for now
+        toggleContent(true); // Show suggestions immediately
       });
     }
 
