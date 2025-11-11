@@ -137,5 +137,9 @@
 }
 
 .checklist-section {
+  @extend .card; // Render each checklist section as a card when it has a title
+  padding: 1.25rem;
   margin-bottom: calc(var(--spacing-unit) * 3);
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color-stronger);
 }
