@@ -2,6 +2,7 @@
 ---
 
 @import "variables"; // 1. Variables and abstracts
+@import "base";      // 2. Base styles, reset, and typography
 
 @import "utilities/helpers"; // 2. Utility classes
 
@@ -15,3 +16,4 @@
 @import "components/wonky-ai";
 @import "components/page-nav-links";
 @import "components/checklist-hub";
+@import "components/info-box";

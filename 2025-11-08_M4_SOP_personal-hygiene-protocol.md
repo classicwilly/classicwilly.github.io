@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Personal Hygiene Protocol - SOP-PH
+title: "Personal Hygiene Protocol - SOP-PH"
 ---
 
 # PERSONAL HYGIENE PROTOCOL (SOP-PH)

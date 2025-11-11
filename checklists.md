@@ -94,7 +94,7 @@ title: Interactive Checklists
 </div>
 
 <!-- How To Use Section -->
-<div style="background: var(--card-dark); border-left: 4px solid var(--circuit-teal); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+<div class="info-box is-teal">
   <h3 class="card-title" style="margin-top: 0;">💡 How To Use These Checklists</h3>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
@@ -113,7 +113,7 @@ title: Interactive Checklists
 </div>
 
 <!-- Philosophy Section -->
-<div style="background: var(--card-dark); border-left: 4px solid var(--green); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+<div class="info-box is-green">
   <h3 class="card-title" style="color: var(--green); margin-top: 0;">🧠 Checklist Philosophy</h3>
   <p class="card-desc">Why checklists matter for neurodivergent brains:</p>
   <ul class="card-desc" style="line-height: 1.6; margin: 0; padding-left: 1.25rem;">

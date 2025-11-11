@@ -1,0 +1,11 @@
+/* /_sass/components/_info-box.scss */
+
+.info-box {
+  background: var(--card-dark);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.info-box.is-teal { border-left: 4px solid var(--circuit-teal); }
+.info-box.is-green { border-left: 4px solid var(--green); }

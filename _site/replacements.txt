@@ -1,0 +1,4 @@
+# This file is a template for `git-filter-repo --replace-text`.
+# DO NOT store live secrets in this file inside the repository.
+# Replace <YOUR_SECRET_HERE> locally (outside the repo) before running the cleanup.
+<YOUR_SECRET_HERE>=>REDACTED_IN_HISTORY

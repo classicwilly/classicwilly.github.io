@@ -1,5 +1,55 @@
-// This file contains styles for all form elements like inputs, selects, and labels.
+/* ==========================================================================
+   7. Forms & Interactive Elements
+   ========================================================================== */
 
-.form-group { display:flex; align-items:center; gap:1rem; margin-bottom:1.5rem; flex-wrap:wrap }
-.form-label { color:var(--text-bright); font-weight:600; min-width:150px; flex-shrink:0 }
-.form-select, .form-input, .form-textarea { flex:1; padding:0.75rem; background:var(--darker-bg,#121212); border:1px solid var(--border-gray); border-radius:6px; color:var(--text-bright); font-family:'IBM Plex Mono',monospace }
+.interactive-checklist {
+  background-color: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.form-checkbox-group {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0;
+  cursor: pointer;
+}
+
+.task-checkbox {
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 1em;
+  accent-color: var(--accent-primary);
+}
+
+.checkbox-label {
+  color: var(--text-secondary);
+  transition: color 0.2s ease;
+}
+
+.task-checkbox:checked + .checkbox-label {
+  text-decoration: line-through;
+  color: var(--text-disabled);
+}
+
+.form-input,
+.form-textarea {
+  background-color: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: var(--text-primary);
+  width: 100%;
+  font-family: var(--font-family-sans);
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.3);
+}
+
