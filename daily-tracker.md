@@ -3,18 +3,19 @@ layout: default
 title: Daily Tracker
 ---
 
-<div class="keep-grid">
-  <div class="keep-card">
+<div class="checklist-section">
+  <div class="about-card is-blue">
     <h2>📊 Daily Protocol Tracker</h2>
     <p>Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
     <p>Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
   </div>
-
-  <div class="keep-card">
+</div>
+<div class="checklist-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+  <div class="about-card">
     <label for="tracker-date" class="form-label">Date:</label>
     <input type="date" id="tracker-date" class="form-input" />
   </div>
-  <div class="keep-card">
+  <div class="about-card">
     <label class="form-label">Mode:</label>
     <label class="form-checkbox-group">
       <input type="radio" name="mode" value="solo" id="mode-solo" />
@@ -31,22 +32,22 @@ title: Daily Tracker
 
 ## 🚀 QUICK JUMP TO SECTION
 
-<div class="keep-grid">
-  <a href="#foundational" class="keep-card">⚡ Foundational</a>
-  <a href="#morning" class="keep-card">🌅 Morning</a>
-  <a href="#mode-specific" class="keep-card">🎯 Mode-Specific</a>
-  <a href="#emergency" class="keep-card">🚨 Emergency</a>
-  <a href="#priority-check" class="keep-card">🎖️ Priority Check</a>
-  <a href="#wins" class="keep-card">🌟 Today's Wins</a>
-  <a href="#tomorrow" class="keep-card">📅 Tomorrow</a>
-  <a href="#notes" class="keep-card">📝 Notes</a>
-  <a href="#metrics" class="keep-card">📊 Metrics</a>
+<div class="quick-jump-grid legal-nav">
+  <a href="#foundational" class="is-green">⚡ Foundational</a>
+  <a href="#morning" class="is-yellow">🌅 Morning</a>
+  <a href="#mode-specific" class="is-purple">🎯 Mode-Specific</a>
+  <a href="#emergency" class="is-red">🚨 Emergency</a>
+  <a href="#priority-check" class="is-blue">🎖️ Priority Check</a>
+  <a href="#wins" class="is-teal">🌟 Today's Wins</a>
+  <a href="#tomorrow" class="is-blue">📅 Tomorrow</a>
+  <a href="#notes" class="is-yellow">📝 Notes</a>
+  <a href="#metrics" class="is-purple">📊 Metrics</a>
 </div>
 
 ---
 
-<div class="keep-grid">
-  <div class="keep-card" id="foundational">
+<div class="checklist-grid">
+  <div class="about-card" id="foundational">
     <h2>🌊 Foundational Protocols</h2>
     <p>Core protocols that must happen every day. <strong>Goal: 10+ of 11 completed.</strong></p>
     <div class="interactive-checklist">
@@ -66,7 +67,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="morning">
+  <div class="about-card" id="morning">
     <h2>🌅 Morning Transition (6:00-7:00 AM)</h2>
     <p>4-phase protocol to go from bed → execution. <strong>Goal: All 4 phases complete by 7:00 AM.</strong></p>
     <div class="interactive-checklist">
@@ -77,7 +78,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="mode-specific">
+  <div class="about-card" id="mode-specific">
     <h2>🎯 Mode-Specific Protocols</h2>
     <p>Different protocols for Solo Execution Mode vs Family Structure Mode. Check the section that matches today's mode.</p>
     <div class="interactive-checklist">
@@ -94,7 +95,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="emergency">
+  <div class="about-card" id="emergency">
     <h2>🚨 Emergency Protocols Used Today</h2>
     <p>Check any emergency protocols you needed today. <strong>If 2+ checked:</strong> System issue detected. Review root cause.</p>
     <div class="interactive-checklist">
@@ -104,7 +105,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="priority-check">
+  <div class="about-card" id="priority-check">
     <h2>🎖️ Priority Hierarchy Check</h2>
     <p>Rate each foundational need 1-10. <strong>If any score below 7:</strong> This is the root problem. Fix this tomorrow.</p>
     <div class="form-group">
@@ -121,7 +122,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="wins">
+  <div class="about-card" id="wins">
     <h2>🌟 Today's Wins (3 minimum)</h2>
     <p>List at least 3 things you accomplished today. Any size counts. This isn't motivational BS—it's pattern recognition.</p>
     <div class="form-group">
@@ -135,7 +136,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="tomorrow">
+  <div class="about-card" id="tomorrow">
     <h2>📅 Tomorrow's Top 3 Priorities</h2>
     <p>What are the 3 most critical tasks for tomorrow? Write these during Daily Dump (10:25 PM).</p>
     <div class="form-group">
@@ -149,7 +150,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="notes">
+  <div class="about-card" id="notes">
     <h2>📝 Notes / Observations</h2>
     <p>Note anything unusual, patterns you're seeing, or insights about what worked/didn't work today.</p>
     <div class="notes-section">
@@ -158,7 +159,7 @@ title: Daily Tracker
     </div>
   </div>
 
-  <div class="keep-card" id="metrics">
+  <div class="about-card" id="metrics">
     <h2>📊 Completion Metrics</h2>
     <p>Track completion rates for each protocol section. Use these metrics during Weekly Review to spot trends.</p>
     <div class="form-group">
@@ -180,16 +181,16 @@ title: Daily Tracker
   </div>
 </div>
 
-<div class="keep-grid">
-  <a href="/tracker-stats" class="keep-card">
+<div class="checklist-grid">
+  <a href="/tracker-stats" class="checklist-card is-blue">
     <div class="card-icon" style="font-size: 1.5rem;">📊</div>
     <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">View Your Stats</div>
   </a>
-  <a href="/sop-vault" class="keep-card">
+  <a href="/sop-vault" class="checklist-card is-purple">
     <div class="card-icon" style="font-size: 1.5rem;">📋</div>
     <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">All Protocols</div>
   </a>
-  <a href="/checklists" class="keep-card">
+  <a href="/checklists" class="checklist-card is-green">
     <div class="card-icon" style="font-size: 1.5rem;">✅</div>
     <div class="card-title" style="font-size: 1rem; color: var(--text-bright);">Checklists</div>
   </a>

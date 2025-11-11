@@ -21,6 +21,16 @@
   break-inside: avoid; // Good for masonry-style grids
 }
 
+.about-card {
+  &.is-red { border-color: var(--red); h2, .card-title { color: var(--red); } }
+  &.is-green { border-color: var(--green); h2, .card-title { color: var(--green); } }
+  &.is-blue { border-color: var(--blue); h2, .card-title { color: var(--blue); } }
+  &.is-yellow { border-color: var(--yellow); h2, .card-title { color: var(--yellow); } }
+  &.is-purple { border-color: var(--purple); h2, .card-title { color: var(--purple); } }
+  &.is-teal { border-color: var(--teal); h2, .card-title { color: var(--teal); } }
+  &.is-orange { border-color: var(--orange); h2, .card-title { color: var(--orange); } }
+}
+
 .game-card {
   // Specific overrides for game cards
   padding: 2rem;

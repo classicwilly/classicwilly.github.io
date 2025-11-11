@@ -304,17 +304,13 @@
 
     if (toggle && widget) {
       toggle.addEventListener('click', () => {
-        widget.hidden = !widget.hidden;
-        toggle.setAttribute('aria-expanded', String(!widget.hidden));
-      });
-    }
-
-    if (suggestBtn && suggestionsList && widget) {
-      suggestBtn.addEventListener('click', () => {
-        const ctx = collectContext();
-        const suggestions = makeSuggestions(ctx);
-        renderSuggestions(suggestionsList, suggestions, false); // Auto-apply is disabled for now
-        toggleContent(true); // Show suggestions immediately
+        const isHidden = widget.hidden;
+        widget.hidden = !isHidden;
+        toggle.setAttribute('aria-expanded', String(isHidden));
+        if (isHidden) {
+          // If we are opening the widget, automatically generate and show suggestions.
+          suggestBtn.click();
+        }
       });
     }
 

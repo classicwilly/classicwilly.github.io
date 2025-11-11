@@ -34,6 +34,14 @@
   box-shadow: var(--shadow-lg);
   z-index: 1100;
   font-size: 0.95rem;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateY(20px);
+  opacity: 0;
+
+  &:not([hidden]) {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #wonky-ai-header {
