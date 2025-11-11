@@ -1,0 +1,60 @@
+// This file contains all generic button styles for the site.
+
+.spawn-button, .reset-button, .btn {
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0.25rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.spawn-button {
+  border: 2px solid var(--circuit-teal);
+  background: transparent;
+  color: var(--circuit-teal);
+
+  &:hover {
+    background: var(--circuit-teal);
+    color: var(--darker-bg);
+  }
+}
+
+.btn-primary {
+  background: var(--teal, var(--circuit-teal));
+  border: none;
+  color: var(--darker-bg);
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+}
+
+.btn-secondary {
+  background: var(--blue);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-danger {
+  background: var(--card-dark);
+  border: 2px solid var(--red, #e74c3c);
+  color: var(--red, #e74c3c);
+  font-weight: 600;
+}
+
+.reset-button {
+  border: 2px solid var(--accent-orange, #e67e22); // Added a fallback color
+  color: var(--accent-orange, #e67e22);
+
+  &:hover {
+    background: var(--accent-orange, #e67e22);
+    color: var(--darker-bg);
+  }
+}

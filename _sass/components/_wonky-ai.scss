@@ -1,0 +1,5 @@
+// This file contains all styles for the Wonky AI widget, modals, and injected buttons.
+
+.fab-container { position: fixed; bottom:20px; right:20px; z-index:1010 }
+.fab { background-color:var(--circuit-teal); color:var(--card-dark); border:none; border-radius:50%; width:56px; height:56px }
+#wonky-ai-widget { position:fixed; right:16px; bottom:90px; width:320px; background:var(--card-dark); border:1px solid var(--border-gray); border-radius:8px }

@@ -1,0 +1,49 @@
+// This file contains styles for all card-like components.
+
+.game-card,
+.keep-card,
+.about-card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-md, 8px);
+  padding: 1.5rem; // Standardized padding
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.keep-card {
+  padding: 1.25rem;
+  break-inside: avoid; // Good for masonry-style grids
+}
+
+.about-card {
+  &.is-red { border-color: var(--red); h2, .card-title { color: var(--red); } }
+  &.is-green { border-color: var(--green); h2, .card-title { color: var(--green); } }
+  &.is-blue { border-color: var(--blue); h2, .card-title { color: var(--blue); } }
+  &.is-yellow { border-color: var(--yellow); h2, .card-title { color: var(--yellow); } }
+  &.is-purple { border-color: var(--purple); h2, .card-title { color: var(--purple); } }
+  &.is-teal { border-color: var(--teal); h2, .card-title { color: var(--teal); } }
+  &.is-orange { border-color: var(--orange); h2, .card-title { color: var(--orange); } }
+}
+
+.game-card {
+  // Specific overrides for game cards
+  padding: 2rem;
+  border-width: 2px; // Make them slightly heavier
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--circuit-teal);
+  margin: 0 0 0.5rem 0;
+}
+
+.card-body {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.5;
+}

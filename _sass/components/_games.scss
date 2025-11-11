@@ -1,0 +1,33 @@
+// This file contains all styles related to the Stim Station games page.
+
+.game-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.5rem;
+    margin: 0.16rem 0 1.16rem 0;
+    border-bottom: none !important;
+    color: var(--text-bright);
+
+    .game-title-accent {
+      color: var(--yellow);
+    }
+  }
+
+  .game-header-divider {
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow));
+    margin-bottom: 2.16rem;
+  }
+
+  p { color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem; }
+  .game-header-sub-divider { height:1px; width:100%; background:var(--circuit-teal); opacity:0.3 }
+}
+
+.game-container { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap:2rem; margin:2rem 0 }
+
+.big-click-button { width:200px; height:200px; font-size:1.5rem; font-weight:700; background:var(--circuit-teal); color:var(--darker-bg); border:none; border-radius:50%; cursor:pointer }
+
+@keyframes float { 0% { transform: translateY(0) translateX(0); } 100% { transform: translateY(-450px) translateX(0); } }
