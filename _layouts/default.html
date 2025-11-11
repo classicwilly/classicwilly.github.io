@@ -105,22 +105,38 @@
 
     <!-- PRESERVED ACCESSIBILITY & UI ELEMENTS -->
 
-    <!-- Chatbot Integration -->
-    <div id="wonky-ai-widget">
+    <!-- Wonky AI Guide Integration -->
+    <div id="wonky-ai-widget" class="wonky-ai-widget" aria-live="polite">
       <div id="wonky-ai-header">
         <h3>🤖 Wonky AI</h3>
-        <button onclick="toggleWonkyAI()" id="wonky-ai-toggle">Show</button>
+        <div class="wonky-controls">
+          <label for="wonky-guided-toggle" class="sr-only">Toggle Guided Mode</label>
+          <input id="wonky-guided-toggle" type="checkbox" aria-checked="false"> Guided
+          <button id="wonky-ai-toggle" aria-expanded="false">Open</button>
+        </div>
       </div>
-      <div id="wonky-ai-content" style="display: none;">
-        <div id="wonky-ai-chat">
+      <div id="wonky-ai-content" hidden>
+        <div id="wonky-ai-guide">
+          <p class="guide-intro">Need help deciding? Wonky AI suggests safe, reversible actions for this page. Choose a suggestion to apply it, or enable Auto-apply to let Wonky AI act for you (confirmation required).</p>
+          <div class="guide-actions">
+            <button id="wonky-suggest" class="btn">Suggest actions</button>
+            <label><input type="checkbox" id="wonky-auto-apply"> Auto-apply</label>
+          </div>
+          <ul id="wonky-suggestions" class="suggestions" role="list"></ul>
+        </div>
+        <!-- Legacy chat input (hidden by default) -->
+        <div id="wonky-ai-chat" style="display:none;">
           <p>Ask about protocols, patterns, or decisions...</p>
         </div>
-        <div id="wonky-ai-input-wrapper">
+        <div id="wonky-ai-input-wrapper" style="display:none;">
           <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI...">
           <button onclick="sendToWonkyAI()">Send</button>
         </div>
       </div>
     </div>
+
+    <!-- Wonky AI Guide script -->
+    <script src="{{ '/assets/js/wonky-ai-guide.js' | relative_url }}" defer></script>
 
     <!-- Floating Action Button (FAB) -->
     <div class="fab-container">
