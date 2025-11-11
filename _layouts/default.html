@@ -39,11 +39,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  <style>
-    #wonky-ai-widget {
-      width: 340px !important; /* Aggressive inline override */
-    }
-  </style>
     
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
@@ -116,27 +111,6 @@
         </div>
     </div>
 
-  <!-- Wonky AI Floating Action Button & Widget -->
-  <div class="fab-container">
-    <button id="wonky-ai-toggle" class="fab" aria-label="Toggle Wonky AI Assistant" aria-expanded="false">
-      <span>🤖</span>
-    </button>
-    <div id="wonky-ai-widget" hidden>
-      <div id="wonky-ai-header">
-        <h3 class="card-title" style="margin: 0; font-size: 1rem;">Wonky AI</h3>
-        <div class="wonky-controls">
-          <button id="wonky-suggest" class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">Suggest</button>
-        </div>
-        </div>
-      <div id="wonky-ai-content" hidden>
-        <p class="guide-intro">Context-aware suggestions for this page.</p>
-        <ul id="wonky-suggestions" class="suggestions">
-          <!-- Suggestions will be populated by JS -->
-        </ul>
-        </div>
-      </div>
-    </div>
-
     <!-- Back to Top Button -->
     <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
       ↑
@@ -180,6 +154,5 @@
 
     </script>
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/wonky-ai-guide.js"></script>
 </body>
 </html>
