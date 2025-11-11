@@ -2,7 +2,10 @@
 node_modules/
 
 # Compiled CSS output (built from SCSS)
-# (Note: main.css may be committed temporarily when restoring styling)
+# Keep compiled CSS out of the repo. We temporarily committed `assets/css/main.css`
+# during emergency restore; prefer compiling from `_sass` and leaving the
+# compiled file untracked.
+assets/css/main.css
 
 # Environment files
 .env
