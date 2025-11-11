@@ -2,7 +2,6 @@
 layout: default
 title: Home - The Wonky Sprout
 ---
-
 <div class="checklist-grid">
   <div class="checklist-card">
     <h2><a href="/daily-tracker">📊 Daily Tracker</a></h2>

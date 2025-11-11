@@ -7,39 +7,30 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    
     <!-- SEO Meta Tags -->
     <meta name="description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system.' }}">
     <meta name="keywords" content="neurodivergent, ADHD, autism, life management, SOPs, standard operating procedures, systems, productivity">
     <meta name="author" content="William Johnson (classicwilly)">
-    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:title" content="{{ page.title | default: site.title }}">
     <meta property="og:description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system.' }}">
     <meta property="og:site_name" content="The Wonky Sprout">
-    
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ page.url | absolute_url }}">
     <meta name="twitter:title" content="{{ page.title | default: site.title }}">
     <meta name="twitter:description" content="{{ page.description | default: site.description | default: 'The Wonky Sprout Operating System - A neurodivergent life management system.' }}">
-    
     <title>{{ page.title | default: site.title }}</title>
-    
     <!-- DNS Prefetch & Preconnect for Performance -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <!-- Font Imports -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
-
   <!-- Stylesheets -->
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-
-    
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -59,7 +50,6 @@
 <body>
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
-
     <div class="page-container">
   <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
   <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
@@ -86,7 +76,6 @@
         <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
       </ul>
         </nav>
-
         <!-- Mobile Navigation (Hamburger Menu) -->
         <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
             <span class="sr-only">Menu</span>
@@ -102,7 +91,6 @@
                 {% endfor %}
             </ul>
         </div>
-
         <!-- COLUMN 2: THE "CARD CATALOG" (Main Content) -->
         <div class="main-content-wrapper">
             <main id="main-content" class="main-content" role="main">
@@ -110,16 +98,13 @@
             </main>
         </div>
     </div>
-
     <!-- Back to Top Button -->
     <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
       ↑
     </a>
-
     <!-- PRESERVED SCRIPTS -->
     <script>
     // This script block remains for essential UI functionality.
-
     // Mobile Nav Toggle
       document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.getElementById('mobile-nav-toggle');
@@ -131,7 +116,6 @@
           document.body.classList.toggle('mobile-nav-open');
         });
       });
-    
       // Back to Top Button Functionality
       (function() {
         const backToTopButton = document.querySelector('.back-to-top');
@@ -151,7 +135,6 @@
         window.addEventListener('scroll', toggleBackToTop);
         toggleBackToTop();
       })();
-
     </script>
   <script src="/assets/js/main.js"></script>
 </body>
