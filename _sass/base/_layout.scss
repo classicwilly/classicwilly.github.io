@@ -4,17 +4,19 @@
 
 .page-container {
   display: flex;
+  gap: 0; /* remove large gap between sidebar and content */
 }
 
 .main-content-wrapper {
   flex-grow: 1;
-  padding: calc(var(--spacing-unit) * 2);
-  margin-left: var(--sidebar-width);
+  padding: calc(var(--spacing-unit) * 1.5);
+  margin-left: var(--sidebar-width); /* keep offset for fixed sidebar */
 }
 
 .main-content {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
+  max-width: none; /* let content flow full width next to sidebar */
+  margin: 0; /* align content flush to the wrapper */
+  padding-bottom: calc(var(--spacing-unit) * 2);
 }
 
 /* ==========================================================================
@@ -29,7 +31,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: var(--spacing-unit);
+  padding: calc(var(--spacing-unit) * 0.75);
   overflow-y: auto;
 }
 
@@ -73,17 +75,30 @@
 .sidebar-nav a {
   display: block;
   padding: 0.6rem var(--spacing-unit);
-  border-radius: 6px;
+  border-radius: 8px;
   color: var(--text-secondary);
-  font-weight: 500;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  font-weight: 600;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  background: transparent;
+  border: 1px solid transparent;
 }
 
 .sidebar-nav a:hover {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-secondary);
   color: var(--text-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
   text-decoration: none;
 }
+
+/* Treat sidebar links visually like small cards for interactivity */
+.sidebar-nav li { margin-bottom: 0.4rem; }
+.sidebar-nav .is-active { border-left: 4px solid var(--accent-primary); }
+
+/* All-pages list specifics: compact, scrollable */
+.sidebar-allpages { margin: 0 0 0.75rem 0; }
+.sidebar-allpages-list { max-height: calc(100vh - 240px); overflow-y: auto; padding-right: 0.25rem; }
+.sidebar-allpages-list li { padding-left: 0; }
 
 .sidebar-nav a.is-active {
   background-color: var(--background-secondary);

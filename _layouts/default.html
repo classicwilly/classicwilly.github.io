@@ -68,6 +68,21 @@
         <li><a href="/command-center" {% if page.url contains 'command-center' %}aria-current="page" class="is-active"{% endif %}>⚙️ Command Center</a></li>
         <li><a href="/settings" {% if page.url contains 'settings' %}aria-current="page" class="is-active"{% endif %}>⚙ Settings</a></li>
       </ul>
+
+      <div class="sidebar-section-title">All Pages</div>
+      <details class="sidebar-allpages" open>
+        <summary class="sr-only">All site pages</summary>
+        <ul class="sidebar-nav sidebar-allpages-list">
+          {%- assign site_pages = site.pages | sort: 'url' -%}
+          {%- for p in site_pages -%}
+            {%- if p.title and p.url contains '/' -%}
+              {%- unless p.url contains '/assets/' or p.url == '/' -%}
+                <li><a href="{{ p.url | relative_url }}" {% if page.url == p.url %}aria-current="page" class="is-active"{% endif %}>{{ p.title }}</a></li>
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </details>
       <div class="section-divider" aria-hidden="true"></div>
       <div class="sidebar-section-title">Protocols</div>
       <ul class="sidebar-nav">
