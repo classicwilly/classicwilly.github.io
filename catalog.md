@@ -42,6 +42,6 @@ This is the "card catalog" of my "fixes," thoughts, and systems. This list updat
 ---
 <div class="checklist-grid">
   {% for post in site.posts %}
-    {% include card.html href="{{ post.url }}" title="{{ post.title }}" desc="{{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}" classes="checklist-card" %}
+    {% include card.html href=post.url title=post.title classes="checklist-card" %}
   {% endfor %}
 </div>
