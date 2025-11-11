@@ -1,11 +1,32 @@
-.main-content > *:not(.keep-grid) {
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Default card surface for any block inside main-content. Use .full-width to span both columns */
+.main-content > *:not(.keep-grid),
+.main-content .card,
+.main-content section,
+.main-content .page-section {
   background-color: var(--card-dark);
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-md);
-  /* slightly tighter padding to reduce dead space in hero/intro cards */
-  padding: 0.45rem;
-  margin-bottom: 0.4rem; /* tighter vertical rhythm for denser layout */
+  padding: 0.6rem; /* comfortable padding inside cards */
   box-shadow: var(--shadow-sm);
+  margin: 0; /* grid gap handles spacing */
+  overflow: hidden;
+  aspect-ratio: 4 / 3; /* conservative aspect ratio so no dimension doubles the other */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make elements that should be full width span both columns */
+.main-content > .full-width,
+.main-content .full-width {
+  grid-column: 1 / -1;
+  aspect-ratio: auto; /* let wide content control height */
 }
 
 /* Page hero / large title card tuning */
@@ -81,6 +102,22 @@
 /* Icon sizing inside sidebar nav; emojis will align with text */
 .sidebar-nav li a .nav-icon { font-size: 1.1rem; width: 24px; text-align: left; display:inline-block; }
 .sidebar-nav li a .nav-label { flex: 1; }
+
+/* Ensure Wonky AI area is presented as a card surface when present */
+.ask-wonky,
+.ask-wonky-card,
+#wonky-ai-widget,
+.wonky-ai-widget {
+  background-color: var(--card-dark);
+  border: 1px solid var(--border-gray);
+  border-radius: var(--radius-md);
+  padding: 0.6rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+}
 
 /* Divider lines between sections */
 .sidebar .section-divider { height: 1px; background: var(--sidebar-divider); margin: 0.5rem 0; }
