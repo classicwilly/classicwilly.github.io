@@ -18,35 +18,19 @@ title: Sensory Overload Emergency Protocol
 You are in Sensory Overload Emergency if **3 or more** of these are true:
 
 ### Auditory Overload
-- [ ] Normal conversation volume feels like shouting
-- [ ] Background noise (HVAC, traffic, music) is physically painful
-- [ ] Multiple sound sources are happening simultaneously and you can't filter them
-- [ ] You feel an urge to cover your ears or escape the room
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>Normal conversation volume feels like shouting</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Background noise (HVAC, traffic, music) is physically painful</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Multiple sound sources are happening simultaneously and you can't filter them</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You feel an urge to cover your ears or escape the room</span></label></div>
 
 ### Visual Overload
-- [ ] Lights feel too bright, even normal indoor lighting
-- [ ] Movement in your peripheral vision is deeply distracting
-- [ ] Screens are causing eye strain or headache
-- [ ] You want to close your eyes or seek darkness
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>Lights feel too bright, even normal indoor lighting</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Movement in your peripheral vision is deeply distracting</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Screens are causing eye strain or headache</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You want to close your eyes or seek darkness</span></label></div>
 
 ### Tactile Overload
-- [ ] Your clothing feels wrong (tags, seams, tightness, texture)
-- [ ] You want to remove your clothes or change immediately
-- [ ] Touch from others is irritating or painful
-- [ ] Your skin feels hypersensitive to air, fabric, or contact
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>Your clothing feels wrong (tags, seams, tightness, texture)</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You want to remove your clothes or change immediately</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Touch from others is irritating or painful</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Your skin feels hypersensitive to air, fabric, or contact</span></label></div>
 
 ### Olfactory/Gustatory Overload
-- [ ] Smells that normally don't bother you are overwhelming (cooking, cleaning products, perfume)
-- [ ] You feel nauseous from scents
-- [ ] Food tastes/textures are repulsive when normally they're fine
-- [ ] You can't tolerate eating or can only tolerate specific bland foods
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>Smells that normally don't bother you are overwhelming (cooking, cleaning products, perfume)</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You feel nauseous from scents</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Food tastes/textures are repulsive when normally they're fine</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You can't tolerate eating or can only tolerate specific bland foods</span></label></div>
 
 ### Systemic Overload (Multiple Senses)
-- [ ] You feel trapped, cornered, or claustrophobic
-- [ ] Your fight-or-flight response is activated (heart racing, breathing shallow)
-- [ ] You're irritable, snappy, or on the edge of tears/rage
-- [ ] You need everyone to stop talking, stop moving, stop existing near you
-- [ ] You're dissociating (feeling disconnected, foggy, watching yourself from outside)
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>You feel trapped, cornered, or claustrophobic</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Your fight-or-flight response is activated (heart racing, breathing shallow)</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You're irritable, snappy, or on the edge of tears/rage</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You need everyone to stop talking, stop moving, stop existing near you</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You're dissociating (feeling disconnected, foggy, watching yourself from outside)</span></label></div>
 
 **If 3+ signals present: Execute this protocol immediately. Do not wait. Do not tough it out.**
 

@@ -17,12 +17,7 @@ title: Context Switching Recovery Protocol
 
 You need this protocol when:
 
-- [ ] Someone interrupts you during deep work (knock on door, phone call, "quick question")
-- [ ] An emergency requires immediate attention (child hurt, system alert, urgent email)
-- [ ] You must switch between Solo and Family modes mid-task
-- [ ] A meeting/appointment starts while you're mid-flow on a task
-- [ ] You realize you forgot something critical and must context-switch NOW
-- [ ] Technical failure forces you to abandon current task (computer crash, power outage)
+<div class="interactive-checklist"><label class="form-checkbox-group"><input type="checkbox"><span>Someone interrupts you during deep work (knock on door, phone call, "quick question")</span></label><label class="form-checkbox-group"><input type="checkbox"><span>An emergency requires immediate attention (child hurt, system alert, urgent email)</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You must switch between Solo and Family modes mid-task</span></label><label class="form-checkbox-group"><input type="checkbox"><span>A meeting/appointment starts while you're mid-flow on a task</span></label><label class="form-checkbox-group"><input type="checkbox"><span>You realize you forgot something critical and must context-switch NOW</span></label><label class="form-checkbox-group"><input type="checkbox"><span>Technical failure forces you to abandon current task (computer crash, power outage)</span></label></div>
 
 **If ANY signal present: Execute this protocol before addressing the interrupt.**
 

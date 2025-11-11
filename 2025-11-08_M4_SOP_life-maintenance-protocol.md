@@ -25,13 +25,13 @@ This SOP covers: House cleaning, groceries, personal hygiene. The stuff nobody t
 
 ## 🚀 QUICK JUMP TO SECTION
 
-<div class="quick-jump-grid">
+<div class="quick-jump-grid" style="margin-bottom: 2rem;">
   <a href="#philosophy">💭 Philosophy</a>
   <a href="#house-cleaning">🏠 House Cleaning</a>
   <a href="#groceries">🛒 Groceries</a>
   <a href="#hygiene">🚿 Personal Hygiene</a>
   <a href="#integration">🔗 Integration</a>
-  <a href="#emergency">🚨 Emergency</a>
+  <a href="#emergency-reset">🚨 Emergency Reset</a>
   <a href="#tools">🛠️ Tools & Supplies</a>
   <a href="#reminder">💡 Final Reminder</a>
 </div>
@@ -481,14 +481,14 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
 
 ### Morning Routine
 - **6:00-6:30 AM:** Tier 1 hygiene minimum (face, teeth, deodorant)
-- **6:30-7:00 AM:** Kitchen 5-min zone maintenance while making breakfast
+- **6:30-7:00 AM:** Kitchen 5-min zone maintenance
 
 ### Evening Routine
 - **9:00-9:15 PM:** Daily 15-min house maintenance (kitchen, bathroom, living space)
 - **10:00-10:15 PM:** Tier 1 or 2 hygiene before bed (teeth, face wash)
 
 ### Weekly Schedule
-- **Sunday 9-10 AM:** Weekly Deep Clean (rotate focus areas)
+- **Sunday 9-10 AM:** Weekly Deep Clean
 - **Wednesday 6-7 PM:** Grocery shopping (or pick another consistent day)
 - **Every 2-3 days:** Tier 3 Quick Shower (or as needed)
 
@@ -557,4 +557,3 @@ Sensory issues + executive dysfunction + depression = hygiene tasks feel impossi
   <a href="/sop-vault" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">📋 View All SOPs</a>
   <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" style="display: inline-block; margin: 0 1.5rem; padding: 0.75rem 1.5rem; background: var(--card-dark); border-radius: 8px; color: var(--text-bright); text-decoration: none; font-weight: 600; transition: all 0.3s ease;">🚨 Emergency Protocol</a>
 </div>
-

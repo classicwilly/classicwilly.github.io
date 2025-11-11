@@ -122,10 +122,9 @@
       btn.textContent = 'Ask Wonky AI';
       btn.setAttribute('aria-label', 'Ask Wonky AI about this content');
       btn.addEventListener('click', () => openModalForCard(card));
-      // place button in top-right of card
-      btn.style.cssText = 'position:absolute;top:8px;right:8px;z-index:10;';
+
       // ensure card is positioned relatively
-      if (getComputedStyle(card).position === 'static') card.style.position = 'relative';
+      if (getComputedStyle(card).position === 'static') card.classList.add('position-relative');
       card.appendChild(btn);
     });
   }
@@ -163,7 +162,7 @@
     };
     // make a few quick suggestions related to the card
     const suggestions = [
-      { id: 'highlight', title: 'Highlight this card', desc: 'Add a subtle highlight to make this card stand out.', action: () => { card.style.boxShadow = '0 0 0 3px rgba(45,204,204,0.08)'; announce('Card highlighted'); } },
+      { id: 'highlight', title: 'Highlight this card', desc: 'Add a subtle highlight to make this card stand out.', action: () => { card.classList.toggle('card-highlight'); announce('Card highlight toggled'); } },
   { id: 'copy', title: 'Copy text', desc: 'Copy the main text of this card to your clipboard.', action: async () => { try { if (isPrivacyMode()) { alert('Privacy Mode is ON — copying is disabled.'); return; } await navigator.clipboard.writeText(card.textContent.trim()); announce('Copied to clipboard'); } catch (e) { announce('Copy failed'); }}},
   { id: 'open-related', title: 'Show related SOPs', desc: 'Open the SOP vault in a new tab to find related procedures.', action: () => { if (isPrivacyMode()) { alert('Privacy Mode is ON — opening external pages is disabled.'); return; } window.open('/sop-vault', '_blank'); } }
     ];

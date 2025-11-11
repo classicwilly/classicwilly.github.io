@@ -46,43 +46,43 @@ title: Foundational Daily Protocols Checklist
 ### 6:00 AM - Wake & Water Protocol
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Wake alarm sounds</span>
+    <span>Wake alarm sounds</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Stand up immediately (no snooze, no phone)</span>
+    <span>Stand up immediately (no snooze, no phone)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Drink 1 full glass (16 oz) of water</span>
+    <span>Drink 1 full glass (16 oz) of water</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Keep filled water bottle at Command Center for continuous hydration</span>
+    <span>Keep filled water bottle at Command Center for continuous hydration</span>
   </label>
 </div>
 
 ### 6:02 AM - Pill Protocol
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Take all pills from today's slot in organizer</span>
+    <span>Take all pills from today's slot in organizer</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Refill tomorrow's slot if needed</span>
+    <span>Refill tomorrow's slot if needed</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Visual check: Organizer in correct position</span>
+    <span>Visual check: Organizer in correct position</span>
   </label>
 </div>
 
@@ -94,29 +94,29 @@ title: Foundational Daily Protocols Checklist
 **When any thought, idea, or task enters your mind:**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Stop whatever you're doing</span>
+    <span>Stop whatever you're doing</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Grab Soundcore AI Recorder OR open Google Keep</span>
+    <span>Grab Soundcore AI Recorder OR open Google Keep</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Record/write the thought immediately</span>
+    <span>Record/write the thought immediately</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">DO NOT process it—just capture it</span>
+    <span>DO NOT process it—just capture it</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Return to current task</span>
+    <span>Return to current task</span>
   </label>
 </div>
 
@@ -129,72 +129,72 @@ title: Foundational Daily Protocols Checklist
 ### 10:00 PM - Sleep Anchor Prep
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Begin winding down (low light, low stimulation)</span>
+    <span>Begin winding down (low light, low stimulation)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Turn off all screens</span>
+    <span>Turn off all screens</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Dim all lights in living space</span>
+    <span>Dim all lights in living space</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Engage low-stimulation activity (reading, meditation, stretching)</span>
+    <span>Engage low-stimulation activity (reading, meditation, stretching)</span>
   </label>
 </div>
 
 ### 10:25 PM - Daily Dump
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Open Google Tasks</span>
+    <span>Open Google Tasks</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Review tomorrow's schedule</span>
+    <span>Review tomorrow's schedule</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Write down the 3 most critical tasks for tomorrow</span>
+    <span>Write down the 3 most critical tasks for tomorrow</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Close all apps</span>
+    <span>Close all apps</span>
   </label>
 </div>
 
 ### 10:30 PM - Sleep Anchor
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Phone on silent/DND mode</span>
+    <span>Phone on silent/DND mode</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Lay down in bed</span>
+    <span>Lay down in bed</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">No screens, no stimulation</span>
+    <span>No screens, no stimulation</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Sleep (7-8 hours → wake at 6:00 AM)</span>
+    <span>Sleep (7-8 hours → wake at 6:00 AM)</span>
   </label>
 </div>
 
