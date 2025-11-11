@@ -4,18 +4,21 @@ title: Daily Tracker
 ---
 
 <div class="checklist-section">
-  <div class="about-card is-blue">
+  {% capture _daily_header %}
     <h2>📊 Daily Protocol Tracker</h2>
     <p>Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
     <p>Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card is-blue" content=_daily_header %}
 </div>
 <div class="checklist-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-  <div class="about-card">
+  {% capture _tracker_date %}
     <label for="tracker-date" class="form-label">Date:</label>
     <input type="date" id="tracker-date" class="form-input" />
-  </div>
-  <div class="about-card">
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_tracker_date %}
+
+  {% capture _tracker_mode %}
     <label class="form-label">Mode:</label>
     <label class="form-checkbox-group">
       <input type="radio" name="mode" value="solo" id="mode-solo" />
@@ -25,7 +28,8 @@ title: Daily Tracker
       <input type="radio" name="mode" value="family" id="mode-family" />
       <span>Family Structure</span>
     </label>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_tracker_mode %}
 </div>
 
 ---
@@ -47,7 +51,7 @@ title: Daily Tracker
 ---
 
 <div class="checklist-grid">
-  <div class="about-card" id="foundational">
+  {% capture _foundational %}
     <h2>🌊 Foundational Protocols</h2>
     <p>Core protocols that must happen every day. <strong>Goal: 10+ of 11 completed.</strong></p>
     <div class="interactive-checklist">
@@ -65,9 +69,10 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>10:25 PM</strong> - Daily Dump (review tomorrow, write 3 critical tasks)</span></label>
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>10:30 PM</strong> - Sleep Anchor (in bed, no screens, DND mode)</span></label>
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_foundational id="foundational" %}
 
-  <div class="about-card" id="morning">
+  {% capture _morning %}
     <h2>🌅 Morning Transition (6:00-7:00 AM)</h2>
     <p>4-phase protocol to go from bed → execution. <strong>Goal: All 4 phases complete by 7:00 AM.</strong></p>
     <div class="interactive-checklist">
@@ -76,9 +81,10 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Phase 3 Complete</strong> - Mental Calibration (calendar, 3 priority tasks selected)</span></label>
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Phase 4 Complete</strong> - Execution Launch (first micro-action by 7:00 AM)</span></label>
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_morning id="morning" %}
 
-  <div class="about-card" id="mode-specific">
+  {% capture _mode_specific %}
     <h2>🎯 Mode-Specific Protocols</h2>
     <p>Different protocols for Solo Execution Mode vs Family Structure Mode. Check the section that matches today's mode.</p>
     <div class="interactive-checklist">
@@ -93,9 +99,10 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Structured Family Schedule</strong> - Maintained fixed meal/activity times</span></label>
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Tag-Team Coordination</strong> - Communicated needs with spouse</span></label>
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_mode_specific id="mode-specific" %}
 
-  <div class="about-card" id="emergency">
+  {% capture _emergency %}
     <h2>🚨 Emergency Protocols Used Today</h2>
     <p>Check any emergency protocols you needed today. <strong>If 2+ checked:</strong> System issue detected. Review root cause.</p>
     <div class="interactive-checklist">
@@ -103,9 +110,10 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Context Switching Recovery</strong> - Handled interruption with capture protocol</span></label>
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Sensory Overload Emergency</strong> - Retreated for nervous system regulation</span></label>
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_emergency id="emergency" %}
 
-  <div class="about-card" id="priority-check">
+  {% capture _priority %}
     <h2>🎖️ Priority Hierarchy Check</h2>
     <p>Rate each foundational need 1-10. <strong>If any score below 7:</strong> This is the root problem. Fix this tomorrow.</p>
     <div class="form-group">
@@ -120,9 +128,10 @@ title: Daily Tracker
     <div class="form-group">
       <label for="rating-medicine" class="form-label">Medicine (pills taken):</label><input type="number" id="rating-medicine" min="1" max="10" placeholder="1-10" class="form-input" /> / 10
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_priority id="priority-check" %}
 
-  <div class="about-card" id="wins">
+  {% capture _wins %}
     <h2>🌟 Today's Wins (3 minimum)</h2>
     <p>List at least 3 things you accomplished today. Any size counts. This isn't motivational BS—it's pattern recognition.</p>
     <div class="form-group">
@@ -134,9 +143,10 @@ title: Daily Tracker
     <div class="form-group">
       <label for="win-3" class="form-label">3.</label><input type="text" id="win-3" placeholder="Enter your win..." class="form-input" />
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_wins id="wins" %}
 
-  <div class="about-card" id="tomorrow">
+  {% capture _tomorrow %}
     <h2>📅 Tomorrow's Top 3 Priorities</h2>
     <p>What are the 3 most critical tasks for tomorrow? Write these during Daily Dump (10:25 PM).</p>
     <div class="form-group">
@@ -148,18 +158,20 @@ title: Daily Tracker
     <div class="form-group">
       <label for="priority-3" class="form-label">3.</label><input type="text" id="priority-3" placeholder="Enter priority..." class="form-input" />
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_tomorrow id="tomorrow" %}
 
-  <div class="about-card" id="notes">
+  {% capture _notes %}
     <h2>📝 Notes / Observations</h2>
     <p>Note anything unusual, patterns you're seeing, or insights about what worked/didn't work today.</p>
     <div class="notes-section">
       <label for="notes" class="notes-label">Use this space to note anything unusual, patterns, or insights:</label>
       <textarea id="notes" rows="5" placeholder="Enter your observations..." class="form-textarea"></textarea>
     </div>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_notes id="notes" %}
 
-  <div class="about-card" id="metrics">
+  {% capture _metrics %}
     <h2>📊 Completion Metrics</h2>
     <p>Track completion rates for each protocol section. Use these metrics during Weekly Review to spot trends.</p>
     <div class="form-group">
@@ -178,7 +190,8 @@ title: Daily Tracker
       <label for="overall-rating" class="form-label">Overall Day Rating:</label><input type="number" id="overall-rating" min="1" max="10" placeholder="1-10" class="form-input" /> / 10
     </div>
     <p><strong>Daily Tracker Usage:</strong> Fill this out at Daily Dump (10:25 PM) before sleep. Check boxes throughout day as you complete protocols. Review patterns weekly during Weekly Review Protocol. <strong>If completion rates drop below 70% for 3+ days:</strong> Emergency system review required.</p>
-  </div>
+  {% endcapture %}
+  {% include card.html classes="about-card" content=_metrics id="metrics" %}
 </div>
 
 <div class="checklist-grid">

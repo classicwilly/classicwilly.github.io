@@ -40,8 +40,8 @@ title: The Card Catalog
 This is the "card catalog" of my "fixes," thoughts, and systems. This list updates automatically.
 
 ---
-
-{% for post in site.posts %}
-## [{{ post.title }}]({{ post.url }})
-* **Date:** {{ post.date | date: "%B %d, %Y" }}
-{% endfor %}
+<div class="checklist-grid">
+  {% for post in site.posts %}
+    {% include card.html href="{{ post.url }}" title="{{ post.title }}" desc="{{ post.excerpt | strip_html | strip_newlines | truncate: 140 }}" classes="checklist-card" %}
+  {% endfor %}
+</div>
