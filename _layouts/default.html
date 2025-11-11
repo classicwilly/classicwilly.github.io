@@ -217,49 +217,27 @@
       })();
 
       // Wonky AI Integration
-      function toggleWonkyAI() {
+      /* Privacy: Legacy remote chat disabled.
+         This site intentionally avoids sending user content to external services.
+         Wonky AI guide operates locally (client-side) only. */
+      function wonkyAiExternalDisabled() {
+        // Provide a gentle in-page notice rather than sending data out.
         const content = document.getElementById('wonky-ai-content');
-        const toggle = document.getElementById('wonky-ai-toggle');
-        if (content.style.display === 'none') {
-          content.style.display = 'block';
-          toggle.textContent = 'Hide';
-        } else {
-          content.style.display = 'none';
-          toggle.textContent = 'Show';
+        if (content) {
+          const note = document.createElement('div');
+          note.className = 'wonky-external-disabled';
+          note.textContent = 'External chat is disabled for privacy. Wonky AI runs locally only.';
+          note.style.padding = '0.5rem';
+          note.style.marginTop = '0.5rem';
+          note.style.background = 'rgba(45,204,204,0.06)';
+          note.style.color = 'var(--text-light)';
+          const existing = content.querySelector('.wonky-external-disabled');
+          if (!existing) content.prepend(note);
         }
       }
-      async function sendToWonkyAI() {
-        const WONKY_AI_KEY = 'YOUR_API_KEY_HERE'; // IMPORTANT: Replace with a secure method to handle API keys.
-        const WONKY_AI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
-        const input = document.getElementById('wonky-ai-input');
-        const chatDiv = document.getElementById('wonky-ai-chat');
-        if (!input.value.trim()) return;
-        const userQuery = input.value;
-        input.value = '';
-        if (chatDiv.querySelector('p')) chatDiv.innerHTML = '';
-        const userMessage = document.createElement('div');
-        userMessage.innerHTML = `<strong class="chat-speaker user">You:</strong><br>${userQuery}`;
-        chatDiv.appendChild(userMessage);
-        const loadingMessage = document.createElement('div');
-        loadingMessage.innerHTML = `<strong class="chat-speaker ai">Wonky AI:</strong><br>Thinking...`;
-        chatDiv.appendChild(loadingMessage);
-        chatDiv.scrollTop = chatDiv.scrollHeight;
-        try {
-          const response = await fetch(`${WONKY_AI_URL}?key=${WONKY_AI_KEY}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ contents: [{ parts: [{ text: `You are Wonky AI, an assistant for the Wonky Sprout OS. Answer concisely:\n\n${userQuery}` }] }] })
-          });
-          if (!response.ok) throw new Error(`API error: ${response.status}`);
-          const data = await response.json();
-          const aiResponse = data.candidates[0].content.parts[0].text;
-          loadingMessage.innerHTML = `<strong class="chat-speaker ai">Wonky AI:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
-        } catch (error) {
-          loadingMessage.innerHTML = `<strong class="chat-error">Error:</strong><br>Failed to connect. ${error.message}`;
-        }
-        chatDiv.scrollTop = chatDiv.scrollHeight;
-      }
-      document.getElementById('wonky-ai-input')?.addEventListener('keypress', e => e.key === 'Enter' && sendToWonkyAI());
+      document.getElementById('wonky-ai-input')?.addEventListener('keypress', e => {
+        if (e.key === 'Enter') { e.preventDefault(); wonkyAiExternalDisabled(); }
+      });
     </script>
 </body>
 </html>
