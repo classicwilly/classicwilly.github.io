@@ -46,11 +46,11 @@ body {
   height: 100vh;
   background-color: var(--card-dark);
   border-right: 1px solid var(--border-gray);
-  padding: 0.6rem 0.5rem; /* tightened to pack more nav items */
+  padding: 0.4rem 0.4rem; /* tightened to pack more nav items */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem; /* reduce vertical gap to make nav denser */
   z-index: 200;
   background-image: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
   color: var(--material-on-surface);
@@ -99,14 +99,14 @@ body {
 .sidebar-nav li a {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.6rem 0.5rem; /* comfortable clickable area */
+  gap: 0.5rem;
+  padding: 0.45rem 0.4rem; /* slightly reduced clickable area for denser list */
   color: var(--text-light);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 0.96rem; /* slightly smaller for denser layout */
   transition: var(--transition);
-  padding-left: 12px;
-  border-left: 4px solid transparent; /* stronger visual indicator */
+  padding-left: 10px;
+  border-left: 3px solid transparent; /* slightly thinner indicator */
 }
 
 .sidebar-nav li a:hover,
@@ -129,7 +129,7 @@ body {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
   /* pull content even closer to the sidebar for a denser layout */
-  padding: 0.4rem 0.6rem;
+  padding: 0.35rem 0.6rem; /* pull content a little closer to sidebar */
   box-sizing: border-box;
 }
 
