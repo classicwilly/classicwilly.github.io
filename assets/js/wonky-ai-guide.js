@@ -164,8 +164,8 @@
     // make a few quick suggestions related to the card
     const suggestions = [
       { id: 'highlight', title: 'Highlight this card', desc: 'Add a subtle highlight to make this card stand out.', action: () => { card.style.boxShadow = '0 0 0 3px rgba(45,204,204,0.08)'; announce('Card highlighted'); } },
-      { id: 'copy', title: 'Copy text', desc: 'Copy the main text of this card to your clipboard.', action: async () => { try { await navigator.clipboard.writeText(card.textContent.trim()); announce('Copied to clipboard'); } catch (e) { announce('Copy failed'); }}},
-      { id: 'open-related', title: 'Show related SOPs', desc: 'Open the SOP vault in a new tab to find related procedures.', action: () => { window.open('/sop-vault', '_blank'); } }
+  { id: 'copy', title: 'Copy text', desc: 'Copy the main text of this card to your clipboard.', action: async () => { try { if (isPrivacyMode()) { alert('Privacy Mode is ON — copying is disabled.'); return; } await navigator.clipboard.writeText(card.textContent.trim()); announce('Copied to clipboard'); } catch (e) { announce('Copy failed'); }}},
+  { id: 'open-related', title: 'Show related SOPs', desc: 'Open the SOP vault in a new tab to find related procedures.', action: () => { if (isPrivacyMode()) { alert('Privacy Mode is ON — opening external pages is disabled.'); return; } window.open('/sop-vault', '_blank'); } }
     ];
     suggestions.forEach(s => {
       const li = document.createElement('li');
@@ -212,6 +212,7 @@
        window.WONKY_REMOTE_ENDPOINT = '/api/wonky-proxy' (or similar) in a safe server-side config.
      - No API keys are present in client code. */
   const REMOTE_FLAG = 'wonky_remote_enabled';
+  const PRIVACY_FLAG = 'wonky_privacy_mode';
 
   function isRemoteEnabled() {
     return localStorage.getItem(REMOTE_FLAG) === 'true';
@@ -238,6 +239,17 @@
     } else {
       if (badge) badge.remove();
     }
+  }
+
+  function isPrivacyMode() {
+    return localStorage.getItem(PRIVACY_FLAG) === 'true';
+  }
+
+  function setPrivacyMode(enabled) {
+    localStorage.setItem(PRIVACY_FLAG, enabled ? 'true' : 'false');
+    const btn = $('#wonky-privacy-toggle');
+    if (btn) btn.setAttribute('aria-pressed', String(enabled));
+    announce(enabled ? 'Privacy Mode enabled' : 'Privacy Mode disabled');
   }
 
   function showConsentModal(onConfirm) {
@@ -320,6 +332,15 @@
         } else {
           showConsentModal();
         }
+      });
+    }
+    // wire privacy toggle
+    const privacyToggle = document.getElementById('wonky-privacy-toggle');
+    if (privacyToggle) {
+      privacyToggle.setAttribute('aria-pressed', String(isPrivacyMode()));
+      privacyToggle.addEventListener('click', () => {
+        const cur = isPrivacyMode();
+        setPrivacyMode(!cur);
       });
     }
 
