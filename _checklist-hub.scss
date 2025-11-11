@@ -1,0 +1,75 @@
+// _sass/components/_checklist-hub.scss
+
+// Styles for the main /checklists hub page.
+
+.checklist-section {
+  margin-bottom: 3rem;
+
+  .section-title {
+    color: var(--circuit-teal);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(26, 188, 156, 0.3);
+  }
+}
+
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.checklist-card {
+  display: block;
+  background: var(--card-dark);
+  border: 2px solid var(--border-gray);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+
+  .card-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .card-title { font-size: 1.1rem; margin: 0 0 0.5rem 0; }
+  .card-desc { color: var(--text-light); font-size: 0.9rem; margin: 0 0 0.75rem 0; line-height: 1.4; }
+  .card-meta { color: var(--text-light); font-size: 0.85rem; opacity: 0.7; }
+
+  // Color variants
+  &.is-green { border-color: var(--green); .card-title { color: var(--green); } }
+  &.is-yellow { border-color: var(--yellow); .card-title { color: var(--yellow); } }
+  &.is-blue { border-color: var(--blue); .card-title { color: var(--blue); } }
+  &.is-purple { border-color: var(--purple); .card-title { color: var(--purple); } }
+
+  &.is-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+    .card-title { color: var(--text-light); }
+  }
+
+  &:not(.is-disabled):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+  }
+}
+
+// Styles for testimonial card on /fix page
+.testimonial-card {
+  background: var(--card-dark);
+  border-left: 4px solid var(--green);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+
+  .testimonial-meta {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+  .testimonial-text {
+    font-style: italic;
+    line-height: 1.7;
+    margin: 0 0 1rem 0;
+  }
+  .testimonial-footer { font-weight: 600; }
+}

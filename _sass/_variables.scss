@@ -1,7 +1,13 @@
 /* _sass/_variables.scss */
 /* Centralized CSS variables for Wonky Sprout OS visual engine */
 :root {
-  --sidebar-width: 250px;
+  --sidebar-width: 300px; /* widened so left nav can hold more items/useful controls */
+  /* Material-like palette additions */
+  --material-primary: #1e88e5; /* material blue */
+  --material-surface: #0e1113; /* dark surface for cards and sidebar */
+  --material-on-surface: #c9d1d9;
+  --sidebar-heading: rgba(255,255,255,0.08);
+  --sidebar-divider: rgba(255,255,255,0.04);
   --dark-bg: #121212; /* Main background */
   --card-dark: #202124; /* Sidebar and card background */
   --border-gray: #5f6368;

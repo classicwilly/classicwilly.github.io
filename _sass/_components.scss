@@ -1,14 +1,31 @@
-/* _sass/_components.scss */
-/* Card and UI component styles */
-
-/* Apply card styles to content that isn't a keep-grid (keep-grid handled by google-keep-style.css) */
 .main-content > *:not(.keep-grid) {
   background-color: var(--card-dark);
   border: 1px solid var(--border-gray);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  /* slightly tighter padding to reduce dead space in hero/intro cards */
+  padding: 0.45rem;
+  margin-bottom: 0.4rem; /* tighter vertical rhythm for denser layout */
   box-shadow: var(--shadow-sm);
+}
+
+/* Page hero / large title card tuning */
+.page-hero,
+.hero-card,
+.main-content > .hero {
+  padding: 0.5rem 0.6rem; /* reduce large hero padding */
+  border-radius: calc(var(--radius-md) * 1);
+}
+.page-hero .card-title,
+.hero-card .card-title,
+.main-content > .hero .card-title {
+  font-size: 1.12rem; /* slightly smaller hero title */
+  margin-bottom: 0.22rem;
+}
+
+/* Very compact mode for lists/tables inside content */
+.main-content.compact > *:not(.keep-grid) {
+  padding: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 
 .keep-card { margin-bottom: 0; }
@@ -26,3 +43,68 @@
 .fab-menu a:hover { background-color: var(--circuit-teal); color: var(--card-dark); transform: scale(1.1); }
 
 /* Accessibility helpers or small UI bits can go here */
+
+/* Skip-link visible on focus for keyboard users */
+.skip-link {
+  position: absolute; /* kept for layout fallback */
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus,
+.skip-link:active {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--circuit-teal);
+  color: var(--card-dark);
+  border-radius: 4px;
+  z-index: 9999;
+  box-shadow: var(--shadow-lg);
+  text-decoration: none;
+}
+
+/* Sidebar scrolling & chrome (narrow scrollbar like screenshot) */
+.sidebar {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.sidebar::-webkit-scrollbar { width: 10px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
+.sidebar::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.09); }
+
+/* Icon sizing inside sidebar nav; emojis will align with text */
+.sidebar-nav li a .nav-icon { font-size: 1.25rem; width: 28px; text-align: left; display:inline-block; }
+.sidebar-nav li a .nav-label { flex: 1; }
+
+/* Divider lines between sections */
+.sidebar .section-divider { height: 1px; background: var(--sidebar-divider); margin: 0.5rem 0; }
+
+/* Make nav feel like material list */
+.sidebar-nav li a { border-radius: 6px; }
+.sidebar-nav li a.is-active, .sidebar-nav li a[aria-current="page"] { background-color: rgba(30,136,229,0.06); border-left-color: var(--material-primary); }
+
+/* Respect user preference for reduced motion (important for vestibular/sensory sensitivities) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+  .fab,
+  .fab-menu {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+/* Stronger focus-visible styles for keyboard users (helps navigation for executive dysfunction) */
+:focus-visible {
+  outline: 3px solid var(--circuit-teal);
+  outline-offset: 2px;
+}

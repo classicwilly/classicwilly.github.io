@@ -2,13 +2,13 @@
 layout: default
 title: Stim Station
 ---
-
-<div style="text-align: center; margin-bottom: 3rem;">
-  <h1 style="font-size: 2.5rem; margin: 0.16rem 0 1.16rem 0; border-bottom: none !important;">🎮 <span style="color: var(--yellow);">Stim Station</span></h1>
-  <div style="height: 2px; width: 100%; background: linear-gradient(90deg, var(--blue), var(--purple), var(--pink), var(--yellow)); margin-bottom: 2.16rem;"></div>
-  <p style="color: var(--text-light); font-size: 1.1rem; margin: 0 0 0.5rem;">Neurodivergent-friendly games for when you need to zone out.</p>
-  <p style="color: var(--text-light); font-size: 0.95rem; margin: 0.5rem 0 2.16rem;">No scores. No timers. No pressure.</p>
-  <div style="height: 1px; width: 100%; background: var(--circuit-teal); opacity: 0.3;"></div>
+ 
+<div class="game-header">
+  <h1>🎮 <span class="game-title-accent">Stim Station</span></h1>
+  <div class="game-header-divider"></div>
+  <p>Neurodivergent-friendly games for when you need to zone out.</p>
+  <p class="text-sm my-3">No scores. No timers. No pressure.</p>
+  <div class="game-header-sub-divider"></div>
 </div>
 
 <div class="game-container">
@@ -63,391 +63,159 @@ title: Stim Station
   </div>
 </div>
 
-<style>
-  .game-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-
-  .game-card {
-    background: var(--card-dark);
-    border: 2px solid var(--border-gray);
-    border-radius: 12px;
-    padding: 2rem;
-  }
-
-  .game-card h2 {
-    color: var(--circuit-teal);
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-
-  .game-card p {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  /* Button Clicker */
-  .clicker-game {
-    text-align: center;
-  }
-
-  .big-click-button {
-    width: 200px;
-    height: 200px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    background: var(--circuit-teal);
-    color: var(--darker-bg);
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.1s ease;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  .big-click-button:hover {
-    background: var(--sprout-green);
-    transform: scale(1.05);
-  }
-
-  .big-click-button:active {
-    transform: scale(0.95);
-  }
-
-  .click-count {
-    font-size: 2rem;
-    color: var(--text-bright);
-    margin: 1.5rem 0;
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  /* Balloon Popper */
-  .balloon-container {
-    position: relative;
-    height: 400px;
-    background: linear-gradient(to bottom, #1a1f2e 0%, #0d1117 100%);
-    border: 2px solid var(--border-gray);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-
-  .balloon {
-    position: absolute;
-    width: 50px;
-    height: 60px;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    cursor: pointer;
-    transition: transform 0.1s ease;
-    animation: float 8s ease-in-out infinite;
-  }
-
-  .balloon:hover {
-    transform: scale(1.1);
-  }
-
-  .balloon::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    width: 2px;
-    height: 15px;
-    background: rgba(255,255,255,0.3);
-  }
-
-  @keyframes float {
-    0% {
-      transform: translateY(0) translateX(0);
-    }
-    25% {
-      transform: translateY(-100px) translateX(10px);
-    }
-    50% {
-      transform: translateY(-200px) translateX(-5px);
-    }
-    75% {
-      transform: translateY(-300px) translateX(8px);
-    }
-    100% {
-      transform: translateY(-450px) translateX(0);
-    }
-  }
-
-  .balloon-stats, .bubble-stats {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin: 1rem 0;
-    color: var(--text-light);
-    font-family: 'IBM Plex Mono', monospace;
-  }
-
-  /* Bubble Wrap */
-  .bubble-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 5px;
-    margin-bottom: 1rem;
-  }
-
-  .bubble {
-    aspect-ratio: 1;
-    background: radial-gradient(circle at 30% 30%, rgba(26,188,156,0.3), rgba(26,188,156,0.1));
-    border: 2px solid var(--circuit-teal);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.1s ease;
-  }
-
-  .bubble:hover {
-    background: radial-gradient(circle at 30% 30%, rgba(26,188,156,0.5), rgba(26,188,156,0.2));
-    transform: scale(1.1);
-  }
-
-  .bubble.popped {
-    background: var(--card-dark);
-    border-color: var(--border-gray);
-    cursor: default;
-    transform: scale(0.8);
-  }
-
-  .bubble.popped:hover {
-    transform: scale(0.8);
-  }
-
-  /* Color Mixer */
-  .color-display {
-    width: 100%;
-    height: 200px;
-    border: 2px solid var(--border-gray);
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    background: #808080;
-    transition: background 0.3s ease;
-  }
-
-  .color-controls {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  .color-controls label {
-    color: var(--text-light);
-    font-family: 'IBM Plex Mono', monospace;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .color-controls input[type="range"] {
-    flex: 1;
-    height: 8px;
-    background: var(--border-gray);
-    border-radius: 4px;
-    outline: none;
-  }
-
-  .color-controls input[type="range"]::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    background: var(--circuit-teal);
-    cursor: pointer;
-    border-radius: 50%;
-  }
-
-  .color-code {
-    text-align: center;
-    color: var(--text-bright);
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1.2rem;
-    margin: 1rem 0;
-  }
-
-  /* Buttons */
-  .spawn-button, .reset-button {
-    font-family: 'IBM Plex Mono', monospace;
-    padding: 0.75rem 1.5rem;
-    border: 2px solid var(--circuit-teal);
-    background: transparent;
-    color: var(--circuit-teal);
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    margin: 0.25rem;
-  }
-
-  .spawn-button:hover {
-    background: var(--circuit-teal);
-    color: var(--darker-bg);
-  }
-
-  .reset-button {
-    border-color: var(--accent-orange);
-    color: var(--accent-orange);
-  }
-
-  .reset-button:hover {
-    background: var(--accent-orange);
-    color: var(--darker-bg);
-  }
-</style>
-
 <script>
-  // Button Clicker
-  let clicks = 0;
-  const clickButton = document.getElementById('clickButton');
-  const clickCount = document.getElementById('clickCount');
-  const resetClicker = document.getElementById('resetClicker');
+document.addEventListener('DOMContentLoaded', () => {
+  // --- Button Clicker Game ---
+  (() => {
+    const clickButton = document.getElementById('clickButton');
+    const clickCountEl = document.getElementById('clickCount');
+    const resetClicker = document.getElementById('resetClicker');
+    if (!clickButton) return;
 
-  // Load saved clicks
-  if (localStorage.getItem('stim_clicks')) {
-    clicks = parseInt(localStorage.getItem('stim_clicks'));
-    clickCount.textContent = clicks;
-  }
+    let clicks = parseInt(localStorage.getItem('stim_clicks')) || 0;
+    clickCountEl.textContent = clicks;
 
-  clickButton.addEventListener('click', () => {
-    clicks++;
-    clickCount.textContent = clicks;
-    localStorage.setItem('stim_clicks', clicks);
-    
-    // Fun effect
-    clickButton.style.background = `hsl(${clicks % 360}, 70%, 50%)`;
-  });
-
-  resetClicker.addEventListener('click', () => {
-    clicks = 0;
-    clickCount.textContent = clicks;
-    localStorage.setItem('stim_clicks', clicks);
-    clickButton.style.background = 'var(--circuit-teal)';
-  });
-
-  // Balloon Popper
-  let popped = 0;
-  const balloonContainer = document.getElementById('balloonContainer');
-  const poppedCount = document.getElementById('poppedCount');
-  const activeCount = document.getElementById('activeCount');
-  const spawnBalloon = document.getElementById('spawnBalloon');
-  const spawnMany = document.getElementById('spawnMany');
-  const resetBalloons = document.getElementById('resetBalloons');
-
-  const balloonColors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#6c5ce7', '#a29bfe', '#fd79a8', '#fdcb6e'];
-
-  function createBalloon() {
-    const balloon = document.createElement('div');
-    balloon.className = 'balloon';
-    balloon.style.background = balloonColors[Math.floor(Math.random() * balloonColors.length)];
-    balloon.style.left = Math.random() * (balloonContainer.offsetWidth - 50) + 'px';
-    balloon.style.bottom = '0px';
-    balloon.style.animationDuration = (6 + Math.random() * 4) + 's';
-    
-    balloon.addEventListener('click', () => {
-      balloon.style.animation = 'none';
-      balloon.style.transform = 'scale(0)';
-      setTimeout(() => balloon.remove(), 200);
-      popped++;
-      poppedCount.textContent = popped;
-      updateActiveCount();
+    clickButton.addEventListener('click', () => {
+      clicks++;
+      clickCountEl.textContent = clicks;
+      localStorage.setItem('stim_clicks', clicks);
+      clickButton.style.background = `hsl(${clicks % 360}, 70%, 50%)`;
     });
 
-    balloonContainer.appendChild(balloon);
-    updateActiveCount();
+    resetClicker.addEventListener('click', () => {
+      clicks = 0;
+      clickCountEl.textContent = clicks;
+      localStorage.setItem('stim_clicks', clicks);
+      clickButton.style.background = 'var(--circuit-teal)';
+    });
+  })();
 
-    // Auto-remove after animation
-    setTimeout(() => {
-      if (balloon.parentNode) {
-        balloon.remove();
+  // --- Balloon Popper Game ---
+  (() => {
+    const balloonContainer = document.getElementById('balloonContainer');
+    if (!balloonContainer) return;
+
+    let popped = 0;
+    const poppedCountEl = document.getElementById('poppedCount');
+    const activeCountEl = document.getElementById('activeCount');
+    const spawnBalloonBtn = document.getElementById('spawnBalloon');
+    const spawnManyBtn = document.getElementById('spawnMany');
+    const resetBalloonsBtn = document.getElementById('resetBalloons');
+    const balloonColors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#6c5ce7', '#a29bfe', '#fd79a8', '#fdcb6e'];
+
+    function updateActiveCount() {
+      activeCountEl.textContent = balloonContainer.children.length;
+    }
+
+    function createBalloon() {
+      const balloon = document.createElement('div');
+      balloon.className = 'balloon';
+      balloon.style.background = balloonColors[Math.floor(Math.random() * balloonColors.length)];
+      balloon.style.left = Math.random() * (balloonContainer.offsetWidth - 50) + 'px';
+      balloon.style.bottom = '0px';
+      const duration = 6 + Math.random() * 4;
+      balloon.style.animationDuration = duration + 's';
+
+      balloon.addEventListener('click', () => {
+        balloon.style.animation = 'none';
+        balloon.style.transition = 'transform 0.2s ease-out';
+        balloon.style.transform = 'scale(0)';
+        setTimeout(() => balloon.remove(), 200);
+        popped++;
+        poppedCountEl.textContent = popped;
         updateActiveCount();
-      }
-    }, parseFloat(balloon.style.animationDuration) * 1000);
-  }
+      }, { once: true });
 
-  function updateActiveCount() {
-    activeCount.textContent = balloonContainer.children.length;
-  }
+      balloonContainer.appendChild(balloon);
+      updateActiveCount();
 
-  spawnBalloon.addEventListener('click', createBalloon);
-  spawnMany.addEventListener('click', () => {
-    for (let i = 0; i < 10; i++) {
-      setTimeout(createBalloon, i * 100);
-    }
-  });
-
-  resetBalloons.addEventListener('click', () => {
-    balloonContainer.innerHTML = '';
-    popped = 0;
-    poppedCount.textContent = popped;
-    updateActiveCount();
-  });
-
-  // Bubble Wrap
-  let bubblesPoppedCount = 0;
-  const bubbleGrid = document.getElementById('bubbleGrid');
-  const bubbleCount = document.getElementById('bubbleCount');
-  const resetBubbles = document.getElementById('resetBubbles');
-
-  function createBubbleGrid() {
-    bubbleGrid.innerHTML = '';
-    bubblesPoppedCount = 0;
-    bubbleCount.textContent = bubblesPoppedCount;
-
-    for (let i = 0; i < 80; i++) {
-      const bubble = document.createElement('div');
-      bubble.className = 'bubble';
-      bubble.addEventListener('click', function() {
-        if (!this.classList.contains('popped')) {
-          this.classList.add('popped');
-          bubblesPoppedCount++;
-          bubbleCount.textContent = bubblesPoppedCount;
-          
-          // Play pop sound effect (visual feedback)
-          this.style.transition = 'all 0.1s ease';
+      setTimeout(() => {
+        if (balloon.parentNode) {
+          balloon.remove();
+          updateActiveCount();
         }
-      });
-      bubbleGrid.appendChild(bubble);
+      }, duration * 1000);
     }
-  }
 
-  createBubbleGrid();
-  resetBubbles.addEventListener('click', createBubbleGrid);
+    spawnBalloonBtn.addEventListener('click', createBalloon);
+    spawnManyBtn.addEventListener('click', () => {
+      for (let i = 0; i < 10; i++) {
+        setTimeout(createBalloon, i * 100);
+      }
+    });
 
-  // Color Mixer
-  const colorDisplay = document.getElementById('colorDisplay');
-  const redSlider = document.getElementById('redSlider');
-  const greenSlider = document.getElementById('greenSlider');
-  const blueSlider = document.getElementById('blueSlider');
-  const colorCode = document.getElementById('colorCode');
-  const randomColor = document.getElementById('randomColor');
+    resetBalloonsBtn.addEventListener('click', () => {
+      balloonContainer.innerHTML = '';
+      popped = 0;
+      poppedCountEl.textContent = popped;
+      updateActiveCount();
+    });
+  })();
 
-  function updateColor() {
-    const r = parseInt(redSlider.value);
-    const g = parseInt(greenSlider.value);
-    const b = parseInt(blueSlider.value);
-    const hex = '#' + [r, g, b].map(x => {
-      const hex = x.toString(16);
-      return hex.length === 1 ? '0' + hex : hex;
-    }).join('');
-    
-    colorDisplay.style.background = hex;
-    colorCode.textContent = hex;
-  }
+  // --- Bubble Wrap Game ---
+  (() => {
+    const bubbleGrid = document.getElementById('bubbleGrid');
+    if (!bubbleGrid) return;
 
-  redSlider.addEventListener('input', updateColor);
-  greenSlider.addEventListener('input', updateColor);
-  blueSlider.addEventListener('input', updateColor);
+    const bubbleCountEl = document.getElementById('bubbleCount');
+    const resetBubblesBtn = document.getElementById('resetBubbles');
+    let bubblesPoppedCount = 0;
 
-  randomColor.addEventListener('click', () => {
-    redSlider.value = Math.floor(Math.random() * 256);
-    greenSlider.value = Math.floor(Math.random() * 256);
-    blueSlider.value = Math.floor(Math.random() * 256);
-    updateColor();
-  });
+    function createBubbleGrid() {
+      bubbleGrid.innerHTML = '';
+      bubblesPoppedCount = 0;
+      bubbleCountEl.textContent = bubblesPoppedCount;
+
+      for (let i = 0; i < 80; i++) {
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+        bubble.addEventListener('click', function() {
+          if (!this.classList.contains('popped')) {
+            this.classList.add('popped');
+            bubblesPoppedCount++;
+            bubbleCountEl.textContent = bubblesPoppedCount;
+          }
+        }, { once: true });
+        bubbleGrid.appendChild(bubble);
+      }
+    }
+
+    createBubbleGrid();
+    resetBubblesBtn.addEventListener('click', createBubbleGrid);
+  })();
+
+  // --- Color Mixer Game ---
+  (() => {
+    const colorDisplay = document.getElementById('colorDisplay');
+    if (!colorDisplay) return;
+
+    const redSlider = document.getElementById('redSlider');
+    const greenSlider = document.getElementById('greenSlider');
+    const blueSlider = document.getElementById('blueSlider');
+    const colorCodeEl = document.getElementById('colorCode');
+    const randomColorBtn = document.getElementById('randomColor');
+
+    function updateColor() {
+      const r = parseInt(redSlider.value);
+      const g = parseInt(greenSlider.value);
+      const b = parseInt(blueSlider.value);
+      const hex = '#' + [r, g, b].map(x => x.toString(16).padStart(2, '0')).join('');
+      colorDisplay.style.background = hex;
+      colorCodeEl.textContent = hex;
+    }
+
+    [redSlider, greenSlider, blueSlider].forEach(slider => slider.addEventListener('input', updateColor));
+
+    randomColorBtn.addEventListener('click', () => {
+      redSlider.value = Math.floor(Math.random() * 256);
+      greenSlider.value = Math.floor(Math.random() * 256);
+      blueSlider.value = Math.floor(Math.random() * 256);
+      updateColor();
+    });
+
+    updateColor(); // Initial color set
+  })();
+});
 </script>
 
 ---

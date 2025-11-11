@@ -25,29 +25,6 @@ title: Weekdays at Mom's - Kids Protocol
 
 ---
 
-## 🚀 QUICK JUMP TO SECTION
-
-<div class="quick-jump-grid">
-  <a href="#how-to-use">📄 How to Use</a>
-  <a href="#what-week-looks-like">🏠 What to Expect</a>
-  <a href="#daily-checklist">📋 Daily Checklist</a>
-  <a href="#homework">📚 Homework Help</a>
-  <a href="#bored">🎨 When Bored</a>
-  <a href="#sad-mad-scared">😰 Feeling Upset</a>
-  <a href="#call-dad">📞 Call Dad</a>
-  <a href="#bedtime">🛏️ Bedtime</a>
-  <a href="#school">🎒 School Survival</a>
-  <a href="#eating">🍽️ Eating</a>
-  <a href="#track-days">🗓️ Track Days</a>
-  <a href="#stronger">💪 You're Strong</a>
-  <a href="#weekly-reflection">📝 Reflection</a>
-  <a href="#emergency">🚨 Emergency</a>
-  <a href="#dads-message">💙 Dad's Message</a>
-  <a href="#friday">✅ Friday!</a>
-</div>
-
----
-
 <h2 id="how-to-use">📄 HOW TO USE THIS CHECKLIST</h2>
 
 **Best Way**: **Print this page!** Then you can:
@@ -59,6 +36,23 @@ title: Weekdays at Mom's - Kids Protocol
 **Mom Can Help Too**: Ask Mom to help you with this checklist if you need it!
 
 **On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
+
+---
+
+## 🚀 QUICK JUMP TO SECTION
+
+<div class="quick-jump-grid">
+  <a href="#what-week-looks-like">🏠 What to Expect</a>
+  <a href="#daily-checklist">📋 Daily Checklist</a>
+  <a href="#homework">📚 Homework Help</a>
+  <a href="#bored">🎨 When Bored</a>
+  <a href="#sad-mad-scared">😰 Feeling Upset</a>
+  <a href="#call-dad">📞 Call Dad</a>
+  <a href="#bedtime">🛏️ Bedtime</a>
+  <a href="#school">🎒 School Survival</a>
+  <a href="#weekly-reflection">📝 Reflection</a>
+  <a href="#emergency">🚨 Emergency</a>
+</div>
 
 ---
 
@@ -85,42 +79,42 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 ### Morning Checklist (Before School)
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Wake up when Mom says to</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Use the bathroom</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get dressed for school</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Eat breakfast (whatever Mom makes)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush teeth (2 minutes!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush hair</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pack backpack</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get to school on time ⭐</span>
   </label>
@@ -131,32 +125,32 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 ### After School Checklist
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get home safely</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Put backpack by the door</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Change into comfy clothes (if you want)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Have a snack</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Do homework (see homework section below)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Free time! ⭐</span>
   </label>
@@ -165,42 +159,42 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
 ### Evening Checklist
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Eat dinner with Mom</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Clean up your spot</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Bath or shower</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Put on pajamas</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush teeth (2 minutes!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get your backpack ready for tomorrow</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get in bed on time</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Sleep well ⭐</span>
   </label>
@@ -624,37 +618,37 @@ Dad** 💙
 ### When Dad Picks You Up
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You see Dad's car!</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You run to Dad (if you want to!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Dad gives you the biggest hug</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You're SAFE now</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You're HOME (Dad's house is home too)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You made it through another week</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">You're AMAZING ⭐</span>
   </label>

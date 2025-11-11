@@ -33,8 +33,6 @@ title: Weekend With Dad - Kids Protocol
 
 ---
 
-<h2 id="how-to-use">📄 HOW TO USE THIS CHECKLIST</h2>
-
 **Best Way**: **Print this page!** Then you can:
 - ✅ Check off boxes with a pencil
 - ✅ Write in the fill-in blanks
@@ -101,121 +99,121 @@ title: Weekend With Dad - Kids Protocol
 This is the same checklist that's on the fridge at home:
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Brush hair</strong> - Get the tangles out!</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Brush teeth</strong> - 2 minutes with the timer</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Change clothes</strong> - Pick something comfy</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Breakfast</strong> - Tell Dad what you want to eat</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Water</strong> - Drink a full cup of water</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Medicine</strong> - (If Dad says you need it)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pets</strong> - Feed and give water to pets</span>
   </label>
   
   <div class="checklist-complete">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Ready for the day! ⭐</span>
     </label>
   </div>
 </div>
 
-### 💧 WATER TRACKER (Mandatory!)
+### 💧 WATER TRACKER (Mandatory)
 **Goal: 4 cups of water per day**
 
 Track your water by marking each cup you drink:
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Cup 1 (Morning - with breakfast)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Cup 2 (Lunch time)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Cup 3 (Afternoon - with snack)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Cup 4 (Dinner time)</span>
   </label>
 </div>
 
 **Bonus Cup**: 
-<label class="checkbox-item inline">
+<label class="form-checkbox-group" style="display: inline-flex;">
   <input type="checkbox" class="task-checkbox">
   <span class="checkbox-label">Before bed (if you're thirsty)</span>
 </label>
 
-### 🍎 FOOD TRACKER (Mandatory!)
+### 🍎 FOOD TRACKER (Mandatory)
 **Make sure you eat throughout the day**
 
 <div class="interactive-checklist food-tracker">
   <div class="food-tracker-item">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label"><strong>Breakfast</strong> - What I ate:</span>
     </label>
-    <input type="text" class="food-input" placeholder="Type what you ate...">
+    <input type="text" class="form-input" placeholder="Type what you ate...">
   </div>
   
   <div class="food-tracker-item">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label"><strong>Lunch</strong> - What I ate:</span>
     </label>
-    <input type="text" class="food-input" placeholder="Type what you ate...">
+    <input type="text" class="form-input" placeholder="Type what you ate...">
   </div>
   
   <div class="food-tracker-item">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label"><strong>Snack</strong> - What I ate:</span>
     </label>
-    <input type="text" class="food-input" placeholder="Type what you ate...">
+    <input type="text" class="form-input" placeholder="Type what you ate...">
   </div>
   
   <div class="food-tracker-item">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label"><strong>Dinner</strong> - What I ate:</span>
     </label>
-    <input type="text" class="food-input" placeholder="Type what you ate...">
+    <input type="text" class="form-input" placeholder="Type what you ate...">
   </div>
 </div>
 
 **Check this box if you ate at least 3 meals today**: 
-<label class="checkbox-item inline star-checkbox">
+<label class="form-checkbox-group" style="display: inline-flex;">
   <input type="checkbox" class="task-checkbox">
   <span class="checkbox-label">⭐</span>
 </label>
@@ -224,17 +222,17 @@ Track your water by marking each cup you drink:
 **Do these once per day (Dad will help if you ask!)**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Straighten up your bedroom</strong> - Put toys away, make bed</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Straighten up the dining room</strong> - Push in chairs, clear any dishes</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick up your living room mess</strong> - Put your toys in your toy bin</span>
   </label>
@@ -246,17 +244,17 @@ Track your water by marking each cup you drink:
 **Do these once per day (you got this!)**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Straighten up your bedroom</strong> - Make bed, put away clothes and toys</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Straighten up your bathroom</strong> - Hang up towel, put away toothbrush, wipe sink</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick up your living room mess</strong> - Put your stuff in your room or toy area</span>
   </label>
@@ -267,32 +265,32 @@ Track your water by marking each cup you drink:
 ### Afternoon Checklist
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Lunch (help Dad set the table)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Clean up your plate</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Wash hands</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Quiet time in your room (30 minutes)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pick afternoon activity</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Have fun! ⭐</span>
   </label>
@@ -301,42 +299,42 @@ Track your water by marking each cup you drink:
 ### Evening Checklist
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Dinner together (help Dad)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Clean up your spot</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Bath time (Dad will help)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Put on pajamas</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush teeth (2 minutes!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pick story for bedtime</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get tucked in</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Sleep well! ⭐</span>
   </label>
@@ -388,64 +386,64 @@ Track your water by marking each cup you drink:
 #### WILLOW'S SUNDAY PREP (Age 6)
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Make your bed</strong> (pull up covers, fluff pillow)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick Monday school outfit</strong> (lay it on your chair)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pack school backpack</strong> (Dad helps check):</span>
   </label>
   
   <div style="margin-left: 2rem;">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Homework folder (if you have homework)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Water bottle (filled)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Lunch box (Dad will pack Monday morning)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Any library books due</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Jacket or sweatshirt</span>
     </label>
   </div>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Do your 3 chores</strong> (bedroom, dining room, living room)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Change into comfy clothes for car ride</strong> (leggings/sweats + cozy shirt)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Bring PJs in backpack</strong> (for car ride home - you can change at Grandma's)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick one toy/book for car</strong> (not iPad - that's for emergencies only)</span>
   </label>
@@ -454,79 +452,79 @@ Track your water by marking each cup you drink:
 #### SEBASTIAN'S SUNDAY PREP (Age 9)
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Make your bed</strong> (full bed making - sheets, blankets, pillows)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick Monday school outfit</strong> (lay it out ready to wear)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pack school backpack</strong> (check yourself, Dad double-checks):</span>
   </label>
   
   <div style="margin-left: 2rem;">
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">All homework completed and packed</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Charged iPad/tablet (if you take to school)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Water bottle (filled)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Lunch box (empty - Dad packs Monday)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Any permission slips or school papers signed</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">PE clothes (if it's PE day)</span>
     </label>
     
-    <label class="checkbox-item">
+    <label class="form-checkbox-group">
       <input type="checkbox" class="task-checkbox">
       <span class="checkbox-label">Jacket or sweatshirt</span>
     </label>
   </div>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Do your 3 chores</strong> (bedroom, bathroom, living room)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Help Dad with house prep</strong> (take out trash, check pet food/water)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Change into comfy clothes for car</strong> (sweats + hoodie)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Bring PJs in backpack</strong> (change at Grandma's before we leave)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label"><strong>Pick entertainment for car</strong> (book, sketchpad, or handheld game - screen is OK)</span>
   </label>
@@ -535,32 +533,32 @@ Track your water by marking each cup you drink:
 #### DAD'S SUNDAY PREP (You'll See Dad Doing This)
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pack kids' backpacks in car</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Lay out Monday work clothes</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Prep Monday lunch stuff (so it's fast in morning)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Check gas in car</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Bring gift/food for Grandma (if we're bringing something)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Make sure house is locked up before we leave</span>
   </label>
@@ -571,42 +569,42 @@ Track your water by marking each cup you drink:
 **Dad will check these with you:**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Both kids in comfy clothes (for 6-hour trip total)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Backpacks in car trunk</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Water bottles for car ride</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Snacks in car (Dad packs these)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Entertainment for car (books, games, music)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">PJs in backpacks (to change at Grandma's)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Everyone went to bathroom</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pets have food and water (they stay home)</span>
   </label>
@@ -634,22 +632,22 @@ Track your water by marking each cup you drink:
 **You're already in PJs, so when we get home:**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush teeth (quick - 2 minutes)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Straight to bed</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Short story or talking time</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Lights out at 9:00 PM (school tomorrow!)</span>
   </label>
@@ -744,22 +742,22 @@ When you're upset, try saying:
 **8:00 PM - Start Getting Ready**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Clean up toys (5-minute pickup)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Bath time (Dad will help)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Put on pajamas</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Brush teeth (2 minutes with timer)</span>
   </label>
@@ -768,27 +766,27 @@ When you're upset, try saying:
 **8:30 PM - Wind Down Time**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Pick out 2 books for story time</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Get your stuffed animals ready</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Climb into bed</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Dad reads stories</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Talk about your day (what was fun? what was hard?)</span>
   </label>
@@ -797,27 +795,27 @@ When you're upset, try saying:
 **9:00 PM - Lights Out**
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Final hugs and kisses</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Nightlight on (if you want it)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Door open or closed (your choice)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">White noise machine on (if you like it)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Dad says "I love you" and "You're safe"</span>
   </label>
@@ -874,37 +872,37 @@ When you're upset, try saying:
 ### Things to Pack in Your Backpack
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">School clothes for Monday (already picked out)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Homework (if you have any)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Water bottle</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Lunch box (Dad will pack snacks)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Any school papers</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Favorite toy or book (if you want to take it)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Jacket or sweatshirt</span>
   </label>
@@ -1019,37 +1017,37 @@ At the end of each weekend, we'll check off:
 ### Did You:
 
 <div class="interactive-checklist">
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Have fun? (Some of the time - not every second!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Feel safe? (Dad made sure you were okay)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Eat good food? (Even if you only ate chicken nuggets!)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Sleep okay? (Got rest most nights)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Talk to Dad if you felt bad? (Or kept it inside and that's okay too)</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Do at least one activity you enjoyed?</span>
   </label>
   
-  <label class="checkbox-item">
+  <label class="form-checkbox-group">
     <input type="checkbox" class="task-checkbox">
     <span class="checkbox-label">Call Mom when you wanted to?</span>
   </label>
@@ -1065,30 +1063,30 @@ You don't have to be perfect. You don't have to be happy all the time. You just 
 
 **Your Private Section** - Write or draw here:
 
-<div class="interactive-checklist">
+<div>
   <div class="notes-section">
     <label class="notes-label"><strong>What I want to do next weekend:</strong></label>
-    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+    <textarea class="form-textarea" rows="3" placeholder="Write here..."></textarea>
   </div>
   
   <div class="notes-section">
     <label class="notes-label"><strong>What made me happy this weekend:</strong></label>
-    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+    <textarea class="form-textarea" rows="3" placeholder="Write here..."></textarea>
   </div>
   
   <div class="notes-section">
     <label class="notes-label"><strong>What made me sad this weekend:</strong></label>
-    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+    <textarea class="form-textarea" rows="3" placeholder="Write here..."></textarea>
   </div>
   
   <div class="notes-section">
     <label class="notes-label"><strong>What I want to tell Dad but haven't yet:</strong></label>
-    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+    <textarea class="form-textarea" rows="3" placeholder="Write here..."></textarea>
   </div>
   
   <div class="notes-section">
     <label class="notes-label"><strong>What would make weekends better:</strong></label>
-    <textarea class="text-input-field" rows="3" placeholder="Write here..."></textarea>
+    <textarea class="form-textarea" rows="3" placeholder="Write here..."></textarea>
   </div>
 </div>
 

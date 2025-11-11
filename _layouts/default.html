@@ -61,17 +61,30 @@
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
 
     <div class="page-container">
-        <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
-        <nav class="sidebar" id="desktop-nav">
+  <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
+  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
             <div class="sidebar-header">
                 <a href="/" class="sidebar-title">Wonky Sprout OS</a>
                 <p class="sidebar-tagline">Internal Blueprint</p>
             </div>
-            <ul class="sidebar-nav">
-                {% for item in site.navigation %}
-                <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
-                {% endfor %}
-            </ul>
+      <div class="sidebar-section-title">Quick Links</div>
+      <ul class="sidebar-nav">
+        <li><a href="/" {% if page.url == '/' %}aria-current="page" class="is-active"{% endif %}>🏠 Home</a></li>
+        <li><a href="/workspace" {% if page.url contains 'workspace' %}aria-current="page" class="is-active"{% endif %}>💼 Workspace</a></li>
+        <li><a href="/catalog" {% if page.url contains 'catalog' %}aria-current="page" class="is-active"{% endif %}>📇 Card Catalog</a></li>
+        <li><a href="/fix" {% if page.url contains 'fix' %}aria-current="page" class="is-active"{% endif %}>🔧 Fix-It Blueprint</a></li>
+        <li><a href="/daily-tracker" {% if page.url contains 'daily-tracker' %}aria-current="page" class="is-active"{% endif %}>📊 Daily Tracker</a></li>
+        <li><a href="/sop-vault" {% if page.url contains 'sop-vault' %}aria-current="page" class="is-active"{% endif %}>📚 SOP Vault</a></li>
+        <li><a href="/command-center" {% if page.url contains 'command-center' %}aria-current="page" class="is-active"{% endif %}>⚙️ Command Center</a></li>
+        <li><a href="/settings" {% if page.url contains 'settings' %}aria-current="page" class="is-active"{% endif %}>⚙ Settings</a></li>
+      </ul>
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="sidebar-section-title">Protocols</div>
+      <ul class="sidebar-nav">
+        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode.md">🧭 Solo Execution</a></li>
+        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.md">⏰ Morning Transition</a></li>
+        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
+      </ul>
         </nav>
 
         <!-- Mobile Navigation (Hamburger Menu) -->
@@ -81,7 +94,7 @@
                 <span class="hamburger-inner"></span>
             </span>
         </button>
-        <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Mobile">
             <a href="/" class="sidebar-title">Wonky Sprout OS</a>
             <ul class="sidebar-nav">
                 {% for item in site.navigation %}
@@ -98,35 +111,25 @@
         </div>
     </div>
 
-    <!-- PRESERVED ACCESSIBILITY & UI ELEMENTS -->
-
-    <!-- Chatbot Integration -->
-    <div id="wonky-ai-widget">
+  <!-- Wonky AI Floating Action Button & Widget -->
+  <div class="fab-container">
+    <button id="wonky-ai-toggle" class="fab" aria-label="Toggle Wonky AI Assistant" aria-expanded="false">
+      <span>🤖</span>
+    </button>
+    <div id="wonky-ai-widget" hidden>
       <div id="wonky-ai-header">
-        <h3>🤖 Wonky AI</h3>
-        <button onclick="toggleWonkyAI()" id="wonky-ai-toggle">Show</button>
+        <h3 class="card-title" style="margin: 0; font-size: 1rem;">Wonky AI</h3>
+        <div class="wonky-controls">
+          <button id="wonky-suggest" class="btn btn-secondary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;">Suggest</button>
+        </div>
+        </div>
+      <div id="wonky-ai-content" hidden>
+        <p class="guide-intro">Context-aware suggestions for this page.</p>
+        <ul id="wonky-suggestions" class="suggestions">
+          <!-- Suggestions will be populated by JS -->
+        </ul>
+        </div>
       </div>
-      <div id="wonky-ai-content" style="display: none;">
-        <div id="wonky-ai-chat">
-          <p>Ask about protocols, patterns, or decisions...</p>
-        </div>
-        <div id="wonky-ai-input-wrapper">
-          <input type="text" id="wonky-ai-input" placeholder="Ask Wonky AI...">
-          <button onclick="sendToWonkyAI()">Send</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Floating Action Button (FAB) -->
-    <div class="fab-container">
-        <button id="fab-button" class="fab" aria-haspopup="true" aria-expanded="false" aria-label="Open actions menu">
-            <span>+</span>
-        </button>
-        <div id="fab-menu" class="fab-menu" role="menu" aria-hidden="true">
-            <a href="/daily-tracker" role="menuitem" aria-label="Daily Tracker">📊</a>
-            <a href="/sop-vault" role="menuitem" aria-label="SOP Vault">📚</a>
-            <a href="/command-center" role="menuitem" aria-label="Command Center">💻</a>
-        </div>
     </div>
 
     <!-- Back to Top Button -->
@@ -136,7 +139,9 @@
 
     <!-- PRESERVED SCRIPTS -->
     <script>
-      // Mobile Nav Toggle
+    // This script block remains for essential UI functionality.
+
+    // Mobile Nav Toggle
       document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = document.getElementById('mobile-nav-toggle');
         const mobileNav = document.getElementById('mobile-nav');
@@ -147,7 +152,7 @@
           document.body.classList.toggle('mobile-nav-open');
         });
       });
-
+    
       // Back to Top Button Functionality
       (function() {
         const backToTopButton = document.querySelector('.back-to-top');
@@ -168,77 +173,8 @@
         toggleBackToTop();
       })();
 
-      // Floating Action Button (FAB) functionality
-      (function() {
-        const fabButton = document.getElementById('fab-button');
-        const fabMenu = document.getElementById('fab-menu');
-        if (fabButton && fabMenu) {
-          fabButton.addEventListener('click', function(e) {
-            e.stopPropagation();
-            const isExpanded = fabButton.getAttribute('aria-expanded') === 'true';
-            fabButton.setAttribute('aria-expanded', !isExpanded);
-            fabMenu.setAttribute('aria-hidden', isExpanded);
-          });
-          document.addEventListener('click', function(event) {
-            if (!event.target.closest('.fab-container')) {
-              fabButton.setAttribute('aria-expanded', 'false');
-              fabMenu.setAttribute('aria-hidden', 'true');
-            }
-          });
-          document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && fabButton.getAttribute('aria-expanded') === 'true') {
-              fabButton.setAttribute('aria-expanded', 'false');
-              fabMenu.setAttribute('aria-hidden', 'true');
-              fabButton.focus();
-            }
-          });
-        }
-      })();
-
-      // Wonky AI Integration
-      function toggleWonkyAI() {
-        const content = document.getElementById('wonky-ai-content');
-        const toggle = document.getElementById('wonky-ai-toggle');
-        if (content.style.display === 'none') {
-          content.style.display = 'block';
-          toggle.textContent = 'Hide';
-        } else {
-          content.style.display = 'none';
-          toggle.textContent = 'Show';
-        }
-      }
-      async function sendToWonkyAI() {
-        const WONKY_AI_KEY = 'YOUR_API_KEY_HERE'; // IMPORTANT: Replace with a secure method to handle API keys.
-        const WONKY_AI_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent';
-        const input = document.getElementById('wonky-ai-input');
-        const chatDiv = document.getElementById('wonky-ai-chat');
-        if (!input.value.trim()) return;
-        const userQuery = input.value;
-        input.value = '';
-        if (chatDiv.querySelector('p')) chatDiv.innerHTML = '';
-        const userMessage = document.createElement('div');
-        userMessage.innerHTML = `<strong class="chat-speaker user">You:</strong><br>${userQuery}`;
-        chatDiv.appendChild(userMessage);
-        const loadingMessage = document.createElement('div');
-        loadingMessage.innerHTML = `<strong class="chat-speaker ai">Wonky AI:</strong><br>Thinking...`;
-        chatDiv.appendChild(loadingMessage);
-        chatDiv.scrollTop = chatDiv.scrollHeight;
-        try {
-          const response = await fetch(`${WONKY_AI_URL}?key=${WONKY_AI_KEY}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ contents: [{ parts: [{ text: `You are Wonky AI, an assistant for the Wonky Sprout OS. Answer concisely:\n\n${userQuery}` }] }] })
-          });
-          if (!response.ok) throw new Error(`API error: ${response.status}`);
-          const data = await response.json();
-          const aiResponse = data.candidates[0].content.parts[0].text;
-          loadingMessage.innerHTML = `<strong class="chat-speaker ai">Wonky AI:</strong><br>${aiResponse.replace(/\n/g, '<br>')}`;
-        } catch (error) {
-          loadingMessage.innerHTML = `<strong class="chat-error">Error:</strong><br>Failed to connect. ${error.message}`;
-        }
-        chatDiv.scrollTop = chatDiv.scrollHeight;
-      }
-      document.getElementById('wonky-ai-input')?.addEventListener('keypress', e => e.key === 'Enter' && sendToWonkyAI());
     </script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/wonky-ai-guide.js"></script>
 </body>
 </html>

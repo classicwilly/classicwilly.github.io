@@ -21,6 +21,19 @@ body {
   border: 0;
 }
 
+/* Make screen-reader-only elements visible when focused (useful for skip links) */
+.sr-only:focus,
+.sr-only:active,
+.sr-only:focus-visible {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
 .page-container {
   display: flex;
 }
@@ -33,23 +46,29 @@ body {
   height: 100vh;
   background-color: var(--card-dark);
   border-right: 1px solid var(--border-gray);
-  padding: 1.5rem;
+  padding: 0.6rem 0.5rem; /* tightened to pack more nav items */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
   z-index: 200;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  color: var(--material-on-surface);
 }
 
 .sidebar-header {
-  margin-bottom: 2rem;
+  margin: 0 0 0.5rem 0; /* tighten header spacing */
 }
 
 .sidebar-title {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-bright);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--circuit-teal);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .sidebar-tagline {
@@ -60,6 +79,17 @@ body {
   letter-spacing: 0.5px;
 }
 
+/* Sidebar section headings (like the screenshot) */
+.sidebar-section-title {
+  display: block;
+  margin: 0.75rem 0 0.35rem 0.5rem;
+  padding-top: 0.75rem;
+  color: var(--sidebar-heading);
+  font-size: 0.78rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .sidebar-nav {
   list-style: none;
   margin: 0;
@@ -67,32 +97,75 @@ body {
 }
 
 .sidebar-nav li a {
-  display: block;
-  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.5rem; /* comfortable clickable area */
   color: var(--text-light);
   text-decoration: none;
   font-size: 1rem;
   transition: var(--transition);
-  border-left: 3px solid transparent;
-  padding-left: 10px;
+  padding-left: 12px;
+  border-left: 4px solid transparent; /* stronger visual indicator */
 }
 
-.sidebar-nav li a:hover {
+.sidebar-nav li a:hover,
+.sidebar-nav li a:focus {
   color: var(--text-bright);
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left-color: var(--material-primary);
+}
+
+/* Active state for the current page */
+.sidebar-nav li a.is-active,
+.sidebar-nav li a[aria-current="page"] {
+  color: var(--text-bright);
+  background-color: rgba(45, 204, 204, 0.06);
   border-left-color: var(--circuit-teal);
+  font-weight: 700;
 }
 
 .main-content-wrapper {
   margin-left: var(--sidebar-width);
   width: calc(100% - var(--sidebar-width));
-  padding: 2rem;
+  /* pull content even closer to the sidebar for a denser layout */
+  padding: 0.4rem 0.6rem;
   box-sizing: border-box;
 }
 
 .main-content {
-  max-width: 960px;
-  margin: 0 auto;
+  max-width: none; /* allow content to fill the wrapper (denser layout) */
+  margin: 0; /* remove centering so grid starts nearer the sidebar */
+}
+
+/* Quick Jump Grid for SOPs */
+.quick-jump-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    background: var(--card-dark);
+    border: 1px solid var(--border-gray);
+    border-radius: 6px;
+    min-height: 100px;
+    text-decoration: none;
+    color: var(--text-bright);
+    font-weight: 600;
+    transition: var(--transition);
+
+    &:hover {
+      background: var(--circuit-teal);
+      color: var(--card-dark);
+      transform: translateY(-2px);
+    }
+  }
 }
 
 /* Mobile styles */

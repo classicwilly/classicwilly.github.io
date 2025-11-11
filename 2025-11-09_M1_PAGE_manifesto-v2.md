@@ -249,4 +249,9 @@ This is not inspiration.
 
 ---
 
-**[Return to Home](/)** | **[Explore SOP Vault](/sop-vault)** | **[Read Brand Guide](/2025-11-09_M1_CONFIG_brand-guide-v2)** | **[View Kids Page](/kids)**
+<div class="page-nav-links">
+  <a href="/" class="page-nav-link">🏠 Return to Home</a>
+  <a href="/sop-vault" class="page-nav-link">📋 Explore SOP Vault</a>
+  <a href="/2025-11-09_M1_CONFIG_brand-guide-v2" class="page-nav-link">🎨 Read Brand Guide</a>
+  <a href="/kids" class="page-nav-link">👨‍👧‍👦 View Kids Page</a>
+</div>

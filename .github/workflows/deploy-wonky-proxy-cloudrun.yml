@@ -1,0 +1,36 @@
+name: Deploy Wonky Proxy to Cloud Run
+on:
+  push:
+    paths:
+      - 'examples/wonky-proxy/**'
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v1
+        with:
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          project_id: ${{ secrets.GCP_PROJECT }}
+
+      - name: Build container
+        run: |
+          IMAGE=gcr.io/${{ secrets.GCP_PROJECT }}/wonky-proxy:${{ github.sha }}
+          docker build -t $IMAGE ./examples/wonky-proxy
+          docker push $IMAGE
+
+      - name: Deploy to Cloud Run
+        run: |
+          IMAGE=gcr.io/${{ secrets.GCP_PROJECT }}/wonky-proxy:${{ github.sha }}
+          gcloud run deploy wonky-proxy \
+            --image $IMAGE \
+            --region us-central1 --platform managed \
+            --set-env-vars MODEL_API_KEY=${{ secrets.MODEL_API_KEY }},MODEL_ENDPOINT=${{ secrets.MODEL_ENDPOINT }} \
+            --allow-unauthenticated
+
+      - name: Notify
+        run: echo "Deployed wonky-proxy to Cloud Run"

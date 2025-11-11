@@ -1,0 +1,43 @@
+name: Accessibility — pa11y checks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pa11y:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.x'
+
+      - name: Install Jekyll
+        run: |
+          gem install bundler --no-document
+          gem install jekyll --no-document
+
+      - name: Build site with Jekyll
+        run: jekyll build
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install pa11y and http-server
+        run: npm install -g pa11y http-server
+
+      - name: Serve _site and run pa11y
+        run: |
+          npx http-server _site -p 8080 &
+          # wait a bit for server
+          sleep 2
+          echo "Running pa11y against http://localhost:8080/"
+          pa11y http://localhost:8080/ --reporter cli
