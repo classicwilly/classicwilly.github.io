@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Structure Engineered for Chaos">
+    <meta name="keywords" content="neurodivergent, ADHD, autism, life management, SOPs, standard operating procedures, systems, productivity">
+    <meta name="author" content="William Johnson (classicwilly)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/2025-11-10_M4_SOP_accessibility-safety-protocol.html">
+    <meta property="og:title" content="Accessibility & Safety Protocol">
+    <meta property="og:description" content="Structure Engineered for Chaos">
+    <meta property="og:site_name" content="The Wonky Sprout">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="/2025-11-10_M4_SOP_accessibility-safety-protocol.html">
+    <meta name="twitter:title" content="Accessibility & Safety Protocol">
+    <meta name="twitter:description" content="Structure Engineered for Chaos">
+    <title>Accessibility & Safety Protocol</title>
+    <!-- DNS Prefetch & Preconnect for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Wonky Sprout",
+      "description": "A neurodivergent life management system with Standard Operating Procedures",
+      "url": "",
+      "author": {
+        "@type": "Person",
+        "name": "William Johnson",
+        "alternateName": "classicwilly"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link (Accessibility) -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    <div class="page-container">
+  <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
+  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
+            <div class="sidebar-header">
+                <a href="/" class="sidebar-title">Wonky Sprout OS</a>
+                <p class="sidebar-tagline">Internal Blueprint</p>
+            </div>
+      <div class="sidebar-section-title">Quick Links</div>
+      <ul class="sidebar-nav">
+        <li><a href="/" >🏠 Home</a></li>
+        <li><a href="/workspace" >💼 Workspace</a></li>
+        <li><a href="/catalog" >📇 Card Catalog</a></li>
+        <li><a href="/fix" >🔧 Fix-It Blueprint</a></li>
+        <li><a href="/daily-tracker" >📊 Daily Tracker</a></li>
+        <li><a href="/sop-vault" >📚 SOP Vault</a></li>
+        <li><a href="/command-center" >⚙️ Command Center</a></li>
+        <li><a href="/settings" >⚙ Settings</a></li>
+      </ul>
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="sidebar-section-title">Protocols</div>
+      <ul class="sidebar-nav">
+        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode.md">🧭 Solo Execution</a></li>
+        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.md">⏰ Morning Transition</a></li>
+        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
+      </ul>
+        </nav>
+        <!-- Mobile Navigation (Hamburger Menu) -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Mobile">
+            <a href="/" class="sidebar-title">Wonky Sprout OS</a>
+            <ul class="sidebar-nav">
+                
+            </ul>
+        </div>
+        <!-- COLUMN 2: THE "CARD CATALOG" (Main Content) -->
+        <div class="main-content-wrapper">
+            <main id="main-content" class="main-content" role="main">
+                <h1 id="2025-11-10--m4_sop_accessibility-safety-protocol">2025-11-10 — M4_SOP_accessibility-safety-protocol</h1>
+
+<p>Purpose</p>
+<ul>
+  <li>Ensure the Wonky Sprout OS site is safe, stable, and usable for late-diagnosed and neurodivergent users.</li>
+  <li>Provide a minimal, actionable checklist and developer workflow to prevent regressions that harm accessibility.</li>
+</ul>
+
+<p>Why this matters</p>
+<ul>
+  <li>Many people were mis-labeled as “lazy” when their brains needed different supports. The site must not add friction.</li>
+</ul>
+
+<p>Quick rules (enforced before merge)</p>
+<ol>
+  <li>CI must pass: build + SCSS smoke-test (selectors present) + pa11y accessibility checks.</li>
+  <li>No visual regressions: run the local smoke-test (pwsh .\scripts\test-scss.ps1) and confirm PASS.</li>
+  <li>Respect prefers-reduced-motion and ensure visible focus states for keyboard users.</li>
+</ol>
+
+<p>Local developer checklist</p>
+<ul>
+  <li>Run the smoke-test which will build CSS locally if needed:</li>
+</ul>
+
+<pre><code class="language-pwsh">pwsh .\scripts\test-scss.ps1
+</code></pre>
+
+<ul>
+  <li>If you want manual control:</li>
+</ul>
+
+<pre><code class="language-pwsh">npm install
+npm run build:css
+</code></pre>
+
+<p>Accessibility expectations</p>
+<ul>
+  <li>All interactive elements must have a focus-visible style (we use a teal 3px outline).</li>
+  <li>Animations and transitions must respect the user’s reduced-motion preference.</li>
+  <li>Add aria-label/role attributes for landmark navigation when appropriate.</li>
+</ul>
+
+<p>Pa11y and CI</p>
+<ul>
+  <li>The repository includes <code class="language-plaintext highlighter-rouge">.github/workflows/a11y.yml</code> which runs pa11y on the built site.</li>
+  <li>Fixes flagged by pa11y should be small, incremental, and prioritized by severity.</li>
+</ul>
+
+<p>Emergency rollback plan</p>
+<ul>
+  <li>If a merged change causes a regresssion, revert the PR and open a hotfix branch. The CI smoke-test is intended to catch regressions before merge.</li>
+</ul>
+
+<p>Notes for maintainers</p>
+<ul>
+  <li>Keep this SOP short and focused. If a new accessibility failure type appears regularly, extend this document with a concrete fix recipe.</li>
+</ul>
+
+<p>Commit message guidance</p>
+<ul>
+  <li>Prefix accessibility-related commits with <code class="language-plaintext highlighter-rouge">a11y:</code> and include the pa11y error IDs if applicable.</li>
+</ul>
+
+<p>Related files</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">scripts/test-scss.ps1</code> — smoke-test that supports local npm-based compilation.</li>
+  <li><code class="language-plaintext highlighter-rouge">_sass/_components.scss</code> — contains reduced-motion and focus-visible rules.</li>
+  <li><code class="language-plaintext highlighter-rouge">.github/workflows/a11y.yml</code> — automated pa11y checks.</li>
+</ul>
+
+<p>Next steps</p>
+<ul>
+  <li>Wait for CI validation on the <code class="language-plaintext highlighter-rouge">ci/remove-compiled-maincss</code> branch before permanently removing the compiled fallback.</li>
+</ul>
+
+            </main>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      ↑
+    </a>
+    <!-- PRESERVED SCRIPTS -->
+    <script>
+    // This script block remains for essential UI functionality.
+    // Mobile Nav Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('mobile-nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        toggleBtn.addEventListener('click', function() {
+          const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+          toggleBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileNav.setAttribute('aria-hidden', isExpanded);
+          document.body.classList.toggle('mobile-nav-open');
+        });
+      });
+      // Back to Top Button Functionality
+      (function() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        function toggleBackToTop() {
+          if (window.scrollY > 300) {
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.visibility = 'visible';
+          } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+          }
+        }
+        backToTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+      })();
+    </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

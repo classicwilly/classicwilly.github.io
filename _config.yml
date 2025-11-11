@@ -1,5 +1,6 @@
 title: The Wonky Sprout
 description: Structure Engineered for Chaos
 theme: jekyll-theme-cayman
+sass_dir: _sass
 exclude:
   - wonky-sprout-os
