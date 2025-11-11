@@ -66,6 +66,12 @@ title: The SOP Vault
       <p class="card-desc">Mobile WS-OS extension: chaos capture, dual-screen optimization.</p>
     </a>
     
+    <a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol" class="checklist-card is-purple">
+      <div class="card-icon">🛡️</div>
+      <h3 class="card-title">Bubble Shield Protocol</h3>
+      <p class="card-desc">Mandatory sensory mitigation for stable executive function.</p>
+    </a>
+    
   </div>
 </div>
 
