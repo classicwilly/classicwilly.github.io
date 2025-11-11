@@ -4,13 +4,19 @@
 
 .page-container {
   display: flex;
-  gap: 0; /* remove large gap between sidebar and content */
+  gap: 0.75rem; /* small gap between sidebar and content */
+  /* reserve space for fixed sidebar so main content aligns symmetrically
+     left/right — this avoids a large empty left gutter while keeping
+     the sidebar fixed. */
+  padding-left: var(--sidebar-width);
 }
 
 .main-content-wrapper {
   flex-grow: 1;
-  padding: calc(var(--spacing-unit) * 1.5);
-  margin-left: var(--sidebar-width); /* keep offset for fixed sidebar */
+  /* Use equal left/right internal padding so content has symmetrical
+     breathing room on both sides. Keep this small to tighten the layout. */
+  padding: calc(var(--spacing-unit) * 0.75);
+  margin-left: 0; /* removed forced margin to tighten left gutter */
 }
 
 .main-content {
