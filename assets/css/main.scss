@@ -1,17 +1,17 @@
 ---
 ---
 
-@import "variables";         // 1. Variables and abstracts
+@import "variables"; // 1. Variables and abstracts
 
-@import "utilities/helpers";   // 2. Utility classes
+@import "utilities/helpers"; // 2. Utility classes
 
-@import "layout";              // 3. Main page layout (sidebar, grid)
+@import "layout"; // 3. Main page layout (sidebar, grid)
 
-@import "components/buttons",  // 4. Component styles
-        "components/cards",
-        "components/games",
-        "components/settings-page",
-        "components/forms",
-        "components/wonky-ai",
-        "components/page-nav-links",
-        "components/checklist-hub";
+@import "components/buttons"; // 4. Component styles
+@import "components/cards";
+@import "components/games";
+@import "components/settings-page";
+@import "components/forms";
+@import "components/wonky-ai";
+@import "components/page-nav-links";
+@import "components/checklist-hub";
