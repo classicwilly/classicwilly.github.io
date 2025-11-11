@@ -462,7 +462,10 @@ title: Google Workspace Integration
   });
   
   // Gemini AI integration
-  const GEMINI_API_KEY = 'AIzaSyBNpJ_L0Afpwkx-YJNIeLir0qr4qANou9U';
+  // NOTE: API keys MUST NOT be stored in the repository. The real key has been removed
+  // from this file and must be provided to your server-side proxy via environment vars.
+  // For production, call a server-side proxy that holds the key (see examples/wonky-proxy).
+  const GEMINI_API_KEY = 'REDACTED_IN_REPO';
   const GEMINI_API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
   
   async function sendToGemini() {
