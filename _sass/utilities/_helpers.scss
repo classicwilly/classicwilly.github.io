@@ -1,0 +1,9 @@
+// Small, single-purpose utility classes to avoid inline styles.
+
+.text-sm { font-size: 0.95rem !important; }
+.text-md { font-size: 1.1rem !important; }
+.text-lg { font-size: 1.25rem !important; }
+
+.my-1 { margin-top: 0.5rem !important; margin-bottom: 0.5rem !important; }
+.my-2 { margin-top: 1rem !important; margin-bottom: 1rem !important; }
+.my-3 { margin-top: 2rem !important; margin-bottom: 2rem !important; }
