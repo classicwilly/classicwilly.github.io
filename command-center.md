@@ -20,29 +20,13 @@ title: Command Center - The Wonky Sprout
 ## 🔧 The "Fix-It" Kit
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
-  <a href="https://github.com/classicwilly/classicwilly.github.io" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--teal); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📁</div>
-    <h3 style="color: var(--teal); font-size: 1.1rem; margin: 0 0 0.5rem 0;">GitHub Repository</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0; font-family: 'IBM Plex Mono', monospace;">classicwilly.github.io</p>
-  </a>
+  {% include card.html href="https://github.com/classicwilly/classicwilly.github.io" icon="📁" title="GitHub Repository" desc="classicwilly.github.io" classes="checklist-card is-teal" %}
 
-  <a href="https://gitpod.io/#https://github.com/classicwilly/classicwilly.github.io" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">☁️</div>
-    <h3 style="color: var(--purple); font-size: 1.1rem; margin: 0 0 0.5rem 0;">GitPod Cloud IDE</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Browser-based development environment</p>
-  </a>
+  {% include card.html href="https://gitpod.io/#https://github.com/classicwilly/classicwilly.github.io" icon="☁️" title="GitPod Cloud IDE" desc="Browser-based development environment" classes="checklist-card is-purple" %}
 
-  <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧠</div>
-    <h3 style="color: var(--blue); font-size: 1.1rem; margin: 0 0 0.5rem 0;">NotebookLM</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">AI research assistant</p>
-  </a>
+  {% include card.html href="https://notebooklm.google.com/" icon="🧠" title="NotebookLM" desc="AI research assistant" classes="checklist-card is-blue" %}
 
-  <a href="https://github.com/classicwilly/classicwilly.github.io/tree/main/M4_SOP_VAULT" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
-    <h3 style="color: var(--green); font-size: 1.1rem; margin: 0 0 0.5rem 0;">M4 SOP Vault</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Personal operating system protocols</p>
-  </a>
+  {% include card.html href="https://github.com/classicwilly/classicwilly.github.io/tree/main/M4_SOP_VAULT" icon="📚" title="M4 SOP Vault" desc="Personal operating system protocols" classes="checklist-card is-green" %}
 </div>
 
 ---
@@ -50,47 +34,19 @@ title: Command Center - The Wonky Sprout
 ## 📂 The "External" Card Catalog
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
-  <a href="https://drive.google.com/drive/my-drive" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--yellow); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💾</div>
-    <h3 style="color: var(--yellow); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Drive</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">File storage and organization</p>
-  </a>
+  {% include card.html href="https://drive.google.com/drive/my-drive" icon="💾" title="Google Drive" desc="File storage and organization" classes="checklist-card is-yellow" %}
 
-  <a href="https://docs.google.com/document/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--blue); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📝</div>
-    <h3 style="color: var(--blue); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Docs</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Document creation and editing</p>
-  </a>
+  {% include card.html href="https://docs.google.com/document/" icon="📝" title="Google Docs" desc="Document creation and editing" classes="checklist-card is-blue" %}
 
-  <a href="https://docs.google.com/spreadsheets/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--green); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
-    <h3 style="color: var(--green); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Sheets</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Data tracking and analysis</p>
-  </a>
+  {% include card.html href="https://docs.google.com/spreadsheets/" icon="📊" title="Google Sheets" desc="Data tracking and analysis" classes="checklist-card is-green" %}
 
-  <a href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--red); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📅</div>
-    <h3 style="color: var(--red); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Calendar</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Schedule and time blocking</p>
-  </a>
+  {% include card.html href="https://calendar.google.com/" icon="📅" title="Google Calendar" desc="Schedule and time blocking" classes="checklist-card is-red" %}
 
-  <a href="https://tasks.google.com/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--purple); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">✅</div>
-    <h3 style="color: var(--purple); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Tasks</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Task management and lists</p>
-  </a>
+  {% include card.html href="https://tasks.google.com/" icon="✅" title="Google Tasks" desc="Task management and lists" classes="checklist-card is-purple" %}
 
-  <a href="https://keep.google.com/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--teal); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">📌</div>
-    <h3 style="color: var(--teal); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Keep</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Quick notes and capture</p>
-  </a>
+  {% include card.html href="https://keep.google.com/" icon="📌" title="Google Keep" desc="Quick notes and capture" classes="checklist-card is-teal" %}
 
-  <a href="https://chat.google.com/" target="_blank" rel="noopener noreferrer" style="display: block; background: var(--card-dark); border: 2px solid var(--pink); border-radius: 8px; padding: 1.25rem; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
-    <div style="font-size: 2rem; margin-bottom: 0.5rem;">💬</div>
-    <h3 style="color: var(--pink); font-size: 1.1rem; margin: 0 0 0.5rem 0;">Google Chat</h3>
-    <p style="color: var(--text-light); font-size: 0.9rem; margin: 0;">Communication and collaboration</p>
-  </a>
+  {% include card.html href="https://chat.google.com/" icon="💬" title="Google Chat" desc="Communication and collaboration" classes="checklist-card is-purple" %}
 </div>
 
 ---
