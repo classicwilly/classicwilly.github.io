@@ -2,7 +2,7 @@
 node_modules/
 
 # Compiled CSS output (built from SCSS)
-assets/css/main.css
+# (Note: main.css may be committed temporarily when restoring styling)
 
 # Environment files
 .env
