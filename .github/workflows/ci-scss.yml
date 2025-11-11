@@ -16,7 +16,8 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.x'
+          # pin to a specific 3.x patch compatible with ubuntu-latest
+          ruby-version: '3.2.9'
 
       - name: Install Jekyll
         run: |
