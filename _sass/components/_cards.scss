@@ -345,3 +345,45 @@
   background: var(--background-secondary);
   border: 1px solid var(--border-color-stronger);
 }
+
+/* Accessibility preferences styles */
+.accessibility-toggle {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--background-secondary);
+  border: 1px solid rgba(255,255,255,0.04);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4000;
+  cursor: pointer;
+}
+
+.accessibility-panel {
+  position: fixed;
+  left: 1rem;
+  bottom: 5.25rem;
+  width: 280px;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color-stronger);
+  border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+  z-index: 4000;
+  display: none;
+}
+.accessibility-panel.open { display: block; }
+.accessibility-panel-header { display:flex; justify-content:space-between; align-items:center; }
+.accessibility-panel .accessibility-form { display:flex; flex-direction:column; gap:0.5rem; padding-top:0.5rem; }
+.accessibility-panel .accessibility-close { background:transparent; border:none; font-size:1.1rem; }
+.accessibility-panel .accessibility-panel-footer { margin-top:0.75rem; display:flex; justify-content:flex-end; }
+
+/* Preference classes applied on body */
+.pref-reduced-motion *, .pref-reduced-motion *::before, .pref-reduced-motion *::after { transition: none !important; animation: none !important; }
+.pref-large-text { font-size: 1.125rem; }
+.pref-simplified .card { box-shadow: none; border-color: rgba(255,255,255,0.02); }
+.pref-high-contrast { --background-primary: #000000; --background-secondary: #0d0d0d; --text-primary: #ffffff; --text-secondary: #e6e6e6; }

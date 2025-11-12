@@ -133,4 +133,76 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // -----------------------------
+  // Accessibility Preferences (persisted)
+  // -----------------------------
+  function applyPrefClasses(prefs) {
+    document.body.classList.toggle('pref-reduced-motion', !!prefs.reducedMotion);
+    document.body.classList.toggle('pref-large-text', !!prefs.largeText);
+    document.body.classList.toggle('pref-simplified', !!prefs.simplifiedView);
+    document.body.classList.toggle('pref-high-contrast', !!prefs.highContrast);
+  }
+
+  function loadPrefs() {
+    try { return JSON.parse(localStorage.getItem('ws_accessibility_prefs') || '{}'); }
+    catch (e) { return {}; }
+  }
+
+  function savePrefs(prefs) {
+    localStorage.setItem('ws_accessibility_prefs', JSON.stringify(prefs));
+    applyPrefClasses(prefs);
+  }
+
+  // Render/accessibility panel include if present in DOM
+  (function wireAccessibility() {
+    // Insert include markup if not already present
+    const includeEl = document.getElementById('accessibility-toggle');
+    if (!includeEl) {
+      // try to fetch the include fragment (server-side include already present on pages via include)
+      const fragment = document.querySelector('#accessibility-panel');
+      if (!fragment) return; // no panel on this page
+    }
+
+    const panel = document.getElementById('accessibility-panel');
+    const toggle = document.getElementById('accessibility-toggle');
+    const closeBtn = document.getElementById('accessibility-close');
+    const resetBtn = document.getElementById('accessibility-reset');
+    const inputs = panel && panel.querySelectorAll('input[data-pref]');
+
+    const prefs = Object.assign({ reducedMotion: false, largeText: false, simplifiedView: false, highContrast: false }, loadPrefs());
+    applyPrefClasses(prefs);
+
+    if (!toggle || !panel) return;
+
+    function openPanel() {
+      panel.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      panel.classList.add('open');
+      // set inputs
+      if (inputs) inputs.forEach(i => { i.checked = !!prefs[i.dataset.pref]; });
+    }
+
+    function closePanel() {
+      panel.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      panel.classList.remove('open');
+    }
+
+    toggle.addEventListener('click', function () { const expanded = toggle.getAttribute('aria-expanded') === 'true'; if (expanded) closePanel(); else openPanel(); });
+    if (closeBtn) closeBtn.addEventListener('click', closePanel);
+
+    if (inputs) inputs.forEach(inp => {
+      inp.addEventListener('change', function () {
+        prefs[inp.dataset.pref] = inp.checked;
+        savePrefs(prefs);
+      });
+    });
+
+    if (resetBtn) resetBtn.addEventListener('click', function (e) { e.preventDefault(); const newPrefs = { reducedMotion: false, largeText: false, simplifiedView: false, highContrast: false }; savePrefs(newPrefs); if (inputs) inputs.forEach(i => i.checked = false); });
+
+    // close on Escape when open
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') panel && panel.classList.contains('open') && panel.setAttribute('aria-hidden', 'true'); });
+
+  })();
+
 });

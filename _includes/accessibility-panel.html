@@ -1,0 +1,18 @@
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+  <header class="accessibility-panel-header">
+    <h4>Accessibility Preferences</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+  </header>
+  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
+    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
+    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+    <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+  </form>
+  <div class="accessibility-panel-footer">
+    <button id="accessibility-reset" class="btn">Reset</button>
+  </div>
+</div>
+
+<!-- Toggle button (placed in DOM via JS) -->
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
