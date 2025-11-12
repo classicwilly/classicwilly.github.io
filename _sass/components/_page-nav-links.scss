@@ -1,27 +1,52 @@
-// Styles for the navigation links at the bottom of content pages (posts, SOPs).
 
+// ND-Friendly Card Grid Navigation Styles (ported from 2025-11-11_M1_PAGE_nd-nav-demo.html)
+$nd-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$nd-bg-color: #f9f9f9;
+$nd-card-bg: #ffffff;
+$nd-text-color: #c9d1d9;
+$nd-shadow-color: rgba(0, 0, 0, 0.05);
+$nd-shadow-hover-color: rgba(0, 0, 0, 0.1);
+$nd-focus-outline: #58a6ff;
+$nd-accent-blue: #1abc9c22;
+$nd-accent-green: #2ecc7122;
+$nd-accent-yellow: #fffbeb;
 
-.page-nav-links {
-	text-align: center;
-	margin: 2.4rem 0;
+.card-grid-nav {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
 }
-.page-nav-links .page-nav-link {
-	display: inline-block;
-	margin: 0.7rem 1.3rem;
-	padding: 1rem 2.2rem;
-	background: linear-gradient(90deg, #181c23 80%, #23272e 100%);
-	border-radius: 18px;
-	box-shadow: 0 4px 16px #1abc9c22, 0 1px 4px #23272e44;
-	color: #58a6ff;
-	font-weight: 700;
-	font-size: 1.13rem;
-	letter-spacing: 0.018em;
+
+.card {
+	display: block;
+	background-color: $nd-card-bg;
+	border-radius: 8px;
+	padding: 1.5rem;
 	text-decoration: none;
-	transition: background 0.22s, box-shadow 0.18s, color 0.18s, transform 0.14s;
-}
-.page-nav-links .page-nav-link:hover, .page-nav-links .page-nav-link:focus {
-	background: linear-gradient(90deg, #1abc9c 80%, #58a6ff 100%);
-	color: #161b22;
-	box-shadow: 0 8px 32px #58a6ff44;
-	transform: translateY(-1px) scale(1.03);
+	color: $nd-text-color;
+	box-shadow: 0 4px 10px $nd-shadow-color;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	font-family: $nd-font-family;
+	h2 {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+	}
+	p {
+		font-size: 1rem;
+		margin-bottom: 0;
+	}
+	&.card--blue { background-color: $nd-accent-blue; }
+	&.card--green { background-color: $nd-accent-green; }
+	&.card--yellow { background-color: $nd-accent-yellow; }
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 8px 15px $nd-shadow-hover-color;
+	}
+	&:focus-visible {
+		outline: 3px solid $nd-focus-outline;
+		outline-offset: 4px;
+		box-shadow: 0 8px 15px $nd-shadow-hover-color;
+	}
 }

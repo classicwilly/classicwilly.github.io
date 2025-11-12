@@ -1,13 +1,14 @@
+// ND-Friendly Checklist Hub Styles
 .checklist-hub {
-	background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
-	color: #2ecc71;
-	border-radius: 18px;
-	box-shadow: 0 4px 16px #1abc9c22, 0 1px 4px #23272e44;
-	padding: 2rem 2.6rem;
-	margin: 2.2rem 0;
-	font-size: 1.15rem;
-	letter-spacing: 0.013em;
-	border: 2px solid #2ecc7144;
+  background-color: $nd-card-bg;
+  color: $nd-accent-green;
+  border-radius: 18px;
+  box-shadow: 0 4px 10px $nd-shadow-color;
+  padding: 2rem 2.6rem;
+  margin: 2.2rem 0;
+  font-size: 1.15rem;
+  letter-spacing: 0.013em;
+  border: 2px solid $nd-accent-green;
 }
 // Styles for the main /checklists hub page.
 

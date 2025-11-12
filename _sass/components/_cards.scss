@@ -1,42 +1,50 @@
 /* ========================================================================== */
 .card {
-    background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
-    color: #c9d1d9;
-    border-radius: 28px;
-    box-shadow:
-        0 12px 48px rgba(26, 188, 156, 0.18),
-        0 3px 16px rgba(0,0,0,0.28),
-        0 1px 2px #1abc9c22;
-    padding: 3.6rem 2.8rem 2.8rem 2.8rem;
-    margin: 2.8rem 2.2rem;
-    transition: box-shadow 0.32s cubic-bezier(.4,2,.3,1), background 0.24s, border 0.22s, transform 0.18s;
-    font-size: 1.25rem;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background-color: $nd-card-bg;
+    color: $nd-text-color;
+    border-radius: 18px;
+    box-shadow: 0 4px 10px $nd-shadow-color;
+    padding: 2.2rem 1.8rem 1.8rem 1.8rem;
+    margin: 2.2rem 1.3rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    font-size: 1.13rem;
+    font-family: $nd-font-family;
     letter-spacing: 0.014em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2.5px solid #23272e;
-    border-bottom: 3px solid #1abc9c55;
-}
-
-.card:focus, .card:hover {
-    box-shadow:
-        0 24px 80px #1abc9c44,
-        0 8px 32px #58a6ff44,
-        0 2px 8px #23272e99;
-    outline: 3.5px solid #1abc9c;
-    background: linear-gradient(120deg, #23272e 80%, #181c23 100%);
-    border-bottom: 4px solid #58a6ff88;
-    transform: translateY(-3px) scale(1.018);
+    border: 2px solid $nd-bg-color;
+    border-bottom: 3px solid $nd-accent-blue;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    p {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+    &.card--blue { background-color: $nd-accent-blue; }
+    &.card--green { background-color: $nd-accent-green; }
+    &.card--yellow { background-color: $nd-accent-yellow; }
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px $nd-shadow-hover-color;
+    }
+    &:focus-visible {
+        outline: 3px solid $nd-focus-outline;
+        outline-offset: 4px;
+        box-shadow: 0 8px 15px $nd-shadow-hover-color;
+    }
 }
 
 .card-icon {
     font-size: 2.6rem;
     margin-bottom: 1.1rem;
     align-self: center;
-    filter: drop-shadow(0 2px 6px #1abc9c33);
+    filter: drop-shadow(0 2px 6px $nd-accent-blue);
 }
 
 .card-title {

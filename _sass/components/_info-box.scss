@@ -1,13 +1,14 @@
+// ND-Friendly Info Box Styles
 .info-box {
-  background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
-  color: #58a6ff;
+  background-color: $nd-card-bg;
+  color: $nd-focus-outline;
   border-radius: 18px;
-  box-shadow: 0 4px 16px #1abc9c22, 0 1px 4px #23272e44;
+  box-shadow: 0 4px 10px $nd-shadow-color;
   padding: 1.6rem 2.2rem;
   margin: 2rem 0;
   font-size: 1.13rem;
   letter-spacing: 0.012em;
-  border: 2px solid #58a6ff44;
+  border: 2px solid $nd-focus-outline;
 }
 /* /_sass/components/_info-box.scss */
 

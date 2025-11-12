@@ -1,23 +1,23 @@
 input, textarea, select {
-  background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
-  color: #c9d1d9;
+  background-color: $nd-card-bg;
+  color: $nd-text-color;
   border-radius: 14px;
-  border: 2px solid #23272e;
+  border: 2px solid $nd-bg-color;
   padding: 1rem 1.6rem;
   font-size: 1.13rem;
   margin-bottom: 1.6rem;
-  box-shadow: 0 2px 10px #1abc9c22, 0 1px 4px #23272e44;
+  box-shadow: 0 2px 10px $nd-shadow-color, 0 1px 4px $nd-shadow-hover-color;
   transition: border 0.22s, box-shadow 0.22s;
 }
 
 input:focus, textarea:focus, select:focus {
-  border: 2.5px solid #1abc9c;
-  box-shadow: 0 4px 16px #1abc9c44;
+  border: 2.5px solid $nd-accent-blue;
+  box-shadow: 0 4px 16px $nd-shadow-hover-color;
 }
 
 label {
   font-size: 1.09rem;
-  color: #58a6ff;
+  color: $nd-focus-outline;
   font-weight: 600;
   margin-bottom: 0.5rem;
   letter-spacing: 0.015em;
@@ -31,6 +31,46 @@ label {
   background-color: var(--background-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.form-checkbox-group {
+  display: block; /* each checkbox group occupies its own line */
+  padding: 0.5rem 0;
+input, textarea, select {
+  background-color: $nd-card-bg;
+  color: $nd-text-color;
+  border-radius: 14px;
+  border: 2px solid $nd-bg-color;
+  padding: 1rem 1.6rem;
+  font-size: 1.13rem;
+  margin-bottom: 1.6rem;
+  box-shadow: 0 2px 10px $nd-shadow-color, 0 1px 4px $nd-shadow-hover-color;
+  transition: border 0.22s, box-shadow 0.22s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border: 2.5px solid $nd-accent-blue;
+  box-shadow: 0 4px 16px $nd-shadow-hover-color;
+}
+
+label {
+  font-size: 1.09rem;
+  color: $nd-focus-outline;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.015em;
+  display: block;
+}
+/* ==========================================================================
+   7. Forms & Interactive Elements
+   ========================================================================== */
+
+.interactive-checklist {
+  background-color: $nd-card-bg;
+  border: 1px solid $nd-bg-color;
+  border-radius: 14px;
   padding: 1.5rem;
   margin: 1.5rem 0;
 }

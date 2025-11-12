@@ -7,10 +7,11 @@
   z-index: 1010;
 }
 .fab {
-  background-color: var(--circuit-teal);
-  color: var(--card-dark);
+  background-color: $nd-accent-blue;
+  color: $nd-card-bg;
   border: none;
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  box-shadow: 0 4px 10px $nd-shadow-color;
 }
