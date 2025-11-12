@@ -57,7 +57,7 @@ title: Google Workspace Integration
     <li>Color-code: Solo Execution Mode (teal), Family Structure Mode (orange)</li>
     <li>Share calendar with co-parent</li>
     <li>Get embed code: Calendar Settings → Integrate calendar → Iframe code</li>
-    <li>Replace placeholder below with your calendar iframe</li>
+  <li>If calendar is not visible, request access or setup via Command Center. No placeholder.</li>
   </ol>
   
   <p><strong>Embed your calendar here:</strong></p>
@@ -311,7 +311,7 @@ title: Google Workspace Integration
   </div>
   
   <div style="display: flex; gap: 0.5rem;">
-    <input type="text" id="gemini-input" placeholder="Ask Gemini about protocols, patterns, or decisions..." style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-gray); border-radius: 6px; color: var(--text-bright); font-family: 'Space Grotesk', sans-serif;">
+  <input type="text" id="gemini-input" placeholder="Type your question for Gemini (protocol, pattern, decision)" style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-gray); border-radius: 6px; color: var(--text-bright); font-family: 'Space Grotesk', sans-serif;">
     <button onclick="sendToGemini()" style="padding: 0.75rem 1.5rem; background: var(--yellow); border: none; border-radius: 6px; color: var(--darker-bg); font-weight: 700; cursor: pointer; font-family: 'IBM Plex Mono', monospace;">
       Send
     </button>
@@ -512,7 +512,7 @@ title: Google Workspace Integration
     const userQuery = input.value;
     input.value = '';
     
-    // Clear placeholder if first message
+  // Remove placeholder logic for ND protocol compliance
     if (chatDiv.querySelector('[style*="text-align: center"]')) {
       chatDiv.innerHTML = '';
     }

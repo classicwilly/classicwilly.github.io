@@ -47,13 +47,13 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Executive Dysfunction -->
-    {% include card.html disabled=true icon="🧠" title="Executive Dysfunction" desc="Quick-reference for frozen executive function" meta="Coming Soon" %}
+  {% include card.html disabled=true icon="🧠" title="Executive Dysfunction" desc="Protocol not yet published. Request via Command Center." %}
     
     <!-- Context Switching -->
-    {% include card.html disabled=true icon="🔀" title="Context Switching Recovery" desc="Fast capture-interrupt-reload for disruptions" meta="Coming Soon" %}
+  {% include card.html disabled=true icon="🔀" title="Context Switching Recovery" desc="Protocol not yet published. Request via Command Center." %}
     
     <!-- Sensory Overload -->
-    {% include card.html disabled=true icon="🔇" title="Sensory Overload" desc="Rapid sensory reduction and retreat protocol" meta="Coming Soon" %}
+  {% include card.html disabled=true icon="🔇" title="Sensory Overload" desc="Protocol not yet published. Request via Command Center." %}
     
   </div>
 </div>

@@ -1,12 +1,13 @@
 /* ========================================================================== */
+// ND-Perfect Card Separation
 .card {
     background-color: var(--card-bg);
     color: var(--text-color);
     border-radius: var(--card-radius);
     box-shadow: var(--card-shadow);
     padding: var(--card-padding);
-    margin: 2rem 1rem;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin: 2.2rem 1.2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
     font-size: 1.13rem;
     font-family: var(--font-family);
     letter-spacing: 0.014em;
@@ -14,29 +15,33 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: none;
+    border: 2.5px solid var(--focus-outline);
+// End .card styles
 
+    // Nested card (for demo, not used in prod)
     .card {
         background: var(--card-bg);
         color: var(--text-color);
         border-radius: var(--card-radius);
         box-shadow: var(--card-shadow), var(--card-shadow-hover);
-        padding: 2.2rem 2.8rem;
+        padding: var(--card-padding);
         margin: 2.2rem 0;
         font-size: 1.15rem;
         letter-spacing: 0.013em;
-        border: 2px solid var(--accent-blue);
+        border: 2.5px solid var(--accent-blue);
         transition: box-shadow 0.18s, background 0.22s;
     }
 
     .card:hover {
         box-shadow: var(--card-shadow-hover);
-        background: var(--card-bg-hover);
+        background: var(--card-bg);
+        border-color: var(--accent-blue);
     }
     &:focus-visible {
         outline: 3px solid var(--focus-outline);
         outline-offset: 4px;
         box-shadow: var(--card-shadow-hover);
+        border-color: var(--accent-green);
     }
 }
 
