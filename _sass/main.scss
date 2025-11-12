@@ -1,20 +1,33 @@
 
-// ND-Friendly Foundation Variables
-$nd-font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-$nd-bg-color: #0d1117;
-$nd-card-bg: #161b22;
-$nd-text-color: #c9d1d9;
-$nd-shadow-color: rgba(0, 0, 0, 0.05);
-$nd-shadow-hover-color: rgba(0, 0, 0, 0.1);
-$nd-focus-outline: #58a6ff;
-$nd-accent-blue: #1abc9c;
-$nd-accent-green: #2ecc71;
-$nd-accent-yellow: #fffbeb;
+
+// ND-Friendly Foundation Variables (CSS custom properties for instant theme switching)
+:root {
+	--font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	--card-radius: 8px;
+	--card-padding: 1.5rem;
+	--card-shadow: 0 4px 10px rgba(0,0,0,0.05);
+	--card-shadow-hover: 0 8px 15px rgba(0,0,0,0.1);
+	--focus-outline: #005fcc;
+	--accent-blue: #e6f3ff;
+	--accent-green: #e6f8f0;
+	--accent-yellow: #fffbeb;
+}
+
+body.theme-light {
+	--bg-color: #f9f9f9;
+	--card-bg: #ffffff;
+	--text-color: #333333;
+}
+body.theme-dark {
+	--bg-color: #0d1117;
+	--card-bg: #161b22;
+	--text-color: #c9d1d9;
+}
 
 body {
-	font-family: $nd-font-family;
-	background-color: $nd-bg-color;
-	color: $nd-text-color;
+	font-family: var(--font-family);
+	background-color: var(--bg-color);
+	color: var(--text-color);
 	line-height: 1.6;
 	font-size: 100%;
 	margin: 0;

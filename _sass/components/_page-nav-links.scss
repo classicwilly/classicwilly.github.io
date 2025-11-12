@@ -19,14 +19,14 @@ $nd-accent-yellow: #fffbeb;
 
 .card {
 	display: block;
-	background-color: $nd-card-bg;
-	border-radius: 8px;
-	padding: 1.5rem;
+	background-color: var(--card-bg);
+	border-radius: var(--card-radius);
+	padding: var(--card-padding);
 	text-decoration: none;
-	color: $nd-text-color;
-	box-shadow: 0 4px 10px $nd-shadow-color;
+	color: var(--text-color);
+	box-shadow: var(--card-shadow);
 	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-	font-family: $nd-font-family;
+	font-family: var(--font-family);
 	h2 {
 		font-size: 1.5rem;
 		font-weight: 600;
@@ -37,16 +37,16 @@ $nd-accent-yellow: #fffbeb;
 		font-size: 1rem;
 		margin-bottom: 0;
 	}
-	&.card--blue { background-color: $nd-accent-blue; }
-	&.card--green { background-color: $nd-accent-green; }
-	&.card--yellow { background-color: $nd-accent-yellow; }
+	&.card--blue { background-color: var(--accent-blue); }
+	&.card--green { background-color: var(--accent-green); }
+	&.card--yellow { background-color: var(--accent-yellow); }
 	&:hover {
 		transform: translateY(-5px);
-		box-shadow: 0 8px 15px $nd-shadow-hover-color;
+		box-shadow: var(--card-shadow-hover);
 	}
 	&:focus-visible {
-		outline: 3px solid $nd-focus-outline;
+		outline: 3px solid var(--focus-outline);
 		outline-offset: 4px;
-		box-shadow: 0 8px 15px $nd-shadow-hover-color;
+		box-shadow: var(--card-shadow-hover);
 	}
 }

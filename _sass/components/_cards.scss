@@ -1,21 +1,20 @@
 /* ========================================================================== */
 .card {
-    background-color: $nd-card-bg;
-    color: $nd-text-color;
-    border-radius: 18px;
-    box-shadow: 0 4px 10px $nd-shadow-color;
-    padding: 2.2rem 1.8rem 1.8rem 1.8rem;
-    margin: 2.2rem 1.3rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: var(--card-padding);
+    margin: 2rem 1rem;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     font-size: 1.13rem;
-    font-family: $nd-font-family;
+    font-family: var(--font-family);
     letter-spacing: 0.014em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2px solid $nd-bg-color;
-    border-bottom: 3px solid $nd-accent-blue;
+    border: none;
     h2 {
         font-size: 1.5rem;
         font-weight: 600;
@@ -26,17 +25,17 @@
         font-size: 1rem;
         margin-bottom: 0;
     }
-    &.card--blue { background-color: $nd-accent-blue; }
-    &.card--green { background-color: $nd-accent-green; }
-    &.card--yellow { background-color: $nd-accent-yellow; }
+    &.card--blue { background-color: var(--accent-blue); }
+    &.card--green { background-color: var(--accent-green); }
+    &.card--yellow { background-color: var(--accent-yellow); }
     &:hover {
         transform: translateY(-5px);
-        box-shadow: 0 8px 15px $nd-shadow-hover-color;
+        box-shadow: var(--card-shadow-hover);
     }
     &:focus-visible {
-        outline: 3px solid $nd-focus-outline;
+        outline: 3px solid var(--focus-outline);
         outline-offset: 4px;
-        box-shadow: 0 8px 15px $nd-shadow-hover-color;
+        box-shadow: var(--card-shadow-hover);
     }
 }
 
