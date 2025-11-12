@@ -9,15 +9,28 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+        - name: Cache npm dependencies
+          uses: actions/cache@v3
+          with:
+            path: ~/.npm
+            key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
+              ${{ runner.os }}-npm-
+
+        - name: Cache Ruby gems
+          uses: actions/cache@v3
+          with:
+            path: vendor/bundle
+            key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+            restore-keys: |
+              ${{ runner.os }}-gems-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
-        with:
-          # pin to a specific 3.x patch compatible with ubuntu-latest
-          ruby-version: '3.2.9'
 
       - name: Install Jekyll
         run: |

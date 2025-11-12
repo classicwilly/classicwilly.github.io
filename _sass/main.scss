@@ -35,15 +35,15 @@ body {
 }
 
 // Import all components (build on ND foundation)
-@import "components/buttons";
-@import "components/cards";
-@import "components/checklist-hub";
-@import "components/forms";
-@import "components/games";
-@import "components/info-box";
-@import "components/page-nav-links";
-@import "components/settings-page";
-@import "components/wonky-ai";
+@use "components/buttons";
+@use "components/cards";
+@use "components/checklist-hub";
+@use "components/forms";
+@use "components/games";
+@use "components/info-box";
+@use "components/page-nav-links";
+@use "components/settings-page";
+@use "components/wonky-ai";
 
 // Page-specific styles
-@import "pages/keep-page";
+@use "pages/keep-page";
