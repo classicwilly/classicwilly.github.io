@@ -22,10 +22,16 @@ You are:
 
 You don't need motivation. You need **mechanical systems that run on autopilot when your brain can't.**
 
+{% capture section_who %}
+You don't need motivation. You need **mechanical systems that run on autopilot when your brain can't.**
+{% endcapture %}
+{% include card.html title="WHO IS THIS FOR?" content=section_who classes="checklist-card is-blue" %}
+
 ---
 
 ## WHAT YOU NEED
 
+{% capture section_need %}
 **A systems audit + custom protocol implementation.**
 
 ### The Problem:
@@ -42,11 +48,11 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 - **Custom SOP Package** - 3-5 protocols tailored to your workflow (Morning Routine, Task Capture, Weekly Review, Context Switching Recovery, etc.)
 - **Emergency Protocol Set** - 2-3 IPIs for your most common failure modes (Executive Dysfunction, Sensory Overload, Burnout Recovery)
 - **Implementation Guide** - Step-by-step deployment plan with fallback procedures
+{% endcapture %}
+{% include card.html title="WHAT YOU NEED" content=section_need classes="checklist-card is-green" %}
 
----
 
-## HOW IT WORKS
-
+{% capture section_how %}
 **1-week diagnostic → Custom SOP delivery.**
 
 ### Week 1: The Chaos Intake (Days 1-2)
@@ -61,8 +67,6 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 
 **Deliverable:** Voice-recorded session + written summary sent within 24 hours.
 
----
-
 ### Week 1: The Systems Analysis (Days 3-5)
 
 **I disappear into my "card catalog" brain** and map your chaos:
@@ -73,8 +77,6 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 **My method:** 15 years as a Navy systems diagnostician + lived experience with Autism/ADHD. I build systems that account for brain variability, not fantasy-land consistency.
 
 **Deliverable:** Root Cause Analysis document (2-3 pages, plain language, no corporate BS).
-
----
 
 ### Week 1: The Fix Delivery (Days 6-7)
 
@@ -95,11 +97,21 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 - Week-by-week rollout plan (because trying to change everything at once = guaranteed failure)
 - Metrics to track (daily check-ins, weekly reviews)
 - Adjustment protocol (what to do when it's not working)
+{% endcapture %}
+{% include card.html title="HOW IT WORKS" content=section_how classes="checklist-card is-purple" %}
+- Example: "Executive Dysfunction Emergency" - 5-step reboot sequence
+- Laminated-ready format for physical deployment
+
+**Implementation Roadmap:**
+- Week-by-week rollout plan (because trying to change everything at once = guaranteed failure)
+- Metrics to track (daily check-ins, weekly reviews)
+- Adjustment protocol (what to do when it's not working)
 
 ---
 
 ## INVESTMENT
 
+{% capture section_invest %}
 **$1,500 for complete 1-week engagement.**
 
 Includes:
@@ -113,11 +125,14 @@ Includes:
 **Payment:** 50% upfront, 50% on delivery.
 
 **Guarantee:** If the protocols don't reduce your chaos by 50% within 30 days, I'll revise them for free or refund the second payment.
+{% endcapture %}
+{% include card.html title="INVESTMENT" content=section_invest classes="checklist-card is-teal" %}
 
 ---
 
 ## WHO AM I?
 
+{% capture section_whoami %}
 **William Johnson (classicwilly)** - Systems Diagnostician, 40 years old, diagnosed Autism/ADHD.
 
 **Background:**
@@ -129,11 +144,14 @@ Includes:
 - Anti-BS. No corporate jargon, no motivational fluff.
 - Structure from chaos. Your brain isn't broken; your systems are.
 - Fix it once, fix it right. Permanent solutions, not recurring subscriptions.
+{% endcapture %}
+{% include card.html title="WHO AM I?" content=section_whoami classes="about-card is-green" %}
 
 ---
 
 ## PROOF IT WORKS
 
+{% capture section_proof %}
 <div class="testimonial-card">
   <div class="testimonial-meta">
     <strong>William Johnson</strong> • Systems Diagnostician • Designer of Wonky Sprout OS
@@ -145,11 +163,14 @@ Includes:
     If I can systematize my own neurodivergent chaos, I can systematize yours.
   </div>
 </div>
+{% endcapture %}
+{% include card.html title="PROOF IT WORKS" content=section_proof classes="about-card is-teal" %}
 
 ---
 
 ## READY TO FIX IT?
 
+{% capture section_ready %}
 **Email:** [Insert contact email]  
 **Subject line:** "Fix-It Blueprint - [Your Name]"
 
@@ -159,6 +180,8 @@ Includes:
 3. What you've already tried that didn't work
 
 I respond within 24 hours. If I can't help you, I'll tell you immediately and point you to someone who can.
+{% endcapture %}
+{% include card.html title="READY TO FIX IT?" content=section_ready classes="checklist-card is-yellow" %}
 
 ---
 

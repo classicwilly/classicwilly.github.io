@@ -1,6 +1,7 @@
 # The Wonky Sprout - Brand Guide v2.0
+# The Wonky Sprout - Brand Guide v2.1
 
-**Updated November 9, 2025 by William Johnson**
+**Updated November 12, 2025 by William Johnson**
 
 ---
 
@@ -22,7 +23,7 @@ This is not a corporate operation or a motivational brand. This is an **engineer
 
 **"The Wonky Sprout: Structure Engineered for Chaos."**
 
-This is an 11/10 choice because it perfectly fuses the engineering background (Navy Systems Diagnostician) with the personal brand identity (neurodivergent father building life protocols).
+Short, precise, and unapologetic — a promise of engineered outcomes, not platitudes.
 
 ---
 
@@ -40,110 +41,148 @@ As a **Navy Systems Diagnostician** for 15 years, my job was to find root causes
 
 **"Structure and organization with a bit of chaos."**
 
-This brand is the perfect blend of two opposing, but complementary, forces:
+This brand is the blend of two complementary forces:
 
-* **The Sprout (Organic Chaos)**: Represents natural, non-linear, neurodivergent thinking. Growth, adaptation, life force. The "wonky" part.
-* **The Mechanical (Structured Order)**: Represents the "card catalog"—the gears, circuits, hexagons, and engineered systems that absorb chaos. The "fix stuff" part.
+- **The Sprout (Organic Chaos)**: Natural, non-linear, neurodivergent thinking.
+- **The Mechanical (Structured Order)**: Systems, diagnostics, engineered solutions.
 
-**The fusion:** Chaos is the input. Structure is the solution. The brand IS the engineering process.
+The fusion: chaos is the input; structure is the engineered output.
 
 ---
 
 ## The Vibe (How It Feels)
 
-* **"Manly, still soft."** - Strong systems, gentle execution
-* **"I fix stuff."** - Direct, action-oriented, no-BS engineering mindset
-* **Authentic, direct, and systems-oriented** - Not inspiration, not philosophy, **solution**
+- **"Manly, still soft."** — Strong systems, gentle execution
+- **"I fix stuff."** — Direct, action-oriented, no-BS engineering mindset
+- **Authentic, direct, systems-first** — Not inspiration, not philosophy, solution
 
 ---
 
 ## Key Visuals
 
 ### The Emblem
-A **sprout** (organic growth, neurodivergent nature) growing from a base of **circuit-board-like hexagons** (engineered structure, systems thinking).
-
-**Symbolism:**
-- **Sprout**: Natural, adaptive, growing life force
-- **Circuit hexagons**: Precision, logic, engineered foundation  
-- **Fusion**: Chaos absorbed by structure, organic meets systematic
+A sprout growing from a base of circuit-hexagons: organic growth meeting engineered structure.
 
 ### The Logotype
-The name **"The Wonky Sprout"** where the **"O"s are intricate, colorful gears** (the engineered fix).
+"The Wonky Sprout" with the O's treated as mechanical/gear accents in display uses.
 
-**Typography:**
-- **Primary Font**: Space Grotesk (clean, modern, humanist sans-serif)
-- **Accent Font**: IBM Plex Mono (monospaced, engineering mindset)
+### The Palette (Primary hexes)
+- Background (page): #0d1117
+- Card / Surface: #161b22
+- Text (primary): #c9d1d9
+- Accent Teal: #1abc9c
+- Accent Blue: #58a6ff
+- Accent Green: #2ecc71
+- Accent Orange: #ff8c42
+- Accent Purple: #9b5de5
+- Accent Yellow: #ffd166
 
-### The Palette
-A mix of **natural greens** (sprout, growth) with **industrial teals/blues** (circuitry, precision) and **vibrant accents** (orange, purple, yellow) for energy and engagement.
-
-**See full color palette in the complete brand guide for hex codes and usage guidelines.**
+Use the darker cards/background for default surfaces (dark-mode-first). Accent colors are for micro-interactions, alerts, and emphasis.
 
 ---
 
 ## The Engineering Metaphor (Core Framework)
 
 | Element | Personal Brand | Engineering Parallel |
-|---------|---------------|---------------------|
-| **Input** | Life chaos (sensory, executive, emotional) | External load on system |
-| **Processor** | ADHD/Autism brain (hyper-focus, pattern recognition) | High-performance diagnostic engine |
-| **Output** | SOPs, digital systems, protocols | Engineered solutions |
-| **Result** | Functional life structure | System that absorbs chaos without failing |
+|---------|---------------:|---------------------:|
+| Input | Life chaos (sensory, executive) | External load on system |
+| Processor | ADHD/Autism brain (pattern recognition) | High-performance diagnostic engine |
+| Output | SOPs, protocols, tools | Engineered solutions |
+| Result | Functional life structure | System that absorbs chaos without failing |
 
 ---
 
 ## Voice & Tone (The "Anti-BS" Framework)
 
-### What We DO:
-- ✅ Number steps (1, 2, 3)
-- ✅ Use direct language ("This fixes X")
-- ✅ Acknowledge executive dysfunction
-- ✅ Provide exact time/energy requirements
-- ✅ Build systems that work when your brain doesn't
-- ✅ Write for neurodivergent readers first
+### What We DO
+- Number steps and time/energy requirements
+- Use direct language: "This fixes X"
+- Acknowledge executive dysfunction and constraints
+- Write for neurodivergent readers first
 
-### What We DON'T:
-- ❌ Use corporate jargon or buzzwords
-- ❌ Write motivational fluff ("You got this!")
-- ❌ Hide complexity with vague promises
-- ❌ Assume neurotypical workflow patterns
-- ❌ Create "inspiration" without action
-- ❌ Pretend systems don't require maintenance
+### What We DON'T
+- Use corporate jargon or motivational fluff
+- Hide complexity or promise unrealistic outcomes
 
 ---
 
-## Positioning Statement
+## Card Component & Site UX Guidelines (NEW)
 
-> "The Wonky Sprout is an engineering solution for neurodivergent life management. Built by a Navy Systems Diagnostician who spent 15 years finding root causes, not patching holes. I fix stuff."
+We standardize content into interactive, titled cards — consistent, low-friction, and accessible. This is the canonical UX pattern across the site.
+
+Purpose: surface bite-sized chunks of information, reduce scatter, and provide a low-effort quick-view or modal for details.
+
+Implementation contract (developer checklist):
+- Use the include: `{% include card.html title="Title" content=section_X classes="about-card is-blue" %}` where `section_X` is captured via Liquid's `capture` tag.
+- If `content` is provided, the include will render a hidden `.card-modal-content` which the frontend opens in an accessible modal.
+- Card classes: `about-card`, `checklist-card`, `sop-card`, plus modifiers `is-blue`, `is-green`, `is-muted`.
+- Links inside cards should remain semantic `<a>` tags; card click behavior should send keyboard Enter to the first in-card link (progressive enhancement). Disabled cards use `aria-disabled="true"`.
+
+Examples (conceptual):
+
+1) Capture + include pattern (Liquid):
+
+```liquid
+{% capture section_1 %}
+Content here with lists and links.
+{% endcapture %}
+
+{% include card.html title="Section Title" content=section_1 classes="about-card" %}
+```
+
+2) Checklist card rules:
+- Put a blank line before a task list so each checkbox starts on its own visual line. Prefer GitHub-flavored task lists (`- [ ] Task`) and avoid inline checkboxes in paragraphs.
+- Use task text that describes a single actionable step and include time/energy estimates when relevant.
+
+CSS note for content authors: the site sets checkboxes to start visually on their own lines within `.checklist-card` so lists render cleanly on desktop and mobile.
 
 ---
 
-## The Non-Negotiables
+## Interaction Patterns & Accessibility
 
-1. **Dark mode first** - Light mode causes sensory pain for many neurodivergent users
-2. **No fake motivation** - Systems over inspiration
-3. **Exact instructions** - Number steps, specify times
-4. **Acknowledge dysfunction** - Don't pretend executive function is optional
-5. **Structure absorbs chaos** - The brand IS the engineering solution
+- Hover quick-view (pointer devices) shows `.card-preview` summary; on touch devices provide a visible quick-action button `.card-action` inside the card to open the modal.
+- Modal behavior: focus moves into the modal, Escape closes, overlay click closes, and the first focusable element inside receives initial focus. A simple focus trap is maintained.
+- Keyboard: Cards are keyboard-focusable. Enter/Space should activate the primary action (open modal or follow first link).
+- ARIA: Use `role="button"` for clickable cards without native controls, `aria-expanded` when the modal is open, and `aria-disabled` for disabled cards.
 
----
-
-## The Slogan Breakdown
-
-**"The Wonky Sprout: Structure Engineered for Chaos."**
-
-- **The Wonky Sprout** = Brand name (organic + systematic fusion)
-- **Structure** = The output (SOPs, protocols, systems)
-- **Engineered** = The method (diagnostic, root-cause, precision)
-- **For Chaos** = The input (neurodivergent life, co-parenting, sensory overload)
-
-**This is not a philosophy. This is an engineering solution.**
+Accessibility checklist for any new UX change:
+- Contrast: Meet AA contrast for body text and buttons.
+- Keyboard-only test: ensure all card actions reachable and operable.
+- Screen reader: modal announces title and role (use `aria-labelledby` and `role="dialog"`).
 
 ---
 
-**Version:** 2.0  
-**Updated:** November 9, 2025  
+## Content Rules for Checklists and SOPs
+
+- Always provide a one-line summary at the top of an SOP card: what it fixes, time cost, and confidence level.
+- Tasks should be atomized: one action per line.
+- Prefer explicit failure modes and recovery steps (e.g., "If step 3 fails, do X").
+
+---
+
+## Non-Negotiables (Updated)
+
+1. **Dark mode first** — prioritize low-gamut, low-glare surfaces.
+2. **No fake motivation** — systems over pep talks.
+3. **Exact instructions** — number steps and include times.
+4. **Acknowledge dysfunction** — design for brains that need scaffolding.
+5. **No 'Wonky AI' or AI-persona references** — remove any legacy or product names that suggest an autonomous AI persona; product is human-authored systems and tooling only.
+
+---
+
+## Quick Developer Notes
+
+- Repo convention: new public pages follow `YYYY-MM-DD_M#_TYPE_description.md` (do not rename Jekyll core files).
+- Use the `card.html` include — it is the single source of truth for card markup and ARIA wiring.
+- When editing many pages, convert in batches and run `bundle exec jekyll build` between batches to catch Liquid/template issues early.
+
+---
+
+## Versioning
+
+**Version:** 2.1  
+**Updated:** November 12, 2025  
 **Author:** William Johnson (classicwilly)  
-**Status:** ✅ Production (Active Brand Identity)
+**Status:** ✅ Production — includes card/UX guidelines and accessibility notes.
 
-**For complete brand guidelines including color palette, typography, content templates, and usage examples, see: `2025-11-09_M1_CONFIG_brand-guide-v2.md`**
+For the full visual token set and templates, see: `2025-11-09_M1_CONFIG_brand-guide-v2.md`

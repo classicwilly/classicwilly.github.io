@@ -244,10 +244,10 @@ body{
   font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
   line-height: 1.5;
 }
-.page-container{display:flex;gap:1.5rem;padding:1rem;}
+.page-container{display:flex;gap:1rem;padding:0.75rem;}
 .sidebar{width:260px;flex:0 0 260px;background:var(--background-secondary);padding:1rem;border-radius:8px;border:1px solid var(--border-color)}
-.main-content-wrapper{flex:1}
-.main-content{max-width:900px;margin:0 auto}
+.main-content-wrapper{flex:1;padding-left:1rem;padding-right:1rem}
+.main-content{max-width:none;margin:0;padding-left:0;padding-right:0;width:100%}
 .sidebar .sidebar-title{font-weight:700;color:var(--accent);font-size:1.05rem}
 .sidebar-nav{list-style:none;padding:0;margin:0}
 .sidebar-nav li{margin:0.5rem 0}

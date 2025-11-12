@@ -40,186 +40,90 @@ title: Foundational Daily Protocols Checklist
 </div>
 
 ---
-
-## MORNING SEQUENCE (Fixed Order)
-
+{% capture morning %}
 ### 6:00 AM - Wake & Water Protocol
 
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Wake alarm sounds</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Stand up immediately (no snooze, no phone)</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Drink 1 full glass (16 oz) of water</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Keep filled water bottle at Command Center for continuous hydration</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Wake alarm sounds</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Stand up immediately (no snooze, no phone)</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Drink 1 full glass (16 oz) of water</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Keep filled water bottle at Command Center for continuous hydration</span></label>
 </div>
 
 ### 6:02 AM - Pill Protocol
 
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Take all pills from today's slot in organizer</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Refill tomorrow's slot if needed</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Visual check: Organizer in correct position</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Take all pills from today's slot in organizer</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Refill tomorrow's slot if needed</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Visual check: Organizer in correct position</span></label>
 </div>
+{% endcapture %}
 
----
+{% include card.html title="MORNING SEQUENCE (Fixed Order)" content=morning classes="checklist-card" %}
 
-## ALL-DAY PROTOCOL (Active 6:00 AM - 10:30 PM)
-
+{% capture allday %}
 ### Capture Protocol (Always Running)
 **When any thought, idea, or task enters your mind:**
 
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Stop whatever you're doing</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Grab Soundcore AI Recorder OR open Google Keep</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Record/write the thought immediately</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>DO NOT process it—just capture it</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Return to current task</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Stop whatever you're doing</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Grab Soundcore AI Recorder OR open Google Keep</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Record/write the thought immediately</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>DO NOT process it—just capture it</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Return to current task</span></label>
 </div>
 
 **Note**: Processing happens during "Planning & Filing" time block or Weekly Review
+{% endcapture %}
 
----
+{% include card.html title="ALL-DAY PROTOCOL (Active 6:00 AM - 10:30 PM)" content=allday classes="checklist-card" %}
 
-## EVENING SEQUENCE (Fixed Order)
-
+{% capture evening %}
 ### 10:00 PM - Sleep Anchor Prep
-
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Begin winding down (low light, low stimulation)</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Turn off all screens</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Dim all lights in living space</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Engage low-stimulation activity (reading, meditation, stretching)</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Begin winding down (low light, low stimulation)</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Turn off all screens</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Dim all lights in living space</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Engage low-stimulation activity (reading, meditation, stretching)</span></label>
 </div>
 
 ### 10:25 PM - Daily Dump
-
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Open Google Tasks</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Review tomorrow's schedule</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Write down the 3 most critical tasks for tomorrow</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Close all apps</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Open Google Tasks</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Review tomorrow's schedule</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Write down the 3 most critical tasks for tomorrow</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Close all apps</span></label>
 </div>
 
 ### 10:30 PM - Sleep Anchor
-
 <div class="interactive-checklist">
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Phone on silent/DND mode</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Lay down in bed</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>No screens, no stimulation</span>
-  </label>
-  
-  <label class="form-checkbox-group">
-    <input type="checkbox" class="task-checkbox">
-    <span>Sleep (7-8 hours → wake at 6:00 AM)</span>
-  </label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Phone on silent/DND mode</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Lay down in bed</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>No screens, no stimulation</span></label>
+  <label class="form-checkbox-group"><input type="checkbox" class="task-checkbox"><span>Sleep (7-8 hours → wake at 6:00 AM)</span></label>
 </div>
+{% endcapture %}
 
----
+{% include card.html title="EVENING SEQUENCE (Fixed Order)" content=evening classes="checklist-card" %}
 
-## SUCCESS CRITERIA
+{% capture success %}
+- ✓ All 5 protocols executed in sequence
+- ✓ No protocols skipped or delayed
+- ✓ Captured all fleeting thoughts throughout day
+- ✓ In bed at 10:30 PM with 7-8 hour sleep window
+{% endcapture %}
 
-✓ All 5 protocols executed in sequence  
-✓ No protocols skipped or delayed  
-✓ Captured all fleeting thoughts throughout day  
-✓ In bed at 10:30 PM with 7-8 hour sleep window
+{% include card.html title="SUCCESS CRITERIA" content=success classes="about-card is-green" %}
 
----
-
-## PRIORITY HIERARCHY REMINDER
-
-If you're struggling with any protocol, check these first:
-
+{% capture priority %}
 1. **Sleep** - Did I get 7-8 hours last night?
 2. **Food** - Have I eaten protein in the last 3 hours?
 3. **Water** - Have I had 16+ oz today?
 4. **Medicine** - Did I take my pills this morning?
 
 Cannot fix executive function if these 4 are failing.
+{% endcapture %}
 
----
+{% include card.html title="PRIORITY HIERARCHY REMINDER" content=priority classes="about-card is-yellow" %}
 
 **[View Full Foundational Daily Protocols →](2025-11-08_M4_SOP_foundational-daily-protocols)**

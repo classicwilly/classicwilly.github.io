@@ -10,20 +10,18 @@ title: Weekly Review Checklist
 Print this page or check boxes directly in your browser (progress saves automatically).
 
 ---
-
-## PRE-PROTOCOL SETUP (5 Minutes)
-
+{% capture section_setup %}
 - [ ] Clear physical space at Command Center
 - [ ] Close all browser tabs and applications
 - [ ] Open only: Google Keep, Google Tasks, NotebookLM, Calendar, this checklist
 - [ ] Deploy Bubble Shield Profile 1.0
 - [ ] Set phone to Do Not Disturb
 - [ ] Set timer for 60 minutes
+{% endcapture %}
 
----
+{% include card.html title="PRE-PROTOCOL SETUP (5 Minutes)" content=section_setup classes="checklist-card" %}
 
-## PHASE 1: CHAOS PROCESSING (15 Minutes)
-
+{% capture section_1 %}
 ### Google Keep Chaos Audit (10 minutes)
 - [ ] Open Google Keep and review all notes from this week
 - [ ] Process actionable tasks → Move to Google Tasks
@@ -40,11 +38,11 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Extract key information from each
 - [ ] File in Google Keep / Tasks / NotebookLM
 - [ ] Delete recordings after filing
+{% endcapture %}
 
----
+{% include card.html title="PHASE 1: CHAOS PROCESSING (15 Minutes)" content=section_1 classes="checklist-card" %}
 
-## PHASE 2: TASK COMPLETION REVIEW (10 Minutes)
-
+{% capture section_2 %}
 ### Completed Task Audit (5 minutes)
 - [ ] Open Google Tasks and review all "Completed" tasks
 - [ ] Note which tasks took more/less time than expected
@@ -60,11 +58,11 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Break big tasks into smaller tasks
 - [ ] Archive or delete non-relevant tasks
 - [ ] Update deadlines for carryover tasks
+{% endcapture %}
 
----
+{% include card.html title="PHASE 2: TASK COMPLETION REVIEW (10 Minutes)" content=section_2 classes="checklist-card" %}
 
-## PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)
-
+{% capture section_3 %}
 ### Foundational Protocol Compliance (5 minutes)
 Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/7 = Critical)
 
@@ -92,11 +90,11 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] For each: Did it work?
 - [ ] For each: Can I prevent the need next week?
 - [ ] **Red Flag**: If any IPI used 3+ times, root cause analysis needed
+{% endcapture %}
 
----
+{% include card.html title="PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)" content=section_3 classes="checklist-card" %}
 
-## PHASE 4: WEEK AHEAD PLANNING (15 Minutes)
-
+{% capture section_4 %}
 ### Calendar Review (5 minutes)
 - [ ] Open calendar and review next week (Monday-Sunday)
 - [ ] For each event: Is this still necessary?
@@ -124,11 +122,11 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] 1. [Priority Task 1]
 - [ ] 2. [Priority Task 2]
 - [ ] 3. [Maintain foundational protocols]
+{% endcapture %}
 
----
+{% include card.html title="PHASE 4: WEEK AHEAD PLANNING (15 Minutes)" content=section_4 classes="checklist-card" %}
 
-## PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)
-
+{% capture section_5 %}
 ### Pattern Recognition (5 minutes)
 - [ ] What worked really well this week?
 - [ ] What consistently failed?
@@ -149,11 +147,11 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] 2. ___________________________________
 - [ ] 3. ___________________________________
 - [ ] File in NotebookLM with tag "Wins - [Date]"
+{% endcapture %}
 
----
+{% include card.html title="PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)" content=section_5 classes="checklist-card" %}
 
-## POST-PROTOCOL ACTIONS (5 Minutes)
-
+{% capture section_post %}
 ### Clean Slate Ritual (3 minutes)
 - [ ] Close all tabs and apps
 - [ ] Clear physical desk space
@@ -165,17 +163,18 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 ### Transition to Evening Protocol (2 minutes)
 - [ ] **If Solo Mode**: Begin mode transition prep
 - [ ] **If Family Mode**: Continue to Daily Dump (10:25 PM) → Sleep Anchor (10:30 PM)
+{% endcapture %}
 
----
+{% include card.html title="POST-PROTOCOL ACTIONS (5 Minutes)" content=section_post classes="about-card is-teal" %}
 
-## SUCCESS CRITERIA
+{% capture section_success %}
+- ✓ Google Keep is empty (or only "Review Next Week" items)
+- ✓ All incomplete tasks are triaged
+- ✓ Identified what worked and what failed
+- ✓ Next week's calendar is structured with priority tasks scheduled
+- ✓ Documented at least one system improvement
+{% endcapture %}
 
-✓ Google Keep is empty (or only "Review Next Week" items)  
-✓ All incomplete tasks are triaged  
-✓ Identified what worked and what failed  
-✓ Next week's calendar is structured with priority tasks scheduled  
-✓ Documented at least one system improvement
-
----
+{% include card.html title="SUCCESS CRITERIA" content=section_success classes="about-card is-green" %}
 
 **[View Full Weekly Review Protocol →](2025-11-08_M4_SOP_weekly-review-protocol)**

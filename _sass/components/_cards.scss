@@ -7,6 +7,176 @@
   background-color: var(--background-secondary);
   border-radius: var(--border-radius);
   padding: 1.5rem;
+  border: 1px solid var(--border-color-stronger);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  color: var(--text-primary);
+  text-decoration: none;
+  position: relative;
+  overflow: visible;
+}
+
+.card:hover {
+  transform: translateY(-2px) scale(1.02);
+  will-change: transform;
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--text-primary);
+}
+
+.card-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-meta {
+  font-size: 0.85rem;
+  color: var(--text-disabled);
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border-color-stronger);
+  padding-top: 0.75rem;
+}
+
+/* Quick-view preview: visible on hover for pointer users */
+.card .card-preview {
+  display: none;
+  position: absolute;
+  right: 0.75rem;
+  top: 0.75rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  max-width: 40%;
+  box-shadow: var(--shadow-md);
+  z-index: 10;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .card-preview { display: block; }
+}
+
+/* Touch quick-action button: hidden on hover-capable devices, visible on coarse pointers (touch) */
+.card .card-action {
+  display: none;
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  background: var(--accent-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  z-index: 12;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .card .card-action { display: block; }
+}
+
+/* Modal styles (basic, can be overridden by theme variables) */
+.card-modal {
+  display: none;
+}
+.card-modal.open {
+  display: block;
+}
+.card-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1996;
+}
+.card-modal-panel {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--background-primary);
+  color: var(--text-primary);
+  border-radius: 8px;
+  max-width: 880px;
+  width: calc(100% - 3rem);
+  max-height: calc(100vh - 4rem);
+  overflow: auto;
+  z-index: 1997;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  padding: 1rem;
+}
+.card-modal-close {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+}
+.card-modal-body { padding-top: 1.5rem; }
+
+/* Specific styles for checklist cards within a grid */
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.checklist-card {
+  @extend .card;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-top: 4px solid var(--border-color-stronger);
+}
+
+.checklist-card:hover { transform: translateY(-4px) scale(1.03); }
+.checklist-card.is-disabled { background-color: transparent; border: 1px dashed var(--border-color); color: var(--text-disabled); cursor: not-allowed; border-top: 4px dashed var(--border-color-stronger); }
+.checklist-card.is-disabled:hover { transform: none; box-shadow: none; border-color: var(--border-color); }
+
+/* Color variants */
+.checklist-card.is-green { border-top-color: var(--color-green); }
+.checklist-card.is-yellow { border-top-color: var(--color-yellow); }
+.checklist-card.is-blue { border-top-color: var(--color-blue); }
+.checklist-card.is-purple { border-top-color: var(--color-purple); }
+.checklist-card.is-red { border-top-color: var(--color-red); }
+.checklist-card.is-teal { border-top-color: var(--color-teal); }
+
+.info-box { background: var(--background-secondary); padding: 1.5rem; border-radius: var(--border-radius); margin: 2rem 0; border: 1px solid var(--border-color-stronger); border-left: 4px solid var(--border-color-stronger); }
+.info-box.is-teal { border-left-color: var(--color-teal); }
+.info-box.is-green { border-left-color: var(--color-green); }
+
+.game-card, .keep-card, .about-card { @extend .card; display: flex; flex-direction: column; gap: 0.75rem; border-top: 4px solid var(--border-color-stronger); }
+.keep-card { padding: 1.25rem; break-inside: avoid; }
+.about-card { &.is-red { border-top-color: var(--color-red); } &.is-green { border-top-color: var(--color-green); } &.is-blue { border-top-color: var(--color-blue); } &.is-yellow { border-top-color: var(--color-yellow); } &.is-purple { border-top-color: var(--color-purple); } &.is-teal { border-top-color: var(--color-teal); } &.is-orange { border-top-color: var(--color-orange, orange); } }
+
+.game-card { padding: 2rem; border-top-width: 6px; }
+
+.checklist-section { @extend .card; padding: 1.25rem; margin-bottom: calc(var(--spacing-unit) * 3); background: var(--background-secondary); border: 1px solid var(--border-color-stronger); }
+/* ==========================================================================
+   6. Checklist & Card Components - Harmonized with New Design System
+   ========================================================================== */
+
+// Default card styles for all card-like elements
+.card {
+  background-color: var(--background-secondary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
   // margin-bottom: 1.5rem; // Default margin for cards not in a grid - handled by grid gap
   border: 1px solid var(--border-color-stronger); // Default stronger border
   box-shadow: var(--shadow-sm);

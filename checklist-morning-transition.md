@@ -10,19 +10,20 @@ title: Morning Transition Checklist
 Print this page or check boxes directly in your browser (progress saves automatically).
 
 ---
+ 
+## PHASES
 
-## PHASE 1: PHYSICAL ACTIVATION (6:00-6:15 AM)
-
+{% capture section_1 %}
 - [ ] **6:00-6:02 AM** - Wake immediately (no snooze)
 - [ ] **6:00-6:02 AM** - Drink 16 oz water
 - [ ] **6:02-6:03 AM** - Take pills from organizer
 - [ ] **6:03-6:10 AM** - Complete movement protocol (walk/stretch/exercise/shower)
 - [ ] **6:10-6:15 AM** - Make and drink coffee/tea (no multitasking)
+{% endcapture %}
 
----
+{% include card.html title="PHASE 1: PHYSICAL ACTIVATION (6:00-6:15 AM)" content=section_1 classes="checklist-card" %}
 
-## PHASE 2: ENVIRONMENT SETUP (6:15-6:30 AM)
-
+{% capture section_2 %}
 - [ ] **6:15-6:20 AM** - Clear Command Center of clutter
 - [ ] **6:15-6:20 AM** - Arrange essential tools (water, headphones, pill organizer, notebook, phone)
 - [ ] **6:15-6:20 AM** - Adjust lighting and temperature
@@ -32,11 +33,11 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] **6:20-6:25 AM** - Turn off computer notifications
 - [ ] **6:25-6:30 AM** - Put on headphones (Profile 1.0 or 2.0 based on mode)
 - [ ] **6:25-6:30 AM** - Test audio and adjust for comfort
+{% endcapture %}
 
----
+{% include card.html title="PHASE 2: ENVIRONMENT SETUP (6:15-6:30 AM)" content=section_2 classes="checklist-card" %}
 
-## PHASE 3: MENTAL CALIBRATION (6:30-6:45 AM)
-
+{% capture section_3 %}
 - [ ] **6:30-6:35 AM** - Review today's calendar
 - [ ] **6:30-6:35 AM** - Identify time blocks available for deep work
 - [ ] **6:30-6:35 AM** - Identify high-risk times (back-to-back meetings, sensory-heavy events)
@@ -48,11 +49,11 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] **6:42-6:45 AM** - Close eyes and visualize starting first Priority Task
 - [ ] **6:42-6:45 AM** - Take 3 deep breaths
 - [ ] **6:42-6:45 AM** - Say out loud: "I am ready to execute [FIRST TASK]"
+{% endcapture %}
 
----
+{% include card.html title="PHASE 3: MENTAL CALIBRATION (6:30-6:45 AM)" content=section_3 classes="checklist-card" %}
 
-## PHASE 4: EXECUTION LAUNCH (6:45-7:00 AM)
-
+{% capture section_4 %}
 ### Pre-Launch Check (6:45-6:50 AM)
 - [ ] Water bottle is full
 - [ ] Headphones are on and comfortable
@@ -72,16 +73,17 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Set timer for 25 minutes (Pomodoro block)
 - [ ] Continue working on Priority Task
 - [ ] Ignore everything else until timer ends
+{% endcapture %}
 
----
+{% include card.html title="PHASE 4: EXECUTION LAUNCH (6:45-7:00 AM)" content=section_4 classes="checklist-card" %}
 
-## SUCCESS CRITERIA
+{% capture section_5 %}
+- ✓ Started day at 6:00 AM (not 7:00 AM or later)
+- ✓ Completed all 4 phases without major skips
+- ✓ Launched into first Priority Task by 7:00 AM
+- ✓ Feel physically awake, mentally clear, ready to execute
+{% endcapture %}
 
-✓ Started day at 6:00 AM (not 7:00 AM or later)  
-✓ Completed all 4 phases without major skips  
-✓ Launched into first Priority Task by 7:00 AM  
-✓ Feel physically awake, mentally clear, ready to execute
-
----
+{% include card.html title="SUCCESS CRITERIA" content=section_5 classes="about-card is-green" %}
 
 **[View Full Morning Transition Protocol →](2025-11-08_M4_SOP_morning-transition-protocol)**

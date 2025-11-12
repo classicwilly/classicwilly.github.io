@@ -46,6 +46,7 @@ title: Google Workspace Integration
 
 **Co-parenting schedule, custody transitions, and mode-switching visibility.**
 
+{% capture section_1 %}
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--circuit-teal); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--circuit-teal);">Setup Instructions</h3>
   <ol>
@@ -74,6 +75,8 @@ title: Google Workspace Integration
     📖 Embed Instructions
   </a>
 </div>
+{% endcapture %}
+{% include card.html title="📅 FAMILY CALENDAR" content=section_1 classes="about-card is-blue" %}
 
 ---
 
@@ -81,6 +84,7 @@ title: Google Workspace Integration
 
 **Google Forms for feedback collection, protocol rating, weekly reviews.**
 
+{% capture section_2 %}
 <div class="quick-jump-grid" style="margin: 2rem 0;">
   <div class="quick-jump-tile" style="background: var(--card-dark); border: 2px solid var(--purple);">
     <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
@@ -122,6 +126,8 @@ title: Google Workspace Integration
     <li>Forms can feed directly into Google Sheets for analysis</li>
   </ol>
 </div>
+{% endcapture %}
+{% include card.html title="📝 FORMS & FEEDBACK" content=section_2 classes="about-card" %}
 
 ---
 
@@ -129,6 +135,7 @@ title: Google Workspace Integration
 
 **Google Sheets as backend for tracker data, protocol analytics, and trend visualization.**
 
+{% capture section_3 %}
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--green); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--green);">Tracker Data Export to Sheets</h3>
   
@@ -166,6 +173,8 @@ title: Google Workspace Integration
   
   <p><strong>Template available:</strong> <a href="https://docs.google.com/spreadsheets/create" target="_blank" style="color: var(--circuit-teal);">Create from template →</a></p>
 </div>
+{% endcapture %}
+{% include card.html title="📊 SHEETS DATABASE" content=section_3 classes="about-card" %}
 
 ---
 
@@ -173,6 +182,7 @@ title: Google Workspace Integration
 
 **Embed documents, SOPs, and shared files directly in the site.**
 
+{% capture section_4 %}
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--blue); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--blue);">Embedded Documents</h3>
   
@@ -211,6 +221,8 @@ title: Google Workspace Integration
     <li>Paste iframe code into markdown pages</li>
   </ol>
 </div>
+{% endcapture %}
+{% include card.html title="📁 GOOGLE DRIVE" content=section_4 classes="about-card" %}
 
 ---
 
@@ -218,6 +230,7 @@ title: Google Workspace Integration
 
 **Direct communication via embedded Gmail contact form.**
 
+{% capture section_5 %}
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--red); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--red);">Contact Form</h3>
   
@@ -260,6 +273,8 @@ title: Google Workspace Integration
     </ul>
   </div>
 </div>
+{% endcapture %}
+{% include card.html title="📧 GMAIL CONTACT" content=section_5 classes="about-card" %}
 
 ---
 

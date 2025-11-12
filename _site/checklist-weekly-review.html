@@ -31,6 +31,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Override: tighten left gutter and ensure symmetric content padding -->
+    <style>
+      .page-container{padding-left:260px; gap:0.75rem}
+      .main-content-wrapper{padding:0.75rem}
+      @media (max-width:768px){ .page-container{padding-left:0} }
+      /* Card hover affordance overrides (immediate) */
+      .card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+      .card:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
+      .checklist-card:hover { transform: translateY(-4px) scale(1.03); }
+    </style>
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -106,206 +116,609 @@
 
 <hr />
 
-<h2 id="pre-protocol-setup-5-minutes">PRE-PROTOCOL SETUP (5 Minutes)</h2>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PRE-PROTOCOL SETUP (5 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+- [ ] Clear physical space at Command Center
+- [ ] Close all browser tabs and applications
+- [ ] Open only: Google Keep, Google Tasks, NotebookLM, Calendar, this checklist
+- [ ] Deploy Bubble Shield Profile 1.0
+- [ ] Set phone to Do Not Disturb
+- [ ] Set timer for 60 minutes
 
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clear physical space at Command Center</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Close all browser tabs and applications</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open only: Google Keep, Google Tasks, NotebookLM, Calendar, this checklist</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Deploy Bubble Shield Profile 1.0</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set phone to Do Not Disturb</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set timer for 60 minutes</li>
-</ul>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 1: CHAOS PROCESSING (15 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Google Keep Chaos Audit (10 minutes)
+- [ ] Open Google Keep and review all notes from this week
+- [ ] Process actionable tasks → Move to Google Tasks
+- [ ] Process project ideas → Move to NotebookLM with tag "Ideas - [Module]"
+- [ ] Process reference info → Move to NotebookLM with tag "Reference - [Topic]"
+- [ ] Archive already-handled notes
+- [ ] Delete no-longer-relevant notes
+- [ ] Tag unclear items "Review Next Week"
+- [ ] **Goal**: Google Keep is empty (or only has "Review Next Week" items)
+
+### Voice Recording Processing (5 minutes)
+- [ ] Open Soundcore AI Recorder app
+- [ ] Review untranscribed recordings
+- [ ] Extract key information from each
+- [ ] File in Google Keep / Tasks / NotebookLM
+- [ ] Delete recordings after filing
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 2: TASK COMPLETION REVIEW (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Completed Task Audit (5 minutes)
+- [ ] Open Google Tasks and review all "Completed" tasks
+- [ ] Note which tasks took more/less time than expected
+- [ ] Note what made tasks easy or hard
+- [ ] Identify recurring tasks that should be scheduled
+- [ ] Track productivity patterns (which days, which types)
+
+### Incomplete Task Triage (5 minutes)
+- [ ] Review all "Not Completed" tasks
+- [ ] For each: Is it still relevant? (Yes = keep, No = delete)
+- [ ] For each: Why didn't I complete it? (vague, too big, wrong priority, blocker)
+- [ ] Rewrite vague tasks with clear micro-actions
+- [ ] Break big tasks into smaller tasks
+- [ ] Archive or delete non-relevant tasks
+- [ ] Update deadlines for carryover tasks
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Foundational Protocol Compliance (5 minutes)
+Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/7 = Critical)
+
+- [ ] **Water Protocol**: Did I drink water immediately upon waking every day?
+- [ ] **Pill Protocol**: Did I take pills every morning?
+- [ ] **Capture Protocol**: Did I capture fleeting thoughts throughout the week?
+- [ ] **Sleep Anchor**: Did I go to bed at 10:30 PM consistently?
+- [ ] **Daily Dump**: Did I review tomorrow's tasks before bed each night?
+- [ ] For "Needs Attention" or "Critical Failure": Identify barrier and plan fix
+
+### Mode-Specific Protocol Review (3 minutes)
+- [ ] **If Solo Mode**: Protected core work blocks (9-1, 2-5)?
+- [ ] **If Solo Mode**: Deployed Bubble Shield Profile 1.0 during focus time?
+- [ ] **If Solo Mode**: Maintained meal prep and exercise protocols?
+- [ ] **If Family Mode**: Enforced Quiet Time Protocol (1-3 PM)?
+- [ ] **If Family Mode**: Used Bubble Shield Profile 2.0 appropriately?
+- [ ] **If Family Mode**: Maintained structured family schedules?
+- [ ] Identify what broke down and why
+
+### IPI Usage Tracking (2 minutes)
+- [ ] Count: How many times did I use Executive Dysfunction Emergency Protocol?
+- [ ] Count: How many times did I use Context Switching Recovery Protocol?
+- [ ] Count: How many times did I use Sensory Overload Emergency Protocol?
+- [ ] For each: What triggered it?
+- [ ] For each: Did it work?
+- [ ] For each: Can I prevent the need next week?
+- [ ] **Red Flag**: If any IPI used 3+ times, root cause analysis needed
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 4: WEEK AHEAD PLANNING (15 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Calendar Review (5 minutes)
+- [ ] Open calendar and review next week (Monday-Sunday)
+- [ ] For each event: Is this still necessary?
+- [ ] For each event: What preparation does it require?
+- [ ] For each event: What is the sensory/cognitive cost?
+- [ ] For each event: Does this conflict with my mode schedule?
+- [ ] Add missing events (meal prep, Quiet Time, exercise, next Weekly Review)
+
+### Priority Task Selection (5 minutes)
+- [ ] From cleaned task list, identify 3-5 Priority Tasks for next week
+- [ ] Priority criteria: Has deadline / Moves project forward / Postponed multiple weeks / High impact
+- [ ] Assign each Priority Task to specific day
+- [ ] Estimate time required for each
+- [ ] Block time on calendar for completion
+
+### Risk Assessment (3 minutes)
+- [ ] Identify schedule risks (back-to-back meetings, overcommitted days)
+- [ ] Identify sensory risks (high-stimulation events, long social days, travel)
+- [ ] Identify transition risks (mode switches mid-task, deadline clustering)
+- [ ] Identify health risks (poor sleep expected, medication low, illness)
+- [ ] For each risk: Create mitigation plan
+
+### Success Definition (2 minutes)
+- [ ] Write: "Next week will be successful if I accomplish these 3 things:"
+- [ ] 1. [Priority Task 1]
+- [ ] 2. [Priority Task 2]
+- [ ] 3. [Maintain foundational protocols]
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Pattern Recognition (5 minutes)
+- [ ] What worked really well this week?
+- [ ] What consistently failed?
+- [ ] What surprised me?
+- [ ] What am I avoiding?
+- [ ] Write answers in NotebookLM with tag "Weekly Review - [Date]"
+
+### SOP Updates (3 minutes)
+- [ ] Identify any SOP that needs updating based on this week
+- [ ] Add new step if I keep forgetting something
+- [ ] Remove outdated step if no longer needed
+- [ ] Clarify confusing step
+- [ ] Make update immediately or add to Tasks
+
+### Wins &amp; Gratitude (2 minutes)
+- [ ] Write down 3 things I accomplished this week
+- [ ] 1. ___________________________________
+- [ ] 2. ___________________________________
+- [ ] 3. ___________________________________
+- [ ] File in NotebookLM with tag "Wins - [Date]"
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="about-card is-teal">
+    
+  <h3 class="card-title">POST-PROTOCOL ACTIONS (5 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Clean Slate Ritual (3 minutes)
+- [ ] Close all tabs and apps
+- [ ] Clear physical desk space
+- [ ] Refill water bottle for Monday morning
+- [ ] Plug in headphones to charge
+- [ ] Set out pill organizer for next week
+- [ ] Set alarm for Monday 6:00 AM
+
+### Transition to Evening Protocol (2 minutes)
+- [ ] **If Solo Mode**: Begin mode transition prep
+- [ ] **If Family Mode**: Continue to Daily Dump (10:25 PM) → Sleep Anchor (10:30 PM)
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<div class="about-card is-green">
+    
+  <h3 class="card-title">SUCCESS CRITERIA</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+- ✓ Google Keep is empty (or only "Review Next Week" items)
+- ✓ All incomplete tasks are triaged
+- ✓ Identified what worked and what failed
+- ✓ Next week's calendar is structured with priority tasks scheduled
+- ✓ Documented at least one system improvement
+
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
+
+<p><strong><a href="2025-11-08_M4_SOP_weekly-review-protocol">View Full Weekly Review Protocol →</a></strong></p>
+
+            </main>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      ↑
+    </a>
+
+    <!-- Modal container used by card include quick-views -->
+    <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="card-modal-overlay" data-dismiss="true"></div>
+      <div class="card-modal-panel" role="document">
+        <button class="card-modal-close" aria-label="Close">×</button>
+        <div class="card-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- PRESERVED SCRIPTS -->
+    <script>
+    // This script block remains for essential UI functionality.
+    // Mobile Nav Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('mobile-nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        toggleBtn.addEventListener('click', function() {
+          const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+          toggleBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileNav.setAttribute('aria-hidden', isExpanded);
+          document.body.classList.toggle('mobile-nav-open');
+        });
+      });
+      // Back to Top Button Functionality
+      (function() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        function toggleBackToTop() {
+          if (window.scrollY > 300) {
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.visibility = 'visible';
+          } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+          }
+        }
+        backToTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+      })();
+    </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Structure Engineered for Chaos">
+    <meta name="keywords" content="neurodivergent, ADHD, autism, life management, SOPs, standard operating procedures, systems, productivity">
+    <meta name="author" content="William Johnson (classicwilly)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/checklist-weekly-review.html">
+    <meta property="og:title" content="Weekly Review Checklist">
+    <meta property="og:description" content="Structure Engineered for Chaos">
+    <meta property="og:site_name" content="The Wonky Sprout">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="/checklist-weekly-review.html">
+    <meta name="twitter:title" content="Weekly Review Checklist">
+    <meta name="twitter:description" content="Structure Engineered for Chaos">
+    <title>Weekly Review Checklist</title>
+    <!-- DNS Prefetch & Preconnect for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Override: tighten left gutter and ensure symmetric content padding -->
+    <style>
+      .page-container{padding-left:260px; gap:0.75rem}
+      .main-content-wrapper{padding:0.75rem}
+      @media (max-width:768px){ .page-container{padding-left:0} }
+      /* Card hover affordance overrides (immediate) */
+      .card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+      .card:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
+      .checklist-card:hover { transform: translateY(-4px) scale(1.03); }
+    </style>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Wonky Sprout",
+      "description": "A neurodivergent life management system with Standard Operating Procedures",
+      "url": "",
+      "author": {
+        "@type": "Person",
+        "name": "William Johnson",
+        "alternateName": "classicwilly"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link (Accessibility) -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    <div class="page-container">
+  <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
+  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
+            <div class="sidebar-header">
+                <a href="/" class="sidebar-title">Wonky Sprout OS</a>
+                <p class="sidebar-tagline">Internal Blueprint</p>
+            </div>
+      <div class="sidebar-section-title">Quick Links</div>
+      <ul class="sidebar-nav">
+        <li><a href="/" >🏠 Home</a></li>
+        <li><a href="/workspace" >💼 Workspace</a></li>
+        <li><a href="/catalog" >📇 Card Catalog</a></li>
+        <li><a href="/fix" >🔧 Fix-It Blueprint</a></li>
+        <li><a href="/daily-tracker" >📊 Daily Tracker</a></li>
+        <li><a href="/sop-vault" >📚 SOP Vault</a></li>
+        <li><a href="/command-center" >⚙️ Command Center</a></li>
+        <li><a href="/settings" >⚙ Settings</a></li>
+      </ul>
+
+      <div class="sidebar-section-title">All Pages</div>
+  <details class="sidebar-allpages">
+        <summary class="sr-only">All site pages</summary>
+        <ul class="sidebar-nav sidebar-allpages-list"><li><a href="/2025-11-08_M2_BLUEPRINT_hive-system-design.html" >The Hive System - Design Blueprint</a></li><li><a href="/2025-11-08_M4_IPI_context-switching-recovery.html" >Context Switching Recovery Protocol</a></li><li><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency.html" >Executive Dysfunction Emergency Protocol</a></li><li><a href="/2025-11-08_M4_IPI_sensory-overload-emergency.html" >Sensory Overload Emergency Protocol</a></li><li><a href="/2025-11-08_M4_SOP_family-structure-mode.html" >Family Structure Mode</a></li><li><a href="/2025-11-08_M4_SOP_foundational-daily-protocols.html" >Foundational Daily Protocols</a></li><li><a href="/2025-11-08_M4_SOP_grocery-shopping-protocol.html" >Grocery Shopping Protocol - SOP-GS</a></li><li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.html" >House Cleaning Protocol - SOP-HC</a></li><li><a href="/2025-11-08_M4_SOP_life-maintenance-protocol.html" >Life Maintenance Protocol - SOP-LM</a></li><li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.html" >Morning Transition Protocol</a></li><li><a href="/2025-11-08_M4_SOP_neurodivergent-life-protocol.html" >Neurodivergent Life SOP</a></li><li><a href="/2025-11-08_M4_SOP_personal-hygiene-protocol.html" >Personal Hygiene Protocol - SOP-PH</a></li><li><a href="/2025-11-08_M4_SOP_solo-execution-mode.html" >Solo Execution Mode</a></li><li><a href="/2025-11-08_M4_SOP_weekly-review-protocol.html" >Weekly Review Protocol</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.html" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M4_CONFIG_audit-log.html" >WS-OS Audit Log</a></li><li><a href="/2025-11-09_M4_SOP_command-center-setup.html" >Command Center Setup SOP</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms.html" >Weekdays at Mom's - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekend-with-dad.html" >Weekend With Dad - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_pixel-fold-setup.html" >Pixel 9 Pro Fold Setup SOP</a></li><li><a href="/2025-11-10_M4_SOP_006-legal-threat-fix.html" >Legal Threat Fix Protocol</a></li><li><a href="/2025-11-10_M4_SOP_accessibility-safety-protocol.html" >Accessibility & Safety Protocol</a></li><li><a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol.html" >MLP-007 Bubble Shield Hardware Protocol</a></li><li><a href="/catalog.html" >The Card Catalog</a></li><li><a href="/checklist-foundational-daily.html" >Foundational Daily Protocols Checklist</a></li><li><a href="/checklist-morning-transition.html" >Morning Transition Checklist</a></li><li><a href="/checklist-weekly-review.html" aria-current="page" class="is-active">Weekly Review Checklist</a></li><li><a href="/checklists.html" >Interactive Checklists</a></li><li><a href="/command-center.html" >Command Center - The Wonky Sprout</a></li><li><a href="/daily-tracker.html" >Daily Tracker</a></li><li><a href="/fix.html" >The Fix-It Blueprint</a></li><li><a href="/games.html" >Stim Station</a></li><li><a href="/little-sprouts.html" >Little Sprouts - Bash & Willow</a></li><li><a href="/settings.html" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/sop-vault.html" >The SOP Vault</a></li><li><a href="/workspace.html" >Google Workspace Integration</a></li></ul>
+      </details>
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="sidebar-section-title">Protocols</div>
+      <ul class="sidebar-nav">
+        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode.md">🧭 Solo Execution</a></li>
+        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.md">⏰ Morning Transition</a></li>
+        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
+      </ul>
+        </nav>
+        <!-- Mobile Navigation (Hamburger Menu) -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Mobile">
+            <a href="/" class="sidebar-title">Wonky Sprout OS</a>
+            <ul class="sidebar-nav">
+                
+            </ul>
+        </div>
+        <!-- COLUMN 2: THE "CARD CATALOG" (Main Content) -->
+        <div class="main-content-wrapper">
+            <main id="main-content" class="main-content" role="main">
+                <h1 id="weekly-review-checklist">WEEKLY REVIEW CHECKLIST</h1>
+
+<p><strong>Use this checklist every Friday 3-4 PM (Solo Mode) or Sunday 8:30-9:30 PM (Family Mode).</strong></p>
+
+<p>Print this page or check boxes directly in your browser (progress saves automatically).</p>
 
 <hr />
 
-<h2 id="phase-1-chaos-processing-15-minutes">PHASE 1: CHAOS PROCESSING (15 Minutes)</h2>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PRE-PROTOCOL SETUP (5 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+- [ ] Clear physical space at Command Center
+- [ ] Close all browser tabs and applications
+- [ ] Open only: Google Keep, Google Tasks, NotebookLM, Calendar, this checklist
+- [ ] Deploy Bubble Shield Profile 1.0
+- [ ] Set phone to Do Not Disturb
+- [ ] Set timer for 60 minutes
 
-<h3 id="google-keep-chaos-audit-10-minutes">Google Keep Chaos Audit (10 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open Google Keep and review all notes from this week</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Process actionable tasks → Move to Google Tasks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Process project ideas → Move to NotebookLM with tag “Ideas - [Module]”</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Process reference info → Move to NotebookLM with tag “Reference - [Topic]”</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Archive already-handled notes</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Delete no-longer-relevant notes</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Tag unclear items “Review Next Week”</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Goal</strong>: Google Keep is empty (or only has “Review Next Week” items)</li>
-</ul>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h3 id="voice-recording-processing-5-minutes">Voice Recording Processing (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open Soundcore AI Recorder app</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Review untranscribed recordings</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Extract key information from each</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />File in Google Keep / Tasks / NotebookLM</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Delete recordings after filing</li>
-</ul>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 1: CHAOS PROCESSING (15 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Google Keep Chaos Audit (10 minutes)
+- [ ] Open Google Keep and review all notes from this week
+- [ ] Process actionable tasks → Move to Google Tasks
+- [ ] Process project ideas → Move to NotebookLM with tag "Ideas - [Module]"
+- [ ] Process reference info → Move to NotebookLM with tag "Reference - [Topic]"
+- [ ] Archive already-handled notes
+- [ ] Delete no-longer-relevant notes
+- [ ] Tag unclear items "Review Next Week"
+- [ ] **Goal**: Google Keep is empty (or only has "Review Next Week" items)
 
-<hr />
+### Voice Recording Processing (5 minutes)
+- [ ] Open Soundcore AI Recorder app
+- [ ] Review untranscribed recordings
+- [ ] Extract key information from each
+- [ ] File in Google Keep / Tasks / NotebookLM
+- [ ] Delete recordings after filing
 
-<h2 id="phase-2-task-completion-review-10-minutes">PHASE 2: TASK COMPLETION REVIEW (10 Minutes)</h2>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h3 id="completed-task-audit-5-minutes">Completed Task Audit (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open Google Tasks and review all “Completed” tasks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Note which tasks took more/less time than expected</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Note what made tasks easy or hard</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify recurring tasks that should be scheduled</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Track productivity patterns (which days, which types)</li>
-</ul>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 2: TASK COMPLETION REVIEW (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Completed Task Audit (5 minutes)
+- [ ] Open Google Tasks and review all "Completed" tasks
+- [ ] Note which tasks took more/less time than expected
+- [ ] Note what made tasks easy or hard
+- [ ] Identify recurring tasks that should be scheduled
+- [ ] Track productivity patterns (which days, which types)
 
-<h3 id="incomplete-task-triage-5-minutes">Incomplete Task Triage (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Review all “Not Completed” tasks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each: Is it still relevant? (Yes = keep, No = delete)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each: Why didn’t I complete it? (vague, too big, wrong priority, blocker)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Rewrite vague tasks with clear micro-actions</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Break big tasks into smaller tasks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Archive or delete non-relevant tasks</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Update deadlines for carryover tasks</li>
-</ul>
+### Incomplete Task Triage (5 minutes)
+- [ ] Review all "Not Completed" tasks
+- [ ] For each: Is it still relevant? (Yes = keep, No = delete)
+- [ ] For each: Why didn't I complete it? (vague, too big, wrong priority, blocker)
+- [ ] Rewrite vague tasks with clear micro-actions
+- [ ] Break big tasks into smaller tasks
+- [ ] Archive or delete non-relevant tasks
+- [ ] Update deadlines for carryover tasks
 
-<hr />
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h2 id="phase-3-system-health-check-10-minutes">PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)</h2>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Foundational Protocol Compliance (5 minutes)
+Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/7 = Critical)
 
-<h3 id="foundational-protocol-compliance-5-minutes">Foundational Protocol Compliance (5 minutes)</h3>
-<p>Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/7 = Critical)</p>
+- [ ] **Water Protocol**: Did I drink water immediately upon waking every day?
+- [ ] **Pill Protocol**: Did I take pills every morning?
+- [ ] **Capture Protocol**: Did I capture fleeting thoughts throughout the week?
+- [ ] **Sleep Anchor**: Did I go to bed at 10:30 PM consistently?
+- [ ] **Daily Dump**: Did I review tomorrow's tasks before bed each night?
+- [ ] For "Needs Attention" or "Critical Failure": Identify barrier and plan fix
 
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Water Protocol</strong>: Did I drink water immediately upon waking every day?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Pill Protocol</strong>: Did I take pills every morning?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Capture Protocol</strong>: Did I capture fleeting thoughts throughout the week?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Sleep Anchor</strong>: Did I go to bed at 10:30 PM consistently?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Daily Dump</strong>: Did I review tomorrow’s tasks before bed each night?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For “Needs Attention” or “Critical Failure”: Identify barrier and plan fix</li>
-</ul>
+### Mode-Specific Protocol Review (3 minutes)
+- [ ] **If Solo Mode**: Protected core work blocks (9-1, 2-5)?
+- [ ] **If Solo Mode**: Deployed Bubble Shield Profile 1.0 during focus time?
+- [ ] **If Solo Mode**: Maintained meal prep and exercise protocols?
+- [ ] **If Family Mode**: Enforced Quiet Time Protocol (1-3 PM)?
+- [ ] **If Family Mode**: Used Bubble Shield Profile 2.0 appropriately?
+- [ ] **If Family Mode**: Maintained structured family schedules?
+- [ ] Identify what broke down and why
 
-<h3 id="mode-specific-protocol-review-3-minutes">Mode-Specific Protocol Review (3 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Solo Mode</strong>: Protected core work blocks (9-1, 2-5)?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Solo Mode</strong>: Deployed Bubble Shield Profile 1.0 during focus time?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Solo Mode</strong>: Maintained meal prep and exercise protocols?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Family Mode</strong>: Enforced Quiet Time Protocol (1-3 PM)?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Family Mode</strong>: Used Bubble Shield Profile 2.0 appropriately?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Family Mode</strong>: Maintained structured family schedules?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify what broke down and why</li>
-</ul>
+### IPI Usage Tracking (2 minutes)
+- [ ] Count: How many times did I use Executive Dysfunction Emergency Protocol?
+- [ ] Count: How many times did I use Context Switching Recovery Protocol?
+- [ ] Count: How many times did I use Sensory Overload Emergency Protocol?
+- [ ] For each: What triggered it?
+- [ ] For each: Did it work?
+- [ ] For each: Can I prevent the need next week?
+- [ ] **Red Flag**: If any IPI used 3+ times, root cause analysis needed
 
-<h3 id="ipi-usage-tracking-2-minutes">IPI Usage Tracking (2 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Count: How many times did I use Executive Dysfunction Emergency Protocol?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Count: How many times did I use Context Switching Recovery Protocol?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Count: How many times did I use Sensory Overload Emergency Protocol?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each: What triggered it?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each: Did it work?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each: Can I prevent the need next week?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>Red Flag</strong>: If any IPI used 3+ times, root cause analysis needed</li>
-</ul>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<hr />
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 4: WEEK AHEAD PLANNING (15 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Calendar Review (5 minutes)
+- [ ] Open calendar and review next week (Monday-Sunday)
+- [ ] For each event: Is this still necessary?
+- [ ] For each event: What preparation does it require?
+- [ ] For each event: What is the sensory/cognitive cost?
+- [ ] For each event: Does this conflict with my mode schedule?
+- [ ] Add missing events (meal prep, Quiet Time, exercise, next Weekly Review)
 
-<h2 id="phase-4-week-ahead-planning-15-minutes">PHASE 4: WEEK AHEAD PLANNING (15 Minutes)</h2>
+### Priority Task Selection (5 minutes)
+- [ ] From cleaned task list, identify 3-5 Priority Tasks for next week
+- [ ] Priority criteria: Has deadline / Moves project forward / Postponed multiple weeks / High impact
+- [ ] Assign each Priority Task to specific day
+- [ ] Estimate time required for each
+- [ ] Block time on calendar for completion
 
-<h3 id="calendar-review-5-minutes">Calendar Review (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Open calendar and review next week (Monday-Sunday)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each event: Is this still necessary?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each event: What preparation does it require?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each event: What is the sensory/cognitive cost?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each event: Does this conflict with my mode schedule?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add missing events (meal prep, Quiet Time, exercise, next Weekly Review)</li>
-</ul>
+### Risk Assessment (3 minutes)
+- [ ] Identify schedule risks (back-to-back meetings, overcommitted days)
+- [ ] Identify sensory risks (high-stimulation events, long social days, travel)
+- [ ] Identify transition risks (mode switches mid-task, deadline clustering)
+- [ ] Identify health risks (poor sleep expected, medication low, illness)
+- [ ] For each risk: Create mitigation plan
 
-<h3 id="priority-task-selection-5-minutes">Priority Task Selection (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />From cleaned task list, identify 3-5 Priority Tasks for next week</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Priority criteria: Has deadline / Moves project forward / Postponed multiple weeks / High impact</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Assign each Priority Task to specific day</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Estimate time required for each</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Block time on calendar for completion</li>
-</ul>
+### Success Definition (2 minutes)
+- [ ] Write: "Next week will be successful if I accomplish these 3 things:"
+- [ ] 1. [Priority Task 1]
+- [ ] 2. [Priority Task 2]
+- [ ] 3. [Maintain foundational protocols]
 
-<h3 id="risk-assessment-3-minutes">Risk Assessment (3 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify schedule risks (back-to-back meetings, overcommitted days)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify sensory risks (high-stimulation events, long social days, travel)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify transition risks (mode switches mid-task, deadline clustering)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify health risks (poor sleep expected, medication low, illness)</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />For each risk: Create mitigation plan</li>
-</ul>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h3 id="success-definition-2-minutes">Success Definition (2 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Write: “Next week will be successful if I accomplish these 3 things:”</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />1. [Priority Task 1]</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />2. [Priority Task 2]</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />3. [Maintain foundational protocols]</li>
-</ul>
+<div class="checklist-card">
+    
+  <h3 class="card-title">PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Pattern Recognition (5 minutes)
+- [ ] What worked really well this week?
+- [ ] What consistently failed?
+- [ ] What surprised me?
+- [ ] What am I avoiding?
+- [ ] Write answers in NotebookLM with tag "Weekly Review - [Date]"
 
-<hr />
+### SOP Updates (3 minutes)
+- [ ] Identify any SOP that needs updating based on this week
+- [ ] Add new step if I keep forgetting something
+- [ ] Remove outdated step if no longer needed
+- [ ] Clarify confusing step
+- [ ] Make update immediately or add to Tasks
 
-<h2 id="phase-5-system-optimization-10-minutes">PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)</h2>
+### Wins &amp; Gratitude (2 minutes)
+- [ ] Write down 3 things I accomplished this week
+- [ ] 1. ___________________________________
+- [ ] 2. ___________________________________
+- [ ] 3. ___________________________________
+- [ ] File in NotebookLM with tag "Wins - [Date]"
 
-<h3 id="pattern-recognition-5-minutes">Pattern Recognition (5 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />What worked really well this week?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />What consistently failed?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />What surprised me?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />What am I avoiding?</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Write answers in NotebookLM with tag “Weekly Review - [Date]”</li>
-</ul>
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h3 id="sop-updates-3-minutes">SOP Updates (3 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Identify any SOP that needs updating based on this week</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Add new step if I keep forgetting something</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Remove outdated step if no longer needed</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clarify confusing step</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Make update immediately or add to Tasks</li>
-</ul>
+<div class="about-card is-teal">
+    
+  <h3 class="card-title">POST-PROTOCOL ACTIONS (5 Minutes)</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+### Clean Slate Ritual (3 minutes)
+- [ ] Close all tabs and apps
+- [ ] Clear physical desk space
+- [ ] Refill water bottle for Monday morning
+- [ ] Plug in headphones to charge
+- [ ] Set out pill organizer for next week
+- [ ] Set alarm for Monday 6:00 AM
 
-<h3 id="wins--gratitude-2-minutes">Wins &amp; Gratitude (2 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Write down 3 things I accomplished this week</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />1. <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong>_____</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />2. <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong>_____</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />3. <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong>_____</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />File in NotebookLM with tag “Wins - [Date]”</li>
-</ul>
+### Transition to Evening Protocol (2 minutes)
+- [ ] **If Solo Mode**: Begin mode transition prep
+- [ ] **If Family Mode**: Continue to Daily Dump (10:25 PM) → Sleep Anchor (10:30 PM)
 
-<hr />
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
-<h2 id="post-protocol-actions-5-minutes">POST-PROTOCOL ACTIONS (5 Minutes)</h2>
+<div class="about-card is-green">
+    
+  <h3 class="card-title">SUCCESS CRITERIA</h3>
+  
+  <div class="card-modal-content" hidden="">
+      
+- ✓ Google Keep is empty (or only "Review Next Week" items)
+- ✓ All incomplete tasks are triaged
+- ✓ Identified what worked and what failed
+- ✓ Next week's calendar is structured with priority tasks scheduled
+- ✓ Documented at least one system improvement
 
-<h3 id="clean-slate-ritual-3-minutes">Clean Slate Ritual (3 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Close all tabs and apps</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Clear physical desk space</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Refill water bottle for Monday morning</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Plug in headphones to charge</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set out pill organizer for next week</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />Set alarm for Monday 6:00 AM</li>
-</ul>
-
-<h3 id="transition-to-evening-protocol-2-minutes">Transition to Evening Protocol (2 minutes)</h3>
-<ul class="task-list">
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Solo Mode</strong>: Begin mode transition prep</li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><strong>If Family Mode</strong>: Continue to Daily Dump (10:25 PM) → Sleep Anchor (10:30 PM)</li>
-</ul>
-
-<hr />
-
-<h2 id="success-criteria">SUCCESS CRITERIA</h2>
-
-<p>✓ Google Keep is empty (or only “Review Next Week” items)<br />
-✓ All incomplete tasks are triaged<br />
-✓ Identified what worked and what failed<br />
-✓ Next week’s calendar is structured with priority tasks scheduled<br />
-✓ Documented at least one system improvement</p>
-
-<hr />
+    </div><!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+  </div>
 
 <p><strong><a href="2025-11-08_M4_SOP_weekly-review-protocol">View Full Weekly Review Protocol →</a></strong></p>
 

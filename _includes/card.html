@@ -1,26 +1,40 @@
 {% assign classes = include.classes | default: 'checklist-card' %}
-{% if include.disabled %}
-  <div class="{{ classes }} is-disabled">
-    {% if include.icon %}<div class="card-icon">{{ include.icon }}</div>{% endif %}
-    <h3 class="card-title">{{ include.title }}</h3>
-    {% if include.desc %}<p class="card-desc">{{ include.desc }}</p>{% endif %}
-    {% if include.meta %}<div class="card-meta">{{ include.meta }}</div>{% endif %}
-    {{ include.content }}
+{%- comment -%}
+  Unified card include (single canonical template).
+  Supports:
+    - include.href => rendered as <a> (link card)
+    - include.disabled => non-interactive state
+    - include.content => hidden modal content (used by JS)
+    - include.classes, include.icon, include.title, include.desc, include.meta
+    - renders a touch-friendly quick-action button (.card-action) for coarse-pointer devices
+{%- endcomment -%}
+
+{%- capture _card_inner -%}
+  {% if include.icon %}<div class="card-icon">{{ include.icon }}</div>{% endif %}
+  <h3 class="card-title">{{ include.title }}</h3>
+  {% if include.desc %}<p class="card-desc">{{ include.desc }}</p>{% endif %}
+  {% if include.meta %}<div class="card-meta">{{ include.meta }}</div>{% endif %}
+  {%- if include.content -%}
+    <div class="card-modal-content" hidden>
+      {{ include.content }}
+    </div>
+  {%- endif -%}
+  <!-- Touch quick-action button (visible on touch devices / coarse pointers) -->
+  <button type="button" class="card-action" aria-label="Open details">Open</button>
+{%- endcapture -%}
+
+{%- if include.disabled -%}
+  <div class="{{ classes }} is-disabled" aria-disabled="true">
+    {{ _card_inner }}
   </div>
-{% elsif include.href %}
-  <a href="{{ include.href }}" class="{{ classes }}">
-    {% if include.icon %}<div class="card-icon">{{ include.icon }}</div>{% endif %}
-    <h3 class="card-title">{{ include.title }}</h3>
-    {% if include.desc %}<p class="card-desc">{{ include.desc }}</p>{% endif %}
-    {% if include.meta %}<div class="card-meta">{{ include.meta }}</div>{% endif %}
-    {{ include.content }}
+
+{%- elsif include.href -%}
+  <a href="{{ include.href }}" class="{{ classes }}" data-href="{{ include.href }}">
+    {{ _card_inner }}
   </a>
-{% else %}
+
+{%- else -%}
   <div class="{{ classes }}">
-    {% if include.icon %}<div class="card-icon">{{ include.icon }}</div>{% endif %}
-    <h3 class="card-title">{{ include.title }}</h3>
-    {% if include.desc %}<p class="card-desc">{{ include.desc }}</p>{% endif %}
-    {% if include.meta %}<div class="card-meta">{{ include.meta }}</div>{% endif %}
-    {{ include.content }}
+    {{ _card_inner }}
   </div>
-{% endif %}
+{%- endif -%}

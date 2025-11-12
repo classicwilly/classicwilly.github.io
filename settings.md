@@ -13,7 +13,7 @@ title: Settings & Contact - The Wonky Sprout
 ---
 
 ## 👤 About classicwilly
-
+{% capture section_about %}
 <div class="about-card">
   <div class="about-icon">🌱</div>
   <div class="about-content">
@@ -26,11 +26,13 @@ title: Settings & Contact - The Wonky Sprout
     </p>
   </div>
 </div>
+{% endcapture %}
+{% include card.html title="👤 About classicwilly" content=section_about classes="about-card is-green" %}
 
 ---
 
 ## 📬 Contact
-
+{% capture section_contact %}
 <div class="contact-grid">
   <div class="contact-card email">
     <div class="contact-icon">📧</div>
@@ -60,11 +62,13 @@ title: Settings & Contact - The Wonky Sprout
     I'm a solo parent with Autism/ADHD managing Priority #5 (children) above all else. Responses may take 3-7 days depending on current mode (Solo Execution vs. Family Structure). Emergency protocol overrides suspend all non-critical communication. Thanks for understanding.
   </p>
 </div>
+{% endcapture %}
+{% include card.html title="📬 Contact" content=section_contact classes="checklist-card is-yellow" %}
 
 ---
 
 ## 🎨 Site Preferences
-
+{% capture section_prefs %}
 <div class="about-card" style="border-color: var(--teal);">
   <h3 style="color: var(--teal);">Theme Settings</h3>
   
@@ -101,11 +105,13 @@ title: Settings & Contact - The Wonky Sprout
     <p id="pref-message"></p>
   </div>
 </div>
+{% endcapture %}
+{% include card.html title="🎨 Site Preferences" content=section_prefs classes="about-card is-teal" %}
 
 ---
 
 ## 📊 Data & Privacy
-
+{% capture section_data %}
 <div class="about-card" style="border-color: var(--purple);">
   <h3 style="color: var(--purple);">Local Storage Data</h3>
   
@@ -128,24 +134,35 @@ title: Settings & Contact - The Wonky Sprout
     <p id="data-message"></p>
   </div>
 </div>
+{% endcapture %}
+{% include card.html title="📊 Data & Privacy" content=section_data classes="about-card is-purple" %}
 
 ---
 
 ## 🔧 Technical Details
 
+{% capture section_tech %}
 <!-- ... Technical Details section ... -->
+{% endcapture %}
+{% include card.html title="🔧 Technical Details" content=section_tech classes="about-card" %}
 
 ---
 
 ## 📚 Resources
 
+{% capture section_resources %}
 <!-- ... Resources section ... -->
+{% endcapture %}
+{% include card.html title="📚 Resources" content=section_resources classes="about-card" %}
 
 ---
 
 ## 🌱 The Wonky Sprout Philosophy
 
+{% capture section_philosophy %}
 <!-- ... Philosophy section ... -->
+{% endcapture %}
+{% include card.html title="🌱 The Wonky Sprout Philosophy" content=section_philosophy classes="about-card is-green" %}
 
 ---
 
