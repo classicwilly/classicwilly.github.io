@@ -9,10 +9,6 @@ title: The SOP Vault
   <p>Standard Operating Procedures for a neurodivergent life.</p>
   <p class="text-sm">Every protocol battle-tested. Zero theory, only what works.</p>
 </div>
-<!-- TEMP: Visible build verification banner (remove after confirming new build) -->
-<div class="build-banner" style="background: #ff4d4f; color: #fff; padding: 0.75rem 1rem; border-radius:6px; text-align:center; font-weight:700; margin:0.75rem 0;">
-  TEST BUILD — this is a temporary banner to confirm the new Pages build is live. Remove after verification.
-</div>
 <!-- Execution Protocols Section -->
 <div class="checklist-section">
   <h2 class="section-title">⚡ Execution Protocols</h2>

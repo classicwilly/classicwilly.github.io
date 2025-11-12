@@ -1,3 +1,14 @@
+.helper-box {
+	background: linear-gradient(90deg, #181c23 80%, #23272e 100%);
+	color: #1abc9c;
+	border-radius: 14px;
+	box-shadow: 0 2px 8px #1abc9c22, 0 1px 4px #23272e44;
+	padding: 1.2rem 1.8rem;
+	margin: 1.2rem 0;
+	font-size: 1.09rem;
+	letter-spacing: 0.011em;
+	border: 1.5px solid #1abc9c44;
+}
 // Small, single-purpose utility classes to avoid inline styles.
 
 .text-sm { font-size: 0.95rem !important; }

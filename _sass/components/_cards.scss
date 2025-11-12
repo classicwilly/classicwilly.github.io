@@ -1,28 +1,167 @@
-/* ==========================================================================
-   Cards
-   ========================================================================== */
+/* ========================================================================== */
+.card {
+    background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
+    color: #c9d1d9;
+    border-radius: 28px;
+    box-shadow:
+        0 12px 48px rgba(26, 188, 156, 0.18),
+        0 3px 16px rgba(0,0,0,0.28),
+        0 1px 2px #1abc9c22;
+    padding: 3.6rem 2.8rem 2.8rem 2.8rem;
+    margin: 2.8rem 2.2rem;
+    transition: box-shadow 0.32s cubic-bezier(.4,2,.3,1), background 0.24s, border 0.22s, transform 0.18s;
+    font-size: 1.25rem;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 0.014em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2.5px solid #23272e;
+    border-bottom: 3px solid #1abc9c55;
+}
+
+.card:focus, .card:hover {
+    box-shadow:
+        0 24px 80px #1abc9c44,
+        0 8px 32px #58a6ff44,
+        0 2px 8px #23272e99;
+    outline: 3.5px solid #1abc9c;
+    background: linear-gradient(120deg, #23272e 80%, #181c23 100%);
+    border-bottom: 4px solid #58a6ff88;
+    transform: translateY(-3px) scale(1.018);
+}
+
+.card-icon {
+    font-size: 2.6rem;
+    margin-bottom: 1.1rem;
+    align-self: center;
+    filter: drop-shadow(0 2px 6px #1abc9c33);
+}
+
+.card-title {
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    color: #1abc9c;
+    letter-spacing: 0.024em;
+    text-shadow: 0 1px 2px #23272e44;
+}
+
+.card-details {
+    font-size: 1.09rem;
+    color: #c9d1d9cc;
+    margin-bottom: 1.5rem;
+}
+
+.card-action {
+    background: linear-gradient(90deg, #1abc9c 80%, #58a6ff 100%);
+    color: #161b22;
+    border-radius: 12px;
+    padding: 0.7rem 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 1.2rem;
+    box-shadow: 0 2px 10px rgba(26,188,156,0.16);
+    transition: background 0.22s, box-shadow 0.18s;
+}
+.card-action:hover, .card-action:focus {
+    background: linear-gradient(90deg, #58a6ff 80%, #1abc9c 100%);
+    color: #161b22;
+    box-shadow: 0 4px 16px #58a6ff44;
+}
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 0;
-    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 3.2rem 2.4rem;
+    margin: 3.6rem 0;
 }
 
+.card-icon {
+    font-size: 2.4rem;
+    margin-bottom: 0.9rem;
+    align-self: center;
+}
 
-.card {
-    display: block;
-    background-color: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+.card-title {
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1abc9c;
+    letter-spacing: 0.022em;
+}
+
+.card-details {
+    font-size: 1.05rem;
+    color: #c9d1d9cc;
+    margin-bottom: 1.3rem;
+}
+
+.card-action {
+    background: #1abc9c;
+    color: #161b22;
+    border-radius: 10px;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
     text-decoration: none;
-    color: #333;
-    font-family: system-ui, Arial, sans-serif;
-    font-size: 1.08rem;
-    line-height: 1.6;
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(26,188,156,0.14);
+    transition: background 0.22s;
+}
+.card-action:hover, .card-action:focus {
+    background: #58a6ff;
+    color: #161b22;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.6rem 2rem;
+    margin: 3rem 0;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.7rem;
+    align-self: center;
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+    color: #1abc9c;
+    letter-spacing: 0.02em;
+}
+
+.card-details {
+    font-size: 1rem;
+    color: #c9d1d9cc;
+    margin-bottom: 1.1rem;
+}
+
+.card-action {
+    background: #1abc9c;
+    color: #161b22;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.8rem;
+    box-shadow: 0 1px 4px rgba(26,188,156,0.12);
+    transition: background 0.18s;
+}
+.card-action:hover, .card-action:focus {
+    background: #58a6ff;
+    color: #161b22;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.2rem 1.5rem;
+    margin: 2.5rem 0;
 }
 
 .card:hover {

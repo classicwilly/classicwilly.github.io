@@ -1,3 +1,14 @@
+.keep-page-card {
+  background: linear-gradient(120deg, #181c23 80%, #23272e 100%);
+  color: #c9d1d9;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px #1abc9c22, 0 2px 8px #23272e44;
+  padding: 2.6rem 2.2rem;
+  margin: 2.2rem 1.2rem;
+  font-size: 1.18rem;
+  letter-spacing: 0.012em;
+  border: 2px solid #58a6ff44;
+}
 /* _sass/_keep.scss */
 /* Keep-style cards and form components (moved from assets/css/google-keep-style.css)
    This partial assumes variables live in _sass/_variables.scss */
