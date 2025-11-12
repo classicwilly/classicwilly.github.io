@@ -4,3 +4,4 @@ theme: jekyll-theme-cayman
 sass_dir: _sass
 exclude:
   - wonky-sprout-os
+# Trigger rebuild: 2025-11-11T23:00Z
