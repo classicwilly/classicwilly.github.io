@@ -53,7 +53,7 @@
     }
     </script>
 </head>
-<body>
+<body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
     <div class="page-container">
@@ -218,5 +218,28 @@
       })();
     </script>
   <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.getElementById('theme-toggle');
+      const currentTheme = localStorage.getItem('theme') || 'theme-dark';
+
+      document.body.className = currentTheme;
+
+      if (themeToggle) {
+        themeToggle.checked = currentTheme === 'theme-dark';
+        themeToggle.addEventListener('change', () => {
+          if (document.body.classList.contains('theme-dark')) {
+            document.body.classList.remove('theme-dark');
+            document.body.classList.add('theme-light');
+            localStorage.setItem('theme', 'theme-light');
+          } else {
+            document.body.classList.remove('theme-light');
+            document.body.classList.add('theme-dark');
+            localStorage.setItem('theme', 'theme-dark');
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
