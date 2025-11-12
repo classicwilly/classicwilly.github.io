@@ -3,7 +3,6 @@ layout: default
 title: Google Workspace Integration
 ---
 
-
 # GOOGLE WORKSPACE INTEGRATION
 
 **Connected tools for life management, co-parenting coordination, and data tracking.**
@@ -43,7 +42,6 @@ title: Google Workspace Integration
 
 ---
 
-{% capture section_1 %}
 ## 📅 FAMILY CALENDAR {#calendar}
 
 **Co-parenting schedule, custody transitions, and mode-switching visibility.**
@@ -82,9 +80,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="📅 FAMILY CALENDAR {#calendar}" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## 📝 FORMS & FEEDBACK {#forms}
 
 **Google Forms for feedback collection, protocol rating, weekly reviews.**
@@ -136,9 +131,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="📝 FORMS & FEEDBACK {#forms}" content=section_2 classes="checklist-card" %}
-{% capture section_3 %}
 ## 📊 SHEETS DATABASE {#sheets}
 
 **Google Sheets as backend for tracker data, protocol analytics, and trend visualization.**
@@ -186,9 +178,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="📊 SHEETS DATABASE {#sheets}" content=section_3 classes="checklist-card" %}
-{% capture section_4 %}
 ## 📁 GOOGLE DRIVE {#drive}
 
 **Embed documents, SOPs, and shared files directly in the site.**
@@ -237,9 +226,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="📁 GOOGLE DRIVE {#drive}" content=section_4 classes="checklist-card" %}
-{% capture section_5 %}
 ## 📧 GMAIL CONTACT {#contact}
 
 **Direct communication via embedded Gmail contact form.**
@@ -292,9 +278,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="📧 GMAIL CONTACT {#contact}" content=section_5 classes="checklist-card" %}
-{% capture section_6 %}
 ## 🤖 GEMINI AI INTEGRATION {#gemini}
 
 **AI assistant for protocol guidance, decision support, and pattern analysis.**
@@ -339,9 +322,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="🤖 GEMINI AI INTEGRATION {#gemini}" content=section_6 classes="checklist-card" %}
-{% capture section_7 %}
 ## ⚙️ INTEGRATION STATUS
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
@@ -584,5 +564,3 @@ title: Google Workspace Integration
     }
   });
 </script>
-{% endcapture %}
-{% include card.html title="⚙️ INTEGRATION STATUS" content=section_7 classes="checklist-card" %}

@@ -2,7 +2,6 @@
 layout: default
 title: Command Center - The Wonky Sprout
 ---
-
 <!-- Updated 2025-11-10 v4 -->
 
 <div style="text-align: center; margin-bottom: 1.16rem;">
@@ -18,7 +17,6 @@ title: Command Center - The Wonky Sprout
 
 ---
 
-{% capture section_1 %}
 ## 🔧 The "Fix-It" Kit
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
@@ -33,9 +31,6 @@ title: Command Center - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="🔧 The 'Fix-It' Kit" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## 📂 The "External" Card Catalog
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
@@ -75,5 +70,3 @@ a[href*="chat.google"]:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 </style>
-{% endcapture %}
-{% include card.html title="📂 The 'External' Card Catalog" content=section_2 classes="checklist-card" %}

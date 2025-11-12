@@ -3,7 +3,6 @@ layout: default
 title: Daily Tracker
 ---
 
-
 <div class="checklist-section">
   {% capture _daily_header %}
     <h2>📊 Daily Protocol Tracker</h2>
@@ -35,7 +34,6 @@ title: Daily Tracker
 
 ---
 
-{% capture section_1 %}
 ## 🚀 QUICK JUMP TO SECTION
 
 <div class="quick-jump-grid legal-nav">
@@ -201,5 +199,3 @@ title: Daily Tracker
   {% include card.html href="/sop-vault" icon="📋" title="All Protocols" classes="checklist-card is-purple" %}
   {% include card.html href="/checklists" icon="✅" title="Checklists" classes="checklist-card is-green" %}
 </div>
-{% endcapture %}
-{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_1 classes="checklist-card" %}

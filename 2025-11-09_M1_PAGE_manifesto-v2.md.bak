@@ -3,16 +3,11 @@ layout: default
 title: Manifesto - The Wonky Sprout
 ---
 
-
 # THE WONKY SPROUT MANIFESTO
-{% capture section_1 %}
 ## Structure Engineered for Chaos
 
 ---
 
-{% endcapture %}
-{% include card.html title="Structure Engineered for Chaos" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## I. THE DIAGNOSIS (WHAT'S BROKEN)
 
 I am a 40-year-old man diagnosed with **Autism Spectrum Disorder (ASD)** and **ADHD** in 2024. For 15 years, I was a **Navy Systems Diagnostician**—my job was to find the root cause of system failures, not patch holes.
@@ -27,9 +22,6 @@ When I turned that diagnostic lens on my own life, the pattern became clear:
 
 ---
 
-{% endcapture %}
-{% include card.html title="I. THE DIAGNOSIS (WHAT'S BROKEN)" content=section_2 classes="checklist-card" %}
-{% capture section_3 %}
 ## II. THE SHIFT (REFRAMING THE INPUT)
 
 I became a father to two kids. I became a co-parent navigating custody schedules. The chaos increased exponentially.
@@ -42,9 +34,6 @@ This is the shift from **self-blame to systems design**.
 
 ---
 
-{% endcapture %}
-{% include card.html title="II. THE SHIFT (REFRAMING THE INPUT)" content=section_3 classes="checklist-card" %}
-{% capture section_4 %}
 ## III. THE STRUCTURE (THE ENGINEERING SOLUTION)
 
 ### The Dual-Mode Protocol
@@ -93,9 +82,6 @@ These 5 protocols run **every single day**, regardless of mode:
 
 ---
 
-{% endcapture %}
-{% include card.html title="III. THE STRUCTURE (THE ENGINEERING SOLUTION)" content=section_4 classes="checklist-card" %}
-{% capture section_5 %}
 ## IV. THE BLUEPRINT (THE DIGITAL SYSTEM)
 
 This website is the **externalized operating system** for my life. It is not a blog. It is a **public SOP vault**.
@@ -137,9 +123,6 @@ YYYY-MM-DD_MODULE_TYPE_description.md
 
 ---
 
-{% endcapture %}
-{% include card.html title="IV. THE BLUEPRINT (THE DIGITAL SYSTEM)" content=section_5 classes="checklist-card" %}
-{% capture section_6 %}
 ## V. THE CORE PROTOCOL (THE "FIX")
 
 My brain is a **high-performance engine** for organizing multi-threaded, chaotic data. It is an optimization. I am the "Systems Diagnostician" who spent 15 years finding the root cause. I don't patch holes. **I fix stuff.**
@@ -169,9 +152,6 @@ This is the non-negotiable mission of The Wonky Sprout:
 
 ---
 
-{% endcapture %}
-{% include card.html title="V. THE CORE PROTOCOL (THE 'FIX')" content=section_6 classes="checklist-card" %}
-{% capture section_7 %}
 ## VI. THE ANTI-BS COMMITMENT (THE VIBE)
 
 This brand operates under the **"Anti-BS" framework**:
@@ -196,9 +176,6 @@ This brand operates under the **"Anti-BS" framework**:
 
 ---
 
-{% endcapture %}
-{% include card.html title="VI. THE ANTI-BS COMMITMENT (THE VIBE)" content=section_7 classes="checklist-card" %}
-{% capture section_8 %}
 ## VII. THE MISSION (THE OUTPUT)
 
 ### For Neurodivergent Adults:
@@ -212,9 +189,6 @@ Demonstrate that **neurodivergence is an optimization**, not a bug. The ability 
 
 ---
 
-{% endcapture %}
-{% include card.html title="VII. THE MISSION (THE OUTPUT)" content=section_8 classes="checklist-card" %}
-{% capture section_9 %}
 ## VIII. THE DEFINITION (WHO I AM)
 
 I am **William Johnson** (classicwilly). I am:
@@ -234,9 +208,6 @@ I am **William Johnson** (classicwilly). I am:
 
 ---
 
-{% endcapture %}
-{% include card.html title="VIII. THE DEFINITION (WHO I AM)" content=section_9 classes="checklist-card" %}
-{% capture section_10 %}
 ## IX. THE INVITATION (THE NEXT ACTION)
 
 If you are:
@@ -254,9 +225,6 @@ Then this system is for you.
 
 ---
 
-{% endcapture %}
-{% include card.html title="IX. THE INVITATION (THE NEXT ACTION)" content=section_10 classes="checklist-card" %}
-{% capture section_11 %}
 ## X. THE SLOGAN (THE IDENTITY)
 
 **"The Wonky Sprout: Structure Engineered for Chaos."**
@@ -287,5 +255,3 @@ This is not inspiration.
   <a href="/2025-11-09_M1_CONFIG_brand-guide-v2" class="page-nav-link">🎨 Read Brand Guide</a>
   <a href="/kids" class="page-nav-link">👨‍👧‍👦 View Kids Page</a>
 </div>
-{% endcapture %}
-{% include card.html title="X. THE SLOGAN (THE IDENTITY)" content=section_11 classes="checklist-card" %}

@@ -13,13 +13,13 @@
     <meta name="author" content="William Johnson (classicwilly)">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="/fix.html">
+    <meta property="og:url" content="/fix.md.bak">
     <meta property="og:title" content="The Fix-It Blueprint">
     <meta property="og:description" content="Structure Engineered for Chaos">
     <meta property="og:site_name" content="The Wonky Sprout">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="/fix.html">
+    <meta name="twitter:url" content="/fix.md.bak">
     <meta name="twitter:title" content="The Fix-It Blueprint">
     <meta name="twitter:description" content="Structure Engineered for Chaos">
     <title>The Fix-It Blueprint</title>
@@ -82,7 +82,7 @@
       <div class="sidebar-section-title">All Pages</div>
   <details class="sidebar-allpages">
         <summary class="sr-only">All site pages</summary>
-        <ul class="sidebar-nav sidebar-allpages-list"><li><a href="/2025-11-08_M2_BLUEPRINT_hive-system-design.html" >The Hive System - Design Blueprint</a></li><li><a href="/2025-11-08_M4_IPI_context-switching-recovery.html" >Context Switching Recovery Protocol</a></li><li><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency.html" >Executive Dysfunction Emergency Protocol</a></li><li><a href="/2025-11-08_M4_IPI_sensory-overload-emergency.html" >Sensory Overload Emergency Protocol</a></li><li><a href="/2025-11-08_M4_SOP_family-structure-mode.html" >Family Structure Mode</a></li><li><a href="/2025-11-08_M4_SOP_foundational-daily-protocols.html" >Foundational Daily Protocols</a></li><li><a href="/2025-11-08_M4_SOP_grocery-shopping-protocol.html" >Grocery Shopping Protocol - SOP-GS</a></li><li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.html" >House Cleaning Protocol - SOP-HC</a></li><li><a href="/2025-11-08_M4_SOP_life-maintenance-protocol.html" >Life Maintenance Protocol - SOP-LM</a></li><li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.html" >Morning Transition Protocol</a></li><li><a href="/2025-11-08_M4_SOP_neurodivergent-life-protocol.html" >Neurodivergent Life SOP</a></li><li><a href="/2025-11-08_M4_SOP_personal-hygiene-protocol.html" >Personal Hygiene Protocol - SOP-PH</a></li><li><a href="/2025-11-08_M4_SOP_solo-execution-mode.html" >Solo Execution Mode</a></li><li><a href="/2025-11-08_M4_SOP_weekly-review-protocol.html" >Weekly Review Protocol</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.html" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.md.bak" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M4_CONFIG_audit-log.html" >WS-OS Audit Log</a></li><li><a href="/2025-11-09_M4_SOP_command-center-setup.html" >Command Center Setup SOP</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms.html" >Weekdays at Mom's - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekend-with-dad.html" >Weekend With Dad - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_pixel-fold-setup.html" >Pixel 9 Pro Fold Setup SOP</a></li><li><a href="/2025-11-10_M4_SOP_006-legal-threat-fix.html" >Legal Threat Fix Protocol</a></li><li><a href="/2025-11-10_M4_SOP_accessibility-safety-protocol.html" >Accessibility & Safety Protocol</a></li><li><a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol.html" >MLP-007 Bubble Shield Hardware Protocol</a></li><li><a href="/catalog.html" >The Card Catalog</a></li><li><a href="/checklist-foundational-daily.html" >Foundational Daily Protocols Checklist</a></li><li><a href="/checklist-morning-transition.html" >Morning Transition Checklist</a></li><li><a href="/checklist-weekly-review.html" >Weekly Review Checklist</a></li><li><a href="/checklists.html" >Interactive Checklists</a></li><li><a href="/command-center.html" >Command Center - The Wonky Sprout</a></li><li><a href="/command-center.md.bak" >Command Center - The Wonky Sprout</a></li><li><a href="/daily-tracker.html" >Daily Tracker</a></li><li><a href="/daily-tracker.md.bak" >Daily Tracker</a></li><li><a href="/fix.html" aria-current="page" class="is-active">The Fix-It Blueprint</a></li><li><a href="/fix.md.bak" >The Fix-It Blueprint</a></li><li><a href="/games.html" >Stim Station</a></li><li><a href="/little-sprouts.html" >Little Sprouts - Bash & Willow</a></li><li><a href="/settings.html" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/settings.md.bak" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/sop-vault.html" >The SOP Vault</a></li><li><a href="/workspace.html" >Google Workspace Integration</a></li><li><a href="/workspace.md.bak" >Google Workspace Integration</a></li></ul>
+        <ul class="sidebar-nav sidebar-allpages-list"><li><a href="/2025-11-08_M2_BLUEPRINT_hive-system-design.html" >The Hive System - Design Blueprint</a></li><li><a href="/2025-11-08_M4_IPI_context-switching-recovery.html" >Context Switching Recovery Protocol</a></li><li><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency.html" >Executive Dysfunction Emergency Protocol</a></li><li><a href="/2025-11-08_M4_IPI_sensory-overload-emergency.html" >Sensory Overload Emergency Protocol</a></li><li><a href="/2025-11-08_M4_SOP_family-structure-mode.html" >Family Structure Mode</a></li><li><a href="/2025-11-08_M4_SOP_foundational-daily-protocols.html" >Foundational Daily Protocols</a></li><li><a href="/2025-11-08_M4_SOP_grocery-shopping-protocol.html" >Grocery Shopping Protocol - SOP-GS</a></li><li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.html" >House Cleaning Protocol - SOP-HC</a></li><li><a href="/2025-11-08_M4_SOP_life-maintenance-protocol.html" >Life Maintenance Protocol - SOP-LM</a></li><li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.html" >Morning Transition Protocol</a></li><li><a href="/2025-11-08_M4_SOP_neurodivergent-life-protocol.html" >Neurodivergent Life SOP</a></li><li><a href="/2025-11-08_M4_SOP_personal-hygiene-protocol.html" >Personal Hygiene Protocol - SOP-PH</a></li><li><a href="/2025-11-08_M4_SOP_solo-execution-mode.html" >Solo Execution Mode</a></li><li><a href="/2025-11-08_M4_SOP_weekly-review-protocol.html" >Weekly Review Protocol</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.html" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.md.bak" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M4_CONFIG_audit-log.html" >WS-OS Audit Log</a></li><li><a href="/2025-11-09_M4_SOP_command-center-setup.html" >Command Center Setup SOP</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms.html" >Weekdays at Mom's - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekend-with-dad.html" >Weekend With Dad - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_pixel-fold-setup.html" >Pixel 9 Pro Fold Setup SOP</a></li><li><a href="/2025-11-10_M4_SOP_006-legal-threat-fix.html" >Legal Threat Fix Protocol</a></li><li><a href="/2025-11-10_M4_SOP_accessibility-safety-protocol.html" >Accessibility & Safety Protocol</a></li><li><a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol.html" >MLP-007 Bubble Shield Hardware Protocol</a></li><li><a href="/catalog.html" >The Card Catalog</a></li><li><a href="/checklist-foundational-daily.html" >Foundational Daily Protocols Checklist</a></li><li><a href="/checklist-morning-transition.html" >Morning Transition Checklist</a></li><li><a href="/checklist-weekly-review.html" >Weekly Review Checklist</a></li><li><a href="/checklists.html" >Interactive Checklists</a></li><li><a href="/command-center.html" >Command Center - The Wonky Sprout</a></li><li><a href="/command-center.md.bak" >Command Center - The Wonky Sprout</a></li><li><a href="/daily-tracker.html" >Daily Tracker</a></li><li><a href="/daily-tracker.md.bak" >Daily Tracker</a></li><li><a href="/fix.html" >The Fix-It Blueprint</a></li><li><a href="/fix.md.bak" aria-current="page" class="is-active">The Fix-It Blueprint</a></li><li><a href="/games.html" >Stim Station</a></li><li><a href="/little-sprouts.html" >Little Sprouts - Bash & Willow</a></li><li><a href="/settings.html" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/settings.md.bak" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/sop-vault.html" >The SOP Vault</a></li><li><a href="/workspace.html" >Google Workspace Integration</a></li><li><a href="/workspace.md.bak" >Google Workspace Integration</a></li></ul>
       </details>
       <div class="section-divider" aria-hidden="true"></div>
       <div class="sidebar-section-title">Protocols</div>
@@ -108,18 +108,12 @@
         <!-- COLUMN 2: THE "CARD CATALOG" (Main Content) -->
         <div class="main-content-wrapper">
             <main id="main-content" class="main-content" role="main">
-                <h1 id="the-fix-it-blueprint">THE FIX-IT BLUEPRINT</h1>
+                # THE FIX-IT BLUEPRINT
 
-<p><strong>Stop patching. Start fixing.</strong></p>
+**Stop patching. Start fixing.**
 
-<hr />
+---
 
-<div class="checklist-card">
-    
-  <h3 class="card-title">WHO IS THIS FOR?</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## WHO IS THIS FOR?
 
 **Neurodivergent professionals drowning in chaos.**
@@ -138,14 +132,14 @@ You don't need motivation. You need **mechanical systems that run on autopilot w
     
   <h3 class="card-title">WHO IS THIS FOR?</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 You don't need motivation. You need **mechanical systems that run on autopilot when your brain can't.**
 
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -153,22 +147,6 @@ You don't need motivation. You need **mechanical systems that run on autopilot w
 
 ---
 
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
-<div class="checklist-card">
-    
-  <h3 class="card-title">WHAT YOU NEED</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## WHAT YOU NEED
 
 
@@ -176,7 +154,7 @@ You don't need motivation. You need **mechanical systems that run on autopilot w
     
   <h3 class="card-title">WHAT YOU NEED</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 **A systems audit + custom protocol implementation.**
 
@@ -198,7 +176,7 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -210,7 +188,7 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
     
   <h3 class="card-title">HOW IT WORKS</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 **1-week diagnostic → Custom SOP delivery.**
 
@@ -260,7 +238,7 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -275,22 +253,6 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 
 ---
 
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
-<div class="checklist-card">
-    
-  <h3 class="card-title">INVESTMENT</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## INVESTMENT
 
 
@@ -298,7 +260,7 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
     
   <h3 class="card-title">INVESTMENT</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 **$1,500 for complete 1-week engagement.**
 
@@ -317,7 +279,7 @@ Includes:
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -325,22 +287,6 @@ Includes:
 
 ---
 
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
-<div class="checklist-card">
-    
-  <h3 class="card-title">WHO AM I?</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## WHO AM I?
 
 
@@ -348,7 +294,7 @@ Includes:
     
   <h3 class="card-title">WHO AM I?</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 **William Johnson (classicwilly)** - Systems Diagnostician, 40 years old, diagnosed Autism/ADHD.
 
@@ -365,7 +311,7 @@ Includes:
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -373,22 +319,6 @@ Includes:
 
 ---
 
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
-<div class="checklist-card">
-    
-  <h3 class="card-title">PROOF IT WORKS</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## PROOF IT WORKS
 
 
@@ -396,7 +326,7 @@ Includes:
     
   <h3 class="card-title">PROOF IT WORKS</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 <div class="testimonial-card">
   <div class="testimonial-meta">
@@ -413,7 +343,7 @@ Includes:
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -421,22 +351,6 @@ Includes:
 
 ---
 
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
-<div class="checklist-card">
-    
-  <h3 class="card-title">READY TO FIX IT?</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
 ## READY TO FIX IT?
 
 
@@ -444,7 +358,7 @@ Includes:
     
   <h3 class="card-title">READY TO FIX IT?</h3>
   
-  <div class="card-modal-content" hidden="">
+  <div class="card-modal-content" hidden>
       
 **Email:** [Insert contact email]  
 **Subject line:** "Fix-It Blueprint - [Your Name]"
@@ -459,7 +373,7 @@ I respond within 24 hours. If I can't help you, I'll tell you immediately and po
     </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
   <button type="button" class="card-action" aria-label="Open details">
     <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
     </svg>
     <span class="sr-only">Open details</span>
   </button>
@@ -472,15 +386,6 @@ I respond within 24 hours. If I can't help you, I'll tell you immediately and po
   <a href="/sop-vault" class="page-nav-link">🧠 View My Systems</a>
   <a href="/2025-11-08_M1_PAGE_manifesto" class="page-nav-link">📜 Read the Manifesto</a>
 </div>
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
-
             </main>
         </div>
     </div>

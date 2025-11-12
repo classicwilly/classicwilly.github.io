@@ -47,11 +47,13 @@ def convert_content(body_text, dry_run=False):
                 section_lines.append(lines[i]); i += 1
 
             capture_block = []
-            capture_block.append(f"{% raw %}{% capture {capture_name} %}{% endraw %}\n")
+            # Use plain strings so Python doesn't try to interpret Liquid braces
+            capture_block.append("{% capture " + capture_name + " %}\n")
             capture_block.extend(section_lines)
-            capture_block.append(f"{% raw %}{% endcapture %}{% endraw %}\n")
-            # include: pass the capture variable as content
-            include_line = f"{% raw %}{% include card.html title=\"{title.replace('"','\'\') }\" content={capture_name} classes=\"checklist-card\" %}{% endraw %}\n"
+            capture_block.append("{% endcapture %}\n")
+            # include: pass the capture variable as content (keep quotes safe)
+            safe_title = title.replace('"', "'")
+            include_line = '{% include card.html title="' + safe_title + '" content=' + capture_name + ' classes="checklist-card" %}\n'
             capture_block.append(include_line)
             out.extend(capture_block)
         else:

@@ -1,10 +1,114 @@
----
-layout: default
-title: Google Workspace Integration
----
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Structure Engineered for Chaos">
+    <meta name="keywords" content="neurodivergent, ADHD, autism, life management, SOPs, standard operating procedures, systems, productivity">
+    <meta name="author" content="William Johnson (classicwilly)">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/workspace.md.bak">
+    <meta property="og:title" content="Google Workspace Integration">
+    <meta property="og:description" content="Structure Engineered for Chaos">
+    <meta property="og:site_name" content="The Wonky Sprout">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="/workspace.md.bak">
+    <meta name="twitter:title" content="Google Workspace Integration">
+    <meta name="twitter:description" content="Structure Engineered for Chaos">
+    <title>Google Workspace Integration</title>
+    <!-- DNS Prefetch & Preconnect for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font Imports -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+    <!-- Override: tighten left gutter and ensure symmetric content padding -->
+    <style>
+      .page-container{padding-left:260px; gap:0.75rem}
+      .main-content-wrapper{padding:0.75rem}
+      @media (max-width:768px){ .page-container{padding-left:0} }
+      /* Card hover affordance overrides (immediate) */
+      .card { transition: transform 0.18s ease, box-shadow 0.18s ease; }
+      .card:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.45); }
+      .checklist-card:hover { transform: translateY(-4px) scale(1.03); }
+    </style>
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "The Wonky Sprout",
+      "description": "A neurodivergent life management system with Standard Operating Procedures",
+      "url": "",
+      "author": {
+        "@type": "Person",
+        "name": "William Johnson",
+        "alternateName": "classicwilly"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link (Accessibility) -->
+    <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    <div class="page-container">
+  <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
+  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
+            <div class="sidebar-header">
+                <span class="sidebar-title">Wonky Sprout OS</span>
+                <p class="sidebar-tagline">Internal Blueprint</p>
+            </div>
+      <div class="sidebar-section-title">Quick Links</div>
+      <ul class="sidebar-nav">
+        <li><a href="/" >🏠 Home</a></li>
+        <li><a href="/workspace" aria-current="page" class="is-active">💼 Workspace</a></li>
+        <li><a href="/catalog" >📇 Card Catalog</a></li>
+        <li><a href="/fix" >🔧 Fix-It Blueprint</a></li>
+        <li><a href="/daily-tracker" >📊 Daily Tracker</a></li>
+        <li><a href="/sop-vault" >📚 SOP Vault</a></li>
+        <li><a href="/command-center" >⚙️ Command Center</a></li>
+        <li><a href="/settings" >⚙ Settings</a></li>
+      </ul>
 
-
-# GOOGLE WORKSPACE INTEGRATION
+      <div class="sidebar-section-title">All Pages</div>
+  <details class="sidebar-allpages">
+        <summary class="sr-only">All site pages</summary>
+        <ul class="sidebar-nav sidebar-allpages-list"><li><a href="/2025-11-08_M2_BLUEPRINT_hive-system-design.html" >The Hive System - Design Blueprint</a></li><li><a href="/2025-11-08_M4_IPI_context-switching-recovery.html" >Context Switching Recovery Protocol</a></li><li><a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency.html" >Executive Dysfunction Emergency Protocol</a></li><li><a href="/2025-11-08_M4_IPI_sensory-overload-emergency.html" >Sensory Overload Emergency Protocol</a></li><li><a href="/2025-11-08_M4_SOP_family-structure-mode.html" >Family Structure Mode</a></li><li><a href="/2025-11-08_M4_SOP_foundational-daily-protocols.html" >Foundational Daily Protocols</a></li><li><a href="/2025-11-08_M4_SOP_grocery-shopping-protocol.html" >Grocery Shopping Protocol - SOP-GS</a></li><li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.html" >House Cleaning Protocol - SOP-HC</a></li><li><a href="/2025-11-08_M4_SOP_life-maintenance-protocol.html" >Life Maintenance Protocol - SOP-LM</a></li><li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.html" >Morning Transition Protocol</a></li><li><a href="/2025-11-08_M4_SOP_neurodivergent-life-protocol.html" >Neurodivergent Life SOP</a></li><li><a href="/2025-11-08_M4_SOP_personal-hygiene-protocol.html" >Personal Hygiene Protocol - SOP-PH</a></li><li><a href="/2025-11-08_M4_SOP_solo-execution-mode.html" >Solo Execution Mode</a></li><li><a href="/2025-11-08_M4_SOP_weekly-review-protocol.html" >Weekly Review Protocol</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.html" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M1_PAGE_manifesto-v2.md.bak" >Manifesto - The Wonky Sprout</a></li><li><a href="/2025-11-09_M4_CONFIG_audit-log.html" >WS-OS Audit Log</a></li><li><a href="/2025-11-09_M4_SOP_command-center-setup.html" >Command Center Setup SOP</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms.html" >Weekdays at Mom's - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_kids-weekend-with-dad.html" >Weekend With Dad - Kids Protocol</a></li><li><a href="/2025-11-09_M4_SOP_pixel-fold-setup.html" >Pixel 9 Pro Fold Setup SOP</a></li><li><a href="/2025-11-10_M4_SOP_006-legal-threat-fix.html" >Legal Threat Fix Protocol</a></li><li><a href="/2025-11-10_M4_SOP_accessibility-safety-protocol.html" >Accessibility & Safety Protocol</a></li><li><a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol.html" >MLP-007 Bubble Shield Hardware Protocol</a></li><li><a href="/catalog.html" >The Card Catalog</a></li><li><a href="/checklist-foundational-daily.html" >Foundational Daily Protocols Checklist</a></li><li><a href="/checklist-morning-transition.html" >Morning Transition Checklist</a></li><li><a href="/checklist-weekly-review.html" >Weekly Review Checklist</a></li><li><a href="/checklists.html" >Interactive Checklists</a></li><li><a href="/command-center.html" >Command Center - The Wonky Sprout</a></li><li><a href="/command-center.md.bak" >Command Center - The Wonky Sprout</a></li><li><a href="/daily-tracker.html" >Daily Tracker</a></li><li><a href="/daily-tracker.md.bak" >Daily Tracker</a></li><li><a href="/fix.html" >The Fix-It Blueprint</a></li><li><a href="/fix.md.bak" >The Fix-It Blueprint</a></li><li><a href="/games.html" >Stim Station</a></li><li><a href="/little-sprouts.html" >Little Sprouts - Bash & Willow</a></li><li><a href="/settings.html" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/settings.md.bak" >Settings & Contact - The Wonky Sprout</a></li><li><a href="/sop-vault.html" >The SOP Vault</a></li><li><a href="/workspace.html" >Google Workspace Integration</a></li><li><a href="/workspace.md.bak" aria-current="page" class="is-active">Google Workspace Integration</a></li></ul>
+      </details>
+      <div class="section-divider" aria-hidden="true"></div>
+      <div class="sidebar-section-title">Protocols</div>
+      <ul class="sidebar-nav">
+        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode.md">🧭 Solo Execution</a></li>
+        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol.md">⏰ Morning Transition</a></li>
+        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol.md">🧺 House Cleaning</a></li>
+      </ul>
+        </nav>
+        <!-- Mobile Navigation (Hamburger Menu) -->
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="navigation" aria-label="Mobile">
+            <a href="/" class="sidebar-title">Wonky Sprout OS</a>
+            <ul class="sidebar-nav">
+                
+            </ul>
+        </div>
+        <!-- COLUMN 2: THE "CARD CATALOG" (Main Content) -->
+        <div class="main-content-wrapper">
+            <main id="main-content" class="main-content" role="main">
+                # GOOGLE WORKSPACE INTEGRATION
 
 **Connected tools for life management, co-parenting coordination, and data tracking.**
 
@@ -43,12 +147,17 @@ title: Google Workspace Integration
 
 ---
 
-{% capture section_1 %}
 ## 📅 FAMILY CALENDAR {#calendar}
 
 **Co-parenting schedule, custody transitions, and mode-switching visibility.**
 
-{% capture section_1 %}
+
+<div class="about-card is-blue">
+    
+  <h3 class="card-title">📅 FAMILY CALENDAR</h3>
+  
+  <div class="card-modal-content" hidden>
+      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--circuit-teal); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--circuit-teal);">Setup Instructions</h3>
   <ol>
@@ -77,19 +186,29 @@ title: Google Workspace Integration
     📖 Embed Instructions
   </a>
 </div>
-{% endcapture %}
-{% include card.html title="📅 FAMILY CALENDAR" content=section_1 classes="about-card is-blue" %}
+
+    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
+  <button type="button" class="card-action" aria-label="Open details">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+    <span class="sr-only">Open details</span>
+  </button>
+  </div>
 
 ---
 
-{% endcapture %}
-{% include card.html title="📅 FAMILY CALENDAR {#calendar}" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## 📝 FORMS & FEEDBACK {#forms}
 
 **Google Forms for feedback collection, protocol rating, weekly reviews.**
 
-{% capture section_2 %}
+
+<div class="about-card">
+    
+  <h3 class="card-title">📝 FORMS & FEEDBACK</h3>
+  
+  <div class="card-modal-content" hidden>
+      
 <div class="quick-jump-grid" style="margin: 2rem 0;">
   <div class="quick-jump-tile" style="background: var(--card-dark); border: 2px solid var(--purple);">
     <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
@@ -131,19 +250,29 @@ title: Google Workspace Integration
     <li>Forms can feed directly into Google Sheets for analysis</li>
   </ol>
 </div>
-{% endcapture %}
-{% include card.html title="📝 FORMS & FEEDBACK" content=section_2 classes="about-card" %}
+
+    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
+  <button type="button" class="card-action" aria-label="Open details">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+    <span class="sr-only">Open details</span>
+  </button>
+  </div>
 
 ---
 
-{% endcapture %}
-{% include card.html title="📝 FORMS & FEEDBACK {#forms}" content=section_2 classes="checklist-card" %}
-{% capture section_3 %}
 ## 📊 SHEETS DATABASE {#sheets}
 
 **Google Sheets as backend for tracker data, protocol analytics, and trend visualization.**
 
-{% capture section_3 %}
+
+<div class="about-card">
+    
+  <h3 class="card-title">📊 SHEETS DATABASE</h3>
+  
+  <div class="card-modal-content" hidden>
+      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--green); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--green);">Tracker Data Export to Sheets</h3>
   
@@ -181,19 +310,29 @@ title: Google Workspace Integration
   
   <p><strong>Template available:</strong> <a href="https://docs.google.com/spreadsheets/create" target="_blank" style="color: var(--circuit-teal);">Create from template →</a></p>
 </div>
-{% endcapture %}
-{% include card.html title="📊 SHEETS DATABASE" content=section_3 classes="about-card" %}
+
+    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
+  <button type="button" class="card-action" aria-label="Open details">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+    <span class="sr-only">Open details</span>
+  </button>
+  </div>
 
 ---
 
-{% endcapture %}
-{% include card.html title="📊 SHEETS DATABASE {#sheets}" content=section_3 classes="checklist-card" %}
-{% capture section_4 %}
 ## 📁 GOOGLE DRIVE {#drive}
 
 **Embed documents, SOPs, and shared files directly in the site.**
 
-{% capture section_4 %}
+
+<div class="about-card">
+    
+  <h3 class="card-title">📁 GOOGLE DRIVE</h3>
+  
+  <div class="card-modal-content" hidden>
+      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--blue); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--blue);">Embedded Documents</h3>
   
@@ -232,19 +371,29 @@ title: Google Workspace Integration
     <li>Paste iframe code into markdown pages</li>
   </ol>
 </div>
-{% endcapture %}
-{% include card.html title="📁 GOOGLE DRIVE" content=section_4 classes="about-card" %}
+
+    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
+  <button type="button" class="card-action" aria-label="Open details">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+    <span class="sr-only">Open details</span>
+  </button>
+  </div>
 
 ---
 
-{% endcapture %}
-{% include card.html title="📁 GOOGLE DRIVE {#drive}" content=section_4 classes="checklist-card" %}
-{% capture section_5 %}
 ## 📧 GMAIL CONTACT {#contact}
 
 **Direct communication via embedded Gmail contact form.**
 
-{% capture section_5 %}
+
+<div class="about-card">
+    
+  <h3 class="card-title">📧 GMAIL CONTACT</h3>
+  
+  <div class="card-modal-content" hidden>
+      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--red); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--red);">Contact Form</h3>
   
@@ -287,14 +436,18 @@ title: Google Workspace Integration
     </ul>
   </div>
 </div>
-{% endcapture %}
-{% include card.html title="📧 GMAIL CONTACT" content=section_5 classes="about-card" %}
+
+    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
+  <button type="button" class="card-action" aria-label="Open details">
+    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z"/>
+    </svg>
+    <span class="sr-only">Open details</span>
+  </button>
+  </div>
 
 ---
 
-{% endcapture %}
-{% include card.html title="📧 GMAIL CONTACT {#contact}" content=section_5 classes="checklist-card" %}
-{% capture section_6 %}
 ## 🤖 GEMINI AI INTEGRATION {#gemini}
 
 **AI assistant for protocol guidance, decision support, and pattern analysis.**
@@ -339,9 +492,6 @@ title: Google Workspace Integration
 
 ---
 
-{% endcapture %}
-{% include card.html title="🤖 GEMINI AI INTEGRATION {#gemini}" content=section_6 classes="checklist-card" %}
-{% capture section_7 %}
 ## ⚙️ INTEGRATION STATUS
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
@@ -584,5 +734,77 @@ title: Google Workspace Integration
     }
   });
 </script>
-{% endcapture %}
-{% include card.html title="⚙️ INTEGRATION STATUS" content=section_7 classes="checklist-card" %}
+
+            </main>
+        </div>
+    </div>
+    <!-- Back to Top Button -->
+    <a href="#top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      ↑
+    </a>
+
+    <!-- Modal container used by card include quick-views -->
+    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+  <header class="accessibility-panel-header">
+    <h4>Accessibility Preferences</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+  </header>
+  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
+    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
+    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+    <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+  </form>
+  <div class="accessibility-panel-footer">
+    <button id="accessibility-reset" class="btn">Reset</button>
+  </div>
+</div>
+
+<!-- Toggle button (placed in DOM via JS) -->
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+
+    <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="card-modal-overlay" data-dismiss="true"></div>
+      <div class="card-modal-panel" role="document">
+        <button class="card-modal-close" aria-label="Close">×</button>
+        <div class="card-modal-body"></div>
+      </div>
+    </div>
+
+    <!-- PRESERVED SCRIPTS -->
+    <script>
+    // This script block remains for essential UI functionality.
+    // Mobile Nav Toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.getElementById('mobile-nav-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        toggleBtn.addEventListener('click', function() {
+          const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+          toggleBtn.setAttribute('aria-expanded', !isExpanded);
+          mobileNav.setAttribute('aria-hidden', isExpanded);
+          document.body.classList.toggle('mobile-nav-open');
+        });
+      });
+      // Back to Top Button Functionality
+      (function() {
+        const backToTopButton = document.querySelector('.back-to-top');
+        function toggleBackToTop() {
+          if (window.scrollY > 300) {
+            backToTopButton.style.opacity = '1';
+            backToTopButton.style.visibility = 'visible';
+          } else {
+            backToTopButton.style.opacity = '0';
+            backToTopButton.style.visibility = 'hidden';
+          }
+        }
+        backToTopButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        window.addEventListener('scroll', toggleBackToTop);
+        toggleBackToTop();
+      })();
+    </script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

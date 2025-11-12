@@ -3,14 +3,12 @@ layout: default
 title: The Fix-It Blueprint
 ---
 
-
 # THE FIX-IT BLUEPRINT
 
 **Stop patching. Start fixing.**
 
 ---
 
-{% capture section_1 %}
 ## WHO IS THIS FOR?
 
 **Neurodivergent professionals drowning in chaos.**
@@ -31,9 +29,6 @@ You don't need motivation. You need **mechanical systems that run on autopilot w
 
 ---
 
-{% endcapture %}
-{% include card.html title="WHO IS THIS FOR?" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## WHAT YOU NEED
 
 {% capture section_need %}
@@ -114,9 +109,6 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 
 ---
 
-{% endcapture %}
-{% include card.html title="WHAT YOU NEED" content=section_2 classes="checklist-card" %}
-{% capture section_3 %}
 ## INVESTMENT
 
 {% capture section_invest %}
@@ -138,9 +130,6 @@ Includes:
 
 ---
 
-{% endcapture %}
-{% include card.html title="INVESTMENT" content=section_3 classes="checklist-card" %}
-{% capture section_4 %}
 ## WHO AM I?
 
 {% capture section_whoami %}
@@ -160,9 +149,6 @@ Includes:
 
 ---
 
-{% endcapture %}
-{% include card.html title="WHO AM I?" content=section_4 classes="checklist-card" %}
-{% capture section_5 %}
 ## PROOF IT WORKS
 
 {% capture section_proof %}
@@ -182,9 +168,6 @@ Includes:
 
 ---
 
-{% endcapture %}
-{% include card.html title="PROOF IT WORKS" content=section_5 classes="checklist-card" %}
-{% capture section_6 %}
 ## READY TO FIX IT?
 
 {% capture section_ready %}
@@ -206,5 +189,4 @@ I respond within 24 hours. If I can't help you, I'll tell you immediately and po
   <a href="/" class="page-nav-link">🏠 Back to Home</a>
   <a href="/sop-vault" class="page-nav-link">🧠 View My Systems</a>
   <a href="/2025-11-08_M1_PAGE_manifesto" class="page-nav-link">📜 Read the Manifesto</a>
-</div>{% endcapture %}
-{% include card.html title="READY TO FIX IT?" content=section_6 classes="checklist-card" %}
+</div>

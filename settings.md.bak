@@ -3,7 +3,6 @@ layout: default
 title: Settings & Contact - The Wonky Sprout
 ---
 
-
 <div class="settings-header">
   <h1>⚙️ <span class="header-accent">Settings & Contact</span></h1>
   <div class="header-divider"></div>
@@ -13,7 +12,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% capture section_1 %}
 ## 👤 About classicwilly
 {% capture section_about %}
 <div class="about-card">
@@ -33,9 +31,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="👤 About classicwilly" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## 📬 Contact
 {% capture section_contact %}
 <div class="contact-grid">
@@ -72,9 +67,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="📬 Contact" content=section_2 classes="checklist-card" %}
-{% capture section_3 %}
 ## 🎨 Site Preferences
 {% capture section_prefs %}
 <div class="about-card" style="border-color: var(--teal);">
@@ -118,9 +110,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="🎨 Site Preferences" content=section_3 classes="checklist-card" %}
-{% capture section_4 %}
 ## 📊 Data & Privacy
 {% capture section_data %}
 <div class="about-card" style="border-color: var(--purple);">
@@ -150,9 +139,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="📊 Data & Privacy" content=section_4 classes="checklist-card" %}
-{% capture section_5 %}
 ## 🔧 Technical Details
 
 {% capture section_tech %}
@@ -162,9 +148,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="🔧 Technical Details" content=section_5 classes="checklist-card" %}
-{% capture section_6 %}
 ## 📚 Resources
 
 {% capture section_resources %}
@@ -174,9 +157,6 @@ title: Settings & Contact - The Wonky Sprout
 
 ---
 
-{% endcapture %}
-{% include card.html title="📚 Resources" content=section_6 classes="checklist-card" %}
-{% capture section_7 %}
 ## 🌱 The Wonky Sprout Philosophy
 
 {% capture section_philosophy %}
@@ -323,5 +303,3 @@ function clearAllData() {
   }, 2000);
 }
 </script>
-{% endcapture %}
-{% include card.html title="🌱 The Wonky Sprout Philosophy" content=section_7 classes="checklist-card" %}
