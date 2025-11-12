@@ -3,6 +3,8 @@ layout: default
 title: Weekdays at Mom's - Kids Protocol
 ---
 
+
+
 # WEEKDAYS AT MOM'S - KIDS PROTOCOL
 
 **For**: Willow (Age 6) and Sebastian (Age 9)  
@@ -11,6 +13,8 @@ title: Weekdays at Mom's - Kids Protocol
 
 ---
 
+{% capture section_1 %}
+{% capture section_1 %}
 ## 📄 HOW TO USE THIS CHECKLIST
 
 **Best Way**: **Print this page!** Then you can:
@@ -25,20 +29,12 @@ title: Weekdays at Mom's - Kids Protocol
 
 ---
 
-<h2 id="how-to-use">📄 HOW TO USE THIS CHECKLIST</h2>
-
-**Best Way**: **Print this page!** Then you can:
-- ✅ Check off boxes with a pencil each day
-- ✅ Keep it in your backpack or room
-- ✅ Look at it when you need help or feel stuck
-- ✅ Bring it to Dad's on Friday to show what you did
-
-**Mom Can Help Too**: Ask Mom to help you with this checklist if you need it!
-
-**On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
-
----
-
+{% endcapture %}
+{% include card.html title="📄 HOW TO USE THIS CHECKLIST" content=section_1 classes="checklist-card" %}
+{% capture section_2 %}
+{% endcapture %}
+{% include card.html title="📄 HOW TO USE THIS CHECKLIST" content=section_1 classes="checklist-card" %}
+{% capture section_2 %}
 ## 🚀 QUICK JUMP TO SECTION
 
 <div class="quick-jump-grid">
@@ -359,69 +355,6 @@ Even though Dad can't be there, you can still connect:
 
 ---
 
-<h2 id="bedtime">🛏️ BEDTIME WHEN DAD ISN'T THERE</h2>
-
-### Your Bedtime Routine at Mom's
-
-<div class="interactive-checklist">
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Bath or shower</span>
-  </label>
-  
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Put on pajamas</span>
-  </label>
-  
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Brush teeth (2 minutes!)</span>
-  </label>
-  
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Get in bed</span>
-  </label>
-  
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Bedtime routine (whatever Mom does)</span>
-  </label>
-  
-  <label class="checkbox-item">
-    <input type="checkbox" class="task-checkbox">
-    <span class="checkbox-label">Lights out</span>
-  </label>
-</div>
-
-### If You Have Trouble Sleeping
-**Things That Might Help:**
-
-1. **Think About Friday** - Picture Dad picking you up
-2. **Remember a Fun Time** - Think about last weekend
-3. **Count Backward** - From 100 or as high as you can
-4. **The Alphabets Game** - Name an animal for each letter (Alligator, Bear, Cat...)
-5. **Hug Your Stuffed Animal** - Pretend it's a hug from Dad
-6. **Say This to Yourself**: 
-   - "I am safe"
-   - "Mom is here"
-   - "I will see Dad soon"
-   - "Tomorrow will be okay"
-
-### Pretend Dad Is Saying Goodnight
-Close your eyes and imagine Dad is there saying:
-- "I love you"
-- "You're safe"
-- "You're doing great"
-- "I'm proud of you"
-- "I'll see you soon"
-- "Sleep well, kiddo"
-
-**Dad is thinking these things every single night, even if he can't say them in person.**
-
----
-
 <h2 id="school">🎒 SCHOOL SURVIVAL GUIDE</h2>
 
 ### If School Is Hard
@@ -661,3 +594,7 @@ Dad** 💙
 **Remember: You are brave. You are loved. You are NEVER alone. Dad is always with you in your heart, even when he's not next to you.** 
 
 **Four more days. You can do this.** 💪💙
+{% endcapture %}
+{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_2 classes="checklist-card" %}
+{% endcapture %}
+{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_2 classes="checklist-card" %}

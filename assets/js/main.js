@@ -1,59 +1,61 @@
 // Interactive block-card behavior + accessible modal + touch quick-action
 document.addEventListener('DOMContentLoaded', function () {
   // Single entry point for card behaviors
-  const container = document.querySelector('.main-content');
+  const mainContent = document.querySelector('.main-content');
 
   // Helper: find first usable link inside a node
   const firstLink = (node) => node.querySelector && node.querySelector('a[href]:not([href^="javascript:"])');
 
-  if (container) {
-    const candidates = Array.from(container.children).filter(el => el.nodeType === 1 && !el.matches('h1, .page-navigation, .skip-link'));
+  // New: Card creation logic from headings
+  if (mainContent && !mainContent.closest('.no-card-creation')) {
+    const headings = Array.from(mainContent.querySelectorAll('h2'));
+    headings.forEach(h2 => {
+      // Don't card-ify the quick jump section by checking its content
+      if (h2.textContent.includes('QUICK JUMP')) return;
 
-    candidates.forEach(block => {
-      const wrappingLink = block.querySelector('a.block-card') || (block.tagName === 'A' ? block : null);
-      if (wrappingLink && wrappingLink.href) {
-        wrappingLink.classList.add('block-card');
-        wrappingLink.setAttribute('role', 'link');
-        wrappingLink.tabIndex = 0;
-        return;
+      const cardWrapper = document.createElement('div');
+      cardWrapper.className = 'card block-card';
+      cardWrapper.setAttribute('role', 'region');
+      cardWrapper.setAttribute('tabindex', '0');
+      cardWrapper.setAttribute('aria-labelledby', h2.id);
+
+      mainContent.insertBefore(cardWrapper, h2);
+
+      const content = [h2];
+      let nextEl = h2.nextElementSibling;
+      while (nextEl && nextEl.tagName !== 'H2') {
+        content.push(nextEl);
+        nextEl = nextEl.nextElementSibling;
       }
 
-      const link = firstLink(block);
-      if (!link) return;
-      const href = link.getAttribute('href');
-      if (!href) return;
+      content.forEach(el => cardWrapper.appendChild(el));
 
-      block.classList.add('block-card');
-      block.setAttribute('role', 'link');
-      block.tabIndex = 0;
+      // Make card clickable if it contains a link
+      const link = firstLink(cardWrapper);
+      if (link) {
+        const href = link.getAttribute('href');
+        cardWrapper.classList.add('is-clickable');
+        cardWrapper.dataset.href = href;
 
-      const navigate = (targetHref) => { window.location.href = targetHref; };
+        const navigate = () => { window.location.href = href; };
 
-      block.addEventListener('click', function (e) {
-        const interactiveTags = ['A', 'BUTTON', 'INPUT', 'TEXTAREA', 'SELECT', 'LABEL'];
-        if (interactiveTags.includes(e.target.tagName)) return;
-        navigate(href);
-      });
+        cardWrapper.addEventListener('click', function (e) {
+          const interactiveTags = ['A', 'BUTTON', 'INPUT', 'TEXTAREA', 'SELECT', 'LABEL'];
+          if (e.target.closest(interactiveTags.join(','))) return;
+          navigate();
+        });
 
-      block.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          navigate(href);
-        }
-      });
+        cardWrapper.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            // Allow spacebar for inputs
+            if (e.key === ' ' && e.target.matches('input, textarea, button')) return;
+            e.preventDefault();
+            navigate();
+          }
+        });
+      }
     });
   }
-
-  // Enhance anchors that wrap entire blocks but lack the class
-  document.querySelectorAll('a').forEach(a => {
-    if (!a.classList) return;
-    if (a.classList.contains('block-card')) return;
-    if (a.children.length === 1 && a.firstElementChild && a.firstElementChild.parentElement === a) {
-      a.classList.add('block-card');
-      a.setAttribute('role', 'link');
-      a.tabIndex = 0;
-    }
-  });
 
   // -----------------------------
   // Modal plumbing (accessible)

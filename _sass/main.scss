@@ -4,7 +4,16 @@
 @import "base/layout";
 
 // Components
-@import "components";
+@import "components/buttons";
+@import "components/cards";
+@import "components/checklist-hub";
+@import "components/forms";
+@import "components/games";
+@import "components/info-box";
+@import "components/page-nav-links";
+@import "components/settings-page";
+@import "components/wonky-ai";
+
 
 // Page-specific styles
 @import "pages/keep-page";

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurodivergent-Friendly Navigation</title>
+    <style>
+        /* Low Sensory Color Palette & High Readability Typography */
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        /* Google Keep Style Card-Based Layout */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Card Styling */
+        .card {
+            display: block;
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        /* Subtle & Accessible Interaction */
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:focus-visible {
+            outline: 3px solid #005fcc;
+            outline-offset: 4px;
+        }
+
+        /* Optional Accent Colors */
+        .card.bg-soft-blue {
+            background-color: #e6f3ff;
+        }
+
+        .card.bg-soft-green {
+            background-color: #e6f8f0;
+        }
+
+        /* Card Content Example */
+        .card h2 {
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div class="card-grid">
+            <a href="#" class="card">
+                <h2>Daily Planner</h2>
+                <p>Organize your tasks and schedule for the day.</p>
+            </a>
+            <a href="#" class="card bg-soft-blue">
+                <h2>Focus Tools</h2>
+                <p>Timers and ambient sounds to help you concentrate.</p>
+            </a>
+            <a href="#" class="card">
+                <h2>Journal</h2>
+                <p>A quiet space for your thoughts and reflections.</p>
+            </a>
+            <a href="#" class="card bg-soft-green">
+                <h2>Resource Library</h2>
+                <p>Articles and guides on neurodiversity.</p>
+            </a>
+            <a href="#" class="card">
+                <h2>Sensory Break</h2>
+                <p>Calming visuals and breathing exercises.</p>
+            </a>
+            <a href="#" class="card">
+                <h2>Community</h2>
+                <p>Connect with others in a supportive environment.</p>
+            </a>
+             <a href="#" class="card bg-soft-green">
+                <h2>Settings</h2>
+                <p>Customize the interface to your preferences.</p>
+            </a>
+             <a href="#" class="card bg-soft-blue">
+                <h2>Project Tracker</h2>
+                <p>Manage your personal and professional projects.</p>
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>

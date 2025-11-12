@@ -2,73 +2,6 @@
    6. Components - Simplified for a Calm Experience
    ========================================================================== */
 
-/* --- Default Card / Content Block --- */
-.card {
-  background-color: var(--background-secondary);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 2px solid var(--border-color); /* Increased border width */
-  box-shadow: var(--shadow-sm);
-}
-
-.card-title {
-  font-size: 1.25rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.card-desc {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* --- Checklist Grid (for checklist index page) --- */
-.checklist-grid {
-  /* Using CSS Columns for masonry-like layout */
-  column-count: 2; /* Two columns by default */
-  column-gap: 1.5rem;
-}
-
-/* Ensure cards don't break across columns */
-.checklist-card {
-  -webkit-column-break-inside: avoid;
-  page-break-inside: avoid;
-  break-inside: avoid;
-  margin-bottom: 1.5rem; /* Add margin for spacing between cards in columns */
-
-  background-color: var(--background-secondary);
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: var(--text-primary);
-  border: 2px solid var(--border-color); /* Increased border width */
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
-  box-shadow: var(--shadow-sm); /* Added shadow for depth */
-}
-
-.checklist-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
-  border-color: var(--accent-primary);
-  text-decoration: none;
-}
-
-.card-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Card Color Variants */
-.checklist-card.is-green { border-top: 6px solid var(--color-green); } /* Increased border-top width */
-.checklist-card.is-yellow { border-top: 6px solid var(--color-yellow); } /* Increased border-top width */
-.checklist-card.is-blue { border-top: 6px solid var(--color-blue); } /* Increased border-top width */
-.checklist-card.is-purple { border-top: 6px solid var(--color-purple); } /* Increased border-top width */
-
-
 /* --- Info Box (for checklists.md) --- */
 .info-box {
   background: var(--background-secondary);
@@ -109,13 +42,6 @@
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
-  }
-}
-
-/* Responsive adjustments for columns */
-@media (max-width: 768px) {
-  .checklist-grid {
-    column-count: 1; /* Single column on smaller screens */
   }
 }
 
