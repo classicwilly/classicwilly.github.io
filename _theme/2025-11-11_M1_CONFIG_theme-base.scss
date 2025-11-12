@@ -1,0 +1,46 @@
+// Wonky Sprout OS Theme Base SCSS
+// Classicwilly protocol: anti-BS, neurodivergent-friendly, dark mode
+
+$bg: #0d1117;
+$card: #161b22;
+$text: #c9d1d9;
+$accent-teal: #1abc9c;
+$accent-blue: #58a6ff;
+$accent-green: #2ecc71;
+
+body {
+  background: $bg;
+  color: $text;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.card {
+  background: $card;
+  color: $text;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  padding: 2rem;
+  margin: 1.5rem 0;
+  transition: box-shadow 0.2s;
+}
+
+.card:focus, .card:hover {
+  box-shadow: 0 4px 16px $accent-teal;
+  outline: 2px solid $accent-teal;
+}
+
+a {
+  color: $accent-blue;
+  text-decoration: underline;
+}
+
+.access-panel {
+  background: $card;
+  color: $accent-green;
+  border: 2px solid $accent-green;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}

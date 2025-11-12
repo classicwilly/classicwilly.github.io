@@ -2,10 +2,6 @@
 layout: default
 title: Home - The Wonky Sprout
 ---
----
-layout: default
-title: Home - The Wonky Sprout
----
 <div class="card-grid">
     <a href="/daily-tracker" class="card">
         <h2>📊 Daily Tracker</h2>

@@ -10,6 +10,7 @@
     list-style: none;
 }
 
+
 .card {
     display: block;
     background-color: #ffffff;
@@ -17,7 +18,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     text-decoration: none;
-    color: inherit;
+    color: #333;
+    font-family: system-ui, Arial, sans-serif;
+    font-size: 1.08rem;
+    line-height: 1.6;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
@@ -45,6 +49,17 @@
     margin-bottom: 0.5rem;
 }
 
+
+.card h2 {
+    font-size: 1.35rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-weight: 600;
+}
 .card p {
     margin-bottom: 0;
+    color: #333;
+    font-size: 1.08rem;
+    line-height: 1.6;
 }

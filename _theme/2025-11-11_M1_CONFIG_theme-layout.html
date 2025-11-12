@@ -1,0 +1,27 @@
+<!-- Wonky Sprout OS Theme Layout -->
+<!-- Classicwilly protocol: anti-BS, neurodivergent-friendly, dark mode -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/theme-base.css">
+  </head>
+  <body>
+    <header style="background:#161b22;padding:1rem 2rem;border-bottom:2px solid #1abc9c;">
+      <h1 style="color:#1abc9c;font-size:2.2rem;">Wonky Sprout OS</h1>
+      <nav>
+        <a href="/index.html">Home</a> |
+        <a href="/sop-vault.md">SOP Vault</a> |
+        <a href="/catalog.md">Catalog</a>
+      </nav>
+    </header>
+    <main style="max-width:900px;margin:2rem auto;padding:0 1rem;">
+      {{ content }}
+    </main>
+    <footer style="background:#161b22;color:#c9d1d9;padding:1rem 2rem;margin-top:2rem;text-align:center;">
+      <small>Built by classicwilly. Neurodivergent life management, anti-BS.</small>
+    </footer>
+  </body>
+</html>
