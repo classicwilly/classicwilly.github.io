@@ -1,7 +1,8 @@
 
 // ND-Friendly Button Styles
+
 .btn, .spawn-button, .reset-button {
-  font-family: $nd-font-family;
+  font-family: var(--font-family);
   padding: 0.8rem 1.8rem;
   border-radius: 16px;
   cursor: pointer;
@@ -10,23 +11,23 @@
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  background-color: $nd-accent-blue;
-  color: $nd-bg-color;
-  box-shadow: 0 4px 16px $nd-shadow-color, 0 1px 4px $nd-shadow-hover-color;
+  background-color: var(--accent-blue);
+  color: var(--bg-color);
+  box-shadow: var(--card-shadow), var(--card-shadow-hover);
   letter-spacing: 0.02em;
 }
 
 .btn:hover, .spawn-button:hover, .reset-button:hover {
-  background-color: $nd-accent-green;
-  color: $nd-text-color;
-  box-shadow: 0 8px 32px $nd-shadow-hover-color;
+  background-color: var(--accent-green);
+  color: var(--text-color);
+  box-shadow: var(--card-shadow-hover);
   transform: translateY(-1px) scale(1.03);
 }
 
 .btn-primary {
-  background-color: $nd-accent-green;
+  background-color: var(--accent-green);
   border: none;
-  color: $nd-bg-color;
+  color: var(--bg-color);
   font-weight: 700;
   &:hover {
     opacity: 0.9;

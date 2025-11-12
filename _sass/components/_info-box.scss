@@ -1,14 +1,15 @@
 // ND-Friendly Info Box Styles
+// ND-Friendly Info Box Styles
 .info-box {
-  background-color: $nd-card-bg;
-  color: $nd-focus-outline;
-  border-radius: 18px;
-  box-shadow: 0 4px 10px $nd-shadow-color;
+  background-color: var(--card-bg);
+  color: var(--focus-outline);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
   padding: 1.6rem 2.2rem;
   margin: 2rem 0;
   font-size: 1.13rem;
   letter-spacing: 0.012em;
-  border: 2px solid $nd-focus-outline;
+  border: 2px solid var(--focus-outline);
 }
 /* /_sass/components/_info-box.scss */
 

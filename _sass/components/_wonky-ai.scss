@@ -6,12 +6,13 @@
   right: 20px;
   z-index: 1010;
 }
+// ...existing code...
 .fab {
-  background-color: $nd-accent-blue;
-  color: $nd-card-bg;
+  background-color: var(--accent-blue);
+  color: var(--card-bg);
   border: none;
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  box-shadow: 0 4px 10px $nd-shadow-color;
+  box-shadow: var(--card-shadow);
 }

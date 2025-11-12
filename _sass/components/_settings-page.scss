@@ -1,13 +1,15 @@
 // ND-Friendly Access Panel Styles
+// ...existing code...
+// ND-Friendly Access Panel Styles
 .access-panel {
-  background-color: $nd-card-bg;
-  color: $nd-accent-green;
-  border: 2.5px solid $nd-accent-green;
+  background-color: var(--card-bg);
+  color: var(--accent-green);
+  border: 2.5px solid var(--accent-green);
   padding: 1.4rem 2rem;
-  border-radius: 18px;
+  border-radius: var(--card-radius);
   margin-bottom: 2.4rem;
   font-size: 1.13rem;
-  box-shadow: 0 2px 10px $nd-shadow-color;
+  box-shadow: var(--card-shadow);
   letter-spacing: 0.012em;
 }
 /* ==========================================================================
