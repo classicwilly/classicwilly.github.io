@@ -1,0 +1,11 @@
+{
+  "name": "wonky-sprout-os",
+  "version": "1.0.0",
+  "description": "Minimal Node.js package for SCSS build in Wonky Sprout OS",
+  "scripts": {
+    "build:css": "sass _sass/main.scss assets/main.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
