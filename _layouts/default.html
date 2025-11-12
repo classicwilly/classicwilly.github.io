@@ -56,47 +56,20 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+    <!-- ND Card Nav Bar -->
+    <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
+      <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--accent-green);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/workspace">💼 Workspace</a>
+      <a class="card nd-nav-link" style="background:var(--accent-yellow);border:2px solid var(--accent-yellow);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/catalog">📇 Card Catalog</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/fix">🔧 Fix-It Blueprint</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--accent-blue);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/daily-tracker">📊 Daily Tracker</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--accent-green);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/sop-vault">📚 SOP Vault</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/command-center">⚙️ Command Center</a>
+      <a class="card nd-nav-link" style="background:var(--card-bg);border:2px solid var(--accent-yellow);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/settings">⚙ Settings</a>
+    </nav>
     <div class="page-container">
   <!-- COLUMN 1: THE "BLUEPRINT" (Sidebar Navigation) -->
-  <nav class="sidebar" id="desktop-nav" role="navigation" aria-label="Primary">
-            <div class="sidebar-header">
-                <span class="sidebar-title">Wonky Sprout OS</span>
-                <p class="sidebar-tagline">Internal Blueprint</p>
-            </div>
-      <div class="sidebar-section-title">Quick Links</div>
-      <ul class="sidebar-nav">
-        <li><a href="/" {% if page.url == '/' %}aria-current="page" class="is-active"{% endif %}>🏠 Home</a></li>
-        <li><a href="/workspace" {% if page.url contains 'workspace' %}aria-current="page" class="is-active"{% endif %}>💼 Workspace</a></li>
-        <li><a href="/catalog" {% if page.url contains 'catalog' %}aria-current="page" class="is-active"{% endif %}>📇 Card Catalog</a></li>
-        <li><a href="/fix" {% if page.url contains 'fix' %}aria-current="page" class="is-active"{% endif %}>🔧 Fix-It Blueprint</a></li>
-        <li><a href="/daily-tracker" {% if page.url contains 'daily-tracker' %}aria-current="page" class="is-active"{% endif %}>📊 Daily Tracker</a></li>
-        <li><a href="/sop-vault" {% if page.url contains 'sop-vault' %}aria-current="page" class="is-active"{% endif %}>📚 SOP Vault</a></li>
-        <li><a href="/command-center" {% if page.url contains 'command-center' %}aria-current="page" class="is-active"{% endif %}>⚙️ Command Center</a></li>
-        <li><a href="/settings" {% if page.url contains 'settings' %}aria-current="page" class="is-active"{% endif %}>⚙ Settings</a></li>
-      </ul>
-
-      <div class="sidebar-section-title">All Pages</div>
-  <details class="sidebar-allpages">
-        <summary class="sidebar-more-toggle">More ▾</summary>
-        <ul class="sidebar-nav sidebar-allpages-list">
-          {%- assign site_pages = site.pages | sort: 'url' -%}
-          {%- for p in site_pages -%}
-            {%- if p.title and p.url contains '/' -%}
-              {%- unless p.url contains '/assets/' or p.url == '/' -%}
-                <li><a href="{{ p.url | relative_url }}" {% if page.url == p.url %}aria-current="page" class="is-active"{% endif %}>{{ p.title }}</a></li>
-              {%- endunless -%}
-            {%- endif -%}
-          {%- endfor -%}
-        </ul>
-      </details>
-      <div class="section-divider" aria-hidden="true"></div>
-      <div class="sidebar-section-title">Protocols</div>
-      <ul class="sidebar-nav">
-        <li><a href="/2025-11-08_M4_SOP_solo-execution-mode">🧭 Solo Execution</a></li>
-        <li><a href="/2025-11-08_M4_SOP_morning-transition-protocol">⏰ Morning Transition</a></li>
-        <li><a href="/2025-11-08_M4_SOP_house-cleaning-protocol">🧺 House Cleaning</a></li>
-      </ul>
-        </nav>
+  <!-- Sidebar nav removed for ND card nav bar -->
         <!-- Mobile Navigation (Hamburger Menu) -->
         <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="mobile-nav" aria-expanded="false">
             <span class="sr-only">Menu</span>
