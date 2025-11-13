@@ -1,16 +1,17 @@
 // ND-Friendly Games Box Styles
 // ...existing code...
 // ND-Friendly Games Box Styles
+
 .games-box {
   background-color: var(--card-bg);
-  color: var(--accent-blue);
+  color: var(--text-color);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   padding: 2rem 2.6rem;
   margin: 2.2rem 0;
   font-size: 1.15rem;
   letter-spacing: 0.013em;
-  border: 2px solid var(--accent-blue);
+  border: 2px solid #58a6ff44; // soft blue accent
 }
 // This file contains all styles related to the Stim Station games page.
 

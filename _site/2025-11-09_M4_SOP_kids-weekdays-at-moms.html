@@ -56,6 +56,14 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- ND Live Progress Bar -->
+    <div id="nd-progress-bar-container" style="width:100%;max-width:900px;margin:0 auto 1.2rem auto;">
+      <div id="nd-progress-bar-label" style="font-size:1rem;color:var(--text-secondary);margin-bottom:0.2rem;text-align:center;">Progress: <span id="nd-progress-bar-status">Idle</span></div>
+      <div style="background:var(--card-bg);border-radius:8px;box-shadow:var(--card-shadow);height:18px;width:100%;overflow:hidden;">
+        <div id="nd-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent-primary),var(--color-teal));transition:width 0.4s;"></div>
+      </div>
+    </div>
     <!-- ND Card Nav Bar -->
     <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
       <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
@@ -93,14 +101,15 @@
 <strong>Purpose</strong>: Help you have a good week even when Dad can’t be there. You’ve got tools to help yourself.</p>
 
 <hr />
+<h2 id="-how-to-use-this-checklist">📄 HOW TO USE THIS CHECKLIST</h2>
 
-<div class="checklist-card">
-    
-  <h3 class="card-title">🚀 QUICK JUMP TO SECTION</h3>
-  
-  <div class="card-modal-content" hidden="">
-      
-## 🚀 QUICK JUMP TO SECTION
+<p><strong>Best Way</strong>: <strong>Print this page!</strong> Then you can:</p>
+
+<p><strong>Mom Can Help Too</strong>: Ask Mom to help you with this checklist if you need it!</p>
+
+<p><strong>On Computer</strong>: The checkboxes work on the website too, but they reset when you close the page. Printing is better!</p>
+
+<h2 id="-quick-jump-to-section">🚀 QUICK JUMP TO SECTION</h2>
 
 <div class="quick-jump-grid">
   <a href="#what-week-looks-like">🏠 What to Expect</a>
@@ -115,29 +124,29 @@
   <a href="#emergency">🚨 Emergency</a>
 </div>
 
----
-
 <h2 id="what-week-looks-like">🏠 WHAT THIS WEEK LOOKS LIKE</h2>
 
-### Monday-Friday at Mom's
-- You go to school
-- You come home to Mom's house
-- You do homework
-- You have dinner
-- You have evening time
-- You go to bed
-- You wake up and do it again
+<h3 id="monday-friday-at-moms">Monday-Friday at Mom’s</h3>
+<ul>
+  <li>You go to school</li>
+  <li>You come home to Mom’s house</li>
+  <li>You do homework</li>
+  <li>You have dinner</li>
+  <li>You have evening time</li>
+  <li>You go to bed</li>
+  <li>You wake up and do it again</li>
+</ul>
 
-### Dad's Promise
-Even though Dad isn't there during the week, **Dad is still your dad**. Dad still loves you. Dad still thinks about you every single day.
+<h3 id="dads-promise">Dad’s Promise</h3>
+<p>Even though Dad isn’t there during the week, <strong>Dad is still your dad</strong>. Dad still loves you. Dad still thinks about you every single day.</p>
 
-**This paper is like having a little piece of Dad's help with you at Mom's house.**
+<p><strong>This paper is like having a little piece of Dad’s help with you at Mom’s house.</strong></p>
 
----
+<hr />
 
 <h2 id="daily-checklist">📋 YOUR WEEKDAY CHECKLIST (Do These Every Day)</h2>
 
-### Morning Checklist (Before School)
+<h3 id="morning-checklist-before-school">Morning Checklist (Before School)</h3>
 
 <div class="interactive-checklist">
   <label class="form-checkbox-group">
@@ -181,9 +190,9 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
   </label>
 </div>
 
-**If mornings are hard**: Do one thing at a time. Don't think about the whole list.
+<p><strong>If mornings are hard</strong>: Do one thing at a time. Don’t think about the whole list.</p>
 
-### After School Checklist
+<h3 id="after-school-checklist">After School Checklist</h3>
 
 <div class="interactive-checklist">
   <label class="form-checkbox-group">
@@ -217,7 +226,7 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
   </label>
 </div>
 
-### Evening Checklist
+<h3 id="evening-checklist">Evening Checklist</h3>
 
 <div class="interactive-checklist">
   <label class="form-checkbox-group">
@@ -261,262 +270,317 @@ Even though Dad isn't there during the week, **Dad is still your dad**. Dad stil
   </label>
 </div>
 
----
+<hr />
 
 <h2 id="homework">📚 HOMEWORK HELPER (When Homework Feels Hard)</h2>
 
-### Step-by-Step Homework Plan
-1. **Find a quiet spot** - Ask Mom for a place with no TV
-2. **Get supplies** - Pencil, paper, books, whatever you need
-3. **Set a timer** - Start with 15 minutes
-4. **Work until timer beeps** - Try your best
-5. **Take a 5-minute break** - Stand up, stretch, get water
-6. **Do another 15 minutes** - If you have more work
-7. **Done!** - Put homework in backpack
+<h3 id="step-by-step-homework-plan">Step-by-Step Homework Plan</h3>
+<ol>
+  <li><strong>Find a quiet spot</strong> - Ask Mom for a place with no TV</li>
+  <li><strong>Get supplies</strong> - Pencil, paper, books, whatever you need</li>
+  <li><strong>Set a timer</strong> - Start with 15 minutes</li>
+  <li><strong>Work until timer beeps</strong> - Try your best</li>
+  <li><strong>Take a 5-minute break</strong> - Stand up, stretch, get water</li>
+  <li><strong>Do another 15 minutes</strong> - If you have more work</li>
+  <li><strong>Done!</strong> - Put homework in backpack</li>
+</ol>
 
-### When Homework Feels Impossible
-**Try these tricks:**
-- **Read the directions twice** - Sometimes the second time makes sense
-- **Do the easy parts first** - Skip the hard ones for now
-- **Ask Mom for help** - She might know (or can look it up)
-- **Call or text Dad** - If Mom says it's okay, Dad can help over the phone
-- **Write a note to the teacher** - "I tried but didn't understand" is honest
-- **Do your best** - That's all Dad asks
+<h3 id="when-homework-feels-impossible">When Homework Feels Impossible</h3>
+<p><strong>Try these tricks:</strong></p>
+<ul>
+  <li><strong>Read the directions twice</strong> - Sometimes the second time makes sense</li>
+  <li><strong>Do the easy parts first</strong> - Skip the hard ones for now</li>
+  <li><strong>Ask Mom for help</strong> - She might know (or can look it up)</li>
+  <li><strong>Call or text Dad</strong> - If Mom says it’s okay, Dad can help over the phone</li>
+  <li><strong>Write a note to the teacher</strong> - “I tried but didn’t understand” is honest</li>
+  <li><strong>Do your best</strong> - That’s all Dad asks</li>
+</ul>
 
-### If You Forget Homework at School
-It's okay. It happens. Tell your teacher in the morning. Don't lie about it.
+<h3 id="if-you-forget-homework-at-school">If You Forget Homework at School</h3>
+<p>It’s okay. It happens. Tell your teacher in the morning. Don’t lie about it.</p>
 
----
+<hr />
 
 <h2 id="bored">🎨 THINGS TO DO WHEN YOU'RE BORED (Without a Tablet)</h2>
 
-### If You Only Have Paper and Pencil
-1. **Draw** - Anything! Animals, houses, patterns, scribbles
-2. **Write a story** - Make up anything you want
-3. **Make a list** - Favorite foods, animals, colors, anything
-4. **Draw Dad a picture** - Keep it to give him on Friday
-5. **Make a paper airplane** - See how far it flies
-6. **Play tic-tac-toe** - By yourself (try to win!)
-7. **Trace your hand** - Make it into a turkey or monster
-8. **Make a paper fortune teller** - Fold and write silly fortunes
+<h3 id="if-you-only-have-paper-and-pencil">If You Only Have Paper and Pencil</h3>
+<ol>
+  <li><strong>Draw</strong> - Anything! Animals, houses, patterns, scribbles</li>
+  <li><strong>Write a story</strong> - Make up anything you want</li>
+  <li><strong>Make a list</strong> - Favorite foods, animals, colors, anything</li>
+  <li><strong>Draw Dad a picture</strong> - Keep it to give him on Friday</li>
+  <li><strong>Make a paper airplane</strong> - See how far it flies</li>
+  <li><strong>Play tic-tac-toe</strong> - By yourself (try to win!)</li>
+  <li><strong>Trace your hand</strong> - Make it into a turkey or monster</li>
+  <li><strong>Make a paper fortune teller</strong> - Fold and write silly fortunes</li>
+</ol>
 
-### If You Have Some Toys at Mom's
-1. **Build with what you have** - Blocks, boxes, pillows
-2. **Stuffed animal adventures** - Make up stories with them
-3. **Pretend play** - You're a teacher, chef, astronaut, anything
-4. **Organize your toys** - Sort by color, size, type
-5. **Make a fort** - Use blankets and pillows (ask Mom first)
+<h3 id="if-you-have-some-toys-at-moms">If You Have Some Toys at Mom’s</h3>
+<ol>
+  <li><strong>Build with what you have</strong> - Blocks, boxes, pillows</li>
+  <li><strong>Stuffed animal adventures</strong> - Make up stories with them</li>
+  <li><strong>Pretend play</strong> - You’re a teacher, chef, astronaut, anything</li>
+  <li><strong>Organize your toys</strong> - Sort by color, size, type</li>
+  <li><strong>Make a fort</strong> - Use blankets and pillows (ask Mom first)</li>
+</ol>
 
-### Things You Can Do Alone
-1. **Read any book** - Even if you've read it before
-2. **Look out the window** - Watch birds, cars, clouds
-3. **Sing songs** - Make up your own
-4. **Practice writing your name** - Make it fancy
-5. **Count things** - How many steps to your room? How many toys?
-6. **Think about the weekend** - Plan what you want to do at Dad's
+<h3 id="things-you-can-do-alone">Things You Can Do Alone</h3>
+<ol>
+  <li><strong>Read any book</strong> - Even if you’ve read it before</li>
+  <li><strong>Look out the window</strong> - Watch birds, cars, clouds</li>
+  <li><strong>Sing songs</strong> - Make up your own</li>
+  <li><strong>Practice writing your name</strong> - Make it fancy</li>
+  <li><strong>Count things</strong> - How many steps to your room? How many toys?</li>
+  <li><strong>Think about the weekend</strong> - Plan what you want to do at Dad’s</li>
+</ol>
 
-### Things to Ask Mom to Do
-1. **Go outside** - Even just the backyard
-2. **Help cook dinner** - Kids can help!
-3. **Play a game** - Cards, board game, anything
-4. **Take a walk** - Around the block
-5. **Do a puzzle** - If she has one
-6. **Ask her to read to you** - Even if you can read yourself
+<h3 id="things-to-ask-mom-to-do">Things to Ask Mom to Do</h3>
+<ol>
+  <li><strong>Go outside</strong> - Even just the backyard</li>
+  <li><strong>Help cook dinner</strong> - Kids can help!</li>
+  <li><strong>Play a game</strong> - Cards, board game, anything</li>
+  <li><strong>Take a walk</strong> - Around the block</li>
+  <li><strong>Do a puzzle</strong> - If she has one</li>
+  <li><strong>Ask her to read to you</strong> - Even if you can read yourself</li>
+</ol>
 
----
+<hr />
 
 <h2 id="sad-mad-scared">😰 WHEN YOU FEEL SAD, MAD, OR SCARED</h2>
 
-### Big Feelings Are Normal
-At Mom's house, you might feel:
-- **Sad** - You miss Dad, you miss your stuff, you miss the weekend
-- **Mad** - You don't want to be at two houses
-- **Bored** - You don't have your LEGOs or your room at Dad's
-- **Lonely** - You wish someone would play with you
-- **Worried** - About school, friends, Mom and Dad, lots of things
+<h3 id="big-feelings-are-normal">Big Feelings Are Normal</h3>
+<p>At Mom’s house, you might feel:</p>
+<ul>
+  <li><strong>Sad</strong> - You miss Dad, you miss your stuff, you miss the weekend</li>
+  <li><strong>Mad</strong> - You don’t want to be at two houses</li>
+  <li><strong>Bored</strong> - You don’t have your LEGOs or your room at Dad’s</li>
+  <li><strong>Lonely</strong> - You wish someone would play with you</li>
+  <li><strong>Worried</strong> - About school, friends, Mom and Dad, lots of things</li>
+</ul>
 
-**ALL OF THESE ARE OKAY. You're not bad for feeling this way.**
+<p><strong>ALL OF THESE ARE OKAY. You’re not bad for feeling this way.</strong></p>
 
-### What You Can Do Right Now (By Yourself)
+<h3 id="what-you-can-do-right-now-by-yourself">What You Can Do Right Now (By Yourself)</h3>
 
-#### 1. Breathing Exercise
-- Breathe in slowly (count to 4)
-- Hold it (count to 4)
-- Breathe out slowly (count to 4)
-- Do this 3 times
-- You might feel a little calmer
+<h4 id="1-breathing-exercise">1. Breathing Exercise</h4>
+<ul>
+  <li>Breathe in slowly (count to 4)</li>
+  <li>Hold it (count to 4)</li>
+  <li>Breathe out slowly (count to 4)</li>
+  <li>Do this 3 times</li>
+  <li>You might feel a little calmer</li>
+</ul>
 
-#### 2. Tell Your Stuffed Animal
-- Find any stuffed animal or toy
-- Tell it how you feel
-- It's okay if you cry
-- The toy won't judge you
+<h4 id="2-tell-your-stuffed-animal">2. Tell Your Stuffed Animal</h4>
+<ul>
+  <li>Find any stuffed animal or toy</li>
+  <li>Tell it how you feel</li>
+  <li>It’s okay if you cry</li>
+  <li>The toy won’t judge you</li>
+</ul>
 
-#### 3. Draw Your Feelings
-- Get paper and crayons/pencil
-- Draw how you feel (doesn't have to look like anything)
-- Mad might be scribbles, sad might be rain
-- You can rip it up after if you want
+<h4 id="3-draw-your-feelings">3. Draw Your Feelings</h4>
+<ul>
+  <li>Get paper and crayons/pencil</li>
+  <li>Draw how you feel (doesn’t have to look like anything)</li>
+  <li>Mad might be scribbles, sad might be rain</li>
+  <li>You can rip it up after if you want</li>
+</ul>
 
-#### 4. Count Things
-- Count backward from 100 (or as high as you can)
-- Count all the things you can see that are blue
-- Count your breaths
-- This gives your brain something else to do
+<h4 id="4-count-things">4. Count Things</h4>
+<ul>
+  <li>Count backward from 100 (or as high as you can)</li>
+  <li>Count all the things you can see that are blue</li>
+  <li>Count your breaths</li>
+  <li>This gives your brain something else to do</li>
+</ul>
 
-#### 5. Move Your Body
-- Do 10 jumping jacks
-- Run in place for 30 seconds
-- Dance to a song in your head
-- Shake your arms and legs
-- Movement helps big feelings
+<h4 id="5-move-your-body">5. Move Your Body</h4>
+<ul>
+  <li>Do 10 jumping jacks</li>
+  <li>Run in place for 30 seconds</li>
+  <li>Dance to a song in your head</li>
+  <li>Shake your arms and legs</li>
+  <li>Movement helps big feelings</li>
+</ul>
 
-### What to Say to Mom
-If you need to talk to Mom about feelings:
-- "I feel sad"
-- "I miss Dad"
-- "I need a hug"
-- "Can I call Dad?"
-- "I don't want to talk about it, but I'm upset"
+<h3 id="what-to-say-to-mom">What to Say to Mom</h3>
+<p>If you need to talk to Mom about feelings:</p>
+<ul>
+  <li>“I feel sad”</li>
+  <li>“I miss Dad”</li>
+  <li>“I need a hug”</li>
+  <li>“Can I call Dad?”</li>
+  <li>“I don’t want to talk about it, but I’m upset”</li>
+</ul>
 
-**Mom loves you too. She wants to help even if she doesn't know how.**
+<p><strong>Mom loves you too. She wants to help even if she doesn’t know how.</strong></p>
 
----
+<hr />
 
 <h2 id="call-dad">📞 CONNECTING WITH DAD DURING THE WEEK</h2>
 
-### You Can Talk to Dad
-Even though Dad can't be there, you can still connect:
+<h3 id="you-can-talk-to-dad">You Can Talk to Dad</h3>
+<p>Even though Dad can’t be there, you can still connect:</p>
 
-#### Text Messages (Mom Can Help You)
-- Send Dad a text: "Hi Dad I miss you"
-- Tell Dad about your day: "We learned about space today"
-- Ask Dad a question: "What's for dinner this weekend?"
-- Send a picture: Draw something and have Mom take a photo
+<h4 id="text-messages-mom-can-help-you">Text Messages (Mom Can Help You)</h4>
+<ul>
+  <li>Send Dad a text: “Hi Dad I miss you”</li>
+  <li>Tell Dad about your day: “We learned about space today”</li>
+  <li>Ask Dad a question: “What’s for dinner this weekend?”</li>
+  <li>Send a picture: Draw something and have Mom take a photo</li>
+</ul>
 
-#### Phone Calls
-- **Best times to call Dad**: 
-  - After school (4:00-5:00 PM) - Dad is on his break
-  - After dinner (7:00-8:00 PM) - Dad is done working
-  - Bedtime (8:00 PM) - Dad always has time to say goodnight
+<h4 id="phone-calls">Phone Calls</h4>
+<ul>
+  <li><strong>Best times to call Dad</strong>:
+    <ul>
+      <li>After school (4:00-5:00 PM) - Dad is on his break</li>
+      <li>After dinner (7:00-8:00 PM) - Dad is done working</li>
+      <li>Bedtime (8:00 PM) - Dad always has time to say goodnight</li>
+    </ul>
+  </li>
+</ul>
 
-**Ask Mom**: "Can I call Dad?" She should say yes.
+<p><strong>Ask Mom</strong>: “Can I call Dad?” She should say yes.</p>
 
-#### If Mom Says No or Forgets
-- It's not your fault
-- Mom is doing her best
-- You'll see Dad on Friday
-- Dad knows you love him even if you can't call
+<h4 id="if-mom-says-no-or-forgets">If Mom Says No or Forgets</h4>
+<ul>
+  <li>It’s not your fault</li>
+  <li>Mom is doing her best</li>
+  <li>You’ll see Dad on Friday</li>
+  <li>Dad knows you love him even if you can’t call</li>
+</ul>
 
-### What to Talk to Dad About
-- How school went
-- Something funny that happened
-- A problem you're having
-- How you're feeling
-- What you want to do this weekend
-- Nothing at all - just hear his voice
+<h3 id="what-to-talk-to-dad-about">What to Talk to Dad About</h3>
+<ul>
+  <li>How school went</li>
+  <li>Something funny that happened</li>
+  <li>A problem you’re having</li>
+  <li>How you’re feeling</li>
+  <li>What you want to do this weekend</li>
+  <li>Nothing at all - just hear his voice</li>
+</ul>
 
-**You can call for any reason. Dad wants to hear from you.**
+<p><strong>You can call for any reason. Dad wants to hear from you.</strong></p>
 
----
+<hr />
 
 <h2 id="school">🎒 SCHOOL SURVIVAL GUIDE</h2>
 
-### If School Is Hard
-1. **Ask your teacher for help** - That's their job
-2. **Sit in the front** - It's easier to pay attention
-3. **Be honest** - "I don't understand" is a good thing to say
-4. **Take breaks** - Ask for bathroom break if you need a minute
-5. **Do your best** - Nobody's perfect
+<h3 id="if-school-is-hard">If School Is Hard</h3>
+<ol>
+  <li><strong>Ask your teacher for help</strong> - That’s their job</li>
+  <li><strong>Sit in the front</strong> - It’s easier to pay attention</li>
+  <li><strong>Be honest</strong> - “I don’t understand” is a good thing to say</li>
+  <li><strong>Take breaks</strong> - Ask for bathroom break if you need a minute</li>
+  <li><strong>Do your best</strong> - Nobody’s perfect</li>
+</ol>
 
-### If Someone Is Mean to You
-1. **Walk away** - You don't have to listen to mean people
-2. **Tell a teacher** - They need to know
-3. **Tell Mom** - She can help
-4. **Tell Dad on Friday** - Dad will help figure it out
-5. **Remember**: Their meanness is about them, not you
+<h3 id="if-someone-is-mean-to-you">If Someone Is Mean to You</h3>
+<ol>
+  <li><strong>Walk away</strong> - You don’t have to listen to mean people</li>
+  <li><strong>Tell a teacher</strong> - They need to know</li>
+  <li><strong>Tell Mom</strong> - She can help</li>
+  <li><strong>Tell Dad on Friday</strong> - Dad will help figure it out</li>
+  <li><strong>Remember</strong>: Their meanness is about them, not you</li>
+</ol>
 
-### If You Get in Trouble
-1. **Tell the truth** - Don't lie to make it better
-2. **Accept the consequence** - Say "okay" and move on
-3. **Tell Mom** - Even if you're scared to
-4. **Tell Dad** - Dad won't be mad at you for being honest
-5. **Learn from it** - Try not to do it again
+<h3 id="if-you-get-in-trouble">If You Get in Trouble</h3>
+<ol>
+  <li><strong>Tell the truth</strong> - Don’t lie to make it better</li>
+  <li><strong>Accept the consequence</strong> - Say “okay” and move on</li>
+  <li><strong>Tell Mom</strong> - Even if you’re scared to</li>
+  <li><strong>Tell Dad</strong> - Dad won’t be mad at you for being honest</li>
+  <li><strong>Learn from it</strong> - Try not to do it again</li>
+</ol>
 
-**You're going to make mistakes. That's how kids learn.**
+<p><strong>You’re going to make mistakes. That’s how kids learn.</strong></p>
 
----
+<hr />
 
 <h2 id="eating">🍽️ EATING AT MOM'S HOUSE</h2>
 
-### If Mom Makes Something You Don't Like
-- Try one bite (just one!)
-- If you really can't eat it, say politely: "May I have something else?"
-- If Mom says no, eat what you can
-- You won't starve - breakfast comes tomorrow
-- Tell Dad about it Friday (maybe he can help pack snacks for you)
+<h3 id="if-mom-makes-something-you-dont-like">If Mom Makes Something You Don’t Like</h3>
+<ul>
+  <li>Try one bite (just one!)</li>
+  <li>If you really can’t eat it, say politely: “May I have something else?”</li>
+  <li>If Mom says no, eat what you can</li>
+  <li>You won’t starve - breakfast comes tomorrow</li>
+  <li>Tell Dad about it Friday (maybe he can help pack snacks for you)</li>
+</ul>
 
-### If You're Still Hungry
-- Ask Mom: "May I have a snack?"
-- Suggestions: Apple, crackers, cheese, anything simple
-- It's okay to be hungry - growing kids get hungry!
+<h3 id="if-youre-still-hungry">If You’re Still Hungry</h3>
+<ul>
+  <li>Ask Mom: “May I have a snack?”</li>
+  <li>Suggestions: Apple, crackers, cheese, anything simple</li>
+  <li>It’s okay to be hungry - growing kids get hungry!</li>
+</ul>
 
-### Foods That Are Usually at Every House
-- Bread (make toast)
-- Cereal
-- Fruit (usually apples or bananas)
-- Crackers
-- Peanut butter (if you're not allergic)
+<h3 id="foods-that-are-usually-at-every-house">Foods That Are Usually at Every House</h3>
+<ul>
+  <li>Bread (make toast)</li>
+  <li>Cereal</li>
+  <li>Fruit (usually apples or bananas)</li>
+  <li>Crackers</li>
+  <li>Peanut butter (if you’re not allergic)</li>
+</ul>
 
-**If there's really no food, tell Dad. Dad can help.**
+<p><strong>If there’s really no food, tell Dad. Dad can help.</strong></p>
 
----
+<hr />
 
 <h2 id="track-days">🗓️ KEEPING TRACK OF DAYS</h2>
 
-### How Many Days Until Dad?
+<h3 id="how-many-days-until-dad">How Many Days Until Dad?</h3>
 
-**Monday**: 4 more days (almost a whole week)  
-**Tuesday**: 3 more days (you're getting close!)  
-**Wednesday**: 2 more days (middle of the week!)  
-**Thursday**: 1 more day (tomorrow is Friday!)  
-**Friday**: TODAY! Dad picks you up after school! 🎉
+<p><strong>Monday</strong>: 4 more days (almost a whole week)<br />
+<strong>Tuesday</strong>: 3 more days (you’re getting close!)<br />
+<strong>Wednesday</strong>: 2 more days (middle of the week!)<br />
+<strong>Thursday</strong>: 1 more day (tomorrow is Friday!)<br />
+<strong>Friday</strong>: TODAY! Dad picks you up after school! 🎉</p>
 
-### Make a Paper Chain
-1. Get 4 strips of paper (Mom can help cut them)
-2. Write one day on each: Monday, Tuesday, Wednesday, Thursday
-3. Connect them in a chain (tape or staple)
-4. Each morning, tear off one link
-5. When the chain is gone, it's Friday!
+<h3 id="make-a-paper-chain">Make a Paper Chain</h3>
+<ol>
+  <li>Get 4 strips of paper (Mom can help cut them)</li>
+  <li>Write one day on each: Monday, Tuesday, Wednesday, Thursday</li>
+  <li>Connect them in a chain (tape or staple)</li>
+  <li>Each morning, tear off one link</li>
+  <li>When the chain is gone, it’s Friday!</li>
+</ol>
 
-### Or Draw It
-Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are colored, you see Dad tomorrow!
+<h3 id="or-draw-it">Or Draw It</h3>
+<p>Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are colored, you see Dad tomorrow!</p>
 
----
+<hr />
 
 <h2 id="stronger">💪 YOU ARE STRONGER THAN YOU THINK</h2>
 
-### Things You Can Do Without Dad
-- Get through a whole school day
-- Do your homework (mostly)
-- Be kind to others
-- Take care of yourself
-- Help Mom (if she needs it)
-- Handle your big feelings
-- Wake up and try again the next day
+<h3 id="things-you-can-do-without-dad">Things You Can Do Without Dad</h3>
+<ul>
+  <li>Get through a whole school day</li>
+  <li>Do your homework (mostly)</li>
+  <li>Be kind to others</li>
+  <li>Take care of yourself</li>
+  <li>Help Mom (if she needs it)</li>
+  <li>Handle your big feelings</li>
+  <li>Wake up and try again the next day</li>
+</ul>
 
-### Things to Remember
-1. **This is temporary** - You will see Dad again
-2. **You are loved** - By Dad, by Mom, by people who care
-3. **You're doing great** - Even when it doesn't feel like it
-4. **It's okay to struggle** - This IS hard
-5. **Friday always comes** - Every week, without fail
+<h3 id="things-to-remember">Things to Remember</h3>
+<ol>
+  <li><strong>This is temporary</strong> - You will see Dad again</li>
+  <li><strong>You are loved</strong> - By Dad, by Mom, by people who care</li>
+  <li><strong>You’re doing great</strong> - Even when it doesn’t feel like it</li>
+  <li><strong>It’s okay to struggle</strong> - This IS hard</li>
+  <li><strong>Friday always comes</strong> - Every week, without fail</li>
+</ol>
 
----
+<hr />
 
 <h2 id="weekly-reflection">📝 WEEKLY REFLECTION (Answer on Friday Afternoon)</h2>
 
-**Before Dad picks you up, think about this week:**
+<p><strong>Before Dad picks you up, think about this week:</strong></p>
 
 <div class="interactive-checklist">
   <div class="notes-section">
@@ -550,17 +614,19 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
   </div>
 </div>
 
----
+<hr />
 
 <h2 id="emergency">🚨 EMERGENCY SITUATIONS</h2>
 
-### If Something Really Bad Happens
-- **Someone is hurt**: Tell Mom or call 911
-- **You feel unsafe**: Tell a teacher, call Dad, call 911
-- **You're alone and scared**: Call Mom, call Dad, call 911
-- **Someone touches you wrong**: Tell Mom, tell Dad, tell a teacher immediately
+<h3 id="if-something-really-bad-happens">If Something Really Bad Happens</h3>
+<ul>
+  <li><strong>Someone is hurt</strong>: Tell Mom or call 911</li>
+  <li><strong>You feel unsafe</strong>: Tell a teacher, call Dad, call 911</li>
+  <li><strong>You’re alone and scared</strong>: Call Mom, call Dad, call 911</li>
+  <li><strong>Someone touches you wrong</strong>: Tell Mom, tell Dad, tell a teacher immediately</li>
+</ul>
 
-### Dad's Phone Number
+<h3 id="dads-phone-number">Dad’s Phone Number</h3>
 
 <div class="interactive-checklist">
   <div class="notes-section">
@@ -569,51 +635,53 @@ Draw 4 boxes in a row. Each night before bed, color one in. When all 4 are color
   </div>
 </div>
 
-**You can ALWAYS call Dad. Anytime. Day or night. Even if Mom says no.**
+<p><strong>You can ALWAYS call Dad. Anytime. Day or night. Even if Mom says no.</strong></p>
 
-If Mom won't let you use the phone and you need Dad:
-- Tell a teacher at school
-- Ask a trusted adult to help
-- Remember: You see Dad on Friday no matter what
+<p>If Mom won’t let you use the phone and you need Dad:</p>
+<ul>
+  <li>Tell a teacher at school</li>
+  <li>Ask a trusted adult to help</li>
+  <li>Remember: You see Dad on Friday no matter what</li>
+</ul>
 
----
+<hr />
 
 <h2 id="dads-message">💙 DAD'S SPECIAL MESSAGE TO YOU</h2>
 
-Dear [Daughter] and [Son],
+<p>Dear [Daughter] and [Son],</p>
 
-I know this week is hard. I know you miss me. I miss you too - SO MUCH.
+<p>I know this week is hard. I know you miss me. I miss you too - SO MUCH.</p>
 
-Every day while you're at Mom's, I think about you. I wonder how school went. I wonder if you're happy or sad. I wonder if you're sleeping okay. I wonder what you're doing right now.
+<p>Every day while you’re at Mom’s, I think about you. I wonder how school went. I wonder if you’re happy or sad. I wonder if you’re sleeping okay. I wonder what you’re doing right now.</p>
 
-I wish I could be there for dinner. I wish I could help with homework. I wish I could read you a bedtime story. I wish I could hug you whenever you need it.
+<p>I wish I could be there for dinner. I wish I could help with homework. I wish I could read you a bedtime story. I wish I could hug you whenever you need it.</p>
 
-But I can't be there Monday through Friday. And that's really hard. For you AND for me.
+<p>But I can’t be there Monday through Friday. And that’s really hard. For you AND for me.</p>
 
-So I made this guide to be like a little piece of me you can carry around. When you read it, remember:
+<p>So I made this guide to be like a little piece of me you can carry around. When you read it, remember:</p>
 
-**I am still your dad. Every single day. Even when I'm not there.**
+<p><strong>I am still your dad. Every single day. Even when I’m not there.</strong></p>
 
-When you do your homework, I'm proud of you.  
-When you're kind to someone, I'm proud of you.  
-When you cry because you miss me, I'm proud of you for having feelings.  
-When you make mistakes, I'm proud of you for being human.  
-When you get through the day, I'm proud of you for being strong.
+<p>When you do your homework, I’m proud of you.<br />
+When you’re kind to someone, I’m proud of you.<br />
+When you cry because you miss me, I’m proud of you for having feelings.<br />
+When you make mistakes, I’m proud of you for being human.<br />
+When you get through the day, I’m proud of you for being strong.</p>
 
-You don't have to be perfect. You don't have to be happy all the time. You just have to make it to Friday, and I'll be there.
+<p>You don’t have to be perfect. You don’t have to be happy all the time. You just have to make it to Friday, and I’ll be there.</p>
 
-**I promise I will always come get you on Friday. Always.**
+<p><strong>I promise I will always come get you on Friday. Always.</strong></p>
 
-I love you bigger than the whole sky.
+<p>I love you bigger than the whole sky.</p>
 
-**Love,  
-Dad** 💙
+<p><strong>Love,<br />
+Dad</strong> 💙</p>
 
----
+<hr />
 
 <h2 id="friday">✅ FRIDAY CHECKLIST (The Best Day!)</h2>
 
-### When Dad Picks You Up
+<h3 id="when-dad-picks-you-up">When Dad Picks You Up</h3>
 
 <div class="interactive-checklist">
   <label class="form-checkbox-group">
@@ -652,22 +720,29 @@ Dad** 💙
   </label>
 </div>
 
-**You did it. Dad is so proud of you. Let's have a great weekend.** 🎉
+<p><strong>You did it. Dad is so proud of you. Let’s have a great weekend.</strong> 🎉</p>
 
----
+<p><strong>Remember: You are brave. You are loved. You are NEVER alone. Dad is always with you in your heart, even when he’s not next to you.</strong></p>
 
-**Remember: You are brave. You are loved. You are NEVER alone. Dad is always with you in your heart, even when he's not next to you.** 
+<p><strong>Four more days. You can do this.</strong> 💪💙</p>
 
-**Four more days. You can do this.** 💪💙
-
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+<div class="checklist-card">
+  <h3>🚀 QUICK JUMP TO SECTION</h3>
+  <ul>
+    <li><a href="#homework">Homework Helper</a></li>
+    <li><a href="#bored">Things To Do When Bored</a></li>
+    <li><a href="#sad-mad-scared">Big Feelings</a></li>
+    <li><a href="#call-dad">Connecting With Dad</a></li>
+    <li><a href="#school">School Survival Guide</a></li>
+    <li><a href="#eating">Eating At Mom's</a></li>
+    <li><a href="#track-days">Keeping Track Of Days</a></li>
+    <li><a href="#stronger">You Are Stronger Than You Think</a></li>
+    <li><a href="#weekly-reflection">Weekly Reflection</a></li>
+    <li><a href="#emergency">Emergency Situations</a></li>
+    <li><a href="#dads-message">Dad's Special Message</a></li>
+    <li><a href="#friday">Friday Checklist</a></li>
+  </ul>
+</div>
 
             </main>
         </div>
@@ -678,24 +753,26 @@ Dad** 💙
     </a>
 
     <!-- Modal container used by card include quick-views -->
-    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+    
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
   <header class="accessibility-panel-header">
-    <h4>Accessibility Preferences</h4>
-    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+    <h4>ND Accessibility Panel</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close">×</button>
   </header>
-  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
-    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
-    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
-    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+  <form class="accessibility-form" role="form" aria-label="ND accessibility options">
+    <label><input type="checkbox" data-pref="reducedMotion"> Less animation</label>
+    <label><input type="checkbox" data-pref="largeText"> Bigger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simple mode</label>
     <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+    <label><input type="checkbox" data-pref="focusMode"> Focus mode</label>
   </form>
   <div class="accessibility-panel-footer">
-    <button id="accessibility-reset" class="btn">Reset</button>
+    <button id="accessibility-reset" class="btn">Reset all</button>
   </div>
 </div>
 
 <!-- Toggle button (placed in DOM via JS) -->
-<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility">🦾</button>
 
     <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="card-modal-overlay" data-dismiss="true"></div>
@@ -706,6 +783,37 @@ Dad** 💙
     </div>
 
     <!-- PRESERVED SCRIPTS -->
+    <script>
+    // ND Progress Bar Logic
+    window.ndProgress = {
+      set: function(percent, label) {
+        document.getElementById('nd-progress-bar').style.width = percent + '%';
+        document.getElementById('nd-progress-bar-status').textContent = label || (percent + '%');
+      },
+      reset: function() {
+        document.getElementById('nd-progress-bar').style.width = '0%';
+        document.getElementById('nd-progress-bar-status').textContent = 'Idle';
+      }
+    };
+    // Example: Simulate progress for demo
+    // Remove or replace with real workflow hooks as needed
+    let demoProgress = 0;
+    function runDemoProgress() {
+      window.ndProgress.set(0, 'Starting...');
+      demoProgress = 0;
+      let interval = setInterval(function() {
+        demoProgress += 10;
+        if (demoProgress <= 100) {
+          window.ndProgress.set(demoProgress, demoProgress < 100 ? 'Working...' : 'Complete');
+        } else {
+          clearInterval(interval);
+          setTimeout(()=>window.ndProgress.reset(), 1200);
+        }
+      }, 400);
+    }
+    // Uncomment to auto-run demo on page load:
+    // document.addEventListener('DOMContentLoaded', runDemoProgress);
+    </script>
     <script>
     // This script block remains for essential UI functionality.
     // Mobile Nav Toggle

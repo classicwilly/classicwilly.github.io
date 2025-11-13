@@ -12,29 +12,15 @@ title: Weekdays at Mom's - Kids Protocol
 **Purpose**: Help you have a good week even when Dad can't be there. You've got tools to help yourself.
 
 ---
-
-{% capture section_1 %}
-{% capture section_1 %}
 ## 📄 HOW TO USE THIS CHECKLIST
 
 **Best Way**: **Print this page!** Then you can:
-- ✅ Check off boxes with a pencil each day
-- ✅ Keep it in your backpack or room
-- ✅ Look at it when you need help or feel stuck
-- ✅ Bring it to Dad's on Friday to show what you did
 
 **Mom Can Help Too**: Ask Mom to help you with this checklist if you need it!
 
 **On Computer**: The checkboxes work on the website too, but they reset when you close the page. Printing is better!
 
----
 
-{% endcapture %}
-{% include card.html title="📄 HOW TO USE THIS CHECKLIST" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
-{% endcapture %}
-{% include card.html title="📄 HOW TO USE THIS CHECKLIST" content=section_1 classes="checklist-card" %}
-{% capture section_2 %}
 ## 🚀 QUICK JUMP TO SECTION
 
 <div class="quick-jump-grid">
@@ -50,7 +36,6 @@ title: Weekdays at Mom's - Kids Protocol
   <a href="#emergency">🚨 Emergency</a>
 </div>
 
----
 
 <h2 id="what-week-looks-like">🏠 WHAT THIS WEEK LOOKS LIKE</h2>
 
@@ -589,12 +574,25 @@ Dad** 💙
 
 **You did it. Dad is so proud of you. Let's have a great weekend.** 🎉
 
----
 
 **Remember: You are brave. You are loved. You are NEVER alone. Dad is always with you in your heart, even when he's not next to you.** 
 
 **Four more days. You can do this.** 💪💙
-{% endcapture %}
-{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_2 classes="checklist-card" %}
-{% endcapture %}
-{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_2 classes="checklist-card" %}
+
+<div class="checklist-card">
+  <h3>🚀 QUICK JUMP TO SECTION</h3>
+  <ul>
+    <li><a href="#homework">Homework Helper</a></li>
+    <li><a href="#bored">Things To Do When Bored</a></li>
+    <li><a href="#sad-mad-scared">Big Feelings</a></li>
+    <li><a href="#call-dad">Connecting With Dad</a></li>
+    <li><a href="#school">School Survival Guide</a></li>
+    <li><a href="#eating">Eating At Mom's</a></li>
+    <li><a href="#track-days">Keeping Track Of Days</a></li>
+    <li><a href="#stronger">You Are Stronger Than You Think</a></li>
+    <li><a href="#weekly-reflection">Weekly Reflection</a></li>
+    <li><a href="#emergency">Emergency Situations</a></li>
+    <li><a href="#dads-message">Dad's Special Message</a></li>
+    <li><a href="#friday">Friday Checklist</a></li>
+  </ul>
+</div>

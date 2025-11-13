@@ -10,14 +10,18 @@ title: Daily Tracker
     <p>Track daily protocol completion. Check boxes, rate your day, plan tomorrow.</p>
     <p>Fill this out at Daily Dump (10:25 PM). Review patterns weekly.</p>
   {% endcapture %}
-  {% include card.html classes="about-card is-blue" content=_daily_header %}
+  <div class="about-card is-blue">
+    {{ _daily_header }}
+  </div>
 </div>
 <div class="checklist-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
   {% capture _tracker_date %}
     <label for="tracker-date" class="form-label">Date:</label>
     <input type="date" id="tracker-date" class="form-input" />
   {% endcapture %}
-  {% include card.html classes="about-card" content=_tracker_date %}
+  <div class="about-card">
+    {{ _tracker_date }}
+  </div>
 
   {% capture _tracker_mode %}
     <label class="form-label">Mode:</label>
@@ -30,7 +34,9 @@ title: Daily Tracker
       <span>Family Structure</span>
     </label>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_tracker_mode %}
+  <div class="about-card">
+    {{ _tracker_mode }}
+  </div>
 </div>
 
 ---
@@ -72,7 +78,9 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>10:30 PM</strong> - Sleep Anchor (in bed, no screens, DND mode)</span></label>
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_foundational id="foundational" %}
+  <div class="about-card" id="foundational">
+    {{ _foundational }}
+  </div>
 
   {% capture _morning %}
     <h2>🌅 Morning Transition (6:00-7:00 AM)</h2>
@@ -84,7 +92,9 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Phase 4 Complete</strong> - Execution Launch (first micro-action by 7:00 AM)</span></label>
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_morning id="morning" %}
+  <div class="about-card" id="morning">
+    {{ _morning }}
+  </div>
 
   {% capture _mode_specific %}
     <h2>🎯 Mode-Specific Protocols</h2>
@@ -102,7 +112,9 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Tag-Team Coordination</strong> - Communicated needs with spouse</span></label>
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_mode_specific id="mode-specific" %}
+  <div class="about-card" id="mode-specific">
+    {{ _mode_specific }}
+  </div>
 
   {% capture _emergency %}
     <h2>🚨 Emergency Protocols Used Today</h2>
@@ -113,7 +125,9 @@ title: Daily Tracker
       <label class="form-checkbox-group"><input type="checkbox"><span><strong>Sensory Overload Emergency</strong> - Retreated for nervous system regulation</span></label>
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_emergency id="emergency" %}
+  <div class="about-card" id="emergency">
+    {{ _emergency }}
+  </div>
 
   {% capture _priority %}
     <h2>🎖️ Priority Hierarchy Check</h2>
@@ -131,7 +145,9 @@ title: Daily Tracker
       <label for="rating-medicine" class="form-label">Medicine (pills taken):</label><input type="number" id="rating-medicine" min="1" max="10" placeholder="1-10" class="form-input" /> / 10
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_priority id="priority-check" %}
+  <div class="about-card" id="priority-check">
+    {{ _priority }}
+  </div>
 
   {% capture _wins %}
     <h2>🌟 Today's Wins (3 minimum)</h2>
@@ -146,7 +162,9 @@ title: Daily Tracker
       <label for="win-3" class="form-label">3.</label><input type="text" id="win-3" placeholder="Enter your win..." class="form-input" />
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_wins id="wins" %}
+  <div class="about-card" id="wins">
+    {{ _wins }}
+  </div>
 
   {% capture _tomorrow %}
     <h2>📅 Tomorrow's Top 3 Priorities</h2>
@@ -161,7 +179,9 @@ title: Daily Tracker
       <label for="priority-3" class="form-label">3.</label><input type="text" id="priority-3" placeholder="Enter priority..." class="form-input" />
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_tomorrow id="tomorrow" %}
+  <div class="about-card" id="tomorrow">
+    {{ _tomorrow }}
+  </div>
 
   {% capture _notes %}
     <h2>📝 Notes / Observations</h2>
@@ -171,7 +191,9 @@ title: Daily Tracker
       <textarea id="notes" rows="5" placeholder="Enter your observations..." class="form-textarea"></textarea>
     </div>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_notes id="notes" %}
+  <div class="about-card" id="notes">
+    {{ _notes }}
+  </div>
 
   {% capture _metrics %}
     <h2>📊 Completion Metrics</h2>
@@ -193,13 +215,26 @@ title: Daily Tracker
     </div>
     <p><strong>Daily Tracker Usage:</strong> Fill this out at Daily Dump (10:25 PM) before sleep. Check boxes throughout day as you complete protocols. Review patterns weekly during Weekly Review Protocol. <strong>If completion rates drop below 70% for 3+ days:</strong> Emergency system review required.</p>
   {% endcapture %}
-  {% include card.html classes="about-card" content=_metrics id="metrics" %}
+  <div class="about-card" id="metrics">
+    {{ _metrics }}
+  </div>
 </div>
 
 <div class="checklist-grid">
-  {% include card.html href="/tracker-stats" icon="📊" title="View Your Stats" classes="checklist-card is-blue" %}
-  {% include card.html href="/sop-vault" icon="📋" title="All Protocols" classes="checklist-card is-purple" %}
-  {% include card.html href="/checklists" icon="✅" title="Checklists" classes="checklist-card is-green" %}
+  <a href="/tracker-stats" class="card checklist-card is-blue">
+    <div class="card-icon">📊</div>
+    <h3 class="card-title">View Your Stats</h3>
+  </a>
+  <a href="/sop-vault" class="card checklist-card is-purple">
+    <div class="card-icon">📋</div>
+    <h3 class="card-title">All Protocols</h3>
+  </a>
+  <a href="/checklists" class="card checklist-card is-green">
+    <div class="card-icon">✅</div>
+    <h3 class="card-title">Checklists</h3>
+  </a>
 </div>
 {% endcapture %}
-{% include card.html title="🚀 QUICK JUMP TO SECTION" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_1 }}
+</div>

@@ -1,13 +1,14 @@
 // ...existing code...
 
+
 input:focus, textarea:focus, select:focus {
-  border: 2.5px solid var(--accent-blue);
+  border: 2.5px solid #1abc9c88; // soft teal focus
   box-shadow: var(--card-shadow-hover);
 }
 
 label {
   font-size: 1.09rem;
-  color: var(--focus-outline);
+  color: #58a6ff88; // soft blue
   font-weight: 600;
   margin-bottom: 0.5rem;
   letter-spacing: 0.015em;

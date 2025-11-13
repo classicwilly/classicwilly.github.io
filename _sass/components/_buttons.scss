@@ -1,6 +1,7 @@
 
 // ND-Friendly Button Styles
 
+
 .btn, .spawn-button, .reset-button {
   font-family: var(--font-family);
   padding: 0.8rem 1.8rem;
@@ -11,23 +12,25 @@
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  background-color: var(--accent-blue);
-  color: var(--bg-color);
+  background-color: #1abc9c22; // soft teal
+  color: var(--text-color);
   box-shadow: var(--card-shadow), var(--card-shadow-hover);
   letter-spacing: 0.02em;
 }
 
+
 .btn:hover, .spawn-button:hover, .reset-button:hover {
-  background-color: var(--accent-green);
+  background-color: #2ecc7188; // soft green
   color: var(--text-color);
   box-shadow: var(--card-shadow-hover);
   transform: translateY(-1px) scale(1.03);
 }
 
+
 .btn-primary {
-  background-color: var(--accent-green);
+  background-color: #2ecc7188; // soft green
   border: none;
-  color: var(--bg-color);
+  color: var(--text-color);
   font-weight: 700;
   &:hover {
     opacity: 0.9;
@@ -35,26 +38,29 @@
   }
 }
 
+
 .btn-secondary {
-  background: var(--blue);
+  background: #58a6ff22; // soft blue
   border: none;
-  color: white;
+  color: var(--text-color);
   font-weight: 600;
 }
+
 
 .btn-danger {
-  background: var(--card-dark);
-  border: 2px solid var(--red, #e74c3c);
-  color: var(--red, #e74c3c);
+  background: #e74c3c22; // soft red
+  border: 2px solid #e74c3c44;
+  color: #e74c3c;
   font-weight: 600;
 }
 
-.reset-button {
-  border: 2px solid var(--accent-orange, #e67e22); // Added a fallback color
-  color: var(--accent-orange, #e67e22);
 
+.reset-button {
+  border: 2px solid #e67e2244; // soft orange
+  color: #e67e22;
+  background: #e67e2211;
   &:hover {
-    background: var(--accent-orange, #e67e22);
-    color: var(--darker-bg);
+    background: #e67e2288;
+    color: var(--text-color);
   }
 }

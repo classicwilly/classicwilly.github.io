@@ -42,6 +42,8 @@ This is the "card catalog" of my "fixes," thoughts, and systems. This list updat
 ---
 <div class="checklist-grid">
   {% for post in site.posts %}
-    {% include card.html href=post.url title=post.title classes="checklist-card" %}
+    <a href="{{ post.url }}" class="card checklist-card">
+      <h3 class="card-title">{{ post.title }}</h3>
+    </a>
   {% endfor %}
 </div>

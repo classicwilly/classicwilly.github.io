@@ -56,6 +56,14 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- ND Live Progress Bar -->
+    <div id="nd-progress-bar-container" style="width:100%;max-width:900px;margin:0 auto 1.2rem auto;">
+      <div id="nd-progress-bar-label" style="font-size:1rem;color:var(--text-secondary);margin-bottom:0.2rem;text-align:center;">Progress: <span id="nd-progress-bar-status">Idle</span></div>
+      <div style="background:var(--card-bg);border-radius:8px;box-shadow:var(--card-shadow);height:18px;width:100%;overflow:hidden;">
+        <div id="nd-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent-primary),var(--color-teal));transition:width 0.4s;"></div>
+      </div>
+    </div>
     <!-- ND Card Nav Bar -->
     <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
       <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
@@ -126,22 +134,16 @@
 <hr />
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">📅 FAMILY CALENDAR {#calendar}</h3>
+  <!-- ...existing content for FAMILY CALENDAR {#calendar}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 📅 FAMILY CALENDAR {#calendar}
 
 **Co-parenting schedule, custody transitions, and mode-switching visibility.**
 
 
 <div class="about-card is-blue">
-    
-  <h3 class="card-title">📅 FAMILY CALENDAR</h3>
+  <!-- ...existing content for FAMILY CALENDAR... -->
   
-  <div class="card-modal-content" hidden="">
-      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--circuit-teal); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--circuit-teal);">Setup Instructions</h3>
   <ol>
@@ -150,7 +152,7 @@
     <li>Color-code: Solo Execution Mode (teal), Family Structure Mode (orange)</li>
     <li>Share calendar with co-parent</li>
     <li>Get embed code: Calendar Settings → Integrate calendar → Iframe code</li>
-    <li>Replace placeholder below with your calendar iframe</li>
+  <li>If calendar is not visible, request access or setup via Command Center. No placeholder.</li>
   </ol>
   
   <p><strong>Embed your calendar here:</strong></p>
@@ -171,44 +173,24 @@
   </a>
 </div>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">📝 FORMS &amp; FEEDBACK {#forms}</h3>
+  <!-- ...existing content for FORMS & FEEDBACK {#forms}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 📝 FORMS &amp; FEEDBACK {#forms}
 
 **Google Forms for feedback collection, protocol rating, weekly reviews.**
 
 
 <div class="about-card">
-    
-  <h3 class="card-title">📝 FORMS &amp; FEEDBACK</h3>
+  <!-- ...existing content for FORMS & FEEDBACK... -->
   
-  <div class="card-modal-content" hidden="">
-      
 <div class="quick-jump-grid" style="margin: 2rem 0;">
   <div class="quick-jump-tile" style="background: var(--card-dark); border: 2px solid var(--purple);">
     <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
@@ -251,44 +233,24 @@
   </ol>
 </div>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">📊 SHEETS DATABASE {#sheets}</h3>
+  <!-- ...existing content for SHEETS DATABASE {#sheets}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 📊 SHEETS DATABASE {#sheets}
 
 **Google Sheets as backend for tracker data, protocol analytics, and trend visualization.**
 
 
 <div class="about-card">
-    
-  <h3 class="card-title">📊 SHEETS DATABASE</h3>
+  <!-- ...existing content for SHEETS DATABASE... -->
   
-  <div class="card-modal-content" hidden="">
-      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--green); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--green);">Tracker Data Export to Sheets</h3>
   
@@ -327,44 +289,24 @@
   <p><strong>Template available:</strong> <a href="https://docs.google.com/spreadsheets/create" target="_blank" style="color: var(--circuit-teal);">Create from template →</a></p>
 </div>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">📁 GOOGLE DRIVE {#drive}</h3>
+  <!-- ...existing content for GOOGLE DRIVE {#drive}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 📁 GOOGLE DRIVE {#drive}
 
 **Embed documents, SOPs, and shared files directly in the site.**
 
 
 <div class="about-card">
-    
-  <h3 class="card-title">📁 GOOGLE DRIVE</h3>
+  <!-- ...existing content for GOOGLE DRIVE... -->
   
-  <div class="card-modal-content" hidden="">
-      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--blue); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--blue);">Embedded Documents</h3>
   
@@ -404,44 +346,24 @@
   </ol>
 </div>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">📧 GMAIL CONTACT {#contact}</h3>
+  <!-- ...existing content for GMAIL CONTACT {#contact}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 📧 GMAIL CONTACT {#contact}
 
 **Direct communication via embedded Gmail contact form.**
 
 
 <div class="about-card">
-    
-  <h3 class="card-title">📧 GMAIL CONTACT</h3>
+  <!-- ...existing content for GMAIL CONTACT... -->
   
-  <div class="card-modal-content" hidden="">
-      
 <div style="background: var(--card-dark); padding: 2rem; border-radius: 12px; border: 2px solid var(--red); margin: 2rem 0;">
   <h3 style="margin-top: 0; color: var(--red);">Contact Form</h3>
   
@@ -485,33 +407,16 @@
   </div>
 </div>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">🤖 GEMINI AI INTEGRATION {#gemini}</h3>
+  <!-- ...existing content for GEMINI AI INTEGRATION {#gemini}... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## 🤖 GEMINI AI INTEGRATION {#gemini}
 
 **AI assistant for protocol guidance, decision support, and pattern analysis.**
@@ -528,7 +433,7 @@
   </div>
   
   <div style="display: flex; gap: 0.5rem;">
-    <input type="text" id="gemini-input" placeholder="Ask Gemini about protocols, patterns, or decisions..." style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-gray); border-radius: 6px; color: var(--text-bright); font-family: 'Space Grotesk', sans-serif;" />
+  <input type="text" id="gemini-input" placeholder="Type your question for Gemini (protocol, pattern, decision)" style="flex: 1; padding: 0.75rem; background: var(--darker-bg); border: 1px solid var(--border-gray); border-radius: 6px; color: var(--text-bright); font-family: 'Space Grotesk', sans-serif;" />
     <button onclick="sendToGemini()" style="padding: 0.75rem 1.5rem; background: var(--yellow); border: none; border-radius: 6px; color: var(--darker-bg); font-weight: 700; cursor: pointer; font-family: 'IBM Plex Mono', monospace;">
       Send
     </button>
@@ -557,21 +462,11 @@
 ---
 
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
 <div class="checklist-card">
-    
-  <h3 class="card-title">⚙️ INTEGRATION STATUS</h3>
+  <!-- ...existing content for INTEGRATION STATUS... -->
   
-  <div class="card-modal-content" hidden="">
-      
 ## ⚙️ INTEGRATION STATUS
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
@@ -742,7 +637,7 @@
     const userQuery = input.value;
     input.value = '';
     
-    // Clear placeholder if first message
+  // Remove placeholder logic for ND protocol compliance
     if (chatDiv.querySelector('[style*="text-align: center"]')) {
       chatDiv.innerHTML = '';
     }
@@ -815,14 +710,7 @@
   });
 </script>
 
-    </div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </div>
+</div>
 
             </main>
         </div>
@@ -833,24 +721,26 @@
     </a>
 
     <!-- Modal container used by card include quick-views -->
-    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+    
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
   <header class="accessibility-panel-header">
-    <h4>Accessibility Preferences</h4>
-    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+    <h4>ND Accessibility Panel</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close">×</button>
   </header>
-  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
-    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
-    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
-    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+  <form class="accessibility-form" role="form" aria-label="ND accessibility options">
+    <label><input type="checkbox" data-pref="reducedMotion"> Less animation</label>
+    <label><input type="checkbox" data-pref="largeText"> Bigger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simple mode</label>
     <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+    <label><input type="checkbox" data-pref="focusMode"> Focus mode</label>
   </form>
   <div class="accessibility-panel-footer">
-    <button id="accessibility-reset" class="btn">Reset</button>
+    <button id="accessibility-reset" class="btn">Reset all</button>
   </div>
 </div>
 
 <!-- Toggle button (placed in DOM via JS) -->
-<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility">🦾</button>
 
     <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="card-modal-overlay" data-dismiss="true"></div>
@@ -861,6 +751,37 @@
     </div>
 
     <!-- PRESERVED SCRIPTS -->
+    <script>
+    // ND Progress Bar Logic
+    window.ndProgress = {
+      set: function(percent, label) {
+        document.getElementById('nd-progress-bar').style.width = percent + '%';
+        document.getElementById('nd-progress-bar-status').textContent = label || (percent + '%');
+      },
+      reset: function() {
+        document.getElementById('nd-progress-bar').style.width = '0%';
+        document.getElementById('nd-progress-bar-status').textContent = 'Idle';
+      }
+    };
+    // Example: Simulate progress for demo
+    // Remove or replace with real workflow hooks as needed
+    let demoProgress = 0;
+    function runDemoProgress() {
+      window.ndProgress.set(0, 'Starting...');
+      demoProgress = 0;
+      let interval = setInterval(function() {
+        demoProgress += 10;
+        if (demoProgress <= 100) {
+          window.ndProgress.set(demoProgress, demoProgress < 100 ? 'Working...' : 'Complete');
+        } else {
+          clearInterval(interval);
+          setTimeout(()=>window.ndProgress.reset(), 1200);
+        }
+      }, 400);
+    }
+    // Uncomment to auto-run demo on page load:
+    // document.addEventListener('DOMContentLoaded', runDemoProgress);
+    </script>
     <script>
     // This script block remains for essential UI functionality.
     // Mobile Nav Toggle

@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    border: 2.5px solid var(--focus-outline);
+    border: 2.5px solid #58a6ff44; // soft blue focus
 // End .card styles
 
     // Nested card (for demo, not used in prod)
@@ -28,20 +28,20 @@
         margin: 2.2rem 0;
         font-size: 1.15rem;
         letter-spacing: 0.013em;
-        border: 2.5px solid var(--accent-blue);
+    border: 2.5px solid #1abc9c44; // soft teal accent
         transition: box-shadow 0.18s, background 0.22s;
     }
 
     .card:hover {
         box-shadow: var(--card-shadow-hover);
         background: var(--card-bg);
-        border-color: var(--accent-blue);
+        border-color: #1abc9c88; // soft teal accent
     }
     &:focus-visible {
-        outline: 3px solid var(--focus-outline);
+        outline: 3px solid #2ecc7188; // soft green focus
         outline-offset: 4px;
         box-shadow: var(--card-shadow-hover);
-        border-color: var(--accent-green);
+        border-color: #2ecc7188;
     }
 }
 

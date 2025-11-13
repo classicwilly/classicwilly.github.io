@@ -17,13 +17,28 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Foundational Daily -->
-    {% include card.html href="/checklist-foundational-daily" icon="🌱" title="Foundational Daily" desc="The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump" meta="Every single day" classes="checklist-card is-green" %}
+    <a href="/checklist-foundational-daily" class="card checklist-card is-green">
+      <div class="card-icon">🌱</div>
+      <h3 class="card-title">Foundational Daily</h3>
+      <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
+      <span class="card-meta">Every single day</span>
+    </a>
     
     <!-- Morning Transition -->
-    {% include card.html href="/checklist-morning-transition" icon="☀️" title="Morning Transition" desc="60-min bridge from sleep to execution (6:00-7:00 AM)" meta="Every morning" classes="checklist-card is-yellow" %}
+    <a href="/checklist-morning-transition" class="card checklist-card is-yellow">
+      <div class="card-icon">☀️</div>
+      <h3 class="card-title">Morning Transition</h3>
+      <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM)</p>
+      <span class="card-meta">Every morning</span>
+    </a>
     
     <!-- Daily Tracker -->
-    {% include card.html href="/daily-tracker" icon="📊" title="Daily Tracker" desc="Comprehensive single-page daily check-in with metrics" meta="Fill during Daily Dump (10:25 PM)" classes="checklist-card is-blue" %}
+    <a href="/daily-tracker" class="card checklist-card is-blue">
+      <div class="card-icon">📊</div>
+      <h3 class="card-title">Daily Tracker</h3>
+      <p class="card-desc">Comprehensive single-page daily check-in with metrics</p>
+      <span class="card-meta">Fill during Daily Dump (10:25 PM)</span>
+    </a>
     
   </div>
 </div>
@@ -35,7 +50,12 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Weekly Review -->
-    {% include card.html href="/checklist-weekly-review" icon="🔄" title="Weekly Review" desc="60-min maintenance: process chaos, review tasks, plan ahead" meta="Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM" classes="checklist-card is-purple" %}
+    <a href="/checklist-weekly-review" class="card checklist-card is-purple">
+      <div class="card-icon">🔄</div>
+      <h3 class="card-title">Weekly Review</h3>
+      <p class="card-desc">60-min maintenance: process chaos, review tasks, plan ahead</p>
+      <span class="card-meta">Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM</span>
+    </a>
     
   </div>
 </div>
@@ -47,13 +67,25 @@ title: Interactive Checklists
   <div class="checklist-grid">
     
     <!-- Executive Dysfunction -->
-  {% include card.html disabled=true icon="🧠" title="Executive Dysfunction" desc="Protocol not yet published. Request via Command Center." %}
+  <div class="card checklist-card is-disabled">
+    <div class="card-icon">🧠</div>
+    <h3 class="card-title">Executive Dysfunction</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
+  </div>
     
     <!-- Context Switching -->
-  {% include card.html disabled=true icon="🔀" title="Context Switching Recovery" desc="Protocol not yet published. Request via Command Center." %}
+  <div class="card checklist-card is-disabled">
+    <div class="card-icon">🔀</div>
+    <h3 class="card-title">Context Switching Recovery</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
+  </div>
     
     <!-- Sensory Overload -->
-  {% include card.html disabled=true icon="🔇" title="Sensory Overload" desc="Protocol not yet published. Request via Command Center." %}
+  <div class="card checklist-card is-disabled">
+    <div class="card-icon">🔇</div>
+    <h3 class="card-title">Sensory Overload</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
+  </div>
     
   </div>
 </div>

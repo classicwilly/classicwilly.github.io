@@ -56,6 +56,14 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- ND Live Progress Bar -->
+    <div id="nd-progress-bar-container" style="width:100%;max-width:900px;margin:0 auto 1.2rem auto;">
+      <div id="nd-progress-bar-label" style="font-size:1rem;color:var(--text-secondary);margin-bottom:0.2rem;text-align:center;">Progress: <span id="nd-progress-bar-status">Idle</span></div>
+      <div style="background:var(--card-bg);border-radius:8px;box-shadow:var(--card-shadow);height:18px;width:100%;overflow:hidden;">
+        <div id="nd-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent-primary),var(--color-teal));transition:width 0.4s;"></div>
+      </div>
+    </div>
     <!-- ND Card Nav Bar -->
     <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
       <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
@@ -97,126 +105,56 @@
 <div class="checklist-section">
   <h2 class="section-title">⚡ Execution Protocols</h2>
   <div class="checklist-grid">
-    <a href="/2025-11-08_M4_SOP_foundational-daily-protocols" class="checklist-card is-green" data-href="/2025-11-08_M4_SOP_foundational-daily-protocols">
-    <div class="card-icon">🔑</div>
-  <h3 class="card-title">Foundational Daily</h3>
-  <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_solo-execution-mode" class="checklist-card is-blue" data-href="/2025-11-08_M4_SOP_solo-execution-mode">
-    <div class="card-icon">💼</div>
-  <h3 class="card-title">Solo Execution Mode</h3>
-  <p class="card-desc">Mon 6PM → Fri 4PM. Hour-by-hour deep work structure. 7hrs/day core output.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_family-structure-mode" class="checklist-card" data-href="/2025-11-08_M4_SOP_family-structure-mode">
-    <div class="card-icon">👨‍👧‍👦</div>
-  <h3 class="card-title">Family Structure Mode</h3>
-  <p class="card-desc">Fri 4PM → Mon 6PM. Weekend hourly schedule for parenting structure.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_classicwilly-protocol" class="checklist-card is-purple" data-href="/2025-11-08_M4_SOP_classicwilly-protocol">
-    <div class="card-icon">🎯</div>
-  <h3 class="card-title">Classicwilly Protocol</h3>
-  <p class="card-desc">The 11/10 execution SOP. High-stakes work requires high-stakes structure.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_vibe-coding-ai-workflow" class="checklist-card" data-href="/2025-11-08_M4_SOP_vibe-coding-ai-workflow">
-    <div class="card-icon">🤖</div>
-  <h3 class="card-title">Vibe Coding AI Workflow</h3>
-  <p class="card-desc">AI-assisted product design with CAD, 3D printing, electronics.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_weekly-review-protocol" class="checklist-card is-yellow" data-href="/2025-11-08_M4_SOP_weekly-review-protocol">
-    <div class="card-icon">🔄</div>
-  <h3 class="card-title">Weekly Review</h3>
-  <p class="card-desc">60-min maintenance: chaos processing, task review, system health check.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_SOP_morning-transition-protocol" class="checklist-card" data-href="/2025-11-08_M4_SOP_morning-transition-protocol">
-    <div class="card-icon">☀️</div>
-  <h3 class="card-title">Morning Transition</h3>
-  <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM daily).</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-09_M4_SOP_command-center-setup" class="checklist-card" data-href="/2025-11-09_M4_SOP_command-center-setup">
-    <div class="card-icon">⚙️</div>
-  <h3 class="card-title">Command Center Setup</h3>
-  <p class="card-desc">Complete equipment, hardware/software, workspace foundation. TOP PRIORITY.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-09_M4_SOP_pixel-fold-setup" class="checklist-card is-blue" data-href="/2025-11-09_M4_SOP_pixel-fold-setup">
-    <div class="card-icon">📱</div>
-  <h3 class="card-title">Pixel 9 Pro Fold Setup</h3>
-  <p class="card-desc">Mobile WS-OS extension: chaos capture, dual-screen optimization.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol" class="checklist-card is-purple" data-href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol">
-    <div class="card-icon">🛡️</div>
-  <h3 class="card-title">Bubble Shield Protocol</h3>
-  <p class="card-desc">Mandatory sensory mitigation for stable executive function.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025-11-08_M4_SOP_foundational-daily-protocols" class="card checklist-card is-green">
+      <div class="card-icon">🔑</div>
+      <h3 class="card-title">Foundational Daily</h3>
+      <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_solo-execution-mode" class="card checklist-card is-blue">
+      <div class="card-icon">💼</div>
+      <h3 class="card-title">Solo Execution Mode</h3>
+      <p class="card-desc">Mon 6PM → Fri 4PM. Hour-by-hour deep work structure. 7hrs/day core output.</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_family-structure-mode" class="card checklist-card">
+      <div class="card-icon">👨‍👧‍👦</div>
+      <h3 class="card-title">Family Structure Mode</h3>
+      <p class="card-desc">Fri 4PM → Mon 6PM. Weekend hourly schedule for parenting structure.</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_classicwilly-protocol" class="card checklist-card is-purple">
+      <div class="card-icon">🎯</div>
+      <h3 class="card-title">Classicwilly Protocol</h3>
+      <p class="card-desc">The 11/10 execution SOP. High-stakes work requires high-stakes structure.</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_vibe-coding-ai-workflow" class="card checklist-card">
+      <div class="card-icon">🤖</div>
+      <h3 class="card-title">Vibe Coding AI Workflow</h3>
+      <p class="card-desc">AI-assisted product design with CAD, 3D printing, electronics.</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_weekly-review-protocol" class="card checklist-card is-yellow">
+      <div class="card-icon">🔄</div>
+      <h3 class="card-title">Weekly Review</h3>
+      <p class="card-desc">60-min maintenance: chaos processing, task review, system health check.</p>
+    </a>
+    <a href="/2025-11-08_M4_SOP_morning-transition-protocol" class="card checklist-card">
+      <div class="card-icon">☀️</div>
+      <h3 class="card-title">Morning Transition</h3>
+      <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM daily).</p>
+    </a>
+    <a href="/2025-11-09_M4_SOP_command-center-setup" class="card checklist-card">
+      <div class="card-icon">⚙️</div>
+      <h3 class="card-title">Command Center Setup</h3>
+      <p class="card-desc">Complete equipment, hardware/software, workspace foundation. TOP PRIORITY.</p>
+    </a>
+    <a href="/2025-11-09_M4_SOP_pixel-fold-setup" class="card checklist-card is-blue">
+      <div class="card-icon">📱</div>
+      <h3 class="card-title">Pixel 9 Pro Fold Setup</h3>
+      <p class="card-desc">Mobile WS-OS extension: chaos capture, dual-screen optimization.</p>
+    </a>
+    <a href="/2025-11-11_M4_SOP_bubble-shield-hardware-protocol" class="card checklist-card is-purple">
+      <div class="card-icon">🛡️</div>
+      <h3 class="card-title">Bubble Shield Protocol</h3>
+      <p class="card-desc">Mandatory sensory mitigation for stable executive function.</p>
+    </a>
   </div>
 </div>
 <!-- Kids Protocols Section -->
@@ -224,192 +162,94 @@
   <h2 class="section-title">👨‍👧‍👦 Kids Protocols</h2>
   <div class="about-card" style="border-color: var(--pink);"><p>Structure for my 6-year-old daughter and 9-year-old son. <strong>You can read these by yourselves and check off what you complete.</strong> Dad made these so you have routines at his house and at mom's house.</p></div>
   <div class="checklist-grid">
-    <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" class="checklist-card is-blue" data-href="/2025-11-09_M4_SOP_kids-weekend-with-dad">
-    <div class="card-icon">🏠</div>
-  <h3 class="card-title">Weekend with Dad</h3>
-  <p class="card-desc">Fri 4PM → Mon 6PM. Morning routines, fun activities, bedtime checklists.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" class="checklist-card" data-href="/2025-11-09_M4_SOP_kids-weekdays-at-moms">
-    <div class="card-icon">🏫</div>
-  <h3 class="card-title">Weekdays at Mom's</h3>
-  <p class="card-desc">Mon 6PM → Fri 4PM. Tablet time, homework, video calls with dad.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025-11-09_M4_SOP_kids-weekend-with-dad" class="card checklist-card is-blue">
+      <div class="card-icon">🏠</div>
+      <h3 class="card-title">Weekend with Dad</h3>
+      <p class="card-desc">Fri 4PM → Mon 6PM. Morning routines, fun activities, bedtime checklists.</p>
+    </a>
+    <a href="/2025-11-09_M4_SOP_kids-weekdays-at-moms" class="card checklist-card">
+      <div class="card-icon">🏫</div>
+      <h3 class="card-title">Weekdays at Mom's</h3>
+      <p class="card-desc">Mon 6PM → Fri 4PM. Tablet time, homework, video calls with dad.</p>
+    </a>
   </div>
 </div>
 <!-- Emergency Protocols Section -->
 <div class="checklist-section">
   <h2 class="section-title">🚨 Emergency Protocols (IPIs)</h2>
   <div class="checklist-grid">
-    <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="checklist-card" data-href="/2025-11-08_M4_IPI_executive-dysfunction-emergency">
-    <div class="card-icon">🧠</div>
-  <h3 class="card-title">Executive Dysfunction</h3>
-  <p class="card-desc">Frozen executive function emergency reboot. Body → Environment → Task.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_IPI_context-switching-recovery" class="checklist-card" data-href="/2025-11-08_M4_IPI_context-switching-recovery">
-    <div class="card-icon">🔀</div>
-  <h3 class="card-title">Context Switching Recovery</h3>
-  <p class="card-desc">Capture → Handle interrupt → Reload previous context without losing progress.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_IPI_sensory-overload-emergency" class="checklist-card is-purple" data-href="/2025-11-08_M4_IPI_sensory-overload-emergency">
-    <div class="card-icon">🔇</div>
-  <h3 class="card-title">Sensory Overload</h3>
-  <p class="card-desc">Rapid sensory reduction, Bubble Shield deploy, nervous system regulation.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_IPI_github-connection-fix" class="checklist-card is-disabled" data-href="/2025-11-08_M4_IPI_github-connection-fix">
-    <div class="card-icon">🔧</div>
-  <h3 class="card-title">GitHub Connection Fix</h3>
-  <p class="card-desc">Troubleshoot GitHub auth and VS Code connection issues.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_IPI_headphone-bluetooth-automation" class="checklist-card is-disabled" data-href="/2025-11-08_M4_IPI_headphone-bluetooth-automation">
-    <div class="card-icon">🎧</div>
-  <h3 class="card-title">Headphone Automation</h3>
-  <p class="card-desc">Automate Soundcore Space One Bluetooth reconnection across devices.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M4_IPI_vscode-deployment-setup" class="checklist-card is-disabled" data-href="/2025-11-08_M4_IPI_vscode-deployment-setup">
-    <div class="card-icon">🚀</div>
-  <h3 class="card-title">VS Code Deployment</h3>
-  <p class="card-desc">Setup instructions for Jekyll + GitHub Pages deployment.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025-11-08_M4_IPI_executive-dysfunction-emergency" class="card checklist-card">
+      <div class="card-icon">🧠</div>
+      <h3 class="card-title">Executive Dysfunction</h3>
+      <p class="card-desc">Frozen executive function emergency reboot. Body → Environment → Task.</p>
+    </a>
+    <a href="/2025-11-08_M4_IPI_context-switching-recovery" class="card checklist-card">
+      <div class="card-icon">🔀</div>
+      <h3 class="card-title">Context Switching Recovery</h3>
+      <p class="card-desc">Capture → Handle interrupt → Reload previous context without losing progress.</p>
+    </a>
+    <a href="/2025-11-08_M4_IPI_sensory-overload-emergency" class="card checklist-card is-purple">
+      <div class="card-icon">🔇</div>
+      <h3 class="card-title">Sensory Overload</h3>
+      <p class="card-desc">Rapid sensory reduction, Bubble Shield deploy, nervous system regulation.</p>
+    </a>
+    <div class="card checklist-card is-disabled">
+      <div class="card-icon">🔧</div>
+      <h3 class="card-title">GitHub Connection Fix</h3>
+      <p class="card-desc">Troubleshoot GitHub auth and VS Code connection issues.</p>
+    </div>
+    <div class="card checklist-card is-disabled">
+      <div class="card-icon">🎧</div>
+      <h3 class="card-title">Headphone Automation</h3>
+      <p class="card-desc">Automate Soundcore Space One Bluetooth reconnection across devices.</p>
+    </div>
+    <div class="card checklist-card is-disabled">
+      <div class="card-icon">🚀</div>
+      <h3 class="card-title">VS Code Deployment</h3>
+      <p class="card-desc">Setup instructions for Jekyll + GitHub Pages deployment.</p>
+    </div>
   </div>
 </div>
 <!-- Configuration & System Files Section -->
 <div class="checklist-section">
   <h2 class="section-title">⚙️ Configuration &amp; System Files</h2>
   <div class="checklist-grid">
-    <a href="/2025-11-08_M4_CONFIG_readme-master-sop" class="checklist-card is-green" data-href="/2025-11-08_M4_CONFIG_readme-master-sop">
-    <div class="card-icon">📖</div>
-  <h3 class="card-title">Master README</h3>
-  <p class="card-desc">The Master Card Catalog. WS-OS central hub. Start here when overwhelmed.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M1_CONFIG_brand-guide" class="checklist-card" data-href="/2025-11-08_M1_CONFIG_brand-guide">
-    <div class="card-icon">🎨</div>
-  <h3 class="card-title">Brand Guide</h3>
-  <p class="card-desc">Visual identity, messaging, core principles. "Structure with chaos."</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-09_M4_CONFIG_audit-log" class="checklist-card is-yellow" data-href="/2025-11-09_M4_CONFIG_audit-log">
-    <div class="card-icon">📋</div>
-  <h3 class="card-title">Audit Log</h3>
-  <p class="card-desc">TRANSPARENCY: Complete audit record, health checks, QA reviews.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-09_M4_CONFIG_interactive-elements-audit" class="checklist-card is-purple" data-href="/2025-11-09_M4_CONFIG_interactive-elements-audit">
-    <div class="card-icon">🔍</div>
-  <h3 class="card-title">Interactive Elements Audit</h3>
-  <p class="card-desc">Technical audit: checkboxes, links, fields. Print vs digital workflows.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025-11-08_M4_CONFIG_readme-master-sop" class="card checklist-card is-green">
+      <div class="card-icon">📖</div>
+      <h3 class="card-title">Master README</h3>
+      <p class="card-desc">The Master Card Catalog. WS-OS central hub. Start here when overwhelmed.</p>
+    </a>
+    <a href="/2025-11-08_M1_CONFIG_brand-guide" class="card checklist-card">
+      <div class="card-icon">🎨</div>
+      <h3 class="card-title">Brand Guide</h3>
+      <p class="card-desc">Visual identity, messaging, core principles. "Structure with chaos."</p>
+    </a>
+    <a href="/2025-11-09_M4_CONFIG_audit-log" class="card checklist-card is-yellow">
+      <div class="card-icon">📋</div>
+      <h3 class="card-title">Audit Log</h3>
+      <p class="card-desc">TRANSPARENCY: Complete audit record, health checks, QA reviews.</p>
+    </a>
+    <a href="/2025-11-09_M4_CONFIG_interactive-elements-audit" class="card checklist-card is-purple">
+      <div class="card-icon">🔍</div>
+      <h3 class="card-title">Interactive Elements Audit</h3>
+      <p class="card-desc">Technical audit: checkboxes, links, fields. Print vs digital workflows.</p>
+    </a>
   </div>
 </div>
 <!-- Philosophy & Identity Section -->
 <div class="checklist-section">
   <h2 class="section-title">💭 Philosophy &amp; Identity</h2>
   <div class="checklist-grid">
-    <a href="/2025-11-08_M1_PAGE_manifesto" class="checklist-card" data-href="/2025-11-08_M1_PAGE_manifesto">
-    <div class="card-icon">📜</div>
-  <h3 class="card-title">The Manifesto</h3>
-  <p class="card-desc">The "Why." The philosophy behind The Wonky Sprout. My worldview card catalog.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-    <a href="/2025-11-08_M1_PAGE_about-homepage" class="checklist-card is-blue" data-href="/2025-11-08_M1_PAGE_about-homepage">
-    <div class="card-icon">👤</div>
-  <h3 class="card-title">About / Origin Story</h3>
-  <p class="card-desc">My story. Diagnosis, meditation, the moment my brain filed itself.</p>
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025-11-08_M1_PAGE_manifesto" class="card checklist-card">
+      <div class="card-icon">📜</div>
+      <h3 class="card-title">The Manifesto</h3>
+      <p class="card-desc">The "Why." The philosophy behind The Wonky Sprout. My worldview card catalog.</p>
+    </a>
+    <a href="/2025-11-08_M1_PAGE_about-homepage" class="card checklist-card is-blue">
+      <div class="card-icon">👤</div>
+      <h3 class="card-title">About / Origin Story</h3>
+      <p class="card-desc">My story. Diagnosis, meditation, the moment my brain filed itself.</p>
+    </a>
   </div>
 </div>
 <!-- Bottom Philosophy -->
@@ -427,24 +267,26 @@
     </a>
 
     <!-- Modal container used by card include quick-views -->
-    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+    
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
   <header class="accessibility-panel-header">
-    <h4>Accessibility Preferences</h4>
-    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+    <h4>ND Accessibility Panel</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close">×</button>
   </header>
-  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
-    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
-    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
-    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+  <form class="accessibility-form" role="form" aria-label="ND accessibility options">
+    <label><input type="checkbox" data-pref="reducedMotion"> Less animation</label>
+    <label><input type="checkbox" data-pref="largeText"> Bigger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simple mode</label>
     <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+    <label><input type="checkbox" data-pref="focusMode"> Focus mode</label>
   </form>
   <div class="accessibility-panel-footer">
-    <button id="accessibility-reset" class="btn">Reset</button>
+    <button id="accessibility-reset" class="btn">Reset all</button>
   </div>
 </div>
 
 <!-- Toggle button (placed in DOM via JS) -->
-<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility">🦾</button>
 
     <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="card-modal-overlay" data-dismiss="true"></div>
@@ -455,6 +297,37 @@
     </div>
 
     <!-- PRESERVED SCRIPTS -->
+    <script>
+    // ND Progress Bar Logic
+    window.ndProgress = {
+      set: function(percent, label) {
+        document.getElementById('nd-progress-bar').style.width = percent + '%';
+        document.getElementById('nd-progress-bar-status').textContent = label || (percent + '%');
+      },
+      reset: function() {
+        document.getElementById('nd-progress-bar').style.width = '0%';
+        document.getElementById('nd-progress-bar-status').textContent = 'Idle';
+      }
+    };
+    // Example: Simulate progress for demo
+    // Remove or replace with real workflow hooks as needed
+    let demoProgress = 0;
+    function runDemoProgress() {
+      window.ndProgress.set(0, 'Starting...');
+      demoProgress = 0;
+      let interval = setInterval(function() {
+        demoProgress += 10;
+        if (demoProgress <= 100) {
+          window.ndProgress.set(demoProgress, demoProgress < 100 ? 'Working...' : 'Complete');
+        } else {
+          clearInterval(interval);
+          setTimeout(()=>window.ndProgress.reset(), 1200);
+        }
+      }, 400);
+    }
+    // Uncomment to auto-run demo on page load:
+    // document.addEventListener('DOMContentLoaded', runDemoProgress);
+    </script>
     <script>
     // This script block remains for essential UI functionality.
     // Mobile Nav Toggle

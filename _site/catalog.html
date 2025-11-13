@@ -56,6 +56,14 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- ND Live Progress Bar -->
+    <div id="nd-progress-bar-container" style="width:100%;max-width:900px;margin:0 auto 1.2rem auto;">
+      <div id="nd-progress-bar-label" style="font-size:1rem;color:var(--text-secondary);margin-bottom:0.2rem;text-align:center;">Progress: <span id="nd-progress-bar-status">Idle</span></div>
+      <div style="background:var(--card-bg);border-radius:8px;box-shadow:var(--card-shadow);height:18px;width:100%;overflow:hidden;">
+        <div id="nd-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent-primary),var(--color-teal));transition:width 0.4s;"></div>
+      </div>
+    </div>
     <!-- ND Card Nav Bar -->
     <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
       <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
@@ -125,44 +133,17 @@
 <hr />
 <div class="checklist-grid">
   
-    <a href="/2025/11/08/why-wonky-sprout.html" class="checklist-card" data-href="/2025/11/08/why-wonky-sprout.html">
-    
-  <h3 class="card-title">What the Hell is a 'Wonky Sprout'?</h3>
+    <a href="/2025/11/08/why-wonky-sprout.html" class="card checklist-card">
+      <h3 class="card-title">What the Hell is a 'Wonky Sprout'?</h3>
+    </a>
   
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025/11/08/building-the-daily-tracker.html" class="card checklist-card">
+      <h3 class="card-title">Building the Daily Tracker: How I Made Habit Tracking Actually Work for ADHD</h3>
+    </a>
   
-    <a href="/2025/11/08/building-the-daily-tracker.html" class="checklist-card" data-href="/2025/11/08/building-the-daily-tracker.html">
-    
-  <h3 class="card-title">Building the Daily Tracker: How I Made Habit Tracking Actually Work for ADHD</h3>
-  
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
-  
-    <a href="/2025/11/08/bubble-shield-fix.html" class="checklist-card" data-href="/2025/11/08/bubble-shield-fix.html">
-    
-  <h3 class="card-title">The $40 Fix for $40k Focus</h3>
-  
-  <!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/2025/11/08/bubble-shield-fix.html" class="card checklist-card">
+      <h3 class="card-title">The $40 Fix for $40k Focus</h3>
+    </a>
   
 </div>
 
@@ -175,24 +156,26 @@
     </a>
 
     <!-- Modal container used by card include quick-views -->
-    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+    
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
   <header class="accessibility-panel-header">
-    <h4>Accessibility Preferences</h4>
-    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+    <h4>ND Accessibility Panel</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close">×</button>
   </header>
-  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
-    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
-    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
-    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+  <form class="accessibility-form" role="form" aria-label="ND accessibility options">
+    <label><input type="checkbox" data-pref="reducedMotion"> Less animation</label>
+    <label><input type="checkbox" data-pref="largeText"> Bigger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simple mode</label>
     <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+    <label><input type="checkbox" data-pref="focusMode"> Focus mode</label>
   </form>
   <div class="accessibility-panel-footer">
-    <button id="accessibility-reset" class="btn">Reset</button>
+    <button id="accessibility-reset" class="btn">Reset all</button>
   </div>
 </div>
 
 <!-- Toggle button (placed in DOM via JS) -->
-<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility">🦾</button>
 
     <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="card-modal-overlay" data-dismiss="true"></div>
@@ -203,6 +186,37 @@
     </div>
 
     <!-- PRESERVED SCRIPTS -->
+    <script>
+    // ND Progress Bar Logic
+    window.ndProgress = {
+      set: function(percent, label) {
+        document.getElementById('nd-progress-bar').style.width = percent + '%';
+        document.getElementById('nd-progress-bar-status').textContent = label || (percent + '%');
+      },
+      reset: function() {
+        document.getElementById('nd-progress-bar').style.width = '0%';
+        document.getElementById('nd-progress-bar-status').textContent = 'Idle';
+      }
+    };
+    // Example: Simulate progress for demo
+    // Remove or replace with real workflow hooks as needed
+    let demoProgress = 0;
+    function runDemoProgress() {
+      window.ndProgress.set(0, 'Starting...');
+      demoProgress = 0;
+      let interval = setInterval(function() {
+        demoProgress += 10;
+        if (demoProgress <= 100) {
+          window.ndProgress.set(demoProgress, demoProgress < 100 ? 'Working...' : 'Complete');
+        } else {
+          clearInterval(interval);
+          setTimeout(()=>window.ndProgress.reset(), 1200);
+        }
+      }, 400);
+    }
+    // Uncomment to auto-run demo on page load:
+    // document.addEventListener('DOMContentLoaded', runDemoProgress);
+    </script>
     <script>
     // This script block remains for essential UI functionality.
     // Mobile Nav Toggle

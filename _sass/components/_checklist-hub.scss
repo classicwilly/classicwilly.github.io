@@ -1,16 +1,17 @@
 // ND-Friendly Checklist Hub Styles
 // ...existing code...
 // ND-Friendly Checklist Hub Styles
+
 .checklist-hub {
   background-color: var(--card-bg);
-  color: var(--accent-green);
+  color: var(--text-color);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   padding: 2rem 2.6rem;
   margin: 2.2rem 0;
   font-size: 1.15rem;
   letter-spacing: 0.013em;
-  border: 2px solid var(--accent-green);
+  border: 2px solid #2ecc7188; // soft green accent
 }
 // Styles for the main /checklists hub page.
 

@@ -37,9 +37,9 @@ $nd-accent-yellow: #fffbeb;
 		font-size: 1rem;
 		margin-bottom: 0;
 	}
-	&.card--blue { background-color: var(--accent-blue); }
-	&.card--green { background-color: var(--accent-green); }
-	&.card--yellow { background-color: var(--accent-yellow); }
+		&.card--blue { background-color: #58a6ff22; }
+		&.card--green { background-color: #2ecc7122; }
+		&.card--yellow { background-color: #fffbeb44; }
 	&:hover {
 		transform: translateY(-5px);
 		box-shadow: var(--card-shadow-hover);

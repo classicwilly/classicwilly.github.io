@@ -56,6 +56,14 @@
 <body class="theme-dark">
     <!-- Skip Navigation Link (Accessibility) -->
     <a href="#main-content" class="skip-link sr-only">Skip to main content</a>
+
+    <!-- ND Live Progress Bar -->
+    <div id="nd-progress-bar-container" style="width:100%;max-width:900px;margin:0 auto 1.2rem auto;">
+      <div id="nd-progress-bar-label" style="font-size:1rem;color:var(--text-secondary);margin-bottom:0.2rem;text-align:center;">Progress: <span id="nd-progress-bar-status">Idle</span></div>
+      <div style="background:var(--card-bg);border-radius:8px;box-shadow:var(--card-shadow);height:18px;width:100%;overflow:hidden;">
+        <div id="nd-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--accent-primary),var(--color-teal));transition:width 0.4s;"></div>
+      </div>
+    </div>
     <!-- ND Card Nav Bar -->
     <nav class="nd-card-nav" style="display:flex;gap:1rem;justify-content:center;padding:1.2rem 0 0.5rem 0;">
       <a class="card nd-nav-link" style="background:var(--accent-blue);border:2px solid var(--focus-outline);box-shadow:var(--card-shadow);border-radius:var(--card-radius);padding:0.8rem 1.4rem;margin:0;text-decoration:none;color:var(--text-color);font-weight:600;transition:box-shadow 0.18s,background 0.22s;" href="/">🏠 Home</a>
@@ -100,46 +108,28 @@
   <div class="checklist-grid">
     
     <!-- Foundational Daily -->
-    <a href="/checklist-foundational-daily" class="checklist-card is-green" data-href="/checklist-foundational-daily">
-    <div class="card-icon">🌱</div>
-  <h3 class="card-title">Foundational Daily</h3>
-  <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
-  <div class="card-meta">Every single day</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/checklist-foundational-daily" class="card checklist-card is-green">
+      <div class="card-icon">🌱</div>
+      <h3 class="card-title">Foundational Daily</h3>
+      <p class="card-desc">The 5 non-negotiables: Water, Pills, Capture, Sleep Anchor, Daily Dump</p>
+      <span class="card-meta">Every single day</span>
+    </a>
     
     <!-- Morning Transition -->
-    <a href="/checklist-morning-transition" class="checklist-card is-yellow" data-href="/checklist-morning-transition">
-    <div class="card-icon">☀️</div>
-  <h3 class="card-title">Morning Transition</h3>
-  <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM)</p>
-  <div class="card-meta">Every morning</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/checklist-morning-transition" class="card checklist-card is-yellow">
+      <div class="card-icon">☀️</div>
+      <h3 class="card-title">Morning Transition</h3>
+      <p class="card-desc">60-min bridge from sleep to execution (6:00-7:00 AM)</p>
+      <span class="card-meta">Every morning</span>
+    </a>
     
     <!-- Daily Tracker -->
-    <a href="/daily-tracker" class="checklist-card is-blue" data-href="/daily-tracker">
-    <div class="card-icon">📊</div>
-  <h3 class="card-title">Daily Tracker</h3>
-  <p class="card-desc">Comprehensive single-page daily check-in with metrics</p>
-  <div class="card-meta">Fill during Daily Dump (10:25 PM)</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/daily-tracker" class="card checklist-card is-blue">
+      <div class="card-icon">📊</div>
+      <h3 class="card-title">Daily Tracker</h3>
+      <p class="card-desc">Comprehensive single-page daily check-in with metrics</p>
+      <span class="card-meta">Fill during Daily Dump (10:25 PM)</span>
+    </a>
     
   </div>
 </div>
@@ -151,18 +141,12 @@
   <div class="checklist-grid">
     
     <!-- Weekly Review -->
-    <a href="/checklist-weekly-review" class="checklist-card is-purple" data-href="/checklist-weekly-review">
-    <div class="card-icon">🔄</div>
-  <h3 class="card-title">Weekly Review</h3>
-  <p class="card-desc">60-min maintenance: process chaos, review tasks, plan ahead</p>
-  <div class="card-meta">Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
-  </a>
+    <a href="/checklist-weekly-review" class="card checklist-card is-purple">
+      <div class="card-icon">🔄</div>
+      <h3 class="card-title">Weekly Review</h3>
+      <p class="card-desc">60-min maintenance: process chaos, review tasks, plan ahead</p>
+      <span class="card-meta">Solo: Fri 3-4 PM | Family: Sun 8:30-9:30 PM</span>
+    </a>
     
   </div>
 </div>
@@ -174,45 +158,24 @@
   <div class="checklist-grid">
     
     <!-- Executive Dysfunction -->
-    <div class="checklist-card is-disabled" aria-disabled="true">
+  <div class="card checklist-card is-disabled">
     <div class="card-icon">🧠</div>
-  <h3 class="card-title">Executive Dysfunction</h3>
-  <p class="card-desc">Quick-reference for frozen executive function</p>
-  <div class="card-meta">Coming Soon</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
+    <h3 class="card-title">Executive Dysfunction</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
   </div>
     
     <!-- Context Switching -->
-    <div class="checklist-card is-disabled" aria-disabled="true">
+  <div class="card checklist-card is-disabled">
     <div class="card-icon">🔀</div>
-  <h3 class="card-title">Context Switching Recovery</h3>
-  <p class="card-desc">Fast capture-interrupt-reload for disruptions</p>
-  <div class="card-meta">Coming Soon</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
+    <h3 class="card-title">Context Switching Recovery</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
   </div>
     
     <!-- Sensory Overload -->
-    <div class="checklist-card is-disabled" aria-disabled="true">
+  <div class="card checklist-card is-disabled">
     <div class="card-icon">🔇</div>
-  <h3 class="card-title">Sensory Overload</h3>
-  <p class="card-desc">Rapid sensory reduction and retreat protocol</p>
-  <div class="card-meta">Coming Soon</div><!-- Touch quick-action button: icon only + screen-reader label (no visible 'Open' text) -->
-  <button type="button" class="card-action" aria-label="Open details">
-    <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="card-action-icon">
-      <path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 14h-2v-2h2v2zm0-4h-2V6h2v6z" />
-    </svg>
-    <span class="sr-only">Open details</span>
-  </button>
+    <h3 class="card-title">Sensory Overload</h3>
+    <p class="card-desc">Protocol not yet published. Request via Command Center.</p>
   </div>
     
   </div>
@@ -259,24 +222,26 @@
     </a>
 
     <!-- Modal container used by card include quick-views -->
-    <div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
+    
+<div id="accessibility-panel" class="accessibility-panel" aria-hidden="true">
   <header class="accessibility-panel-header">
-    <h4>Accessibility Preferences</h4>
-    <button id="accessibility-close" class="accessibility-close" aria-label="Close preferences">×</button>
+    <h4>ND Accessibility Panel</h4>
+    <button id="accessibility-close" class="accessibility-close" aria-label="Close">×</button>
   </header>
-  <form class="accessibility-form" role="form" aria-label="Accessibility preferences">
-    <label><input type="checkbox" data-pref="reducedMotion"> Reduce motion</label>
-    <label><input type="checkbox" data-pref="largeText"> Larger text</label>
-    <label><input type="checkbox" data-pref="simplifiedView"> Simplified view</label>
+  <form class="accessibility-form" role="form" aria-label="ND accessibility options">
+    <label><input type="checkbox" data-pref="reducedMotion"> Less animation</label>
+    <label><input type="checkbox" data-pref="largeText"> Bigger text</label>
+    <label><input type="checkbox" data-pref="simplifiedView"> Simple mode</label>
     <label><input type="checkbox" data-pref="highContrast"> High contrast</label>
+    <label><input type="checkbox" data-pref="focusMode"> Focus mode</label>
   </form>
   <div class="accessibility-panel-footer">
-    <button id="accessibility-reset" class="btn">Reset</button>
+    <button id="accessibility-reset" class="btn">Reset all</button>
   </div>
 </div>
 
 <!-- Toggle button (placed in DOM via JS) -->
-<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility preferences">⚙️</button>
+<button id="accessibility-toggle" class="accessibility-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="accessibility-panel" title="Accessibility">🦾</button>
 
     <div id="card-modal" class="card-modal" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="card-modal-overlay" data-dismiss="true"></div>
@@ -287,6 +252,37 @@
     </div>
 
     <!-- PRESERVED SCRIPTS -->
+    <script>
+    // ND Progress Bar Logic
+    window.ndProgress = {
+      set: function(percent, label) {
+        document.getElementById('nd-progress-bar').style.width = percent + '%';
+        document.getElementById('nd-progress-bar-status').textContent = label || (percent + '%');
+      },
+      reset: function() {
+        document.getElementById('nd-progress-bar').style.width = '0%';
+        document.getElementById('nd-progress-bar-status').textContent = 'Idle';
+      }
+    };
+    // Example: Simulate progress for demo
+    // Remove or replace with real workflow hooks as needed
+    let demoProgress = 0;
+    function runDemoProgress() {
+      window.ndProgress.set(0, 'Starting...');
+      demoProgress = 0;
+      let interval = setInterval(function() {
+        demoProgress += 10;
+        if (demoProgress <= 100) {
+          window.ndProgress.set(demoProgress, demoProgress < 100 ? 'Working...' : 'Complete');
+        } else {
+          clearInterval(interval);
+          setTimeout(()=>window.ndProgress.reset(), 1200);
+        }
+      }, 400);
+    }
+    // Uncomment to auto-run demo on page load:
+    // document.addEventListener('DOMContentLoaded', runDemoProgress);
+    </script>
     <script>
     // This script block remains for essential UI functionality.
     // Mobile Nav Toggle

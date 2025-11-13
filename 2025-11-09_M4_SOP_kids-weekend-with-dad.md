@@ -13,22 +13,25 @@ title: Weekend With Dad - Kids Protocol
 
 ## � QUICK JUMP TO SECTION
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <a href="#how-to-use">�📄 How to Use</a>
-  <a href="#what-to-expect">🏠 What to Expect</a>
-  <a href="#daily-checklist">📋 Daily Checklist</a>
-  <a href="#activity-menu">🎨 Activity Menu</a>
-  <a href="#sunday-prep">📅 Sunday Prep</a>
-  <a href="#meal-times">🍽️ Meal Times</a>
-  <a href="#feeling-sad">😰 Feeling Sad</a>
-  <a href="#bedtime">🛏️ Bedtime</a>
-  <a href="#talking-to-mom">📞 Call Mom</a>
-  <a href="#packing-list">🎒 Packing</a>
-  <a href="#traditions">🌟 Traditions</a>
-  <a href="#emergency">🚨 Emergency</a>
-  <a href="#remember">💙 Remember</a>
-  <a href="#success-checklist">✅ Success</a>
-  <a href="#notes">📝 My Notes</a>
+<div class="checklist-card">
+  <h3>🚀 QUICK JUMP TO SECTION</h3>
+  <ul style="columns: 2;">
+    <li><a href="#how-to-use">📄 How to Use</a></li>
+    <li><a href="#what-to-expect">🏠 What to Expect</a></li>
+    <li><a href="#daily-checklist">📋 Daily Checklist</a></li>
+    <li><a href="#activity-menu">🎨 Activity Menu</a></li>
+    <li><a href="#sunday-prep">📅 Sunday Prep</a></li>
+    <li><a href="#meal-times">🍽️ Meal Times</a></li>
+    <li><a href="#feeling-sad">😰 Feeling Sad</a></li>
+    <li><a href="#bedtime">🛏️ Bedtime</a></li>
+    <li><a href="#talking-to-mom">📞 Call Mom</a></li>
+    <li><a href="#packing-list">🎒 Packing</a></li>
+    <li><a href="#traditions">🌟 Traditions</a></li>
+    <li><a href="#emergency">🚨 Emergency</a></li>
+    <li><a href="#remember">💙 Remember</a></li>
+    <li><a href="#success-checklist">✅ Success</a></li>
+    <li><a href="#notes">📝 My Notes</a></li>
+  </ul>
 </div>
 
 ---

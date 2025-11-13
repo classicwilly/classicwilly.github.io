@@ -59,7 +59,9 @@ title: Foundational Daily Protocols Checklist
 </div>
 {% endcapture %}
 
-{% include card.html title="MORNING SEQUENCE (Fixed Order)" content=morning classes="checklist-card" %}
+<div class="checklist-card">
+  {{ morning }}
+</div>
 
 {% capture allday %}
 ### Capture Protocol (Always Running)
@@ -76,7 +78,9 @@ title: Foundational Daily Protocols Checklist
 **Note**: Processing happens during "Planning & Filing" time block or Weekly Review
 {% endcapture %}
 
-{% include card.html title="ALL-DAY PROTOCOL (Active 6:00 AM - 10:30 PM)" content=allday classes="checklist-card" %}
+<div class="checklist-card">
+  {{ allday }}
+</div>
 
 {% capture evening %}
 ### 10:00 PM - Sleep Anchor Prep
@@ -104,7 +108,9 @@ title: Foundational Daily Protocols Checklist
 </div>
 {% endcapture %}
 
-{% include card.html title="EVENING SEQUENCE (Fixed Order)" content=evening classes="checklist-card" %}
+<div class="checklist-card">
+  {{ evening }}
+</div>
 
 {% capture success %}
 - ✓ All 5 protocols executed in sequence
@@ -113,7 +119,9 @@ title: Foundational Daily Protocols Checklist
 - ✓ In bed at 10:30 PM with 7-8 hour sleep window
 {% endcapture %}
 
-{% include card.html title="SUCCESS CRITERIA" content=success classes="about-card is-green" %}
+<div class="about-card is-green">
+  {{ success }}
+</div>
 
 {% capture priority %}
 1. **Sleep** - Did I get 7-8 hours last night?
@@ -124,6 +132,8 @@ title: Foundational Daily Protocols Checklist
 Cannot fix executive function if these 4 are failing.
 {% endcapture %}
 
-{% include card.html title="PRIORITY HIERARCHY REMINDER" content=priority classes="about-card is-yellow" %}
+<div class="about-card is-yellow">
+  {{ priority }}
+</div>
 
 **[View Full Foundational Daily Protocols →](2025-11-08_M4_SOP_foundational-daily-protocols)**

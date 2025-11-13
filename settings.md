@@ -29,12 +29,16 @@ title: Settings & Contact - The Wonky Sprout
   </div>
 </div>
 {% endcapture %}
-{% include card.html title="👤 About classicwilly" content=section_about classes="about-card is-green" %}
+<div class="about-card is-green">
+  {{ section_about }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="👤 About classicwilly" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_1 }}
+</div>
 {% capture section_2 %}
 ## 📬 Contact
 {% capture section_contact %}
@@ -68,12 +72,16 @@ title: Settings & Contact - The Wonky Sprout
   </p>
 </div>
 {% endcapture %}
-{% include card.html title="📬 Contact" content=section_contact classes="checklist-card is-yellow" %}
+<div class="checklist-card is-yellow">
+  {{ section_contact }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📬 Contact" content=section_2 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_2 }}
+</div>
 {% capture section_3 %}
 ## 🎨 Site Preferences
 {% capture section_prefs %}
@@ -114,12 +122,16 @@ title: Settings & Contact - The Wonky Sprout
   </div>
 </div>
 {% endcapture %}
-{% include card.html title="🎨 Site Preferences" content=section_prefs classes="about-card is-teal" %}
+<div class="about-card is-teal">
+  {{ section_prefs }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="🎨 Site Preferences" content=section_3 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_3 }}
+</div>
 {% capture section_4 %}
 ## 📊 Data & Privacy
 {% capture section_data %}
@@ -146,43 +158,57 @@ title: Settings & Contact - The Wonky Sprout
   </div>
 </div>
 {% endcapture %}
-{% include card.html title="📊 Data & Privacy" content=section_data classes="about-card is-purple" %}
+<div class="about-card is-purple">
+  {{ section_data }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📊 Data & Privacy" content=section_4 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_4 }}
+</div>
 {% capture section_5 %}
 ## 🔧 Technical Details
 
 {% capture section_tech %}
 <!-- ... Technical Details section ... -->
 {% endcapture %}
-{% include card.html title="🔧 Technical Details" content=section_tech classes="about-card" %}
+<div class="about-card">
+  {{ section_tech }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="🔧 Technical Details" content=section_5 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_5 }}
+</div>
 {% capture section_6 %}
 ## 📚 Resources
 
 {% capture section_resources %}
 <!-- ... Resources section ... -->
 {% endcapture %}
-{% include card.html title="📚 Resources" content=section_resources classes="about-card" %}
+<div class="about-card">
+  {{ section_resources }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📚 Resources" content=section_6 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_6 }}
+</div>
 {% capture section_7 %}
 ## 🌱 The Wonky Sprout Philosophy
 
 {% capture section_philosophy %}
 <!-- ... Philosophy section ... -->
 {% endcapture %}
-{% include card.html title="🌱 The Wonky Sprout Philosophy" content=section_philosophy classes="about-card is-green" %}
+<div class="about-card is-green">
+  {{ section_philosophy }}
+</div>
 
 ---
 
@@ -324,4 +350,6 @@ function clearAllData() {
 }
 </script>
 {% endcapture %}
-{% include card.html title="🌱 The Wonky Sprout Philosophy" content=section_7 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_7 }}
+</div>

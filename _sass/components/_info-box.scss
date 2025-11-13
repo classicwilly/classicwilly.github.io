@@ -1,24 +1,19 @@
-// ND-Friendly Info Box Styles
-// ND-Friendly Info Box Styles
+
+// ND-Friendly Info Box Styles (Use sparingly for actionable cues only)
 .info-box {
-  background-color: var(--card-bg);
-  color: var(--focus-outline);
+  background-color: var(--card-bg); // match card background for sameness
+  color: var(--text-color); // match main text for comfort
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
   padding: 1.6rem 2.2rem;
   margin: 2rem 0;
   font-size: 1.13rem;
   letter-spacing: 0.012em;
-  border: 2px solid var(--focus-outline);
-}
-/* /_sass/components/_info-box.scss */
-
-.info-box {
-  background: var(--card-dark);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin: 2rem 0;
+  border-left: 3px solid #1abc9c44; // soft teal accent, not jarring
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 
-.info-box.is-teal { border-left: 4px solid var(--circuit-teal); }
-.info-box.is-green { border-left: 4px solid var(--green); }
+.info-box.is-teal { border-left: 3px solid #1abc9c88; }
+.info-box.is-green { border-left: 3px solid #2ecc7188; }

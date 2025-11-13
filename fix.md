@@ -27,12 +27,16 @@ You don't need motivation. You need **mechanical systems that run on autopilot w
 {% capture section_who %}
 You don't need motivation. You need **mechanical systems that run on autopilot when your brain can't.**
 {% endcapture %}
-{% include card.html title="WHO IS THIS FOR?" content=section_who classes="checklist-card is-blue" %}
+<div class="checklist-card is-blue">
+  {{ section_who }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="WHO IS THIS FOR?" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_1 }}
+</div>
 {% capture section_2 %}
 ## WHAT YOU NEED
 
@@ -54,7 +58,9 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 - **Emergency Protocol Set** - 2-3 IPIs for your most common failure modes (Executive Dysfunction, Sensory Overload, Burnout Recovery)
 - **Implementation Guide** - Step-by-step deployment plan with fallback procedures
 {% endcapture %}
-{% include card.html title="WHAT YOU NEED" content=section_need classes="checklist-card is-green" %}
+<div class="checklist-card is-green">
+  {{ section_need }}
+</div>
 
 
 {% capture section_how %}
@@ -103,7 +109,9 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 - Metrics to track (daily check-ins, weekly reviews)
 - Adjustment protocol (what to do when it's not working)
 {% endcapture %}
-{% include card.html title="HOW IT WORKS" content=section_how classes="checklist-card is-purple" %}
+<div class="checklist-card is-purple">
+  {{ section_how }}
+</div>
 - Example: "Executive Dysfunction Emergency" - 5-step reboot sequence
 - Laminated-ready format for physical deployment
 
@@ -115,7 +123,9 @@ Your current "system" is a collection of half-implemented tools, abandoned apps,
 ---
 
 {% endcapture %}
-{% include card.html title="WHAT YOU NEED" content=section_2 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_2 }}
+</div>
 {% capture section_3 %}
 ## INVESTMENT
 
@@ -134,12 +144,16 @@ Includes:
 
 **Guarantee:** If the protocols don't reduce your chaos by 50% within 30 days, I'll revise them for free or refund the second payment.
 {% endcapture %}
-{% include card.html title="INVESTMENT" content=section_invest classes="checklist-card is-teal" %}
+<div class="checklist-card is-teal">
+  {{ section_invest }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="INVESTMENT" content=section_3 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_3 }}
+</div>
 {% capture section_4 %}
 ## WHO AM I?
 
@@ -156,12 +170,16 @@ Includes:
 - Structure from chaos. Your brain isn't broken; your systems are.
 - Fix it once, fix it right. Permanent solutions, not recurring subscriptions.
 {% endcapture %}
-{% include card.html title="WHO AM I?" content=section_whoami classes="about-card is-green" %}
+<div class="about-card is-green">
+  {{ section_whoami }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="WHO AM I?" content=section_4 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_4 }}
+</div>
 {% capture section_5 %}
 ## PROOF IT WORKS
 
@@ -178,12 +196,16 @@ Includes:
   </div>
 </div>
 {% endcapture %}
-{% include card.html title="PROOF IT WORKS" content=section_proof classes="about-card is-teal" %}
+<div class="about-card is-teal">
+  {{ section_proof }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="PROOF IT WORKS" content=section_5 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_5 }}
+</div>
 {% capture section_6 %}
 ## READY TO FIX IT?
 
@@ -198,7 +220,9 @@ Includes:
 
 I respond within 24 hours. If I can't help you, I'll tell you immediately and point you to someone who can.
 {% endcapture %}
-{% include card.html title="READY TO FIX IT?" content=section_ready classes="checklist-card is-yellow" %}
+<div class="checklist-card is-yellow">
+  {{ section_ready }}
+</div>
 
 ---
 
@@ -207,4 +231,6 @@ I respond within 24 hours. If I can't help you, I'll tell you immediately and po
   <a href="/sop-vault" class="page-nav-link">🧠 View My Systems</a>
   <a href="/2025-11-08_M1_PAGE_manifesto" class="page-nav-link">📜 Read the Manifesto</a>
 </div>{% endcapture %}
-{% include card.html title="READY TO FIX IT?" content=section_6 classes="checklist-card" %}
+<div class="checklist-card">
+  {{ section_6 }}
+</div>

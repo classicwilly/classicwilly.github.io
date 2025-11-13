@@ -78,12 +78,18 @@ title: Google Workspace Integration
   </a>
 </div>
 {% endcapture %}
-{% include card.html title="📅 FAMILY CALENDAR" content=section_1 classes="about-card is-blue" %}
+<div class="about-card is-blue">
+  <!-- ...existing content for FAMILY CALENDAR... -->
+  {{ section_1 }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📅 FAMILY CALENDAR {#calendar}" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for FAMILY CALENDAR {#calendar}... -->
+  {{ section_1 }}
+</div>
 {% capture section_2 %}
 ## 📝 FORMS & FEEDBACK {#forms}
 
@@ -132,12 +138,18 @@ title: Google Workspace Integration
   </ol>
 </div>
 {% endcapture %}
-{% include card.html title="📝 FORMS & FEEDBACK" content=section_2 classes="about-card" %}
+<div class="about-card">
+  <!-- ...existing content for FORMS & FEEDBACK... -->
+  {{ section_2 }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📝 FORMS & FEEDBACK {#forms}" content=section_2 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for FORMS & FEEDBACK {#forms}... -->
+  {{ section_2 }}
+</div>
 {% capture section_3 %}
 ## 📊 SHEETS DATABASE {#sheets}
 
@@ -182,12 +194,18 @@ title: Google Workspace Integration
   <p><strong>Template available:</strong> <a href="https://docs.google.com/spreadsheets/create" target="_blank" style="color: var(--circuit-teal);">Create from template →</a></p>
 </div>
 {% endcapture %}
-{% include card.html title="📊 SHEETS DATABASE" content=section_3 classes="about-card" %}
+<div class="about-card">
+  <!-- ...existing content for SHEETS DATABASE... -->
+  {{ section_3 }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📊 SHEETS DATABASE {#sheets}" content=section_3 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for SHEETS DATABASE {#sheets}... -->
+  {{ section_3 }}
+</div>
 {% capture section_4 %}
 ## 📁 GOOGLE DRIVE {#drive}
 
@@ -233,12 +251,18 @@ title: Google Workspace Integration
   </ol>
 </div>
 {% endcapture %}
-{% include card.html title="📁 GOOGLE DRIVE" content=section_4 classes="about-card" %}
+<div class="about-card">
+  <!-- ...existing content for GOOGLE DRIVE... -->
+  {{ section_4 }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📁 GOOGLE DRIVE {#drive}" content=section_4 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for GOOGLE DRIVE {#drive}... -->
+  {{ section_4 }}
+</div>
 {% capture section_5 %}
 ## 📧 GMAIL CONTACT {#contact}
 
@@ -288,12 +312,18 @@ title: Google Workspace Integration
   </div>
 </div>
 {% endcapture %}
-{% include card.html title="📧 GMAIL CONTACT" content=section_5 classes="about-card" %}
+<div class="about-card">
+  <!-- ...existing content for GMAIL CONTACT... -->
+  {{ section_5 }}
+</div>
 
 ---
 
 {% endcapture %}
-{% include card.html title="📧 GMAIL CONTACT {#contact}" content=section_5 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for GMAIL CONTACT {#contact}... -->
+  {{ section_5 }}
+</div>
 {% capture section_6 %}
 ## 🤖 GEMINI AI INTEGRATION {#gemini}
 
@@ -340,7 +370,10 @@ title: Google Workspace Integration
 ---
 
 {% endcapture %}
-{% include card.html title="🤖 GEMINI AI INTEGRATION {#gemini}" content=section_6 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for GEMINI AI INTEGRATION {#gemini}... -->
+  {{ section_6 }}
+</div>
 {% capture section_7 %}
 ## ⚙️ INTEGRATION STATUS
 
@@ -585,4 +618,7 @@ title: Google Workspace Integration
   });
 </script>
 {% endcapture %}
-{% include card.html title="⚙️ INTEGRATION STATUS" content=section_7 classes="checklist-card" %}
+<div class="checklist-card">
+  <!-- ...existing content for INTEGRATION STATUS... -->
+  {{ section_7 }}
+</div>

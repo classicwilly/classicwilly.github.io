@@ -7,9 +7,10 @@
   z-index: 1010;
 }
 // ...existing code...
+
 .fab {
-  background-color: var(--accent-blue);
-  color: var(--card-bg);
+  background-color: #58a6ff44; // soft blue accent
+  color: var(--text-color);
   border: none;
   border-radius: 50%;
   width: 56px;

@@ -21,7 +21,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] **6:10-6:15 AM** - Make and drink coffee/tea (no multitasking)
 {% endcapture %}
 
-{% include card.html title="PHASE 1: PHYSICAL ACTIVATION (6:00-6:15 AM)" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_1 }}
+</div>
 
 {% capture section_2 %}
 - [ ] **6:15-6:20 AM** - Clear Command Center of clutter
@@ -35,7 +37,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] **6:25-6:30 AM** - Test audio and adjust for comfort
 {% endcapture %}
 
-{% include card.html title="PHASE 2: ENVIRONMENT SETUP (6:15-6:30 AM)" content=section_2 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_2 }}
+</div>
 
 {% capture section_3 %}
 - [ ] **6:30-6:35 AM** - Review today's calendar
@@ -51,7 +55,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] **6:42-6:45 AM** - Say out loud: "I am ready to execute [FIRST TASK]"
 {% endcapture %}
 
-{% include card.html title="PHASE 3: MENTAL CALIBRATION (6:30-6:45 AM)" content=section_3 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_3 }}
+</div>
 
 {% capture section_4 %}
 ### Pre-Launch Check (6:45-6:50 AM)
@@ -75,7 +81,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Ignore everything else until timer ends
 {% endcapture %}
 
-{% include card.html title="PHASE 4: EXECUTION LAUNCH (6:45-7:00 AM)" content=section_4 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_4 }}
+</div>
 
 {% capture section_5 %}
 - ✓ Started day at 6:00 AM (not 7:00 AM or later)
@@ -84,6 +92,8 @@ Print this page or check boxes directly in your browser (progress saves automati
 - ✓ Feel physically awake, mentally clear, ready to execute
 {% endcapture %}
 
-{% include card.html title="SUCCESS CRITERIA" content=section_5 classes="about-card is-green" %}
+<div class="about-card is-green">
+	{{ section_5 }}
+</div>
 
 **[View Full Morning Transition Protocol →](2025-11-08_M4_SOP_morning-transition-protocol)**

@@ -19,7 +19,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Set timer for 60 minutes
 {% endcapture %}
 
-{% include card.html title="PRE-PROTOCOL SETUP (5 Minutes)" content=section_setup classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_setup }}
+</div>
 
 {% capture section_1 %}
 ### Google Keep Chaos Audit (10 minutes)
@@ -40,7 +42,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Delete recordings after filing
 {% endcapture %}
 
-{% include card.html title="PHASE 1: CHAOS PROCESSING (15 Minutes)" content=section_1 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_1 }}
+</div>
 
 {% capture section_2 %}
 ### Completed Task Audit (5 minutes)
@@ -60,7 +64,9 @@ Print this page or check boxes directly in your browser (progress saves automati
 - [ ] Update deadlines for carryover tasks
 {% endcapture %}
 
-{% include card.html title="PHASE 2: TASK COMPLETION REVIEW (10 Minutes)" content=section_2 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_2 }}
+</div>
 
 {% capture section_3 %}
 ### Foundational Protocol Compliance (5 minutes)
@@ -92,7 +98,9 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] **Red Flag**: If any IPI used 3+ times, root cause analysis needed
 {% endcapture %}
 
-{% include card.html title="PHASE 3: SYSTEM HEALTH CHECK (10 Minutes)" content=section_3 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_3 }}
+</div>
 
 {% capture section_4 %}
 ### Calendar Review (5 minutes)
@@ -124,7 +132,9 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] 3. [Maintain foundational protocols]
 {% endcapture %}
 
-{% include card.html title="PHASE 4: WEEK AHEAD PLANNING (15 Minutes)" content=section_4 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_4 }}
+</div>
 
 {% capture section_5 %}
 ### Pattern Recognition (5 minutes)
@@ -149,7 +159,9 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] File in NotebookLM with tag "Wins - [Date]"
 {% endcapture %}
 
-{% include card.html title="PHASE 5: SYSTEM OPTIMIZATION (10 Minutes)" content=section_5 classes="checklist-card" %}
+<div class="checklist-card">
+	{{ section_5 }}
+</div>
 
 {% capture section_post %}
 ### Clean Slate Ritual (3 minutes)
@@ -165,7 +177,9 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - [ ] **If Family Mode**: Continue to Daily Dump (10:25 PM) → Sleep Anchor (10:30 PM)
 {% endcapture %}
 
-{% include card.html title="POST-PROTOCOL ACTIONS (5 Minutes)" content=section_post classes="about-card is-teal" %}
+<div class="about-card is-teal">
+	{{ section_post }}
+</div>
 
 {% capture section_success %}
 - ✓ Google Keep is empty (or only "Review Next Week" items)
@@ -175,6 +189,8 @@ Rate each protocol (7/7 = Excellent, 5-6/7 = Good, 3-4/7 = Needs Attention, 0-2/
 - ✓ Documented at least one system improvement
 {% endcapture %}
 
-{% include card.html title="SUCCESS CRITERIA" content=section_success classes="about-card is-green" %}
+<div class="about-card is-green">
+	{{ section_success }}
+</div>
 
 **[View Full Weekly Review Protocol →](2025-11-08_M4_SOP_weekly-review-protocol)**

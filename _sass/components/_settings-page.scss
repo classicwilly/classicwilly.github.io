@@ -1,10 +1,11 @@
 // ND-Friendly Access Panel Styles
 // ...existing code...
 // ND-Friendly Access Panel Styles
+
 .access-panel {
   background-color: var(--card-bg);
-  color: var(--accent-green);
-  border: 2.5px solid var(--accent-green);
+  color: var(--text-color);
+  border: 2.5px solid #2ecc7188; // soft green accent
   padding: 1.4rem 2rem;
   border-radius: var(--card-radius);
   margin-bottom: 2.4rem;
