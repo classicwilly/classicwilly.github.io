@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wonky Sprout - Card Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Wonky Sprout</h1>
+            <p class="subtitle">A card catalog for a chaotic world</p>
+            <p class="tagline">The "I fix stuff" OS</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search cards..." aria-label="Search cards">
+            <button id="searchBtn" aria-label="Search">🔍</button>
+        </div>
+
+        <div class="filter-controls">
+            <label for="categoryFilter">Filter by category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="fix">Fixes</option>
+                <option value="hack">Hacks</option>
+                <option value="idea">Ideas</option>
+                <option value="note">Notes</option>
+            </select>
+        </div>
+
+        <div class="card-catalog" id="cardCatalog">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+
+        <button class="add-card-btn" id="addCardBtn" aria-label="Add new card">+ Add Card</button>
+    </div>
+
+    <div class="modal" id="cardModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Add New Card</h2>
+            <form id="cardForm">
+                <div class="form-group">
+                    <label for="cardTitle">Title:</label>
+                    <input type="text" id="cardTitle" required>
+                </div>
+                <div class="form-group">
+                    <label for="cardCategory">Category:</label>
+                    <select id="cardCategory" required>
+                        <option value="fix">Fix</option>
+                        <option value="hack">Hack</option>
+                        <option value="idea">Idea</option>
+                        <option value="note">Note</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cardDescription">Description:</label>
+                    <textarea id="cardDescription" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="cardTags">Tags (comma-separated):</label>
+                    <input type="text" id="cardTags" placeholder="e.g., quick, hardware, software">
+                </div>
+                <button type="submit">Save Card</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
